@@ -1,0 +1,140 @@
+{
+    "Changes": [
+        //MONSTER ERADICATION GOAL CHANGE
+        {
+            "Action": "EditData",
+            "Target": "Data/MonsterSlayerQuests",
+            "Entries": {
+                "Shadows": {
+                    "DisplayName": "{{i18n:Core.Monsters.GolemEradication}}",
+                    "Targets": [
+                        "Stone Golem",
+                        "Wilderness Golem",
+                        "Iridium Golem",
+                        "Metal Head",
+                        "Dwarvish Sentry"
+                    ],
+                    "Count": 150,
+                    "RewardItemId": "(O)523",
+                    "RewardItemPrice": 25000,
+                    "RewardDialogue": null,
+                    "RewardDialogueFlag": null,
+                    "RewardFlag": null,
+                    "RewardFlagAll": null,
+                    "RewardMail": null,
+                    "RewardMailAll": null,
+                    "CustomFields": {}
+                }
+            },
+            "When": { "Golem Eradication Substitute": true }
+        },
+       //STAT CHANGES
+        //Seen Event, PM off
+        {
+            "LogName": "Shadow Stat Changes - Seen Event - PM off",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+              "Shadow Brute": {
+                "0": 160, // HP
+                "1": 0, // Damage
+                "7": 2, // Defense
+                "9": 1 // Movement threshold
+              },
+              "Shadow Shaman": {
+                "0": 80, // HP
+                "1": 0, // Damage
+                "7": 2, // Defense
+                "9": 1 // Movement threshold
+              },
+              "Shadow Sniper": {
+                "0": 300, // HP
+                "1": 0, // Damage
+                "7": 2, // Defense
+                "9": 1 // Movement threshold
+              },
+              "Shadow Guy": {
+                "0": 125, // HP
+                "1": 0, // Damage
+                "7": 2, // Defense
+                "9": 1 // Movement threshold
+              }
+            },
+            "When": {
+                "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.10h.P3": true,
+                "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
+                "Pacifist Mode": false,
+                "Shadow Stat Changes":true
+            }
+          },
+       
+        //Not Seen Event, PM On
+        {
+            "LogName": "Shadow Stat Changes - Not Seen Event - PM on",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+              "Shadow Brute": {
+                "0": 999999, // HP
+                "7": 999999 // Defense
+              },
+              "Shadow Shaman": {
+                "0": 999999, // HP
+                "7": 999999 // Defense
+              },
+              "Shadow Sniper": {
+                "0": 999999, // HP
+                "7": 999999 // Defense
+              },
+              "Shadow Guy": {
+                "0": 999999, // HP
+                "7": 999999 // Defense
+              }
+            },
+            "When": {
+                "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.10h.P3": false,
+                "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
+                "Pacifist Mode": true,
+                "Shadow Stat Changes":true
+            }
+          },
+        //Seen event, PM On
+        {
+            "LogName": "Shadow Stat Changes - Seen Event - PM on",
+            "Action": "EditData",
+            "Target": "Data/Monsters",
+            "Fields": {
+              "Shadow Brute": {
+                "0": 999999, // HP
+                "1": 0, // Damage
+                "7": 999999, // Defense
+                "9": 1 // Movement threshold
+              },
+              "Shadow Shaman": {
+                "0": 999999, // HP
+                "1": 0, // Damage
+                "7": 999999, // Defense
+                "9": 1 // Movement threshold
+              },
+              "Shadow Sniper": {
+                "0": 999999, // HP
+                "1": 0, // Damage
+                "7": 999999, // Defense
+                "9": 1 // Movement threshold
+              },
+              "Shadow Guy": {
+                "0": 999999, // HP
+                "1": 0, // Damage
+                "7": 999999, // Defense
+                "9": 1 // Movement threshold
+              }
+            },
+            "When": {
+                "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.10h.P3": true,
+                "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
+                "Pacifist Mode": true,
+                "Shadow Stat Changes":true
+            }
+          }
+    ]
+}

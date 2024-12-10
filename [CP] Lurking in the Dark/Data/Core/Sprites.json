@@ -1,0 +1,149 @@
+{
+    "Changes": [
+        //Sen Defaults       
+        {
+            "Action": "Load",
+            "Target": "Characters/SenS, Portraits/SenS, Portraits/SenS_Default, Characters/SenS_Default",
+            "FromFile": "Assets/{{TargetPathOnly}}/Main/SenS.png"
+        },
+        //Other
+        {
+            "Action": "Load",
+            "Target": "Characters/SenS_Kid, Portraits/SenS_Kid, Characters/SenS_Bow, Portraits/SenS_Bow, Characters/SenS_Cloak, Portraits/SenS_Cloak",
+            "FromFile": "Assets/{{TargetPathOnly}}/Main/{{TargetWithoutPath}}.png"
+        },
+        //Festivals
+        {
+            "Action": "Load",
+            "Target": "Characters/SenS_EggFest, Characters/SenS_FlowerDance, Characters/SenS_Holiday, Characters/SenS_LoveFest, Characters/SenS_Luau, Characters/SenS_MoonlightJelly, Characters/SenS_Senough, Characters/SenS_SpiritsEve, Characters/SenS_StardewFair, Characters/SenS_SurfingFest",
+            "FromFile": "Assets/Characters/Festivals/{{TargetWithoutPath}}.png"
+        },
+
+    //Edit images
+        {
+            "LogName": "Senbrella Overworld farm", //PLAYER_LOCATION_NAME Current Farm
+            "Action": "EditImage",
+            "Target": "Characters/SenS",
+            "FromFile": "Assets/Characters/Main/SenS_Senbrella.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "LocationName": "Farm",
+                "LivingWithSen": true
+            }
+        },
+        {
+            "LogName": "Birthday Sprites",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS, Characters/SenS",
+            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Bow.png",
+            "When": {
+                "TodaysDate: |contains=winter 13": true,
+                "LivingWithSen": false
+            }
+        },
+        {
+            "LogName": "Festival of the Mundane Sprites",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS, Characters/SenS",
+            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Bow.png",
+            "When": {
+                "LocationName": "Sewer",
+                "TodaysDate: |contains=fall 27": true,
+                "HasMod: |contains=MouseyPounds.ShadowFestival": true 
+            }
+        },
+        {
+            "LogName": "Night Market Sprites",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS, Characters/SenS",
+            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Clock.png",
+            "When": {
+                "TodaysDate: |contains=winter 15, winter 16, winter 17": true,
+                "LivingWithSen": false
+            }
+        },
+        {
+            "LogName": "Misc Cloak Sprites",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS, Characters/SenS",
+            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Clock.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "LocationName": "MovieTheater, Temp, Hospital",
+                "IsOutdoors": "false"
+            }
+        },
+        //TEMP ACTORS
+        {
+            "Action": "Load",
+            "Target": "Characters/Skrell, Portraits/Skrell, Characters/Ebb, Portraits/Ebb",
+            "FromFile": "Assets/{{TargetPathOnly}}/TempActors/{{TargetWithoutPath}}.png"
+        },
+        //Babies
+        {           
+            "Action": "Load",
+            "Target": "Characters/Baby, Characters/Baby_dark",
+            "FromFile": "Assets/{{TargetPathOnly}}/Kids/TheBaby.png",
+            "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Characters/Toddler_girl, Characters/Toddler_girl_Dark",
+            "FromFile": "Assets/{{TargetPathOnly}}/Kids/ToddlerFreya.png",
+            "When": { "Spouse": "SenS", "Have Shadow Kids": true }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Characters/Toddler, Characters/Toddler_Dark",
+            "FromFile": "Assets/{{TargetPathOnly}}/Kids/ToddlerLoki.png",
+            "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
+        },
+        //RESHADE
+        {           
+            "Action": "Load",
+            "Target": "Characters/Krobus, Characters/SeaMonsterKrobus, Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
+            "FromFile": "Assets/Reshade/{{TargetWithoutPath}}.png",
+            "When": { "Reshade Existing Shadows": true }
+        },
+        //ITEMS AND CROPS
+        {           
+            "Action": "Load",
+            "Target": "Textures/7thAxis.LitD/Objects, Textures/7thAxis.LitD/Crops, Textures/7thAxis.LitD/Furniture",
+            "FromFile": "Assets/Items/{{TargetWithoutPath}}.png"
+        },
+
+        //Animations
+        {
+            "LogName": "Sen Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "sens_read": "16/16 17 18 19 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/16",
+                "sens_wigglesit": "20/20 21 21 22 22 23 23 20/20//laying_down",
+                "sens_map": "24/24 24 24 24 24 24 25 26 25 26 25 24 24 24 24 24 24 24 24 24/24//laying_down",
+                "sens_crochet": "29/29 30 30 30 30 30 29 29 29 29 29/29",
+                "sens_sit": "20/20 20 20/20//laying_down"
+            }
+        },
+        {
+            "LogName": "Senbrella Overworld", 
+            "Action": "EditImage",
+            "Target": "Characters/SenS",
+            "FromFile": "Assets/Characters/Main/SenS_Senbrella.png",
+            "Update": "OnTimeChange, OnLocationChange",
+            "When": {
+                "IsOutdoors": "true",
+                "Weather": "Sun, Wind, Snow",
+                "Time": "{{Range: 1700, 1930}}",
+                "TodaysDate: |contains=winter 15, winter 16, winter 17": false
+            }
+        },
+        //NPC Map Locations
+        {
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "Entries": { "SenS": { "MarkerCropOffset": 5 } },
+            "When": {  "HasMod: |contains=Bouhm.NPCMapLocations": true }
+        }
+    ]
+}

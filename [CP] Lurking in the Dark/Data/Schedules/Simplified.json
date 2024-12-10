@@ -1,0 +1,143 @@
+{
+	"Changes": [
+ //---------------------------- SCHEDULES ------------------------------------------//
+
+		{
+			"LogName": "Sen Schedule Vanilla",
+			"Action": "EditData",
+			"Target": "Characters/schedules/SenS",
+			"Entries": {
+				"Mon":"
+					0 Mine 13 8/
+					610 13 8 sens_read/
+					900 13 10 3/ 
+					1100 24 4 sens_read/
+					1300 13 10 3/
+					1500 12 5 sens_map/
+					1700 Mountain 79 30 3/
+					1800 93 34 1/
+					1900 31 21 0/
+					2100 45 20 1/
+					2300 67 21 sens_read
+				",
+				"Tue": "
+					0 Town 102 15/
+					610 102 15 sens_read/
+					900 99 9 sens_read/
+					1100 98 4 3/
+					1300 98 4 sens_read/
+					1500 99 9 sens_map/
+					1700 97 81 0/
+					1900 109 91 3/
+					2100 55 85 1/
+					2300 37 96 sens_crochet
+				",
+				"Wed": "
+					0 EastScarp_DeepDark 25 17/
+					700 21 22 sens_read/
+					900 28 19 0/
+					1100 23 20 sens_crochet/
+					1300 18 17 3/
+					1500 21 21 sens_wigglesit/
+					1700 EastScarp_Village 46 20 3/
+					1800 38 14/
+					1900 37 10 1/
+					2000 64 6 0/
+					2100 54 40 sens_wigglesit/
+					2300 47 40 sens_wigglesit
+				",
+				"Thu": "
+					0 Forest 99 100/
+					610 99 100 sens_crochet/
+					900 93 100 sens_read/
+					1100 116 90/
+					1300 104 74 3/
+					1500 104 73 sens_crochet/
+					1700 33 96/
+					1900 58 87/
+					2100 38 61/
+					2300 107 35 0
+				",
+				"Fri": "
+					0 EastScarp_DeepDark 25 17/
+					700 21 22 sens_read/
+					900 28 19 0/
+					1100 23 20 sens_crochet/
+					1300 18 17 3/
+					1500 21 21 sens_wigglesit/
+					1700 EastScarp_Village 61 113/
+					1900 71 120/
+					2100 31 101 sens_wigglesit/
+					2300 21 83 2 sens_read
+				",
+				"Sat": "
+					0 Sewer 32 16/
+					610 32 17/
+					900 31 19 0/
+					1100 17 28/
+					1300 31 19 0/
+					1400 8 21 0/
+					1500 30 17/
+					1700 31 19 0/
+					1900 16 16 sens_read/
+					2100 4 27 1/
+					2300 24 22
+				",
+				"Sun": "
+					0 EastScarp_DeepDark 25 17/
+					700 21 22 sens_read/
+					900 28 19 0/
+					1100 23 20 sens_crochet/
+					1300 18 17 3/
+					1500 21 21 sens_wigglesit/
+					1700 EastScarp_Village 61 113/
+					1900 71 120/
+					2100 31 101 sens_wigglesit/
+					2300 21 83 2 sens_read
+				"
+			},
+			"When": { "LivingWithSen": false }
+		},
+		{
+			"LogName": "Sen Schedule SVE",
+			"Action": "EditData",
+			"Target": "Characters/schedules/SenS",
+			"Entries": {
+				"Mon":"
+					0 Mine 13 8/
+					610 13 8 sens_read/
+					900 13 10 3/
+					1100 24 4 sens_read/
+					1300 13 10 3/
+					1500 12 5 sens_map/
+					1700 Custom_AdventurerSummit 13 20 3/
+					1900 17 28 3/2100 Mountain 65 14 2/
+					2300 42 15 1
+				",
+				"Tue": "
+					0 Town 99 30/
+					610 99 30 sens_read/
+					1100 100 19 sens_read/
+					1300 101 14 sens_crochet/
+					1500 98 4 sens_read/
+					1700 70 11 sens_wigglesit/
+					1900 63 15 sens_wigglesit/
+					2100 39 14 2/
+					2300 26 23 2
+				",
+				"Thu": "
+					0 Forest 99 100/
+					610 99 100 sens_read/
+					1100 116 90 sens_crochet/
+					1300 112 81 sens_read/
+					1500 94 64 sens_read/
+					1700 80 30 2/
+					1900 77 7 sens_read/
+					2100 38 9 sens_wigglesit/
+					2300 34 25 2
+				"
+			},
+			"When": { "LivingWithSen": false, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		}
+	]
+}

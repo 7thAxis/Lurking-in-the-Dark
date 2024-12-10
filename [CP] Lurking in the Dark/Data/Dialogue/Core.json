@@ -1,0 +1,219 @@
+{
+    "Changes": [
+        {
+            "LogName": "Sen Dialogue - 0-5",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Update": "OnLocationChange",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Core.SenS.EarlyHeart.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
+            },
+            "When": { "HasFlag |contains=DitR_M_SenS_OverrideSeenToday": false }
+        },
+        {
+            "LogName": "Sen Dialogue - 6-10",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Update": "OnLocationChange",
+            "Entries": {
+                "{{WeekDay}}": "{{i18n:Core.SenS.LateHeart.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
+            },
+            "When": {
+                "Hearts:SenS": "{{Range: 6, 10}}",
+                "HasFlag |contains=DitR_M_SenS_OverrideSeenToday": false
+            }
+        },
+        {
+            "LogName": "Sen Dialogue Overrides",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Update": "OnLocationChange",
+            "Priority": "Late",
+            "Entries": {
+                "{{WeekDay}}": "{{SenOverrideDialogue}}#$action AddMail Current DitR_M_SenS_OverrideSeenToday received"
+            },
+            "When": { "SenOverrideConditions": "Active" }
+        },
+        {
+            "LogName": "Dialogue CFD and CTs",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+
+                //Friendship Question
+                "SenFriend": "{{i18n:Core.SenS.SenFriend}}",
+                "SenAcquaintance": "{{i18n:Core.SenS.SenAcquaintance}}",
+                "SenNotFriend": "{{i18n:Core.SenS.SenNotFriend}}",
+                "SenFriendshipFollowup": "{{i18n:Core.SenS.SenFriendshipFollowup}}",
+                //Language Question
+                "LanguageYes": "{{i18n:Core.SenS.LanguageYes}}",
+                "LanguageAbsolutely": "{{i18n:Core.SenS.LanguageAbsolutely}}",
+                "LanguageNo": "{{i18n:Core.SenS.LanguageNo}}",
+                "LanguageFollowup": "{{i18n:Core.SenS.LanguageFollowup}}",
+                //Favorite Thing Question
+                "SenFavoriteThing": "{{i18n:Core.SenS.SenFavoriteThing}}",
+                "SenNoFavoriteThing": "{{i18n:Core.SenS.SenNoFavoriteThing}}",
+                "SenFavoriteFollowup": "{{i18n:Core.SenS.SenFavoriteFollowup{{SenRandTokens}}}}",
+                //Murder Question
+                "SenNoKill": "{{i18n:Core.SenS.SenNoKill}}",
+                "SenSelfDefense": "{{i18n:Core.SenS.SenSelfDefense}}",
+                "SenAccident": "{{i18n:Core.SenS.SenAccident}}",
+                "SenSilence": "{{i18n:Core.SenS.SenSilence}}",
+                "SenKillFollowup": "{{i18n:Core.SenS.SenKillFollowup}}",
+
+                "spring_1_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.1}}",
+                "spring_12_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.12}}",
+                "spring_20_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.20}}",
+                "spring_23_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.23}}",
+                "spring_28_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.28}}",
+
+                "summer_1_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.1}}",
+                "summer_10_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.10}}",
+                "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.19{{SenRandTokens}}}}",
+                "summer_27_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.27}}",
+                "summer_28_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.28}}",
+
+                "fall_1_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.1}}",
+                "fall_15_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.15}}",
+                "fall_26_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.26}}",
+                "fall_28_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.28}}",
+
+                "winter_1_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.1}}",
+                "winter_7_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.7}}",
+                "winter_13_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.13}}",
+                "winter_24_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.24}}",
+                "winter_28_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.28}}",
+
+                //Conversation Topics
+                "DitR_CT_SenMet": "{{i18n:Core.SenS.SenMet}}",
+                "DitR_CT_DreamReveal": "{{i18n:Core.SenS.DreamReveal}}",
+                "DitR_CT_ShadowPlay": "{{i18n:Core.SenS.ShadowPlay}}",
+                "DitR_CT_GardenWaitTime": "{{i18n:Core.SenS.GardenWaitTime}}",
+                "DitR_CT_GardenCompleted": "{{i18n:Core.SenS.GardenCompleted}}",
+                "DitR_CT_FamilyFlashback": "{{i18n:Core.SenS.FamilyFlashback}}",
+                "DitR_CT_MineFlashback": "{{i18n:Core.SenS.MineFlashback}}",
+                "DitR_CT_TheConfrontation": "{{i18n:Core.SenS.TheConfrontation}}",
+                "DitR_CT_SkrellEpilogue": "{{i18n:Core.SenS.SkrellEpilogue}}",
+                "DitR_CT_SensFlowers": "{{i18n:Core.SenS.SensFlowers}}",
+                "joja_Begin": "{{i18n:Core.SenS.JojaBegin}}",
+                "cc_Begin": "{{i18n:Core.SenS.ccBegin}}",
+                "cc_Bus": "{{i18n:Core.SenS.ccBus}}",
+                "cc_Bridge": "{{i18n:Core.SenS.ccBridge}}",
+                "cc_Boulder": "{{i18n:Core.SenS.ccBoulder}}",
+                "cc_Greenhouse": "{{i18n:Core.SenS.ccGreenhouse}}",
+                "cc_Minecart": "{{i18n:Core.SenS.ccMinecart}}",
+                "cc_Complete": "{{i18n:Core.SenS.ccComplete}}",
+                "movieTheater": "{{i18n:Core.SenS.MovieTheater}}",
+                "JasperGone2": "{{i18n:Core.SenS.JasperGone2}}",
+                "JasperHomeA": "{{i18n:Core.SenS.JasperHomeA}}",
+                "keahi_prank": "{{i18n:Core.SenS.KeahiStink}}",
+                "pumpkin_spice_madness": "{{i18n:Core.SenS.PumpkinSpice}}",
+                "LavrilUnlocked": "{{i18n:Core.SenS.LavrilUnlocked}}",
+                "LucikielArrives": "{{i18n:Core.SenS.LucikielArrives}}",
+                "ReputationIncreased": "{{i18n:Core.SenS.LucikielRepIncrease}}",
+                "JulietGremlin": "{{i18n:Core.SenS.JulietGremlin}}",
+                "SterlingTrash": "{{i18n:Core.SenS.SterlingTrash}}",
+                "MovieInvitation": "{{i18n:Movies.SenS.MovieInviteSuccess}}",
+                
+                //Movie rejection
+                "RejectMovieTicket_AlreadyInvitedBySomeoneElse": "{{i18n:Movies.SenS.RejectMovieTicket.AlreadyInvited}}",
+                "RejectMovieTicket_AlreadyWatchedThisWeek": "{{i18n:Movies.SenS.RejectMovieTicket.AlreadyWatched}}",
+                "RejectMovieTicket_DontWantToSeeThatMovie": "{{i18n:Movies.SenS.RejectMovieTicket.NotInterested}}",
+                "RejectMovieTicket_Divorced": "{{i18n:Relationship.SenS.Rejection.Divorced}}",
+                "RejectMovieTicket": "{{i18n:Movies.SenS.RejectMovieTicket}}",
+                //CFD
+                "DumpsterDiveComment": "{{i18n:Core.SenS.Dumpster}}",
+                //Slingshot
+                "HitBySlingshot": "{{i18n:Core.SenS.Slingshot.{{Random:{{Range: 1, 2}}}}}}",
+                //Birthday
+                "AcceptBirthdayGift_Loved": "{{i18n:Core.SenS.BirthdayGift.Positive.1}}", //pos
+                "AcceptBirthdayGift_Liked": "{{i18n:Core.SenS.BirthdayGift.Positive.2}}", //pos
+                "AcceptBirthdayGift_Disliked": "{{i18n:Core.SenS.BirthdayGift.Dislike}}",
+                "AcceptBirthdayGift_Hated": "{{i18n:Core.SenS.BirthdayGift.Negative}}", //neg
+                "AcceptBirthdayGift_Neutral": "{{i18n:Core.SenS.BirthdayGift.Neutral}}" //neutral
+            }
+        },
+        {
+            "LogName": "Dialogue - JOJA ROUTE",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                //Conversation Topics, remove reference to Junimos
+                "cc_Boulder": "{{i18n:Core.SenS.ccBoulder.Joja}}",
+                "cc_Greenhouse": "{{i18n:Core.SenS.ccGreenhouse.Joja}}",
+                "spring_18_{{YearCheck}}": "{{i18n:Core.SenS.Spring.d18}}"
+            },
+            "When": { "HasFlag: |contains=jojaMember": true }
+        },
+        {
+            "LogName": "Dialogue - Movie Strings",
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_SenS": "{{i18n:Movies.SenS.MovieInviteSuccess}}"
+            }
+        },
+        {
+            "LogName": "Dialogue - Ridgeside Festival",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                "fall_19_{{YearCheck}}": "{{i18n:Core.SenS.Fall.d19}}",
+                "winter_27_{{YearCheck}}": "{{i18n:Core.SenS.Winter.d27}}"
+            },
+            "When": { "HasMod: |contains=Rafseazz.RSVCP": true }
+        },
+        {
+            "LogName": "Dialogue - Surfing Festival",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                "summer_4_{{YearCheck}}": "{{i18n:Core.SenS.Summer.d4.Event}}"
+            },
+            "When": { "HasMod: |contains=spacechase0.SurfingFestival": true }
+        },
+        {
+            "LogName": "Dialogue - Fashion Festival",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                "spring_18_{{YearCheck}}": "{{i18n:Core.SenS.Spring.d18.Event}}"
+            },
+            "When": {
+                "HasMod: |contains=UNA.FF.CP": true,
+                "HasSeenEvent: anyPlayer |contains= 1740402, 1740403, 1740404": true,
+                "HasReadLetter: anyPlayer |contains=FashionShowLetter": true
+            }
+        },
+        {
+            "LogName": "Dialogue - Love Festival",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                "winter_12_{{YearCheck}}": "{{i18n:Core.SenS.Winter.d12}}"
+            },
+            "When": { "HasMod: |contains=AvalonMFX.LoveFestival": true }
+        },
+        {
+            "LogName": "Dialogue - Marketpalooza",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                "fall_2_{{YearCheck}}": "{{i18n:Core.SenS.Fall.d2.Event}}"
+            },
+            "When": {
+                "HasMod: |contains=Fellowclown.PC": true,
+                "HasFlag|contains=Fellowclown.PC_Marketpalooza.Mail": true
+            }
+        },
+        {
+            "LogName": "Dialogue - Fireworks Festival",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/SenS",
+            "Entries": {
+                "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.d19.Event}}"
+            },
+            "When": { "HasMod: |contains=violetlizabet.FireworksFestival": true }
+        }
+    ]
+}

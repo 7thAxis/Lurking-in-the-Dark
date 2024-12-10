@@ -1,0 +1,70 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "LitD.Skrell": {
+                    "DisplayName": "{{i18n:Core.SenS.Name.Skrell}}",
+                    "House": "ILLEGAL! NO SKRELL ON YOUR FARM!",
+                    "PurchasePrice": -1,
+                    "SellPrice": 0,
+                    "RequiredBuilding": "ILLEGAL! NO SKRELL ON YOUR FARM!",
+                    "Sound": "shadowpeep",
+                    "Texture": "Characters/Skrell",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 32,
+                    "ShadowWhenBaby": { "Visible": false },
+                    "ShadowWhenAdult": { "Visible": false },
+                    "ShowInSummitCredits": false
+                },
+
+                "LitD.Ebb": {
+                    "DisplayName": "{{i18n:Core.SenS.Name.Ebb}}",
+                    "House": "ILLEGAL! NO EBB ON YOUR FARM!",
+                    "PurchasePrice": -1,
+                    "SellPrice": 0,
+                    "RequiredBuilding": "ILLEGAL! NO EBB ON YOUR FARM!",
+                    "Sound": "shadowpeep",
+                    "Texture": "Characters/Ebb",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 32,
+                    "ShadowWhenBaby": { "Visible": false },
+                    "ShadowWhenAdult": { "Visible": false },
+                    "ShowInSummitCredits": false
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+            "Entries": {
+                "LitD.Skrell_Cave": {
+                    "AnimalId": "LitD.Skrell",
+                    "Age": 1,
+                    "LocationId": "EastScarp_DeepDark",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Skrell}}",
+                    "PortraitTexture": "Portraits/Skrell",
+                    "PetMessage": [ "{{i18n:Core.FakeNPC.Skrell.Dialogue.1}}" ],
+                    "HomeTileX": 19,
+                    "HomeTileY": 18,
+                    //"Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12, WEATHER EastScarp_Village Sun"
+                },
+
+                "LitD.Ebb_Cave": {
+                    "AnimalId": "LitD.Ebb",
+                    "Age": 1,
+                    "LocationId": "EastScarp_DeepDark",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Ebb}}",
+                    "PortraitTexture": "Portraits/Ebb",
+                    "PetMessage": [ "{{i18n:Core.FakeNPC.Ebb.Dialogue.1}}" ],
+                    "HomeTileX": 19,
+                    "HomeTileY": 18,
+                    //"Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12, WEATHER EastScarp_Village Sun"
+                }
+            }
+        }
+    ]
+}

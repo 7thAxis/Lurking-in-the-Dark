@@ -1,0 +1,84 @@
+{
+    //Migrates event seen data from Lurking in the Dark for 1.5.6
+    "Changes": [
+        {
+            "LogName": "1.5.6 to 1.6 Sen Event and Flag ID migration",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Priority": "Early",
+
+            "Entries": {
+            "7thAxis.DitR.CP.TriggerActions.SenEventMigration": {
+                "Id": "7thAxis.DitR.CP.TriggerActions.SenEventMigration",
+                "Trigger": "DayStarted",
+                "HostOnly": true,
+                "Actions": [
+
+                //I know you can put it in one... this is just more readable for me.
+                
+                    //Events
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701000 7thAxis.DitR.CP.Events.SenS.0h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701002 7thAxis.DitR.CP.Events.SenS.2h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701004 7thAxis.DitR.CP.Events.SenS.4h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701006 7thAxis.DitR.CP.Events.SenS.6h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010062 7thAxis.DitR.CP.Events.SenS.6h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701008 7thAxis.DitR.CP.Events.SenS.8h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010011 7thAxis.DitR.CP.Events.SenS.10h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010012 7thAxis.DitR.CP.Events.SenS.10h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010013 7thAxis.DitR.CP.Events.SenS.10h.P3",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010014 7thAxis.DitR.CP.Events.SenS.14h",
+
+                    //Mail
+                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_AGardenForSenComplete DitR_M_AGardenForSenComplete",
+                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_SeedSilentEvent DitR_M_SenGardenTrigger",
+                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_Romantic DitR_M_SenS_Romantic"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Quest Fixer",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "7thAxis.DitR_TriggerActions.QuestFixerLitD": {
+                    "Id": "7thAxis.DitR_TriggerActions.QuestFixerLitD",
+                    "Trigger": "DayStarted",
+                    "Actions": [ 
+                        "AddQuest 7thAxis.DitR.CP.Quests.AGardenForSen",
+                        "RemoveQuest 10770100"
+                     ]
+                }
+            },
+            "When": { "HasActiveQuest: |contains=10770100": true }
+        },
+        {
+            "LogName": "Outdated Translation Softlock Fixer",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "7thAxis.DitR_TriggerActions.TranslationSoftlockFix": {
+                    "Trigger": "DayStarted",
+                    "Id": "7thAxis.DitR_TriggerActions.TranslationSoftlockFix",
+                    "Condition": "PLAYER_HAS_MAIL Current LitD_M_AGardenForSenComplete Any",
+                    "Actions": [ 
+                        "AddMail Current DitR_M_AGardenForSenComplete received",
+                        "RemoveMail Current LitD_M_AGardenForSenComplete"
+                     ]
+                }
+            }
+        },
+        {
+            "LogName": "LitD Was Installed Flag",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "7thAxis.DitR_TriggerActions.LitDWasInstalled": {
+                    "Id": "7thAxis.DitR_TriggerActions.LitDWasInstalled",
+                    "Trigger": "DayStarted",
+                    "Actions": [ "AddMail Current DitR_M_LitDWasInstalled received" ]
+                }
+            }
+        }
+    ]
+}

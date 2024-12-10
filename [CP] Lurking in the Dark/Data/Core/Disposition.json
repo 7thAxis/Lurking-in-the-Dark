@@ -1,0 +1,155 @@
+{
+    "Changes": [
+        //Dispositions
+        {
+            "LogName": "Sen Dispositions",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "SenS": {   
+                    "DisplayName": "{{i18n:Core.SenS.Name.Sen}}",
+                    "BirthSeason": "winter",
+                    "BirthDay": 13,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "SocialTab": "UnknownUntilMet",
+                    "ShakePortraits": [9, 10],
+                    "SpouseRoom": { "MapAsset": "{{SenSpouseRoom}}" },
+                    "Home": [
+                        {
+                            "Id": "Sen Waiting Room",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": { "X": 7, "Y": 7 },
+                            "Direction": "down",
+                            "Condition": "!PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.0h"
+                        },
+                        { 
+                            "Id": "Sen Default Home",
+                            "Location": "EastScarp_DeepDark",
+                            "Tile": { "X": 25, "Y": 17 },
+                            "Direction": "down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.0h"
+                        }
+                    ],
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": true,
+                    "SpouseGiftJealousyFriendshipChange": 0,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": 16,
+                    "CanVisitIsland": false,
+                    "CanCommentOnPurchasedShopItems": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "SpawnIfMissing": true,
+                    "Breather": false,
+                    "Appearance": [
+                        {
+                            "ID": "Egg Festival",
+                            "Condition": "IS_EVENT festival_spring13",
+                            "Sprite": "Characters/SenS_EggFest"
+                        },
+                        {
+                            "ID": "Flower Dance",
+                            "Condition": "IS_EVENT festival_spring24",
+                            "Sprite": "Characters/SenS_FlowerDance"
+                        },
+                        {
+                            "ID": "Luau",
+                            "Condition": "IS_EVENT festival_summer11",
+                            "Sprite": "Characters/SenS_Luau"
+                        },
+                        {
+                            "ID": "Moonlight Jelly",
+                            "Condition": "IS_EVENT festival_summer28",
+                            "Sprite": "Characters/SenS_MoonlightJelly"
+                        },
+                        {
+                            "ID": "SDV Fair",
+                            "Condition": "IS_EVENT festival_fall16 festival_fall3",
+                            "Sprite": "Characters/SenS_StardewFair"
+                        },
+                        {
+                            "ID": "Spirits Eve",
+                            "Condition": "IS_EVENT festival_fall27",
+                            "Sprite": "Characters/SenS_SpiritsEve"
+                        },
+                        {
+                            "ID": "Holiday",
+                            "Condition": "Any \"IS_EVENT festival_winter8\" \"IS_EVENT festival_winter25\"",
+                            "Sprite": "Characters/SenS_Holiday"
+                        },
+                        {
+                            "ID": "Love Festival",
+                            "Condition": "IS_EVENT festival_winter13",
+                            "Sprite": "Characters/SenS_LoveFest"
+                        },
+                        {
+                            "ID": "Surfing Festival",
+                            "Condition": "IS_EVENT festival_summer5",
+                            "Sprite": "Characters/SenS_SurfingFest"
+                        },
+                        {
+                            "ID": "Pride and Fashion Festival",
+                            "Condition": "ANY \"IS_EVENT festival_spring19\" \"IS_PASSIVE_FESTIVAL_TODAY sapphicsaph_pitv.PrideFestival, SEASON_DAY summer 16\"",
+                            "Sprite": "Characters/SenS_Senough"
+                        },
+                        {
+                            "ID": "Other Festivals",
+                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\"",
+                            "Portrait": "Portraits/SenS_Cloak",
+                            "Sprite": "Characters/SenS_Cloak"
+                        }
+                    ]
+                }
+            }
+        },
+        //ROMANCE STUFF
+        {
+            "Action": "EditData", //Note to self: Remember schedule will only run in testing if 0h is seen
+            "Target": "Data/Characters",
+            "TargetField": [ "SenS" ],
+            "Entries": { "CanBeRomanced": true },
+            "When": { "HasFlag:currentPlayer |contains=DitR_M_SenS_Romantic": true }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [ "808", "ContextTags" ], //808 = Void Ghost Pendant
+            "Entries": {
+                "propose_roommate_sens": "propose_roommate_sens"
+            },
+            "When": {
+                "HasSeenEvent:currentPlayer |contains={{ModID}}_Events.SenS.10h.P3": true,
+                "HasFlag:currentPlayer |contains=DitR_M_SenS_Romantic": false
+            }
+        },
+        //Gift Tastes
+        {
+            "LogName": "Sen Gift Taste",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "SenS": "{{i18n:Gifts.SenS.GiftReaction.Love}}/book_item 72 108 124 220 221 233 236 243 253 276 279 337 395 418 428 565 575 608 612 874 7thAxis.DitR_Items.SensCrocus sapphicsaph_pitv.PridePop sapphicsaph_pitv.GaylacticCookie sapphicsaph_pitv.TastyAceCookie stinkyvicki_CaveGrubDumplings stinkyvicki_RoastedBug stinkyvicki_SlimeEggSouffle stinkyvicki_SlimeJellySandwich stinkyvicki_SlimeTorte stinkyvicki_Slimeade DuchessIvy.ShadowRecipes_Void_Cake DuchessIvy.ShadowRecipes_Pumpkin_Bread DuchessIvy.ShadowRecipes_Black_Cherry_Flan DuchessIvy.ShadowRecipes_Pumpkin_Latte DuchessIvy.ShadowRecipes_Crystal_Float WWWA.GenuineAutograph Fellowclown.AND_Button/{{i18n:Gifts.SenS.GiftReaction.Like}}/food_sweet -80 74 156 203 208 211 223 234 238 245 308 340 376 440 444 478 604 610 611 651 721 724 731 766 773 795 814 904 905 WWWA.AutographedPhoto/{{i18n:Gifts.SenS.GiftReaction.Dislike}}/-4 78 305 767/{{i18n:Gifts.SenS.GiftReaction.Hate}}/96 97 98 99 121 122 248 554 772 769 stinkyvicki_CaveBatTempura stinkyvicki_CheesyBatCasserole stinkyvicki_ExorcismSorbet stinkyvicki_MonsterMedleyStew stinkyvicki_PrehistoricOmelet stinkyvicki_RockCrabHotpot stinkyvicki_ShadowCoffee DuchessIvy.ShadowRecipes_Savory_Squid_Stew DuchessIvy.ShadowRecipes_Braised_Midnight_Carp/{{i18n:Gifts.SenS.GiftReaction.Neutral}}/-79 -75 -26 -20 -7 446 459 613 634 635 637 638 636 724 797 808 873 stinkyvicki_BoiledStonefish DuchessIvy.ShadowRecipes_Spooky_Sushi DuchessIvy.ShadowRecipes_Void_Caviar_Toast/"
+            }
+        },
+        {
+            "LogName": "Bulk Daily Flag Remover", 
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+      
+                "{{ModID}}_TriggerActions.LitDDailyFlagRemovals": {
+                    "Id": "{{ModID}}_TriggerActions.LitDDailyFlagRemovals",
+                    "MarkActionApplied": false,
+                    "Trigger": "DayEnding",
+                    "Actions": [ "RemoveMail Current DitR_M_SenS_OverrideSeenToday" ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "Changes": [
+        //Always Load
+        {
+            "Action": "Load",
+            "Target": "Characters/Dialogue/SenS, Characters/schedules/SenS, Characters/schedules/SenS, Characters/Dialogue/MarriageDialogueSenS, Characters/Dialogue/MarriageDialogueSenSRoommate",
+            "FromFile": "Loaders/blank.json"
+        },
+		{
+			"Action": "Include",
+			"FromFile": "Data/Core/Festivals.json, Data/Dialogue/Festivals.json, Data/Core/Sprites.json, Data/Core/Maps.json, Data/Core/Disposition.json, Data/Dialogue/GiftResponses.json, Data/Dialogue/Townie.json, Data/Events/0H.json, Data/Events/2H.json, Data/Events/4H.json, Data/Events/6H.json, Data/Events/8H.json, Data/Events/10H.json, Data/Events/14H.json, Data/Core/Quests.json, Data/dialogue/Core.json, Data/Dialogue/Relationship.json, Data/Dialogue/Movies.json, Data/Events/ReactToDeath.json, Data/core/Monsters.json, Data/core/Items.json, Data/core/Migration.json, Data/Core/Shops.json, Data/Core/FakeNPCs.json"
+		},
+        //loads based on events or flags
+        {
+			"Action": "Include",
+			"FromFile": "Data/Schedules/Defaults.json, Data/Schedules/{{Sen Schedule Type}}.json",
+            "When": { "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.0h": true }
+		},
+        {
+			"Action": "Include",
+			"FromFile": "Data/core/Forage.json",
+            "When": { "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.14h": true }
+		}    
+    ]
+}
