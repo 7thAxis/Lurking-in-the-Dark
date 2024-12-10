@@ -90,7 +90,7 @@
         {
             "Action": "Load",
             "Target": "Characters/Skrell, Portraits/Skrell, Characters/Ebb, Portraits/Ebb",
-            "FromFile": "Assets/{{TargetPathOnly}}/TempActors/{{TargetWithoutPath}}.png"
+            "FromFile": "Assets/{{TargetPathOnly}}/FakeNPCs/{{TargetWithoutPath}}.png"
         },
         //Babies
         {           
