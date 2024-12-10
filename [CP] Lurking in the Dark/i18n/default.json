@@ -554,6 +554,12 @@
 "Core.SenS.BirthdayGift.Negative": "Er... I appreciate the gesture, but you can keep that.$8",
 "Core.SenS.BirthdayGift.Neutral": "Oh, @! How did you know it was my birthday?$h#$b#Thank you, @. I'm sure I'll find a great use for this.$h",
 
+//Krobus
+"Core.SenS.KrobusCommentary.1": "%revealtasteSenS108 When I first came to the surface, Krobus gave me this rare disc. I've worn it ever since.$h#$b#It radiates powerfully with the energy of the void, so it is common for my people to carry them around as good luck charms.$h",
+"Core.SenS.KrobusCommentary.2": "%revealtasteKrobus16 Oh hello, @! Did you know that Krobus loves horseradishes?$h#$b#In the spring, I like to collect a bunch for him.$h#$b#He tends to gobble them up a little faster than he should.$8",
+"Core.SenS.KrobusCommentary.3": "%revealtasteKrobus265 Did you know that Krobus likes seafoam pudding...?$8#$b#That stuff is kinda icky, but to each their own, I guess.$8",
+"Core.SenS.KrobusCommentary.4": "%revealtasteKrobus773 Did you know that life elixirs don't heal us shadows?#$b#Our bodies are made up of different matter, so they actually have an inverse effect on us.$8#$b#If anything, they are like a poison.$s",
+
 //FAKE NPCS
 "Core.FakeNPC.Skrell.Dialogue.1": "Leave me alone, you absolute cretin.",
 "Core.FakeNPC.Ebb.Dialogue.1": "um... ignore Skrell... he stubbed his toe on the way in.$2",
@@ -566,11 +572,6 @@
 ╚██████╔╝██║██║        ██║   ███████║
  ╚═════╝ ╚═╝╚═╝        ╚═╝   ╚══════╝
 */
-"Gifts.SenS.Reveals.Krobus.1": "%revealtasteSenS248 Human mythos states that garlic is used to ward off evil beings...$s#$b#I assure you that it doesn't actually do anything to us shadows, we simply find the stink repulsive.$8",
-"Gifts.SenS.Reveals.Krobus.2": "%revealtasteKrobus16 Oh hello, @! Did you know that Krobus loves horseradishes?$h#$b#In the spring, I like to collect a bunch for him.$h#$b#He tends to gobble them up a little faster than he should.$8",
-"Gifts.SenS.Reveals.Krobus.3": "%revealtasteKrobus265 Did you know that Krobus likes seafoam pudding...?$8#$b#That stuff is kinda icky, but to each their own, I guess.$8",
-"Gifts.SenS.Reveals.Krobus.4": "%revealtasteKrobus773 Did you know that life elixirs don't heal us shadows?#$b#Our bodies are made up of different matter, so they actually have an inverse effect on us.$8#$b#If anything, they are like a poison.$s",
-"Gifts.SenS.Reveals.Krobus.5": "%revealtasteSenS108 When I first came to the surface, Krobus gave me this rare disc. I've worn it ever since.$h#$b#It radiates powerfully with the energy of the void, so it is common for my people to carry them around as good luck charms.$h",
 
 "Gifts.SenS.GiftReaction.Love": "Oh! Thank you, @. This is one of my most favorite things ever!",
 "Gifts.SenS.GiftReaction.Like": "Thank you very much, @! I'll make great use of this during my next project.",
@@ -1084,10 +1085,10 @@
                                                  
 */
 //Krobus
-"Core.SenS.KrobusCommentary.1": "%revealtasteSenS108 When I first came to the surface, Krobus gave me this rare disc. I've worn it ever since.$h#$b#It radiates powerfully with the energy of the void, so it is common for my people to carry them around as good luck charms.$h",
-"Core.SenS.KrobusCommentary.2": "%revealtasteKrobus16 Oh hello, @! Did you know that Krobus loves horseradishes?$h#$b#In the spring, I like to collect a bunch for him.$h#$b#He tends to gobble them up a little faster than he should.$8",
-"Core.SenS.KrobusCommentary.3": "%revealtasteKrobus265 Did you know that Krobus likes seafoam pudding...?$8#$b#That stuff is kinda icky, but to each their own, I guess.$8",
-"Core.SenS.KrobusCommentary.4": "%revealtasteKrobus773 Did you know that life elixirs don't heal us shadows?#$b#Our bodies are made up of different matter, so they actually have an inverse effect on us.$8#$b#If anything, they are like a poison.$s",
+"Krobus.SenS.Reveal.1": "Sen always has so much energy... I don't know where he gets it.#$b#Is it from this... \"coffee\" he's always talking about?$u",
+"Krobus.SenS.Reveal.2": "...*rumble*...$u#$b#...Sorry, that was embarassing.l#$b#Don't worry, I'm okay. Sen is going to bring me snacks, so I'm holding off on eating.$h",
+"Krobus.SenS.Reveal.3": "Sen talks about you a lot when he visits. It makes me happy that he's happy.$h",
+"Krobus.SenS.Reveal.4": "Sen's full name, Sentrez, means 'crowned dreamer' in our language.#$b#I feel like that's fitting for him, don't you?$h",
 
 "Krobus.SenS.SenMet": "Did you happen to come across my friend in the mines?#$b#Do not fear him, he is quite friendly.$h",
 "Krobus.SenS.DreamReveal": "Sen is very optimistic for a Shadow. It's... quite refreshing.$h",
