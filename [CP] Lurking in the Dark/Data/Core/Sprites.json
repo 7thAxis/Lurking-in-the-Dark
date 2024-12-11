@@ -3,14 +3,24 @@
         //Sen Defaults       
         {
             "Action": "Load",
-            "Target": "Characters/SenS, Portraits/SenS, Portraits/SenS_Default, Characters/SenS_Default",
-            "FromFile": "Assets/{{TargetPathOnly}}/Main/SenS.png"
+            "Target": "Portraits/SenS, Portraits/SenS_Default",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/Main/SenS.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SenS, Characters/SenS_Default",
+            "FromFile": "Assets/Characters/Main/SenS.png"
         },
         //Other
         {
             "Action": "Load",
-            "Target": "Characters/SenS_Kid, Portraits/SenS_Kid, Characters/SenS_Bow, Portraits/SenS_Bow, Characters/SenS_Cloak, Portraits/SenS_Cloak",
-            "FromFile": "Assets/{{TargetPathOnly}}/Main/{{TargetWithoutPath}}.png"
+            "Target": "Portraits/SenS_Kid, Portraits/SenS_Bow, Portraits/SenS_Cloak",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/Main/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SenS_Kid, Characters/SenS_Bow,Characters/SenS_Cloak",
+            "FromFile": "Assets/Characters/Main/{{TargetWithoutPath}}.png"
         },
         //Festivals
         {
@@ -19,9 +29,10 @@
             "FromFile": "Assets/Characters/Festivals/{{TargetWithoutPath}}.png"
         },
 
-    //Edit images
+    //Edit images - god i hate how many of these there are
+    //Most are here bc I had issues with appearances working for one reason or another
         {
-            "LogName": "Senbrella Overworld farm", //PLAYER_LOCATION_NAME Current Farm
+            "LogName": "Senbrella Overworld farm",
             "Action": "EditImage",
             "Target": "Characters/SenS",
             "FromFile": "Assets/Characters/Main/SenS_Senbrella.png",
@@ -32,45 +43,36 @@
             }
         },
         {
-            "LogName": "Birthday Sprites",
+            "LogName": "Senbrella Cloak Married",
             "Action": "EditImage",
-            "Target": "Portraits/SenS, Characters/SenS",
-            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Bow.png",
+            "Target": "Characters/SenS",
+            "FromFile": "Assets/Characters/Main/SenS_Cloak.png",
+            "Update": "OnLocationChange",
             "When": {
-                "TodaysDate: |contains=winter 13": true,
-                "LivingWithSen": false
-            }
-        },
-        {
-            "LogName": "Festival of the Mundane Sprites",
-            "Action": "EditImage",
-            "Target": "Portraits/SenS, Characters/SenS",
-            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Bow.png",
-            "When": {
-                "LocationName": "Sewer",
-                "TodaysDate: |contains=fall 27": true,
-                "HasMod: |contains=MouseyPounds.ShadowFestival": true 
-            }
-        },
-        {
-            "LogName": "Night Market Sprites",
-            "Action": "EditImage",
-            "Target": "Portraits/SenS, Characters/SenS",
-            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Clock.png",
-            "When": {
-                "TodaysDate: |contains=winter 15, winter 16, winter 17": true,
-                "LivingWithSen": false
+                "IsOutdoors": true,
+                "LivingWithSen": true
             }
         },
         {
             "LogName": "Misc Cloak Sprites",
             "Action": "EditImage",
-            "Target": "Portraits/SenS, Characters/SenS",
-            "FromFile": "Assets/{{TargetWithoutPath}}/Main/SenS_Clock.png",
+            "Target": "Characters/SenS",
+            "FromFile": "Assets/Characters/Main/SenS_Cloak.png",
             "Update": "OnLocationChange",
             "When": {
                 "LocationName": "MovieTheater, Temp, Hospital",
-                "IsOutdoors": "false"
+                "IsOutdoors": false
+            }
+        },
+        {
+            "LogName": "Misc Cloak Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/Main/SenS_Cloak.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "LocationName": "MovieTheater, Temp, Hospital",
+                "IsOutdoors": false
             }
         },
         {
@@ -80,7 +82,8 @@
             "FromFile": "Assets/Characters/Main/SenS_Senbrella.png",
             "Update": "OnTimeChange, OnLocationChange",
             "When": {
-                "IsOutdoors": "true",
+                "IsOutdoors": true,
+                "LivingWithSen": false,
                 "Weather": "Sun, Wind, Snow",
                 "Time": "{{Range: 1700, 1930}}",
                 "TodaysDate: |contains=winter 15, winter 16, winter 17": false
@@ -89,10 +92,15 @@
         //TEMP ACTORS
         {
             "Action": "Load",
-            "Target": "Characters/Skrell, Portraits/Skrell, Characters/Ebb, Portraits/Ebb",
-            "FromFile": "Assets/{{TargetPathOnly}}/FakeNPCs/{{TargetWithoutPath}}.png"
+            "Target": "Characters/Skrell, Characters/Ebb",
+            "FromFile": "Assets/Characters/FakeNPCs/{{TargetWithoutPath}}.png"
         },
-        //Babies
+        {
+            "Action": "Load",
+            "Target": "Portraits/Skrell, Portraits/Ebb",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/FakeNPCs/{{TargetWithoutPath}}.png"
+        },
+        //SENLETS
         {           
             "Action": "Load",
             "Target": "Characters/Baby, Characters/Baby_dark",

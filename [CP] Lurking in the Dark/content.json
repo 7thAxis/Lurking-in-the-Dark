@@ -48,6 +48,13 @@
         },
 
         //GRAPHICS
+        "Portrait Style": {
+            "AllowValues": "7thAxis, Nyapu",
+            "Default": "7thAxis",
+            "AllowBlank": false,
+            "Description":"Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing)",
+            "Section": "Graphics"
+        },
         "Have Shadow Kids": {
             "AllowValues": "true, false",
             "Default": true,
@@ -96,12 +103,12 @@
         }, 
         {
             "Name": "SenScheduleRandomizer", 
-            "Value": "{{Random:{{Range: 1, 14}}|key=SSR}}",
+            "Value": "{{Random:{{Range: 1, 12}}|key=SSR}}",
             "When": { "IsDitRInstalled": false }
         },
         {
-            "Name": "BasicRandomizer", 
-            "Value": "{{Random:{{Range: 1, 2}}}}",
+            "Name": "MarriageScheduleRandomizer", 
+            "Value": "{{Random:{{Range: 1, 7}}}}",
             "When": { "IsDitRInstalled": false }
         },
 

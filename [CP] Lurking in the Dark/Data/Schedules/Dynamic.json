@@ -21,7 +21,7 @@
 					2300 67 21 sens_read
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 1, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 1 }
 		},
 		{
 			"LogName": "Sen Schedule Mine SVE",
@@ -41,7 +41,7 @@
 				",
 			},
 			"When": { 
-				"SenScheduleRandomizer": 1, "LivingWithSen": false,
+				"SenScheduleRandomizer": 1,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
 			 }
 		},
@@ -63,8 +63,8 @@
 					2300 1 8 sens_wigglesit
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 2, "LivingWithSen": false,
-						"HasSeenEvent |contains=63070010, 57875010": true  }
+			"When": {  "SenScheduleRandomizer": 2, 
+					   "HasSeenEvent |contains=63070010, 57875010": true  }
 		},
 //---Schedule 3---//
 		{
@@ -85,7 +85,7 @@
 					2300 37 96 sens_crochet
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 3, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 3 }
 		},
 		{
 			"LogName": "Sen Schedule Town SVE 1",
@@ -105,7 +105,7 @@
 					",
 			},
 			"When": { 
-				"SenScheduleRandomizer": 3, "LivingWithSen": false,
+				"SenScheduleRandomizer": 3,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
 			 }
 		},
@@ -130,7 +130,7 @@
 					2300 47 40 sens_wigglesit
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 4, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 4 }
 		},
 //---Schedule 5---//
 		{
@@ -151,7 +151,7 @@
 					2300 107 35 0
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 5, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 5 }
 		},
 		{
 			"LogName": "Sen Schedule Forest SVE 1",
@@ -171,7 +171,7 @@
 				",
 			},
 			"When": { 
-				"SenScheduleRandomizer": 5, "LivingWithSen": false,
+				"SenScheduleRandomizer": 5,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
 			}
 		},
@@ -195,7 +195,7 @@
 					2300 24 22
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 6, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 6 }
 		},
 //---Schedule 7---//
 		{
@@ -215,7 +215,7 @@
 					2430 24 62
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 7, "LivingWithSen": false,
+			"When": {  "SenScheduleRandomizer": 7,
 						"HasSeenEvent |contains=63070010, 57875010": true  }
 		},
 //---Schedule 8---//
@@ -237,7 +237,7 @@
 					2300 52 6 sens_wigglesit
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 8, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 8 }
 		},
 		{
 			"LogName": "Sen Schedule Town SVE 2",
@@ -257,7 +257,7 @@
 				",
 			},
 			"When": { 
-				"SenScheduleRandomizer": 8, "LivingWithSen": false,
+				"SenScheduleRandomizer": 8,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
 			}
 		},
@@ -280,7 +280,7 @@
 					2300 21 83 2 sens_read
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 9, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 9 }
 		},
 //---Schedule 10---//
 		{
@@ -301,7 +301,7 @@
 					2300 43 77 sens_wigglesit
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 10, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 10 }
 		},
 		{
 			"LogName": "Sen Schedule Town SVE 3",
@@ -321,7 +321,7 @@
 				",
 			},
 			"When": { 
-				"SenScheduleRandomizer": 10, "LivingWithSen": false,
+				"SenScheduleRandomizer": 10,
 				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
 			}
 		},
@@ -344,7 +344,7 @@
 					2300 21 83 2 sens_read
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 11, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 11 }
 		},
 //---Schedule 12---//
 		{
@@ -364,7 +364,7 @@
 					2100 23 7/2300 10 7
 				",
 			},
-			"When": {  "SenScheduleRandomizer": 12, "LivingWithSen": false }
+			"When": {  "SenScheduleRandomizer": 12 }
 		}
 	]
 }

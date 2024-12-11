@@ -11,9 +11,11 @@
                     "AcceptGift_category_flowers": "{{i18n:Gifts.SenS.Cat.Flowers}}",
                     "AcceptGift_category_gem": "{{i18n:Gifts.SenS.Cat.Gems}}",
                     "AcceptGift_category_junk": "{{i18n:Gifts.SenS.Cat.Trash}}",
+                    "AcceptGift_book_item": "{{i18n:Gifts.SenS.Cat.Book}}",
 
                     //Specific Gift Response
                     "AcceptGift_(O)StardropTea": "{{i18n:Gifts.SenS.StardropTea}}",
+                    "AcceptGift_(O)Book_Void": "{{i18n:Gifts.SenS.MonsterCompendium{{RelationshipTokens}}}}",
                     "AcceptGift_(O)418": "{{i18n:Gifts.SenS.Crocus}}",
                     "AcceptGift_(O)203": "{{i18n:Gifts.SenS.StrangeBun}}",
                     "AcceptGift_(O)308": "{{i18n:Gifts.SenS.VoidMayo}}",

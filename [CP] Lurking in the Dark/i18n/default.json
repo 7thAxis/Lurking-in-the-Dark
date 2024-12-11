@@ -281,8 +281,7 @@
 "Rand.SenS.Expression.4": "$a",
 "Rand.SenS.Expression.5": "$h",
 
-
-// Relationship & Introduction
+// Relationship
 "Core.SenS.Divorced": "%Sen looks away from you. He seems depressed.",
 "Core.SenS.BreakUp": "...?$u#$b#Y-you want to break our partnership off...?$s#$b#I-I understand. I was foolish for thinking a relationship between a human and a Shadow could ever work.$10",
 
@@ -499,11 +498,12 @@
 "Core.SenS.Summer.Day.4.Event": "So your kind rides water waves on boards for fun?$6#$b#That sounds quite dangerous!$u#$e#Though... I suppose it's no more dangerous than me attending tomorrow.$8", //Surfing
 "Core.SenS.Summer.Day.19.Event": "Are you excited to see the fireworks tomorrow, @?$h#$b#I'm quite nervous about loud noises, but I can't resist seeing such a colorful spectacle.$8", //Fireworks
 "Core.SenS.Fall.Day.2.Event": "Tomorrow's the Marketpalooza! Are you excited?$h#$b#I better get my cloak together so I don't miss out on any great deals.$h", //Marketpalooza
-"Core.SenS.Fall.Day.19": "There will be a massive gathering up on the Ridge tomorrow.#$b#I seldom go up there, but I'm going to make the treck to see what it's all about.$h", //Gathering
-"Core.SenS.Winter.Day.12": "Tomorrow's the love festival! Your kind has such extravagant ways of displaying your affection.$h#$b#It's quite endearing and has really rubbed off on me.$h", //Love
-"Core.SenS.Winter.Day.27": "Tomorrow's the event with the massive bonfire.#$b#I'll have to be careful not to get too close or I might burn up on the spot!$u", //Ember
+"Core.SenS.Fall.Day.19.Event": "There will be a massive gathering up on the Ridge tomorrow.#$b#I seldom go up there, but I'm going to make the treck to see what it's all about.$h", //Gathering
+"Core.SenS.Winter.Day.12.Event": "Tomorrow's the Love Festival! Your kind has such extravagant ways of displaying your affection.$h#$b#It's quite endearing and has really rubbed off on me.$h", //Love
+"Core.SenS.Winter.Day.27.Event": "Tomorrow's the event with the massive bonfire.#$b#I'll have to be careful not to get too close or I might burn up on the spot!$u", //Ember
 
 //CONVERSATION TOPICS
+"Core.SenS.SenIntroduction": "O-oh.. you're the person I met in the mines, aren't you?$u#$b#I-I promise that I come in peace!$u#$b#I hope that we will be able to get along... I came to the surface to learn more about your world.$8",
 "Core.SenS.SenMet": "O-oh.. you're the person I met in the mines, aren't you?$u#$b#I-I promise that I come in peace!$u#$e#I hope that we will be able to get along... I came to the surface to learn more about your world.$8",
 "Core.SenS.DreamReveal": "Humans and Shadowfolk... Do you think we could someday co-exist?#$b#With time, care, and patience I think it's a future we can achieve.$h",
 "Core.SenS.ShadowPlay": "%Sen smells kinda funny.#$b#...What's that look for?$6#$b#Oh! Right, humans find the smell of garbage off putting, don't they?$8",
@@ -514,6 +514,8 @@
 "Core.SenS.TheConfrontation": "Goodness... that meet-up went better than I could have ever imagined!$h#$b#I honestly didn't expect Skrell to warm up to you so quickly.$7#$b#Well... warm up to you as much as a grumpy old man can, hehe.$12",
 "Core.SenS.SkrellEpilogue": "...Skrell visited you?$u#$b#I'd be lying if I said I wasn't curious to know what you two talked about.$6#$b#I won't pry of course. I'm simply thrilled that he's giving you a chance.$h",
 "Core.SenS.SensFlowers": "I hope something beautiful blooms from the seeds thrown into the ocean breeze.$l",
+"Core.SenS.SenPortrait": "Did you.... purchase a photo of me?$6#$b#Where on earth did that shopkeeper even get that?! Eeek!$u#$b#A million questions aside... Goodness I sure am adorable, aren't I?$h#$b#If only you could have seen me when I was just a little Senlet.$l#$action AddMail Current DitR_M_SenPortrait received",
+"Core.SenS.SenBabyPhoto": "You... purchased a photo of me as a small child?$6#$b#Okay now I am FREAKED!$u#$b#How!?!? Where did the shopkeeper get that?! AAAAAAAAAA!!!!????$9#$b#...#$b#I sure was adorable though, wasn't I?$l",
 "Core.SenS.JojaBegin": "I've overheard that the rundown old building is being turned into a warehouse...$s#$b#I will miss it. I spent much time exploring in there...$s#$e#I wonder what will become of the poor little junimos...?$s",
 "Core.SenS.ccBegin": "I've overheard that you're going to try and repair that old rundown building!$h#$b#I'm a bit disappointed that I won't be able to explore there anymore, but that's okay.$8#$e#I'm excited that the junimos will get to finally return home.$h",
 "Core.SenS.ccBus": "So that old bus is working again, huh?#$b#When I first heard it start, it gave me quite the scare.$8#$e#I don't know why, but it reminds me of a giant wild animal.$8",
@@ -534,6 +536,15 @@
 "Core.SenS.LucikielRepIncrease": "It makes me incredibly happy that Lucikiel is adjusting into your society.$h#$b#It gives me hope that perhaps one day, I can as well...$l",
 "Core.SenS.JulietGremlin": "I've noticed a new dog in town! She's so very fluffy and cute.$7#$b#I wonder if she'd let me give her head pats.$h#$e#Animals tend to be a bit apprehensive towards me at first...$8",
 "Core.SenS.SterlingTrash": "During my nightly routine of rummaging in the trash, I found a nasty surprise.$u#$b#I'd... rather not talk about it.$a#$e#It was bad enough that Krobus and I decided to stop trash-picking for the night.$8",
+
+"Core.SenS.GreenRain": "Isn't the rain unusual today? It seems to have the whole town in an utter tizzy.$6#$b#I do beleive they're overreacting, however. I've seen far stranger down below.$8",
+"Core.SenS.GreenRain2": "I do wonder what causes this green phenomenon... Do you have any theories, @?$6#$b#I for one have no ideas! All I know is, the moss off the trees is simply delicious.$h#$b#Want some?[Moss]$7",
+"Core.SenS.GreenRainFinished": "Oh, it seems the strange rain has ended. Have the townsfolk settled down yet?$h#$b#If they thought that was strange, they should visit the mines...$8#$b#Why is there a castle full of skeletons down there?$6",
+
+"Core.SenS.WelcomeToPride": "Today feels quite colorful, wouldn't you say?$h#$b#I feel like filling in a coloring book and using the brightest colors possible! Care to join me for a coloring session?$7#$b#Sorry if my markers are a tad dried up.$8",
+"Core.SenS.PrideSeasonStart": "Hmhmhm.~ Everyone seems so colorful and bustling today.$h#$b#I should sneak a paper and see what all the hub-bub is about.$h",
+"Core.SenS.PrideSeasonGift": "I found a colorful cookie in a mailbox earlier!$h#$b#I was sooo very tempted to take it, but I didn't want to ruin anyone's day.$8#$b#Now I really want a cookie.$s#$action AddMail Current DitR_M_SenPrideCookie received",
+"Core.SenS.HatMouseTheAlly": "I read that in some parts of the world, folks are mistreated for having identities outside of the social standard.$s#$b#What terrible, closed-minded behavior!$a#$b#All people should be respected for who they are, not packed into a tiny box.$s",
 
 //CFD
 "Core.SenS.Dumpster": "Hey! That was my trash can!$u",
@@ -582,6 +593,7 @@
 "Gifts.SenS.Cat.Flowers": "Oh wow, thank you @!$h#$b#I simply love flowers... They brighten up even the gloomiest of days.$l",
 "Gifts.SenS.Cat.Gems": "Oh, how shiny!$7#$b#Thank you so much, @. I'm going to polish this up and put it on display.$h",
 "Gifts.SenS.Cat.Trash": "Oh this is a neat find, @!$h#$b#I often find these kinds of things while rummaging in the trash. $h",
+"Gifts.SenS.Cat.Book": "Oh, a book for me?! Thank you so so so so so much, @!$7#$b#I'm going to go and read this right away, this is so thoughtful.$h",
 "Gifts.SenS.Crocus": "Oh my goodness...!! The crocus is my favorite flower!$11#$b#It was the first kind I found when I came to the surface.$l#$b#A gorgeous bloom peeking through the snow, giving me hope for a brighter tomorrow...$l",
 "Gifts.SenS.StrangeBun": "Oh my, this is quite a delicacy among shadows!$7#$b#How did you get your hands on the recipe?$h",
 "Gifts.SenS.VoidMayo": "Mmm... I love this stuff!$h#$b#It makes a great topping for any cave fish sandwich!$h",
@@ -637,6 +649,7 @@
 "Gifts.SenS.Sweetener": "Oh...! This is like liquid sugar incarnate!$h#$b#A simply divine taste gifted from nature. Thanks, @!$7",
 "Gifts.SenS.Coffee": "Oh yum, coffee! This will give me tons of energy for my next project.$h#$b#Maybe a little too much, hehe.$8",
 "Gifts.SenS.StardropTea": "Sniff...Sniff...$l#$b#Oh that smells absolutely delightful, @!$7#$b#I'll drink this along with a good book, thank you!$h",
+"Gifts.SenS.MonsterCompendium": "Hm, what's this? A book on monsters?$h#$b#Oh! There's Shadowfolk in here.$6#$b#...#$b#Is that {{SenKrobusReference}}?$6",
 
 "Gifts.SenS.Crocus.Birthday": "...!!$11#$b#You... you remembered my birthday, and my favorite flower!$7#$b#@, you don't understand. This means the world to me. Thank you so much.$l",
 "Gifts.SenS.Cloth.Birthday": "@, this is amazing! Thank you for the cloth, I've been in dire need of some.$h#$b#Getting it from you on my birthday is even better!$h",
@@ -687,13 +700,6 @@
 ╚═╝     ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝╚══════╝
 */
 
-"Core.SenS.Locations.CommunityCenter.PrideFest.1": "Hello, @! Enjoying the party?$h#$b#I keep sneaking colorful goodies from the kitchen. They all taste delightful.$7#$b#You know, I keep overhearing chatter about body forms folks find the most attractive.$6#$b#I don't think I quite understand that concept. Perhaps I should read a book on human attraction.$6",
-"Core.SenS.Locations.CommunityCenter.PrideFest.2": "Human gender fascinates me. Among our kind we are all considered \"non-binary\" by human standards.$6#$b#Learning human language was tricky as it introduced me to the foreign concept of gender identity.$8#$b#After much discussion with Krobus I found I resonated the most with masculine pronouns, so here we are!$h",
-
-"Core.SenS.WelcomeToPride": "Today feels quite colorful, wouldn't you say?$h#$b#I feel like filling in a coloring book and using the brightest colors possible! Care to join me for a coloring session?$7#$b#Sorry if my markers are a tad dried up.$8",
-"Core.SenS.PrideSeasonStart": "Hmhmhm.~ Everyone seems so colorful and bustling today.$h#$b#I should sneak a paper and see what all the hub-bub is about.$h",
-"Core.SenS.PrideSeasonGift": "I found a colorful cookie in a mailbox earlier!$h#$b#I was sooo very tempted to take it, but I didn't want to ruin anyone's day.$8#$b#Now I really want a cookie.$s#$action AddMail Current DitR_M_SenPrideCookie received",
-"Core.SenS.HatMouseTheAlly": "I read that in some parts of the world, folks are mistreated for having identities outside of the social standard.$s#$b#What terrible, closed-minded behavior!$a#$b#All people should be respected for who they are, not packed into a tiny box.$s",
 
 //Sen festivals
 "Festivals.SenS.spring13.1": "....I am a normal person in an egg suit. Please carry on.$13",
@@ -728,17 +734,31 @@
 "Festivals.SenS.winter25.2": "Hohoho... I'm the real Santa Claus!$18#$b#That is a 100% truthful fact, I swear.$18",
 "Festivals.SenS.winter25.3": "I wish I could participate in the festivities...$18#$b#I could make so many lovely gifts for people!$18#$e#Maybe I should make the gifts anyway and sneak them into mailboxes.$18",
 
+//Passive Festivals
 "Festivals.SenS.NightMarket.1": "The night market sells many rare goods that are very helpful for costume design.#$b#Thankfully the characters there are so colorful, I blend right in hehe.",
 "Festivals.SenS.NightMarket.2": "Are you going to purchase anything from the market, @?#$b#You might have to wait a whole year if you pass on something you want.",
-"Festivals.SenS.NightMarket.3": "This is the one time of year I risk coming out and about.#$b#The market has too many useful goods for me to pass up on.",
-//Fireworks Festival
-"Festivals.SenS.summer20.1": "Is it really a good idea to sell fireworks to the general public?#$b#That sounds like a recipe for a forest fire.",
-"Festivals.SenS.summer20.2": "The loud explosion of fireworks terrifies me, yet I can't look away.#$b#The colors are truly a sight to behold.",
-"Festivals.SenS.summer20.3": "When you purchase fireworks I guess you can say you get a 'bang for your buck'.#$e#Heheh. Get it?#$b#Because fireworks explode?",
+"Festivals.SenS.NightMarket.3": "This is the one time of year I risk going out and about.#$b#The market has too many useful goods for me to pass up on.",
+
+"Festivals.SenS.TroutDerby.1": "Quite a few humans fishing out here today, aren't there?#$b#I couldn't quite contain my curiosity...",
+"Festivals.SenS.TroutDerby.2": "Trout, trout trout... I know little about this fish!#$b#I should do a little studying during my next library raid.",
+
+"Festivals.SenS.DesertFestival.1": "I'm curious about the blue haired girl's shop...#$b#Ah, must resist the urge to interact! I might be discovered.",
+"Festivals.SenS.DesertFestival.2": "It is so hot here... To hot.#$b#No, that's not the problem. It's too dry. Blegh.#$b#I read about this, why did I think coming here was a good idea?",
+
+"Festivals.SenS.SquidFestival.1": "Squids... the only squids I'm familiar with are \"Squid Kids\".#$b#I simply can't stand those guys. Always shooting fireballs at me...",
+"Festivals.SenS.SquidFestival.2": "Do these kinds of events impact the local population of the fish you're catching?#$b#Have fun, but be kind to nature.",
+
+"Festivals.SenS.PrideFest.1": "Hello, @! Enjoying the party?$h#$b#I keep sneaking colorful goodies from the kitchen. They all taste delightful.$7#$b#You know, I keep overhearing chatter about body forms folks find the most attractive.$6#$b#I don't think I quite understand that concept. Perhaps I should read a book on human attraction.$6",
+"Festivals.SenS.PrideFest.2": "Human gender fascinates me. Among our kind we are all considered \"non-binary\" by human standards.$6#$b#Learning human language was tricky as it introduced me to the foreign concept of gender identity.$8#$b#After much discussion with {{SenKrobusReference}} I found I resonated the most with masculine pronouns, so here we are!$h",
 
 "Festivals.SenS.FestivalOfTheMundane.1": "Oh...! This isn't the safest of places right now.$u#$b#If the shadows here catch on they'll...$s#$b#Just be careful!$u",
 "Festivals.SenS.FestivalOfTheMundane.2": "Shadows engaging with human culture...#$b#I hope humans can engage with our culture in the future.$l#$e#This festival gives me hope for a brighter tomorrow.$h",
 "Festivals.SenS.FestivalOfTheMundane.3": "Do you think humans see this event as mockery?#$b#To a degree it kind of is.$8",
+
+//Fireworks Festival
+"Festivals.SenS.summer20.1": "Is it really a good idea to sell fireworks to the general public?#$b#That sounds like a recipe for a forest fire.",
+"Festivals.SenS.summer20.2": "The loud explosion of fireworks terrifies me, yet I can't look away.#$b#The colors are truly a sight to behold.",
+"Festivals.SenS.summer20.3": "When you purchase fireworks I guess you can say you get a 'bang for your buck'.#$e#Heheh. Get it?#$b#Because fireworks explode?",
 
 //Ridgeside Gathering
 "Festivals.SenS.fall20.1": "Boys, girls...#$b#My kind doesn't particularly differentiate.#$e#It's fascinating to see how different our cultures are.",
@@ -1227,7 +1247,7 @@
 "Relationship.SenS.FunLeave.Platonic.3": "Time for a little outdoors adventure!$h#$b#Don't worry, I'll try not to stay out too late.$l",
 "Relationship.SenS.FunLeave.Platonic.4": "Off I go, out into the great outdoors!$h#$b#I'll be sure not to snack on any crops I pass.$12",
 "Relationship.SenS.FunLeave.Romantic.1": "I'm going to go out for a little walk. Care you join me, darling?$h#$e#I always welcome your company.$l",
-"Relationship.SenS.FunLeave.Romantic.2": "Be careful working on the farm today, {{RomanticNick}}.$h#$b#I'm heading into the valley to stretch my legs.$h",
+"Relationship.SenS.FunLeave.Romantic.2": "Be careful working on the farm today, {{RomanticNick}}.$h#$b#I'm heading into the forest to stretch my legs.$h",
 "Relationship.SenS.FunLeave.Romantic.3": "Time for a little sight seeing adventure.$h#$b#...Though, I don't have to go far to do that.$l",
 "Relationship.SenS.FunLeave.Romantic.4": "Keep an eye out for seagulls if you go to the beach today, {{RomanticNick}}.#$b#Last time I was there, they stole my slimeball sandwich!$a",
 

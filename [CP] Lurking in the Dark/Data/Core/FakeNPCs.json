@@ -26,7 +26,6 @@
                     "PurchasePrice": -1,
                     "SellPrice": 0,
                     "RequiredBuilding": "ILLEGAL! NO EBB ON YOUR FARM!",
-                    "Sound": "shadowpeep",
                     "Texture": "Characters/Ebb",
                     "UseFlippedRightForLeft": false,
                     "SpriteWidth": 16,
@@ -50,7 +49,7 @@
                     "PetMessage": [ "{{i18n:Core.FakeNPC.Skrell.Dialogue.1}}" ],
                     "HomeTileX": 19,
                     "HomeTileY": 18,
-                    //"Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12, WEATHER EastScarp_Village Sun"
+                    //"Condition": "7thAxis.DitR.CP.Events.SenS.10h.P3, ANY \"WEATHER EastScarp_Village Rain\" \"DAY_OF_WEEK Sun Sat\""
                 },
 
                 "LitD.Ebb_Cave": {
@@ -62,7 +61,7 @@
                     "PetMessage": [ "{{i18n:Core.FakeNPC.Ebb.Dialogue.1}}" ],
                     "HomeTileX": 19,
                     "HomeTileY": 18,
-                    //"Condition": "PLAYER_HAS_SEEN_EVENT Any SnS.Ch1.Mateo.12, WEATHER EastScarp_Village Sun"
+                    //"Condition": "7thAxis.DitR.CP.Events.SenS.10h.P3, ANY \"WEATHER EastScarp_Village Rain\" \"DAY_OF_WEEK Sun Sat\""
                 }
             }
         }

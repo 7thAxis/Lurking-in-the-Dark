@@ -95,8 +95,7 @@
 					2100 31 101 sens_wigglesit/
 					2300 21 83 2 sens_read
 				"
-			},
-			"When": { "LivingWithSen": false }
+			}
 		},
 		{
 			"LogName": "Sen Schedule SVE",
@@ -137,7 +136,7 @@
 					2300 34 25 2
 				"
 			},
-			"When": { "LivingWithSen": false, "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
 		}
 	]
 }

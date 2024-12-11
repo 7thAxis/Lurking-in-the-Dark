@@ -62,29 +62,22 @@
                 "SenKillFollowup": "{{i18n:Core.SenS.SenKillFollowup}}",
 
                 "spring_1_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.1}}",
-                "spring_12_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.12}}",
                 "spring_20_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.20}}",
-                "spring_23_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.23}}",
                 "spring_28_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.28}}",
 
                 "summer_1_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.1}}",
-                "summer_10_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.10}}",
                 "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.19{{SenRandTokens}}}}",
-                "summer_27_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.27}}",
                 "summer_28_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.28}}",
 
                 "fall_1_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.1}}",
-                "fall_15_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.15}}",
-                "fall_26_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.26}}",
                 "fall_28_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.28}}",
 
                 "winter_1_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.1}}",
-                "winter_7_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.7}}",
                 "winter_13_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.13}}",
-                "winter_24_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.24}}",
                 "winter_28_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.28}}",
 
                 //Conversation Topics
+                "DitR_CT_SenIntroduction": "{{i18n:Core.SenS.SenIntroduction}}",
                 "DitR_CT_SenMet": "{{i18n:Core.SenS.SenMet}}",
                 "DitR_CT_DreamReveal": "{{i18n:Core.SenS.DreamReveal}}",
                 "DitR_CT_ShadowPlay": "{{i18n:Core.SenS.ShadowPlay}}",
@@ -95,6 +88,8 @@
                 "DitR_CT_TheConfrontation": "{{i18n:Core.SenS.TheConfrontation}}",
                 "DitR_CT_SkrellEpilogue": "{{i18n:Core.SenS.SkrellEpilogue}}",
                 "DitR_CT_SensFlowers": "{{i18n:Core.SenS.SensFlowers}}",
+                "DitR_CT_SenPortrait": "{{i18n:Core.SenS.SenPortrait}}",
+                "DitR_CT_SenBabyPhoto": "{{i18n:Core.SenS.SenBabyPhoto}}",
                 "joja_Begin": "{{i18n:Core.SenS.JojaBegin}}",
                 "cc_Begin": "{{i18n:Core.SenS.ccBegin}}",
                 "cc_Bus": "{{i18n:Core.SenS.ccBus}}",
@@ -113,6 +108,9 @@
                 "ReputationIncreased": "{{i18n:Core.SenS.LucikielRepIncrease}}",
                 "JulietGremlin": "{{i18n:Core.SenS.JulietGremlin}}",
                 "SterlingTrash": "{{i18n:Core.SenS.SterlingTrash}}",
+                "GreenRain": "{{i18n:Core.SenS.GreenRain}}",
+                "GreenRain2": "{{i18n:Core.SenS.GreenRain2}}",
+                "GreenRainFinished": "{{i18n:Core.SenS.GreenRainFinished}}",
                 "MovieInvitation": "{{i18n:Movies.SenS.MovieInviteSuccess}}",
                 
                 //Movie rejection
@@ -154,66 +152,17 @@
             }
         },
         {
-            "LogName": "Dialogue - Ridgeside Festival",
+            "LogName": "Sen Intro CT Activation",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
+            "Target": "Data/TriggerActions",
             "Entries": {
-                "fall_19_{{YearCheck}}": "{{i18n:Core.SenS.Fall.d19}}",
-                "winter_27_{{YearCheck}}": "{{i18n:Core.SenS.Winter.d27}}"
-            },
-            "When": { "HasMod: |contains=Rafseazz.RSVCP": true }
-        },
-        {
-            "LogName": "Dialogue - Surfing Festival",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
-            "Entries": {
-                "summer_4_{{YearCheck}}": "{{i18n:Core.SenS.Summer.d4.Event}}"
-            },
-            "When": { "HasMod: |contains=spacechase0.SurfingFestival": true }
-        },
-        {
-            "LogName": "Dialogue - Fashion Festival",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
-            "Entries": {
-                "spring_18_{{YearCheck}}": "{{i18n:Core.SenS.Spring.d18.Event}}"
-            },
-            "When": {
-                "HasMod: |contains=UNA.FF.CP": true,
-                "HasSeenEvent: anyPlayer |contains= 1740402, 1740403, 1740404": true,
-                "HasReadLetter: anyPlayer |contains=FashionShowLetter": true
+                "DitR_TriggerActions.SenIntroActivation": {
+                    "Trigger": "DayStarted",
+                    "Id": "DitR.TriggerActions.SenIntroActivation",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.0h, PLAYER_FRIENDSHIP_POINTS Current SenS 0 1",
+                    "Actions": [ "AddConversationTopic DitR_CT_SenIntroduction 999" ]
+                }
             }
-        },
-        {
-            "LogName": "Dialogue - Love Festival",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
-            "Entries": {
-                "winter_12_{{YearCheck}}": "{{i18n:Core.SenS.Winter.d12}}"
-            },
-            "When": { "HasMod: |contains=AvalonMFX.LoveFestival": true }
-        },
-        {
-            "LogName": "Dialogue - Marketpalooza",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
-            "Entries": {
-                "fall_2_{{YearCheck}}": "{{i18n:Core.SenS.Fall.d2.Event}}"
-            },
-            "When": {
-                "HasMod: |contains=Fellowclown.PC": true,
-                "HasFlag|contains=Fellowclown.PC_Marketpalooza.Mail": true
-            }
-        },
-        {
-            "LogName": "Dialogue - Fireworks Festival",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
-            "Entries": {
-                "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.d19.Event}}"
-            },
-            "When": { "HasMod: |contains=violetlizabet.FireworksFestival": true }
         }
     ]
 }

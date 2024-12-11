@@ -9,11 +9,23 @@
     }
 },
 {
-    "LogName": "PitV Dialogue",
+    "LogName": "Passive Festival Dialogue",
     "Action": "EditData",
     "Target": "Characters/Dialogue/SenS",
-    "Entries": 	{ 
-        "sapphicsaph_pitv.CommunityCenterPride_64_16": "{{i18n:Core.SenS.Locations.CommunityCenter.PrideFest.{{Random:{{Range: 1, 2}}}}}}",
+    "Entries": 	{
+
+        
+        "Forest_112_36": "{{i18n:Festivals.SenS.TroutDerby.{{Random:{{Range: 1, 2}}}}}}", //TB
+        "DesertFestival_19_59": "{{i18n:Festivals.SenS.DesertFestival.{{Random:{{Range: 1, 2}}}}}}", //DF
+        "Beach_20_21": "{{i18n:Festivals.SenS.SquidFestival.{{Random:{{Range: 1, 2}}}}}}", //SF
+
+        //NM
+        "winter_15_{{YearCheck}}": "{{i18n:Festivals.SenS.NightMarket.{{Random:{{Range: 1, 3}}}}}}", 
+        "winter_16_{{YearCheck}}": "{{i18n:Festivals.SenS.NightMarket.{{Random:{{Range: 1, 3}}}}}}", 
+        "winter_17_{{YearCheck}}": "{{i18n:Festivals.SenS.NightMarket.{{Random:{{Range: 1, 3}}}}}}", 
+
+        //PITV
+        "sapphicsaph_pitv.CommunityCenterPride_64_16": "{{i18n:Festivals.SenS.PrideFest.{{Random:{{Range: 1, 2}}}}{{SenKrobusReference}}}}",
         "WelcomeToPridePITV": "{{i18n:Core.SenS.WelcomeToPride}}",
         "PrideSeasonStartPITV": "{{i18n:Core.SenS.PrideSeasonStart}}",
         "PrideSeasonGiftPITV": "{{i18n:Core.SenS.PrideSeasonGift}}",
@@ -25,9 +37,94 @@
     "Action": "EditData",
     "Target": "Characters/Dialogue/SenS",
     "Entries": 	{ 
-        "fall_27": "{{i18n:Festivals.SenS.FestivalOfTheMundane.{{Random:{{Range: 1, 3}}}}}}"
+        "fall_27_{{YearCheck}}": "{{i18n:Festivals.SenS.FestivalOfTheMundane.{{Random:{{Range: 1, 3}}}}}}"
     },
     "When": { "HasMod: |contains=MouseyPounds.ShadowFestival": true  }
+},
+
+//Festivals: Day Before
+
+{
+    "LogName": "/Festivals - Day Before",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": 	{ 
+        "spring_12_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.12}}", //Egg
+        "spring_23_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.23}}", //Flower
+
+        "summer_10_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.10}}", //Luau
+        "summer_27_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.27}}", //Jelly
+
+        "fall_15_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.15}}", //Fair
+        "fall_26_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.26}}", //Spirits
+
+        "winter_7_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.7}}", //Ice
+        "winter_24_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.24}}" //WinterStar
+    }
+},
+//There... has to be some way to simplify these ugly patches
+{
+    "LogName": "Dialogue - Ridgeside Festival",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": {
+        "fall_19_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.19.Event}}",
+        "winter_27_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.27.Event}}"
+    },
+    "When": { "HasMod: |contains=Rafseazz.RSVCP": true }
+},
+{
+    "LogName": "Dialogue - Surfing Festival",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": {
+        "summer_4_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.4.Event}}"
+    },
+    "When": { "HasMod: |contains=spacechase0.SurfingFestival": true }
+},
+{
+    "LogName": "Dialogue - Fashion Festival",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": {
+        "spring_18_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.18.Event}}"
+    },
+    "When": {
+        "HasMod: |contains=UNA.FF.CP": true,
+        "HasSeenEvent: anyPlayer |contains= 1740402, 1740403, 1740404": true,
+        "HasReadLetter: anyPlayer |contains=FashionShowLetter": true
+    }
+},
+{
+    "LogName": "Dialogue - Love Festival",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": {
+        "winter_12_{{YearCheck}}": "{{i18n:Core.SenS.Winter.Day.12.Event}}"
+    },
+    "When": { "HasMod: |contains=AvalonMFX.LoveFestival": true }
+},
+{
+    "LogName": "Dialogue - Marketpalooza",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": {
+        "fall_2_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.2.Event}}"
+    },
+    "When": {
+        "HasMod: |contains=Fellowclown.PC": true,
+        "HasFlag|contains=Fellowclown.PC_Marketpalooza.Mail": true
+    }
+},
+{
+    "LogName": "Dialogue - Fireworks Festival",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/SenS",
+    "Entries": {
+        "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.19.Event}}"
+    },
+    "When": { "HasMod: |contains=violetlizabet.FireworksFestival": true }
 }
+
 ]
 }

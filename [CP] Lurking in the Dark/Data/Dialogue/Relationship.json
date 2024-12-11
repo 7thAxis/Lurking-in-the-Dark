@@ -70,9 +70,7 @@
                 "Utility.cs.5375": "{{i18n:Relationship.SenS.MarriageEvent.2{{SenRomanticNick}}}}", //Pronounce u partners
                 "Utility.cs.5377": "{{i18n:Relationship.SenS.MarriageEvent.2}}" //Pronounce u partners
             },
-            "When": {
-                "Relationship:SenS": "Engaged"
-            }
+            "When": { "Relationship:SenS": "Engaged" }
         },
         {
             "LogName": "Relationship Dialogue",
@@ -81,7 +79,7 @@
             "Entries": {
                 //Location
                 "patio_SenS": "{{i18n:Relationship.SenS.Patio.{{SenPartnershipRoute}}.{{Random:{{Range: 1, 4}}}}{{SenRomanticNick}}}}",
-                "spouseRoom_SenS": "{{i18n:Relationship.SenS.SpouseRoom.{{SenPartnershipRoute}}.{{Random:{{Range: 1, 4}}}}{{SenRomanticNick}}}}",
+                "spouseRoom_SenS": "{{i18n:Relationship.SenS.SpouseRoom.{{SenPartnershipRoute}}.{{Random:{{Range: 1, 4}}}}{{SenRomanticNick}}{{RelationshipTokens}}}}",
                 "funLeave_SenS": "{{i18n:Relationship.SenS.FunLeave.{{SenPartnershipRoute}}.{{Random:{{Range: 1, 4}}}}{{SenRomanticNick}}}}",
                 "funReturn_SenS": "{{i18n:Relationship.SenS.FunReturn.{{SenPartnershipRoute}}.{{Random:{{Range: 1, 4}}}}{{SenRomanticNick}}}}",
 
@@ -110,7 +108,7 @@
                 "Indoor_Day_4": "{{i18n:Relationship.SenS.IndoorDay.6.{{SenPartnershipRoute}}{{SenRomanticNick}}}}",
                 "Indoor_Day_5": "{{i18n:Relationship.SenS.IndoorDay.7.{{SenPartnershipRoute}}{{SenRomanticNick}}}}",
 
-                "Indoor_Night_SenS": "{{i18n:Relationship.SenS.IndoorNight.1.{{Random:{{Range: 1, 5}}}}.{{SenPartnershipRoute}}{{SenRomanticNick}}}}",
+                "Indoor_Night_SenS": "{{i18n:Relationship.SenS.IndoorNight.1.{{Random:{{Range: 1, 5}}}}.{{SenPartnershipRoute}}{{SenRomanticNick}}{{RelationshipTokens}}}}",
                 "Indoor_Night_0": "{{i18n:Relationship.SenS.IndoorNight.2{{SenRomanticNick}}}}",
                 "Indoor_Night_1": "{{i18n:Relationship.SenS.IndoorNight.3{{SenRomanticNick}}}}",
                 "Indoor_Night_2": "{{i18n:Relationship.SenS.IndoorNight.4{{SenRomanticNick}}}}",

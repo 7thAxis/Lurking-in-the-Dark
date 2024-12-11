@@ -76,6 +76,19 @@
                 }
             ]
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28", //moonlight jelly
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "SenS 51 25 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+        },
 //----------------SDV FAIR------------------//
         {
             "Action": "EditData",
@@ -95,8 +108,14 @@
             "TextOperations": [
                 {
                     "Operation": "Append",
-                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
                     "Value": "SenS 49 32 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "SenS 27 30 2",
                     "Delimiter": "/"
                 }
             ],
