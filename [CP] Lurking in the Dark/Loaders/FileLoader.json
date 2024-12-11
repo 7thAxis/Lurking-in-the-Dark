@@ -13,7 +13,7 @@
         //loads based on events or flags
         {
 			"Action": "Include",
-			"FromFile": "Data/Schedules/Defaults.json, Data/Schedules/{{Sen Schedule Type}}.json",
+			"FromFile": "Data/Schedules/Defaults.json, Data/Schedules/{{Schedule Type}}.json",
             "When": { "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.0h": true }
 		},
         {

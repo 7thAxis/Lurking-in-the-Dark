@@ -33,14 +33,14 @@
         },
 
         //BEHAVIORS
-        "Sen Schedule Type": {
+        "Schedule Type": {
             "AllowValues": "Dynamic, Simplified",
             "Default": "Dynamic",
             "AllowBlank": false,
             "Description": "Whether Sen will visit different random locations every day (Dynamic) or follow a set schedule (Simplified).",
             "Section": "NPC Behavior"
         },
-        "Sen Romantic Nickname": {
+        "Romantic Nickname": {
             "Default": "Starshine",
             "AllowBlank": false,
             "Description": "Sen's romantic nickname for the player.",
@@ -69,7 +69,7 @@
             "Description":"Recolors existing Shadowfolk overworld sprites to match Sen's style.",
             "Section": "Graphics"
         },
-        "Sen Spouse Room": {
+        "Spouse Room": {
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
@@ -173,7 +173,7 @@
         },
         {
             "Name": "SenRomanticNick",
-            "Value": "|RomanticNick={{Sen Romantic Nickname}}",
+            "Value": "|RomanticNick={{Romantic Nickname}}",
             "When": { "IsDitRInstalled": false }
         },
             //--SEN OVERRIDE DIALOGUE GENERATION--
@@ -231,12 +231,12 @@
         {
             "Name": "SenSpouseRoom",
             "Value": "SenSpouseRoom",
-            "When": { "Sen Spouse Room": true, "IsDitRInstalled": false }
+            "When": { "Spouse Room": true, "IsDitRInstalled": false }
         },
         {
             "Name": "SenSpouseRoom",
             "Value": "7thAxis.LitD/SpouseRoomEmpty",
-            "When": { "Sen Spouse Room": false, "IsDitRInstalled": false }
+            "When": { "Spouse Room": false, "IsDitRInstalled": false }
         }
      ],
 

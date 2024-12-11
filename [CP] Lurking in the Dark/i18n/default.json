@@ -10,7 +10,6 @@
 
 //Gameplay
 "Config.section.Gameplay.name": "Gameplay",
-"Config.section.Graphics.name": "Graphics",
 "Config.Shadow Stat Changes.name": "Shadow Stat Changes",
 "Config.Shadow Stat Changes.description": "Allows for the changing of Shadow stats to no longer harm the player after completing Sen's storyline.",
 "Config.Pacifist Mode.name": "Pacifist Mode",
@@ -22,20 +21,23 @@
 
 //NPC Behavior
 "Config.section.NPC Behavior.name": "NPC Behavior",
-"Config.Sen Schedule Type.name": "NPC Schedule Type",
-"Config.Sen Schedule Type.description": "Whether Sen will visit random locations every day (Dynamic) or follow a set schedule (Simplified).",
-"config.Sen Schedule Type.values.Dynamic": "Dynamic",
-"config.Sen Schedule Type.values.Simplified": "Simplified",
-"Config.Sen Romantic Nickname.name": "Sen Romantic Nickname",
-"Config.Sen Romantic Nickname.description": "Sen's romantic nickname for the player.",
+"Config.Schedule Type.name": "NPC Schedule Type",
+"Config.Schedule Type.description": "Whether Sen will visit random locations every day (Dynamic) or follow a set schedule (Simplified).",
+"config.Schedule Type.values.Dynamic": "Dynamic",
+"config.Schedule Type.values.Simplified": "Simplified",
+"Config.Romantic Nickname.name": "Romantic Nickname",
+"Config.Romantic Nickname.description": "Sen's romantic nickname for the player.",
 
 //Graphics
+"Config.section.Graphics.name": "Graphics",
 "Config.Have Shadow Kids.name": "Have Shadow Kids",
 "Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
 "Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
 "Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
-"Config.Sen Spouse Room.name": "Sen Spouse Room",
-"Config.Sen Spouse Room.description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself. (Requires game restart)",
+"Config.Spouse Room.name": "Spouse Room",
+"Config.Spouse Room.description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself. (Requires game restart)",
+"Config.Portrait Style.name": "Portrait Style",
+"Config.Portrait Style.description": "Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing)",
 
 /*
  ██████╗ ██████╗ ██████╗ ███████╗
@@ -45,6 +47,11 @@
 ╚██████╗╚██████╔╝██║  ██║███████╗
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
 */
+
+//Mail
+"Core.SenS.Mail.ShadowVisitation.Title": "Call of the Void",
+"Core.SenS.Mail.ShadowVisitation": "Human. ^^I am begrudgingly leaving this note to inform you...^^We will be visiting Sen's cavern when it rains and on weekends. Consider this an olive branch.^^If you wish to interact with us... we shall be there.  ^^   -Skrell (hi, Ebb was here too!)",
+
 //Names
 "Core.SenS.Friend": "friend",
 "Core.SenS.Name.Sen": "Sen",
@@ -424,7 +431,7 @@
 "Core.SenS.LateHeart.43": "Oh hello, @!$h#$q 1077041/1077042 SenFavoriteFollowup# Do you have a favorite thing? #$r 1077042 0 SenFavoriteThing#Yeah, my favorite thing is... #$r 1077041 0 SenNoFavoriteThing#No, I don't have a favorite thing.",
     "Core.SenS.SenFavoriteThing": "Oh, %favorite huh? Good to know!$h#$b#I will be keeping that in mind.$12",
     "Core.SenS.SenNoFavoriteThing": "Surely there's something you like a lot!#$b#You're a strange one, @.$8",
-    "Core.SenS.SenFavoriteFollowup": "$p 1077042# I may or may not be crocheting {{CrocItem}}with a picture of %favorite on it. I wonder who it's for?$12|I think I might crochet you {{CrocItem}}. Would you like that?$h",
+    "Core.SenS.SenFavoriteFollowup": "$p 1077042# I may or may not be crocheting {{CrocItem}} with a picture of %favorite on it. I wonder who it's for?$12|I think I might crochet you {{CrocItem}}. Would you like that?$h",
 "Core.SenS.LateHeart.44": "Oh, @, hello! #$q 1077031/1077032 SenKillFollowup# Be honest with me, @... Have you slain any of my people? #$r 1077031 10 SenNoKill#No, not a single one. #$r 1077031 10 SenSelfDefense#Yes, but only in self defense. #$r 1077031 10 SenAccident#Yes, but it was an accident. #$r 1077032 -250 SenSilence#...",
     "Core.SenS.SenNoKill": "You never cease to astound me, @.$7#$b#I truly believe that you are the guiding light my people needs.$l",
     "Core.SenS.SenSelfDefense": "I completely understand that. My people can be incredibly hostile...$8#$b#When backed into a corner, it's kill or be killed.$s",
@@ -571,8 +578,39 @@
 "Core.SenS.KrobusCommentary.4": "%revealtasteKrobus773 Did you know that life elixirs don't heal us shadows?#$b#Our bodies are made up of different matter, so they actually have an inverse effect on us.$8#$b#If anything, they are like a poison.$s",
 
 //FAKE NPCS
-"Core.FakeNPC.Skrell.Dialogue.1": "Leave me alone, you absolute cretin.",
-"Core.FakeNPC.Ebb.Dialogue.1": "um... ignore Skrell... he stubbed his toe on the way in.$2",
+"Core.FakeNPC.Skrell.Dialogue.1": "It's you... Are you behaving yourself in the mines?#$b#Remember what I told you... Or else.$1",
+"Core.FakeNPC.Skrell.Dialogue.2": "Hm? You question the horns. I see.#$b#Sen and I are Shadow Nobles. There are more than just Shamans, Brutes and Snipers...$1#$b#They are our fighters.",
+"Core.FakeNPC.Skrell.Dialogue.3": "Sen talks about you incessantly... I cannot say I understand it.$1#$b#What is it about you?#$b#I suppose you do carry the same energy of change as... never mind.$1",
+"Core.FakeNPC.Skrell.Dialogue.4": "You remind me of... someone.$1#$b#If that is fortunate for you or not, I have yet to make up my mind...#$b#Tread carefully.$1",
+"Core.FakeNPC.Skrell.Dialogue.5": "...I must admit, I do enjoy the surface.$2#$b#There is far more foliage to which I can study.#$b#What? Yes, botany is my \"hobby\" as you humans call it.$1",
+"Core.FakeNPC.Skrell.Dialogue.6": "Did I not teach Sen how to keep his spaces tidy?$3#$b#I did not raise him in a slime hutch.#$b#He still acts like a blasted child...$1",
+"Core.FakeNPC.Skrell.Dialogue.7": "I am impressed with the garden Sen has grown.$1#$b#You... helped him with it, yes?#$b#Thank you... I suppose.$2",
+"Core.FakeNPC.Skrell.Dialogue.8": "How do I know how to speak human langage?#$b#Tch. Don't be conceited, you are not the first human I've met.$1",
+"Core.FakeNPC.Skrell.Dialogue.9": "Fiddlehead Fern is a delicacy among you humans it seems.$3#$b#Strange, I've always found it quite... bland.",
+"Core.FakeNPC.Skrell.Dialogue.10": "Sen has taken a special liking to pumpkins, has he not?#$b#He always did like the color orange...",
+"Core.FakeNPC.Skrell.Dialogue.11": "Ebb has been utilizing a strange human device to keep track of the weekends and weather...#$b#I cannot figure out how the blasted thing works. I think I'd rather smash it.$1",
+"Core.FakeNPC.Skrell.Dialogue.12": "So Sen has made friends with Krobus... I always did wonder where that one went.$3#$b#He disappeared from the mines one day without a trace.#$b#A strange era we are entering, Shadowfolk leaving the mines.$1",
+"Core.FakeNPC.Skrell.Dialogue.13": "Hm? Do I enjoy my life beneath the surface?$3#$b#...#$b#It isn't a bad life. I am needed there.$1",
+"Core.FakeNPC.Skrell.Dialogue.14": "Who is Ebb?#$b#He is my rock. Literally and figuratively.$3#$b#Be kind to him or I will ensure your eternal suffering.$1",
+"Core.FakeNPC.Skrell.Dialogue.15": "You truly care for Sen, don't you?#$b#Making your way through that forsaken crystal maze just to reach here... you must.$3",
+"Core.FakeNPC.Skrell.Dialogue.16": "I have been around since the middle era of the Elemental Wars...#$b#Yet despite my participation, I know less about it than I would like.$1#$b#It was a complex event in our history spanning many centuries and lands.#$b#Much of the how and why has been lost.$1",
+
+"Core.FakeNPC.Ebb.Dialogue.1": "skrell is... um. don't mind him... he's been through a lot.#$b#so has sen... but he doesn't really remember.$2",
+"Core.FakeNPC.Ebb.Dialogue.2": "hm? oh, sorry, i don't talk a lot...#$b#i um. i like rocks and gems. i could tell you some facts.$3#$b#did you know amber is the softest gemstone? diamond is the hardest...$1",
+"Core.FakeNPC.Ebb.Dialogue.3": "oh... did you know that shadowfolk \"hatch\"?$3#$b#not from eggs, no... we hatch from stones imbued with void magic.$1#$b#sen was born from star shards.#$b#his mother was a diamond and Skrell was a fire opal.",
+"Core.FakeNPC.Ebb.Dialogue.4": "Sen... he uh, probably hasn't told you, huh?#$b#he lost his mother at a very young age.$2#$b#he can't remember her, but it hurts him that he never got to know her...$2",
+"Core.FakeNPC.Ebb.Dialogue.5": "this cave... it's the same one Diamond and...$2#$b#o-oh never mind, sorry, talking to myself.$2",
+"Core.FakeNPC.Ebb.Dialogue.6": "hm? what kinda shadow person am i?#$b#i'm a shaman, i just don't wear my mask very often.$1#$b#it reminds me of uh... bad times.$2",
+"Core.FakeNPC.Ebb.Dialogue.7": "Sen sure does read a lot. where does he get all these books from anyway...?$3#$b#he gets all anxious when i ask.$2",
+"Core.FakeNPC.Ebb.Dialogue.8": "i'm um... not a very good cook.#$b#uh, don't tell Skrell, but he's even worse.$1#$b#at least i can make a pretty good strange bun.",
+"Core.FakeNPC.Ebb.Dialogue.9": "who... are you exactly? from everything Sen has told us, you cause lots and lots of change.$3#$b#you're just like... um... nevermind.$2",
+"Core.FakeNPC.Ebb.Dialogue.10": "Skrell is my best friend in the entire world...#$b#don't let his mean exterior fool you, inside he's a big teddy bear.$1#$b#...$2#$b#a teddy bear with a knife, but a teddy bear no less.$1",
+"Core.FakeNPC.Ebb.Dialogue.11": "i have... a hard time communicating my thoughts.$2#$b#um.#$b#thank you for being very nice to Sen.$1#$b#Skrell doesn't trust you much... but i do.#$b#so thanks... i'm happy when sen smiles.$1",
+"Core.FakeNPC.Ebb.Dialogue.12": "wow... sen sure has made a lot of costumes.$3#$b#they look... terrible.#$b#er. oh jeez er-$2#$b#i mean they look terribly adorable!$1",
+"Core.FakeNPC.Ebb.Dialogue.13": "sen loves the crocus...#$b#it's pretty. i think it suits him a whole lot.$1#$b#i kinda wanna eat the one he has over there, but i won't...$2",
+"Core.FakeNPC.Ebb.Dialogue.14": "i can't quite figure out how to read the books Sen keeps around, but he reads to me sometimes.#$b#you humans have so much knowledge.$3",
+"Core.FakeNPC.Ebb.Dialogue.15": "huh? do i enjoy living in the mines?$3#$b#...$1#$b#no, not really. neither does Skrell, but he won't admit that.$2",
+"Core.FakeNPC.Ebb.Dialogue.16": "i don't recommend this, but if you wanna make Skrell mad...#$b#call him old. he gets really fired up.$1",
 
 /*
  ██████╗ ██╗███████╗████████╗███████╗
