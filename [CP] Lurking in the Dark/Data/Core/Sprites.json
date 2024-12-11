@@ -32,18 +32,7 @@
     //Edit images - god i hate how many of these there are
     //Most are here bc I had issues with appearances working for one reason or another
         {
-            "LogName": "Senbrella Overworld farm",
-            "Action": "EditImage",
-            "Target": "Characters/SenS",
-            "FromFile": "Assets/Characters/Main/SenS_Senbrella.png",
-            "Update": "OnLocationChange",
-            "When": {
-                "LocationName": "Farm",
-                "LivingWithSen": true
-            }
-        },
-        {
-            "LogName": "Senbrella Cloak Married",
+            "LogName": "Cloak Married",
             "Action": "EditImage",
             "Target": "Characters/SenS",
             "FromFile": "Assets/Characters/Main/SenS_Cloak.png",
@@ -73,6 +62,17 @@
             "When": {
                 "LocationName": "MovieTheater, Temp, Hospital",
                 "IsOutdoors": false
+            }
+        },
+        {
+            "LogName": "Senbrella Overworld farm",
+            "Action": "EditImage",
+            "Target": "Characters/SenS",
+            "FromFile": "Assets/Characters/Main/SenS_Senbrella.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "LocationName": "Farm",
+                "LivingWithSen": true
             }
         },
         {
