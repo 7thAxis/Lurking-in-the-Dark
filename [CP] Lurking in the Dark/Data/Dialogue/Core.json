@@ -150,19 +150,6 @@
             "Entries": {
                 "MovieInvite_Spouse_SenS": "{{i18n:Movies.SenS.MovieInviteSuccess}}"
             }
-        },
-        {
-            "LogName": "Sen Intro CT Activation",
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-                "DitR_TriggerActions.SenIntroActivation": {
-                    "Trigger": "DayStarted",
-                    "Id": "DitR.TriggerActions.SenIntroActivation",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.0h, PLAYER_FRIENDSHIP_POINTS Current SenS 0 1",
-                    "Actions": [ "AddConversationTopic DitR_CT_SenIntroduction 999" ]
-                }
-            }
         }
     ]
 }
