@@ -122,7 +122,7 @@
             "When": {                 
                 "Query: '{{Weather}}' = 'Rain' OR '{{Season}}' = 'winter'": true,
                 "LivingWithSen": false,
-                "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.0h": true,
+                "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.0h": true,
                 "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "IsDitRInstalled": false
             }
@@ -222,7 +222,7 @@
             "Name": "SSRD",
             "Value": "{{i18n:Core.SenS.RelationshipOverride.{{Random:{{Range: 1, 10}}|key={{Time}}}}{{RelationshipTokens}}}}++",
             "When": {
-                "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.10h.P3": true,
+                "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
                 "Hearts:SenS": "{{Range: 8, 10}}",
                 "SenOverrideConditions": "Active",
                 "IsDitRInstalled": false

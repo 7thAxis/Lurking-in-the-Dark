@@ -11,17 +11,22 @@
                     "AcceptGift_category_flowers": "{{i18n:Gifts.SenS.Cat.Flowers}}",
                     "AcceptGift_category_gem": "{{i18n:Gifts.SenS.Cat.Gems}}",
                     "AcceptGift_category_junk": "{{i18n:Gifts.SenS.Cat.Trash}}",
-                    "AcceptGift_book_item": "{{i18n:Gifts.SenS.Cat.Book}}",
+                    "AcceptGift_book_item": "{{i18n:Gifts.SenS.Tag.Book}}",
+                    "AcceptGift_food_sweet": "{{i18n:Gifts.SenS.Tag.SweetFood}}",
 
                     //Specific Gift Response
                     "AcceptGift_(O)StardropTea": "{{i18n:Gifts.SenS.StardropTea}}",
                     "AcceptGift_(O)Book_Void": "{{i18n:Gifts.SenS.MonsterCompendium{{RelationshipTokens}}}}",
+                    "AcceptGift_(O)Book_Trash": "{{i18n:Gifts.SenS.TheAlleywayBuffet}}",
                     "AcceptGift_(O)418": "{{i18n:Gifts.SenS.Crocus}}",
                     "AcceptGift_(O)203": "{{i18n:Gifts.SenS.StrangeBun}}",
                     "AcceptGift_(O)308": "{{i18n:Gifts.SenS.VoidMayo}}",
                     "AcceptGift_(O)347": "{{i18n:Gifts.SenS.RareDisc}}",
                     "AcceptGift_(O)575": "{{i18n:Gifts.SenS.Obi}}",
                     "AcceptGift_(O)565": "{{i18n:Gifts.SenS.FireOpal}}",
+                    "AcceptGift_(O)541": "{{i18n:Gifts.SenS.Aerinite}}",
+                    "AcceptGift_(O)578": "{{i18n:Gifts.SenS.StarShards}}",
+                    "AcceptGift_(O)72": "{{i18n:Gifts.SenS.Diamond}}",
                     "AcceptGift_(O)124": "{{i18n:Gifts.SenS.GoldenMask}}",
                     "AcceptGift_(O)444": "{{i18n:Gifts.SenS.DuckFeather}}",
                     "AcceptGift_(O)428": "{{i18n:Gifts.SenS.Cloth}}",
@@ -33,7 +38,6 @@
                     "AcceptGift_(O)276": "{{i18n:Gifts.SenS.Pumpkin}}",
                     "AcceptGift_(O)373": "{{i18n:Gifts.SenS.GoldenPumpkin}}",
                     "AcceptGift_(O)337": "{{i18n:Gifts.SenS.IridiumBar}}",
-                    "AcceptGift_(O)72": "{{i18n:Gifts.SenS.Diamond}}",
                     "AcceptGift_(O)769": "{{i18n:Gifts.SenS.VoidEssence}}",
                     "AcceptGift_(O)78": "{{i18n:Gifts.SenS.CaveCarrot}}",
                     "AcceptGift_(O)196": "{{i18n:Gifts.SenS.Salad}}",
@@ -106,9 +110,9 @@
                     "AcceptGift_(O)sapphicsaph_pitv.GaylacticCookie": "{{i18n:Gifts.SenS.GaylacticCookie}}",
                     "AcceptGift_(O)sapphicsaph_pitv.TastyAceCookie": "{{i18n:Gifts.SenS.TastyAceCookie}}",
 
-                    "AcceptGift_(O)Fellowclown.AND_Button": "{{i18n:Gifts.SenS.Button}}",
-
+                    "AcceptGift_(O)Fellowclown.PC_Button": "{{i18n:Gifts.SenS.Button}}",
                     "AcceptGift_(O)WWWA.GenuineAutograph": "{{i18n:Gifts.SenS.RodneyAutograph}}",
+                    "AcceptGift_(O)7thAxis.DitR_Items.SensCrocus": "{{i18n:Gifts.SenS.SensCrocus}}",
 
                     //birthday
                     "AcceptBirthdayGift_(O)418": "{{i18n:Gifts.SenS.Crocus.Birthday}}",
@@ -122,10 +126,7 @@
                     "AcceptBirthdayGift_(O)808": "{{i18n:Gifts.SenS.VoidPendant.Birthday}}",
                     "AcceptBirthdayGift_(O)221": "{{i18n:Gifts.SenS.Cake.Birthday}}",
                     "AcceptBirthdayGift_(O)220": "{{i18n:Gifts.SenS.Cake.Birthday}}",
-                    "AcceptBirthdayGift_(O)608": "{{i18n:Gifts.SenS.PumpkinPie.Birthday}}",
-
-                    //Custom Items
-                    "AcceptGift_(O)7thAxis.DitR_Items.SensCrocus": "{{i18n:Gifts.SenS.SensCrocus}}"
+                    "AcceptBirthdayGift_(O)608": "{{i18n:Gifts.SenS.PumpkinPie.Birthday}}"                    
 
         }
     }

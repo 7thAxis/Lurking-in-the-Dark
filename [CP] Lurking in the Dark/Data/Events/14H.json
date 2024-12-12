@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.14h/t 2000 2600/w sunny/f SenS 3500": "
+                "7thAxis.DitR_Events.SenS.14h/t 2000 2600/w sunny/f SenS 3500": "
                     night_market/
                     71 121/
                     farmer 68 116 2 SenS 72 120 2/

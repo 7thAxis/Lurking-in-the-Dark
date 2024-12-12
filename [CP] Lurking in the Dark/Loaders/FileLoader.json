@@ -14,12 +14,12 @@
         {
 			"Action": "Include",
 			"FromFile": "Data/Schedules/Defaults.json, Data/Schedules/{{Schedule Type}}.json",
-            "When": { "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.0h": true }
+            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.0h": true }
 		},
         {
 			"Action": "Include",
 			"FromFile": "Data/core/Forage.json",
-            "When": { "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.14h": true }
+            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true }
 		}    
     ]
 }

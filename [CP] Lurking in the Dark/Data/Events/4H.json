@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.4h/e 7thAxis.DitR.CP.Events.SenS.2h/t 2000 2600/w sunny/d Fri/f SenS 1000/A DitR_CT_DreamReveal": "
+                "7thAxis.DitR_Events.SenS.4h/e 7thAxis.DitR_Events.SenS.2h/t 2000 2600/w sunny/d Fri/f SenS 1000/A DitR_CT_DreamReveal": "
                     breezy/
                     26 98/
                     farmer 37 101 3 SenS 21 93 2 Krobus 25 98 2/

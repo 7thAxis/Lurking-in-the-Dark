@@ -10,7 +10,7 @@
         //Tilesheet loads
         {
             "Action": "Load",
-            "Target": "maps/7thAxis_BaseRug, maps/7thAxis_Mine, maps/7thAxis_Crops, 7thAxis_DarkMine, 7thAxis_SenOceanCG",
+            "Target": "maps/7thAxis_BaseRug, maps/7thAxis_Mine, maps/7thAxis_Crops, maps/7thAxis_DarkMine, maps/7thAxis_SenOceanCG",
             "FromFile": "Assets/Tilesheets/{{TargetWithoutPath}}.png"
         },
 

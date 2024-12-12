@@ -17,7 +17,7 @@
                 "DitR_TriggerActions.ShadowVisitationMail": {
                     "Trigger": "DayEnding",
                     "Id": "DitR_TriggerActions.ShadowVisitationMail",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.10h.P3",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3",
                     "Actions": [ "AddMail Current DitR_M_ShadowVisitation tomorrow" ]
                 }
             }
@@ -73,7 +73,7 @@
                     "PetMessage": [ "{{i18n:Core.FakeNPC.Skrell.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
                     "HomeTileX": 19,
                     "HomeTileY": 18,
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.10h.P3, ANY \"WEATHER EastScarp_Village Rain\" \"DAY_OF_WEEK Sun Sat\""
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3, ANY \"WEATHER EastScarp_Village Rain\" \"DAY_OF_WEEK Sun Sat\""
                 },
 
                 "LitD.Ebb_Cave": {
@@ -85,7 +85,7 @@
                     "PetMessage": [ "{{i18n:Core.FakeNPC.Ebb.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
                     "HomeTileX": 26,
                     "HomeTileY": 21,
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.10h.P3, ANY \"WEATHER EastScarp_Village Rain\" \"DAY_OF_WEEK Sun Sat\""
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3, ANY \"WEATHER EastScarp_Village Rain\" \"DAY_OF_WEEK Sun Sat\""
                 }
             }
         }

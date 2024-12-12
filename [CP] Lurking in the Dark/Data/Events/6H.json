@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.6h.P1/e 7thAxis.DitR.CP.Events.SenS.4h/f SenS 1500/A DitR_CT_ShadowPlay": "
+                "7thAxis.DitR_Events.SenS.6h.P1/e 7thAxis.DitR_Events.SenS.4h/f SenS 1500/A DitR_CT_ShadowPlay": "
                     movie_wumbus/
                     21 37/
                     farmer 23 31 0 SenS 22 36 2/
@@ -142,7 +142,7 @@
                 "7thAxis.DitR.CP.TriggerActions.SenGardenTrigger": {
                     "Trigger": "DayEnding",
                     "Id": "7thAxis.DitR.TriggerActions.SenGardenTrigger",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR.CP.Events.SenS.6h.P1, PLAYER_HAS_MAIL Current DitR_M_AGardenForSenComplete Received, !PLAYER_HAS_MAIL Current DitR_M_SenGardenTrigger Received",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.6h.P1, PLAYER_HAS_MAIL Current DitR_M_AGardenForSenComplete Received, !PLAYER_HAS_MAIL Current DitR_M_SenGardenTrigger Received",
                     "Actions": [
                         "AddConversationTopic DitR_CT_GardenWaitTime {{Event Cooldown Length}}",
                         "AddMail Current DitR_M_SenGardenTrigger"
@@ -155,7 +155,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.6h.P2/e 7thAxis.DitR.CP.Events.SenS.6h.P1/A DitR_CT_GardenWaitTime": "
+                "7thAxis.DitR_Events.SenS.6h.P2/e 7thAxis.DitR_Events.SenS.6h.P1/A DitR_CT_GardenWaitTime": "
                     kindadumbautumn/
                     23 39/
                     farmer 21 32 2 SenS 22 38 2/

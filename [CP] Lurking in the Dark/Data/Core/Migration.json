@@ -37,6 +37,34 @@
             }
         },
         {
+            "LogName": "1.5.6 to 1.6 Sen Event and Flag ID migration",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "7thAxis.DitR.CP.TriggerActions.SenEventMigration.v3": {
+                "Id": "7thAxis.DitR.CP.TriggerActions.SenEventMigration.v3",
+                "Trigger": "DayStarted",
+                "HostOnly": true,
+                "Actions": [
+
+                //I know you can put it in one... this is just more readable for me.
+                
+                    //Events
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.0h 7thAxis.DitR_Events.SenS.0h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.2h 7thAxis.DitR_Events.SenS.2h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.4h 7thAxis.DitR_Events.SenS.4h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.6h.P1 7thAxis.DitR_Events.SenS.6h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.6h.P2 7thAxis.DitR_Events.SenS.6h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.8h 7thAxis.DitR_Events.SenS.8h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.10h.P1 7thAxis.DitR_Events.SenS.10h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.10h.P2 7thAxis.DitR_Events.SenS.10h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.10h.P3 7thAxis.DitR_Events.SenS.10h.P3",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.14h 7thAxis.DitR_Events.SenS.14h"
+                    ]
+                }
+            }
+        },
+        {
             "LogName": "Quest Fixer",
             "Action": "EditData",
             "Target": "Data/TriggerActions",

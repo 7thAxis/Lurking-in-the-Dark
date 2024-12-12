@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Mine",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.0h/e 100162": "
+                "7thAxis.DitR_Events.SenS.0h/e 100162": "
                     Upper_Ambient/
                     21 9/
                     farmer 23 10 0 SenS -100 -100 0/

@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.10h.P1/e 7thAxis.DitR.CP.Events.SenS.8h/f SenS 2500/A DitR_CT_FamilyFlashback": "
+                "7thAxis.DitR_Events.SenS.10h.P1/e 7thAxis.DitR_Events.SenS.8h/f SenS 2500/A DitR_CT_FamilyFlashback": "
                     desolate/
                     21 37/
                     farmer 23 31 0 SenS 23 37 0/
@@ -278,7 +278,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.10h.P2/e 7thAxis.DitR.CP.Events.SenS.10h.P1/t 2000 2600/w sunny/f SenS 2500/A DitR_CT_MineFlashback": "
+                "7thAxis.DitR_Events.SenS.10h.P2/e 7thAxis.DitR_Events.SenS.10h.P1/t 2000 2600/w sunny/f SenS 2500/A DitR_CT_MineFlashback": "
                     ocean/
                     32 112/
                     farmer 28 106 2 SenS 35 113 1/
@@ -636,7 +636,7 @@
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
             "Entries": {
-                "7thAxis.DitR.CP.Events.SenS.10h.P3/e 7thAxis.DitR.CP.Events.SenS.10h.P2/t 2000 2600/w sunny/f SenS 2500/A DitR_CT_TheConfrontation": "
+                "7thAxis.DitR_Events.SenS.10h.P3/e 7thAxis.DitR_Events.SenS.10h.P2/t 2000 2600/w sunny/f SenS 2500/A DitR_CT_TheConfrontation": "
                 Upper_Ambient/
                 24 24/
                 farmer 18 23 1/
