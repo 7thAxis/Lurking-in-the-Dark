@@ -29,7 +29,7 @@
         "winter_17_{{YearCheck}}": "{{i18n:Festivals.SenS.NightMarket.{{Random:{{Range: 1, 3}}}}}}", 
 
         //PITV
-        "sapphicsaph_pitv.CommunityCenterPride_64_16": "{{i18n:Festivals.SenS.PrideFest.{{Random:{{Range: 1, 2}}}}{{RelationshipTokens}}}}",
+        "sapphicsaph_pitv.CommunityCenterPride_64_16": "{{i18n:Festivals.SenS.PrideFest{{RelationshipTokens}}}}",
         "WelcomeToPridePITV": "{{i18n:Core.SenS.WelcomeToPride}}",
         "PrideSeasonStartPITV": "{{i18n:Core.SenS.PrideSeasonStart}}",
         "PrideSeasonGiftPITV": "{{i18n:Core.SenS.PrideSeasonGift}}",
