@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="12">
+ <properties>
+  <property name="DayTiles" value="Front 7 1 225 Front 7 2 469 Front 7 3 501 Front 19 1 256 Front 19 2 288 Back 7 5 507 Back 7 6 539 Back 19 4 507 Back 19 5 539"/>
+  <property name="Doors" value="16 9 1 120"/>
+  <property name="NightTiles" value="Front 7 1 1222 Front 7 2 1219 Front 7 3 1251 Front 19 1 1253 Front 19 2 1285 Back 7 5 604 Back 7 6 635 Back 19 4 604 Back 19 5 635"/>
+  <property name="Warp" value="4 12 Town 58 86 5 12 Town 59 86"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths" width="64" height="256"/>
+ </tileset>
+ <tileset firstgid="2241" name="untitled tile sheet2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2" width="512" height="656"/>
+  <tile id="52">
+   <animation>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="112" duration="50"/>
+    <frame tileid="113" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="47" duration="50"/>
+    <frame tileid="113" duration="50"/>
+    <frame tileid="112" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+    <frame tileid="52" duration="50"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="3553" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="1">
+  <data encoding="csv">
+605
+</data>
+ </layer>
+ <layer id="2" name="Back2" width="1" height="1">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="3" name="Buildings" width="1" height="1">
+  <data encoding="csv">
+4651
+</data>
+ </layer>
+ <layer id="4" name="Front" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="5" name="Front2" width="1" height="1">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="6" name="Front3" width="1" height="1">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <layer id="7" name="Paths" width="1" height="1">
+  <data encoding="csv">
+0
+</data>
+ </layer>
+ <objectgroup id="8" name="Back"/>
+ <objectgroup id="9" name="Back2"/>
+ <objectgroup id="10" name="Buildings">
+  <object id="2" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message LitDMayorPot"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="Front"/>
+ <objectgroup id="12" name="Front2"/>
+ <objectgroup id="13" name="Front3"/>
+ <objectgroup id="14" name="Paths"/>
+</map>

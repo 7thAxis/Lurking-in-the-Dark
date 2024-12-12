@@ -52,7 +52,7 @@
             "AllowValues": "7thAxis, Nyapu",
             "Default": "7thAxis",
             "AllowBlank": false,
-            "Description":"Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing)",
+            "Description":"Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing. Don't change option during festivals.)",
             "Section": "Graphics"
         },
         "Have Shadow Kids": {
@@ -110,6 +110,22 @@
             "Name": "MarriageScheduleRandomizer", 
             "Value": "{{Random:{{Range: 1, 7}}}}",
             "When": { "IsDitRInstalled": false }
+        },
+        {
+            "Name": "LewisPlantInside", 
+            "Value": false,
+            "When": { "IsDitRInstalled": false }
+        },
+        {
+            "Name": "LewisPlantInside", 
+            "Value": true,
+            "When": {                 
+                "Query: '{{Weather}}' = 'Rain' OR '{{Season}}' = 'winter'": true,
+                "LivingWithSen": false,
+                "HasSeenEvent: |contains=7thAxis.DitR.CP.Events.SenS.0h": true,
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "IsDitRInstalled": false
+            }
         },
 
         //-- DATE TOKENS

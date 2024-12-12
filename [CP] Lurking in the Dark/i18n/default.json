@@ -37,7 +37,7 @@
 "Config.Spouse Room.name": "Spouse Room",
 "Config.Spouse Room.description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself. (Requires game restart)",
 "Config.Portrait Style.name": "Portrait Style",
-"Config.Portrait Style.description": "Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing)",
+"Config.Portrait Style.description": "Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazin. Don't change option during festivals.)",
 
 /*
  ██████╗ ██████╗ ██████╗ ███████╗
@@ -577,6 +577,10 @@
 "Core.SenS.KrobusCommentary.3": "%revealtasteKrobus265 Did you know that Krobus likes seafoam pudding...?$8#$b#That stuff is kinda icky, but to each their own, I guess.$8",
 "Core.SenS.KrobusCommentary.4": "%revealtasteKrobus773 Did you know that life elixirs don't heal us shadows?#$b#Our bodies are made up of different matter, so they actually have an inverse effect on us.$8#$b#If anything, they are like a poison.$s",
 
+//Locations
+"Core.SenS.PotBenchRemark.true": "Rain in the winter... that sure is odd, huh?$6#$b#Something tells me you played a role in this, no?$12",
+"Core.SenS.PotBenchRemark.false": "Hehehe... Usually there's a pot here, but it seems it's missing today!$h#$b#I'm gonna sit my tush here and no one is going to stop me!$12",
+
 //FAKE NPCS
 "Core.FakeNPC.Skrell.Dialogue.1": "It's you... Are you behaving yourself in the mines?#$b#Remember what I told you... Or else.$1",
 "Core.FakeNPC.Skrell.Dialogue.2": "Hm? You question the horns. I see.#$b#Sen and I are Shadow Nobles. There are more than just Shamans, Brutes and Snipers...$1#$b#They are our fighters.",
@@ -747,9 +751,12 @@
 "Festivals.SenS.spring24.2": "Dancing... I would love to participate, but I unfortunately have two left feet.$14",
 "Festivals.SenS.spring24.3": "Hm? Don't worry, I'm comfortable over here by myself.$14#$b#Crowds are rather stressful for me.$14",
 
-"Festivals.SenS.summer11.1": "%This \"sandcastle\" seems to be breathing...",
-"Festivals.SenS.summer11.2": "%There's something suspicious about this \"sandcastle\"...",
-"Festivals.SenS.summer11.3": "%You go to touch the \"sandcastle\" and it hisses at you...",
+"Festivals.SenS.summer11.1.Nyapu": "This \"sandcastle\" seems to be breathing...$15",
+"Festivals.SenS.summer11.2.Nyapu": "There's something suspicious about this \"sandcastle\"...$15",
+"Festivals.SenS.summer11.3.Nyapu": "You go to touch the \"sandcastle\" and it hisses at you...$15",
+"Festivals.SenS.summer11.1.7thAxis": "%This \"sandcastle\" seems to be breathing...",
+"Festivals.SenS.summer11.2.7thAxis": "%There's something suspicious about this \"sandcastle\"...",
+"Festivals.SenS.summer11.3.7thAxis": "%You go to touch the \"sandcastle\" and it hisses at you...",
 
 "Festivals.SenS.summer28.1": "Squish squish... squishy squish???$16#$e#Squish!!!$16",
 "Festivals.SenS.summer28.2": "Squishy... Squish! Squishsquash squish!$16#$e#Squuuaaash!!$16",
@@ -921,6 +928,8 @@
 "Maps.SenS.SenRoomCloth": "It's scrap of cloth from Sen's most recent costume design.",
 "Maps.SenS.SenRoomNotes": "You can't read the language on this paper.#You can tell the handwriting is bad, however.",
 "Maps.SenS.SenRoomBlueFlowers": "These are flowers from Sen's garden back in East Scarp.",
+"Maps.SenS.LitDMayorPot": "Seems like Lewis brought the plant from the bench inside to protect it from the weather."
+,
 /*
  ██████╗ ██╗   ██╗███████╗███████╗████████╗███████╗
 ██╔═══██╗██║   ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝

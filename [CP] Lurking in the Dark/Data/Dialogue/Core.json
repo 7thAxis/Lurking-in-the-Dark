@@ -40,6 +40,9 @@
             "Target": "Characters/Dialogue/SenS",
             "Entries": {
 
+                //Locations
+                "Town_70_91": "{{i18n:Core.SenS.PotBenchRemark.{{Season |Contains=Winter}}}}",
+
                 //Friendship Question
                 "SenFriend": "{{i18n:Core.SenS.SenFriend}}",
                 "SenAcquaintance": "{{i18n:Core.SenS.SenAcquaintance}}",
