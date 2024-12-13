@@ -21,7 +21,7 @@
 
 //NPC Behavior
 "Config.section.NPC Behavior.name": "NPC Behavior",
-"Config.Schedule Type.name": "NPC Schedule Type",
+"Config.Schedule Type.name": "Schedule Type",
 "Config.Schedule Type.description": "Whether Sen will visit random locations every day (Dynamic) or follow a set schedule (Simplified).",
 "config.Schedule Type.values.Dynamic": "Dynamic",
 "config.Schedule Type.values.Simplified": "Simplified",
@@ -30,7 +30,7 @@
 
 //Graphics
 "Config.section.Graphics.name": "Graphics",
-"Config.Have Shadow Kids.name": "Have Shadow Kids",
+"Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
 "Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
 "Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
 "Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
@@ -658,6 +658,7 @@
 "Gifts.SenS.GoldenPumpkin": "Oh my gosh, this pumpkin... it's so shiny!$7#$b#Wait... it's made of pure gold?! Are you sure you want to give me this?$u",
 "Gifts.SenS.IridiumBar": "Oh my goodness, for me? This is a very rare material among my people!$h#$b#It is highly sought after for its usefulness in making quality tools.$h",
 "Gifts.SenS.VoidEssence": "...?$u#$b#I-I don't understand, @. Why would you give this to me...?$s#$b#I-I hope it was ethically sourced...$s",
+"Gifts.SenS.SolarEssence": "Wahh...! Hot, hot hot!$u#$b#Take it back!!$u[768]",
 "Gifts.SenS.CaveCarrot": "Ehm... this is certainly not my favorite underground snack.$8#$b#The wriggling tendrils always put me off...$8",
 "Gifts.SenS.Garlic": "...You're aware that garlic is often used as a material to ward off \"evil creatures\", right?$8",
 "Gifts.SenS.DwarfHelm": "...Is this some kind of dwarvish apparel? I will give this a pass...$a#$b#Oh... no, I shouldn't speak that way. My goal in this world is to bring peace.$s",
@@ -721,10 +722,11 @@
 "Gifts.SenS.HorseTheBook": "A book on horses! How neat!$7#$b#I remember one time I became overwhelmed with the urge to say the word horse and I'm not entirely sure why.$6#$b#Has that ever happened to you, @?$8",
 "Gifts.SenS.OLSlitherlegs": "I'm... not sure how I feel about the title of this one.$6#$b#What's it about? Walking through grass?$6#$b#Hm... interesting topic. Well, I'll read anything once.$8",
 
+"Gifts.SenS.Book.Birthday": "A gift for me? And it's a book!$7#$b#Oh @, you know me so incredibly well! I'm going to read this right away.$h",
 "Gifts.SenS.Crocus.Birthday": "...!!$11#$b#You... you remembered my birthday, and my favorite flower!$7#$b#@, you don't understand. This means the world to me. Thank you so much.$l",
 "Gifts.SenS.Cloth.Birthday": "@, this is amazing! Thank you for the cloth, I've been in dire need of some.$h#$b#Getting it from you on my birthday is even better!$h",
 "Gifts.SenS.GoldenPumpkin.Birthday": "This... this is made of pure gold! You want to give me something this valuable?!$u#$b#Thank you, @... I could cry!$l#$b#This has made my birthday something to remember.$l",
-"Gifts.SenS.Diamond.Birthday": "Oh my goodness, how did you know this was a common birthday gift to give among my people?$h#$b#For us, it symbolizes a deep care and affection for a love one.$l",
+"Gifts.SenS.Diamond.Birthday": "Ah, a birthday gift! For me?#h#$b#It's... oh...$s#$b#%Sen goes quiet for a moment.#$b#Thank you, @. This is one of the most meaningful things you could have given me.$s",
 "Gifts.SenS.RareDisc.Birthday": "Oh, this is a wonderful good luck charm! How did you know this is a popular gift to give among my people?$h#$b#Well either way, thank you for the birthday gift.$h",
 "Gifts.SenS.Garlic.Birthday": "Oh, hello @! Guess what, it's my birth...$h#$b#...#$b#Wait, d-do you want me to go away?$s#$b#O-oh, I'm sure you don't mean that...$s#$b#Sorry, I've read before that garlic is used to ward off supposed \"evil creatures\"...$s",
 "Gifts.SenS.VoidEssence.Birthday": "...??$u#$b#@, don't you know that void essence makes me uncomfortable...?$s#$b#Please don't try to give me this again, especially not on my birthday.$s",
@@ -753,12 +755,55 @@
 "Gifts.SenS.ContainsVoidEssence": "Urgh... Is there um, void essence in this?$s#$b#That's um... I um... No thank you.$s",
 
 "Gifts.SenS.Button": "Oooh, what an adorable little button!$h#$b#It'll find a cozy home in one of my upcoming costumes for sure. Thank you, @!$l",
-
-"Gifts.SenS.RodneyAutograph": "Oh my gosh, it's an autograph from the two time award winning author Rodney O'Brien!!$7#$e#I found a copy of his book in the trash.$h",
 "Gifts.SenS.SensCrocus": "Oh, that's...!$u#$b#That's one of the flower seeds I threw to the wind, isn't it?$7#$b#I can't believe it worked!$7",
 
 "Gifts.SenS.PridePop": "So. Many. Colors! It's otherworldly!$7#$b#Does it have magical properties? Will I become rainbow colored if I eat this?$h",
 "Gifts.SenS.GaylacticCookie": "$query PLAYER_HAS_MAIL Current DitR_M_SenPrideCookie Any, PLAYER_HEARTS Current SenS 8#...! Did you really remember I wanted one of these cookies, @?$7#$b#Thank you so much, you're the best. Have this shiny stone I found in the garbage.$h[74]#$action Current RemoveMail DitR_M_SenPrideCookie all|Oh!! I really wanted one of these, thank you so much @!$h#$b#%The cookie lasts about 2 seconds, then is gone...#$action Current RemoveMail DitR_M_SenPrideCookie all",
+
+//S&S
+"Gifts.SenS.TaintedMushroom": "",
+"Gifts.SenS.TaintedCrocus": "",
+"Gifts.SenS.TaintedCorn": "",
+"Gifts.SenS.TaintedGrasses": "",
+"Gifts.SenS.FarAfieldSnack": "",
+"Gifts.SenS.ArtificerBook": "",
+"Gifts.SenS.DruidicsBook": "",
+"Gifts.SenS.BardicsBook": "",
+"Gifts.SenS.SorceryBook": "",
+"Gifts.SenS.PaladinBook": "",
+"Gifts.SenS.DruidicEssence": "",
+"Gifts.SenS.EarthEssence": "",
+"Gifts.SenS.AirEssence": "",
+"Gifts.SenS.WaterEssence": "",
+"Gifts.SenS.FireEssence": "",
+"Gifts.SenS.Stygium": "",
+"Gifts.SenS.DuskspireHeart": "",
+
+//WWWA
+"Gifts.SenS.RodneyAutograph": "Oh my gosh, it's an autograph from the two time award winning author Rodney O'Brien!!$7#$e#I found a copy of his book in the trash.$h",
+"Gifts.SenS.ArtifactOrCutlery": "",
+"Gifts.SenS.DeferenceArlington": "",
+"Gifts.SenS.GuideToSculptingWithGold": "",
+"Gifts.SenS.FishingForDumbDumbs": "",
+"Gifts.SenS.GettingChicksToLoveYou": "",
+"Gifts.SenS.Goblins": "",
+"Gifts.SenS.HerpetologyOfFerngill": "",
+"Gifts.SenS.LunarkinTrollTales": "",
+"Gifts.SenS.PepperRexes": "",
+"Gifts.SenS.TheBookOfYoba": "",
+"Gifts.SenS.TheJojaConspiracy": "",
+"Gifts.SenS.TheTarotRevealed": "",
+"Gifts.SenS.ArcanaCatcherPrunus": "",
+"Gifts.SenS.CrabsAndWhyIHateThem": "",
+"Gifts.SenS.MysteriesOfTheDwarves": "",
+"Gifts.SenS.TheGreatBookOfSlimes": "",
+"Gifts.SenS.TheGreatTomeOfMayo": "",
+"Gifts.SenS.WhyPepperRexesAreTheBest": "",
+
+//EnD
+"Gifts.SenS.ChaosTotem": "",
+"Gifts.SenS.SanguineHeart": "",
+"Gifts.SenS.BeholderFruit": "",
 
 /*
 ███████╗███████╗███████╗████████╗██╗██╗   ██╗ █████╗ ██╗     ███████╗
@@ -897,7 +942,7 @@
 "Movies.SenS.Mysterium.2": "Sen has a disgruntled look on his face.",
 "Movies.SenS.Mysterium.3": "The depiction of shadowfolk at the end was incredibly inaccurate. Hmph!",
 
-"Movies.SenS.ItHowlsInTheRain.1": "So this is what you call a 'horror movie'? Is it scary?",
+"Movies.SenS.ItHowlsInTheRain.1": "So this is what you call a \"horror\" movie'? Is it scary?",
 "Movies.SenS.ItHowlsInTheRain.2": "Hmm...#$b#Why does your species watch things that scare you for fun?",
 "Movies.SenS.ItHowlsInTheRain.3": "The story of that movie reminded me a little of myself.",
 

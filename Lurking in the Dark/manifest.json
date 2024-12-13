@@ -1,7 +1,7 @@
 {
 	"Name": "Lurking in the Dark",
 	"Author": "7thAxis",
-	"Version": "3.0.0",
+	"Version": "3.0.1",
 	"Description": "Adds a new shadow guy NPC for East Scarp.",
 	"UniqueID": "7thAxis.LitD.CP",
 	"UpdateKeys": ["Nexus:10770"],
