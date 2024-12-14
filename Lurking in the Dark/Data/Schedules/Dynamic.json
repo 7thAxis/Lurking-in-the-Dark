@@ -42,7 +42,7 @@
 			},
 			"When": { 
 				"SenScheduleRandomizer": 1,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+				"IsSVEInstalled": true
 			 }
 		},
 //---Schedule 2---//
@@ -106,7 +106,7 @@
 			},
 			"When": { 
 				"SenScheduleRandomizer": 3,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+				"IsSVEInstalled": true
 			 }
 		},
 //---Schedule 4---//
@@ -172,7 +172,7 @@
 			},
 			"When": { 
 				"SenScheduleRandomizer": 5,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+				"IsSVEInstalled": true
 			}
 		},
 //---Schedule 6---//
@@ -258,7 +258,7 @@
 			},
 			"When": { 
 				"SenScheduleRandomizer": 8,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+				"IsSVEInstalled": true
 			}
 		},
 //---Schedule 9---//
@@ -322,7 +322,7 @@
 			},
 			"When": { 
 				"SenScheduleRandomizer": 10,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+				"IsSVEInstalled": true
 			}
 		},
 //---Schedule 11---//

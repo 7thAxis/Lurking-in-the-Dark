@@ -70,7 +70,7 @@
             "Action": "EditData",
             "Target": "Data/Locations",
             "TargetField": [ "Custom_ForestWest", "Forage" ],
-            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+            "When": { "IsSVEInstalled": true },
             "Entries": {
                 "(O)7thAxis.DitR_Items.SensCrocus": {
                     "ItemId": "(O)7thAxis.DitR_Items.SensCrocus",
@@ -82,7 +82,7 @@
             "Action": "EditData",
             "Target": "Data/Locations",
             "TargetField": [ "Custom_BlueMoonVineyard", "Forage" ],
-            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+            "When": { "IsSVEInstalled": true },
             "Entries": {
                 "(O)7thAxis.DitR_Items.SensCrocus": {
                     "ItemId": "(O)7thAxis.DitR_Items.SensCrocus",
@@ -94,7 +94,7 @@
             "Action": "EditData",
             "Target": "Data/Locations",
             "TargetField": [ "Custom_Garden", "Forage" ],
-            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+            "When": { "IsSVEInstalled": true },
             "Entries": {
                 "(O)7thAxis.DitR_Items.SensCrocus": {
                     "ItemId": "(O)7thAxis.DitR_Items.SensCrocus",
@@ -106,7 +106,7 @@
             "Action": "EditData",
             "Target": "Data/Locations",
             "TargetField": [ "Custom_ShearwaterBridge", "Forage" ],
-            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+            "When": { "IsSVEInstalled": true },
             "Entries": {
                 "(O)7thAxis.DitR_Items.SensCrocus": {
                     "ItemId": "(O)7thAxis.DitR_Items.SensCrocus",
@@ -118,7 +118,7 @@
             "Action": "EditData",
             "Target": "Data/Locations",
             "TargetField": [ "Custom_GrandpasShedOutside", "Forage" ],
-            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true },
+            "When": { "IsSVEInstalled": true },
             "Entries": {
                 "(O)7thAxis.DitR_Items.SensCrocus": {
                     "ItemId": "(O)7thAxis.DitR_Items.SensCrocus",

@@ -152,7 +152,7 @@
 			},
 			"When": { 
 				"MarriageScheduleRandomizer": 1,
-				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+				"IsSVEInstalled": true
 			}
 		},
 		{
@@ -177,7 +177,7 @@
 					2100 43 114/
 					2300 14 90",
 			},
-			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+			"When": { "IsSVEInstalled": true }
 		},
  //---------------------------- MODDED FESTIVALS ------------------------------------------//
 		{

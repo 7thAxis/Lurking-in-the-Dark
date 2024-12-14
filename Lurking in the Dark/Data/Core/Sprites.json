@@ -100,24 +100,52 @@
             "Target": "Portraits/Skrell, Portraits/Ebb",
             "FromFile": "Assets/Portraits/{{Portrait Style}}/FakeNPCs/{{TargetWithoutPath}}.png"
         },
-        //SENLETS
+    //SENLETS
+        //Sprites
         {           
             "Action": "Load",
             "Target": "Characters/Baby, Characters/Baby_dark",
-            "FromFile": "Assets/{{TargetPathOnly}}/Kids/TheBaby.png",
+            "FromFile": "Assets/Characters/Kids/The_Baby.png",
             "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
         },
         {           
             "Action": "Load",
             "Target": "Characters/Toddler_girl, Characters/Toddler_girl_Dark",
-            "FromFile": "Assets/{{TargetPathOnly}}/Kids/ToddlerFreya.png",
+            "FromFile": "Assets/Characters/Kids/Toddler_{{Female Toddler Design}}.png",
             "When": { "Spouse": "SenS", "Have Shadow Kids": true }
         },
         {           
             "Action": "Load",
             "Target": "Characters/Toddler, Characters/Toddler_Dark",
-            "FromFile": "Assets/{{TargetPathOnly}}/Kids/ToddlerLoki.png",
+            "FromFile": "Assets/Characters/Kids/Toddler_{{Male Toddler Design}}.png",
             "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
+        },
+        //Immersive Children Talk Compat
+            //Child 1
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}.png",
+            "When": { "ImmersiveChildCheck": true, "ChildGenders |valueAt=0": "Female" }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}.png",
+            "When": { "ImmersiveChildCheck": true, "ChildGenders |valueAt=0": "Male" }
+        },
+            //Child 2
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}.png",
+            "When": { "ImmersiveChildCheck": true, "ChildGenders |valueAt=1": "Female"}
+        },
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}.png",
+            "When": { "ImmersiveChildCheck": true,"ChildGenders |valueAt=1": "Male"}
         },
         //RESHADE
         {           

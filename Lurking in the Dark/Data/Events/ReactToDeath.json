@@ -22,9 +22,7 @@
                             minedeath/
                         end"
                 },
-                "When": { 
-                    "Query: '{{Relationship:SenS}}' IN ('Married', 'Dating', 'Engaged') OR '{{Roommate}}' = 'SenS'": true
-                 }
+                "When": { "InRelationshipWithSen": true }
               },
               {
                 "LogName": "Player Death - Skull Cave",
@@ -74,9 +72,7 @@
                             hospitaldeath/
                         end"
                 },
-                "When": { 
-                    "Query: '{{Relationship:SenS}}' IN ('Married', 'Dating', 'Engaged') OR '{{Roommate}}' = 'SenS'": true 
-                }
+                "When": { "InRelationshipWithSen": true }
               }
     ]
 }

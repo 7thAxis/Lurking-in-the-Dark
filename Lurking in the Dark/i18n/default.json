@@ -32,12 +32,16 @@
 "Config.section.Graphics.name": "Graphics",
 "Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
 "Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
+"Config.Female Toddler Design.name": "Female Toddler Design",
+"Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true. Nanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+"Config.Male Toddler Design.name": "Male Toddler Design",
+"Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true. Nanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
 "Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
 "Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
 "Config.Spouse Room.name": "Spouse Room",
 "Config.Spouse Room.description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself. (Requires game restart)",
 "Config.Portrait Style.name": "Portrait Style",
-"Config.Portrait Style.description": "Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazin. Don't change option during festivals.)",
+"Config.Portrait Style.description": "Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing. Don't change this option during festivals.)",
 
 /*
  ██████╗ ██████╗ ██████╗ ███████╗

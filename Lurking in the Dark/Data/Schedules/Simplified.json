@@ -136,7 +136,7 @@
 					2300 34 25 2
 				"
 			},
-			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+			"When": { "IsSVEInstalled": true }
 		}
 	]
 }

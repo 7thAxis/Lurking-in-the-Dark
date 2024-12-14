@@ -52,7 +52,7 @@
             "AllowValues": "7thAxis, Nyapu",
             "Default": "7thAxis",
             "AllowBlank": false,
-            "Description":"Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing. Don't change option during festivals.)",
+            "Description":"Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing. Don't change this option during festivals.)",
             "Section": "Graphics"
         },
         "Have Shadow Kids": {
@@ -60,6 +60,20 @@
             "Default": true,
             "AllowBlank": false,
             "Description":"Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
+            "Section": "Graphics"
+        },
+        "Female Toddler Design": {
+            "AllowValues": "Loki, Freya, Nanu, Opal",
+            "Default": "Freya",
+            "AllowBlank": false,
+            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true. Nanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+            "Section": "Graphics"
+        },
+        "Male Toddler Design": {
+            "AllowValues": "Loki, Freya, Nanu, Opal",
+            "Default": "Loki",
+            "AllowBlank": false,
+            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true. Nanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
             "Section": "Graphics"
         },
         "Reshade Existing Shadows": {
@@ -87,10 +101,26 @@
             "Value": "{{HasMod: |contains=7thAxis.DitR.CP, 7thAxis.DitR}}"
         },
         {
+            "Name": "IsSVEInstalled",
+            "Value": "{{HasMod: |contains=FlashShifter.StardewValleyExpandedCP}}",
+            "When": { "IsDitRInstalled": false }
+        },
+        {
             "Name": "LivingWithSen", 
             "Value": "{{Query: '{{spouse}}' = 'SenS' OR '{{roommate}}' = 'SenS'}}",
             "When": { "IsDitRInstalled": false }
         },
+
+        { "Name": "ImmersiveChildCheck",  "Value": false },
+            {
+                "Name": "ImmersiveChildCheck", 
+                "Value": "{{HasMod: |contains=shaklin.uniquechildrentalk}}",
+                "When": { 
+                    "Spouse": "SenS",
+                    "Have Shadow Kids": true,
+                    "IsDitRInstalled": false }
+            },
+
         {
             "Name": "SenPartnershipRoute",
             "Value": "Platonic",
@@ -112,23 +142,25 @@
             "When": { "IsDitRInstalled": false }
         },
         {
-            "Name": "LewisPlantInside", 
-            "Value": false,
+            "Name": "InRelationshipWithSen", 
+            "Value": "{{Query: '{{Relationship:SenS}}' IN ('Married', 'Dating', 'Engaged') OR '{{Roommate}}' = 'SenS'}}",
             "When": { "IsDitRInstalled": false }
         },
+
+        //-- DATE/WEATHER TOKENS
         {
-            "Name": "LewisPlantInside", 
-            "Value": true,
-            "When": {                 
-                "Query: '{{Weather}}' = 'Rain' OR '{{Season}}' = 'winter'": true,
-                "LivingWithSen": false,
-                "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.0h": true,
-                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "IsDitRInstalled": false
-            }
+            "Name": "IsWeatherBad",
+            "Value": "{{Weather |contains= Rain, Storm, Snow}}",
+            "When": { "IsDitRInstalled": false }
         },
 
-        //-- DATE TOKENS
+        { "Name": "LewisPlantInside",  "Value": false },
+            {
+                "Name": "LewisPlantInside", 
+                "Value": "{{Query: '{{IsWeatherBad}}' IN ('true') OR '{{Season}}' = 'winter'}}",
+                "When": { "IsSVEInstalled": false, "IsDitRInstalled": false }
+            },
+
         {
             "Name": "TodaysDate",
             "Value": "{{Season}} {{Day}}",
