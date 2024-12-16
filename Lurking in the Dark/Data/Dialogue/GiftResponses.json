@@ -155,8 +155,6 @@
                     "AcceptGift_(O)DN.SnS_StygiumOre": "{{i18n:Gifts.SenS.Stygium}}",
                     "AcceptGift_(O)DN.SnS_StygiumBar": "{{i18n:Gifts.SenS.Stygium}}",
                     "AcceptGift_(O)DN.SnS_DuskspireHeart": "{{i18n:Gifts.SenS.DuskspireHeart}}",
-                    
-                    //"AcceptGift_(O)": "{{i18n:Gifts.SenS.}}",
 
                     "AcceptGift_(O)WWWA.Book.ArtifactOrCutlery": "{{i18n:Gifts.SenS.ArtifactOrCutlery}}",
                     "AcceptGift_(O)WWWA.Book.DeferenceArlington": "{{i18n:Gifts.SenS.DeferenceArlington}}",
@@ -182,6 +180,12 @@
                     "AcceptGift_(O)TenebrousNova.EnD.ChaosTotem": "{{i18n:Gifts.SenS.ChaosTotem}}",
                     "AcceptGift_(O)TenebrousNova.EnD.SanguineHeart": "{{i18n:Gifts.SenS.SanguineHeart}}",
                     "AcceptGift_(O)TenebrousNova.EnD.BeholderFruit": "{{i18n:Gifts.SenS.BeholderFruit}}",
+
+                    "AcceptGift_(O)MadDog.HashtagBearfam_TerenRecipes": "{{i18n:Gifts.SenS.BarnesFamilyRecipes}}",
+                    "AcceptGift_(O)MadDog.HashtagBearfam_BearRecipes": "{{i18n:Gifts.SenS.BearFamilySecrets}}",
+                    "AcceptGift_(O)MadDog.HashtagBearfam_GunnarRecipes": "{{i18n:Gifts.SenS.GunnarsBrewingGuide}}",
+                    "AcceptGift_(O)MadDog.HashtagBearfam_SondraRecipes": "{{i18n:Gifts.SenS.SondrasSeasonalRecipes}}",
+                    //"AcceptGift_(O)": "{{i18n:Gifts.SenS.}}",
 
                     "AcceptGift_(O)sapphicsaph_pitv.PridePop": "{{i18n:Gifts.SenS.PridePop}}",
                     "AcceptGift_(O)sapphicsaph_pitv.GaylacticCookie": "{{i18n:Gifts.SenS.GaylacticCookie}}",
