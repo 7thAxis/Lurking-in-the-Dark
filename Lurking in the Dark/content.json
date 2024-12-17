@@ -111,9 +111,9 @@
             "When": { "IsDitRInstalled": false }
         },
 
-        { "Name": "ImmersiveChildCheck",  "Value": false },
+        { "Name": "UniqueChildCheck",  "Value": false },
             {
-                "Name": "ImmersiveChildCheck", 
+                "Name": "UniqueChildCheck", 
                 "Value": "{{HasMod: |contains=shaklin.uniquechildrentalk}}",
                 "When": { 
                     "Spouse": "SenS",
@@ -130,7 +130,20 @@
             "Name": "SenPartnershipRoute", 
             "Value": "Romantic",
             "When": { "HasFlag: |contains=DitR_M_SenS_Romantic": true, "IsDitRInstalled": false }
+        },
+        {
+            "Name": "SenHeartRange",
+            "Value": "EarlyHeart",
+            "When": { "IsDitRInstalled": false }
         }, 
+        {
+            "Name": "SenHeartRange", 
+            "Value": "LateHeart",
+            "When": { 
+                "Hearts:SenS": "{{Range: 6, 10}}",
+                "IsDitRInstalled": false
+            }
+        },
         {
             "Name": "SenScheduleRandomizer", 
             "Value": "{{Random:{{Range: 1, 12}}|key=SSR}}",
@@ -216,24 +229,22 @@
         },
         {
             "Name": "RelationshipTokens",
-            "Value": "|SenRelationshipTerm={{i18n:Core.SenS.RelationshipTerm.{{Relationship:SenS |contains=Married, Dating, Engaged}}}} |SenKrobusReference={{SenKrobusReference}}",
-            "When": { "IsDitRInstalled": false }
-        },
-        {
-            "Name": "SenRomanticNick",
-            "Value": "|RomanticNick={{Romantic Nickname}}",
+            "Value": "|SenRelationshipTerm={{i18n:Core.SenS.RelationshipTerm.{{Relationship:SenS |contains=Married, Dating, Engaged}}}} |SenKrobusReference={{SenKrobusReference}} |RomanticNick={{Romantic Nickname}}",
             "When": { "IsDitRInstalled": false }
         },
             //--SEN OVERRIDE DIALOGUE GENERATION--
-
-            { "Name": "SenOverrideDialogue", "Value": "" }, 
             { "Name": "SenOverrideConditions", "Value": "Inactive" },
             { "Name": "SSSD", "Value": "Empty" }, //Empty keeps SenOverrideDialogue from screaming abt being empty on disabled days
             { "Name": "SSRD",  "Value": "" },
             { "Name": "SSKD", "Value": "" },
         {
             "Name": "SenOverrideDay",
-            "Value": "{{Query: {{Random: {{Range: 1, 10}}|key=SSDO}} = 1 }}",
+            "Value": "{{Query: {{Random: {{Range: 1, 5}}|key=SSDO}} = 1 }}",
+            "When": { "IsDitRInstalled": false }
+        },
+        {
+            "Name": "OverrideTheOverrideWithRelationshipDialogue",
+            "Value": "{{Query: {{Random: {{Range: 1, 3}}|key=SSDOR}} = 1 }}",
             "When": { "IsDitRInstalled": false }
         },
         {
@@ -247,22 +258,22 @@
         },   
         {
             "Name": "SSSD",
-            "Value": "{{i18n:Core.SenS.Season.{{season}}.{{Random:{{Range: 1, 10}}|key={{Time}}}}{{SenRandTokens}}}}",
+            "Value": "{{i18n:Core.SenS.Seasonal.{{season}}.{{Random:{{Range: 1, 10}}|key=SenA{{Time}}}}{{SenRandTokens}}}}",
             "When": { "SenOverrideConditions": "Active", "IsDitRInstalled": false }
         },
         {
             "Name": "SSRD",
-            "Value": "{{i18n:Core.SenS.RelationshipOverride.{{Random:{{Range: 1, 10}}|key={{Time}}}}{{RelationshipTokens}}}}++",
+            "Value": "{{i18n:Core.SenS.RelationshipOverride.{{Random:{{Range: 1, 10}}|key=SenB{{Time}}}}{{RelationshipTokens}}}}++",
             "When": {
                 "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
-                "Hearts:SenS": "{{Range: 8, 10}}",
+                "Hearts:SenS": "{{Range: 8, 14}}",
                 "SenOverrideConditions": "Active",
                 "IsDitRInstalled": false
             }
         },    
         {
             "Name": "SSKD",
-            "Value": "{{i18n:Core.SenS.KrobusCommentary.{{Random:{{Range: 1, 4}}|key={{Time}}}}}}++",
+            "Value": "{{i18n:Core.SenS.KrobusCommentary.{{Random:{{Range: 1, 4}}|key=SenC{{Time}}}}}}++",
             "When": {
                 "Relationship:Krobus |contains=Unmet": false,
                 "SenOverrideConditions": "Active",
@@ -271,8 +282,18 @@
         },
         {
             "Name": "SenOverrideDialogue",
-            "Value": "{{Random:{{SSRD}} {{SSKD}} {{SSSD}}|key={{Query:{{Time}}+10}}|inputSeparator=++}}",
+            "Value": "{{Random:{{SSRD}} {{SSKD}} {{SSSD}}|key=SenZ{{Time}}|inputSeparator=++}}",
             "When": { "SenOverrideConditions": "Active", "IsDitRInstalled": false }
+        },
+        {
+            "Name": "SenOverrideDialogue",
+            "Value": "{{i18n:Core.SenS.RelationshipOverride.{{Random:{{Range: 1, 10}}|key=SenB{{Time}}}}{{RelationshipTokens}}}}",
+            "When": {
+                "InRelationshipWithSen": true,
+                "OverrideTheOverrideWithRelationshipDialogue": true,
+                "SenOverrideConditions": "Active",
+                "IsDitRInstalled": false
+            }
         },
 
         //Other Stuff

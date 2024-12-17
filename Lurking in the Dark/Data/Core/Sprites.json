@@ -120,32 +120,32 @@
             "FromFile": "Assets/Characters/Kids/Toddler_{{Male Toddler Design}}.png",
             "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
         },
-        //Immersive Children Talk Compat
+        //Unique Children Talk Compat
             //Child 1
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}.png",
-            "When": { "ImmersiveChildCheck": true, "ChildGenders |valueAt=0": "Female" }
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Female" }
         },
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}.png",
-            "When": { "ImmersiveChildCheck": true, "ChildGenders |valueAt=0": "Male" }
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
         },
             //Child 2
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}.png",
-            "When": { "ImmersiveChildCheck": true, "ChildGenders |valueAt=1": "Female"}
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Female"}
         },
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}.png",
-            "When": { "ImmersiveChildCheck": true,"ChildGenders |valueAt=1": "Male"}
+            "When": { "UniqueChildCheck": true,"ChildGenders |valueAt=1": "Male"}
         },
         //RESHADE
         {           

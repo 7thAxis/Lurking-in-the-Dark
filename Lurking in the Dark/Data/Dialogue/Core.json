@@ -1,27 +1,14 @@
 {
     "Changes": [
         {
-            "LogName": "Sen Dialogue - 0-5",
+            "LogName": "Sen Dialogue",
             "Action": "EditData",
             "Target": "Characters/Dialogue/SenS",
             "Update": "OnLocationChange",
             "Entries": {
-                "{{WeekDay}}": "{{i18n:Core.SenS.EarlyHeart.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
+                "{{WeekDay}}": "{{i18n:Core.SenS.{{SenHeartRange}}.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
             },
             "When": { "HasFlag |contains=DitR_M_SenS_OverrideSeenToday": false }
-        },
-        {
-            "LogName": "Sen Dialogue - 6-10",
-            "Action": "EditData",
-            "Target": "Characters/Dialogue/SenS",
-            "Update": "OnLocationChange",
-            "Entries": {
-                "{{WeekDay}}": "{{i18n:Core.SenS.LateHeart.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
-            },
-            "When": {
-                "Hearts:SenS": "{{Range: 6, 10}}",
-                "HasFlag |contains=DitR_M_SenS_OverrideSeenToday": false
-            }
         },
         {
             "LogName": "Sen Dialogue Overrides",
@@ -112,7 +99,7 @@
                 "JulietGremlin": "{{i18n:Core.SenS.JulietGremlin}}",
                 "SterlingTrash": "{{i18n:Core.SenS.SterlingTrash}}",
 
-                "EliWoods": "{{i18n:Core.SenS.EliWoods}}",
+                /*"EliWoods": "{{i18n:Core.SenS.EliWoods}}",
                 "MateoRescue": "{{i18n:Core.SenS.MateoRescue}}",
                 "MateoCaution": "{{i18n:Core.SenS.MateoCaution}}",
                 "MateoLibrary": "{{i18n:Core.SenS.MateoLibrary}}",
@@ -135,7 +122,7 @@
                 "DandelionReturns": "{{i18n:Core.SenS.DandelionReturns}}",
                 "IntoTheDeepDark": "{{i18n:Core.SenS.IntoTheDeepDark}}",
                 "DuskspireEncounter": "{{i18n:Core.SenS.DuskspireEncounter}}",
-                "DuskspireDefeated": "{{i18n:Core.SenS.DuskspireDefeated}}",
+                "DuskspireDefeated": "{{i18n:Core.SenS.DuskspireDefeated}}",*/
                 
                 //Other
                 "GreenRain": "{{i18n:Core.SenS.GreenRain}}",

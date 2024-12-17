@@ -473,6 +473,52 @@
 "Core.SenS.RelationshipOverride.9": "It is so hard to hold my tongue about you when I visit the mines. I want to tell everyone about you.$s#$b#You are a wonderful {{SenRelationshipTerm}} and an inspiration to me, @.$s#$e#I wish the rest of my kind could give humanity a chance.$s#$b#Though, I suppose this world isn't quite ready for that yet...$8",
 "Core.SenS.RelationshipOverride.10": "It'll never cease to amaze me that we've managed to become {{SenRelationshipTerm}}s.$l#$b#I've always dreamed of becoming close with a human, but I never thought it would become a reality.$h#$e#Here's to our bond only growing stronger!$7",
 
+//SEASONAL OVERRIDE POOLS
+"Core.SenS.Seasonal.spring.1": "Oh, oh! Hello @!$h#$b#I found this pretty flower, I hope you like it.$h[22 18 597 591]#$e#Goodness, I love giving gifts. It makes my heart feel all warm and fuzzy.$l",
+"Core.SenS.Seasonal.spring.2": "@! A very fuzzy bumble bee landed on my head earlier!$u#$b#I was a little scared, but the bee got up and flew away after a while.$8#$e#I wonder if they were lost?$s",
+"Core.SenS.Seasonal.spring.3": "Oh, oh! Hello @!$7#$b#I've got a gift for you.$h[22 18 597 591]#$e#I hope you like it. When I picked it, I immediately thought of you.$h",
+"Core.SenS.Seasonal.spring.4": "I read that the wings of butterflies are very, very fragile.#$b#You should never, ever touch them because the oils on your hands can damage them.$s#$e#I don't know if my little claws would hurt a butterfly, but it's best leave them be.$h",
+"Core.SenS.Seasonal.spring.5": "Hmm... so it's {{SpringCrop}} season, eh?$7#$b#Will you be growing any on your farm this year?$h#$e#If you grow any, I'd appreciate it if you shared one with me!$h",
+"Core.SenS.Seasonal.spring.6": "It's a beautiful spring day, isn't it, @?$h#$b#The birds are singing, flowers are blooming.$7#$b#On days like these...#$b#Folks like you should be getting lots done on your farm!$h",
+"Core.SenS.Seasonal.spring.7": "Are you growing any tulips on your farm, @?$h#$b#I was reading in a flower guide that they can come 5 different colors!$7#$e#I wonder how that mutation happens...#$b#Either way, every color is gorgeous!$h",
+"Core.SenS.Seasonal.spring.8": "Goodness, doesn't the valley spring air make you feel alive?$h#$b#It's so clean and refreshing, and not muggy like that vile summer air!$a#$e#Sigh, I don't look forward to the summer around the bend.$s",
+"Core.SenS.Seasonal.spring.9": "Oh, it's so nice out that I fell asleep under a tree earlier!$h#$b#Do you ever nap out in the great outdoors, @?$h#$e#...When you pass out after working too hard?!$u#$b#@, please take care of yourself!$s",
+"Core.SenS.Seasonal.spring.10": "AAaaaAAachhhooooo!!!$u#$b#Oh my goodness, I'm so sorry, @! The pollen seems to be getting to me.$8#$e#(Dear yoba, that was really embarrassing...)$8",
+
+//OH MY GOD SHUT UP ABOUT HOW MUCH YOU HATE THE SUMMER OH MY GOD
+"Core.SenS.Seasonal.summer.1": "Sigh, it's utterly broiling out...$s#$b#I can't leave the shade unless it's after dark or I have an umbrella.$s#$e#It's okay though, that's more time to read my books and crochet.$h",
+"Core.SenS.Seasonal.summer.2": "I love the sound of the bugs buzzing in the summer.$l#$b#It's very relaxing and reminds me of home.$h#$e#I do wish the sun wasn't so bright.$8#$b#One step out in direct sunlight and I would fry like a void egg.#$b#Yuck.$a",
+"Core.SenS.Seasonal.summer.3": "If there's one thing I actually love about summer, it's the overabundance of ice cream!$7#$e#Apparently the ice cream I found on the ground earlier had been dropped by a young child.$s#$b#I feel bad for them, but at least I got a snack out of it.$8",
+"Core.SenS.Seasonal.summer.4": "Bleck, I hate this blasted heat!$a#$b#I went out anyway so I could find you one of these$h[421 593 402 376]#$e#I really hope you like it, @.$h#$b#Giving gifts makes my heart feel all warm and fuzzy.$l",
+"Core.SenS.Seasonal.summer.5": "Oh hello, @... I feel like I'm going to melt.$s#$b#Why does it have to be so hot in the summer?$s#$e#If I wish hard enough on a shooting star, do you think summer will stop existing?$8",
+"Core.SenS.Seasonal.summer.6": "Tada! Here's a present for you, @!$h#$b#It might be hot out, but that won't stop me from finding you a gift.$h[421 593 402 376]#$e#I really hope you like it, @.$h#$b#I don't know why, but flowers make me think of you.$h",
+"Core.SenS.Seasonal.summer.7": "Sun, sun, go away. Come again some other day.~$12#$e#Oh, sorry @. You caught me in the middle of singing about my utter disdain for the summer sun.$8",
+"Core.SenS.Seasonal.summer.8": "Uhg, this season makes me shed my skin like crazy.$a#$b#I hope that doesn't gross you out too much, @.$8#$e#I'm a bit fuzzier than most shadows, so I also shed my fur.$8#$b#It takes some effort to look my best, especially in the summer.$8",
+"Core.SenS.Seasonal.summer.9": "There are so many flies out during this time of the year.$h#$b#It seems humans find them annoying... but for me it means I always have a snack!$7#$e#Now, if only it weren't so hot...$a",
+"Core.SenS.Seasonal.summer.10": "Sigh, isn't the broiling heat a nightmare?$a#$b#My kind typically loves the heat, but this is too much even for me.$8#$e#You would think the rain would improve things, but it tends to make things worse.$8#$b#So much humidity!$8",
+
+"Core.SenS.Seasonal.fall.1": "Hmm.. humans seem to have a tradition in fall where they carve pumpkins.$6#$e#How fascinating... I might give it a try myself.$h#$e#You know, I really like pumpkins. They're very cute gourds.$l",
+"Core.SenS.Seasonal.fall.2": "There was the most lovely smell coming from the inn earlier...$l#$b#Someone had freshly baked a pumpkin pie!$l#$e#It may or may not be in my belly now.$8#$b#I couldn't help myself, hehehe...$l",
+"Core.SenS.Seasonal.fall.3": "I got my hands on a new beverage called \"pumpkin spice coffee\".$h#$b#It is one of the best things I've ever had in my life.$7#$e#Do you like coffee, @?$h#$b#I love it, but it gives me the jitters.$8",
+"Core.SenS.Seasonal.fall.4": "I think I'm going to carve a pumpkin tonight.$h#$b#$y 'Do you like carving pumpkins, @?_I do it every fall!_I bet you carve the best pumpkins in the valley, @. I plan to make mine look like my face.$h_No, I absolutely hate it._Aww... Well have you tried doing it with someone else? It might be more fun that way!$8_Never tried it!_Oh, we should carve a pumpkin together sometime. Doesn't that sound fun?$h'",
+"Core.SenS.Seasonal.fall.5": "Ah... the brisk breeze of fall.$l#$b#Perhaps I should invite a friend from the mines to come experience its beauty.$h#$e#No... That would be a terrible idea.$s#$b#I have no idea how they'd react if they saw humans.$s#$e#Or... if a human saw them.$s",
+"Core.SenS.Seasonal.fall.6": "As much as I love the fall, I find it ill advised to jump into piles of leaves.$8#$b#Last time I did that, I got covered in little bug bites.$8#$e#In response, I bit those little buggers back!$12#$b#I'll have you know that they were delicious.$12",
+"Core.SenS.Seasonal.fall.7": "The crisp leaves of fall make me feel so nostalgic, but I'm not sure why.$l#$b#It's nothing I've ever experienced in the mines...$6#$e#Maybe I should start a journal to work through these strange feelings.$6",
+"Core.SenS.Seasonal.fall.8": "A cup of hot cocoa with marshmallows sure sounds so nice right about now.$h#$b#Maybe a slice of pumpkin pie, too...$l#$e#I might need to raid the kitchen of the inn later tonight.$12",
+"Core.SenS.Seasonal.fall.9": "Oh, @! Do you wanna carve this pumpkin with me later?$h [276]#$b#I think it would be a whole lot of fun!$7#$e#Hm...? Where did I get the pumpkin?$6#$b#It's probably best that I don't tell you.$12",
+"Core.SenS.Seasonal.fall.10": "Oh hello, @!$h#$b#I think I've made a mistake today.$s#$b#I saw squirrels munching on things that had fallen out of trees. I decided to give it a try myself.#$e#I ended up biting a pinecone, and it was not pleasant.$8#$e#Please don't bite pinecones, @. Learn from my mistakes!$s",
+
+"Core.SenS.Seasonal.winter.1": "Snow...$l#$b#It's so pretty, despite how bright and cold it is!$h#$b#Aside from some chilly floors in the mines, there's nothing quite like winter down there.$l#$e#Certainly no snow, that's for sure.$s",
+"Core.SenS.Seasonal.winter.2": "It might be cold, but my heart is not.$h#$b#I hope you enjoy this!$h[418]#$e#The crocus is my favorite flower.$l#$b#It just about makes this cold bearable.$8",
+"Core.SenS.Seasonal.winter.3": "Aaah..#$b#Aaaah....$h#$b#AchoooOOO!$11#$e#Oh my gosh, I'm sorry you had to witness that!$11#$b#The spring pollen makes my nose tickle.$8#$e#Huh? What do you mean \"Wait, you have a nose?\"?$8#$b#Of course I have a nose. You're silly, @.$h",
+"Core.SenS.Seasonal.winter.4": "Do you ever occasionally find a strange cold yam in the snow?$6#$b#Surely they don't grow in this kind of weather...$6#$e#Then again, there are far stranger things in this world.$8#$b#...Myself included.$12",
+"Core.SenS.Seasonal.winter.5": "Aaah..#$b#Aaaah....$h#$b#AchoooOOO!$11#$e#Oh my gosh, excuse me! The cold air made my nose start to tickle.$8#$e#Oh? Don't worry, I'm not sick.$8",
+"Core.SenS.Seasonal.winter.6": "B-brrr!! I'm very chilly...$s#$b#$y 'What do you do?_Give him a hug_O-oh? Thank you, @. I feel much warmer now.$l_Tell him to get a jacket_You're probably right... I'll try crocheting one. It's hard for us shadows to get comfortable in human clothing.$8'",
+"Core.SenS.Seasonal.winter.7": "It's so cold that I almost wish that it was summer.$a#$b#...I say that, but if it were summer, I'd be complaining that I wanted it to be colder.$8#$e#Why can't it be fall forever?$s#$b#Or spring.$8#$b#I'll settle for spring too.$8",
+"Core.SenS.Seasonal.winter.8": "You'd think I'd like the winter because it was cool and wet, but you'd be very wrong.#$b#It's so bright from the snow during the day.$a#$e#I'm not sure which would fry me worse, the light reflecting off the snow or the summer sun.$8#$b#At least the sun starts setting earlier in the winter. That's more time I can be outside the cave.$h",
+"Core.SenS.Seasonal.winter.9": "I'm getting so sick of the snow.$a#$b#My short legs keep getting stuck!$s#$e#I've fallen more times than I can count.$s#$b#Last night I got an icky bruise on my cheek.$s",
+"Core.SenS.Seasonal.winter.10": "I'm getting a little hungry... It's really hard to find bugs in the winter.$s#$b#I'll probably have to go into the mines later to stock up.#$e#Or I could sneak into that fisherman's shop and get grab some bait, I guess.$6",
+
 //SPECIFIC DAYS - SPRING
 "Core.SenS.Spring.Day.1": "Ahh.. the spring. There's nothing quite like it down in the mines.$h#$b#The fresh air, the lush grass you can sink into...$l#$b#Oh, and the plethora of bugs! Yum!$l#$b#Wanna try some?$h#$e#[721] Huh, what's that look for?$6",
 "Core.SenS.Spring.Day.12": "I really need to finish patching up my egg costume for tomorrow.#$b#A couple of the spots are falling off.$8#$e#I guess that's what I get for using random trash as my materials.$8",
@@ -788,6 +834,7 @@
 "Gifts.SenS.PridePop": "So. Many. Colors! It's otherworldly!$7#$b#Does it have magical properties? Will I become rainbow colored if I eat this?$h",
 "Gifts.SenS.GaylacticCookie": "$query PLAYER_HAS_MAIL Current DitR_M_SenPrideCookie Any, PLAYER_HEARTS Current SenS 8#...! Did you really remember I wanted one of these cookies, @?$7#$b#Thank you so much, you're the best. Have this shiny stone I found in the garbage.$h[74]#$action Current RemoveMail DitR_M_SenPrideCookie all|Oh!! I really wanted one of these, thank you so much @!$h#$b#%The cookie lasts about 2 seconds, then is gone...#$action Current RemoveMail DitR_M_SenPrideCookie all",
 
+//I'm working on this for a future update, just gotta hotfix something
 //S&S
 "Gifts.SenS.TaintedMushroom": "",
 "Gifts.SenS.TaintedCrocus": "",

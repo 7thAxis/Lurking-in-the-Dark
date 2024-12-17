@@ -133,7 +133,7 @@
                     "RejectItem_(O)stinkyvicki_PrehistoricOmelet": "{{i18n:Gifts.SenS.ContainsGarlic}}",
 
                     //"AcceptGift_(O)": "{{i18n:Gifts.SenS.}}",
-                    "AcceptGift_(O)DN.SnS_mushroom1": "{{i18n:Gifts.SenS.TaintedMushroom}}",
+                    /*"AcceptGift_(O)DN.SnS_mushroom1": "{{i18n:Gifts.SenS.TaintedMushroom}}",
                     "AcceptGift_(O)DN.SnS_mushroom2": "{{i18n:Gifts.SenS.TaintedMushroom}}",
                     "AcceptGift_(O)DN.SnS_mushroom3": "{{i18n:Gifts.SenS.TaintedMushroom}}",
                     "AcceptGift_(O)DN.SnS_mushroom4": "{{i18n:Gifts.SenS.TaintedMushroom}}",
@@ -239,7 +239,7 @@
                     "AcceptGift_(O)Spiderbuttons.ButtonsExtraBooks_Book_Carols": "{{i18n:Gifts.SenS.BookOfCarols}}",
                     "AcceptGift_(O)Spiderbuttons.ButtonsExtraBooks_Book_Coffee": "{{i18n:Gifts.SenS.TheStrongestBrew}}",
                     "AcceptGift_(O)Spiderbuttons.ButtonsExtraBooks_Book_Sketchbook": "{{i18n:Gifts.SenS.ChildrensSketchbook}}",
-                    "AcceptGift_(O)Spiderbuttons.ButtonsExtraBooks_Debug_RemoveAll": "{{i18n:Gifts.SenS.BEBPowerRemoval}}",
+                    "AcceptGift_(O)Spiderbuttons.ButtonsExtraBooks_Debug_RemoveAll": "{{i18n:Gifts.SenS.BEBPowerRemoval}}",*/
 
                     "AcceptGift_(O)sapphicsaph_pitv.PridePop": "{{i18n:Gifts.SenS.PridePop}}",
                     "AcceptGift_(O)sapphicsaph_pitv.GaylacticCookie": "{{i18n:Gifts.SenS.GaylacticCookie}}",
