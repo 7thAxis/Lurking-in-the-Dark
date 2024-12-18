@@ -213,6 +213,27 @@
                 "7thAxis Nanu and Opal Portraits": true
             }
         },*/
+        //DOVES because I'm horrible (thanks for the idea Claw)
+        {
+            "LogName": "Void Doves - Bird House",
+            "Action": "EditImage",
+            "Target": "TileSheets/critters",
+            "FromFile": "Assets/Characters/Kids/The_Doves_1.png",
+            "PatchMode": "Overlay",
+            "FromArea": { "X": 0, "Y": 0, "Width": 320, "Height": 64 },
+            "ToArea": { "X": 0, "Y": 544, "Width": 320, "Height": 64 },
+            "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
+        },
+        {
+            "LogName": "Void Doves - Shrine",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cursors",
+            "FromFile": "Assets/Characters/Kids/The_Doves_2.png",
+            "PatchMode": "Replace",
+            "FromArea": { "X": 0, "Y": 0, "Width": 144, "Height": 22 },
+            "ToArea": { "X": 388, "Y": 1894, "Width": 144, "Height": 22 },
+            "When":  { "Spouse": "SenS", "Have Shadow Kids": true }
+        },
         //RESHADE
         {           
             "Action": "Load",
