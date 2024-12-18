@@ -126,27 +126,93 @@
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}.png",
-            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Female" }
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=0": "Female",
+                "UCT Portrait Compatibility": true
+            }
         },
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}.png",
-            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=0": "Male",
+                "UCT Portrait Compatibility": true
+            }
         },
+            //Axell Portraits
+        /*{
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=0": "Female",
+                "Female Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=0": "Male",
+                "Male Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },*/
             //Child 2
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}.png",
-            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Female"}
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=1": "Female",
+                "UCT Portrait Compatibility": true
+            }
         },
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
             "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}.png",
-            "When": { "UniqueChildCheck": true,"ChildGenders |valueAt=1": "Male"}
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=1": "Male",
+                "UCT Portrait Compatibility": true
+            }
         },
+            //Axell Portraits
+        /*{
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Female Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=1": "Female",
+                "Female Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Kids/Toddler_{{Male Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=1": "Male",
+                "Male Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },*/
         //RESHADE
         {           
             "Action": "Load",

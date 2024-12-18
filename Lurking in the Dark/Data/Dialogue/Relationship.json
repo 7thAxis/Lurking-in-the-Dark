@@ -235,6 +235,7 @@
             },
             "When": { "LivingWithSen": true }      
         },
+        //Birth and adoption dialogue
         {
             "LogName": "Have Shadow Kids Dialogue False",
             "Action": "EditData",
@@ -242,25 +243,28 @@
             "Entries": {
                 "NPC.cs.4448": "{{i18n:Relationship.SenS.AdoptionRemark{{RelationshipTokens}}}}", //Pregnancy adoption edit
                 "NPC.cs.4440": "{{i18n:Relationship.SenS.AdoptionRemark{{RelationshipTokens}}}}", //Adoption 1 
-                "NPC.cs.4441": "{{i18n:Relationship.SenS.AdoptionRemark}}" //Adoption 2
+                "NPC.cs.4441": "{{i18n:Relationship.SenS.AdoptionRemark}}", //Adoption 2
+                "NPC.cs.4447": "{{i18n:Relationship.SenS.AdoptionRemark}}"
             },
-            "When":{
-                "Spouse": "SenS",
-                "Have Shadow Kids":false 
-            }
+            "When":{ "Spouse": "SenS", "Have Shadow Kids": false }
         },
         {
             "LogName": "Have Shadow Kids Dialogue False 2",
             "Action": "EditData",
             "Target": "Strings/Events",
             "Entries": {
+                "BabyNamingTitle_Male": "{{i18n:Relationship.SenS.NameChildMale}}",
+                "BabyNamingTitle_Female": "{{i18n:Relationship.SenS.NameChildFemale}}",
+                "BirthMessage_SpouseNaming_Male": "{{i18n:Relationship.SenS.SenNameChildMale}}",
+                "BirthMessage_SpouseNaming_Female": "{{i18n:Relationship.SenS.SenNameChildFemale}}",
                 "HaveBabyQuestion": "{{i18n:Relationship.SenS.AdoptionQuestion{{RelationshipTokens}}}}",
-                "BirthMessage_PlayerMother": "{{i18n:Relationship.SenS.AdoptionMessage}}"
+                "HaveBabyQuestion_Adoption": "{{i18n:Relationship.SenS.AdoptionQuestion{{RelationshipTokens}}}}",
+                "HavePlayerBabyQuestion": "{{i18n:Relationship.SenS.AdoptionQuestion{{RelationshipTokens}}}}",
+                "HavePlayerBabyQuestion_Adoption": "{{i18n:Relationship.SenS.AdoptionQuestion{{RelationshipTokens}}}}",
+                "BirthMessage_PlayerMother": "{{i18n:Relationship.SenS.AdoptionMessage}}",
+                "BirthMessage_Adoption": "{{i18n:Relationship.SenS.AdoptionMessage}}"
             },
-            "When":{
-                "Spouse": "SenS",
-                "Have Shadow Kids":false
-            }
+            "When":{ "Spouse": "SenS", "Have Shadow Kids": false }
         },
         {
             "LogName": "Have Shadow Kids Dialogue True",
@@ -269,25 +273,28 @@
             "Entries": {
                 "NPC.cs.4448": "{{i18n:Relationship.SenS.BabyRemark{{RelationshipTokens}}}}",
                 "NPC.cs.4440": "{{i18n:Relationship.SenS.BabyRemark{{RelationshipTokens}}}}", 
-                "NPC.cs.4441": "{{i18n:Relationship.SenS.BabyRemark}}" //Gonna have a baby 2
+                "NPC.cs.4441": "{{i18n:Relationship.SenS.BabyRemark}}", //Gonna have a baby 2
+                "NPC.cs.4447": "{{i18n:Relationship.SenS.BabyRemark}}"
             },
-            "When":{
-                "Spouse": "SenS",
-                "Have Shadow Kids":true 
-            }
+            "When":{ "Spouse": "SenS", "Have Shadow Kids": true }
         },
         {
             "LogName": "Have Shadow Kids Dialogue True 2",
             "Action": "EditData",
             "Target": "Strings/Events",
             "Entries": {
+                "BabyNamingTitle_Male": "{{i18n:Relationship.SenS.NameChildMale}}",
+                "BabyNamingTitle_Female": "{{i18n:Relationship.SenS.NameChildFemale}}",
+                "BirthMessage_SpouseNaming_Male": "{{i18n:Relationship.SenS.SenNameChildMale}}",
+                "BirthMessage_SpouseNaming_Female": "{{i18n:Relationship.SenS.SenNameChildFemale}}",
                 "HaveBabyQuestion": "{{i18n:Relationship.SenS.BabyQuestion{{RelationshipTokens}}}}",
-                "BirthMessage_PlayerMother": "{{i18n:Relationship.SenS.BabyMessage}}"
+                "HaveBabyQuestion_Adoption": "{{i18n:Relationship.SenS.BabyQuestion{{RelationshipTokens}}}}",
+                "HavePlayerBabyQuestion": "{{i18n:Relationship.SenS.BabyQuestion{{RelationshipTokens}}}}",
+                "HavePlayerBabyQuestion_Adoption": "{{i18n:Relationship.SenS.BabyQuestion{{RelationshipTokens}}}}",
+                "BirthMessage_PlayerMother": "{{i18n:Relationship.SenS.BabyMessage}}",
+                "BirthMessage_Adoption": "{{i18n:Relationship.SenS.BabyMessage}}"
             },
-            "When":{
-                "Spouse": "SenS",
-                "Have Shadow Kids":true
-            }
+            "When":{ "Spouse": "SenS", "Have Shadow Kids": true }
         }
     ]
 }

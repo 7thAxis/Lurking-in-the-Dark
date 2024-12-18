@@ -7,28 +7,28 @@
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
-            "Description":"Allows for the changing of Shadow stats to no longer harm the player after completing Sen's storyline.",
+            "Description":"Allows for the changing of Shadow stats so Shadowfolk no longer harm the player after completing Sen's storyline.",
             "Section": "Gameplay"
         },
         "Pacifist Mode": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
-            "Description":"Shadows will be invincible to player attacks. (Shadow Stat Changes must be set to true for this to take effect.)",
+            "Description":"Shadows will be invincible to player attacks.\n\n(Shadow Stat Changes must be set to true for this to take effect.)",
             "Section": "Gameplay"
         },
         "Golem Eradication Substitute": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
-            "Description": "Changes the Void Spirit eradication goal in the Adventurer's Guild to Golems. The player does not have to fight Shadowfolk to reach perfection when enabled. Golem monster list consists of Stone Golems, Wilderness Golems, Iridium Golems, Metal Heads and Dwarvish Sentries.",
+            "Description": "Changes the Void Spirit eradication goal in the Adventurer's Guild to Golems.\n\nThe player does not have to fight Shadowfolk to reach perfection when enabled.\n\nGolem monster list consists of Stone Golems, Wilderness Golems, Iridium Golems, Metal Heads and Dwarvish Sentries.",
             "Section": "Gameplay"
         },
         "Event Cooldown Length": {
             "AllowValues": "1, 3, 7",
             "Default": "3",
             "AllowBlank": false,
-            "Description": "Adjusts number of days you have to wait between Sen's events. (Default 3 days)",
+            "Description": "Adjusts number of days you have to wait between Sen's events.\n\n(Default 3 days)",
             "Section": "Gameplay"
         },
 
@@ -43,7 +43,7 @@
         "Romantic Nickname": {
             "Default": "Starshine",
             "AllowBlank": false,
-            "Description": "Sen's romantic nickname for the player.",
+            "Description": "Sets Sen's romantic nickname for the player.",
             "Section": "NPC Behavior"
         },
 
@@ -52,44 +52,59 @@
             "AllowValues": "7thAxis, Nyapu",
             "Default": "7thAxis",
             "AllowBlank": false,
-            "Description":"Sets the mod's portrait style. (Nyapu recommended because Nyapu is amazing. Don't change this option during festivals.)",
-            "Section": "Graphics"
-        },
-        "Have Shadow Kids": {
-            "AllowValues": "true, false",
-            "Default": true,
-            "AllowBlank": false,
-            "Description":"Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
-            "Section": "Graphics"
-        },
-        "Female Toddler Design": {
-            "AllowValues": "Loki, Freya, Nanu, Opal",
-            "Default": "Freya",
-            "AllowBlank": false,
-            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true. Nanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
-            "Section": "Graphics"
-        },
-        "Male Toddler Design": {
-            "AllowValues": "Loki, Freya, Nanu, Opal",
-            "Default": "Loki",
-            "AllowBlank": false,
-            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true. Nanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
-            "Section": "Graphics"
+            "Description":"Sets the mod's portrait style. Don't change this option during festivals.\n\n(Nyapu recommended because Nyapu is amazing.)",
+            "Section": "Graphics: General"
         },
         "Reshade Existing Shadows": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
             "Description":"Recolors existing Shadowfolk overworld sprites to match Sen's style.",
-            "Section": "Graphics"
+            "Section": "Graphics: General"
         },
         "Spouse Room": {
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
-            "Description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself. (Requires game restart)",
-            "Section": "Graphics"
-        }
+            "Description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself.\n\n(Requires game restart)",
+            "Section": "Graphics: General"
+        },
+        "Have Shadow Kids": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
+            "Section": "Graphics: General"
+        },
+        "Female Toddler Design": {
+            "AllowValues": "Loki, Freya, Nanu, Opal",
+            "Default": "Freya",
+            "AllowBlank": false,
+            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+            "Section": "Graphics: General"
+        },
+        "Male Toddler Design": {
+            "AllowValues": "Loki, Freya, Nanu, Opal",
+            "Default": "Loki",
+            "AllowBlank": false,
+            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+            "Section": "Graphics: General"
+        },
+        "UCT Portrait Compatibility": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\nLoki and Freya's portraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
+            "Section": "Graphics: Unique Children Talk"
+        },
+        //For future update
+        /*"7thAxis Nanu and Opal Portraits": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description":"Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true.",
+            "Section": "Graphics: Unique Children Talk"
+        }*/
     },
     
     //Calculations 
@@ -308,7 +323,6 @@
             "When": { "Spouse Room": false, "IsDitRInstalled": false }
         }
      ],
-
      //File Loader
     "Changes": [
         {
