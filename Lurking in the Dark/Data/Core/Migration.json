@@ -65,6 +65,39 @@
             }
         },
         {
+            "LogName": "Sen's Crocus ID change for LA",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "7thAxis.DitR.CP.TriggerActions.FurnitureIDMirgration": {
+                "Id": "7thAxis.DitR.CP.TriggerActions.FurnitureIDMirgration",
+                "Trigger": "DayStarted",
+                "HostOnly": true,
+                "Actions": [                
+                    "Pathoschild.ContentPatcher_MigrateIds Items (F)LitD_SenPortrait (F){{ModID}}_Furniture.SenPortrait",
+                    "Pathoschild.ContentPatcher_MigrateIds Items (F)LitD_SenBabyPhoto (F){{ModID}}_Furniture.SenBabyPhoto"
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Sen's Crocus ID change for LA",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "7thAxis.DitR.CP.TriggerActions.CrocusIDMigration": {
+                "Id": "7thAxis.DitR.CP.TriggerActions.CrocusIDMigration",
+                "Trigger": "DayStarted",
+                "HostOnly": true,
+                "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.14h",
+                "Actions": [                
+                    "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.SensCrocus (O){{ModID}}_Items.SensCrocus",
+                    "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds"
+                    ]
+                }
+            }
+        },
+        {
             "LogName": "Quest Fixer",
             "Action": "EditData",
             "Target": "Data/TriggerActions",

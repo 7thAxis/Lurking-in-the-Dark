@@ -6,7 +6,7 @@
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
-                "7thAxis.DitR_Items.SensCrocus": {
+                "{{ModID}}_Items.SensCrocus": {
                     "Name": "{{ModID}}_Items.SensCrocus",
                     "DisplayName": "{{i18n:Items.SenS.SensCrocus.Title}}",
                     "Description": "{{i18n:Items.SensCrocus.EarlyDescription}}",
@@ -27,7 +27,7 @@
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
-                "7thAxis.DitR_Items.SensCrocus": {
+                "{{ModID}}_Items.SensCrocus": {
                     "Name": "7thAxis.DitR_Items.SensCrocus",
                     "DisplayName": "{{i18n:Items.SenS.SensCrocus.Title}}",
                     "Description": "{{i18n:Items.SenS.SensCrocus.Description}}",
@@ -38,27 +38,20 @@
                     "Price": 50,
                     "Edibility": 18,
                     "IsDrink": false,
-                    "Buff": {
-                        "BuffId": null,
-                        "Duration": 0,
-                        "CustomAttributes": {
-                            "FarmingLevel": 0,
-                            "FishingLevel": 0,
-                            "MiningLevel": 0,
-                            "LuckLevel": 0,
-                            "ForagingLevel": 0,
-                            "MaxStamina": 0,
-                            "MagneticRadius": 0,
-                            "Speed": 0,
-                            "Defense": 0,
-                            "Attack": 0
-                        }
-                    },
+                    "ContextTags": [
+                        "color_purple",
+                        "dye_strong",
+                        "forage_item",
+                        "season_spring",
+                        "season_summer",
+                        "season_fall",
+                        "season_winter"
+                      ],
                     "Texture": "Textures/7thAxis.LitD/Objects",
                     "SpriteIndex": 1
                 },
 
-                "7thAxis.DitR_Items.SensCrocusSeeds": {
+                "{{ModID}}_Items.SensCrocusSeeds": {
                     "Name": "7thAxis.DitR_Items.SensCrocusSeeds",
                     "DisplayName": "{{i18n:Items.SenS.SensCrocusSeeds.Title}}",
                     "Description": "{{i18n:Items.SenS.SensCrocusSeeds.Description}}",
@@ -68,22 +61,6 @@
                     "Category": -74,
                     "Price": 30,
                     "IsDrink": false,
-                    "Buff": {
-                        "BuffId": null,
-                        "Duration": 0,
-                        "CustomAttributes": {
-                            "FarmingLevel": 0,
-                            "FishingLevel": 0,
-                            "MiningLevel": 0,
-                            "LuckLevel": 0,
-                            "ForagingLevel": 0,
-                            "MaxStamina": 0,
-                            "MagneticRadius": 0,
-                            "Speed": 0,
-                            "Defense": 0,
-                            "Attack": 0
-                        }
-                    },
                     "Texture": "Textures/7thAxis.LitD/Objects",
                     "SpriteIndex": 0
                 }
@@ -94,10 +71,10 @@
             "Action": "EditData",
             "Target": "Data/Crops",
             "Entries": {
-                "7thAxis.DitR_Items.SensCrocusSeeds": {
+                "{{ModID}}_Items.SensCrocusSeeds": {
                     "Seasons": [ "spring", "summer", "fall", "winter" ],
                     "DaysInPhase": [1,1,1,1],
-                    "HarvestItemId": "7thAxis.DitR_Items.SensCrocus",
+                    "HarvestItemId": "{{ModID}}_Items.SensCrocus",
                     "RegrowDays": "0",
                     "IsRaised": false,
                     "HarvestMaxIncreasePerFarmingLevel": "0",
@@ -114,8 +91,8 @@
             "Action": "EditData",
             "Target": "Data/Furniture",
             "Entries": {
-              "LitD_SenPortrait": "LitD_SenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenPortrait.Title}}/0/Textures\\7thAxis.LitD\\Furniture/true",
-              "LitD_SenBabyPhoto": "LitD_SenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenBabyPhoto.Title}}/2/Textures\\7thAxis.LitD\\Furniture/true"
+              "{{ModID}}_Furniture.SenPortrait": "LitD_SenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenPortrait.Title}}/0/Textures\\7thAxis.LitD\\Furniture/true",
+              "{{ModID}}_Furniture.SenBabyPhoto": "LitD_SenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenBabyPhoto.Title}}/2/Textures\\7thAxis.LitD\\Furniture/true"
             }
           }
     ]

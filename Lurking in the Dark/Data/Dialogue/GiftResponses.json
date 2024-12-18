@@ -246,7 +246,8 @@
                     "AcceptGift_(O)sapphicsaph_pitv.TastyAceCookie": "{{i18n:Gifts.SenS.TastyAceCookie}}",
 
                     "AcceptGift_(O)Fellowclown.PC_Button": "{{i18n:Gifts.SenS.Button}}",
-                    "AcceptGift_(O)7thAxis.DitR_Items.SensCrocus": "{{i18n:Gifts.SenS.SensCrocus}}",
+                    "AcceptGift_(O){{ModID}}_Items.SensCrocus": "{{i18n:Gifts.SenS.SensCrocus}}",
+                    "AcceptGift_(O){{ModID}}_Items.SensCrocusSeeds": "{{i18n:Gifts.SenS.SensCrocusSeeds}}",
 
                     //birthday
                     "AcceptBirthdayGift_book_item": "{{i18n:Gifts.SenS.Book.Birthday}}",

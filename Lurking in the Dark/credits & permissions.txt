@@ -1,0 +1,54 @@
+Credits:
+
+> DestyN0VA - Narrative help, mod direction, unwavering support & being my favorite
+___(Also the mod's beneficiary if I spontaneously combust) --^
+> TheEspurrQueen - Loki & Nanu's UCT Portraits, Opal and Nanu's designs
+> Nyapu - Sen's alternate portrait set
+> Tommy Cathodic - Underscarp music (https://opengameart.org/content/waterfall-hidden-cave)
+> East Scarp Community - Various silly ideas, playtesting, debugging, support and motivation
+
+_____________________________________
+
+Mod Terms:
+
+[V] Other user's assets
+_____All the assets in this file belong to the author, or are from free-to-use modder's resources
+ 
+[X] Upload permission
+_____You are not allowed to upload this file to other sites under any circumstances
+ 
+[!] Modification permission
+_____You must get permission from me before you are allowed to modify my files to improve it
+ 
+[X] Conversion permission
+_____You are not allowed to convert this file to work on other games under any circumstances
+ 
+[!] Asset use permission
+_____You must get permission from me before you are allowed to use any of the assets in this file
+ 
+[X] Asset use permission in mods/files that are being sold
+_____You are not allowed to use assets from this file in any mods/files that are being sold, for money, on Steam Workshop or other platforms
+ 
+[X] Asset use permission in mods/files that earn donation points
+_____You are not allowed to earn Donation Points for your mods if they use my assets
+
+1.) Above permissions are disregarded if you are an official East Scarp developer and 7thAxis is unable to maintain Lurking in the Dark.
+___ a.) If 7thAxis returns, they are to regain ownership over the mod files.
+___ b.) No new content is allowed to be added to the mod, only bug fixes.
+___ c.) The mod and its assets are still never allowed to be sold.
+___ d.) Other maintainers cannot wave the original Nexus permissions for non-East Scarp developers.
+
+(Preferred backup maintainers are East Scarp's admin team)
+(However, they are allowed to give maintenance rights to other ES developers)
+(All permissions are disregarded for DestyN0VA in this case. Full mod ownership is granted to them if 7thAxis is unavailable.)
+
+2.) Assets made by 7thAxis can be used in mods that generate Donation Points if and only if you've obtained permission from them first.
+___ a.) If an East Scarp developer needs to reupload Lurking in the Dark for any reason, they may generate Donation Points.
+
+3.) Fan-made content and mods based on Lurking in the Dark are allowed and encouraged.
+___ a.) 7thAxis and East Scarp developers hold the right to request content based on Lurking in the Dark be taken down for any reason.
+___ b.) Users may generate donation points on fan-made content mods, on the condition they own the assets and/or have asset use permission.
+___ c.) Fan-made content may not be sold for monetary gain without permission from 7thAxis. (Covering the cost of shipping is allowed)
+
+4.) Under no circumstances are you allowed to make AI variations of any asset in Lurking in the Dark.
+___ a.) Other users may report AI generated content based on Lurking in the Dark's assets on the behalf of 7thAxis.

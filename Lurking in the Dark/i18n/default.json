@@ -62,6 +62,9 @@
 "Core.SenS.Mail.ShadowVisitation.Title": "Call of the Void",
 "Core.SenS.Mail.ShadowVisitation": "Human. ^^I am begrudgingly leaving this note to inform you...^^We will be visiting Sen's cavern when it rains and on weekends. Consider this an olive branch.^^If you wish to interact with us... we shall be there.  ^^   -Skrell (hi, Ebb was here too!)",
 
+//Music
+"Core.SenS.Music.Underscarp": "LitD: Underscarp (Tommy Cathodic)",
+
 //Names
 "Core.SenS.Friend": "friend",
 "Core.SenS.Name.Sen": "Sen",
@@ -836,6 +839,7 @@
 
 "Gifts.SenS.Button": "Oooh, what an adorable little button!$h#$b#It'll find a cozy home in one of my upcoming costumes for sure. Thank you, @!$l",
 "Gifts.SenS.SensCrocus": "Oh, that's...!$u#$b#That's one of the flower seeds I threw to the wind, isn't it?$7#$b#I can't believe it worked!$7",
+"Gifts.SenS.SensCrocusSeeds": "Hm? These seeds look just like the ones I threw to the wind!$7#$b#Amazing, were you able to cultivate more?$h",
 
 "Gifts.SenS.PridePop": "So. Many. Colors! It's otherworldly!$7#$b#Does it have magical properties? Will I become rainbow colored if I eat this?$h",
 "Gifts.SenS.GaylacticCookie": "$query PLAYER_HAS_MAIL Current DitR_M_SenPrideCookie Any, PLAYER_HEARTS Current SenS 8#...! Did you really remember I wanted one of these cookies, @?$7#$b#Thank you so much, you're the best. Have this shiny stone I found in the garbage.$h[74]#$action Current RemoveMail DitR_M_SenPrideCookie all|Oh!! I really wanted one of these, thank you so much @!$h#$b#%The cookie lasts about 2 seconds, then is gone...#$action Current RemoveMail DitR_M_SenPrideCookie all",
