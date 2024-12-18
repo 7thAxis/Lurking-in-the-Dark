@@ -125,17 +125,31 @@
             "Value": "{{Query: '{{spouse}}' = 'SenS' OR '{{roommate}}' = 'SenS'}}",
             "When": { "IsDitRInstalled": false }
         },
-
-        { "Name": "UniqueChildCheck",  "Value": false },
-            {
-                "Name": "UniqueChildCheck", 
-                "Value": "{{HasMod: |contains=shaklin.uniquechildrentalk}}",
-                "When": { 
-                    "Spouse": "SenS",
-                    "Have Shadow Kids": true,
-                    "IsDitRInstalled": false }
-            },
-
+        {
+            "Name": "ShadowKidsActive",
+            "Value": false,
+            "When": { "IsDitRInstalled": false }
+        },
+        {
+            "Name": "ShadowKidsActive",
+            "Value": true,
+            "When": { "Spouse": "SenS", "Have Shadow Kids": true, "IsDitRInstalled": false  }
+        },
+        {
+            "Name": "UniqueChildCheck",
+            "Value": false,
+            "When": { "IsDitRInstalled": false } 
+        },
+        {
+            "Name": "UniqueChildCheck", 
+            "Value": "{{HasMod: |contains=shaklin.uniquechildrentalk}}",
+            "When": { 
+                "Spouse": "SenS",
+                "ShadowKidsActive": true,
+                "UCT Portrait Compatibility": true,
+                "IsDitRInstalled": false 
+            }
+        },
         {
             "Name": "SenPartnershipRoute",
             "Value": "Platonic",

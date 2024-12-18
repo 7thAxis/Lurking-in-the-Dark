@@ -246,7 +246,7 @@
                 "NPC.cs.4441": "{{i18n:Relationship.SenS.AdoptionRemark}}", //Adoption 2
                 "NPC.cs.4447": "{{i18n:Relationship.SenS.AdoptionRemark}}"
             },
-            "When":{ "Spouse": "SenS", "Have Shadow Kids": false }
+            "When":{ "ShadowKidsActive": false }
         },
         {
             "LogName": "Have Shadow Kids Dialogue False 2",
@@ -264,7 +264,7 @@
                 "BirthMessage_PlayerMother": "{{i18n:Relationship.SenS.AdoptionMessage}}",
                 "BirthMessage_Adoption": "{{i18n:Relationship.SenS.AdoptionMessage}}"
             },
-            "When":{ "Spouse": "SenS", "Have Shadow Kids": false }
+            "When":{ "ShadowKidsActive": false }
         },
         {
             "LogName": "Have Shadow Kids Dialogue True",
@@ -276,7 +276,7 @@
                 "NPC.cs.4441": "{{i18n:Relationship.SenS.BabyRemark}}", //Gonna have a baby 2
                 "NPC.cs.4447": "{{i18n:Relationship.SenS.BabyRemark}}"
             },
-            "When":{ "Spouse": "SenS", "Have Shadow Kids": true }
+            "When":{ "ShadowKidsActive": true }
         },
         {
             "LogName": "Have Shadow Kids Dialogue True 2",
@@ -294,7 +294,7 @@
                 "BirthMessage_PlayerMother": "{{i18n:Relationship.SenS.BabyMessage}}",
                 "BirthMessage_Adoption": "{{i18n:Relationship.SenS.BabyMessage}}"
             },
-            "When":{ "Spouse": "SenS", "Have Shadow Kids": true }
+            "When":{ "ShadowKidsActive": true }
         }
     ]
 }
