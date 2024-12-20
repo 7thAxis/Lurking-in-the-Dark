@@ -1,0 +1,44 @@
+{
+    "Changes": [
+    //FAKE NPCs
+        //Skrell Ebb
+        {
+            "Action": "Load",
+            "Target": "Characters/Skrell, Characters/Ebb",
+            "FromFile": "Assets/Characters/FakeNPCs/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Skrell, Portraits/Ebb",
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/FakeNPCs/{{TargetWithoutPath}}.png"
+        },
+        //Pipo
+        {
+            "Action": "Load",
+            "Target": "Characters/PipoP, Portraits/Pipo",
+            "FromFile": "Assets/Characters/FakeNPCs/Pipo_{{Pipo Design}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/PipoP",
+            "FromFile": "Assets/Portraits/7thAxis/FakeNPCs/Pipo_{{Pipo Design}}.png"
+        },
+        {
+            "LogName": "Pipo Accessories",
+            "Action": "EditImage",
+            "Target": "Characters/PipoP",
+            "FromFile": "Assets/Characters/FakeNPCs/Pipo_Accessory_{{Pipo Accessory}}.png",
+            "PatchMode": "Overlay",
+            "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 },
+            "When": {  "Pipo Accessory |Contains=None": false }
+        },
+        {
+            "LogName": "Alpha Pipo Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/PipoP",
+            "FromFile": "Assets/Portraits/7thAxis/FakeNPCs/Pipo_Alpha.png",
+            "When": {  "Pipo Shorthair Alpha Portrait": true, "Pipo Design": "Shorthair" }
+        }
+    ]
+}

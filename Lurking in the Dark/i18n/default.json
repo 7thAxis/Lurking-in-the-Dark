@@ -42,6 +42,14 @@
 "Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
 "Config.Male Toddler Design.name": "Male Toddler Design",
 "Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+//Graphics Pipo
+"Config.section.Graphics: Pipo.name": "Graphics: Pipo the Cat",
+"Config.Pipo Design.name": "Pipo Design",
+"Config.Pipo Design.description": "Sets the design Pipo will use.",
+"Config.Pipo Accessory.name": "Pipo Accessory",
+"Config.Pipo Accessory.description": "Adds an accessory to Pipo's overworld sprite.",
+"Config.Pipo Shorthair Alpha Portrait.name": "Pipo Shorthair Alpha Portrait",
+"Config.Pipo Shorthair.description": "Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\".)",
 //Graphics - UCT
 "Config.section.Graphics: Unique Children Talk.name": "Graphics: Unique Children Talk",
 "Config.UCT Portrait Compatibility.name": "UCT Portrait Compatibility",
@@ -66,10 +74,10 @@
 "Core.SenS.Music.Underscarp": "LitD: Underscarp (Tommy Cathodic)",
 
 //Names
-"Core.SenS.Friend": "friend",
 "Core.SenS.Name.Sen": "Sen",
 "Core.SenS.Name.Skrell": "Skrell",
 "Core.SenS.Name.Ebb": "Ebb",
+"Core.SenS.Name.Pipo": "Pipo",
 
 //Krobus Reference
 "Core.SenS.KrobusKnown": "Krobus",
@@ -78,6 +86,7 @@
 //Relationship term
 "Core.SenS.RelationshipTerm.True": "partner",
 "Core.SenS.RelationshipTerm.False": "best friend",
+"Core.SenS.Friend": "friend",
 
 //Monster Eradication
 "Core.Monsters.GolemEradication": "Golems",
@@ -698,6 +707,76 @@
 "Core.FakeNPC.Ebb.Dialogue.14": "i can't quite figure out how to read the books Sen keeps around, but he reads to me sometimes.#$b#you humans have so much knowledge.$3",
 "Core.FakeNPC.Ebb.Dialogue.15": "huh? do i enjoy living in the mines?$3#$b#...$1#$b#no, not really. neither does Skrell, but he won't admit that.$2",
 "Core.FakeNPC.Ebb.Dialogue.16": "i don't recommend this, but if you wanna make Skrell mad...#$b#call him old. he gets really fired up.$1",
+
+//Pipo
+"Core.FakeNPC.Pipo.Sound.1": "Pipo.",
+"Core.FakeNPC.Pipo.Sound.2": "Piiipo? Pipo.",
+"Core.FakeNPC.Pipo.Sound.3": "Piipoo.",
+"Core.FakeNPC.Pipo.Sound.4": "Pipooww.",
+"Core.FakeNPC.Pipo.Sound.5": "Pip pip popo.",
+"Core.FakeNPC.Pipo.Sound.6": "Mrroowww.",
+"Core.FakeNPC.Pipo.Sound.7": "Meow meow meow.#$b#No, I don't know how to speak.$1#$b#Meow meow meow.",
+"Core.FakeNPC.Pipo.Sound.8": "Mirrrup.",
+"Core.FakeNPC.Pipo.Sound.9": "Meow meow meow meow.",
+"Core.FakeNPC.Pipo.Sound.10": "Mowwow?",
+"Core.FakeNPC.Pipo.Sound.11": "Purrrrrrr.",
+"Core.FakeNPC.Pipo.Sound.12": "Meeeooowww.",
+"Core.FakeNPC.Pipo.Sound.13": "Mrow meow meow mow wow meow mew mirp.",
+"Core.FakeNPC.Pipo.Sound.14": "Mow mow mow.",
+"Core.FakeNPC.Pipo.Sound.15": "Meeoowwirrrp.",
+"Core.FakeNPC.Pipo.Sound.16": "Meep meep!",
+"Core.FakeNPC.Pipo.Sound.17": "Hoooowwwwlll.",
+"Core.FakeNPC.Pipo.Sound.18": "I require souls to sustain my existence.$1#$b#Hand yours over.#$b#I mean... meow.$1",
+"Core.FakeNPC.Pipo.Sound.19": "Miurrrrpirp mew.",
+"Core.FakeNPC.Pipo.Sound.20": "Mewl melw.",
+
+"Core.FakeNPC.Pipo.Action.1": "(Pipo meows at you with a surprisingly deep resonance.)",
+"Core.FakeNPC.Pipo.Action.2": "(Pipo rubs up against you. They are seeking pets.)$1#$b#(Or snacks. Porbably snacks.)",
+"Core.FakeNPC.Pipo.Action.3": "(Pipo paws at your shoe laces. They must be tiny snakes!)",
+"Core.FakeNPC.Pipo.Action.4": "(Pipo ruminates on world domination.)",
+"Core.FakeNPC.Pipo.Action.5": "(Pipo stares at you with their derpy eyes.)",
+"Core.FakeNPC.Pipo.Action.6": "(Pipo melms at you more than usual. Are they mocking you?)",
+"Core.FakeNPC.Pipo.Action.7": "(Pipo howls at you as a demand for treats.)",
+"Core.FakeNPC.Pipo.Action.8": "(Pipo is daydreaming about knocking cups off of tables.)",
+"Core.FakeNPC.Pipo.Action.9": "(You go to pet Pipo but they latch onto your hand.)#$b#(It was a trap.)$1",
+"Core.FakeNPC.Pipo.Action.10": "(Pipo pontificates about shredding furniture.)",
+"Core.FakeNPC.Pipo.Action.11": "(Pipo is plotting the demise of mankind.)",
+"Core.FakeNPC.Pipo.Action.12": "(Pipo thinks about hiding inside of boxes.)",
+"Core.FakeNPC.Pipo.Action.13": "(Pipo is planning to start a new world order of cats.)",
+"Core.FakeNPC.Pipo.Action.14": "(Pipo kneads at your leg. What cute little daggers of death!)",
+"Core.FakeNPC.Pipo.Action.15": "(Pipo is excited at the thought of getting hopped up on catnip.)",
+"Core.FakeNPC.Pipo.Action.16": "(Pipo is flicking their tail in discontentment.)#$b#(Best to leave them alone or risk losing your hands.)",
+"Core.FakeNPC.Pipo.Action.17": "(Pipo sneezes four times in a row. Gesundheit!)",
+"Core.FakeNPC.Pipo.Action.18": "(Pipo contemplates the meaning of your life.)",
+"Core.FakeNPC.Pipo.Action.19": "(Pipo debates on leaving mice at the doorstep of everyone in Pelican Town.)",
+"Core.FakeNPC.Pipo.Action.20": "(Pipo devises ways of banishing water from the universe.)",
+
+"Core.FakeNPC.Pipo.Spring.Day.1": "(Pipo thinks about hunting birds.)$1#$b#(Eloise pops into their mind mid-thought, scolding Pipo.)",
+"Core.FakeNPC.Pipo.Spring.Day.12": "(Pipo muses about eating scrambled eggs.)", // Day before the Egg Festival
+"Core.FakeNPC.Pipo.Spring.Day.18": "(Pipo has intrusive thoughts about shredding fabric.)", // Day before Fashion Festival
+"Core.FakeNPC.Pipo.Spring.Day.23": "(Pipo deliberates on the pros and cons of eating a flower.)", // Day before the Flower Dance
+"Core.FakeNPC.Pipo.Spring.Day.28": "(You pet Pipo… Only to become one with the fuzz...)",
+
+"Core.FakeNPC.Pipo.Summer.Day.1": "(Pipo stares up at the sky. What are they thinking about?)",
+"Core.FakeNPC.Pipo.Summer.Day.4": "(Pipo thinks about rolling around in beach sand.)", // Day before Surfing Festival
+"Core.FakeNPC.Pipo.Summer.Day.10": "(Pipo wishes to add cat hair and mouse-arella to the soup tomorrow.)", // Day before the Luau
+"Core.FakeNPC.Pipo.Summer.Day.19": "(Pipo's derpy gaze extends a thousand yards behind you in dread.)", // Day before Fireworks Festival
+"Core.FakeNPC.Pipo.Summer.Day.27": "(Pipo contemplates the existence of jellyfish.)", // Day before Moonlight Jellies
+"Core.FakeNPC.Pipo.Summer.Day.28": "(Pipo hacks up a fur ball at your feet. Charming.)", 
+
+"Core.FakeNPC.Pipo.Fall.Day.1": "(Pipo grooms themselves. They can't quite seem to reach the back of their neck.)", 
+"Core.FakeNPC.Pipo.Fall.Day.2": "(Pipo thinks about committing tax fraud.)", // Day before Marketpalooza
+"Core.FakeNPC.Pipo.Fall.Day.15": "(Pipo hatches a plot to steal fish from the fishing game at tomorrow's Fair.)", // Day before the Stardew Fair
+"Core.FakeNPC.Pipo.Fall.Day.19": "(Pipo is lost in thought, thinking about all the chin scritches they deserve.)",  // Day before Gathering
+"Core.FakeNPC.Pipo.Fall.Day.26": "(Pipo thinks about cat costumes. A fate worse than death itself.)", // Day before Spirit's Eve
+"Core.FakeNPC.Pipo.Fall.Day.28": "(Pipo's new coat...? has grown in. Winter is coming.)",
+
+"Core.FakeNPC.Pipo.Winter.Day.1": "(Pipo has snow stuck between their toes.)", 
+"Core.FakeNPC.Pipo.Winter.Day.7": "(Pipo is scheming to steal fish from the Ice Festival tomorrow.)", // Day before the Ice Festival
+"Core.FakeNPC.Pipo.Winter.Day.12": "(Pipo wonders if they'll ever find a purrtner in crime.)", // Day before Love Festival
+"Core.FakeNPC.Pipo.Winter.Day.24": "(Pipo has a piece of coal in their mouth. Who's it for?", // Day before Winter Star
+"Core.FakeNPC.Pipo.Winter.Day.27": "Pipo contemplates their new years resolution. Do cats even have those?", // Day before Ember
+"Core.FakeNPC.Pipo.Winter.Day.28": "(Pipo chirps in excitement that winter is almost over.)",
 
 /*
  ██████╗ ██╗███████╗████████╗███████╗

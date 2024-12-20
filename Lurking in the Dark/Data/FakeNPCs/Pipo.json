@@ -1,0 +1,120 @@
+{
+    "Changes": [
+        //Pipo
+        {
+            "LogName": "Load Pipo Fake NPCs",
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "LitD.Pipo": {
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "House": "ILLEGAL! NO PIPO ON YOUR FARM!",
+                    "Age": 1,
+                    "Gender": "Male",
+                    "PurchasePrice": -1,
+                    "SellPrice": 0,
+                    "RequiredBuilding": "ILLEGAL! NO PIPO ON YOUR FARM!",
+                    "Sound": "cat",
+                    "Texture": "Characters/PipoP",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 32,
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "ShowInSummitCredits": false,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 17
+                }
+            }
+        },
+        {
+            "LogName": "Spawn Pipo Fake NPC",
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+            "Entries": {
+                "LitD.Pipo_Tunnel": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "Tunnel",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{PipoDialogue}}" ],
+                    "HomeTileX": 20,
+                    "HomeTileY": 10,
+                    "Condition": "ANY \"DAY_OF_WEEK Tue, !{{IsWeatherBad}}\" \"!PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1\""
+                },
+                "LitD.Pipo_Cave": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "EastScarp_DeepDark",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{PipoDialogue}}" ],
+                    "HomeTileX": 19,
+                    "HomeTileY": 23,
+                    "Condition": "!{{IsWeatherBad}}, PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
+                },
+                "LitD.Pipo_Sewer": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "Tunnel",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{PipoDialogue}}" ],
+                    "HomeTileX": 18,
+                    "HomeTileY": 17,
+                    "Condition": "!{{IsWeatherBad}}, DAY_OF_WEEK Fri, PLAYER_HAS_MET Current Krobus, PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
+                },
+                "LitD.Pipo_Rain": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "EastScarp_Village",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{PipoDialogue}}" ],
+                    "HomeTileX": 31,
+                    "HomeTileY": 37,
+                    "Condition": "{{IsWeatherBad}}, PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
+                }
+            },
+            "When": {
+                "Query: '{{LivingWithSen}}' = 'false' AND '{{HasSeenEvent |contains=7thAxis.DitR_Events.SenS.PipoArc.P3}}' IN ('true', 'false') OR '{{Pipo Moves In}}' = 'false'": true
+            }
+        },
+        {
+            "LogName": "Spawn Pipo Fake NPC",
+            "Action": "EditData",
+            "Target": "MEEP/FarmAnimals/SpawnData",
+            "Entries": {
+                "LitD.Pipo_Farmhouse": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "Farmhouse",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{PipoDialogue}}" ],
+                    "HomeTileX": 26,
+                    "HomeTileY": 27,
+                    "Condition": "!{{PipoDialogueSpecial}}"
+                },
+                //Done bc dialogue in the memory was behaving strangely
+                "LitD.Pipo_Farmhouse_Special": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "Farmhouse",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{i18n:Core.FakeNPC.Pipo.{{Season}}.Day.{{Day}}}}" ],
+                    "HomeTileX": 26,
+                    "HomeTileY": 27,
+                    "Condition": "{{PipoDialogueSpecial}}"
+                }
+            },
+            "When": {
+                "LivingWithSen": true,
+                "Pipo Moves In": true,
+                "HasSeenEvent": "7thAxis.DitR_Events.SenS.PipoArc.P3"
+            }
+        }
+    ]
+}

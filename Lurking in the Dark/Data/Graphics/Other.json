@@ -1,0 +1,24 @@
+{
+    "Changes": [
+        //RESHADE
+        {           
+            "Action": "Load",
+            "Target": "Characters/Krobus, Characters/SeaMonsterKrobus, Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
+            "FromFile": "Assets/Reshade/{{TargetWithoutPath}}.png",
+            "When": { "Reshade Existing Shadows": true }
+        },
+        //ITEMS AND CROPS
+        {           
+            "Action": "Load",
+            "Target": "Textures/7thAxis.LitD/Objects, Textures/7thAxis.LitD/Crops, Textures/7thAxis.LitD/Furniture",
+            "FromFile": "Assets/Items/{{TargetWithoutPath}}.png"
+        },
+        //NPC Map Locations
+        {
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "Entries": { "SenS": { "MarkerCropOffset": 5 } },
+            "When": {  "HasMod: |contains=Bouhm.NPCMapLocations": true }
+        }
+    ]
+}

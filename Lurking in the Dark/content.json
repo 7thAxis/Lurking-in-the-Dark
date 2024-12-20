@@ -31,7 +31,13 @@
             "Description": "Adjusts number of days you have to wait between Sen's events.\n\n(Default 3 days)",
             "Section": "Gameplay"
         },
-
+        "Have Shadow Kids": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
+            "Section": "Gameplay"
+        },
         //BEHAVIORS
         "Schedule Type": {
             "AllowValues": "Dynamic, Simplified",
@@ -46,7 +52,13 @@
             "Description": "Sets Sen's romantic nickname for the player.",
             "Section": "NPC Behavior"
         },
-
+        "Pipo Moves In": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description":"Sets if Pipo moves in if you marry or room with Sen.\n\n(Correct events must be seen first.)",
+            "Section": "NPC Behavior"
+        },
         //GRAPHICS
         "Portrait Style": {
             "AllowValues": "7thAxis, Nyapu",
@@ -69,13 +81,6 @@
             "Description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself.\n\n(Requires game restart)",
             "Section": "Graphics: General"
         },
-        "Have Shadow Kids": {
-            "AllowValues": "true, false",
-            "Default": true,
-            "AllowBlank": false,
-            "Description":"Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
-            "Section": "Graphics: General"
-        },
         "Female Toddler Design": {
             "AllowValues": "Loki, Freya, Nanu, Opal",
             "Default": "Freya",
@@ -90,6 +95,27 @@
             "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
             "Section": "Graphics: General"
         },
+        "Pipo Design": {
+            "AllowValues": "Void, Shorthair",
+            "Default": "Void",
+            "AllowBlank": false,
+            "Description":"Sets the design Pipo will use.",
+            "Section": "Graphics: Pipo the Cat"
+        },
+        "Pipo Accessory": {
+            "AllowValues": "None, Shorts",
+            "Default": "None",
+            "AllowBlank": false,
+            "Description":"Adds an accessory to Pipo's overworld sprite.",
+            "Section": "Graphics: Pipo"
+        },
+        "Pipo Shorthair Alpha Portrait": {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description":"Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\".)",
+            "Section": "Graphics: Pipo"
+        },
         "UCT Portrait Compatibility": {
             "AllowValues": "true, false",
             "Default": "true",
@@ -97,14 +123,13 @@
             "Description":"Use custom child portraits when Unique Children Talk is installed.\n\nLoki and Freya's portraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
             "Section": "Graphics: Unique Children Talk"
         },
-        //For future update
-        /*"7thAxis Nanu and Opal Portraits": {
+        "7thAxis Nanu and Opal Portraits": {
             "AllowValues": "true, false",
             "Default": "false",
             "AllowBlank": false,
             "Description":"Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true.",
             "Section": "Graphics: Unique Children Talk"
-        }*/
+        }
     },
     
     //Calculations 
@@ -242,6 +267,16 @@
 
         //--DIALOGUE CHANGES AND RANDOMIZATION--
         {
+            "Name": "PipoDialogue", 
+            "Value": "{{i18n:Core.FakeNPC.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 20}}}}}}",
+            "When": { "IsDitRInstalled": false }
+        },
+        {
+            "Name": "PipoDialogueSpecial", 
+            "Value": "{{TodaysDate |Contains=Spring 1, Spring 12, Spring 18, Spring 23, Spring 28, Summer 1, Summer 4, Summer 10, Sumer 19, Summer 27, Summer 28, Fall 1, Fall 2, Fall 15, Fall 19, Fall 26, Fall 28, Winter 1, Winter 7, Winter 12, Winter 24, Winter 27, Winter 28}}",
+            "When": { "IsDitRInstalled": false }
+        },
+        {
             "Name": "SenKrobusReference",
             "Value": "{{i18n:Core.SenS.KrobusUnknown}}",
             "When": { "IsDitRInstalled": false }
@@ -249,7 +284,7 @@
         {
             "Name": "SenKrobusReference",
             "Value": "{{i18n:Core.SenS.KrobusKnown}}",
-            "When": { "Relationship:Krobus: |contains=Unmet": false, "IsDitRInstalled": false }
+            "When": { "Relationship:Krobus |contains=Unmet": false, "IsDitRInstalled": false }
         },
         {
             "Name": "SenRandTokens", //GOD AXELL WHY, GOD WHY GOD WHY WHHHHYYYY
