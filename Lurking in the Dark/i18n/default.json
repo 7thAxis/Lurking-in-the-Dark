@@ -27,6 +27,8 @@
 "config.Schedule Type.values.Simplified": "Simplified",
 "Config.Romantic Nickname.name": "Romantic Nickname",
 "Config.Romantic Nickname.description": "Sets Sen's romantic nickname for the player.",
+"Config.Pipo Moves In.name": "Pipo Moves In",
+"Config.Pipo Moves In.description": "Whether Pipo should moves in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
 
 //Graphics
 "Config.section.Graphics: General.name": "Graphics: General",

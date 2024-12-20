@@ -56,7 +56,7 @@
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
-            "Description":"Sets if Pipo moves in if you marry or room with Sen.\n\n(Correct events must be seen first.)",
+            "Description":"Whether Pipo should moves in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
             "Section": "NPC Behavior"
         },
         //GRAPHICS
