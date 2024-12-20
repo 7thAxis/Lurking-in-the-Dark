@@ -56,7 +56,7 @@
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
-            "Description":"Whether Pipo should moves in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
+            "Description":"Whether Pipo should move in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
             "Section": "NPC Behavior"
         },
         //GRAPHICS
@@ -107,20 +107,20 @@
             "Default": "None",
             "AllowBlank": false,
             "Description":"Adds an accessory to Pipo's overworld sprite.",
-            "Section": "Graphics: Pipo"
+            "Section": "Graphics: Pipo the Cat"
         },
         "Pipo Shorthair Alpha Portrait": {
             "AllowValues": "true, false",
             "Default": "false",
             "AllowBlank": false,
             "Description":"Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\".)",
-            "Section": "Graphics: Pipo"
+            "Section": "Graphics: Pipo the Cat"
         },
         "UCT Portrait Compatibility": {
             "AllowValues": "true, false",
             "Default": "true",
             "AllowBlank": false,
-            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\nLoki and Freya's portraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
+            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\nPortraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
             "Section": "Graphics: Unique Children Talk"
         },
         "7thAxis Nanu and Opal Portraits": {

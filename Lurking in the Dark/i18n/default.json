@@ -28,7 +28,7 @@
 "Config.Romantic Nickname.name": "Romantic Nickname",
 "Config.Romantic Nickname.description": "Sets Sen's romantic nickname for the player.",
 "Config.Pipo Moves In.name": "Pipo Moves In",
-"Config.Pipo Moves In.description": "Whether Pipo should moves in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
+"Config.Pipo Moves In.description": "Whether Pipo should move in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
 
 //Graphics
 "Config.section.Graphics: General.name": "Graphics: General",
@@ -45,7 +45,7 @@
 "Config.Male Toddler Design.name": "Male Toddler Design",
 "Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
 //Graphics Pipo
-"Config.section.Graphics: Pipo.name": "Graphics: Pipo the Cat",
+"Config.section.Graphics: Pipo the Cat.name": "Graphics: Pipo the Cat",
 "Config.Pipo Design.name": "Pipo Design",
 "Config.Pipo Design.description": "Sets the design Pipo will use.",
 "Config.Pipo Accessory.name": "Pipo Accessory",
@@ -55,7 +55,7 @@
 //Graphics - UCT
 "Config.section.Graphics: Unique Children Talk.name": "Graphics: Unique Children Talk",
 "Config.UCT Portrait Compatibility.name": "UCT Portrait Compatibility",
-"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\nLoki and Freya's portraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
+"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\nPortraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
 "Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu and Opal Portraits",
 "Config.7thAxis Nanu and Opal Portraits.description": "Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true.",
 
