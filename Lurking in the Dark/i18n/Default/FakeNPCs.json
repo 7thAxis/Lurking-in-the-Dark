@@ -1,0 +1,119 @@
+{
+/*
+███████╗ █████╗ ██╗  ██╗███████╗███╗   ██╗██████╗  ██████╗███████╗
+██╔════╝██╔══██╗██║ ██╔╝██╔════╝████╗  ██║██╔══██╗██╔════╝██╔════╝
+█████╗  ███████║█████╔╝ █████╗  ██╔██╗ ██║██████╔╝██║     ███████╗
+██╔══╝  ██╔══██║██╔═██╗ ██╔══╝  ██║╚██╗██║██╔═══╝ ██║     ╚════██║
+██║     ██║  ██║██║  ██╗███████╗██║ ╚████║██║     ╚██████╗███████║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚═╝      ╚═════╝╚══════╝
+*/
+"FakeNPCs.Skrell.Dialogue.1": "It's you... Are you behaving yourself in the mines?#$b#Remember what I told you... Or else.$1",
+"FakeNPCs.Skrell.Dialogue.2": "Hm? You question the horns. I see.#$b#Sen and I are Shadow Nobles. There are more than just Shamans, Brutes and Snipers...$1#$b#They are our fighters.",
+"FakeNPCs.Skrell.Dialogue.3": "Sen talks about you incessantly... I cannot say I understand it.$1#$b#What is it about you?#$b#I suppose you do carry the same energy of change as... never mind.$1",
+"FakeNPCs.Skrell.Dialogue.4": "You remind me of... someone.$1#$b#If that is fortunate for you or not, I have yet to make up my mind...#$b#Tread carefully.$1",
+"FakeNPCs.Skrell.Dialogue.5": "...I must admit, I do enjoy the surface.$2#$b#There is far more foliage to which I can study.#$b#What? Yes, botany is my \"hobby\" as you humans call it.$1",
+"FakeNPCs.Skrell.Dialogue.6": "Did I not teach Sen how to keep his spaces tidy?$3#$b#I did not raise him in a slime hutch.#$b#He still acts like a blasted child...$1",
+"FakeNPCs.Skrell.Dialogue.7": "I am impressed with the garden Sen has grown.$1#$b#You... helped him with it, yes?#$b#Thank you... I suppose.$2",
+"FakeNPCs.Skrell.Dialogue.8": "How do I know how to speak human langage?#$b#Tch. Don't be conceited, you are not the first human I've met.$1",
+"FakeNPCs.Skrell.Dialogue.9": "Fiddlehead Fern is a delicacy among you humans it seems.$3#$b#Strange, I've always found it quite... bland.",
+"FakeNPCs.Skrell.Dialogue.10": "Sen has taken a special liking to pumpkins, has he not?#$b#He always did like the color orange...",
+"FakeNPCs.Skrell.Dialogue.11": "Ebb has been utilizing a strange human device to keep track of the weekends and weather...#$b#I cannot figure out how the blasted thing works. I think I'd rather smash it.$1",
+"FakeNPCs.Skrell.Dialogue.12": "So Sen has made friends with Krobus... I always did wonder where that one went.$3#$b#He disappeared from the mines one day without a trace.#$b#A strange era we are entering, Shadowfolk leaving the mines.$1",
+"FakeNPCs.Skrell.Dialogue.13": "Hm? Do I enjoy my life beneath the surface?$3#$b#...#$b#It isn't a bad life. I am needed there.$1",
+"FakeNPCs.Skrell.Dialogue.14": "Who is Ebb?#$b#He is my rock. Literally and figuratively.$3#$b#Be kind to him or I will ensure your eternal suffering.$1",
+"FakeNPCs.Skrell.Dialogue.15": "You truly care for Sen, don't you?#$b#Making your way through that forsaken crystal maze just to reach here... you must.$3",
+"FakeNPCs.Skrell.Dialogue.16": "I have been around since the middle era of the Elemental Wars...#$b#Yet despite my participation, I know less about it than I would like.$1#$b#It was a complex event in our history spanning many centuries and lands.#$b#Much of the how and why has been lost.$1",
+
+"FakeNPCs.Ebb.Dialogue.1": "skrell is... um. don't mind him... he's been through a lot.#$b#so has sen... but he doesn't really remember.$2",
+"FakeNPCs.Ebb.Dialogue.2": "hm? oh, sorry, i don't talk a lot...#$b#i um. i like rocks and gems. i could tell you some facts.$3#$b#did you know amber is the softest gemstone? diamond is the hardest...$1",
+"FakeNPCs.Ebb.Dialogue.3": "oh... did you know that shadowfolk \"hatch\"?$3#$b#not from eggs, no... we hatch from stones imbued with void magic.$1#$b#sen was born from star shards.#$b#his mother was a diamond and Skrell was a fire opal.",
+"FakeNPCs.Ebb.Dialogue.4": "Sen... he uh, probably hasn't told you, huh?#$b#he lost his mother at a very young age.$2#$b#he can't remember her, but it hurts him that he never got to know her...$2",
+"FakeNPCs.Ebb.Dialogue.5": "this cave... it's the same one Diamond and...$2#$b#o-oh never mind, sorry, talking to myself.$2",
+"FakeNPCs.Ebb.Dialogue.6": "hm? what kinda shadow person am i?#$b#i'm a shaman, i just don't wear my mask very often.$1#$b#it reminds me of uh... bad times.$2",
+"FakeNPCs.Ebb.Dialogue.7": "Sen sure does read a lot. where does he get all these books from anyway...?$3#$b#he gets all anxious when i ask.$2",
+"FakeNPCs.Ebb.Dialogue.8": "i'm um... not a very good cook.#$b#uh, don't tell Skrell, but he's even worse.$1#$b#at least i can make a pretty good strange bun.",
+"FakeNPCs.Ebb.Dialogue.9": "who... are you exactly? from everything Sen has told us, you cause lots and lots of change.$3#$b#you're just like... um... nevermind.$2",
+"FakeNPCs.Ebb.Dialogue.10": "Skrell is my best friend in the entire world...#$b#don't let his mean exterior fool you, inside he's a big teddy bear.$1#$b#...$2#$b#a teddy bear with a knife, but a teddy bear no less.$1",
+"FakeNPCs.Ebb.Dialogue.11": "i have... a hard time communicating my thoughts.$2#$b#um.#$b#thank you for being very nice to Sen.$1#$b#Skrell doesn't trust you much... but i do.#$b#so thanks... i'm happy when sen smiles.$1",
+"FakeNPCs.Ebb.Dialogue.12": "wow... sen sure has made a lot of costumes.$3#$b#they look... terrible.#$b#er. oh jeez er-$2#$b#i mean they look terribly adorable!$1",
+"FakeNPCs.Ebb.Dialogue.13": "sen loves the crocus...#$b#it's pretty. i think it suits him a whole lot.$1#$b#i kinda wanna eat the one he has over there, but i won't...$2",
+"FakeNPCs.Ebb.Dialogue.14": "i can't quite figure out how to read the books Sen keeps around, but he reads to me sometimes.#$b#you humans have so much knowledge.$3",
+"FakeNPCs.Ebb.Dialogue.15": "huh? do i enjoy living in the mines?$3#$b#...$1#$b#no, not really. neither does Skrell, but he won't admit that.$2",
+"FakeNPCs.Ebb.Dialogue.16": "i don't recommend this, but if you wanna make Skrell mad...#$b#call him old. he gets really fired up.$1",
+
+//Pipo
+"FakeNPCs.Pipo.Sound.1": "Pipo.",
+"FakeNPCs.Pipo.Sound.2": "Piiipo? Pipo.",
+"FakeNPCs.Pipo.Sound.3": "Piipoo.",
+"FakeNPCs.Pipo.Sound.4": "Pipooww.",
+"FakeNPCs.Pipo.Sound.5": "Pip pip popo.",
+"FakeNPCs.Pipo.Sound.6": "Mrroowww.",
+"FakeNPCs.Pipo.Sound.7": "Meow meow meow.#$b#No, I don't know how to speak.$1#$b#Meow meow meow.",
+"FakeNPCs.Pipo.Sound.8": "Mirrrup.",
+"FakeNPCs.Pipo.Sound.9": "Meow meow meow meow.",
+"FakeNPCs.Pipo.Sound.10": "Mowwow?",
+"FakeNPCs.Pipo.Sound.11": "Purrrrrrr.",
+"FakeNPCs.Pipo.Sound.12": "Meeeooowww.",
+"FakeNPCs.Pipo.Sound.13": "Mrow meow meow mow wow meow mew mirp.",
+"FakeNPCs.Pipo.Sound.14": "Mow mow mow.",
+"FakeNPCs.Pipo.Sound.15": "Meeoowwirrrp.",
+"FakeNPCs.Pipo.Sound.16": "Meep meep!",
+"FakeNPCs.Pipo.Sound.17": "Hoooowwwwlll.",
+"FakeNPCs.Pipo.Sound.18": "I require souls to sustain my existence.$1#$b#Hand yours over.#$b#I mean... meow.$1",
+"FakeNPCs.Pipo.Sound.19": "Miurrrrpirp mew.",
+"FakeNPCs.Pipo.Sound.20": "Mewl melw.",
+
+"FakeNPCs.Pipo.Action.1": "(Pipo meows at you with a surprisingly deep resonance.)",
+"FakeNPCs.Pipo.Action.2": "(Pipo rubs up against you. They are seeking pets.)$1#$b#(Or snacks. Porbably snacks.)",
+"FakeNPCs.Pipo.Action.3": "(Pipo paws at your shoe laces. They must be tiny snakes!)",
+"FakeNPCs.Pipo.Action.4": "(Pipo ruminates on world domination.)",
+"FakeNPCs.Pipo.Action.5": "(Pipo stares at you with their derpy eyes.)",
+"FakeNPCs.Pipo.Action.6": "(Pipo melms at you more than usual. Are they mocking you?)",
+"FakeNPCs.Pipo.Action.7": "(Pipo howls at you as a demand for treats.)",
+"FakeNPCs.Pipo.Action.8": "(Pipo is daydreaming about knocking cups off of tables.)",
+"FakeNPCs.Pipo.Action.9": "(You go to pet Pipo but they latch onto your hand.)#$b#(It was a trap.)$1",
+"FakeNPCs.Pipo.Action.10": "(Pipo pontificates about shredding furniture.)",
+"FakeNPCs.Pipo.Action.11": "(Pipo is plotting the demise of mankind.)",
+"FakeNPCs.Pipo.Action.12": "(Pipo thinks about hiding inside of boxes.)",
+"FakeNPCs.Pipo.Action.13": "(Pipo is planning to start a new world order of cats.)",
+"FakeNPCs.Pipo.Action.14": "(Pipo kneads at your leg. What cute little daggers of death!)",
+"FakeNPCs.Pipo.Action.15": "(Pipo is excited at the thought of getting hopped up on catnip.)",
+"FakeNPCs.Pipo.Action.16": "(Pipo is flicking their tail in discontentment.)#$b#(Best to leave them alone or risk losing your hands.)",
+"FakeNPCs.Pipo.Action.17": "(Pipo sneezes four times in a row. Gesundheit!)",
+"FakeNPCs.Pipo.Action.18": "(Pipo contemplates the meaning of your life.)",
+"FakeNPCs.Pipo.Action.19": "(Pipo debates on leaving mice at the doorstep of everyone in Pelican Town.)",
+"FakeNPCs.Pipo.Action.20": "(Pipo devises ways of banishing water from the universe.)",
+
+"FakeNPCs.Pipo.Spring.Day.1": "(Pipo thinks about hunting birds.)$1#$b#(Eloise pops into their mind mid-thought, scolding Pipo.)",
+"FakeNPCs.Pipo.Spring.Day.12": "(Pipo muses about eating scrambled eggs.)", // Day before the Egg Festival
+"FakeNPCs.Pipo.Spring.Day.18": "(Pipo has intrusive thoughts about shredding fabric.)", // Day before Fashion Festival
+"FakeNPCs.Pipo.Spring.Day.23": "(Pipo deliberates on the pros and cons of eating a flower.)", // Day before the Flower Dance
+"FakeNPCs.Pipo.Spring.Day.28": "(You pet Pipo… Only to become one with the fuzz...)",
+
+"FakeNPCs.Pipo.Summer.Day.1": "(Pipo stares up at the sky. What are they thinking about?)",
+"FakeNPCs.Pipo.Summer.Day.4": "(Pipo thinks about rolling around in beach sand.)", // Day before Surfing Festival
+"FakeNPCs.Pipo.Summer.Day.10": "(Pipo wishes to add cat hair and mouse-arella to the soup tomorrow.)", // Day before the Luau
+"FakeNPCs.Pipo.Summer.Day.19": "(Pipo's derpy gaze extends a thousand yards behind you in dread.)", // Day before Fireworks Festival
+"FakeNPCs.Pipo.Summer.Day.27": "(Pipo contemplates the existence of jellyfish.)", // Day before Moonlight Jellies
+"FakeNPCs.Pipo.Summer.Day.28": "(Pipo hacks up a fur ball at your feet. Charming.)", 
+
+"FakeNPCs.Pipo.Fall.Day.1": "(Pipo grooms themselves. They can't quite seem to reach the back of their neck.)", 
+"FakeNPCs.Pipo.Fall.Day.2": "(Pipo thinks about committing tax fraud.)", // Day before Marketpalooza
+"FakeNPCs.Pipo.Fall.Day.15": "(Pipo hatches a plot to steal fish from the fishing game at tomorrow's Fair.)", // Day before the Stardew Fair
+"FakeNPCs.Pipo.Fall.Day.19": "(Pipo is lost in thought, thinking about all the chin scritches they deserve.)",  // Day before Gathering
+"FakeNPCs.Pipo.Fall.Day.26": "(Pipo thinks about cat costumes. A fate worse than death itself.)", // Day before Spirit's Eve
+"FakeNPCs.Pipo.Fall.Day.28": "(Pipo's new coat...? has grown in. Winter is coming.)",
+
+"FakeNPCs.Pipo.Winter.Day.1": "(Pipo has snow stuck between their toes.)", 
+"FakeNPCs.Pipo.Winter.Day.7": "(Pipo is scheming to steal fish from the Ice Festival tomorrow.)", // Day before the Ice Festival
+"FakeNPCs.Pipo.Winter.Day.12": "(Pipo wonders if they'll ever find a purrtner in crime.)", // Day before Love Festival
+"FakeNPCs.Pipo.Winter.Day.24": "(Pipo has a piece of coal in their mouth. Who's it for?", // Day before Winter Star
+"FakeNPCs.Pipo.Winter.Day.27": "Pipo contemplates their new years resolution. Do cats even have those?", // Day before Ember
+"FakeNPCs.Pipo.Winter.Day.28": "(Pipo chirps in excitement that winter is almost over.)",
+
+"FakeNPCs.Pipo.PhoneCall.1": "",
+"FakeNPCs.Pipo.PhoneCall.2": "",
+"FakeNPCs.Pipo.PhoneCall.3": "",
+"FakeNPCs.Pipo.PhoneCall.4": "",
+"FakeNPCs.Pipo.PhoneCall.5": ""
+}

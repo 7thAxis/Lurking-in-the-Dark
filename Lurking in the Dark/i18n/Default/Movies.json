@@ -1,0 +1,49 @@
+{
+/*
+███╗   ███╗ ██████╗ ██╗   ██╗██╗███████╗███████╗
+████╗ ████║██╔═══██╗██║   ██║██║██╔════╝██╔════╝
+██╔████╔██║██║   ██║██║   ██║██║█████╗  ███████╗
+██║╚██╔╝██║██║   ██║╚██╗ ██╔╝██║██╔══╝  ╚════██║
+██║ ╚═╝ ██║╚██████╔╝ ╚████╔╝ ██║███████╗███████║
+╚═╝     ╚═╝ ╚═════╝   ╚═══╝  ╚═╝╚══════╝╚══════╝
+*/
+
+"Movies.SenS.MovieInviteFail": "Ah... I'm sorry, @!$8#$b#As much as I'd love to attend one of these picture box shows, I'm too nervous to sit in a public space...$s",
+"Movies.SenS.MovieInviteSuccess": "Oh, you want to take me to a picture box show?$h#$b#Sure! Let me get ready and I'll meet you there.$h",
+"Movies.SenS.RejectMovieTicket": "Ah... I'm sorry, @!$8#$b#As much as I'd love to attend one of these picture box shows, I'm too nervous to sit in a public space...$s",
+"Movies.SenS.RejectMovieTicket.AlreadyInvited": "Oh, I'm sorry @! I'm afraid I already have picture box plans.$8",
+"Movies.SenS.RejectMovieTicket.AlreadyWatched": "Hm... Sorry, @. I think I'm good on picture box shows for now!$h#$b#I appreciate the invite, though.$h",
+"Movies.SenS.RejectMovieTicket.NotInterested": "Hmm... Sorry, @. I think I'll pass on viewing the show.$8#$b#I appreciate the invite, though.$h",
+
+"Movies.SenS.BraveLittleSapling.1": "So this picture show is about a heroic little tree? Fascinating.",      
+"Movies.SenS.BraveLittleSapling.2": "Oh... I know exactly how that feels!",  
+"Movies.SenS.BraveLittleSapling.3": "That was quite the enjoyable series of moving images!#$b#I'm happy for the little tree.",
+
+"Movies.SenS.NaturalWonders.1": "This visual entertainment is an educational piece about our world?#$b#Count me in!",
+"Movies.SenS.NaturalWonders.2": "Amazing! This world is so beautiful...",
+"Movies.SenS.NaturalWonders.3": "Amazing, amazing...! The part about Prairie Islands and the racoons, so fascinating!#$b#Thank you for bringing me, @!",
+
+"Movies.SenS.PrairieKing.1": "Journey of the Prairie King, hm?#$b#I read a novel of the same name recently. It was quite fascinating!",
+"Movies.SenS.PrairieKing.2": "Oh no! What's this mustached menace up to?",
+"Movies.SenS.PrairieKing.3": "What an exciting series of images to have graced my eye sockets! Thanks for bringing me along, @.",
+
+"Movies.SenS.Wumbus.1": "Wumbus...?#$b#@, what exactly is a Wumbus?",
+"Movies.SenS.Wumbus.2": "The creature that stars in this image series is quite unnerving to look at...",
+"Movies.SenS.Wumbus.3": "Well that was... an interesting experience to say the least.",
+
+"Movies.SenS.Mysterium.1": "Mysterium...? I can't gather what this series of pictures is about from the poster...",
+"Movies.SenS.Mysterium.2": "Sen has a disgruntled look on his face.",
+"Movies.SenS.Mysterium.3": "The depiction of shadowfolk at the end was incredibly inaccurate. Hmph!",
+
+"Movies.SenS.ItHowlsInTheRain.1": "So this is what you call a \"horror\" movie'? Is it scary?",
+"Movies.SenS.ItHowlsInTheRain.2": "Hmm...#$b#Why does your species watch things that scare you for fun?",
+"Movies.SenS.ItHowlsInTheRain.3": "The story of that movie reminded me a little of myself.",
+
+"Movies.SenS.MiracleAtColdstarRanch.1": "Oh this is something festive, hm? I'm excited!",
+"Movies.SenS.MiracleAtColdstarRanch.2": "This poor family... What terrible circumstances!",
+"Movies.SenS.MiracleAtColdstarRanch.3": "What a heartwarming series of images!#$b#Thank you for letting me tag along!",
+
+"Movies.SenS.ZuzuExpress.1": "A romantic film, hm? This ought to be sappy!",
+"Movies.SenS.ZuzuExpress.2": "Follow your heart! He loves you!",
+"Movies.SenS.ZuzuExpress.3": "What?! That was the ending? That can't be the ending!#$b#I need to know if they got together in the end!"
+}

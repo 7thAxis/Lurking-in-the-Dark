@@ -1,0 +1,49 @@
+{
+/*
+███╗   ███╗ █████╗ ██████╗     ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+████╗ ████║██╔══██╗██╔══██╗    ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+██╔████╔██║███████║██████╔╝    ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
+██║╚██╔╝██║██╔══██║██╔═══╝     ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
+██║ ╚═╝ ██║██║  ██║██║         ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝         ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+*/
+"Maps.SenS.SenDDGlobe": "This old globe has pins stuck in certain locations around the world.",
+"Maps.SenS.SenDDBasket": "You inspect the basket, expecting berries...#...but, what you find instead are some strange squishy red globs of goo.",
+"Maps.SenS.SenDDMap": "The map on the wall has a sight seeing spot in the mountain marked in red.",
+"Maps.SenS.SenDDSpiderWeb": "There's a very small spider living in this shelf.#The spider waves hello!",
+"Maps.SenS.SenDDBookStack1": "Numerous books are haphazardly stacked into a pile.#They appear to have library category stickers, but you doubt they've been checked out.",
+"Maps.SenS.SenDDBookStack2": "These books are piled very clumsily. They could tip at any moment.",
+"Maps.SenS.SenDDCandles": "These candles emit a gentle, relaxing glow.",
+"Maps.SenS.SenDDClutter": "Coffee cups, paper, pencils and scissors are littered about.#Seems like the result of a recent brainstorming session.",
+"Maps.SenS.SenDDWorkBench": "This workbench is well used. It looks like a costume was recently worked on here.",
+"Maps.SenS.SenDDLoom": "This loom appears to be jammed with some kind of fiber that definitely isn't wool...",
+"Maps.SenS.SenDDCloth": "A strong, but rather grungy piece of cloth. You decide it's best not to touch it.",
+"Maps.SenS.SenDDRedBook": "A battered journal. The writing within is sloppy and almost impossible to read.",
+"Maps.SenS.SenDDBlueBook": "This book was laid down open.#It seems like the reader couldn't find a bookmark.",
+"Maps.SenS.SenDDMushrooms": "This mushroom appears to be thriving in the darkness.",
+"Maps.SenS.SenDDBed": "This appears to be a very uncomfortable looking bed made out of wood planks.",
+"Maps.SenS.SenDDVines": "The vines growing out of a crack in the wall appear to have been meticulously pruned.",
+"Maps.SenS.SenDDBear": "This stuffed bear is tattered and smells like it was found in the garbage.#...It probably was.",
+"Maps.SenS.SenDDTrash": "A collection of rubbish has been carefully packed into this corner.",
+"Maps.SenS.SenDDBarrel": "You peek inside the barrel and find a number of handmade holiday costumes.",
+"Maps.SenS.SenDDCrocus": "A single crocus bloom sits in a vase. It gazes upon you with its judgement.",
+"Maps.SenS.SenDDFlowers": "The blooms in this vase are heavily wilted. They'll need to be replaced soon.",
+"Maps.SenS.SenDDGardenShrooms": "This bucket is overflowing with mushrooms.#Does Sen eat these?",
+"Maps.SenS.SenDDGardenWater": "This trough is full of crystal clear water.",
+"Maps.SenS.SenDDGardenPumpkin": "How are these pumpkins growing without sunlight?",
+"Maps.SenS.SenDDGardenBigPumpkin": "The massive pumpkin towers over you.#Clearly, it's Sen's pride and joy.",
+"Maps.SenS.SenDDGardenBerryBush": "The bushes are covered in bright red poisonous berries.",
+"Maps.SenS.SenDDGardenBerryBasket": "Judging by the color of these berries, it's probably best to resist the temptation to snack.",
+"Maps.SenS.SenDDGardenGrassRocks": "A thick layer of fiber is engulfing this rock.",
+"Maps.SenS.SenDDGardenSecretJunimo": "...Huh?#There's a junimo living inside this pumpkin!",
+"Maps.SenS.SenRoomCrocus": "It's a very healthy crocus!#He really loves this flower species.",
+"Maps.SenS.SenRoomBook": "It's one of Sen's many stolen library books.#He'll return it. Probably.",
+"Maps.SenS.SenRoomDeskFlowers": "These flowers are well cared for and healthy.#Sen's become quite the gardener!",
+"Maps.SenS.SenRoomCoffeeCup": "How did Sen even manage to get that coffee cup up there?",
+"Maps.SenS.SenRoomBookCase": "There are a plethora of books on the shelf.#Some of them have a strange musty odor.",
+"Maps.SenS.SenRoomLatch": "There's a strange hatch here...#You lift it, but it doesn't lead to anywhere.",
+"Maps.SenS.SenRoomCloth": "It's scrap of cloth from Sen's most recent costume design.",
+"Maps.SenS.SenRoomNotes": "You can't read the language on this paper.#You can tell the handwriting is bad, however.",
+"Maps.SenS.SenRoomBlueFlowers": "These are flowers from Sen's garden back in East Scarp.",
+"Maps.SenS.LitDMayorPot": "Seems like Lewis brought the plant from the bench inside to protect it from the weather."
+}

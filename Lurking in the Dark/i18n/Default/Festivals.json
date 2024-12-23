@@ -1,0 +1,102 @@
+{
+/*
+███████╗███████╗███████╗████████╗██╗██╗   ██╗ █████╗ ██╗     ███████╗
+██╔════╝██╔════╝██╔════╝╚══██╔══╝██║██║   ██║██╔══██╗██║     ██╔════╝
+█████╗  █████╗  ███████╗   ██║   ██║██║   ██║███████║██║     ███████╗
+██╔══╝  ██╔══╝  ╚════██║   ██║   ██║╚██╗ ██╔╝██╔══██║██║     ╚════██║
+██║     ███████╗███████║   ██║   ██║ ╚████╔╝ ██║  ██║███████╗███████║
+╚═╝     ╚══════╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝  ╚═╝  ╚═╝╚══════╝╚══════╝
+*/
+
+
+//Sen festivals
+"Festivals.SenS.spring13.1": "....I am a normal person in an egg suit. Please carry on.$13",
+"Festivals.SenS.spring13.2": "Auuaghh, this thing is so scratchy...$13#$b#Oh, uh. I'm just a guy in an egg suit. Have a nice day.$13",
+"Festivals.SenS.spring13.3": "Don't even say it... I already know my costume is egg-cellent.$13",
+
+"Festivals.SenS.spring24.1": "The air is sweet with the smell of flowers...$14#$b#...I wonder if anyone would mind if I took a few bunches home?$14",
+"Festivals.SenS.spring24.2": "Dancing... I would love to participate, but I unfortunately have two left feet.$14",
+"Festivals.SenS.spring24.3": "Hm? Don't worry, I'm comfortable over here by myself.$14#$b#Crowds are rather stressful for me.$14",
+
+"Festivals.SenS.summer11.1.Nyapu": "This \"sandcastle\" seems to be breathing...$15",
+"Festivals.SenS.summer11.2.Nyapu": "There's something suspicious about this \"sandcastle\"...$15",
+"Festivals.SenS.summer11.3.Nyapu": "You go to touch the \"sandcastle\" and it hisses at you...$15",
+"Festivals.SenS.summer11.1.7thAxis": "%This \"sandcastle\" seems to be breathing...",
+"Festivals.SenS.summer11.2.7thAxis": "%There's something suspicious about this \"sandcastle\"...",
+"Festivals.SenS.summer11.3.7thAxis": "%You go to touch the \"sandcastle\" and it hisses at you...",
+
+"Festivals.SenS.summer28.1": "Squish squish... squishy squish???$16#$e#Squish!!!$16",
+"Festivals.SenS.summer28.2": "Squishy... Squish! Squishsquash squish!$16#$e#Squuuaaash!!$16",
+"Festivals.SenS.summer28.3": "Squishing squish squishy! Squishhh!!!$16#$e#Squish....$16",
+
+"Festivals.SenS.fall16.1": "Sigh... I wish I could partake in the activities.$17#$b#Alas, I am but an armless pumpkin.$17",
+"Festivals.SenS.fall16.2": "Talking pumpkins are a normal part of this event.$17#$b#Yes indeed. Everyone knows that.$17",
+"Festivals.SenS.fall16.3": "I'm a magical talking pumpkin from the far away land of %place.$17#$b#That is absolutely factual.$17",
+
+"Festivals.SenS.fall27.1": "Hehe... I'm having a blast! Everyone thinks my \"costume\" is super scary.$h#$b#On second thought, I'm actually not sure how I feel about that...$8",
+"Festivals.SenS.fall27.2": "Oh? The treasure? You can have it!$h#$b#I'm just glad I get to participate.$h",
+"Festivals.SenS.fall27.3": "Boo!$h#$b#Hehe, did I scare you?$12#$e#What do you mean I'm not scary?$u",
+
+"Festivals.SenS.winter8.1": "I'm over here trying to avoid the teacher lady...$18#$b#She keeps mistaking me for a lost child, then starts looking for my parents...$18#$b#I should make a larger costume... shrinking down into this one is such a pain.$18",
+"Festivals.SenS.winter8.2": "Once you reel in those fish, the whole area is going to reek.$18#$b#I can't wait!$18",
+"Festivals.SenS.winter8.3": "I want to make a snow person but this outfit is too stiff on me.$18#$b#If I move I'll waddle around like a penguin...$18",
+
+"Festivals.SenS.winter25.1": "You can feel the affection everyone has for one another during this festival...$18#$b#It puts a smile on my face.$18#$e#I wish everyday was like this...$18",
+"Festivals.SenS.winter25.2": "Hohoho... I'm the real Santa Claus!$18#$b#That is a 100% truthful fact, I swear.$18",
+"Festivals.SenS.winter25.3": "I wish I could participate in the festivities...$18#$b#I could make so many lovely gifts for people!$18#$e#Maybe I should make the gifts anyway and sneak them into mailboxes.$18",
+
+//Passive Festivals
+"Festivals.SenS.NightMarket.1": "The night market sells many rare goods that are very helpful for costume design.#$b#Thankfully the characters there are so colorful, I blend right in hehe.",
+"Festivals.SenS.NightMarket.2": "Are you going to purchase anything from the market, @?#$b#You might have to wait a whole year if you pass on something you want.",
+"Festivals.SenS.NightMarket.3": "This is the one time of year I risk going out and about.#$b#The market has too many useful goods for me to pass up on.",
+
+"Festivals.SenS.TroutDerby.1": "Quite a few humans fishing out here today, aren't there?#$b#I couldn't quite contain my curiosity...",
+"Festivals.SenS.TroutDerby.2": "Trout, trout trout... I know little about this fish!#$b#I should do a little studying during my next library raid.",
+
+"Festivals.SenS.DesertFestival.1": "I'm curious about the blue haired girl's shop...#$b#Ah, must resist the urge to interact! I might be discovered.",
+"Festivals.SenS.DesertFestival.2": "It is so hot here... To hot.#$b#No, that's not the problem. It's too dry. Blegh.#$b#I read about this, why did I think coming here was a good idea?",
+
+"Festivals.SenS.SquidFestival.1": "Squids... the only squids I'm familiar with are \"Squid Kids\".#$b#I simply can't stand those guys. Always shooting fireballs at me...",
+"Festivals.SenS.SquidFestival.2": "Do these kinds of events impact the local population of the fish you're catching?#$b#Have fun, but be kind to nature.",
+
+"Festivals.SenS.PrideFest": "Human gender fascinates me. Among our kind we are all considered \"non-binary\" by human standards.$6#$b#Learning human language was tricky as it introduced me to the foreign concept of gender identity.$8#$b#After much discussion with {{SenKrobusReference}} I found I resonated the most with masculine pronouns, so here we are!$h",
+
+"Festivals.SenS.FestivalOfTheMundane.1": "Oh...! This isn't the safest of places right now.$u#$b#If the shadows here catch on they'll...$s#$b#Just be careful!$u",
+"Festivals.SenS.FestivalOfTheMundane.2": "Shadows engaging with human culture...#$b#I hope humans can engage with our culture in the future.$l#$e#This festival gives me hope for a brighter tomorrow.$h",
+"Festivals.SenS.FestivalOfTheMundane.3": "Do you think humans see this event as mockery?#$b#To a degree it kind of is.$8",
+
+//Fireworks Festival
+"Festivals.SenS.summer20.1": "Is it really a good idea to sell fireworks to the general public?#$b#That sounds like a recipe for a forest fire.",
+"Festivals.SenS.summer20.2": "The loud explosion of fireworks terrifies me, yet I can't look away.#$b#The colors are truly a sight to behold.",
+"Festivals.SenS.summer20.3": "When you purchase fireworks I guess you can say you get a 'bang for your buck'.#$e#Heheh. Get it?#$b#Because fireworks explode?",
+
+//Ridgeside Gathering
+"Festivals.SenS.fall20.1": "Boys, girls...#$b#My kind doesn't particularly differentiate.#$e#It's fascinating to see how different our cultures are.",
+"Festivals.SenS.fall20.2": "The musical equipment caught my eye.#$b#Perhaps I should pick up an instrument...",
+"Festivals.SenS.fall20.3": "There are so many people here.#$b#It's equal parts intimidating and heartwarming to me.",
+
+//Ember of Resolution
+"Festivals.SenS.winter28.1": "What's your resolution for the new year?#$b#Mine is to crochet at least 100 things!#$e#Hmm... Where will I store it all?",
+"Festivals.SenS.winter28.2": "I'm excited to see the giant bonfire.#$b#I wonder who came up with this tradition?",
+"Festivals.SenS.winter28.3": "My resolution this year is to try something new.#$b#I have a few hobbies already, but I'd like to branch out more!",
+
+//Surfing Festival
+"Festivals.SenS.summer5.1": "%Something tells you that this isn't a surfboard.",
+"Festivals.SenS.summer5.2": "%The 'surfboard' eyes you intensely.",
+"Festivals.SenS.summer5.3": "%There's something suspiscious about this surfboard.",
+
+//Fashion festival
+"Festivals.SenS.spring19.1": "Humans are incredibly creative. So many styles!$21#$b#If we had the materials, my peope would enjoy this kind of event...$21",
+"Festivals.SenS.spring19.2": "How are you enjoying the event?$21#$b#I'm getting so much inspiration for future costume projects!$21",
+"Festivals.SenS.spring19.3": "I want to talk to the other attendees, but I'm so nervous...$21",
+
+//Love Festival
+"Festivals.SenS.winter13.1": "Love letters, hm? What an interesting tradition...$20#$e#What, why are you looking at me like that?$20",
+"Festivals.SenS.winter13.2": "What did the root vegetable say to their partner?$20#$b#You make my heart beet.$20#$e#What? You try to come up with something better!$20",
+"Festivals.SenS.winter13.3": "I think my costume came out 'lovely'.$20#$b#Hahaha... get it? Because it's a romance festival?$20",
+
+//Marketpalooza
+"Festivals.SenS.fall3.1": "Quick Sen... act natural!$17#$b#%The little pumpkin man makes incoherent pumpkin noises...",
+"Festivals.SenS.fall3.2": "Boooo spooooky I'm a talking pumpkin! You're halluuuucinating!$17",
+"Festivals.SenS.fall3.3": "I am just an ordinary pumpkin. Please advert your gaze.$17#$b#There is nothing to see here.$17"
+}

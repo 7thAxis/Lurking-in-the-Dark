@@ -268,7 +268,7 @@
         //--DIALOGUE CHANGES AND RANDOMIZATION--
         {
             "Name": "PipoDialogue", 
-            "Value": "{{i18n:Core.FakeNPC.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 20}}}}}}",
+            "Value": "{{i18n:FakeNPCs.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 20}}}}}}",
             "When": { "IsDitRInstalled": false }
         },
         {

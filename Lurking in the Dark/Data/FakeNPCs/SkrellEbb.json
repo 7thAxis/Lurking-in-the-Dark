@@ -76,7 +76,7 @@
                 "LocationId": "EastScarp_DeepDark",
                 "DisplayName": "{{i18n:Core.SenS.Name.Skrell}}",
                 "PortraitTexture": "Portraits/Skrell",
-                "PetMessage": [ "{{i18n:Core.FakeNPC.Skrell.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
+                "PetMessage": [ "{{i18n:FakeNPCs.Skrell.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
                 "HomeTileX": 19,
                 "HomeTileY": 18,
                 "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3, ANY {{IsWeatherBad}} \"DAY_OF_WEEK Sun Sat\""
@@ -87,7 +87,7 @@
                 "LocationId": "EastScarp_DeepDark",
                 "DisplayName": "{{i18n:Core.SenS.Name.Ebb}}",
                 "PortraitTexture": "Portraits/Ebb",
-                "PetMessage": [ "{{i18n:Core.FakeNPC.Ebb.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
+                "PetMessage": [ "{{i18n:FakeNPCs.Ebb.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
                 "HomeTileX": 26,
                 "HomeTileY": 21,
                 "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3, ANY {{IsWeatherBad}} \"DAY_OF_WEEK Sun Sat\""

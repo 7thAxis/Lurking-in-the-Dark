@@ -1,0 +1,60 @@
+{
+/*
+ ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗ 
+██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝ 
+██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝                                             
+*/
+//Gameplay
+"Config.section.Gameplay.name": "Gameplay",
+"Config.Shadow Stat Changes.name": "Shadow Stat Changes",
+"Config.Shadow Stat Changes.description": "Allows for the changing of Shadow stats so Shadowfolk no longer harm the player after completing Sen's storyline.",
+"Config.Pacifist Mode.name": "Pacifist Mode",
+"Config.Pacifist Mode.description": "Shadows will be invincible to player attacks.\n\n(Shadow Stat Changes must be set to true for this to take effect.)",
+"Config.Golem Eradication Substitute.name": "Golem Eradication Substitute",
+"Config.Golem Eradication Substitute.description": "Changes the Void Spirit eradication goal in the Adventurer's Guild to Golems.\n\nThe player does not have to fight Shadowfolk to reach perfection when enabled.\n\nGolem monster list consists of Stone Golems, Wilderness Golems, Iridium Golems, Metal Heads and Dwarvish Sentries.",
+"Config.Event Cooldown Length.name": "Event Cooldown Length",
+"Config.Event Cooldown Length.description": "Adjusts number of days you have to wait between Sen's events.\n\n(Default 3 days)",
+
+//NPC Behavior
+"Config.section.NPC Behavior.name": "NPC Behavior",
+"Config.Schedule Type.name": "Schedule Type",
+"Config.Schedule Type.description": "Whether Sen will visit different random locations every day (Dynamic) or follow a set schedule (Simplified).",
+"Config.Schedule Type.values.Dynamic": "Dynamic",
+"Config.Schedule Type.values.Simplified": "Simplified",
+"Config.Romantic Nickname.name": "Romantic Nickname",
+"Config.Romantic Nickname.description": "Sets Sen's romantic nickname for the player.",
+"Config.Pipo Moves In.name": "Pipo Moves In",
+"Config.Pipo Moves In.description": "Whether Pipo should move in or not if you marry/room with Sen.\n\n(Correct events must be seen first.)",
+
+//Graphics
+"Config.section.Graphics: General.name": "Graphics: General",
+"Config.Portrait Style.name": "Portrait Style",
+"Config.Portrait Style.description": "Sets the mod's portrait style. Don't change this option during festivals.\n\n(Nyapu recommended because Nyapu is amazing.)",
+"Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
+"Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
+"Config.Spouse Room.name": "Spouse Room",
+"Config.Spouse Room.description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself.\n\n(Requires game restart)",
+"Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
+"Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
+"Config.Female Toddler Design.name": "Female Toddler Design",
+"Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+"Config.Male Toddler Design.name": "Male Toddler Design",
+"Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+//Graphics Pipo
+"Config.section.Graphics: Pipo the Cat.name": "Graphics: Pipo the Cat",
+"Config.Pipo Design.name": "Pipo Design",
+"Config.Pipo Design.description": "Sets the design Pipo will use.",
+"Config.Pipo Accessory.name": "Pipo Accessory",
+"Config.Pipo Accessory.description": "Adds an accessory to Pipo's overworld sprite.",
+"Config.Pipo Shorthair Alpha Portrait.name": "Pipo Shorthair Alpha Portrait",
+"Config.Pipo Shorthair.description": "Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\".)",
+//Graphics - UCT
+"Config.section.Graphics: Unique Children Talk.name": "Graphics: Unique Children Talk",
+"Config.UCT Portrait Compatibility.name": "UCT Portrait Compatibility",
+"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\nPortraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
+"Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu and Opal Portraits",
+"Config.7thAxis Nanu and Opal Portraits.description": "Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true."
+}

@@ -104,7 +104,7 @@
                     "LocationId": "Farmhouse",
                     "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
                     "PortraitTexture": "Portraits/PipoP",
-                    "PetMessage": [ "{{i18n:Core.FakeNPC.Pipo.{{Season}}.Day.{{Day}}}}" ],
+                    "PetMessage": [ "{{i18n:FakeNPCs.Pipo.{{Season}}.Day.{{Day}}}}" ],
                     "HomeTileX": 26,
                     "HomeTileY": 27,
                     "Condition": "{{PipoDialogueSpecial}}"
@@ -127,7 +127,7 @@
                     "RingCondition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1",
                     "FromPortrait": "Portraits/PipoP",
                     "FromDisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
-                    "Dialogue": "{{i18n:Core.FakeNPC.Pipo.PhoneCall.{{Random:{{Range: 1, 5}}}}}}",
+                    "Dialogue": "{{i18n:FakeNPCs.Pipo.PhoneCall.{{Random:{{Range: 1, 5}}}}}}",
                     "IgnoreBaseChance": false,
                     "MaxCalls": -1
                   }
