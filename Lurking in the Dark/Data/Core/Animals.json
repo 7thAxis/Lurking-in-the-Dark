@@ -1,0 +1,143 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "LitD_VoidCat": {
+                    "DisplayName": "{{i18n:Core.SenS.Animal.VoidCat}}",
+                    "House": "Barn",
+                    "Gender": "Male",
+                    "PurchasePrice": -1,
+                    "SellPrice": 2500,
+                    "RequiredBuilding": "Barn",
+                    "EggItemIds": [ "553" ],
+                    "IncubationTime": 10000,
+                    "IncubatorParentSheetOffset": 1,
+                    "BirthText": "{{i18n:Core.SenS.Animal.VoidCat.Hatch}}",
+                    "DaysToMature": 1,
+                    "CanGetPregnant": false,
+                    "DaysToProduce": 0,
+                    "HarvestType": "DropOvernight",
+                    "HarvestTool": null,
+                    "ProduceItemIds": [
+                        {
+                            "Id": "Purple Shorts",
+                            "Condition": "RANDOM 0.01",
+                            "MinimumFriendship": 0,
+                            "ItemId": "789" //Purple Shorts
+                        },
+                        {
+                            "Id": "Rabbits Foot",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 200,
+                            "ItemId": "446" //Rabbits Foot
+                        },
+                        {
+                            "Id": "Salmon",
+                            "Condition": "RANDOM 0.1",
+                            "MinimumFriendship": 0,
+                            "ItemId": "795" //Void salmon
+                        },
+                        {
+                            "Id": "Neptunite",
+                            "Condition": "RANDOM 0.2",
+                            "MinimumFriendship": 200,
+                            "ItemId": "553" //Neptunite
+                        },
+                        {
+                            "Id": "Hair Ball",
+                            "Condition": "RANDOM 0.3",
+                            "MinimumFriendship": 0,
+                            "ItemId": "440" //Wool
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": "RANDOM 0.6",
+                            "MinimumFriendship": 0,
+                            "ItemId": "769" //Void Essence
+                        }
+                    ],
+                    "ProduceOnMature": true,
+                    "FriendshipForFasterProduce": -1,
+                    "CanEatGoldenCrackers": true,
+                    "ProfessionForHappinessBoost": 23,
+                    "ProfessionForQualityBoost": 23,
+                    "ProfessionForFasterProduce": -1,
+                    "Sound": "cat",
+                    "BabySound": "cat",
+                    "Texture": "Animals/LitD_VoidCat",
+                    "BabyTexture": "Animals/LitD_VoidCat",
+                    "UseFlippedRightForLeft": false,
+                    "SpriteWidth": 16,
+                    "SpriteHeight": 32,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "SleepFrame": 17,
+                    "EmoteOffset": { "X": 0, "Y": 0 },
+                    "Skins": [
+                        {
+                            "ID": "Shorthair",
+                            "Weight": 0.05,
+                            "Texture": "Animals/LitD_VoidCat_Shorthair",
+                            "BabyTexture": "Animals/LitD_VoidCat_Shorthair"
+                        },
+                        {
+                            "ID": "Void Shorts",
+                            "Weight": 0.2,
+                            "Texture": "Animals/LitD_VoidCat_Shorts",
+                            "BabyTexture": "Animals/LitD_VoidCat_Shorts"
+                        },
+                        {
+                            "ID": "Shorthair Shorts",
+                            "Weight": 0.01,
+                            "Texture": "Animals/LitD_VoidCat_ShorthairShorts",
+                            "BabyTexture": "Animals/LitD_VoidCat_ShorthairShorts"
+                        }
+                    ],
+                    "ShadowWhenBaby": { "Visible": true },
+                    "ShadowWhenAdult": { "Visible": true },
+                    "CanSwim": false,
+                    "BabiesFollowAdults": true,
+                    "GrassEatAmount": 1,
+                    "HappinessDrain": 3,
+                    "ShowInSummitCredits": true,
+                    "StatToIncrementOnProduce": [
+                        {
+                            "Id": "LitD_VoidCatGifts",
+                            "RequiredTags": [ 
+                                "color_black", "fish_swamp", "color_yellow", 
+                                "color_white", "color_purple"
+                              ],
+                            "StatName": "LitD_VoidCatGifts"
+                        },
+                        {
+                          "Id": "LitD_VoidEssenceGifts",
+                          "RequiredItemId": 769,
+                          "StatName": "LitD_VoidEssenceGifts"
+                        },
+                        {
+                            "Id": "LitD_NeptuniteGifts",
+                            "RequiredItemId": 553,
+                            "StatName": "LitD_NeptuniteGifts"
+                        },
+                        {
+                            "Id": "LitD_RabbitFootGifts",
+                            "RequiredItemId": 446,
+                            "StatName": "LitD_RabbitFootGifts"
+                        },
+                        {
+                            "Id": "LitD_PurpleShortsGifts",
+                            "RequiredItemId": 789,
+                            "StatName": "LitD_PurpleShortsGifts"
+                        },
+                        {
+                            "Id": "LitD_HairBallGifts",
+                            "RequiredItemId": 440,
+                            "StatName": "LitD_HairBallGifts"
+                        }
+                      ]
+                }
+            }
+        }
+    ]
+}

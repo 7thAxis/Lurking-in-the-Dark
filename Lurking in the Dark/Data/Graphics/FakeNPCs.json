@@ -15,7 +15,7 @@
         //Pipo
         {
             "Action": "Load",
-            "Target": "Characters/PipoP, Portraits/Pipo",
+            "Target": "Characters/PipoP, Portraits/PipoP",
             "FromFile": "Assets/Characters/FakeNPCs/Pipo_{{Pipo Design}}.png"
         },
         {

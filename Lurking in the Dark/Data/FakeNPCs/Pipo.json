@@ -115,6 +115,23 @@
                 "Pipo Moves In": true,
                 "HasSeenEvent": "7thAxis.DitR_Events.SenS.PipoArc.P3"
             }
+        },
+    //Phone calls
+        {
+            "LogName": "Pipo Phone Calls",
+            "Action": "EditData",
+            "Target": "Data/IncomingPhoneCalls",
+            "Entries": {
+                "LitD.Pipo_PhoneCalls": {
+                    "TriggerCondition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1",
+                    "RingCondition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1",
+                    "FromPortrait": "Portraits/PipoP",
+                    "FromDisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "Dialogue": "{{i18n:Core.FakeNPC.Pipo.PhoneCall.{{Random:{{Range: 1, 5}}}}}}",
+                    "IgnoreBaseChance": false,
+                    "MaxCalls": -1
+                  }
+            }
         }
     ]
 }

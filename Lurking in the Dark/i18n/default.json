@@ -81,6 +81,10 @@
 "Core.SenS.Name.Ebb": "Ebb",
 "Core.SenS.Name.Pipo": "Pipo",
 
+//Animals
+"Core.SenS.Animal.VoidCat": "Void Cat",
+"Core.SenS.Animal.VoidCat.Hatch": "Your Neptunite seems to have hatched...?",
+
 //Krobus Reference
 "Core.SenS.KrobusKnown": "Krobus",
 "Core.SenS.KrobusUnknown": "my friend from the sewer",
@@ -779,6 +783,12 @@
 "Core.FakeNPC.Pipo.Winter.Day.24": "(Pipo has a piece of coal in their mouth. Who's it for?", // Day before Winter Star
 "Core.FakeNPC.Pipo.Winter.Day.27": "Pipo contemplates their new years resolution. Do cats even have those?", // Day before Ember
 "Core.FakeNPC.Pipo.Winter.Day.28": "(Pipo chirps in excitement that winter is almost over.)",
+
+"Core.FakeNPC.Pipo.PhoneCall.1": "",
+"Core.FakeNPC.Pipo.PhoneCall.2": "",
+"Core.FakeNPC.Pipo.PhoneCall.3": "",
+"Core.FakeNPC.Pipo.PhoneCall.4": "",
+"Core.FakeNPC.Pipo.PhoneCall.5": "",
 
 /*
  ██████╗ ██╗███████╗████████╗███████╗
