@@ -8,7 +8,7 @@
         },
 		{
 			"Action": "Include",
-			"FromFile": "Data/Core/Festivals.json, Data/Dialogue/Festivals.json, Data/Graphics/Sen.json, Data/Graphics/FakeNPCs.json, Data/Graphics/Kids.json, Data/Graphics/Other.json,Data/Core/Maps.json, Data/Core/Disposition.json, Data/Dialogue/GiftResponses.json, Data/Dialogue/Townie.json, Data/Events/0H.json, Data/Events/2H.json, Data/Events/4H.json, Data/Events/6H.json, Data/Events/8H.json, Data/Events/10H.json, Data/Events/14H.json, Data/Core/Quests.json, Data/dialogue/Core.json, Data/Dialogue/Relationship.json, Data/Dialogue/Movies.json, Data/Events/ReactToDeath.json, Data/core/Monsters.json, Data/core/Items.json, Data/core/Migration.json, Data/Core/Shops.json, Data/FakeNPCs/Pipo.json, Data/FakeNPCs/SkrellEbb.json, Data/Core/Audio.json, Data/Core/Animals.json"
+			"FromFile": "Data/Core/Festivals.json, Data/Dialogue/Festivals.json, Data/Graphics/Sen.json, Data/Graphics/FakeNPCs.json, Data/Graphics/Kids.json, Data/Graphics/Other.json,Data/Core/Maps.json, Data/Core/Disposition.json, Data/Dialogue/GiftResponses.json, Data/Dialogue/Townie.json, Data/Events/0H.json, Data/Events/2H.json, Data/Events/4H.json, Data/Events/6H.json, Data/Events/8H.json, Data/Events/10H.json, Data/Events/14H.json, Data/Core/Quests.json, Data/dialogue/Core.json, Data/Dialogue/Relationship.json, Data/Dialogue/Movies.json, Data/Events/ReactToDeath.json, Data/core/Monsters.json, Data/core/Items.json, Data/core/Migration.json, Data/Core/Shops.json, Data/FakeNPCs/Pipo.json, Data/FakeNPCs/SkrellEbb.json, Data/Core/Audio.json, Data/Core/Animals.json, Data/Core/Trinkets.json"
 		},
         //loads based on events or flags
         {

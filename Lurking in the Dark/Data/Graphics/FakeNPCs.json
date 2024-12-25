@@ -43,6 +43,7 @@
         {
             "LogName": "Pipo Accessories Face ",
             "Action": "EditImage",
+            "Priority": "Late",
             "Target": "Characters/PipoP",
             "FromFile": "Assets/Characters/FakeNPCs/Pipo/Accessories/{{Pipo Accessory Face}}.png",
             "PatchMode": "Overlay",

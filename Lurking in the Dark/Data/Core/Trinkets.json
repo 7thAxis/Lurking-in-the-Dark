@@ -1,0 +1,162 @@
+{
+    "Changes": [
+      {
+        "LogName": "Pipo: Trinket",
+        "Action": "EditData",
+        "Target": "Data/Trinkets",
+        "Entries": {
+          "{{ModId}}_PipoSummon": {
+            "Id": "{{ModId}}_PipoSummon",
+            "DisplayName": "{{i18n:Items.SenS.PipoSummon.Title}}",
+            "Description": "{{i18n:Items.SenS.PipoSummon.Description}}",
+            "Texture": "Characters/PipoP",
+            "SheetIndex": 62,
+            "DropsNaturally": false,
+            "CanBeReforged": false
+          }
+        }
+      },
+      {
+        "LogName": "Pipo: Tinker",
+        "Action": "EditData",
+        "Target": "mushymato.TrinketTinker/Tinker",
+        "Entries": {
+          "{{ModId}}_PipoSummon": {
+            "Variants": [
+              {
+                "Texture": "Characters/PipoP",
+                "Width": 16,
+                "Height": 32,
+                "ShadowScale": 0
+              },
+            ],
+            "Motion": {
+              "MotionClass": "Lerp",
+              "DirectionMode": "DRUL",
+              "FrameLength": 4,
+              "Anchors": [
+                {
+                  "Mode": "Owner",
+                  "Range": 200
+                },
+                {
+                  "Mode": "Monster",
+                  "Range": 240
+                },
+              ],
+              "AnimClips": {
+                "Idle.1": {
+                    "FrameStart": 23,
+                    "FrameLength": 2,
+                    "Interval": 250
+                },
+                "Idle.2": {
+                    "FrameStart": 25,
+                    "FrameLength": 2,
+                    "Interval": 250
+                },
+                "Idle.3": {
+                    "FrameStart": 25,
+                    "FrameLength": 2,
+                    "Interval": 250
+                },
+                "Idle.4": {
+                    "FrameStart": 23,
+                    "FrameLength": 2,
+                    "Interval": 250
+                },
+              },
+              "Args": {
+                "Min": 32,
+                "Rate": 250,
+                "MoveSync": true
+              }
+            },
+            "Abilities": [
+              // level 1
+              [
+                {
+                  "AbilityClass": "HarvestForage",
+                  "Description": "{{i18n:Stick.AbilityDescription.1}}",
+                  "Proc": "Timer",
+                  "ProcTimer": 250,
+                  "ProcSound": "harvest",
+                  "Args": {
+                    "Range": 1,
+                  },
+                },
+                {
+                  "AbilityClass": "Health",
+                  "Proc": "Sync",
+                  "Args": {
+                    "ValueMode": "Number",
+                    "Min": 44
+                  }
+                },
+              ],
+              // level 2
+              [
+                {
+                  "AbilityClass": "HarvestCrop",
+                  "Description": "{{i18n:Stick.AbilityDescription.2}}",
+                  "Proc": "Timer",
+                  "ProcTimer": 1000,
+                  "ProcSound": "harvest",
+                  "Args": {
+                    "Range": 0,
+                  },
+                },
+                {
+                  "AbilityClass": "Stamina",
+                  "Proc": "Sync",
+                  "Args": {
+                    "ValueMode": "Number",
+                    "Min": 44
+                  }
+                }
+              ],
+              // level 3
+              [
+                {
+                  "AbilityClass": "HarvestForage",
+                  "Description": "{{i18n:Stick.AbilityDescription.3}}",
+                  "Proc": "Timer",
+                  "ProcTimer": 250,
+                  "ProcSound": "harvest",
+                  "Args": {
+                    "Range": 1,
+                  },
+                },
+                {
+                  "AbilityClass": "HarvestCrop",
+                  "Proc": "Timer",
+                  "ProcTimer": 1000,
+                  "ProcSound": "harvest",
+                  "Args": {
+                    "Range": 0,
+                  },
+                },
+                {
+                  "AbilityClass": "Health",
+                  "Proc": "Sync",
+                  "Args": {
+                    "ValueMode": "Number",
+                    "Min": 44
+                  }
+                },
+                {
+                  "AbilityClass": "Stamina",
+                  "Proc": "Sync",
+                  "ProcSyncIndex": 1,
+                  "Args": {
+                    "ValueMode": "Number",
+                    "Min": 44
+                  }
+                }
+              ],
+            ]
+          },
+        }
+      }
+    ]
+  }

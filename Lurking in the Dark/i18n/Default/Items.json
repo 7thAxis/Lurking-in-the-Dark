@@ -13,5 +13,8 @@
 "Items.SenS.SensCrocusSeeds.Description": "Grows year round. Takes 4 days to produce a purple flower.",
 "Items.SenS.SenPortrait.Title": "Sen's Portrait",             
 "Items.SenS.SenBabyPhoto.Title": "Sen's Baby Photo",
-"Items.SenS.PipoPortrait.Title": "Pipo's Portrait"
+"Items.SenS.PipoPortrait.Title": "Pipo's Portrait",
+
+"Items.SenS.PipoSummon.Title": "Pipo Summon",
+"Items.SenS.PipoSummon.Description": "Summons Pipo."
 }
