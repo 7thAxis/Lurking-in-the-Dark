@@ -48,27 +48,27 @@
                 "Idle.1": {
                     "FrameStart": 23,
                     "FrameLength": 2,
-                    "Interval": 250
+                    "Interval": 300
                 },
                 "Idle.2": {
                     "FrameStart": 25,
                     "FrameLength": 2,
-                    "Interval": 250
+                    "Interval": 300
                 },
                 "Idle.3": {
                     "FrameStart": 25,
                     "FrameLength": 2,
-                    "Interval": 250
+                    "Interval": 300
                 },
                 "Idle.4": {
                     "FrameStart": 23,
                     "FrameLength": 2,
-                    "Interval": 250
+                    "Interval": 300
                 },
               },
               "Args": {
                 "Min": 32,
-                "Rate": 250,
+                "Rate": 300,
                 "MoveSync": true
               }
             },
