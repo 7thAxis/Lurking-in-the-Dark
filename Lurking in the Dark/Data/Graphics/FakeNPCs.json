@@ -21,7 +21,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/PipoP",
-            "FromFile": "Assets/Portraits/7thAxis/FakeNPCs/Pipo/Pipo_{{Pipo Design}}.png"
+            "FromFile": "Assets/Portraits/{{Portrait Style}}/FakeNPCs/Pipo/Pipo_{{Pipo Design}}.png"
         },
         {
             "LogName": "Pipo Accessories Body ",

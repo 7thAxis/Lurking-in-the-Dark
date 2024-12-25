@@ -134,10 +134,10 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "7thAxis.DitR_TriggerActions.LitDWasInstalled": {
+                "7thAxis.LitD_TriggerActions.LitDWasInstalled": {
                     "Id": "7thAxis.DitR_TriggerActions.LitDWasInstalled",
                     "Trigger": "DayStarted",
-                    "Actions": [ "AddMail Current DitR_M_LitDWasInstalled received" ]
+                    "Actions": [ "AddMail Current LitD_M_LitDWasInstalled received" ]
                 }
             }
         }
