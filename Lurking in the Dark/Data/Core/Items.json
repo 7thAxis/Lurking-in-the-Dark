@@ -85,15 +85,16 @@
             "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true } 
         },
 
-    //SPOUSE PORTRAITS
+    //NPC PORTRAITS
         {
             "LogName": "Create Furniture",
             "Action": "EditData",
             "Target": "Data/Furniture",
             "Entries": {
               "{{ModID}}_Furniture.SenPortrait": "LitD_SenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenPortrait.Title}}/0/Textures\\7thAxis.LitD\\Furniture/true",
-              "{{ModID}}_Furniture.SenBabyPhoto": "LitD_SenPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenBabyPhoto.Title}}/2/Textures\\7thAxis.LitD\\Furniture/true"
+              "{{ModID}}_Furniture.SenBabyPhoto": "LitD_SenBabyPhoto/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.SenBabyPhoto.Title}}/2/Textures\\7thAxis.LitD\\Furniture/true",
+              "{{ModID}}_Furniture.PipoPortrait": "LitD_PipoPortrait/painting/2 2/2 2/1/999/-1/{{i18n:Items.SenS.PipoPortrait.Title}}/4/Textures\\7thAxis.LitD\\Furniture/true"
             }
-          }
+        }
     ]
 }

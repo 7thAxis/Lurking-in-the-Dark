@@ -1,0 +1,18 @@
+{
+/*
+███╗   ███╗ █████╗ ██╗██╗     
+████╗ ████║██╔══██╗██║██║     
+██╔████╔██║███████║██║██║     
+██║╚██╔╝██║██╔══██║██║██║     
+██║ ╚═╝ ██║██║  ██║██║███████╗
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚══════╝
+*/
+
+//Skrell Ebb
+"Mail.SenS.ShadowVisitation.Title": "Call of the Void",
+"Mail.SenS.ShadowVisitation": "Human. ^^I am begrudgingly leaving this note to inform you...^^We will be visiting Sen's cavern when it rains and on weekends. Consider this an olive branch.^^If you wish to interact with us... we shall be there.  ^^   -Skrell (hi, Ebb was here too!)",
+
+//Pipo Portrait
+"Mail.SenS.PipoPortrait.Title": "Pipo's Prize",
+"Mail.SenS.PipoPortrait": "Pipo. ^^Pipo Pipo Pipo...^^Meow Meow Meow Meow.^^It seems you've treated my fellow void felines well. BEHOLD your reward, ME.  ^^   -Signed with a paw print. But not actually.%item furniture 7thAxis.LitD.CP_Furniture.PipoPortrait %%"
+}

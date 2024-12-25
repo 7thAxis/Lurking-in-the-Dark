@@ -6,7 +6,7 @@
         "Action": "EditData",
         "Target": "Data/mail",
         "Entries": {
-            "DitR_M_ShadowVisitation": "{{i18n:Core.SenS.Mail.ShadowVisitation}}[#]{{i18n:Core.SenS.Mail.ShadowVisitation.Title}}"
+            "DitR_M_ShadowVisitation": "{{i18n:Mail.SenS.ShadowVisitation}}[#]{{i18n:Mail.SenS.ShadowVisitation.Title}}"
         }
     },
     {

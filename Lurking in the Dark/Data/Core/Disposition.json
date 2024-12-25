@@ -105,12 +105,12 @@
                         },
                         {
                             "ID": "Festival of the Mundane",
-                            "Condition": "SEASON_DAY fall 27, {{HasMod: |contains=MouseyPounds.ShadowFestival}}",
+                            "Condition": "SEASON_DAY fall 27, {{HasMod: |contains=MouseyPounds.ShadowFestival}}, {{LivingWithSen |Contains=false}}",
                             "Sprite": "Characters/SenS_Bow"
                         },
                         {
                             "ID": "Other Festivals",
-                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\" \"IS_PASSIVE_FESTIVAL_TODAY TroutDerby\" \"IS_PASSIVE_FESTIVAL_TODAY NightMarket\" \"IS_PASSIVE_FESTIVAL_TODAY SquidFest\" \"IS_PASSIVE_FESTIVAL_TODAY DesertFestival\"",
+                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\" \"IS_PASSIVE_FESTIVAL_TODAY TroutDerby, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY NightMarket, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY SquidFest, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY DesertFestival, {{LivingWithSen |Contains=false}}\"",
                             "Portrait": "Portraits/SenS_Cloak",
                             "Sprite": "Characters/SenS_Cloak"
                         }

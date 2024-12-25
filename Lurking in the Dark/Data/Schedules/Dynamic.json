@@ -47,7 +47,7 @@
 		},
 //---Schedule 2---//
 		{
-			"LogName": "Sen Schedule DeepDark+Orchard",
+			"LogName": "Sen Schedule Underscarp+Orchard",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
 			"Entries": {
@@ -111,7 +111,7 @@
 		},
 //---Schedule 4---//
 		{
-			"LogName": "Sen Schedule DeepDark+ES Wander 1",
+			"LogName": "Sen Schedule Underscarp+ES Wander 1",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
 			"Entries": {
@@ -263,7 +263,7 @@
 		},
 //---Schedule 9---//
 		{
-			"LogName": "Sen Schedule DeepDark+ES Wander 2",
+			"LogName": "Sen Schedule Underscarp+ES Wander 2",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
 			"Entries": {
@@ -327,7 +327,7 @@
 		},
 //---Schedule 11---//
 		{
-			"LogName": "Sen Schedule DeepDark+ES Wander 3",
+			"LogName": "Sen Schedule Underscarp+ES Wander 3",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
 			"Entries": {

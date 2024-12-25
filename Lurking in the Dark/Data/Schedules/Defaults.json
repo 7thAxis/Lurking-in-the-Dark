@@ -53,7 +53,7 @@
 					2100 20 62 3/
 					2300 35 79",
 
-				"prefestivals": "
+				"underscarp": "
 					0 EastScarp_DeepDark 28 19/
 					700 28 22/
 					800 26 17 sens_map/
@@ -73,14 +73,14 @@
 					0 EastScarp_DeepDark 26 18/
 					610 26 18 2",
 
-				"spring_12": "GOTO prefestivals", //Day before Egg Festival
-				"spring_23": "GOTO prefestivals", //Day before Flower Dance
-				"summer_10": "GOTO prefestivals", //Day before Luau 
-				"summer_27": "GOTO prefestivals", //Day before Moonlight Jellies
-				"fall_15": "GOTO prefestivals", //Day before Fair
-				"fall_26": "GOTO prefestivals", //Day before Spirits Eve
-				"winter_7": "GOTO prefestivals", //Day before Ice Festival
-				"winter_24": "GOTO prefestivals", //Day before Winter Star
+				"spring_12": "GOTO underscarp", //Day before Egg Festival
+				"spring_23": "GOTO underscarp", //Day before Flower Dance
+				"summer_10": "GOTO underscarp", //Day before Luau 
+				"summer_27": "GOTO underscarp", //Day before Moonlight Jellies
+				"fall_15": "GOTO underscarp", //Day before Fair
+				"fall_26": "GOTO underscarp", //Day before Spirits Eve
+				"winter_7": "GOTO underscarp", //Day before Ice Festival
+				"winter_24": "GOTO underscarp", //Day before Winter Star
 
 				"NightMarket_1": " 
 					0 EastScarp_DeepDark 26 19/
@@ -126,6 +126,16 @@
 			},
 		},
 		{
+			"LogName": "Weekend Schedules",
+			"Action": "EditData",
+			"Target": "Characters/schedules/SenS",
+			"Priority": "Late",
+			"Entries": {
+				"Sun": "GOTO underscarp",
+				"Sat": "GOTO underscarp"
+			}
+		},
+		{
 			"LogName": "Marriage Schedule Vanilla",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
@@ -134,7 +144,7 @@
 					1200 Forest 116 90/
 					1500 104 73/
 					1700 33 96/
-					1900 bed/",
+					1900 bed",
 			},
 			"When": { "MarriageScheduleRandomizer": 1 }
 		},
@@ -185,8 +195,8 @@
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
 			"Entries": {
-				"fall_19": "GOTO prefestivals", //Day before Gathering
-				"winter_27": "GOTO prefestivals" //Day before Ember
+				"fall_19": "GOTO underscarp", //Day before Gathering
+				"winter_27": "GOTO underscarp" //Day before Ember
 			},
 			"When": { "HasMod: |contains=Rafseazz.RSVCP": true }
 		},
@@ -194,14 +204,14 @@
 			"LogName": "Sen Schedule Surfing Festival",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
-			"Entries": { "summer_4": "GOTO prefestivals" },
+			"Entries": { "summer_4": "GOTO underscarp" },
 			"When": { "HasMod: |contains=spacechase0.SurfingFestival": true }
 		},
 		{
 			"LogName": "Sen Schedule Fashion Festival",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
-			"Entries": { "spring_18": "GOTO prefestivals" },
+			"Entries": { "spring_18": "GOTO underscarp" },
 			"When": {
 				"HasMod: |contains=UNA.FF.CP": true,
 				"HasSeenEvent: anyPlayer |contains= 1740402, 1740403, 1740404": true,
@@ -212,21 +222,21 @@
 			"LogName": "Sen Schedule Love Festival",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
-			"Entries": { "winter_12": "GOTO prefestivals" },
+			"Entries": { "winter_12": "GOTO underscarp" },
 			"When": { "HasMod: |contains=AvalonMFX.LoveFestival": true }
 		},
 		{
 			"LogName": "Sen Schedule Marketpalooza",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
-			"Entries": { "fall_2": "GOTO prefestivals" },
+			"Entries": { "fall_2": "GOTO underscarp" },
 			"When": { "HasMod: |contains=Fellowclown.PC": true,  "HasFlag|contains=Fellowclown.PC_Marketpalooza.Mail": true }
 		},
 		{
 			"LogName": "Sen Schedule Fireworks Festival",
 			"Action": "EditData",
 			"Target": "Characters/schedules/SenS",
-			"Entries": { "summer_19": "GOTO prefestivals" },
+			"Entries": { "summer_19": "GOTO underscarp" },
 			"When": { "HasMod: |contains=violetlizabet.FireworksFestival": true }
 		}
 	]

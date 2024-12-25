@@ -11,18 +11,23 @@
         {
             "Action": "Load",
             "Target": "Animals/LitD_VoidCat, Animals/LitD_VoidCat_Shorts",
-            "FromFile": "Assets/Characters/FakeNPCs/Pipo_Void.png"
+            "FromFile": "Assets/Characters/FakeNPCs/Pipo/Pipo_Void.png"
         },
         {
             "Action": "Load",
             "Target": "Animals/LitD_VoidCat_ShortHair, Animals/LitD_VoidCat_ShorthairShorts",
-            "FromFile": "Assets/Characters/FakeNPCs/Pipo_Shorthair.png"
+            "FromFile": "Assets/Characters/FakeNPCs/Pipo/Pipo_Shorthair.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/LitD_VoidCat_Iridium, Animals/LitD_VoidCat_IridiumShorts",
+            "FromFile": "Assets/Characters/FakeNPCs/Pipo/Pipo_Iridium.png"
         },
         {
             "LogName": "Shorts on the Cat",
             "Action": "EditImage",
-            "Target": "Animals/LitD_VoidCat_Shorts, Animals/LitD_VoidCat_ShorthairShorts",
-            "FromFile": "Assets/Characters/FakeNPCs/Pipo_Accessory_Shorts.png",
+            "Target": "Animals/LitD_VoidCat_Shorts, Animals/LitD_VoidCat_ShorthairShorts, Animals/LitD_VoidCat_IridiumShorts",
+            "FromFile": "Assets/Characters/FakeNPCs/Pipo/Accessories/Shorts.png",
             "PatchMode": "Overlay",
             "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 },
             "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 }

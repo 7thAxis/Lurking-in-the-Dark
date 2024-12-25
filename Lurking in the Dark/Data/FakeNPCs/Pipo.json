@@ -1,5 +1,27 @@
 {
     "Changes": [
+        {
+            "LogName": "Pipo Portrait Mail",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "LitD_M_PipoPortrait": "{{i18n:Mail.SenS.PipoPortrait}}[#]{{i18n:Mail.SenS.PipoPortrait.Title}}"
+            }
+        },
+        {
+            "LogName": "Send Pipo Portrait in Mail",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+    
+                "LitD_TriggerActions.PipoPortrait": {
+                    "Trigger": "DayEnding",
+                    "Id": "LitD_TriggerActions.PipoPortrait",
+                    "Condition": "PLAYER_STAT Current LitD_VoidCatGifts 30",
+                    "Actions": [ "AddMail Current LitD_M_PipoPortrait tomorrow" ]
+                }
+            }
+        },
         //Pipo
         {
             "LogName": "Load Pipo Fake NPCs",
@@ -32,6 +54,27 @@
             "Action": "EditData",
             "Target": "MEEP/FarmAnimals/SpawnData",
             "Entries": {
+                "LitD.Pipo_FarmhouseTest": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "Farmhouse",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{i18n:FakeNPCs.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 30}}}}}}" ],
+                    "HomeTileX": 26,
+                    "HomeTileY": 27
+                },
+                "LitD.Pipo_Tunnel_Early": {
+                    "AnimalId": "LitD.Pipo",
+                    "Age": 1,
+                    "LocationId": "Tunnel",
+                    "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
+                    "PortraitTexture": "Portraits/PipoP",
+                    "PetMessage": [ "{{i18n:FakeNPCs.Pipo.Early.{{Random: {{Range: 1, 5}}}}}}" ],
+                    "HomeTileX": 20,
+                    "HomeTileY": 10,
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
+                },
                 "LitD.Pipo_Tunnel": {
                     "AnimalId": "LitD.Pipo",
                     "Age": 1,
@@ -41,7 +84,7 @@
                     "PetMessage": [ "{{PipoDialogue}}" ],
                     "HomeTileX": 20,
                     "HomeTileY": 10,
-                    "Condition": "ANY \"DAY_OF_WEEK Tue, !{{IsWeatherBad}}\" \"!PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1\""
+                    "Condition": "DAY_OF_WEEK Tue, !{{IsWeatherBad}}, PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
                 },
                 "LitD.Pipo_Cave": {
                     "AnimalId": "LitD.Pipo",
@@ -78,7 +121,7 @@
                 }
             },
             "When": {
-                "Query: '{{LivingWithSen}}' = 'false' AND '{{HasSeenEvent |contains=7thAxis.DitR_Events.SenS.PipoArc.P3}}' IN ('true', 'false') OR '{{Pipo Moves In}}' = 'false'": true
+                "Query: '{{Pipo Moves In}}' = 'false' OR '{{LivingWithSen}}' = 'false' OR '{{LivingWithSen}}' = 'true' AND '{{HasSeenEvent |contains=7thAxis.DitR_Events.SenS.PipoArc.P2}}' IN ( 'false')": true
             }
         },
         {
@@ -92,7 +135,7 @@
                     "LocationId": "Farmhouse",
                     "DisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
                     "PortraitTexture": "Portraits/PipoP",
-                    "PetMessage": [ "{{PipoDialogue}}" ],
+                    "PetMessage": [ "{{i18n:FakeNPCs.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 30}}}}}}" ],
                     "HomeTileX": 26,
                     "HomeTileY": 27,
                     "Condition": "!{{PipoDialogueSpecial}}"
@@ -113,7 +156,7 @@
             "When": {
                 "LivingWithSen": true,
                 "Pipo Moves In": true,
-                "HasSeenEvent": "7thAxis.DitR_Events.SenS.PipoArc.P3"
+                "HasSeenEvent": "7thAxis.DitR_Events.SenS.PipoArc.P2"
             }
         },
     //Phone calls
@@ -127,7 +170,7 @@
                     "RingCondition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1",
                     "FromPortrait": "Portraits/PipoP",
                     "FromDisplayName": "{{i18n:Core.SenS.Name.Pipo}}",
-                    "Dialogue": "{{i18n:FakeNPCs.Pipo.PhoneCall.{{Random:{{Range: 1, 5}}}}}}",
+                    "Dialogue": "{{i18n:FakeNPCs.Pipo.PhoneCall.{{Random:{{Range: 1, 6}}}}}}",
                     "IgnoreBaseChance": false,
                     "MaxCalls": -1
                   }

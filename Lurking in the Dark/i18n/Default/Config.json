@@ -44,11 +44,13 @@
 "Config.Male Toddler Design.name": "Male Toddler Design",
 "Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
 //Graphics Pipo
-"Config.section.Graphics: Pipo the Cat.name": "Graphics: Pipo the Cat",
+"Config.section.Graphics: Pipo the Void Cat.name": "Graphics: Pipo the Void Cat",
 "Config.Pipo Design.name": "Pipo Design",
-"Config.Pipo Design.description": "Sets the design Pipo will use.",
-"Config.Pipo Accessory.name": "Pipo Accessory",
-"Config.Pipo Accessory.description": "Adds an accessory to Pipo's overworld sprite.",
+"Config.Pipo Design.description": "Sets the design Pipo will use.\n\nVoid is the canonical design.",
+"Config.Pipo Accessory Body.name": "Pipo Accessory Body",
+"Config.Pipo Accessory Body.description": "Adds an accessory to the face of Pipo's overworld sprite.",
+"Config.Pipo Accessory Face.name": "Pipo Accessory Body",
+"Config.Pipo Accessory Face.description": "Adds an accessory to the face of Pipo's overworld sprite.",
 "Config.Pipo Shorthair Alpha Portrait.name": "Pipo Shorthair Alpha Portrait",
 "Config.Pipo Shorthair.description": "Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\".)",
 //Graphics - UCT

@@ -96,25 +96,32 @@
             "Section": "Graphics: General"
         },
         "Pipo Design": {
-            "AllowValues": "Void, Shorthair",
+            "AllowValues": "Void, Shorthair, Iridium",
             "Default": "Void",
             "AllowBlank": false,
-            "Description":"Sets the design Pipo will use.",
-            "Section": "Graphics: Pipo the Cat"
+            "Description":"Sets the design Pipo will use.\n\nVoid is the canonical design.",
+            "Section": "Graphics: Pipo the Void Cat"
         },
-        "Pipo Accessory": {
-            "AllowValues": "None, Shorts",
+        "Pipo Accessory Body": {
+            "AllowValues": "None, Shorts, Red Scarf, Purple Scarf",
             "Default": "None",
             "AllowBlank": false,
-            "Description":"Adds an accessory to Pipo's overworld sprite.",
-            "Section": "Graphics: Pipo the Cat"
+            "Description":"Adds an accessory to the body of Pipo's overworld sprite.",
+            "Section": "Graphics: Pipo the Void Cat"
+        },
+        "Pipo Accessory Face": {
+            "AllowValues": "None, Glasses, Red Bow, Purple Bow",
+            "Default": "None",
+            "AllowBlank": false,
+            "Description":"Adds an accessory to the face of Pipo's overworld sprite.",
+            "Section": "Graphics: Pipo the Void Cat"
         },
         "Pipo Shorthair Alpha Portrait": {
             "AllowValues": "true, false",
             "Default": "false",
             "AllowBlank": false,
             "Description":"Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\".)",
-            "Section": "Graphics: Pipo the Cat"
+            "Section": "Graphics: Pipo the Void Cat"
         },
         "UCT Portrait Compatibility": {
             "AllowValues": "true, false",
@@ -273,7 +280,7 @@
         },
         {
             "Name": "PipoDialogueSpecial", 
-            "Value": "{{TodaysDate |Contains=Spring 1, Spring 12, Spring 18, Spring 23, Spring 28, Summer 1, Summer 4, Summer 10, Sumer 19, Summer 27, Summer 28, Fall 1, Fall 2, Fall 15, Fall 19, Fall 26, Fall 28, Winter 1, Winter 7, Winter 12, Winter 24, Winter 27, Winter 28}}",
+            "Value": "{{TodaysDate |Contains=Spring 1, Spring 12, Spring 18, Spring 23, Spring 28, Summer 1, Summer 4, Summer 10, Sumer 19, Summer 27, Summer 28, Fall 1, Fall 3, Fall 15, Fall 19, Fall 26, Fall 28, Winter 1, Winter 7, Winter 12, Winter 24, Winter 27, Winter 28}}",
             "When": { "IsDitRInstalled": false }
         },
         {

@@ -23,32 +23,32 @@
                     "ProduceItemIds": [
                         {
                             "Id": "Purple Shorts",
-                            "Condition": "RANDOM 0.01",
-                            "MinimumFriendship": 0,
+                            "Condition": "RANDOM 0.02",
+                            "MinimumFriendship": 999,
                             "ItemId": "789" //Purple Shorts
                         },
                         {
                             "Id": "Rabbits Foot",
                             "Condition": "RANDOM 0.1",
-                            "MinimumFriendship": 200,
+                            "MinimumFriendship": 800,
                             "ItemId": "446" //Rabbits Foot
                         },
                         {
                             "Id": "Salmon",
                             "Condition": "RANDOM 0.1",
-                            "MinimumFriendship": 0,
+                            "MinimumFriendship": 200,
                             "ItemId": "795" //Void salmon
                         },
                         {
                             "Id": "Neptunite",
                             "Condition": "RANDOM 0.2",
-                            "MinimumFriendship": 200,
+                            "MinimumFriendship": 400,
                             "ItemId": "553" //Neptunite
                         },
                         {
                             "Id": "Hair Ball",
                             "Condition": "RANDOM 0.3",
-                            "MinimumFriendship": 0,
+                            "MinimumFriendship": 100,
                             "ItemId": "440" //Wool
                         },
                         {
@@ -83,15 +83,27 @@
                         },
                         {
                             "ID": "Void Shorts",
-                            "Weight": 0.2,
+                            "Weight": 0.03,
                             "Texture": "Animals/LitD_VoidCat_Shorts",
                             "BabyTexture": "Animals/LitD_VoidCat_Shorts"
                         },
                         {
                             "ID": "Shorthair Shorts",
-                            "Weight": 0.01,
+                            "Weight": 0.02,
                             "Texture": "Animals/LitD_VoidCat_ShorthairShorts",
                             "BabyTexture": "Animals/LitD_VoidCat_ShorthairShorts"
+                        },
+                        {
+                            "ID": "Iridium",
+                            "Weight": 0.01,
+                            "Texture": "Animals/LitD_VoidCat_Iridium",
+                            "BabyTexture": "Animals/LitD_VoidCat_Iridium"
+                        },
+                        {
+                            "ID": "Iridium Shorts",
+                            "Weight": 0.001,
+                            "Texture": "Animals/LitD_VoidCat_IridiumShorts",
+                            "BabyTexture": "Animals/LitD_VoidCat_IridiumShorts"
                         }
                     ],
                     "ShadowWhenBaby": { "Visible": true },
@@ -103,37 +115,34 @@
                     "ShowInSummitCredits": true,
                     "StatToIncrementOnProduce": [
                         {
-                            "Id": "LitD_VoidCatGifts",
-                            "RequiredTags": [ 
-                                "color_black", "fish_swamp", "color_yellow", 
-                                "color_white", "color_purple"
-                              ],
+                            "Id": "LitD_VoidEssenceGifts",
+                            "RequiredItemId": 769,
                             "StatName": "LitD_VoidCatGifts"
-                        },
-                        {
-                          "Id": "LitD_VoidEssenceGifts",
-                          "RequiredItemId": 769,
-                          "StatName": "LitD_VoidEssenceGifts"
                         },
                         {
                             "Id": "LitD_NeptuniteGifts",
                             "RequiredItemId": 553,
-                            "StatName": "LitD_NeptuniteGifts"
+                            "StatName": "LitD_VoidCatGifts"
                         },
                         {
                             "Id": "LitD_RabbitFootGifts",
                             "RequiredItemId": 446,
-                            "StatName": "LitD_RabbitFootGifts"
+                            "StatName": "LitD_VoidCatGifts"
                         },
                         {
                             "Id": "LitD_PurpleShortsGifts",
                             "RequiredItemId": 789,
-                            "StatName": "LitD_PurpleShortsGifts"
+                            "StatName": "LitD_VoidCatGifts"
                         },
                         {
                             "Id": "LitD_HairBallGifts",
                             "RequiredItemId": 440,
-                            "StatName": "LitD_HairBallGifts"
+                            "StatName": "LitD_VoidCatGifts"
+                        },
+                        {
+                            "Id": "LitD_VoidsSalmonGifts",
+                            "RequiredItemId": 795,
+                            "StatName": "LitD_VoidCatGifts"
                         }
                       ]
                 }
