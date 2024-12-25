@@ -24,6 +24,13 @@
             "FromFile": "Assets/Portraits/{{Portrait Style}}/FakeNPCs/Pipo/Pipo_{{Pipo Design}}.png"
         },
         {
+            "LogName": "Alpha Pipo Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/PipoP",
+            "FromFile": "Assets/Portraits/7thAxis/FakeNPCs/Pipo/Pipo_Alpha.png",
+            "When": {  "Pipo Alpha Shorthair Portrait": true, "Pipo Design": "Shorthair" }
+        },
+        {
             "LogName": "Pipo Accessories Body ",
             "Action": "EditImage",
             "Target": "Characters/PipoP",
@@ -42,13 +49,6 @@
             "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 },
             "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 },
             "When": {  "Pipo Accessory Face |Contains=None": false }
-        },
-        {
-            "LogName": "Alpha Pipo Portait",
-            "Action": "EditImage",
-            "Target": "Portraits/PipoP",
-            "FromFile": "Assets/Portraits/7thAxis/FakeNPCs/Pipo/Pipo_Alpha.png",
-            "When": {  "Pipo Shorthair Alpha Portrait": true, "Pipo Design": "Shorthair" }
         },
         {
             "LogName": "Pipo Design Portrait",

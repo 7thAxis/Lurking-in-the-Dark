@@ -116,7 +116,7 @@
             "Description":"Adds an accessory to the face of Pipo's overworld sprite.",
             "Section": "Graphics: Pipo the Void Cat"
         },
-        "Pipo Shorthair Alpha Portrait": {
+        "Pipo Alpha Shorthair Portrait": {
             "AllowValues": "true, false",
             "Default": "false",
             "AllowBlank": false,
