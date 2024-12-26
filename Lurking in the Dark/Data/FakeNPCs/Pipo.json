@@ -1,27 +1,5 @@
 {
     "Changes": [
-        {
-            "LogName": "Pipo Portrait Mail",
-            "Action": "EditData",
-            "Target": "Data/mail",
-            "Entries": {
-                "LitD_M_PipoPortrait": "{{i18n:Mail.SenS.PipoPortrait}}[#]{{i18n:Mail.SenS.PipoPortrait.Title}}"
-            }
-        },
-        {
-            "LogName": "Send Pipo Portrait in Mail",
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-    
-                "LitD_TriggerActions.PipoPortrait": {
-                    "Trigger": "DayEnding",
-                    "Id": "LitD_TriggerActions.PipoPortrait",
-                    "Condition": "PLAYER_STAT Current LitD_VoidCatGifts 30",
-                    "Actions": [ "AddMail Current LitD_M_PipoPortrait tomorrow" ]
-                }
-            }
-        },
         //Pipo
         {
             "LogName": "Load Pipo Fake NPCs",
@@ -73,7 +51,7 @@
                     "PetMessage": [ "{{i18n:FakeNPCs.Pipo.Early.{{Random: {{Range: 1, 5}}}}}}" ],
                     "HomeTileX": 20,
                     "HomeTileY": 10,
-                    "Condition": "!PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.8h !PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P1"
                 },
                 "LitD.Pipo_Tunnel": {
                     "AnimalId": "LitD.Pipo",

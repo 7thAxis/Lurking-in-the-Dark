@@ -2,28 +2,6 @@
     "Changes": [
     //Skrell & Ebb
     {
-        "LogName": "Skrell and Ebb Arrival Mail",
-        "Action": "EditData",
-        "Target": "Data/mail",
-        "Entries": {
-            "DitR_M_ShadowVisitation": "{{i18n:Mail.SenS.ShadowVisitation}}[#]{{i18n:Mail.SenS.ShadowVisitation.Title}}"
-        }
-    },
-    {
-        "LogName": "Send Skrell Mail",
-        "Action": "EditData",
-        "Target": "Data/TriggerActions",
-        "Entries": {
-
-            "DitR_TriggerActions.ShadowVisitationMail": {
-                "Trigger": "DayEnding",
-                "Id": "DitR_TriggerActions.ShadowVisitationMail",
-                "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3",
-                "Actions": [ "AddMail Current DitR_M_ShadowVisitation tomorrow" ]
-            }
-        }
-    },
-    {
         "LogName": "Load Skrell and Ebb Fake NPCs",
         "Action": "EditData",
         "Target": "Data/FarmAnimals",

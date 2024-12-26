@@ -9,9 +9,7 @@
 	"MinimumGameVersion": "1.6",
 	"ContentPackFor": { "UniqueID": "Pathoschild.ContentPatcher" },
 	"Dependencies": [
-		{
-			"UniqueID": "LemurKat.EastScarpe.CP",
-			"IsRequired": true
-		}
+		{ "UniqueID": "LemurKat.EastScarpe.CP", "IsRequired": true },
+		{ "UniqueID": "mushymato.TrinketTinker", "IsRequired": true }
 	]
 }

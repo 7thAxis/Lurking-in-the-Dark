@@ -1,5 +1,6 @@
 {
     "Changes": [
+    //Tinket data
       {
         "LogName": "Pipo: Trinket",
         "Action": "EditData",
@@ -16,6 +17,43 @@
           }
         }
       },
+      //Tinket Anims
+      {
+        "Action": "EditData",
+        "Target": "mushymato.TrinketTinker/TAS",
+        "Entries": {
+            "{{ModId}}_PipoAttack": {
+            "Id": "{{ModId}}_PipoAttack",
+            "Texture": "TileSheets/animations",
+            "SourceRect": { "X": 0, "Y": 640, "Width": 64, "Height": 64 },
+            "Interval": 100,
+            "Frames": 8,
+            "Loops": 1,
+            "Scale": 0.25,
+            "Color": "Magenta"
+            }
+        }
+      },
+      //Tinket buff
+      {
+        "LogName": "Cat's Cradle",
+        "Action": "EditData",
+        "Target": "Data/Buffs",
+        "Entries": {
+          "{{ModId}}_CatsCradle": {
+            "DisplayName": "{{i18n:Items.SenS.PipoSummon.Buff}}",
+            "Duration": 10000,
+            "MaxDuration": -1,
+            "IconTexture": "Characters/PipoP",
+            "IconSpriteIndex": 62,
+            "Effects": {
+              "Attack": 1.0,
+              "Speed": 1.0,
+              "MagneticRadius": 2.0
+            }
+          }
+          }
+        },
       {
         "LogName": "Pipo: Tinker",
         "Action": "EditData",
@@ -28,22 +66,12 @@
                 "Width": 16,
                 "Height": 32,
                 "ShadowScale": 0
-              },
+              }
             ],
             "Motion": {
               "MotionClass": "Lerp",
               "DirectionMode": "DRUL",
               "FrameLength": 4,
-              "Anchors": [
-                {
-                  "Mode": "Owner",
-                  "Range": 200
-                },
-                {
-                  "Mode": "Monster",
-                  "Range": 240
-                },
-              ],
               "AnimClips": {
                 "Idle.1": {
                     "FrameStart": 23,
@@ -64,7 +92,7 @@
                     "FrameStart": 23,
                     "FrameLength": 2,
                     "Interval": 300
-                },
+                }
               },
               "Args": {
                 "Min": 32,
@@ -73,89 +101,47 @@
               }
             },
             "Abilities": [
-              // level 1
               [
                 {
                   "AbilityClass": "HarvestForage",
-                  "Description": "{{i18n:Stick.AbilityDescription.1}}",
                   "Proc": "Timer",
                   "ProcTimer": 250,
                   "ProcSound": "harvest",
-                  "Args": {
-                    "Range": 1,
+                  "Args": { "Range": 2 }
+                },
+                {
+                    "AbilityClass": "Hitscan",
+                    "Proc": "Timer",
+                    "ProcTimer": 1500,
+                    "ProcSound": "shadowDie",
+                    "ProcTAS": [ "{{ModId}}_PipoAttack" ],
+                    "Args": {
+                      "Min": 30,
+                      "Max": 65,
+                      "Range": 192
+                    }
                   },
-                },
-                {
-                  "AbilityClass": "Health",
-                  "Proc": "Sync",
-                  "Args": {
-                    "ValueMode": "Number",
-                    "Min": 44
-                  }
-                },
-              ],
-              // level 2
-              [
-                {
-                  "AbilityClass": "HarvestCrop",
-                  "Description": "{{i18n:Stick.AbilityDescription.2}}",
-                  "Proc": "Timer",
-                  "ProcTimer": 1000,
-                  "ProcSound": "harvest",
-                  "Args": {
-                    "Range": 0,
+                  {
+                    "AbilityClass": "Health",
+                    "Proc": "Timer",
+                    "ProcTimer": 11000,
+                    "ProcSound": "cat",
+                    "Args": { "Min": 0.03, "Max": 0.05 }
                   },
-                },
-                {
-                  "AbilityClass": "Stamina",
-                  "Proc": "Sync",
-                  "Args": {
-                    "ValueMode": "Number",
-                    "Min": 44
-                  }
-                }
-              ],
-              // level 3
-              [
-                {
-                  "AbilityClass": "HarvestForage",
-                  "Description": "{{i18n:Stick.AbilityDescription.3}}",
-                  "Proc": "Timer",
-                  "ProcTimer": 250,
-                  "ProcSound": "harvest",
-                  "Args": {
-                    "Range": 1,
+                  {
+                    "AbilityClass": "Buff",
+                    "Proc": "Timer",
+                    "ProcTimer": 9000,
+                    "Args": { "BuffId": "{{ModId}}_CatsCradle" }
                   },
-                },
-                {
-                  "AbilityClass": "HarvestCrop",
-                  "Proc": "Timer",
-                  "ProcTimer": 1000,
-                  "ProcSound": "harvest",
-                  "Args": {
-                    "Range": 0,
-                  },
-                },
-                {
-                  "AbilityClass": "Health",
-                  "Proc": "Sync",
-                  "Args": {
-                    "ValueMode": "Number",
-                    "Min": 44
+                  {
+                    "AbilityClass": "Buff",
+                    "Proc": "Always",
+                    "Args": { "BuffId": "{{ModId}}_CatsCradle" }
                   }
-                },
-                {
-                  "AbilityClass": "Stamina",
-                  "Proc": "Sync",
-                  "ProcSyncIndex": 1,
-                  "Args": {
-                    "ValueMode": "Number",
-                    "Min": 44
-                  }
-                }
-              ],
+              ]
             ]
-          },
+          }
         }
       }
     ]

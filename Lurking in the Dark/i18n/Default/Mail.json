@@ -13,6 +13,14 @@
 "Mail.SenS.ShadowVisitation": "Human. ^^I am begrudgingly leaving this note to inform you...^^We will be visiting Sen's cavern when it rains and on weekends. Consider this an olive branch.^^If you wish to interact with us... we shall be there.  ^^   -Skrell (hi, Ebb was here too!)",
 
 //Pipo Portrait
+"Mail.SenS.PipoIncubator.Title": "Pipo's Incubator",
+"Mail.SenS.PipoIncubator": "Piiiipo? ^^Hatching device.^^Barn.^^Neptunite.  ^^   -Signed with a paw print. But not actually.%item id (BC)24 1 %%",
+
+//Pipo Portrait
 "Mail.SenS.PipoPortrait.Title": "Pipo's Prize",
-"Mail.SenS.PipoPortrait": "Pipo. ^^Pipo Pipo Pipo...^^Meow Meow Meow Meow.^^It seems you've treated my fellow void felines well. BEHOLD your reward, ME.  ^^   -Signed with a paw print. But not actually.%item furniture 7thAxis.LitD.CP_Furniture.PipoPortrait %%"
+"Mail.SenS.PipoPortrait": "PiPo. ^^Meow Meow Meow...^^It seems you've treated my fellow void felines well. BEHOLD your reward, ME.^^Now collect 500 void feline \"gifts\"...  ^^   -Signed with a paw print. But not actually.%item furniture 7thAxis.LitD.CP_Furniture.PipoPortrait %%",
+
+//Pipo Summon
+"Mail.SenS.PipoTrinket.Title": "Pipo's Summon",
+"Mail.SenS.PipoTrinket": "PipooOOooO. ^^Meow Meow Meow.^^You've earned my respect.^^Summon me if you wish for me to join you on your adventures.  ^^   -Signed with a paw print. But not actually.%item id (TR)7thAxis.LitD.CP_PipoSummon 1 %%"
 }

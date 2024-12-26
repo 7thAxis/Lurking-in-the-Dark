@@ -15,6 +15,7 @@
 "Items.SenS.SenBabyPhoto.Title": "Sen's Baby Photo",
 "Items.SenS.PipoPortrait.Title": "Pipo's Portrait",
 
-"Items.SenS.PipoSummon.Title": "Pipo Summon",
-"Items.SenS.PipoSummon.Description": "Summons Pipo."
+"Items.SenS.PipoSummon.Title": "Pipo's Summon",
+"Items.SenS.PipoSummon.Description": "Summons Pipo to battle alongside you!\n\n=Gathers forage\n=Attacks enemies\n=Healing meows\n=Applies \"Cat's Cradle\" buff.\n\nRequires trinket slot.",
+"Items.SenS.PipoSummon.Buff": "Cat's Cradle"
 }

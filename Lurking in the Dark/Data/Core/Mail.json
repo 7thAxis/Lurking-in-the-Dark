@@ -1,0 +1,47 @@
+{
+    "Changes": [
+    //Ostrich Incubator
+        {
+            "LogName": "Mail Keys",
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "LitD_M_PipoIncubator": "{{i18n:Mail.SenS.PipoIncubator}}[#]{{i18n:Mail.SenS.PipoIncubator.Title}}",
+                "LitD_M_PipoPortrait": "{{i18n:Mail.SenS.PipoPortrait}}[#]{{i18n:Mail.SenS.PipoPortrait.Title}}",
+                "LitD_M_PipoTrinket": "{{i18n:Mail.SenS.PipoTrinket}}[#]{{i18n:Mail.SenS.PipoTrinket.Title}}",
+                "DitR_M_ShadowVisitation": "{{i18n:Mail.SenS.ShadowVisitation}}[#]{{i18n:Mail.SenS.ShadowVisitation.Title}}"
+            }
+        },
+        {
+            "LogName": "Send Mail",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "LitD_TriggerActions.PipoIncubator": {
+                    "Trigger": "DayEnding",
+                    "Id": "LitD_TriggerActions.PipoIncubator",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P2, !PLAYER_HAS_CONVERSATION_TOPIC Current PLACEHOLDER",
+                    "Actions": [ "AddMail Current LitD_M_PipoIncubator tomorrow" ]
+                },
+                "LitD_TriggerActions.PipoPortrait": {
+                    "Trigger": "DayEnding",
+                    "Id": "LitD_TriggerActions.PipoPortrait",
+                    "Condition": "PLAYER_STAT Current LitD_VoidCatGifts 100, PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P2",
+                    "Actions": [ "AddMail Current LitD_M_PipoPortrait tomorrow" ]
+                },
+                "LitD_TriggerActions.PipoTrinket": {
+                    "Trigger": "DayEnding",
+                    "Id": "LitD_TriggerActions.PipoTrinket",
+                    "Condition": "PLAYER_STAT Current LitD_VoidCatGifts 500, PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P2",
+                    "Actions": [ "AddMail Current LitD_M_PipoTrinket tomorrow" ]
+                },
+                "DitR_TriggerActions.ShadowVisitationMail": {
+                    "Trigger": "DayEnding",
+                    "Id": "DitR_TriggerActions.ShadowVisitationMail",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.10h.P3",
+                    "Actions": [ "AddMail Current DitR_M_ShadowVisitation tomorrow" ]
+                }
+            }
+        }
+    ]
+}
