@@ -5,7 +5,7 @@
             "Target": "Data/FarmAnimals",
             "Entries": {
                 "LitD_VoidCat": {
-                    "DisplayName": "{{i18n:Core.Animal.VoidCat}}",
+                    "DisplayName": "{{i18n:Core.Animals.VoidCat}}",
                     "House": "Barn",
                     "Gender": "Male",
                     "PurchasePrice": -1,
@@ -14,7 +14,7 @@
                     "EggItemIds": [ "553" ],
                     "IncubationTime": 10000,
                     "IncubatorParentSheetOffset": 1,
-                    "BirthText": "{{i18n:Core.Animal.VoidCat.Hatch}}",
+                    "BirthText": "{{i18n:Core.Animals.VoidCat.Hatch}}",
                     "DaysToMature": 1,
                     "CanGetPregnant": false,
                     "DaysToProduce": 0,
