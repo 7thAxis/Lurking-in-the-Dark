@@ -1,0 +1,122 @@
+{
+    "Changes": [
+            //SENLETS
+        //Sprites
+        {           
+            "Action": "Load",
+            "Target": "Characters/Baby, Characters/Baby_dark",
+            "FromFile": "Assets/Characters/Kids/The_Baby.png",
+            "When":  { "ShadowKidsActive": true }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Characters/Toddler_girl, Characters/Toddler_girl_Dark",
+            "FromFile": "Assets/Characters/Kids/Toddler_{{Female Toddler Design}}.png",
+            "When": { "ShadowKidsActive": true }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Characters/Toddler, Characters/Toddler_Dark",
+            "FromFile": "Assets/Characters/Kids/Toddler_{{Male Toddler Design}}.png",
+            "When":  { "ShadowKidsActive": true }
+        },
+        //Unique Children Talk Compat
+            //Child 1
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}.png",
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Female" }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}.png",
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
+        },
+            //Axell Portraits
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=0": "Female",
+                "Female Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=0}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=0": "Male",
+                "Male Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },
+            //Child 2
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}.png",
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Female" }
+        },
+        {           
+            "Action": "Load",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portrait/7thAxis/Kids/Toddler_{{Male Toddler Design}}.png",
+            "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Male" }
+        },
+            //Axell Portraits
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=1": "Female",
+                "Female Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/{{ChildNames |valueAt=1}}",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis.png",
+            "When": {
+                "UniqueChildCheck": true,
+                "ChildGenders |valueAt=1": "Male",
+                "Male Toddler Design": "Opal, Nanu",
+                "UCT Portrait Compatibility": true,
+                "7thAxis Nanu and Opal Portraits": true
+            }
+        },
+        //DOVES because I'm horrible (thanks for the idea Claw)
+        {
+            "LogName": "Void Doves - Bird House",
+            "Action": "EditImage",
+            "Target": "TileSheets/critters",
+            "FromFile": "Assets/Characters/Kids/The_Doves_1.png",
+            "PatchMode": "Overlay",
+            "FromArea": { "X": 0, "Y": 0, "Width": 320, "Height": 64 },
+            "ToArea": { "X": 0, "Y": 544, "Width": 320, "Height": 64 },
+            "When":  { "ShadowKidsActive": true }
+        },
+        {
+            "LogName": "Void Doves - Shrine",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cursors",
+            "FromFile": "Assets/Characters/Kids/The_Doves_2.png",
+            "PatchMode": "Replace",
+            "FromArea": { "X": 0, "Y": 0, "Width": 144, "Height": 22 },
+            "ToArea": { "X": 388, "Y": 1894, "Width": 144, "Height": 22 },
+            "When":  { "ShadowKidsActive": true }
+        }
+    ]
+}

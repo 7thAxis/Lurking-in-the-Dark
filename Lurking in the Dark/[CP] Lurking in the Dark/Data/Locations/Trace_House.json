@@ -1,0 +1,253 @@
+{
+    "Changes": [  
+
+//---------------------------- EXTERIOR LOAD ------------------------------------------// 
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Maps/Trace_House_Exterior.tmx",
+            "ToArea": { "X": 0, "Y": 73, "Width": 13, "Height": 16 },
+            "PatchMode": "Replace"
+        },      
+//---------------------------- INTERIOR LOAD ------------------------------------------// 
+        {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "7thAxis.LitD_Maps.Trace_House_Interior": {
+                    "Music": [
+                        {
+                          "Id": "TraceHouseBarbieGirl",
+                          "Track": "LitD_Music.BarbieGirl",
+                          "Condition": "SYNCED_RANDOM day TraceBarbieGirl 0.05"
+                        }
+                      ],
+                    "MusicDefault": "LitD_Music.TraceHouse",
+                    "DisplayName": "{{i18n:Maps.TraceV.TraceHouse}}",
+                    "DefaultArrivalTile": { "X": 16, "Y": 23 },
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Trace_House_Interior" }
+                }
+            }
+        },
+        {
+            "LogName": "Barbie Girl Flag Check", //What am I doing....
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+
+                "7thAxis.LitD_TriggerActions.TraceBarbieGirl.FlagReceived": {
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Id": "7thAxis.LitD_TriggerActions.TraceBarbieGirl.FlagReceived",
+                    "Condition": "SYNCED_RANDOM day TraceBarbieGirl 0.05",
+                    "Actions": [ "AddMail Current LitD_M_TraceBarbieGirl received" ]
+                },
+                "7thAxis.LitD_TriggerActions.TraceBarbieGirl.FlagRemoved": {
+                    "Trigger": "DayEnding",
+                    "MarkActionApplied": false,
+                    "Id": "7thAxis.LitD_TriggerActions.TraceBarbieGirl.FlagRemoved",
+                    "Condition": "PLAYER_HAS_MAIL Current LitD_M_TraceBarbieGirl Any",
+                    "Actions": [  "RemoveMail Current LitD_M_TraceBarbieGirl" ]
+                }
+            }
+        },
+//---------------------------- WARPS ------------------------------------------// 
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Trace_House_Interior",
+            "AddWarps": [ 
+                "15 24 EastScarp_Village 6 83",
+                "16 24 EastScarp_Village 6 83",
+                "11 24 7thAxis.LitD_Maps.Jeremy_Room 10 6",
+                "12 24 7thAxis.LitD_Maps.Jeremy_Room 11 6"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                {
+                    "Position": { "X": 6, "Y": 82 },
+                    "Layer": "Buildings",
+                    "SetProperties": { "Action": "Warp 16 23 7thAxis.LitD_Maps.Trace_House_Interior" }
+                }
+            ]
+        },
+//---------------------------- SPECIAL MAP TILES ------------------------------------------// 
+    //Festive lights
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "MapProperties", "Light" ],
+                    "Value": "2 81 1 3 81 1 2 80 1 3 80 1 4 80 1 5 80 1 4 79 1 5 79 1 7 80 1 7 79 1",
+                    "Delimiter": " "
+                }
+            ],
+            "When": { "Season |contains=Winter": true }
+        },  
+    //Custom Door Nonsense
+        {
+            "LogName": "Trace's Doors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cursors",
+            "Update": "OnLocationChange",
+            "FromFile": "Assets/Tilesheets/Homes/spring_LitD_Tilesheet.png",
+            "FromArea": { "X": 0, "Y": 416, "Width": 64, "Height": 48 },
+            "ToArea": { "X": 512, "Y": 144, "Width": 64, "Height": 48 },
+            "When":  { "LocationName": "7thAxis.LitD_Maps.Trace_House_Interior" }
+        },
+        {
+            "LogName": "Trace's Doors",
+            "Action": "EditImage",
+            "Target": "Maps/townInterior",
+            "Update": "OnLocationChange",
+            "FromFile": "Assets/Tilesheets/Homes/spring_LitD_Tilesheet.png",
+            "FromArea": { "X": 64, "Y": 416, "Width": 16, "Height": 48 },
+            "ToArea": { "X": 384, "Y": 16, "Width": 16, "Height": 48 },
+            "When":  { "LocationName": "7thAxis.LitD_Maps.Trace_House_Interior" }
+        },
+    //Trace's coffee maker gives you coffee
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Trace_House_Interior",
+            "MapTiles": [
+                { "Position": { "X": 7, "Y": 22 }, "Layer": "Front2", "SetTileSheet": "spring_LitD_Tilesheet", "SetIndex": "344" }, //Sets the card tile on counter
+                { "Position": { "X": 8, "Y": 23 }, "Layer": "Back",  "SetProperties": { "MEEP_FakeNPC": "CoffeeMakerKun" } }, //Places fake coffeemaker NPC
+                { "Position": { "X": 7, "Y": 23 }, "Layer": "Buildings",
+                    "SetProperties": { "Action": "MEEP_Letter {{i18n:Maps.TraceV.TraceCoffeeNote}}", "MEEP_Letter_Type": "3" } } //Loads letter data
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "MEEP/FakeNPC/Dialogue/CoffeeMakerKun",
+            "Entries": { "DialogueOne": "{{i18n:Maps.TraceV.CoffeeMakerKun}}" }
+        },
+//---------------------------- GARBAGE CAN ------------------------------------------//
+{
+    "Action": "EditData",
+    "Target": "Data/GarbageCans",
+    "TargetField": [ "GarbageCans" ], 
+    "Entries": {
+       
+        "7thAxis.LitD_TrashCan.TraceV": {
+            "BaseChance": 1.0,
+            "Items": [
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.GoldenVoidLavaSnailEgg",
+                    "Condition": "RANDOM 0.0004, PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(O){{ModID}}_Items.GoldenVoidLavaSnailEgg" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.GoldenVoidLavaSnailBuddy",
+                    "Condition": "RANDOM 0.0005",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.GoldenVoidLavaSnail",
+                    "Condition": "RANDOM 0.001",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(O){{ModID}}_Items.GoldenVoidLavaSnail" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.VoidLavaSnailBuddy",
+                    "Condition": "RANDOM 0.01",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(H){{ModID}}_Hats.VoidLavaSnailBuddy" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.VoidLavaSnailEgg",
+                    "Condition": "RANDOM 0.03, PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(O){{ModID}}_Items.VoidLavaSnailEgg" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.Snackies",
+                    "Condition": "RANDOM 0.1",
+                    "RandomItemId": [ "(O)611", "(O)212" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.VoidLavaSnail",
+                    "Condition": "RANDOM 0.3",
+                    "RandomItemId": [ "(O){{ModID}}_Items.VoidLavaSnail" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TraceV.TrashBerry",
+                    "RandomItemId": [ "(O)168", "(O)172", "(O)410" ]
+                }
+            ]
+        }
+    }
+},  
+//---------------------------- MAP STRINGS ------------------------------------------// 
+        {
+            "LogName": "Trace Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+
+                //Outside
+                "TraceVHPlanter1": "{{i18n:Maps.TraceV.TraceVHPlanter1}}",
+                "TraceVHPlanter2": "{{i18n:Maps.TraceV.TraceVHPlanter2}}",
+                "TraceVHOwlStatue": "{{i18n:Maps.TraceV.TraceVHOwlStatue}}",
+                "TraceVHMailBox": "{{i18n:Maps.TraceV.TraceVHMailBox|MailPersonT={{i18n:Maps.TraceV.TraceVHMailBox.Ayeisha.{{HasMod: |contains=TheLimeyDragon.Ayeisha}}}}}}",
+
+                //Bedroom
+                "TraceVHBed": "{{i18n:Maps.TraceV.TraceVHBed}}",
+                "TraceVHNailPolish": "{{i18n:Maps.TraceV.TraceVHNailPolish}}",
+                "TraceVHGuitar": "{{i18n:Maps.TraceV.TraceVHGuitar}}",
+                "TraceVHTelevision": "{{i18n:Maps.TraceV.TraceVHTelevision{{TraceRoomTokens}}}}",
+                "TraceVHRadio": "{{i18n:Maps.TraceV.TraceVHRadio.Barbie.{{HasFlag: |contains=LitD_M_TraceBarbieGirl}}}}",
+                "TraceVHEmptyPot": "{{i18n:Maps.TraceV.TraceVHEmptyPot}}",
+                
+                //Art room
+                "TraceVHTinyBooks": "{{i18n:Maps.TraceV.TraceVHTinyBooks{{TraceRoomTokens}}}}",
+                "TraceVHTinyMoonPainting": "{{i18n:Maps.TraceV.TraceVHTinyMoonPainting}}",
+                "TraceVHMoonPainting1": "{{i18n:Maps.TraceV.TraceVHMoonPainting1}}",
+                "TraceVHMoonPainting2": "{{i18n:Maps.TraceV.TraceVHMoonPainting2}}",
+                "TraceVHMoonPaintingStack": "{{i18n:Maps.TraceV.TraceVHMoonPaintingStack}}",
+                "TraceVHCamera": "{{i18n:Maps.TraceV.TraceVHCamera}}",
+                "TraceVHPhotos": "{{i18n:Maps.TraceV.TraceVHPhotos}}",
+                "TraceVHBook1": "{{i18n:Maps.TraceV.TraceVHBook1{{TraceRoomTokens}}}}",
+                "TraceVHBook2": "{{i18n:Maps.TraceV.TraceVHBook2{{TraceRoomTokens}}}}",
+
+                //Hallway
+                "TraceVHBook3": "{{i18n:Maps.TraceV.TraceVHBook3{{TraceRoomTokens}}}}",
+                "TraceVHBook4": "{{i18n:Maps.TraceV.TraceVHBook4{{TraceRoomTokens}}}}",
+                "TraceVHNote": "{{i18n:Maps.TraceV.TraceVHNote}}",
+                "TraceVHCouchArmLeft": "{{i18n:Maps.TraceV.TraceVHCouchArmLeft}}",
+                "TraceVHCouchArmRight": "{{i18n:Maps.TraceV.TraceVHCouchArmRight}}",
+                "TraceVHSeat": "{{i18n:Maps.TraceV.TraceVHSeat}}",
+
+                //Kitchen
+                "TraceVHBlackberryCobbler": "{{i18n:Maps.TraceV.TraceVHBlackberryCobbler}}",
+                "TraceVHStove": "{{i18n:Maps.TraceV.TraceVHStove}}",
+                "TraceVHSink": "{{i18n:Maps.TraceV.TraceVHSink}}",
+                "TraceVHFridge": "{{i18n:Maps.TraceV.TraceVHFridge}}",
+                "TraceVHCoffeeMaker": "{{i18n:Maps.TraceV.TraceVHCoffeeMaker}}",
+                "TraceVHCoffeeCup": "{{i18n:Maps.TraceV.TraceVHCoffeeCup}}",
+                "TraceVHJeremyWater": "{{i18n:Maps.TraceV.TraceVHJeremyWater}}",
+                "TraceVHJeremyFood": "{{i18n:Maps.TraceV.TraceVHJeremyFood}}",
+                "TraceVHCenterFlowers": "{{i18n:Maps.TraceV.TraceVHCenterFlowers}}",
+                "TraceVHTablecloth": "{{i18n:Maps.TraceV.TraceVHTablecloth}}",
+                "TraceVHElectricalSocket": "{{i18n:Maps.TraceV.TraceVHElectricalSocket}}",
+
+                //Plants
+                "TraceVHCatGrass1": "{{i18n:Maps.TraceV.TraceVHCatGrass1}}",
+                "TraceVHCatGrass2": "{{i18n:Maps.TraceV.TraceVHCatGrass2}}",
+                "TraceVHPlant1": "{{i18n:Maps.TraceV.TraceVHPlant1}}", // Default basic
+                "TraceVHPlant2": "{{i18n:Maps.TraceV.TraceVHPlant2}}", // Default tropical
+                "TraceVHPlant3": "{{i18n:Maps.TraceV.TraceVHPlant3}}", // Art room corner
+                "TraceVHPlant4": "{{i18n:Maps.TraceV.TraceVHPlant4}}", // Hallway
+                "TraceVHPlant5": "{{i18n:Maps.TraceV.TraceVHPlant5}}", // Behind bowls
+                "TraceVHPlantLeft": "{{i18n:Maps.TraceV.TraceVHPlantLeft}}", // Guards!
+                "TraceVHPlantRight": "{{i18n:Maps.TraceV.TraceVHPlantRight}}" // Guards
+            }
+        }
+    ]
+}

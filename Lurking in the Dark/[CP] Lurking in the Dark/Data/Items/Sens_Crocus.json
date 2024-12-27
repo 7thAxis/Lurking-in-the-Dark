@@ -1,0 +1,88 @@
+{
+    "Changes": [
+
+    //SEN'S CROCUS
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_Items.SensCrocus": {
+                    "Name": "{{ModID}}_Items.SensCrocus",
+                    "DisplayName": "{{i18n:Items.SenS.SensCrocus.Title}}",
+                    "Description": "{{i18n:Items.SensCrocus.EarlyDescription}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": 0,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "Buff": null,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 1
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_Items.SensCrocus": {
+                    "Name": "{{ModID}}_Items.SensCrocus",
+                    "DisplayName": "{{i18n:Items.SenS.SensCrocus.Title}}",
+                    "Description": "{{i18n:Items.SenS.SensCrocus.Description}}",
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "Type": "Flower",
+                    "Category": -80,
+                    "Price": 50,
+                    "Edibility": 18,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "color_purple",
+                        "dye_strong",
+                        "forage_item",
+                        "season_spring",
+                        "season_summer",
+                        "season_fall",
+                        "season_winter"
+                      ],
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 1
+                },
+
+                "{{ModID}}_Items.SensCrocusSeeds": {
+                    "Name": "{{ModID}}_Items.SensCrocusSeeds",
+                    "DisplayName": "{{i18n:Items.SenS.SensCrocusSeeds.Title}}",
+                    "Description": "{{i18n:Items.SenS.SensCrocusSeeds.Description}}",
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 30,
+                    "IsDrink": false,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 0
+                }
+            },
+            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true } 
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "{{ModID}}_Items.SensCrocusSeeds": {
+                    "Seasons": [ "spring", "summer", "fall", "winter" ],
+                    "DaysInPhase": [1,1,1,1],
+                    "HarvestItemId": "{{ModID}}_Items.SensCrocus",
+                    "RegrowDays": "0",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0",
+                    "Texture": "Textures/7thAxis.LitD/Crops",
+                    "SpriteIndex": 0
+                }
+            },
+            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true } 
+        }
+    ]
+}

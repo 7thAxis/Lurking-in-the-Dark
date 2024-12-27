@@ -1,0 +1,180 @@
+{
+    "Changes": [   
+ //---------------------------- ITEM DATA ------------------------------------------// 
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_Items.VoidLavaSnail": {
+                    "Name": "{{ModID}}_Items.VoidLavaSnail",
+                    "DisplayName": "{{i18n:Items.VoidLavaSnail.Title}}",
+                    "Description": "{{i18n:Items.VoidLavaSnail.Description}}",
+                    "Type": "Basic",
+                    "Category": -4,
+                    "Price": 25,
+                    "Edibility": -300,
+                    "Buff": null,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": "{{Items Excluded From Perfection}}",
+                    "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
+                    "IsDrink": false,
+                    "ContextTags": [ "color_red", "color_black", "fish_void_lava_snail", "forage_item" ],
+                    "Texture": "Textures/7thAxis.LitD/Objects ",
+                    "SpriteIndex": 2
+                },
+                "{{ModID}}_Items.GoldenVoidLavaSnail": {
+                    "Name": "{{ModID}}_Items.GoldenVoidLavaSnail",
+                    "DisplayName": "{{i18n:Items.GoldenVoidLavaSnail.Title}}",
+                    "Description": "{{i18n:Items.GoldenVoidLavaSnail.Description}}",
+                    "Type": "Basic",
+                    "Category": -4,
+                    "Price": 1500,
+                    "Edibility": -300,
+                    "Buff": null,
+                    "IsDrink": false,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [ "color_black", "color_gold", "fish_golden_void_lava_snail", "forage_item", "fish_pond_ignore" ],
+                    "Texture": "Textures/7thAxis.LitD/Objects ",
+                    "SpriteIndex": 5
+                }             
+            }
+        },
+//---------------------------- SPACECORE DATA ------------------------------------------//
+    {
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+        "Entries": { 
+            "{{ModID}}_Items.VoidLavaSnail": { "CategoryTextOverride": "{{i18n:Items.VoidLavaSnail.Category}}" },
+            "{{ModID}}_Items.GoldenVoidLavaSnail": { "CategoryTextOverride": "{{i18n:Items.VoidLavaSnail.Category}}" }
+         }
+    },
+//---------------------------- HAT VARIANT DATA ------------------------------------------// 
+        {
+            "Logname": "Void Lava Snail Hat",
+            "Action": "EditData",
+            "Target": "Data/Hats",
+            "Entries": {
+                "{{ModID}}_Hats.VoidLavaSnailBuddy": "{{ModID}}_Hats.VoidLavaSnailBuddy/{{i18n:Items.VoidLavaSnailBuddy.Description}}/false/true//{{i18n:Items.VoidLavaSnailBuddy.Title}}/0/Textures\\7thAxis.LitD\\Hats",
+                "{{ModID}}_Hats.GoldenVoidLavaSnailBuddy": "{{ModID}}_Hats.GoldenVoidLavaSnailBuddy/{{i18n:Items.GoldenVoidLavaSnailBuddy.Description}}/false/true//{{i18n:Items.GoldenVoidLavaSnailBuddy.Title}}/1/Textures\\7thAxis.LitD\\Hats"
+            }
+        },
+ //---------------------------- FISHING DATA ------------------------------------------//
+        {
+            "LogName": "Void Lava Snail Fishing Data",
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": { "{{ModID}}_Items.VoidLavaSnail": "Void Lava Snail/trap/{{SnailCrabPotRate}}//freshwater/12/24/false" }
+        },
+        {
+            "LogName": "Void Lava Snail Fishing - Caldera",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "Caldera", "Fish" ],    
+
+            "Entries": { 
+                "{{ModID}}_Hats.VoidLavaSnail": {  "Chance": 0.01, "Id": "{{ModID}}_Hats.VoidLavaSnailBuddy", "ItemId": "(H){{ModID}}_Hats.VoidLavaSnailBuddy" },
+                "{{ModID}}_Items.VoidLavaSnail": {  "Chance": 0.3, "Id": "{{ModID}}_Items.VoidLavaSnail", "ItemId": "(O){{ModID}}_Items.VoidLavaSnail" },
+                "{{ModID}}_Hats.GoldenVoidLavaSnail": {  "Chance": 0.0005, "Id": "{{ModID}}_Hats.GoldenVoidLavaSnailBuddy", "ItemId": "(H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy" },
+                "{{ModID}}_Items.GoldenVoidLavaSnail": {  "Chance": 0.001, "Id": "{{ModID}}_Items.GoldenVoidLavaSnail", "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail" }
+                
+             }
+        },
+ //---------------------------- AQUARIUM DATA ------------------------------------------//
+        {
+            "LogName": "Void Lava Snail Aquarium Data",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "Entries": {
+                "{{ModID}}_Items.VoidLavaSnail": "0/crawl/0/0 1/0 1/0 1/Textures\\7thAxis.LitD\\Aquarium_Fish/16 8",
+                "{{ModID}}_Items.GoldenVoidLavaSnail": "0/crawl/2/2 3/2 3/2 3/Textures\\7thAxis.LitD\\Aquarium_Fish/16 8"
+            }
+        },
+ //---------------------------- FISH POND DATA ------------------------------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+            "{{ModID}}_FishPond.VoidLavaSnail": {
+                "ID": "{{ModID}}_FishPond.VoidLavaSnail",
+                "RequiredTags": [ "fish_void_lava_snail" ], 
+                "Precedence": 0,
+                "SpawnTime": -1,
+                "ProducedItems": [
+
+                {
+                    "RequiredPopulation": 10, 
+                    "Chance": 0.001, "ItemID": "(H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy", //Void Lava Snail Hat
+                    "MinQuantity": 1, "MaxQuantity": 1 
+                },
+                {
+                    "RequiredPopulation": 10, 
+                    "Chance": 0.01, "ItemID": "(H){{ModID}}_Hats.VoidLavaSnailBuddy", //Void Lava Snail Hat
+                    "MinQuantity": 1, "MaxQuantity": 1 
+                },
+                {
+                    "RequiredPopulation": 10, 
+                    "Chance": 0.02, "ItemID": "(O)729", //Escargot lmao
+                    "MinQuantity": 1, "MaxQuantity": 1 
+                },
+                {
+                    "RequiredPopulation": 8,
+                    "Chance": 0.4, "ItemID": "(O)64", //Void essence
+                    "MinQuantity": 1, "MaxQuantity": 3
+                },
+                {
+                    "RequiredPopulation": 5,
+                    "Chance": 0.2, "ItemID": "(O)82", //Fire quartz
+                    "MinQuantity": 1, "MaxQuantity": 3
+                },
+                {
+                    "RequiredPopulation": 2,
+                    "Chance": 0.1, "ItemID": "(O){{ModID}}_Items.VoidLavaSnail", //...Void Lava Snail
+                    "MinQuantity": 1, "MaxQuantity": 1
+                },
+                {
+                    "RequiredPopulation": 2,
+                    "Chance": 0.0005, "ItemID": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
+                    "MinQuantity": 1, "MaxQuantity": 1
+                },
+                {
+                    "RequiredPopulation": 1,
+                    "Chance": 0.05, "ItemID": "{{FishPondSnailEggSpawnable}}", //Egg or Slime
+                    "MinQuantity": 1, "MaxQuantity": 1
+                },
+                {
+                    "RequiredPopulation": 1,
+                    "Chance": 0.0004, "ItemID": "{{FishPondGoldenSnailEggSpawnable}}", //Egg or Slime
+                    "MinQuantity": 1, "MaxQuantity": 1
+                },
+                {
+                    "RequiredPopulation": 0,
+                    "Chance": 1.0, "ItemID": "(O)766", //Slime
+                    "MinQuantity": 5, "MaxQuantity": 10
+                }
+            ],
+                "PopulationGates": {    
+                "3": [ "(O){{ModID}}_Items.VoidLavaSnail 3", "(O)153 3", "(O)560 3" ], //Void Lava Snail, Algae, White Algae
+                "5": [ "(O){{ModID}}_Items.VoidLavaSnail 5", "(O)153 5", "(O)560 5" ], //Void Lava Snail, Algae, White Algae
+                "8": [ "(O){{ModID}}_Items.VoidLavaSnail 10", "(O)153 10", "(O)560 10" ] //Void Lava Snail, Algae, White Algae
+                }
+            }
+        }
+    },
+ //----------------------------GIFT TASTE DATA ------------------------------------------//
+    {
+        "LogName": "Hatred Override",
+        "Action": "EditData",
+        "Target": "Data/NPCGiftTastes",
+        "TextOperations": [
+        { 
+            "Operation": "Append",
+            "Target": [ "Fields", "Vincent", 1 ],
+            "Value": "{{ModID}}_Items.VoidLavaSnail {{ModID}}_Items.GoldenVoidLavaSnail",
+            "Delimiter": " "
+        }
+    ]
+}
+]
+}

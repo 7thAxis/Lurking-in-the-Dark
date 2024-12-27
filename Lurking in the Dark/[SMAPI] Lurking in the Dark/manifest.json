@@ -1,0 +1,10 @@
+{
+  "Name": "Lurking in the Dark C#",
+  "Author": "7thAxis, Poohnhi",
+  "Version": "1.0.0",
+  "Description": "Lurking in the Dark C# Component.",
+  "UniqueID": "7thAxis.LitD.SMAPI",
+  "EntryDll": "Lurking in the Dark.dll",
+  "UpdateKeys": [ "???" ],
+  "Dependencies": [ { "UniqueID": "Pathoschild.ContentPatcher", "IsRequired": false } ]
+}

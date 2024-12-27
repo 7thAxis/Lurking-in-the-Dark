@@ -1,0 +1,83 @@
+{
+    "Changes": [
+        //TILESHEETS
+        {
+            "Action": "Load",
+            "Target": "maps/7thAxis_SenOceanCG",
+            "FromFile": "Assets/Tilesheets/CGs/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "maps/7thAxis_Mine, maps/7thAxis_DarkMine",
+            "FromFile": "Assets/Tilesheets/Caves/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "maps/spring_LitD_Tilesheet, maps/summer_LitD_Tilesheet, maps/fall_LitD_Tilesheet, maps/winter_LitD_Tilesheet",
+            "FromFile": "assets/Tilesheets/Homes/{{TargetWithoutPath}}.png"
+        },
+        //RESHADE
+        {           
+            "Action": "Load",
+            "Target": "Characters/Krobus, Characters/SeaMonsterKrobus, Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
+            "FromFile": "Assets/Reshade/{{TargetWithoutPath}}.png",
+            "When": { "Reshade Existing Shadows": true }
+        },
+        //ANIMALS
+            //Void Cats
+        {
+            "Action": "Load",
+            "Target": "Animals/7thAxis.LitD/VoidCat, Animals/7thAxis.LitD/VoidCat_Shorts",
+            "FromFile": "Assets/Characters/Pipo/Pipo_Void.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/7thAxis.LitD/VoidCat_ShortHair, Animals/7thAxis.LitD/VoidCat_ShorthairShorts",
+            "FromFile": "Assets/Characters/Pipo/Pipo_Shorthair.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/7thAxis.LitD/VoidCat_Iridium, Animals/7thAxis.LitD/VoidCat_IridiumShorts",
+            "FromFile": "Assets/Characters/Pipo/Pipo_Iridium.png"
+        },
+        {
+            "LogName": "Shorts on the Cat",
+            "Action": "EditImage",
+            "Target": "Animals/7thAxis.LitD/VoidCat_Shorts, Animals/7thAxis.LitD/VoidCat_ShorthairShorts, Animals/7thAxis.LitD/VoidCat_IridiumShorts",
+            "FromFile": "Assets/Characters/Pipo/Accessories/Shorts.png",
+            "PatchMode": "Overlay",
+            "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 },
+            "ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 256 }
+        },
+            //Snails
+        {
+            "Action": "Load",
+            "Target": "Animals/7thAxis.LitD/Baby_Giant_Void_Lava_Snail, Animals/7thAxis.LitD/Baby_Giant_Void_Lava_Snail_Caldera, Animals/7thAxis.LitD/Baby_Golden_Void_Lava_Snail, Animals/7thAxis.LitD/Giant_Void_Lava_Snail, Animals/7thAxis.LitD/Giant_Void_Lava_Snail_Caldera, Animals/7thAxis.LitD/Golden_Void_Lava_Snail",
+            "FromFile": "Assets/Animals/{{TargetWithoutPath}}.png"
+        },
+        //ITEMS AND CROPS
+        {           
+            "Action": "Load",
+            "Target": "Textures/7thAxis.LitD/Objects, Textures/7thAxis.LitD/Crops, Textures/7thAxis.LitD/Furniture, Textures/7thAxis.LitD/Hats, Textures/7thAxis.LitD/Aquarium_Fish",
+            "FromFile": "Assets/Items/{{TargetWithoutPath}}.png"
+        },
+        //BUILDINGS
+        {
+            "Action": "Load",
+            "Target": "Buildings/7thAxis.LitD/Animal_Tree_House",
+            "FromFile": "assets/Tilesheets/Buildings/spring_LitD_Animal_Tree_House.png"
+        },
+        {
+            "Action":"EditImage",
+            "Target":"Buildings/7thAxis.LitD/Animal_Tree_House",
+            "FromFile": "assets/Tilesheets/Buildings/{{Season}}_LitD_Animal_Tree_House.png"
+        },
+        //NPC MAP LOCATIONS
+        {
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "Entries": { "SenS": { "MarkerCropOffset": 5 } },
+            "When": {  "HasMod: |contains=Bouhm.NPCMapLocations": true }
+        }
+    ]
+}

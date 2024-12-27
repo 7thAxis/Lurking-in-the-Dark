@@ -1,0 +1,156 @@
+{
+/*
+███╗   ███╗ █████╗ ██████╗     ███████╗████████╗██████╗ ██╗███╗   ██╗ ██████╗ ███████╗
+████╗ ████║██╔══██╗██╔══██╗    ██╔════╝╚══██╔══╝██╔══██╗██║████╗  ██║██╔════╝ ██╔════╝
+██╔████╔██║███████║██████╔╝    ███████╗   ██║   ██████╔╝██║██╔██╗ ██║██║  ███╗███████╗
+██║╚██╔╝██║██╔══██║██╔═══╝     ╚════██║   ██║   ██╔══██╗██║██║╚██╗██║██║   ██║╚════██║
+██║ ╚═╝ ██║██║  ██║██║         ███████║   ██║   ██║  ██║██║██║ ╚████║╚██████╔╝███████║
+╚═╝     ╚═╝╚═╝  ╚═╝╚═╝         ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
+*/
+//Location names
+"Maps.TraceV.TraceHouse": "Trace's House",
+"Maps.JeremyTSnail.JeremyRoom": "Jeremy's Room",
+
+//Misc
+"Maps.Caldera.VoidLavaSnail": "The snail wonders how you reached them...",
+"Maps.Caldera.GoldenVoidLavaSnail": "The majestic golden snail wonders how you reached them...",
+
+    //--SEN--//
+"Maps.SenS.SenDDGlobe": "This old globe has pins stuck in certain locations around the world.",
+"Maps.SenS.SenDDBasket": "You inspect the basket, expecting berries...#...but, what you find instead are some strange squishy red globs of goo.",
+"Maps.SenS.SenDDMap": "The map on the wall has a sight seeing spot in the mountain marked in red.",
+"Maps.SenS.SenDDSpiderWeb": "There's a very small spider living in this shelf.#The spider waves hello!",
+"Maps.SenS.SenDDBookStack1": "Numerous books are haphazardly stacked into a pile.#They appear to have library category stickers, but you doubt they've been checked out.",
+"Maps.SenS.SenDDBookStack2": "These books are piled very clumsily. They could tip at any moment.",
+"Maps.SenS.SenDDCandles": "These candles emit a gentle, relaxing glow.",
+"Maps.SenS.SenDDClutter": "Coffee cups, paper, pencils and scissors are littered about.#Seems like the result of a recent brainstorming session.",
+"Maps.SenS.SenDDWorkBench": "This workbench is well used. It looks like a costume was recently worked on here.",
+"Maps.SenS.SenDDLoom": "This loom appears to be jammed with some kind of fiber that definitely isn't wool...",
+"Maps.SenS.SenDDCloth": "A strong, but rather grungy piece of cloth. You decide it's best not to touch it.",
+"Maps.SenS.SenDDRedBook": "A battered journal. The writing within is sloppy and almost impossible to read.",
+"Maps.SenS.SenDDBlueBook": "This book was laid down open.#It seems like the reader couldn't find a bookmark.",
+"Maps.SenS.SenDDMushrooms": "This mushroom appears to be thriving in the darkness.",
+"Maps.SenS.SenDDBed": "This appears to be a very uncomfortable looking bed made out of wood planks.",
+"Maps.SenS.SenDDVines": "The vines growing out of a crack in the wall appear to have been meticulously pruned.",
+"Maps.SenS.SenDDBear": "This stuffed bear is tattered and smells like it was found in the garbage.#...It probably was.",
+"Maps.SenS.SenDDTrash": "A collection of rubbish has been carefully packed into this corner.",
+"Maps.SenS.SenDDBarrel": "You peek inside the barrel and find a number of handmade holiday costumes.",
+"Maps.SenS.SenDDCrocus": "A single crocus bloom sits in a vase. It gazes upon you with its judgement.",
+"Maps.SenS.SenDDFlowers": "The blooms in this vase are heavily wilted. They'll need to be replaced soon.",
+"Maps.SenS.SenDDGardenShrooms": "This bucket is overflowing with mushrooms.#Does Sen eat these?",
+"Maps.SenS.SenDDGardenWater": "This trough is full of crystal clear water.",
+"Maps.SenS.SenDDGardenPumpkin": "How are these pumpkins growing without sunlight?",
+"Maps.SenS.SenDDGardenBigPumpkin": "The massive pumpkin towers over you.#Clearly, it's Sen's pride and joy.",
+"Maps.SenS.SenDDGardenBerryBush": "The bushes are covered in bright red poisonous berries.",
+"Maps.SenS.SenDDGardenBerryBasket": "Judging by the color of these berries, it's probably best to resist the temptation to snack.",
+"Maps.SenS.SenDDGardenGrassRocks": "A thick layer of fiber is engulfing this rock.",
+"Maps.SenS.SenDDGardenSecretJunimo": "...Huh?#There's a junimo living inside this pumpkin!",
+"Maps.SenS.SenRoomCrocus": "It's a very healthy crocus!#He really loves this flower species.",
+"Maps.SenS.SenRoomBook": "It's one of Sen's many stolen library books.#He'll return it. Probably.",
+"Maps.SenS.SenRoomDeskFlowers": "These flowers are well cared for and healthy.#Sen's become quite the gardener!",
+"Maps.SenS.SenRoomCoffeeCup": "How did Sen even manage to get that coffee cup up there?",
+"Maps.SenS.SenRoomBookCase": "There are a plethora of books on the shelf.#Some of them have a strange musty odor.",
+"Maps.SenS.SenRoomLatch": "There's a strange hatch here...#You lift it, but it doesn't lead to anywhere.",
+"Maps.SenS.SenRoomCloth": "It's scrap of cloth from Sen's most recent costume design.",
+"Maps.SenS.SenRoomNotes": "You can't read the language on this paper.#You can tell the handwriting is bad, however.",
+"Maps.SenS.SenRoomBlueFlowers": "These are flowers from Sen's garden back in East Scarp.",
+"Maps.SenS.SenDDShorts": "...Where did Sen find these?",
+"Maps.SenS.LitDMayorPot": "Seems like Lewis brought the plant from the bench inside to protect it from the weather.",
+
+    //----TRACE----//
+//Outside
+"Maps.TraceV.TraceVHPlanter1": "You peek in the planter and find a tiny red and black snail. It waves back at you!",
+"Maps.TraceV.TraceVHPlanter2": "This is a plant. Quite a planty plant if I do say so myself.",
+"Maps.TraceV.TraceVHOwlStatue": "It almost seems like the eyes of the owl statue follow you. Weird...",
+"Maps.TraceV.TraceVHMailBox": "You open the mailbox and find a note taped inside: \"Hellooooo {{MailPersonT}}! This is the home of Trace Veilrose.\"#\"And if you're not {{MailPersonT}}, my mailbox will eat you within the next 30 seconds if you don't close it!\"#\"Bye!\"",
+"Maps.TraceV.TraceVHMailBox.Ayeisha.True": "Ayeisha",
+"Maps.TraceV.TraceVHMailBox.Ayeisha.False": "Mr. Mailman",
+
+//Bedroom
+"Maps.TraceV.TraceVHBed": "You crawl into Trace's bed. It smells like roses.",
+"Maps.TraceV.TraceVHNailPolish": "Various bottles of high quality nail polish litter the dresser.",
+"Maps.TraceV.TraceVHGuitar": "An old, well loved guitar.",
+"Maps.TraceV.TraceVHTelevision": "It seems Trace left the TV on...#Looks like they were watching \"{{TVShow}}\"!",
+"Maps.TraceV.TraceVHRadio.Barbie.True": "YOU CAN BRUSH MY HAAAAAIIIIIRRR!", 
+"Maps.TraceV.TraceVHRadio.Barbie.False": "A soothing string melody emanates from the radio.", 
+"Maps.TraceV.TraceVHEmptyPot": "The flower pot is barren and empty.#Just like your SOUL.#Just kidding, Jeremy ate all the cat grass.",
+
+//Art room
+"Maps.TraceV.TraceVHTinyMoonPainting": "A tiny painting of the moon and a grassy field sit on the surface.",
+"Maps.TraceV.TraceVHMoonPainting1": "A completed painting of a moon overlooking a grassy field.",
+"Maps.TraceV.TraceVHMoonPainting2": "It doesn't seem like Trace branches out in their painting much.",
+"Maps.TraceV.TraceVHMoonPaintingStack": "So, so many paintings of a moon overlooking a grassy field...",
+"Maps.TraceV.TraceVHCamera": "It's a high end Codac ProPix ZA825!#Great for taking photos of your hyper-fixation!",
+"Maps.TraceV.TraceVHPhotos": "Upon looking up, you see several photos of the moon overlooking a grassy field.",
+"Maps.TraceV.TraceVHBook1": "You peruse the shelf and find a book called...#\"{{Book1}}\".#...You also notice a fish shrine above your head?",
+"Maps.TraceV.TraceVHBook2": "You peruse the shelf and find a book called...#\"{{Book2}}\".",
+"Maps.TraceV.TraceVHTinyBooks": "You peek in the book pile and find...#\"{{Book3}}\".",
+
+//Hallway
+"Maps.TraceV.TraceVHBook3": "You peruse the shelf and find a book called...#\"{{Book4}}\".",
+"Maps.TraceV.TraceVHBook4": "You peruse the shelf and find a book called...#\"{{Book5}}\".",
+"Maps.TraceV.TraceVHNote": "\"Hi there! Thanks for breaking into my house! I hope you enjoy your stay.\" - Trace",
+"Maps.TraceV.TraceVHCouchArmLeft": "This is the left arm of the couch. Cool, am I right?",
+"Maps.TraceV.TraceVHCouchArmRight": "This is the right arm of the couch. Sweet, am I right?",
+"Maps.TraceV.TraceVHSeat": "There appears to be something invisible in the way, preventing you from sitting on the chair.",
+
+//Kitchen
+"Maps.TraceV.TraceVHBlackberryCobbler": "Trace's favorite sweet, the blackberry cobbler!#It seems like it was baked fresh.",
+"Maps.TraceV.TraceVHStove": "The stove is squeaky clean and ready for some cooking!",
+"Maps.TraceV.TraceVHSink": "The sink is shiny. It's shinky.",
+"Maps.TraceV.TraceVHFridge": "You open the fridge and find a painting of a moon overlooking a grassy field.#Why is this in here?",
+"Maps.TraceV.TraceVHCoffeeMaker": "Looks like Trace brewed coffee recently! It's appears to be the brand \"Doom Desire\".",
+"Maps.TraceV.TraceVHCoffeeMaker.Grabber.FollowUp": "%The coffee is gone. Come back tomorrow!",
+"Maps.TraceV.TraceVHCoffeeCup": "Clutter! In this house? For shame!",
+"Maps.TraceV.TraceVHJeremyWater": "Jeremy's water bowl is freshly changed and full-up!",
+"Maps.TraceV.TraceVHJeremyFood": "Jeremy's food bowl is full of snail-safe crunchies.",
+"Maps.TraceV.TraceVHCenterFlowers": "The flowers gaze upon you with their judgement. They know what you've done.",
+"Maps.TraceV.TraceVHTablecloth": "You find a note tucked under the flower pot.#\"This is my favorite table cloth. Please refrain from wrinkling it. Thanks!\" -Trace",
+"Maps.TraceV.TraceVHElectricalSocket": "Do not put your finger in the electrical socket. Such behavior is ill-advised.",
+
+//Plants
+"Maps.TraceV.TraceVHCatGrass1": "Cat grass for snail grazing! It's all over the house, hurray!",
+"Maps.TraceV.TraceVHCatGrass2": "This cat grass seems content.#Or as content as cat grass can be, anyway.",
+"Maps.TraceV.TraceVHPlant1": "This plant seems well cared for and happy. You can almost feel its smile!", // Default basic
+"Maps.TraceV.TraceVHPlant2": "A healthy, happy tropical plant. It practically beams at you!", // Default tropical
+"Maps.TraceV.TraceVHPlant3": "The plant ponders why Trace paints the same thing over and over again...", // Art room corner
+"Maps.TraceV.TraceVHPlant4": "When you look away from the plant, it starts dancing. It stops as soon as you look back.",  // Hallway
+"Maps.TraceV.TraceVHPlant5": "You find a note in the pot...#$b#\"Plant angry!! Stop leaning into pot!!\"", // Behind bowls
+"Maps.TraceV.TraceVHPlantLeft": "There's a note in the pot...#\"Left plant is guarding the counter! Left plant best guard!\"", // Guards!
+"Maps.TraceV.TraceVHPlantRight": "There's a note in the pot...#\"Right plant is defending the stools! Right plant best defender!\"", // Guards!
+
+"Maps.TraceV.TraceCoffeeNote": "Hey there!^^Breaking into my house, I see? Well, I left some \"Doom Desire\" brand coffee in the machine for ya. Enjoy it!^^Or don't. See if I care. (I would, and I'd cry...)^^Toodles!^^-Trace",
+
+"Maps.TraceV.CoffeeMakerKun": "$query !PLAYER_HAS_MAIL Current LitD_M_GotTraceCoffeeToday Any#$action AddMail Current LitD_M_GotTraceCoffeeToday received#$b#Looks like Trace brewed coffee recently! It appears to be \"Doom Desire\" brand.#$y 'Grab a cup?_Grab that coffee!_You grab a fresh hot cup of \"Doom Desire\" brand coffee![(O)395 (O)395 (O)253]_No coffee for me today._You avert your gaze from the \"Doom Desire\" brand coffee. It's just too strong. Distraught, the coffee gets up and walks away.$1'|The \"Doom Desire\" brand coffee is gone. Come back tomorrow!$1",
+
+    //----JEREMY----//
+"Maps.JeremyTSnail.JeremyTSRWaterTrough": "You peer into the water and see your reflection.#Visions of snails reflect back at you.",
+"Maps.JeremyTSnail.JeremyTSRAppleBowl": "Yum! It's a bowl full of big shiny apples, Jeremy's favorite!",
+ 
+"Maps.JeremyTSnail.JeremyTSRSnailDodo": "Dodo stands tall, guarding the snail manor valiantly.#Also, he seems rather... French?",
+"Maps.JeremyTSnail.JeremyTSRSnailPooh": "Pooh is busy coding! In her mind, as there is no computer here.",
+"Maps.JeremyTSnail.JeremyTSRSnailClown": "Clown honks at you. How adorable!",
+"Maps.JeremyTSnail.JeremyTSRSnailClaw": "Claw guards the snail manor, more wholesomely than Dodo the snail.",
+"Maps.JeremyTSnail.JeremyTSRSnailLemur": "Lemur wonders why she became a snail.#She has a Scarp that needs developing!",
+"Maps.JeremyTSnail.JeremyTSRSnailVale": "Valefor gazes at you upside down and considers eating ants.",
+"Maps.JeremyTSnail.JeremyTSRSnailEspurr": "Espurr stares at you with wide eyes.#She has a sticker on her forehead that says \"Official Lurking in the Dark Team Member\".",
+"Maps.JeremyTSnail.JeremyTSRSnailHecate": "Hecate offers you book suggestions! How kind!",
+"Maps.JeremyTSnail.JeremyTSRSnailPatch": "Patch is reading something with her morning coffee... What might it be?",
+"Maps.JeremyTSnail.JeremyTSRSnailChirps": "Chirps slides closer to you, asking if you have any writing that needs proof reading.",
+"Maps.JeremyTSnail.JeremyTSRSnailFlash": "You gaze out into the water. Flash seems busy with something.",
+"Maps.JeremyTSnail.JeremyTSRSnailEnder": "Ender smooches Cove. The perfect OTP.",
+"Maps.JeremyTSnail.JeremyTSRSnailCove": "Cove smooches Ender. The perfect OTP.",
+"Maps.JeremyTSnail.JeremyTSRSnailMads": "This snail is wearing a sign that says \"Hello I am Mad Dog Hashtag Bearfam of Shimano\".",
+"Maps.JeremyTSnail.JeremyTSRSnailBell": "Bell cheers you on! How sweet!",
+"Maps.JeremyTSnail.JeremyTSRSnailNums": "Numi is creating fine art in the water. Don't interupt!#She doesn't mind, though.",
+"Maps.JeremyTSnail.JeremyTSRSnailSaurianne": "Saurianne tells you about sanddollars and dinosaurs.#You feel much more knowledgeable!",
+"Maps.JeremyTSnail.JeremyTSRSnailDesty": "Desty is wearing a collar that says \"Axell's Favorite<\". They're also pointing a knife at you",
+"Maps.JeremyTSnail.JeremyTSRSnailBagi": "Bagi offers you snail hugs.",
+"Maps.JeremyTSnail.JeremyTSRSnailPillow": "Pillow is working on robots, you just can't see it.",
+"Maps.JeremyTSnail.JeremyTSRSnailDH": "DH looks at you and says \"MEEP MEEP MEEP!\".",
+"Maps.JeremyTSnail.JeremyTSRSnailNova": "Nova is a bro. A Novabro.",
+"Maps.JeremyTSnail.JeremyTSRSnailGervig": "Gervig is animating on an invisible computer.#Look how smooth those frames are!",
+"Maps.JeremyTSnail.JeremyTSRSnailTiara": "Tiara has pink wool in her mouth. How strange.",
+"Maps.JeremyTSnail.JeremyTSRSnailAxell": "Axell peeks at you from behind the sign, emitting intense goblin energy.",
+"Maps.JeremyTSnail.JeremyTSRSnailJeremyJr": "Jeremy Jr. sparkles at you radiantly. How dramatic!"
+}

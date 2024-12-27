@@ -1,0 +1,89 @@
+{
+    "Changes": [
+        //Deep Dark map edits
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DeepDark",
+            "FromFile": "assets/Maps/Sen_Underscarp.tmx",
+            "ToArea": { "X": 15, "Y": 12, "Width": 16, "Height": 16 },
+            "PatchMode": "Replace"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DeepDark",
+            "FromFile": "assets/Maps/Sen_Underscarp_Garden.tmx",
+            "ToArea": { "X": 15, "Y": 12, "Width": 16, "Height": 34 },
+            "PatchMode": "Replace",
+            "When": {
+                "HasFlag: |contains=DitR_M_SenGardenTrigger": true,
+                "HasConversationTopic: |contains=DitR_CT_GardenWaitTime": false
+            }
+        },
+        //Music
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "EastScarp_DeepDark", "Music" ],
+            "Entries": {
+                "LitD_Music.Underscarp": {
+                    "Id": "LitD_Music.Underscarp",
+                    "Track": "LitD_Music.Underscarp"
+                }
+            }
+        },
+        //map strings
+        {
+            "LogName": "Sen Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                //deep dark room
+                "SenDDGlobe": "{{i18n:Maps.SenS.SenDDGlobe}}",
+                "SenDDBasket": "{{i18n:Maps.SenS.SenDDBasket}}",
+                "SenDDMap": "{{i18n:Maps.SenS.SenDDMap}}",
+                "SenDDSpiderWeb": "{{i18n:Maps.SenS.SenDDSpiderWeb}}",
+                "SenDDBookStack1": "{{i18n:Maps.SenS.SenDDBookStack1}}",
+                "SenDDBookStack2": "{{i18n:Maps.SenS.SenDDBookStack2}}",
+                "SenDDCandles": "{{i18n:Maps.SenS.SenDDCandles}}",
+                "SenDDClutter": "{{i18n:Maps.SenS.SenDDClutter}}",
+                "SenDDWorkBench": "{{i18n:Maps.SenS.SenDDWorkBench}}",
+                "SenDDLoom": "{{i18n:Maps.SenS.SenDDLoom}}",
+                "SenDDCloth": "{{i18n:Maps.SenS.SenDDCloth}}",
+                "SenDDRedBook": "{{i18n:Maps.SenS.SenDDRedBook}}",
+                "SenDDBlueBook": "{{i18n:Maps.SenS.SenDDBlueBook}}",
+                "SenDDMushrooms": "{{i18n:Maps.SenS.SenDDMushrooms}}",
+                "SenDDBed": "{{i18n:Maps.SenS.SenDDBed}}",
+                "SenDDVines": "{{i18n:Maps.SenS.SenDDVines}}",
+                "SenDDBear": "{{i18n:Maps.SenS.SenDDBear}}",
+                "SenDDTrash": "{{i18n:Maps.SenS.SenDDTrash}}",
+                "SenDDBarrel": "{{i18n:Maps.SenS.SenDDBarrel}}",
+                "SenDDCrocus": "{{i18n:Maps.SenS.SenDDCrocus}}",
+                "SenDDFlowers": "{{i18n:Maps.SenS.SenDDFlowers}}",
+                "SenDDShorts": "{{i18n:Maps.SenS.SenDDShorts}}",
+                
+                //deep dark garden
+                "SenDDGardenShrooms": "{{i18n:Maps.SenS.SenDDGardenShrooms}}",
+                "SenDDGardenWater": "{{i18n:Maps.SenS.SenDDGardenWater}}",
+                "SenDDGardenPumpkin": "{{i18n:Maps.SenS.SenDDGardenPumpkin}}",
+                "SenDDGardenBigPumpkin": "{{i18n:Maps.SenS.SenDDGardenBigPumpkin}}",
+                "SenDDGardenBerryBush": "{{i18n:Maps.SenS.SenDDGardenBerryBush}}",
+                "SenDDGardenBerryBasket": "{{i18n:Maps.SenS.SenDDGardenBerryBasket}}",
+                "SenDDGardenGrassRocks": "{{i18n:Maps.SenS.SenDDGardenGrassRocks}}",
+                "SenDDGardenSecretJunimo": "{{i18n:Maps.SenS.SenDDGardenSecretJunimo}}",
+
+                //spouse room
+                "SenRoomCrocus": "{{i18n:Maps.SenS.SenRoomCrocus}}",
+                "SenRoomBook": "{{i18n:Maps.SenS.SenRoomBook}}",
+                "SenRoomDeskFlowers": "{{i18n:Maps.SenS.SenRoomDeskFlowers}}",
+                "SenRoomCoffeeCup": "{{i18n:Maps.SenS.SenRoomCoffeeCup}}",
+                "SenRoomBookCase": "{{i18n:Maps.SenS.SenRoomBookCase}}",
+                "SenRoomLatch": "{{i18n:Maps.SenS.SenRoomLatch}}",
+                "SenRoomCloth": "{{i18n:Maps.SenS.SenRoomCloth}}",
+                "SenRoomNotes": "{{i18n:Maps.SenS.SenRoomNotes}}",
+                "SenRoomBlueFlowers": "{{i18n:Maps.SenS.SenRoomBlueFlowers}}",
+
+                "LitDMayorPot": "{{i18n:Maps.SenS.LitDMayorPot}}"
+            }
+        }
+    ]
+}

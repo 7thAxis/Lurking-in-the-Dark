@@ -1,0 +1,116 @@
+{
+    //---------------------------- NO SVE ------------------------------------------//
+      "Changes": [
+        {
+          "LogName": "NO SVE",
+          "Action": "EditData",
+          "Target": "Data/WorldMap",
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+          },
+          "TargetField": [ "EastScarp", "MapAreas" ],
+          "Entries": {
+            "TraceHouse": {
+              "Id": "TraceHouse",
+              "PixelArea": { "X": 85, "Y": 103, "Width": 11, "Height": 8 },
+              "Tooltips": [
+                {
+                  "Id": "TraceHouse",
+                  "Text": "{{i18n:Maps.TraceV.TraceHouse}}"
+                }
+              ],
+              "WorldPositions": [
+                {
+                  "Id": "TraceHouse",
+                  "LocationName": "7thAxis.LitD_Maps.Trace_House_Interior",
+                  "ExtendedTileArea": null,
+                  "MapPixelArea": { "X": 85, "Y": 103, "Width": 11, "Height": 8 },
+                  "ScrollText": "{{i18n:Maps.TraceV.TraceHouse}}"
+                },
+                {
+                  "Id": "TraceBasement",
+                  "LocationName": "7thAxis.LitD_Maps.Jeremy_Room",
+                  "MapPixelArea": { "X": 85, "Y": 103, "Width": 11, "Height": 8 },
+                  "ScrollText": "{{i18n:Maps.JeremyTSnail.JeremyRoom}}"
+                },
+                {
+                  "ScrollTextZones": [],
+                  "Id": "Default",
+                  "LocationName": "EastScarp_Village",
+                  "ScrollText": null
+                }
+              ]
+            }
+          }
+        },
+        {
+          "LogName": "Edit ES World Map NO SVE",
+          "Action": "EditImage",
+          "When": {
+            "Season": "spring, summer, fall, winter",
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+          },
+          "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+          "PatchMode": "Overlay",
+          "FromFile": "Assets/WorldMap/ESmap_Trace.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 304, "Height": 222 },
+          "ToArea": { "X": 0, "Y": 0, "Width": 304, "Height": 222 }
+        },
+    //---------------------------- WITH SVE ------------------------------------------//
+        {
+          "LogName": "YES SVE",
+          "Action": "EditData",
+          "Target": "Data/WorldMap",
+          "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+          },
+          "TargetField": [ "EastScarp", "MapAreas" ],
+          "Entries": {
+            "TraceHouse": {
+              "Id": "TraceHouse",
+              "PixelArea": { "X": 5, "Y": 103, "Width": 11, "Height": 8 },
+              "Tooltips": [
+                {
+                  "Id": "TraceHouse",
+                  "Text": "{{i18n:Maps.TraceV.TraceHouse}}"
+                }
+              ],
+              "WorldPositions": [
+                {
+                  "Id": "TraceHouse",
+                  "LocationName": "7thAxis.LitD_Maps.Trace_House_Interior",
+                  "ExtendedTileArea": null,
+                  "MapPixelArea": { "X": 5, "Y": 103, "Width": 11, "Height": 8 },
+                  "ScrollText": "{{i18n:Maps.TraceV.TraceHouse}}"
+                },
+                {
+                  "Id": "TraceBasement",
+                  "LocationName": "7thAxis.LitD_Maps.Jeremy_Room",
+                  "MapPixelArea": { "X": 5, "Y": 103, "Width": 11, "Height": 8 },
+                  "ScrollText": "{{i18n:Maps.JeremyTSnail.JeremyRoom}}"
+                },
+                {
+                  "ScrollTextZones": [],
+                  "Id": "Default",
+                  "LocationName": "EastScarp_Village",
+                  "ScrollText": null
+                }
+              ]
+            }
+          }
+        },
+        {
+          "LogName": "Edit ES World Map YES SVE",
+          "Action": "EditImage",
+          "When": {
+            // "Season": "spring, summer, fall, winter",
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+          },
+          "Target": "Mods/Lemurkat.EastScarp/ESWorldMap",
+          "PatchMode": "Overlay",
+          "FromFile": "Assets/WorldMap/ESmap_TraceSVE.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 224, "Height": 222 },
+          "ToArea": { "X": 0, "Y": 0, "Width": 224, "Height": 222 }
+        }
+      ]
+    }

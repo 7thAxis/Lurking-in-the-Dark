@@ -1,0 +1,317 @@
+{
+    "Changes": [ 
+//---------------------------- ROOM LOAD ------------------------------------------//        
+        {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "7thAxis.LitD_Maps.Jeremy_Room": {
+                    "MusicDefault": "LitD_Music.JeremyTheme",
+                    "DisplayName": "{{i18n:Maps.JeremyTSnail.JeremyRoom}}",
+                    "DefaultArrivalTile": { "X": 10, "Y": 6 },
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Jeremy_Room" }
+                }
+            }
+        },
+//---------------------------- WARPS ------------------------------------------// 
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "AddWarps": [ 
+                "10 4 7thAxis.LitD_Maps.Trace_House_Interior 11 22",
+                "11 4 7thAxis.LitD_Maps.Trace_House_Interior 12 22" 
+            ]
+        },
+//---------------------------- CONDITIONAL TILES ------------------------------------------// 
+//QUEST BOARD
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+                {
+                    "Position": { "X": 4, "Y": 6 }, "Layer": "Buildings",
+                    "SetProperties": { "Action": "PlayEvent 7thAxis.LitD_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.DitR.VoidLavaSnailRoundUp.QuestActive}}" }
+                },
+                {
+                    "Position": { "X": 5, "Y": 6 }, "Layer": "Buildings",
+                    "SetProperties": { "Action": "PlayEvent 7thAxis.LitD_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.DitR.VoidLavaSnailRoundUp.QuestActive}}" }
+                }
+            ]
+        },
+
+//SNAIL PATCHES
+    //FLAGS FALSE
+    //Weird duped tiles are a workaround for animation breakage if I were to put the snails directly on the building layer
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                //Single snails around map
+                { "Position": { "X": 2, "Y": 11 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 2, "Y": 11 }, "Layer": "Buildings2", "Remove": true },
+
+                //Tilted snails
+                { "Position": { "X": 12, "Y": 11 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 12, "Y": 11 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 12, "Y": 10 }, "Layer": "Buildings2", "Remove": true },
+
+                //Sign snail
+                { "Position": { "X": 5, "Y": 5 }, "Layer": "Buildings3", "Remove": true },
+                { "Position": { "X": 5, "Y": 4 }, "Layer": "Buildings3", "Remove": true },
+                
+                //Snail clusters
+                { "Position": { "X": 15, "Y": 9 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 16, "Y": 9 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 15, "Y": 9 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 16, "Y": 9 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 15, "Y": 8 }, "Layer": "Front", "Remove": true },
+                { "Position": { "X": 16, "Y": 8 }, "Layer": "Front", "Remove": true }
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase1": false }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                //Single snails around map
+                { "Position": { "X": 9, "Y": 13 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 9, "Y": 13 }, "Layer": "Buildings2", "Remove": true },
+
+                //Snail clusters
+                { "Position": { "X": 3, "Y": 8 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 2, "Y": 8 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 3, "Y": 8 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 2, "Y": 8 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 2, "Y": 7 }, "Layer": "Front", "Remove": true },
+                { "Position": { "X": 3, "Y": 7 }, "Layer": "Front", "Remove": true },  
+
+                //Bucket snail
+                { "Position": { "X": 18, "Y": 6 }, "Layer": "Buildings3", "Remove": true },
+                { "Position": { "X": 18, "Y": 5 }, "Layer": "Buildings3", "Remove": true },
+
+                //Water snails
+                { "Position": { "X": 7, "Y": 15 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 7, "Y": 16 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 7, "Y": 15 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 7, "Y": 16 }, "Layer": "Buildings2", "Remove": true }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase2": false }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                //Water snails
+                { "Position": { "X": 15, "Y": 16 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 15, "Y": 17 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 15, "Y": 16 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 15, "Y": 17 }, "Layer": "Buildings2", "Remove": true },
+
+                //Tilted snails
+                { "Position": { "X": 19, "Y": 9 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 19, "Y": 9 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 19, "Y": 8 }, "Layer": "Front", "Remove": true },
+
+                //Snail clusters
+                { "Position": { "X": 3, "Y": 14 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 4, "Y": 14 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 3, "Y": 14 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 4, "Y": 14 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 3, "Y": 13 }, "Layer": "Front", "Remove": true },
+                { "Position": { "X": 4, "Y": 13 }, "Layer": "Front", "Remove": true },  
+
+                //Bush snails
+                { "Position": { "X": 8, "Y": 10 }, "Layer": "Buildings3", "Remove": true },
+                { "Position": { "X": 4, "Y": 4 }, "Layer": "Buildings3", "Remove": true }
+
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase3": false }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                //Bush snails
+                { "Position": { "X": 13, "Y": 9 }, "Layer": "Buildings3", "Remove": true },
+                { "Position": { "X": 15, "Y": 5 }, "Layer": "Buildings3", "Remove": true },
+
+                //OTP snails
+                { "Position": { "X": 13, "Y": 14 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 14, "Y": 14 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 13, "Y": 14 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 14, "Y": 14 }, "Layer": "Buildings2", "Remove": true },
+
+                //Single snails around map
+                { "Position": { "X": 7, "Y": 8 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 14, "Y": 6 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 7, "Y": 8 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 14, "Y": 6 }, "Layer": "Buildings2", "Remove": true }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase4": false }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                //Single snails around map
+                { "Position": { "X": 19, "Y": 15 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 19, "Y": 15 }, "Layer": "Buildings2", "Remove": true },
+
+                //Bush snails
+                { "Position": { "X": 18, "Y": 3 }, "Layer": "Buildings3", "Remove": true },
+
+                //Snail Clusters
+                { "Position": { "X": 18, "Y": 14 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 19, "Y": 14 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 18, "Y": 14 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 19, "Y": 14 }, "Layer": "Buildings2", "Remove": true },
+                { "Position": { "X": 18, "Y": 13 }, "Layer": "Front", "Remove": true },
+                { "Position": { "X": 19, "Y": 13 }, "Layer": "Front", "Remove": true }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase5": false }
+        },
+    //FLAGS TRUE
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 2, "Y": 11 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailLemur" } },
+                { "Position": { "X": 12, "Y": 11 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailMads" } },
+                { "Position": { "X": 6, "Y": 5 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailDodo" } },
+                { "Position": { "X": 15, "Y": 9 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailPillow" } },
+                { "Position": { "X": 16, "Y": 9 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailDH" } }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase1": true }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 9, "Y": 13 },  "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailChirps" } },
+                { "Position": { "X": 3, "Y": 8 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailPooh" } },
+                { "Position": { "X": 2, "Y": 8 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailClaw" } },
+                { "Position": { "X": 18, "Y": 6 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailBagi" } },
+                { "Position": { "X": 7, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailFlash" } }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase2": true }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 15, "Y": 15 }, "Layer": "Buildings",  "SetProperties": { "Action": "Message JeremyTSRSnailNums" } },
+                { "Position": { "X": 19, "Y": 9 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailNova" } },
+                { "Position": { "X": 3, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailHecate" } },
+                { "Position": { "X": 4, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailPatch" } },
+                { "Position": { "X": 8, "Y": 10 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailVale" } },
+                { "Position": { "X": 3, "Y": 5 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailAxell" } }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase3": true }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 13, "Y": 10 }, "Layer": "Buildings",  "SetProperties": { "Action": "Message JeremyTSRSnailBell" } },
+                { "Position": { "X": 15, "Y": 6 }, "Layer": "Buildings",  "SetProperties": { "Action": "Message JeremyTSRSnailDesty" } },
+                { "Position": { "X": 13, "Y": 14 }, "Layer": "Buildings",  "SetProperties": { "Action": "Message JeremyTSRSnailEnder" } },
+                { "Position": { "X": 14, "Y": 14 }, "Layer": "Buildings",  "SetProperties": { "Action": "Message JeremyTSRSnailCove" } },
+                { "Position": { "X": 7, "Y": 8 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailClown" } },
+                { "Position": { "X": 14, "Y": 6 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailSaurianne" } }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase4": true }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 18, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailGervig" } },
+                { "Position": { "X": 19, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailTiara" } }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_SnailPhase5": true }
+        },
+    //SHINY SNAIL
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 3, "Y": 10 }, "Layer": "Buildings", "Remove": true },
+                { "Position": { "X": 3, "Y": 10 }, "Layer": "Buildings2", "Remove": true }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_GaveJeremyGoldenSnail": false }
+        },   
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "MapTiles": [
+
+                { "Position": { "X": 3, "Y": 10 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailJeremyJr" } }
+
+            ],
+            "When": { "HasFlag: |contains=DitR_M_GaveJeremyGoldenSnail": true }
+        }, 
+
+//---------------------------- MAP STRINGS ------------------------------------------// 
+        {
+            "LogName": "Jeremy Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+                //Water and food
+                "JeremyTSRWaterTrough": "{{i18n:Maps.JeremyTSnail.JeremyTSRWaterTrough}}",
+                "JeremyTSRAppleBowl": "{{i18n:Maps.JeremyTSnail.JeremyTSRAppleBowl}}",
+
+                //Snail army
+                "JeremyTSRSnailDodo": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailDodo}}",
+                "JeremyTSRSnailPooh": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailPooh}}",
+                "JeremyTSRSnailClown": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailClown}}",
+                "JeremyTSRSnailClaw": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailClaw}}",
+                "JeremyTSRSnailLemur": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailLemur}}",
+                "JeremyTSRSnailVale": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailVale}}",
+                "JeremyTSRSnailEspurr": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailEspurr}}",
+                "JeremyTSRSnailHecate": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailHecate}}",
+                "JeremyTSRSnailPatch": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailPatch}}",
+                "JeremyTSRSnailChirps": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailChirps}}",
+                "JeremyTSRSnailFlash": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailFlash}}",
+                "JeremyTSRSnailEnder": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailEnder}}",
+                "JeremyTSRSnailCove": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailCove}}",
+                "JeremyTSRSnailMads": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailMads}}",
+                "JeremyTSRSnailBell": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailBell}}",
+                "JeremyTSRSnailNums": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailNums}}",
+                "JeremyTSRSnailSaurianne": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailSaurianne}}",
+                "JeremyTSRSnailDesty": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailDesty}}",
+                "JeremyTSRSnailBagi": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailBagi}}",
+                "JeremyTSRSnailPillow": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailPillow}}",
+                "JeremyTSRSnailDH": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailDH}}",
+                "JeremyTSRSnailNova": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailNova}}",
+                "JeremyTSRSnailGervig": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailGervig}}",
+                "JeremyTSRSnailTiara": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailTiara}}",
+                "JeremyTSRSnailAxell": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailAxell}}",
+                "JeremyTSRSnailJeremyJr": "{{i18n:Maps.JeremyTSnail.JeremyTSRSnailJeremyJr}}"
+
+            }
+        }
+    ]
+}

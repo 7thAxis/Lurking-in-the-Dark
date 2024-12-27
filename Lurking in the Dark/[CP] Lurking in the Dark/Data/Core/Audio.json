@@ -1,0 +1,96 @@
+{
+    "Changes": [
+    //Music loads
+        {
+            "LogName": "LitD Music",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "LitD_Music.Underscarp": {
+                    "ID": "LitD_Music.Underscarp",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/TommyCathodic_Underscarp.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "LitD_Music.JeremyTheme": {
+                    "ID": "LitD_Music.JeremyTheme",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/AlexMcCulloch_Weird_Science.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "LitD_Music.VoidSnailWaltz": {
+                    "ID": "LitD_Music.VoidSnailWaltz",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/TheFrenchDodo_Void_Snail_Waltz.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "LitD_Music.TraceHouse": {
+                    "ID": "LitD_Music.TraceHouse",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/AlexMcCulloch_Happy.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+            },
+                "LitD_Music.BarbieGirl": { //YOU CAN BRUSH MY HAAAAIIIIRRR
+                    "ID": "LitD_Music.BarbieGirl",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/TheFrenchDodo_Barbie_Girl.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            }
+        },
+        {
+            "LogName": "LitD SFX",
+            "Action": "EditData",
+            "Target": "Data/AudioChanges",
+            "Entries": {
+                "LitD_SFX.SnailCryBaby": {
+                    "ID": "LitD_SFX.SnailCryBaby",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Snail_Cry_Baby.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "LitD_SFX.SnailCry": {
+                    "ID": "LitD_SFX.SnailCry",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Snail_Cry.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                }
+            }
+        },
+    //Jukebox
+        {
+            "Action": "EditData",
+            "Target": "Data/JukeboxTracks",
+            "Entries": {
+                "LitD_Music.Underscarp": {
+                    "Name": "{{i18n:Core.Music.Underscarp}}",
+                    "Available": null
+                },
+                "LitD_Music.JeremyTheme": {
+                    "Name": "{{i18n:Core.Music.JeremyTheme}}",
+                    "Available": null
+                },
+                "LitD_Music.VoidSnailWaltz": {
+                    "Name": "{{i18n:Core.Music.VoidSnailWaltz}}",
+                    "Available": null
+                },
+                "LitD_Music.TraceHouse": {
+                    "Name": "{{i18n:Core.Music.TraceHouse}}",
+                    "Available": null
+                },
+                "LitD_Music.BarbieGirl": {
+                    "Name": "{{i18n:Core.Music.BarbieGirl}}",
+                    "Available": null
+                }
+            }
+        }
+     ]
+
+}

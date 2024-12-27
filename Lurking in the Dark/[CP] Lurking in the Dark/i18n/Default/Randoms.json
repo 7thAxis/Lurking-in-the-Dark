@@ -1,0 +1,284 @@
+{
+/*
+██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗███████╗
+██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║██╔════╝
+██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔████╔██║███████╗
+██╔══██╗██╔══██║██║╚██╗██║██║  ██║██║   ██║██║╚██╔╝██║╚════██║
+██║  ██║██║  ██║██║ ╚████║██████╔╝╚██████╔╝██║ ╚═╝ ██║███████║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚══════╝
+*/
+    //--SEN--//
+//Articles and Pronouns
+"Rand.SenS.Book.AP.1": "A",
+"Rand.SenS.Book.AP.2": "The",
+"Rand.SenS.Book.AP.3": "Her",
+"Rand.SenS.Book.AP.4": "His",
+"Rand.SenS.Book.AP.5": "Their",
+"Rand.SenS.Book.AP.6": "Your",
+"Rand.SenS.Book.AP.7": "You're a",
+
+//Book Type
+"Rand.SenS.Book.Type.1": "A Guidebook to",
+"Rand.SenS.Book.Type.2": "The Encyclopedia of",
+"Rand.SenS.Book.Type.3": "The Lost Files of",
+"Rand.SenS.Book.Type.4": "A History of",
+
+//Subjects 1 (Plural)
+"Rand.SenS.Book.Subj.1": "Mermaids",
+"Rand.SenS.Book.Subj.2": "Horses",
+"Rand.SenS.Book.Subj.3": "Crochet",
+"Rand.SenS.Book.Subj.4": "Seaweed",
+"Rand.SenS.Book.Subj.5": "Fairies",
+"Rand.SenS.Book.Subj.6": "Dragons",
+"Rand.SenS.Book.Subj.7": "Pizza",
+"Rand.SenS.Book.Subj.8": "Goblins",
+"Rand.SenS.Book.Subj.9": "Rain",
+"Rand.SenS.Book.Subj.10": "Light Bulbs",
+"Rand.SenS.Book.Subj.11": "Llamas",
+"Rand.SenS.Book.Subj.12": "Computer Science",
+"Rand.SenS.Book.Subj.13": "Snails",
+"Rand.SenS.Book.Subj.14": "World Hunger",
+
+//Subjects 2 (Mostly Singular)
+"Rand.SenS.Book.Subj2.1": "City",
+"Rand.SenS.Book.Subj2.2": "Men",
+"Rand.SenS.Book.Subj2.3": "Mistress",
+"Rand.SenS.Book.Subj2.4": "Monster",
+"Rand.SenS.Book.Subj2.5": "Lone Wolf",
+"Rand.SenS.Book.Subj2.6": "Trashcan",
+"Rand.SenS.Book.Subj2.7": "Cactus",
+
+//Descriptor 1
+"Rand.SenS.Book.Obj.1": "for Fools",
+"Rand.SenS.Book.Obj.2": "for Geniuses",
+"Rand.SenS.Book.Obj.3": "for the Birthday Boy",
+"Rand.SenS.Book.Obj.4": "for the Morally Confused",
+"Rand.SenS.Book.Obj.5": "for the Spineless",
+"Rand.SenS.Book.Obj.6": "for the Careless",
+
+//Descriptor 2
+"Rand.SenS.Book.Obj2.1": "on the Island",
+"Rand.SenS.Book.Obj2.2": "on a Rollercoaster",
+"Rand.SenS.Book.Obj2.3": "on My House",
+"Rand.SenS.Book.Obj2.4": "on a Railroad",
+"Rand.SenS.Book.Obj2.5": "on Monday",
+"Rand.SenS.Book.Obj2.6": "on a Pumpkin",
+
+//Descriptor 3
+"Rand.SenS.Book.Obj3.1": "Red",
+"Rand.SenS.Book.Obj3.2": "Blue",
+"Rand.SenS.Book.Obj3.3": "Cold",
+"Rand.SenS.Book.Obj3.4": "Lost",
+"Rand.SenS.Book.Obj3.5": "Strange",
+"Rand.SenS.Book.Obj3.6": "Adventurous",
+
+//Descriptor 4
+"Rand.SenS.Book.Obj4.1": "Lost",
+"Rand.SenS.Book.Obj4.2": "Beloved",
+"Rand.SenS.Book.Obj4.3": "Strange",
+"Rand.SenS.Book.Obj4.4": "Fickle",
+"Rand.SenS.Book.Obj4.5": "Tsundere",
+"Rand.SenS.Book.Obj4.6": "I Love My",
+
+//Descriptor 5
+"Rand.SenS.Book.Obj5.1": "Secret Romance",
+"Rand.SenS.Book.Obj5.2": "Grand Adventure",
+"Rand.SenS.Book.Obj5.3": "Dwarf King",
+"Rand.SenS.Book.Obj5.4": "Untold Secret",
+"Rand.SenS.Book.Obj5.5": "Mystery of Life",
+
+//People
+"Rand.SenS.Book.People.1": "Sonic",
+"Rand.SenS.Book.People.2": "Shane",
+"Rand.SenS.Book.People.3": "Lewis",
+"Rand.SenS.Book.People.4": "Linus",
+"Rand.SenS.Book.People.5": "M. Jasper",
+"Rand.SenS.Book.People.6": "Sebastian",
+"Rand.SenS.Book.People.7": "M. Rasmodius",
+"Rand.SenS.Book.People.8": "Pam",
+"Rand.SenS.Book.People.9": "Dobson",
+
+//Authors
+"Rand.SenS.Book.Author.1": "that Elliot guy",
+"Rand.SenS.Book.Author.2": "M. Jasper",
+"Rand.SenS.Book.Author.3": "Clyric Tourmaline",
+"Rand.SenS.Book.Author.4": "M. Rasmodius",
+"Rand.SenS.Book.Author.5": "Two-Time Award Winning Author, Rodney O'Brien",
+"Rand.SenS.Book.Author.6": "Dusty the Dog",
+"Rand.SenS.Book.Author.7": "Dobson Buss",
+"Rand.SenS.Book.Author.8": "the Joja Corporation",
+
+//Authors 2
+"Rand.SenS.Book.Author2.1": "Dest T.",
+"Rand.SenS.Book.Author2.2": "T. Nova",
+"Rand.SenS.Book.Author2.3": "L. Kat",
+"Rand.SenS.Book.Author2.4": "PS. Child",
+"Rand.SenS.Book.Author2.5": "F. Shifter",
+
+//Crochet 
+"Rand.SenS.CrocItem.1": "a scarf",
+"Rand.SenS.CrocItem.2": "mittens",
+"Rand.SenS.CrocItem.3": "a blanket",
+"Rand.SenS.CrocItem.4": "socks",
+"Rand.SenS.CrocItem.5": "a bear sweater",
+"Rand.SenS.CrocItem.6": "a cat sweater",
+"Rand.SenS.CrocItem.7": "a warm hat",
+
+//Colors
+"Rand.SenS.CrocColor.1": "red",
+"Rand.SenS.CrocColor.2": "black",
+"Rand.SenS.CrocColor.3": "orange",
+"Rand.SenS.CrocColor.4": "purple",
+"Rand.SenS.CrocColor.5": "rainbow",
+
+//Images
+"Rand.SenS.Image.1": "a bear",
+"Rand.SenS.Image.2": "a cat",
+"Rand.SenS.Image.3": "a :3 emoticon",
+"Rand.SenS.Image.4": "a pipe",
+"Rand.SenS.Image.5": "Shane",
+"Rand.SenS.Image.6": "bigfoot",
+"Rand.SenS.Image.7": "a UFO",
+"Rand.SenS.Image.8": "a dinosaur",
+"Rand.SenS.Image.9": "the Old Mariner",
+
+//Animals
+"Rand.SenS.Animal.1": "rock crab",
+"Rand.SenS.Animal.2": "lava crab",
+"Rand.SenS.Animal.3": "pelican",
+"Rand.SenS.Animal.4": "feral cat",
+"Rand.SenS.Animal.5": "lemur",
+
+//Flavor
+"Rand.SenS.Flavor.1": "teriyaki",
+"Rand.SenS.Flavor.2": "barbecue",
+"Rand.SenS.Flavor.3": "sweet and sour",
+"Rand.SenS.Flavor.4": "buttery",
+"Rand.SenS.Flavor.5": "spicy",
+
+//Food Style
+"Rand.SenS.FoodStyle.1": "batter-dipped",
+"Rand.SenS.FoodStyle.2": "lemon pepper",
+"Rand.SenS.FoodStyle.3": "breaded",
+"Rand.SenS.FoodStyle.4": "honey roasted",
+
+//Food
+"Rand.SenS.Food.1": "bug steak",
+"Rand.SenS.Food.2": "slimeballs",
+"Rand.SenS.Food.3": "ghost fish",
+"Rand.SenS.Food.4": "strange bun",
+"Rand.SenS.Food.5": "snails",
+"Rand.SenS.Food.6": "slime cheese",
+"Rand.SenS.Food.7": "durians",
+
+//Sen's spikes
+"Rand.SenS.Spikes.1": "horns",
+"Rand.SenS.Spikes.2": "ears",
+"Rand.SenS.Spikes.3": "hair",
+"Rand.SenS.Spikes.4": "a crown",
+
+//Crocus
+"Rand.SenS.CrocusSymbolism.1": "new beginnings",
+"Rand.SenS.CrocusSymbolism.2": "joy",
+"Rand.SenS.CrocusSymbolism.3": "rebirth",
+"Rand.SenS.CrocusSymbolism.4": "cheerfulness",
+
+//Found Objects
+"Rand.SenS.FoundObjects.1": "a soggy leek",
+"Rand.SenS.FoundObjects.2": "an empty beer bottle",
+"Rand.SenS.FoundObjects.3": "a pair of purple shorts",
+"Rand.SenS.FoundObjects.4": "a pair of broken glasses",
+"Rand.SenS.FoundObjects.5": "a diamond",
+"Rand.SenS.FoundObjects.6": "a field snack",
+"Rand.SenS.FoundObjects.7": "some sneakers with the name \"Alex\" written on the side",
+
+//Found Objects2
+"Rand.SenS.FoundObjects2.1": "some cloth",
+"Rand.SenS.FoundObjects2.2": "some discarded food",
+"Rand.SenS.FoundObjects2.3": "a new book",
+"Rand.SenS.FoundObjects2.4": "a bottle I can use as a vase",
+
+//People
+"Rand.SenS.People.1": "Emily",
+"Rand.SenS.People.2": "Harvey",
+"Rand.SenS.People.3": "Alex",
+"Rand.SenS.People.4": "Sebastian",
+"Rand.SenS.People.5": "Abigail",
+"Rand.SenS.People.6": "Eliott",
+"Rand.SenS.People.7": "Mayor Lewis",
+"Rand.SenS.People.8": "Pam",
+"Rand.SenS.People.9": "Gus",
+"Rand.SenS.People.10": "Jacob",
+"Rand.SenS.People.11": "Rosa",
+"Rand.SenS.People.12": "Aideen",
+
+//Spring Crop
+"Rand.SenS.SpringCrop.1": "strawberry",
+"Rand.SenS.SpringCrop.2": "parsnip",
+"Rand.SenS.SpringCrop.3": "potato",
+"Rand.SenS.SpringCrop.4": "tulip",
+"Rand.SenS.SpringCrop.5": "cauliflower",
+
+//Expressions
+"Rand.SenS.Expression.1": "$s",
+"Rand.SenS.Expression.2": "$l",
+"Rand.SenS.Expression.3": "$u",
+"Rand.SenS.Expression.4": "$a",
+"Rand.SenS.Expression.5": "$h",
+
+    //---Trace---//
+"Rand.TraceV.Book.1": "A Guidebook to Painting Night Skies and Literally Nothing Else",
+"Rand.TraceV.Book.2": "The Secrets of the Void (That Are No Longer Secret Because I Told You About Them)",
+"Rand.TraceV.Book.3": "You and Your Snail: How Properly Care for Your Mollusk",
+"Rand.TraceV.Book.4": "The Moon and Croissants: A Spiritual Link",
+"Rand.TraceV.Book.5": "A Night in the Valley: A Questionably Accurate History of Stardew Valley",
+"Rand.TraceV.Book.6": "Baking with Blackberries and Literally Nothing Else: A Cookbook by Trace Veilrose",
+"Rand.TraceV.Book.7": "How to Not Get Horribly Lost in the Mountains: A Guide",
+"Rand.TraceV.Book.8": "Trace's Old Diary. Stay Out!",
+"Rand.TraceV.Book.9": "Stink Fruit: The Tragic Tale of Durians",
+"Rand.TraceV.Book.10": "Night Owls: Nocturnes Living in a Diurnal World", 
+"Rand.TraceV.Book.11": "Arcana Catcher Prunus",
+"Rand.TraceV.Book.12": "Deference Arlington the Complete Saga (Volumes 1 to 14)",
+"Rand.TraceV.Book.13": "Color Coordination for the Unrefined",
+"Rand.TraceV.Book.14": "Shoes Suck: Why You Should Only Wear Sandals",
+"Rand.TraceV.Book.15": "The Rainbow of Rose Colors and Their Meanings",
+"Rand.TraceV.Book.16": "Somewhere Over the Rainbow There is A Snail (And 52 Other Nursery Rhymes)",
+"Rand.TraceV.Book.17": "Music and the Soul: How Melodies Influence the Mind",
+"Rand.TraceV.Book.18": "I Love Pizza: A Guide to Cheesy Goodness Around the World",
+"Rand.TraceV.Book.19": "Defenders of Ja'Hoote (Volumes 1 to 16)",
+"Rand.TraceV.Book.20": "Birds of a Feather: A Journey to Recovery",
+"Rand.TraceV.Book.21": "Jamberries",
+
+"Rand.TraceV.TVShow.1": "The Queen of Sauce",
+"Rand.TraceV.TVShow.2": "The Weather Channel",
+"Rand.TraceV.TVShow.3": "How it's Created",
+"Rand.TraceV.TVShow.4": "Repairing Good",
+"Rand.TraceV.TVShow.5": "The Running Deceased",
+"Rand.TraceV.TVShow.6": "Giant Explosion Hypothesis",
+"Rand.TraceV.TVShow.7": "Mysterium",
+"Rand.TraceV.TVShow.8": "Professor Where",
+"Rand.TraceV.TVShow.9": "Clothbill Roundshorts",
+"Rand.TraceV.TVShow.10": "Nightmare Kitchens",
+
+    //---JEREMY---//
+"Rand.JeremyTS.SnailName.1": "Prubbie",
+"Rand.JeremyTS.SnailName.2": "Zitsanie",
+"Rand.JeremyTS.SnailName.3": "Lamu",
+"Rand.JeremyTS.SnailName.4": "Wucku",
+"Rand.JeremyTS.SnailName.5": "Trutchie",
+"Rand.JeremyTS.SnailName.6": "Koni",
+"Rand.JeremyTS.SnailName.7": "Mumbo",
+"Rand.JeremyTS.SnailName.8": "Prinsy",
+"Rand.JeremyTS.SnailName.9": "Tatsi",
+"Rand.JeremyTS.SnailName.10": "Frinono",
+"Rand.JeremyTS.SnailName.11": "...#$b#...Oh \"(no\".$2#$b#If it isn't Pathoschild. Hahaha",
+"Rand.JeremyTS.SnailName.12": "Jatell",
+"Rand.JeremyTS.SnailName.13": "Garta",
+"Rand.JeremyTS.SnailName.14": "Casabell",
+"Rand.JeremyTS.SnailName.15": "Lalnu",
+"Rand.JeremyTS.SnailName.16": "Ninsy",
+"Rand.JeremyTS.SnailName.17": "Frover",
+"Rand.JeremyTS.SnailName.18": "Getch",
+"Rand.JeremyTS.SnailName.19": "Bobo",
+"Rand.JeremyTS.SnailName.20": "Grallers"
+}

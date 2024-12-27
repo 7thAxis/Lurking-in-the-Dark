@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" width="20" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="82">
+ <properties>
+  <property name="AmbientLight" value="70 70 70"/>
+  <property name="Doors" value="13 12 1 120 6 12 1 120"/>
+  <property name="LocationContext" value="Lemurkat_EastScarp"/>
+ </properties>
+ <tileset firstgid="1" name="spring_LitD_Tilesheet" tilewidth="16" tileheight="16" tilecount="480" columns="16">
+  <image source="spring_LitD_Tilesheet.png" width="256" height="480"/>
+ </tileset>
+ <tileset firstgid="481" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2657" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="5707" name="paths" tilewidth="16" tileheight="16" tilecount="64" columns="4">
+  <image source="paths.png" width="64" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="20" height="27">
+  <data encoding="csv">
+481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,
+481,172,173,173,173,173,173,173,174,481,481,172,173,173,173,173,173,173,174,481,
+481,172,173,173,173,173,173,173,174,481,481,172,173,173,173,173,173,173,174,481,
+481,172,0,0,0,0,0,0,174,481,481,172,0,0,0,0,0,0,748,481,
+481,169,171,170,171,170,171,170,2147483817,481,481,169,171,170,171,170,171,170,2147483817,481,
+481,187,187,187,187,187,187,187,187,481,481,187,187,187,187,187,187,187,187,481,
+481,203,203,187,187,187,187,187,187,481,481,203,203,187,187,187,187,187,187,481,
+481,187,187,187,187,187,187,187,187,481,481,187,187,187,187,187,187,187,187,481,
+481,187,187,187,187,187,187,187,187,481,481,187,187,187,187,187,187,187,187,481,
+481,481,203,203,203,203,203,203,203,481,481,203,203,203,203,203,203,203,481,481,
+481,172,173,173,173,173,187,173,173,173,173,173,173,187,173,173,173,173,174,481,
+481,172,173,173,173,173,187,173,173,173,173,173,173,187,173,173,173,173,174,481,
+481,172,136,136,136,136,187,136,136,136,136,136,136,187,136,136,136,136,174,481,
+481,169,170,171,170,171,187,171,170,171,170,171,170,187,170,171,170,171,2147483817,481,
+481,187,187,187,187,187,187,187,187,187,187,187,187,187,187,187,187,187,187,481,
+481,203,203,203,203,203,203,203,203,203,203,203,203,186,187,203,203,203,203,481,
+481,481,186,187,187,481,481,481,481,481,481,481,152,202,203,152,152,481,481,481,
+481,172,173,203,203,173,173,173,174,481,481,172,173,186,186,173,173,173,174,481,
+481,172,173,186,187,173,173,173,174,481,481,172,173,186,187,173,173,173,174,481,
+481,172,0,202,203,0,0,0,174,481,481,172,0,202,203,152,0,0,174,481,
+481,170,171,186,186,170,171,170,171,481,481,170,171,186,187,170,171,170,171,481,
+481,187,187,187,187,187,243,243,243,481,481,186,186,187,186,186,187,186,186,481,
+481,203,203,203,203,203,243,243,243,481,481,186,186,481,481,202,203,186,186,481,
+481,187,187,187,187,187,187,187,187,481,481,185,185,481,481,186,186,481,481,481,
+481,203,203,203,203,203,203,203,203,481,481,201,201,481,481,186,186,481,481,481,
+0,186,186,186,186,186,186,186,186,481,481,481,481,481,481,481,481,481,481,481,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="20" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,225,226,227,227,227,228,0,0,0,0,225,226,227,227,227,228,0,0,
+0,0,241,242,243,242,243,244,0,0,0,0,241,242,243,242,243,244,0,0,
+0,0,241,242,243,242,243,244,0,0,0,0,241,242,243,242,243,244,0,0,
+0,0,257,258,258,258,259,260,0,0,0,0,257,258,258,258,259,260,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,167,167,167,167,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,183,183,183,183,0,0,0,0,0,0,0,0,
+0,0,225,226,227,228,0,225,226,227,227,227,228,0,225,226,227,228,0,0,
+0,0,241,242,243,244,0,241,242,242,242,243,244,0,241,242,243,244,0,0,
+0,1263,1264,258,259,260,0,257,258,258,258,259,260,0,257,258,259,2147484912,2147484911,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,536871138,0,0,0,0,0,0,0,0,225,226,226,228,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,242,242,2147484912,2147484911,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,242,243,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,242,243,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Back3" width="20" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,2147487334,0,0,0,0,3686,0,0,0,0,2147487334,0,0,0,0,3686,0,0,
+0,0,2147487359,0,0,0,0,3711,0,0,0,0,2147487359,0,167,167,0,3711,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,183,183,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,329,0,0,0,0,0,0,0,323,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1998,0,0,0,0,0,0,1998,0,0,1998,0,0,0,0,0,0,1998,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,3684,0,0,3684,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,1037,1038,1038,1039,0,0,0,0,0,0,0,0,
+0,0,192,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,2147483846,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,213,0,0,0,0,0,0,0,0,0,0,0,0,0,183,0,0,0,
+0,198,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,192,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,329,329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,329,329,0,0,0,0,0,0,0,0,0,0,0,0,
+0,329,329,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <layer id="2" name="Buildings" width="20" height="27">
+  <data encoding="csv">
+481,2147483864,189,189,189,189,189,189,216,2147484129,481,2147483864,189,189,189,189,189,189,216,2147484129,
+2147483881,2147483854,0,0,0,0,0,0,206,233,2147483881,2147483854,0,0,0,0,0,0,206,233,
+245,166,167,167,167,167,167,167,168,249,245,166,167,167,167,167,167,167,168,249,
+245,182,183,183,183,183,183,183,184,249,245,182,183,183,869,870,183,183,184,249,
+245,1998,316,278,279,305,306,0,200,249,245,1998,282,283,901,902,282,283,1998,249,
+245,0,0,0,0,0,0,317,297,249,245,0,0,0,0,0,0,0,0,249,
+245,315,0,0,0,0,0,0,313,249,245,0,0,0,803,804,0,0,191,249,
+245,0,0,0,0,0,0,0,0,249,245,0,0,0,0,0,0,0,0,249,
+2147483902,2147483901,342,343,344,0,0,0,253,254,2147483902,2147483901,0,0,0,342,343,344,253,254,
+0,2147483864,189,189,189,238,0,2147483886,189,189,189,189,238,0,2147483886,189,189,189,216,0,
+2147483881,2147483854,0,0,0,181,0,180,0,0,0,0,181,0,180,0,0,0,206,233,
+245,166,167,167,167,197,0,196,0,0,0,0,197,0,196,167,167,167,168,249,
+245,182,183,183,183,213,601,212,9,9,9,9,213,601,212,183,183,183,184,249,
+245,198,1200,278,279,0,0,223,1069,1070,1070,1071,223,0,315,305,306,2147484848,2147484847,249,
+245,1231,88,0,0,0,0,0,0,0,0,0,0,0,0,0,0,88,2147484879,249,
+2147483902,2147483901,222,0,0,0,0,0,0,0,0,0,0,0,0,0,0,252,253,254,
+0,2147483864,238,0,0,2147483886,189,189,216,2147484129,481,2147483864,238,0,0,2147483886,189,189,216,0,
+2147483881,2147483854,181,0,0,180,0,0,206,233,2147483881,2147483854,181,0,0,180,0,0,206,233,
+2147483897,2147483816,197,0,0,196,167,167,168,249,2147483897,2147483816,197,0,0,196,167,167,168,249,
+245,182,695,0,0,212,183,183,184,249,245,182,213,0,0,212,695,183,184,249,
+245,192,324,0,0,304,224,271,272,249,245,1998,0,0,0,0,0,2147484848,200,249,
+245,325,0,0,0,0,0,0,0,249,245,0,0,342,344,0,0,88,2147484879,249,
+245,0,0,0,0,291,0,0,0,249,245,0,0,249,245,0,0,218,253,254,
+245,310,312,0,0,307,308,308,309,249,245,0,0,249,245,0,0,249,0,0,
+245,326,328,0,0,223,0,0,223,249,2147483902,2147483901,253,254,2147483902,2147483901,253,254,0,0,
+2147483902,0,0,0,0,0,0,0,0,254,0,0,0,0,0,0,0,0,0,0,
+481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481,481
+</data>
+ </layer>
+ <layer id="15" name="Buildings2" width="20" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Buildings">
+  <object id="13" name="TileData" x="208" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHRadio&quot;"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="208" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHRadio&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="48" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCatGrass1&quot;"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="288" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHGuitar&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="272" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHNailPolish&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="240" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBed&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="256" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHTelevision&quot;"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="224" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBed&quot;"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="112" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHMoonPainting1&quot;"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCamera&quot;"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHMoonPainting2&quot;"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPhotos&quot;"/>
+   </properties>
+  </object>
+  <object id="27" name="TileData" x="256" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHTinyMoonPainting&quot;"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="48" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHTinyBooks&quot;"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="16" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHMoonPaintingStack&quot;"/>
+   </properties>
+  </object>
+  <object id="30" name="TileData" x="224" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHMoonPaintingStack&quot;"/>
+   </properties>
+  </object>
+  <object id="31" name="TileData" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBook1&quot;"/>
+   </properties>
+  </object>
+  <object id="32" name="TileData" x="96" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBook2&quot;"/>
+   </properties>
+  </object>
+  <object id="33" name="TileData" x="256" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBook4&quot;"/>
+   </properties>
+  </object>
+  <object id="34" name="TileData" x="240" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBook3&quot;"/>
+   </properties>
+  </object>
+  <object id="35" name="TileData" x="128" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHTinyMoonPainting&quot;"/>
+   </properties>
+  </object>
+  <object id="36" name="TileData" x="80" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBlackberryCobbler&quot;"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="80" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHBlackberryCobbler&quot;"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="96" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHStove&quot;"/>
+   </properties>
+  </object>
+  <object id="39" name="TileData" x="112" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHSink&quot;"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="128" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHFridge&quot;"/>
+   </properties>
+  </object>
+  <object id="41" name="TileData" x="80" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCoffeeCup&quot;"/>
+   </properties>
+  </object>
+  <object id="43" name="TileData" x="16" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCenterFlowers&quot;"/>
+   </properties>
+  </object>
+  <object id="44" name="TileData" x="32" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHJeremyFood&quot;"/>
+   </properties>
+  </object>
+  <object id="45" name="TileData" x="32" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHElectricalSocket&quot;"/>
+   </properties>
+  </object>
+  <object id="46" name="TileData" x="32" y="368" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHTablecloth&quot;"/>
+   </properties>
+  </object>
+  <object id="47" name="TileData" x="16" y="384" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCenterFlowers&quot;"/>
+   </properties>
+  </object>
+  <object id="48" name="TileData" x="16" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHJeremyWater&quot;"/>
+   </properties>
+  </object>
+  <object id="49" name="TileData" x="256" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHElectricalSocket&quot;"/>
+   </properties>
+  </object>
+  <object id="50" name="TileData" x="224" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHNote&quot;"/>
+   </properties>
+  </object>
+  <object id="51" name="TileData" x="272" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant1&quot;"/>
+   </properties>
+  </object>
+  <object id="52" name="TileData" x="16" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant5&quot;"/>
+   </properties>
+  </object>
+  <object id="53" name="TileData" x="176" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="54" name="TileData" x="176" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="55" name="TileData" x="176" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="56" name="TileData" x="288" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="57" name="TileData" x="288" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="58" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant3&quot;"/>
+   </properties>
+  </object>
+  <object id="59" name="TileData" x="128" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="60" name="TileData" x="16" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant2&quot;"/>
+   </properties>
+  </object>
+  <object id="61" name="TileData" x="112" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant4&quot;"/>
+   </properties>
+  </object>
+  <object id="62" name="TileData" x="192" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlant1&quot;"/>
+   </properties>
+  </object>
+  <object id="63" name="TileData" x="128" y="384" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlantRight&quot;"/>
+   </properties>
+  </object>
+  <object id="65" name="TileData" x="80" y="384" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHPlantLeft&quot;"/>
+   </properties>
+  </object>
+  <object id="66" name="TileData" x="128" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCouchArmLeft&quot;"/>
+   </properties>
+  </object>
+  <object id="67" name="TileData" x="176" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCouchArmRight&quot;"/>
+   </properties>
+  </object>
+  <object id="68" name="TileData" x="272" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHSeat&quot;"/>
+   </properties>
+  </object>
+  <object id="69" name="TileData" x="32" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHSeat&quot;"/>
+   </properties>
+  </object>
+  <object id="70" name="TileData" x="272" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHSeat&quot;"/>
+   </properties>
+  </object>
+  <object id="73" name="TileData" x="192" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHEmptyPot&quot;"/>
+   </properties>
+  </object>
+  <object id="74" name="TileData" x="64" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHTinyMoonPainting&quot;"/>
+   </properties>
+  </object>
+  <object id="75" name="TileData" x="32" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCatGrass2&quot;"/>
+   </properties>
+  </object>
+  <object id="76" name="TileData" x="208" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCatGrass1&quot;"/>
+   </properties>
+  </object>
+  <object id="77" name="TileData" x="64" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;TraceVHCatGrass1&quot;"/>
+   </properties>
+  </object>
+  <object id="80" name="TileData" x="96" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="81" name="TileData" x="208" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Front" width="20" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,302,0,0,0,0,0,0,0,0,363,331,332,364,0,0,0,
+0,314,0,0,318,273,274,0,2147483962,0,0,314,0,379,347,348,380,0,2147483962,0,
+0,1966,300,262,263,289,290,695,1966,0,0,1966,266,267,0,0,266,267,1966,0,
+0,0,0,0,0,0,0,0,1998,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1966,0,0,0,0,0,0,1966,0,0,1966,0,0,0,0,0,0,1966,0,
+0,0,0,0,0,0,0,2147483870,0,0,0,0,222,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,298,3684,333,334,3684,537,0,0,0,0,0,0,537,0,0,3454,302,2147483946,0,
+0,314,3709,349,350,3709,569,0,3709,0,0,3709,0,569,0,273,274,318,2147483962,0,
+0,0,176,262,263,0,0,812,0,0,0,0,812,0,299,289,290,176,0,0,
+0,1199,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147484880,0,0,
+0,0,0,0,0,812,252,252,252,252,252,252,207,0,0,812,252,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3684,0,0,269,270,0,0,0,0,0,3684,0,0,3684,3454,303,2147483946,0,
+0,314,3709,0,0,285,286,239,240,0,0,314,3709,0,0,3709,0,319,2147483962,0,
+0,176,0,0,0,288,208,255,256,0,0,1966,0,0,0,0,0,176,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2147484847,0,
+0,0,0,0,0,0,0,0,4755,0,0,0,0,0,2147483866,0,0,2147484880,0,0,
+0,294,296,0,0,0,292,292,293,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,207,0,0,207,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2147483901,252,252,252,252,252,252,253,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="14" name="Front2" width="20" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,298,0,335,0,2381,2382,0,2147483946,0,0,298,0,0,0,0,0,0,2147483946,0,
+0,0,0,320,0,1737,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,1869,0,0,0,0,0,0,0,360,321,0,0,336,322,0,0,
+0,0,0,0,0,0,0,301,0,0,0,0,0,0,0,0,0,0,0,0,
+0,299,0,0,0,0,0,0,336,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,337,0,0,0,
+0,0,287,1314,287,0,0,0,0,0,0,0,0,0,0,287,353,287,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,335,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,330,0,0,0,0,
+0,0,0,287,336,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,298,0,0,0,0,0,0,0,0,0,298,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,4797,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,287,1130,0,0,0,0,0,
+0,3648,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3673,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="4" name="AlwaysFront" width="20" height="27" opacity="0.97">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3648,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3673,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,897,898,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,929,930,0,0,175,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,252,252,252,222,0,0,0,0,0,0,0,0,2147483870,252,252,252,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,331,332,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,696,0,347,348,0,0,0,696,0,1314,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,2147483870,0,0,0,0,0,0,222,0,0,2147483870,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,335,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,275,0,0,0,0,0,0,0,218,2147483866,0,0,0,0,0,
+0,0,0,0,0,1132,0,0,4780,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="AlwaysFront"/>
+ <layer id="5" name="Paths" width="20" height="27" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,5715,0,0,0,0,0,0,5715,0,0,5715,0,0,0,0,0,0,5715,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5715,5715,0,0,0,0,0,0,0,0,5715,5715,0,0,0,0,
+0,0,0,0,5715,5715,0,0,0,0,0,0,0,0,5715,5715,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,5715,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5715,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,5715,5715,0,0,0,0,5715,5715,0,0,0,0,5715,5715,0,0,0,
+0,0,0,5715,5715,0,0,0,0,5715,5715,0,0,0,0,5715,5715,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,5715,0,0,0,0,0,0,0,0,0,5715,0,0,0,0,0,0,5715,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,5715,5715,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,5715,5715,0,0,0,0,
+0,0,5715,5715,0,0,5715,5715,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,5715,5715,0,0,5715,5715,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,5715,5715,0,0,5715,5715,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Paths"/>
+</map>

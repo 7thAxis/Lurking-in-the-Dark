@@ -1,0 +1,22 @@
+{
+    "Changes": [
+    //Loads in snail content
+    
+        //Maps
+        {
+            "Action": "Load",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "FromFile": "assets/Maps/Jeremy_Room.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/7thAxis.LitD_Maps.Trace_House_Interior",
+            "FromFile": "assets/Maps/Trace_House_Interior.tmx"
+        },
+        //Files
+        {
+			"Action": "Include",
+			"FromFile": "Data/Locations/World_Map.json, Data/Locations/Caldera_Snails.json, Data/Locations/Jeremy_Room.json, Data/Locations/Trace_House.json, Data/Animals/Giant_Void_Lava_Snail.json, Data/Animals/Golden_Void_Lava_Snail.json, Data/Core/Buildings.json, Data/Items/Void_Lava_Snail_Egg.json, Data/Items/Void_Lava_Snail_Mayonnaise.json, Data/Items/Void_Lava_Snail.json, Data/Forage/Void_Lava_Snail.json, Data/Forage/Golden_Void_Lava_Snail.json"
+		}  
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        //Deranged Potted Plant Nonsense
+        {
+            "Action": "EditMap",
+            "Target": "Maps/ManorHouse",
+            "FromFile": "assets/Maps/MayorHousePot.tmx",
+            "ToArea": { "X": 10, "Y": 4, "Width": 1, "Height": 1 },
+            "PatchMode": "Replace",
+            "When": { "LewisPlantInside": true }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                { "Position": { "X": 70, "Y": 90 }, "Layer": "Front", "Remove": true }
+            ],
+            "When": { "LewisPlantInside": true }
+        },
+        //map strings
+        {
+            "LogName": "Sen Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": { "LitDMayorPot": "{{i18n:Maps.SenS.LitDMayorPot}}" }
+        }
+    ]
+}

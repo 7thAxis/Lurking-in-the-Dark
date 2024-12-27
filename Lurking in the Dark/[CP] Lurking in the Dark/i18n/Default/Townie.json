@@ -1,0 +1,91 @@
+{
+/*
+████████╗ ██████╗ ██╗    ██╗███╗   ██╗██╗███████╗
+╚══██╔══╝██╔═══██╗██║    ██║████╗  ██║██║██╔════╝
+   ██║   ██║   ██║██║ █╗ ██║██╔██╗ ██║██║█████╗  
+   ██║   ██║   ██║██║███╗██║██║╚██╗██║██║██╔══╝  
+   ██║   ╚██████╔╝╚███╔███╔╝██║ ╚████║██║███████╗
+   ╚═╝    ╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═══╝╚═╝╚══════╝                      
+*/
+//Krobus
+"Krobus.SenS.Reveal.1": "Sen always has so much energy... I don't know where he gets it.#$b#Is it from this... \"coffee\" he's always talking about?$u",
+"Krobus.SenS.Reveal.2": "...*rumble*...$u#$b#...Sorry, that was embarassing.l#$b#Don't worry, I'm okay. Sen is going to bring me snacks, so I'm holding off on eating.$h",
+"Krobus.SenS.Reveal.3": "Sen talks about you a lot when he visits. It makes me happy that he's happy.$h",
+"Krobus.SenS.Reveal.4": "Sen's full name, Sentrez, means 'crowned dreamer' in our language.#$b#I feel like that's fitting for him, don't you?$h",
+
+"Krobus.SenS.SenMet": "Did you happen to come across my friend in the mines?#$b#Do not fear him, he is quite friendly.$h",
+"Krobus.SenS.DreamReveal": "Sen is very optimistic for a Shadow. It's... quite refreshing.$h",
+"Krobus.SenS.ShadowPlay": "Hmm... I found this while rummaging in the bins.#$b#Maybe you'd have a use for it?[351]$u",
+"Krobus.SenS.GardenWaitTime": "Sen told me that you've helped him collect seeds for a garden. That was very kind of you.$h",
+"Krobus.SenS.GardenCompleted": "I saw the garden you helped Sen grow. It's beautiful...$h#$e#You're quite different than other humans.$u",
+"Krobus.SenS.FamilyFlashback": "Sen has seemed a bit melancholy recently... I hope he's alright.$s",
+"Krobus.SenS.MineFlashback": "You're... going to meet with Skrell?$u#$b#Be careful. He has a strong hatred of humans.$s",
+"Krobus.SenS.TheConfrontation": "You've met with Skrell? Did he... attack you?$s#$b#...$u#$b#No? You must be a very special human.$h",
+"Krobus.SenS.SkrellEpilogue": "Skrell recently visited me to ask what my life on the surface is like.$u#$b#Sen's curiosity must have finally rubbed off on him.$7",
+"Krobus.SenS.SensFlowers": "Sweet little flowers are appearing all over the valley. Where'd they come from?$u",
+"Krobus.SenS.TriedToMarryButKrobus": "Unfortunately, you can't have a partner while living with a roommate.",
+
+//Dwarf
+"Dwarf.SenS.SenMet": "A shadow has been lurking around here... Be wary, they are hostile people.",
+"Dwarf.SenS.DreamReveal": "The shadow that lurks around here is docile compared to most. It's peculiar.",
+"Dwarf.SenS.ShadowPlay": "I've grown used to the lurking shadow's presence. I'm still cautious, however...",
+"Dwarf.SenS.GardenWaitTime": "The lurking shadow spends most of his time reading and fiddling with yarn. It is strange.",
+"Dwarf.SenS.GardenCompleted": "The lurking shadow seemed quite happy the last time he was in the area. I wonder what about?",
+"Dwarf.SenS.FamilyFlashback": "The lurking shadow now seems downcast. What happened, I wonder.",
+"Dwarf.SenS.MineFlashback": "The lurking shadow hasn't been around much recently. I can rest easy.",
+"Dwarf.SenS.TheConfrontation": "You know, you are just as peculiar as the lurking shadow.",
+"Dwarf.SenS.SkrellEpilogue": "I sense a difference in the atmosphere of the mines...",
+"Dwarf.SenS.SensFlowers": "The lurking shadow seldom comes to this place anymore.#$b#What became of him, I wonder?",
+
+//Wizard
+"Wizard.SenS.SenMet": "I've foreseen that you'd an unlikely ally in the mines. Treat him well.",
+"Wizard.SenS.DreamReveal": "The shadow you've befriended is quite peculiar, is he not?",
+"Wizard.SenS.ShadowPlay": "I am sure you know as well as I do that no bears were rummaging in the trash last night.",
+"Wizard.SenS.GardenWaitTime": "With the right magical attributes certain plants can grow in the darkness of the underworld.",
+"Wizard.SenS.GardenCompleted": "I sense you're getting quite close with a shadow person.#$b#Take care with that secret.",
+"Wizard.SenS.FamilyFlashback": "The strange shadow was lurking around my tower recently.#$b#He's become quite bold.",
+"Wizard.SenS.MineFlashback": "Shadowfolk are a unique, otherworldly people.#$b#I have been attempting to keep peace between them and the dwarves.",
+"Wizard.SenS.TheConfrontation": "A great change is on the horizon. I can forsee it.",
+"Wizard.SenS.SkrellEpilogue": "I sense a change in the shadowfolk of the mines.#$b#I presume you had something to do with it.",
+"Wizard.SenS.SensFlowers": "Hm... A peculiar bloom has begun sprouting in the valley.#$b#I will need to collect a few to study.",
+
+//Townies and the "bears"
+"Haley.SenS.ShadowPlay": "Uhg ew, there was something digging around in the trash...$u",
+"Alex.SenS.ShadowPlay": "Word on the street is that baby bears were digging in the garbage last night.#$b#Maybe we should get a lid lock...$s",
+"Elliott.SenS.ShadowPlay": "Be wary in the night my friend.#$b#I've heard bears are digging in the trash.$s",
+"Harvey.SenS.ShadowPlay": "I saw it! I saw the bears!$8#$b#Just barely, but I saw them!$8",
+"Sam.SenS.ShadowPlay": "Everyone's up in arms about these trash bears.#$b#I wonder if Lewis is gonna call animal control.$s",
+"Abigail.SenS.ShadowPlay": "Everyone is talking about the garbage bears...#$b#Was it really bears?$s",
+"Leah.SenS.ShadowPlay": "The bears didn't come to my trash.#$b#With all the commotion, I'm almost jealous.$h",
+"Maru.SenS.ShadowPlay": "If the bears come back I plan to build a humane trap to capture them.$u#$b#Then we can release them back into the forest.$u",
+"Penny.SenS.ShadowPlay": "My mother won't stop talking about the baby bears she saw.#$b#I wonder where their mother is.$u",
+"Caroline.SenS.ShadowPlay": "I had to clean up after the bears that came through... What a mess!$a",
+"Demetrius.SenS.ShadowPlay": "Two bears in town is a rare sight.#$b#I should use this as an opportunity to research their ecology in relation to urbanization.$h",
+"Clint.SenS.ShadowPlay": "A couple of lonely bears... They're a lot like me.$s",
+"Evelyn.SenS.ShadowPlay": "You whippersnappers and your bears.#$b#I've seen plenty come through in my time.$h",
+"George.SenS.ShadowPlay": "If I have to hear one more thing about those damn bears...$u",
+"Gus.SenS.ShadowPlay": "There's always something in my garbage...#$b#First Linus, now bears. What's next?$s",
+"Jas.SenS.ShadowPlay": "Did you know that most bears are omnivorous?$u#$b#They must be looking for food in the trash.$4",
+"Jodi.SenS.ShadowPlay": "My kids are obsessed with the bears...$s#$b#Until they're confirmed gone I should have them come in early.$s",
+"Kent.SenS.ShadowPlay": "What's so special about bears in the trash!$s",
+"Lewis.SenS.ShadowPlay": "Dagnabbit, I thought the holligans were bad enough.$u#$b#Now there's bears causing trouble with the trash!$a",
+"Linus.SenS.ShadowPlay": "Bears are following their natural instincts when they rummage in garbage bins.#$b#It'd be ashame to let good food go to waste.$h",
+"Marnie.SenS.ShadowPlay": "I wonder where those little bears went?#$b#Hopefully they're done bin hopping.$h",
+"Pam.SenS.ShadowPlay": "A couple of damn bears knocked over my trashcan! A huge mess, everywhere!$u",
+"Pierre.SenS.ShadowPlay": "We found our trash can with the lid off this morning.$u#$b#A lot of us did, apparently.$u",
+"Robin.SenS.ShadowPlay": "We see bears quite often up here in the mountains.#$b#It's rare they wander down into town.",
+"Vincent.SenS.ShadowPlay": "Woooahh I wish I got to see the bears everyone's talking about!$u",
+"Willy.SenS.ShadowPlay": "No bears ever come onto the beach. I guess I lucked out.$h",
+"Sebastian.SenS.ShadowPlay": "Digging in the trash... That's gross, even for a bear.$s",
+"Shane.SenS.ShadowPlay": "I could care less about this bear everyone's on about. It's just a bear.$s",
+"Emily.SenS.ShadowPlay": "Do you really think it was bears in the garbage, @?#$b#My intuition tells me it was something else.",
+"GuntherSilvian.SenS.ShadowPlay": "Everything we put out to the trash last night is gone...#$b#Why would bears want old magazines?",
+"MarlonFay.SenS.ShadowPlay": "Bears, huh? I reckon this might require an investigation...",
+"MorrisTod.SenS.ShadowPlay": "Bears! Bears in the garbage! I must contact the higher-ups at once.",
+
+//Snail Gifting
+"Vincent.Gifts.VoidLavaSnail": "Wooahh... this snail is way bigger than the normal ones!$3#$b#I'm gonna hide it under my bed. Don't tell my mom!$1#$action AddMail Current DitR_M_GaveVincentLavaSnail received#$action AddConversationTopic DitR_CT_GaveVincentLavaSnail 1",
+"Vincent.Gifts.GoldenVoidLavaSnail": "Wow, this snail is so sparkly! It's gonna be my new bestest friend.$3#$b#I'm gonna hide it under my bed. Don't tell my mom!$1#$action AddMail Current DitR_M_GaveVincentLavaSnail received#$action AddConversationTopic DitR_CT_GaveVincentLavaSnail 1",
+"Jodi.Gifts.VoidLavaSnail": "$query PLAYER_HAS_MAIL Current DitR_M_GaveVincentLavaSnail Any, !PLAYER_HAS_CONVERSATION_TOPIC Current DitR_CT_GaveVincentLavaSnail#Uhm, no thank you...$s#$b#Wait just a moment, I found one of these living under Vincent's bed. Were you the one that gave it to him?$u|Uhm, no thank you...$s#$b#Please take that away before my son sees it. He'll want to keep it.$s",
+"Jodi.Gifts.GoldenVoidLavaSnail": "$query PLAYER_HAS_MAIL Current DitR_M_GaveVincentLavaSnail Any, !PLAYER_HAS_CONVERSATION_TOPIC Current DitR_CT_GaveVincentLavaSnail#Uhm, no thank you... I'm not interested in your strange glowing snail.$s#$b#Wait just a moment, I found one of these living under Vincent's bed. Were you the one that gave it to him?$u|Uhm, no thank you... I'm not interested in your strange glowing snail.$s#$b#Please take that away before my son sees it. He'll want to keep it.$s"
+}

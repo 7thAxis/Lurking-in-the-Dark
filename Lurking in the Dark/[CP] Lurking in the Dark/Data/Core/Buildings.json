@@ -1,0 +1,62 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Entries": {
+            "7thAxis.DitR_Buildings.AnimalTreeHouse": {
+                "Name": "{{i18n:Core.Buildings.AnimalTreeHouse.Title}}",
+                "Description": "{{i18n:Core.Buildings.AnimalTreeHouse.Description}}",
+                "Texture": "Buildings/7thAxis.LitD/Animal_Tree_House",
+                "DrawShadow": false,
+                "Size": { "X": 6, "Y": 3 },
+                "FadeWhenBehind": true,
+                "SourceRect": { "X": 0, "Y": 0, "Width": 112, "Height": 112 },
+                "Builder": "Robin",
+                "BuildCondition": "PLAYER_HAS_MAIL Current DitR_M_SnailPhase5 Any",
+                "BuildDays": 2,
+                "BuildCost": 28000,
+                "BuildMenuDrawOffset": { "X": -50, "Y": 0 },
+                "BuildMaterials": [
+                  { "ItemId": "(O)771", "Amount": 300 },
+                  { "ItemId": "(O)388", "Amount": 400 },
+                  { "ItemId": "(O)709", "Amount": 100 }
+                ],
+                "HumanDoor": { "X": 4, "Y": 2 },
+                "AnimalDoor": { "X": 2, "Y": 1, "Width": 2, "Height": 2 },
+                "AnimalDoorOpenSound": "doorCreak",
+                "AnimalDoorCloseSound": "doorCreakReverse",
+                "IndoorMap": "Animal_Tree_House",
+                "IndoorMapType": "StardewValley.AnimalHouse",
+                "MaxOccupants": 12,
+                "ValidOccupantTypes": [ "Barn", "Coop", "DitR_Snail", "Fellowclown.ClownCore_TropicalHutch" ],
+                "AllowAnimalPregnancy": true,
+                "IndoorItems": [
+                  {
+                    "Id": "Default_FeedHopper",
+                    "ItemId": "(BC)99",
+                    "Tile": { "X": 11, "Y": 8 },
+                    "Indestructible": true
+                  },
+                  {
+                    "Id": "Default_Incubator",
+                    "ItemId": "(BC)101",
+                    "Tile": { "X": 20, "Y": 8 },
+                    "Indestructible": true
+                  }
+                ],
+                "DrawLayers": [
+                  {
+                    "Id": "Default_AnimalDoor_Bottom",
+                    "Texture": null,
+                    "SourceRect": { "X": 32, "Y": 112, "Width": 32, "Height": 32 },
+                    "DrawPosition": "32, 80",
+                    "AnimalDoorOffset": { "X": -2000, "Y": -2000 }
+                  }
+                ]
+              }
+            }
+            }
+       
+    ]
+}
