@@ -42,7 +42,7 @@
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
-            "Description": "Whether Trace, Jeremy and all associated items should be loaded in.\n\nDisabling this removes them.",
+            "Description": "Whether Trace, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
             "Section": "Gameplay"
         },
         "Items Excluded From Perfection": {
