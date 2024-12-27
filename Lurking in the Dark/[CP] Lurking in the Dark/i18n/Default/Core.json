@@ -405,6 +405,220 @@
 
 //Locations
 "Core.SenS.PotBenchRemark.true": "Rain in the winter... that sure is odd, huh?$6#$b#Something tells me you played a role in this, no?$12",
-"Core.SenS.PotBenchRemark.false": "Hehehe... Usually there's a pot here, but it seems it's missing today!$h#$b#I'm gonna sit my tush here and no one is going to stop me!$12"
+"Core.SenS.PotBenchRemark.false": "Hehehe... Usually there's a pot here, but it seems it's missing today!$h#$b#I'm gonna sit my tush here and no one is going to stop me!$12",
 
+//-----TRACE------/
+"Core.TraceV.Dialogue.1": "How's the farm life, farmer?#$b#I imagine you must get a lot of grass stains on your clothes.$h#$e#Dunno how you do it, that would drive me mad.$6",
+"Core.TraceV.Dialogue.2": "Hey farmer, have you seen those wiggly things on the ground?$h#$b#I pushed the dirt around and found a chicken statue. Weird stuff, huh?$6",
+"Core.TraceV.Dialogue.3": "Hey hey hey, good morning farmer!$l#$b#...$h#$b#It is morning, right?$h",
+"Core.TraceV.Dialogue.4": "Uhg, shoes suck. Sandals are where it's at.$9#$b#Slip 'em on and off, no tying, your toes can breathe...$l#$e#Only downside is the ease of toe stubbing, I guess.$6",
+"Core.TraceV.Dialogue.5": "Ey farmer, are you a cat person or a dog person?$h#$b#...#$b#That's awesome! I'm a snail and cat person myself.$l#$e#Though I do also like birds...$6#$b#Hmmm. Maybe I'm too indecisive for my own good.$6",
+"Core.TraceV.Dialogue.6": "There is so much wrong with durians.$a#$b#The spikes, the smell, the color...#$b#I sure am glad they ain't native to these parts.$11",
+"Core.TraceV.Dialogue.7": "Did you know I once considered shaving my head, farmer?$u#$b#...#$b#Well there's no chance you'd know that, 'cause I would never EVER shave off my luxurious mane.$l",
+"Core.TraceV.Dialogue.8": "There's something to be said about giant crops.#$b#They're massive.$h#$e#I hope that was as deeply thought provoking for you as it was for me, farmer.",
+"Core.TraceV.Dialogue.9": "If you're on good terms with your family, remember to keep in touch with 'em.$l#$b#You work yourself to the bone, ya know. I imagine they'd probably worry a lot.$6",
+"Core.TraceV.Dialogue.10": "Man, I'm itching to cook up something fancy tonight.$11#$b#Maybe a salmon dinner or eggplant parm with spaghetti?$l",
+"Core.TraceV.Dialogue.11": "What do you think of that Pierre guy? Something about him kinda rubs me the wrong way.$a#$b#Maybe it's just me?$6",
+"Core.TraceV.Dialogue.12": "Hey farmer, I found this weird thing.$u#$b#I dunno what it is, but it's freaking me out.$6[103]#$e#Nope, sorry bud. I don't want that back.$a",
+"Core.TraceV.Dialogue.13": "Yo, did you hear about the pic Sam accidentally sent to Abigail? The whole situation has me rolling.$h#$b#She's never gonna let him live THAT down.$l",
+"Core.TraceV.Dialogue.14": "Gus's food is a little too greasy for my tastes...#$b#Eh, maybe my standards are too high.#$e#I shouldn't complain... At least it's affordable.",
+"Core.TraceV.Dialogue.15": "Feet are disturbing.$a#$b#They're like long hands with fat, crushed thumbs.$6#$e#How do we abolish feet?$a",
+"Core.TraceV.Dialogue.16": "I'm not allowed to drive vehicles anymore.#$b#Not after... the highway egg incident.$6#$b#No, I ain't elaborating.$a",
+"Core.TraceV.Dialogue.17": "Did you hear the news about the %adj %noun in %place?$u#$e#You haven't!? How?$u#$b#Have you been sleeping under a rock? You should really keep up with the news, farmer!$6",
+"Core.TraceV.Dialogue.18": "Never do cartwheels under a full moon.#$b#I'm telling you, it's bad luck.$6#$e#Where'd I get that idea from?$h#$b#Personal experience, trust me.$a",
+"Core.TraceV.Dialogue.19": "I'll need flour, oat milk, bananas...$ll#$e#Oh hey, @. Didn't see you there!$l#$b#Don't mind me, just working on a shopping list. I'm gonna make some banana bread.$11",
+"Core.TraceV.Dialogue.20": "Howzit going, farmer?$h#$b#Any wacky stuff like crop circles or cow abductions happen on your farm lately?$8",
+"Core.TraceV.Dialogue.21": "I needa retune my guitar. It's starting to sound a bit funky.$6#$e#I wonder if that Sam kid would be down to play together sometime?$l",
+"Core.TraceV.Dialogue.22": "Hmm... What color to paint my nails today...#$b#Black, red, black and red swirled, black with glitter, red with glitter...$11#$b#Man, farmer. There are way too many complicated choices to make in life.$l",
+"Core.TraceV.Dialogue.23": "Sometimes I have weird dreams 'bout walking down long corridors with doors I gotta open.$6#$b#No rooms or anything. Dimly lit, white walls, floral carpeting.$s#$b#I wonder if that means anything?$6",
+"Core.TraceV.Dialogue.24": "Alright hear me out, farmer.$8#$b#What if we walked with our heads and saw the world with our torsos?$9#$b#What's that look for? This is an EXTREMELY important question.$8",
+"Core.TraceV.Dialogue.25": "It's been a minute since I last wrote up a new song.#$b#Maybe something about the %adj %noun?$8#$b#Yeah, that'll probably make a smash hit.$11",
+"Core.TraceV.Dialogue.26": "I could chug an ENTIRE liter of soda right now.$h#$b#I'd probably destroy my stomach lining though, so I won't.$6",
+"Core.TraceV.Dialogue.27": "My fashion sense may be a little weird, but I love it. I don't care what anyone thinks.$h#$b#When it comes to what makes me happy, the only person who's opinion matters is my own.$l",
+"Core.TraceV.Dialogue.28": "If you ever hear rustling in bins at night, it definitely ain't my doing.$h#$b#It's probably just some raccoon or a trash goblin.$u#$e#That's the whole truth and I'm sticking to it.$h",
+"Core.TraceV.Dialogue.29": "Have you noticed the lack of toilets in this town? It's... really weird.$a#$b#Please tell me you have a toilet.$u#$e#Wait... I don't even have a toilet!$u",
+"Core.TraceV.Dialogue.30": "Sometimes I get lost trying to find my way back to the Scarp. Last time I ended up in the mountains.#$b#When I saw some weird goats, I figured it was time to call Rosa.$6",
+"Core.TraceV.Dialogue.31": "Is it East 'Scarp' or East 'Scarpe'? I've seen conflicting answers.$6#$b#Eh, I'll go pester Rosa about it later.$l",
+"Core.TraceV.Dialogue.32": "%revealtasteTrace206 Ya know, I could go for a big cheese pizza right about now.$l#$b#Between you and me, it's one of my guilty pleasures.$11#$e#I have a lot of those, actually.$9",
+"Core.TraceV.Dialogue.33": "I had a dream last night about a dude with seven toes.$u#$b#I think I needa stop drinking soda right before bed.$6",
+"Core.TraceV.Dialogue.34": "If there's one critter I want to see up close with my own two eyes, it's a hippo.$h#$b#I don't really know why, I just do.#$b#Everyone at the saloon said approaching a hippo is probably a bad idea, though.$6",
+"Core.TraceV.Dialogue.35": "You know what you know when you know what you know, you know?$h#$b#What? You're telling me you don't know?$9",
+"Core.TraceV.Dialogue.36": "Jeremy's a good snail. Don't underestimate them, they can do calculus!$h#$b#I can't even do calculus...$6#$b#Mathematically outshined by a snail, how did this happen?$6",
+"Core.TraceV.Dialogue.37": "Jeremy likes their room at a specific temperature and humidity level.#$b#Their species is pretty hardy, but their growth will stunt if not given the proper environment.$6#$b#That's why the ones you find around the valley are fairly small.$6",
+"Core.TraceV.Dialogue.38": "Last night I caught Jeremy red-handed with the fridge open.$h#$b#I guess the scent of fresh baked blackberry cobbler was too irresistible, heh heh heh.$l",
+"Core.TraceV.Dialogue.39": "Do you have any hobbies, @? I have way too many. Baking, painting, hiking, guitaring...$h#$b#It's hard to make time for them all in one day!$l#$b#Hey, guitaring is definitely a word. I'll fight you on this.$a",
+"Core.TraceV.Dialogue.40": "Shhh... Don't speak, @. I'm trying really hard to remember something.$6#$b#%You smell something burning-#$b#Hey, don't even make the \"Is that what I smell?\" joke.$a",
+"Core.TraceV.Dialogue.41": "I love orange juice. Especially with pulp.$h#$b#If you're a pulp hater, you have to leave my life immediately.$a#$b#Sorry, not sorry.$l",
+"Core.TraceV.Dialogue.42": "Sometimes you get horribly lost in the wilderness and that's okay.#$b#Just make sure you find your way back to civilization and don't die!$h#$e#Yeah, I know. Easier said than done. Can confirm from experience.$6",
+"Core.TraceV.Dialogue.43": "Eloise is too smart for a kid her age. I suspect there's some cover-up going on and she's actually a bird alien living amongst humanity.$6#$b#At least the bird aliens come in peace.#$e#What? Don't give me the \"what are you even going on about\" face.$a",
+"Core.TraceV.Dialogue.44": "Why do we call it putting gas in a car? It ain't gas, it's oil.$6#$b#Though we do put oil in cars, it' just a different kinda oil...$6#$b#Ya know what? This is way too confusing for me.$h#$e#It ain't like I'm allowed to drive anyway, so it don't really matter!$h",
+"Core.TraceV.Dialogue.45": "Did you know I once made a cookbook? It's called \"Baking with Blackberries and Literally Nothing Else\".$h#$b#I took the photos for it and wrote the lists while a buddy of mine did the paragraphs.$11#$b#He insisted I get all the credit for it, but man, his name should have been on the author line too...$6",
+"Core.TraceV.Dialogue.46": "Sometimes, the couch eats your TV remote.$6#$b#There's nothing you can do except sink into the couch after it and pray you don't get eaten by the couch goblins.$a$s#$e#What, you don't know about the couch goblins?$9#$b#Talk about living under a rock, buddy.$8",
+"Core.TraceV.Dialogue.47": "Uhg, you ever have days where your mind races with every single cruddy thing you've done in your life?$s#$b#They're the worst.$s#$e#Oh uh, sorry to dump that on you. I'm sure I'll sleep it off overnight.$s",
+"Core.TraceV.Dialogue.48": "%Trace would nervously fidget with their hands.#$e#Huh? Oh, I'm alright. I'm having one of those days is all.$s#$b#Thanks for checking on me, @. I appreciate it.$11",
+"Core.TraceV.Dialogue.49": "The sheer number of weird ways in which I've gotten lost in my life is kinda frustrating.$a#$b#Sometimes I feel like I can't make it anywhere without tripping up.$s#$e#I try to look at it this way - it at least makes for a ton of funny stories.$l",
+"Core.TraceV.Dialogue.50": "Do you believe in magic, @? Just between you and me, I think it exists.$h#$b#I feel like I've always had a cloud of bad luck hanging over my head.$s#$b#That fortune teller show has never been wrong for me.$6",
+"Core.TraceV.Dialogue.51": "Beware the bear, @.$u#$b#They're out there and they want maple syrup.$a#$e#Keep an eye on your trashcan.$a#$b#They'll do anything to get their grubby little paws on the stuff.$a#$e#No, this ain't a cover-up for anything.$h",
+"Core.TraceV.Dialogue.52": "Tomatoes are vegetables! No one can convince me otherwise.$a#$b#They may be classified as fruits scientifically, but in the culinary world, they're used like veggies!$a#$e#Yeah, I have this debate with random townsfolk on a weekly basis.$6",
+"Core.TraceV.Dialogue.53": "If you ever get lost, remember this.#$b#No matter how obscured the path is, there's always a way back. Never give up.$h#$e#What's that look for?$8[141 151 707]",
+"Core.TraceV.Dialogue.54": "I have a tendency to paint the same thing over and over again. A moon overlooking a grassy field.$h#$b#People ask me why I don't branch out, but the reality is, I just find the subject and color scheme comforting.$l#$b#Plus, when I try to paint other things, folks tend to laugh and ask if it's a joke.$s",
+"Core.TraceV.Dialogue.55": "During my Ferngill vagebond days, I had a fellow wandering buddy I bumped into pretty often. He was the biggest geek you'd ever meet.$10#$b#We'd team up for wandering adventures and chatter from sun down till sun up.$h#$b#One day we parted ways for the last time and i never saw him again. I wonder where he is now...?$s",
+"Core.TraceV.Dialogue.56": "Before moved the valley, I lived a pretty nomadic life style.$h#$b#I wandered from place to place with my guitar, putting on little shows on street corners and collecting tips.$11#$b#I meandered wherever the wind took me. Sometimes I miss those days, but also, I like my bed.$l",
+"Core.TraceV.Dialogue.57": "Ya know I have a lot of books on my shelves, but I have a hard time reading them.$6#$b#The words get all jumbled up and it makes my head hurt. Yet I keep throwing myself at the books...$s#$b#Sigh I had a friend that used to read stuff to me. It was comforting. Wonder what he's up to these days?$s",
+
+"Core.TraceV.Season.spring.1": "Spring spring, spring is the season. Spring is the word in my brain.$h#$b#Spring is springing around my mind. Boing boing.$l",
+"Core.TraceV.Season.spring.2": "In my opinion, spring's the season that sucks the least.#$b#I used to travel around a lot, lived off the land and the like.$h#$b#It was the one time of year that I didn't have to worry about extreme temperatures or lack of food.$l#$b#Fall ain't bad either, but I was always like \"Oh Yoba, Winter's just around the corner.\"$6",
+"Core.TraceV.Season.spring.3": "Hey... Hey @.$h#$b#Why couldn't the flower ride a bike?$9#$b#...It lost its petals.$8",
+"Core.TraceV.Season.spring.4": "@, I have something truly important to ask.$a#$b#What's spring's favorite type of pickle?$9#$b#...Daffo-dills.$8",
+"Core.TraceV.Season.spring.5": "Hmm, might go hunting around for some spring onions later.$6#$b#Once you get rid of all the bugs, they make a great accent to any dish.$11",
+
+"Core.TraceV.Season.summer.1": "Hey farmer, remember to stay hydrated and put on sunscreen.$l#$b#This heat's brutal, too much work could put a person in the hospital.$6",
+"Core.TraceV.Season.summer.2": "Dang is it broiling out...$6#$b#Make sure to get yourself a big bottle of water if you're gonna be toiling around in the dirt, farmer.$h",
+"Core.TraceV.Season.summer.3": "Dang I sure am hot, ain't I?$9#$b#Ya know.$9#$b#'Cause it's summer.$8#$e#And you know what that means? It's time to go surfin'.$h#$e#I'll have you know that I've never surfed before in my life.$h",
+"Core.TraceV.Season.summer.4": "If it randomly started snowing in the middle of summer, how would react?#$b#I'd probably freak out, then realize I was dreaming. Again.$h",
+"Core.TraceV.Season.summer.5": "Hey... @, Hey. What's summer's favorite day of the week?$9#$b#SUNday!$8#$b#Man, I'm a genius.$9",
+
+"Core.TraceV.Season.fall.1": "Blackberry season, blackberry season, blackberry season.$h#$b#Farmer, it's BLACKBERRY SEASON!!$l",
+"Core.TraceV.Season.fall.2": "Ya know what fall means, right?#$b#Blackberries!$h#$e#Blackberry cobbler's a comfort food for me.$l#$b#When I had a cruddy day as a kiddo, my ma would always bake one up.$11#$e#The smell would drift through the house and wash my worries away.$l#$b#You have any smell that do that for ya?$h",
+"Core.TraceV.Season.fall.3": "'Tis the season for blackberry baked goods and, by Yoba, I am HERE for it.$l#$b#Blackberries are my jam.$9$u#$e#...Haha get it? Jam?$8#$b#Because you can turn berries into...$9#$b#Okay, I'm just over-explaining it now.$6",
+"Core.TraceV.Season.fall.4": "Some days, you just gotta jump into a pile of crinkly leaves.$h#$b#Be careful of the bugs, though. I wasn't.$6",
+"Core.TraceV.Season.fall.5": "Crisp air... pumpkin spice... blackberries... pretty colors.$l#$b#I'm floating away into the great heavens beyond, farmer!$11#$b#This time of the year is too amazing and powerful for us mere mortals to ever possibly comprehend.$11",
+
+"Core.TraceV.Season.winter.1": "I heard there might be a blizzard in the forecast.$h#$b#Please, say it ain't snow.$9#$e#I know, I know. You're probably like icy what you did there.$8#$e#The jokes ain't that bad, don't be so cold-hearted.$8$u#$b#I'll take my leave now.$9",
+"Core.TraceV.Season.winter.2": "It sure is nippy out here, huh? Keep yourself bundled up real good, farmer.$h#$e#Doesn't it feel like all this snow magically showed up overnight when fall ended?$6",
+"Core.TraceV.Season.winter.3": "Eh? Why am I wearing flip-flops in the winter?$6#$b#Pfff.$a#$b#Pshshs.$a#$b#Pfpfpfft.$a#$b#Why aren't YOU wearing flip-flops in the winter?$a",
+"Core.TraceV.Season.winter.4": "I have a hard time keeping my chin up during the winter.$6#$b#Somethin' about the bare trees and dull colors gets me down.$s#$e#But hey, at least it won't last too long.#$b#Spring will be here before I know it.$11",
+"Core.TraceV.Season.winter.5": "You've heard of a snowman... but have you heard of a snowsam?$9#$b#The only difference is that you give it giant icicle spikes for hair.$8#$e#Don't let him know I said that, I'll probably never hear the end of it.$h",
+
+    //----Locations----//
+
+//Home
+"Core.TraceV.Locations.Home.Bed": "%Trace appears to be be napping.#$b#%Waking them up would be quite the feat, so don't bother trying.",
+"Core.TraceV.Locations.Home.JamOut.Hourglass": "I'm falling through the hourglass.~$h#$b#And I don't think I'll ever make it back.~$8#$b#So I throw stones at walls I'll never climb, victim to the sands of time.~$h#$b#Falling through the hourglass, the hourglass.~$8",
+
+//Inn
+"Core.TraceV.Locations.Inn.Sunflower": "%Trace is observing the sunflower.#$b#...$s",
+"Core.TraceV.Locations.Inn.JamOut.Hourglass": "Time is strange, it's ever flowing, never going back.~$h#$b#It moves but only in one way.~$8#$b#Turn the page, look back at what you wrote.~$h#$b#Do you still feel the same~?$8",
+
+//Forest
+"Core.TraceV.Locations.Forest.BerryDialogue.1": "%Trace hisses loudly at you.#$b#MY BLACKBERRIES!$a",
+"Core.TraceV.Locations.Forest.BerryDialogue.2": "Quickberry! Quackberry!$h#$b#Pick me a blackberry!$l",
+"Core.TraceV.Locations.Forest.BerryDialogue.3": "Blackberries? Man, they're berry delicious if you ask me.$l",
+"Core.TraceV.Locations.Forest.BerryDialogue.4": "Once upon a time, there was a blackberry.$h#$b#I ate it.$9#$b#The end.$8",
+"Core.TraceV.Locations.Forest.BerryDialogue.5": "If you know what's good for you, you'll step away from my berries.$a",
+"Core.TraceV.Locations.Forest.BerryDialogue.6": "If you don't find a berry bush, try, try again!$h",
+"Core.TraceV.Locations.Forest.BerryDialogue.7": "Wanna race to see who can find the most blackberries?$h#$b#I'll win for sure!$l",
+"Core.TraceV.Locations.Forest.BerryDialogue.8": "Oh my Yoba! This berry is rotten!$u",
+"Core.TraceV.Locations.Forest.BerryDialogue.9": "Be sure to leave some berries for the wild animals, @.#$b#They needa eat too!$11",
+"Core.TraceV.Locations.Forest.BerryDialogue.10": "I'm lost in a sea of berries. Don't try to save me.$10",
+"Core.TraceV.Locations.Forest.BerryDialogue.11": "I am the berry king! The king of berries!$9#$b#I rule this land, bahahahha!$10",
+"Core.TraceV.Locations.Forest.BerryDialogue.12": "Here's a berry, there's a berry, everywhere a berry berry~!$h",
+"Core.TraceV.Locations.Forest.BerryDialogue.13": "%Trace is deeply invested in berry harvesting. They don't notice you.#$b#%How unfortunate.",
+"Core.TraceV.Locations.Forest.BerryDialogue.14": "If you ever bury a berry, don't.$6#$b#Berries are for eating, not burying!$a",
+"Core.TraceV.Locations.Forest.BerryDialogue.15": "How many berry thoughts can one person have in a day, I wonder?$6#$b#Never enough, I'd say.$8",
+"Core.TraceV.Locations.Forest.BerryDialogue.16": "I know you're supposed to wash your berries before you eat them, but I just can't help myself.$6",
+"Core.TraceV.Locations.Forest.BerryDialogue.17": "I am merry for berries, how about you @?$h",
+"Core.TraceV.Locations.Forest.BerryDialogue.18": "Berries.#$b#Berries.$7#$b#%Trace is having berry thoughts.",
+"Core.TraceV.Locations.Forest.BerryDialogue.19": "I've collected SO many blackberries!$h#$b#SO MANY! IT'S AMAZING!$l",
+"Core.TraceV.Locations.Forest.BerryDialogue.20": "You know what they say, you are what you eat.$l#$b#After I eat all these blackberries, I'm gonna become a berry.$h",
+
+//East Scarp
+"Core.TraceV.Locations.EastScarp.JamOut.Skeleton": "Skin and bones, vulnerable.~$h#$b#Crack my ribs and make me whole.~$8#$b#Come and breathe the air into my lungs.~$h#$b#I just wanna be your skeleton.~$l",
+
+//Lost In Mountains
+"Core.TraceV.Locations.LostInMountains.Pillar": "Uhg... I seem to have gone and gotten myself lost again.$s#$b#I just wanted to find some blackberries, man.$a#$b#You know how to get the heck outta here, @?$6",
+"Core.TraceV.Locations.LostInMountains.CliffTop": "Woooooo! The view is gorgeous from here.$h#$b#And just listen to that echo!$l#$b#WHOOOOOO!$8#$b#...This is not helping me find my way outta here.$6",
+"Core.TraceV.Locations.LostInMountains.GoatPond": "There sure are a lot of goats around here.#$b#Maybe I should just give up on trying to find my way outta here and live amongst the void beasts.$11",
+"Core.TraceV.Locations.LostInMountains.GoatOutlook": "I look out upon the goats! I AM the goat king!$8#$b#Hahahhaa I'm so freaking lost.$h",
+"Core.TraceV.Locations.LostInMountains.LoopAround": "I think I just went in a huge circle...$a#$b#There wasn't a rock when I entered the mountains, right...?$6",
+"Core.TraceV.Locations.LostInMountains.HectorTower.True": "I'm gonna stand here and play loud music until SOMEBODY comes out and helps me get outta these mountains.$8#$b#My plan is genius, foolproof even.$9",
+"Core.TraceV.Locations.LostInMountains.HectorTower.False": "I'm so loooost, losty losty loooost~$l#$b#Like my song? It's about how lost I am.$a",
+"Core.TraceV.Locations.LostInMountains.EvynSign": "Jokes on this sign, I can't read!$h#$b#Well, I can... just not well. Do letters get all jumbled up for you too, @?$s#$b#Wait you mean the sign is already basically illegible?$6#$b#Hm... This conversation isn't leading me out of the mountains.$a#$b#Sorry, @. I need to focus.$6",
+"Core.TraceV.Locations.LostInMountains.Skull": "I don't remember dead things when I came into the mountain, nor a threatening cave opening.$u#$b#I should proooobably turn back.$6",
+"Core.TraceV.Locations.LostInMountains.Freedom": "BAHAHAHA!$h#$b#THE EXIT! I'M FREE! I'M FREEEEEE!$8#$b#Ah shoot, I didn't get nearly as many blackberries as I wanted.$6",
+
+//Beach
+"Core.TraceV.Locations.Beach.JamOut.Skeleton": "Fix my head, stitch my soul.~$h#$b#Find out where it all went wrong.~$8#$b#Come and breathe the air into my lungs.~$h#$b#I just wanna be your skeleton.~$l",
+
+//PrideFest
+"Core.TraceV.Locations.Town.PrideFest": "Open the building already, I need my Enby Eclair RIGHT NOW!$a#$b#Ya hear me?!$a",
+"Core.TraceV.Locations.CommunityCenter.PrideFest.1": "Events like this really make me feel right at home in the valley.$l#$b#Before moving here I was mistaken for a girl constantly. It sucked big time.$s#$b#Most folks out here take the initiative to actually ask and get to know you. It's really nice, ya know?$l",
+"Core.TraceV.Locations.CommunityCenter.PrideFest.2": "Honestly I knew I was queer as all hell from the time I was a kiddo. I grew up with crushes on girls, guys and everybody in-between.$h#$b#Took me a long time to understand I was non-binary, though.$6#$b#When it clicked, it finally made complete sense why being called a girl made me recoil inside.$s#$b#I like to be pretty, but I ain't a lady. I hope that makes sense.$11",
+
+//CTs
+"Core.TraceV.UnlockedFromStartIntroduction": "Heyo, I don't think I've ever seen you around before!$h#$b#Name's Trace - hobbyist guitarist, baker and artist extraordinaire!$l#$b#Things you need to know about me? Hm... I've got a pet snail and zero brain to mouth filter.$h#$b#Thought goes through my head? Out it goes!$11#$b#Anyway, hope to see you around buckaroo!$h",
+"Core.TraceV.YouAttackedJeremy": "Did you hear that massive explosion by my house, @? What the heck was that?!$u#$b#Eve's usually the one blowing stuff up. Maybe she was up to something again?$6",
+
+"Core.TraceV.WelcomeToPride": "Hey there, @! I'm having such a hard time walking straight today.$8#$b#As if I was ever actually trying.$9",
+"Core.TraceV.PrideSeasonStart": "Hey hey hey, it's the start of pride season!$h#$b#Just so you know, if you ever need a safe space, head down to the Scarp.$l#$b#Most of us are all different flavors of not particularly straight over there.$9",
+"Core.TraceV.PrideSeasonGift": "I got a pretty gay cookie in the mail this morning. Ate that thing up in a heartbeat.$h#$b#It was delicious.$9#$b#Jeremy was pretty mad that I didn't share, poor guy.$6#$b#In my defense they wouldn't have appreciated the gay flavor!$6",
+"Core.TraceV.HatMouseTheAlly": " It's always nice to have allies in the valley. Harvey does yearly check-ups on my surgery scars to make sure they don't get infected or anything.$h#$b#I was a pretty big idiot when I originally got the surgery, didn't take it easy and it wasn't pretty.$6#$b#If you ever get surgery for anything, don't try to climb a mountain a few days later, got it?$a",
+
+//CFD
+"Core.TraceV.Slingshot.1": "Hey, what the hell?! What did I do to deserve that?$a#$b#Stop it, leave me alone!$a",
+"Core.TraceV.Slingshot.2": "Stop that! This is really shitty of you, @.$a#$b#I didn't do nothing to deserve this!$a#$b#...Probably...$s",
+"Core.TraceV.Dumpster": "Find anything good in there?#$b#Last time I checked a can I found an army of ants having a dance party.$h#$b#I lowered the lid, of course. I don't wanna be a tiny ant rave party crasher.$l",
+"Core.TraceV.BouquetRejection.1": "...Huh?$u#$b#Oh uh, wow. I'm flattered.$s#$b#Sorry, @- To be honest with you I'm still recovering from a pretty bad heartbreak.$s#$b#I ain't ready for another relationship yet.$s",
+"Core.TraceV.BouquetRejection.2": "Oh uh... Wow.$u#$b#I feel awful turning you down, but a relationship isn't something I'm ready for at the moment.$s#$b#Maybe someday, but not right now.$11",
+
+//----JEREMY----//
+"Core.JeremyTSnail.PreForestMagic.1": "%Jeremy eyes you with curiosity. There is more to this snail than meets the eye...",
+"Core.JeremyTSnail.PreForestMagic.2": "%Jeremy stares at you intensely, as if they sense something peculiar about you...#$b#%What a weird snail.",
+
+"Core.JeremyTSnail.DailyDialogue.1": "Hello. Are you out on an \"adventure\"?$2#$b#You are quite like my brethren. They are fascinated by this world and wish to explore it, one small inch at a time.#$b#If you locate any of my kin, bring them to me. They have little regard for the balance of the ecosystem.$2",
+"Core.JeremyTSnail.DailyDialogue.2": "%revealtasteJeremyTSnail613 Trace brought me apples for my last meal. I do enjoy myself a good apple...$1#$b#Do humans too enjoy a good apple?$2",
+"Core.JeremyTSnail.DailyDialogue.3": "I feel little need to travel far from home. I have all the necessities for a comfortable existence.#$b#If only my kin would come to understand this.$2",
+"Core.JeremyTSnail.DailyDialogue.4": "Many years ago, Trace wandered into the caldera at the summit of Ginger Island's volcano.#$b#As young spry snails seeking adventure, several of my kin and I hitched a ride on their clothing.$1#$b#I do not believe we made the correct choice, but alas, I cannot imagine a life without Trace.$2#$e#...To this day, I do wonder how Trace reached the summit of Mount Kohldur.$2",
+"Core.JeremyTSnail.DailyDialogue.5": "Many creatures that live within the valley are rather fuzzy.#$b#I find it repulsive.$2#$e#That does indeed include the hair on your head.$3#$b#Utterly repulsive.$2",
+"Core.JeremyTSnail.DailyDialogue.6": "I know things about this world best left untold.#$b#Please, do not ask questions. I do not wish to break you.$2",
+"Core.JeremyTSnail.DailyDialogue.7": "I have been made aware that when I directly face a human, I can appear like a long-haired faceless woman in a red dress.$2#$b#Pareidolia is fickle for your kind, is it not? I cannot judge, however.#$b#Everywhere I turn, I see snails.$2#$e#Or, perhaps, I am just seeing snails...$3",
+"Core.JeremyTSnail.DailyDialogue.8": "It is said that long ago my kind were known as the \"Solar Lava Snails\".#$b#Our shells gleamed under the Ginger Island sun like gold and our membranes were as bright as the beach sand...$1#$b#However one day, a deep saddness consumed the our volcanic home. Ever so slowly, we evolved into the void snails you see today.$2#$e#Hm? Do I wish I was a solar snail?#$b#Haha, certainly not. The void is part of who I am.$1#$b#Besides, those fools were also said to be incredibly vain.$2",
+"Core.JeremyTSnail.DailyDialogue.9": "Apples... apples...$2#$b#Hm. Apples...#$b#It seems I have a one track mind today.$2#$e#Do you happen to have any apples, human?$1",
+"Core.JeremyTSnail.DailyDialogue.10": "As a mullosk, you might think I would not enjoy the couch. However, you would be entirely incorrect.$2#$b#The couch belongs to me and I will not share it.$3#$b#Unless you are Trace and intend on giving me scratches behind the eye stalks...$1",
+"Core.JeremyTSnail.DailyDialogue.11": "Trace and I have been companions for a very long time.#$b#They too are able to understand my ancient snail tongue, though we do not typically communicate through words.$1#$b#My glare for them to move over on the couch is communiation enough.$2",
+"Core.JeremyTSnail.DailyDialogue.12": "Golden walnuts... they are a delicacy back at in my homeland.#$b#We were frequently at war with those dastardly parrots. They wanted our walnuts, but we would not give in.$2#$b#Alas, it is a conflict that we lost time and time again.$3#$e#It may come as a shock to you that us snails are not as aerodynamic as birds.$2",
+"Core.JeremyTSnail.DailyDialogue.13": "I am apalled by the concept of \"escargot\".$2#$b#Humans eating snails? Preposterous.$3#$b#Not even our smaller cousins deserve such a fate.$2",
+"Core.JeremyTSnail.DailyDialogue.14": "Many species of snail lack the capability to hear, but the Void Lava Snail is different.#$b#Similar to frogs, we have tympanums behind our eye stalks. These membranes allow us to process sound waves.#$b#This is fortunate, as I do enjoy watching the television.$1",
+"Core.JeremyTSnail.DailyDialogue.15": "I recently became aware of the human concept of \"taxes\" through the television.#$b#I do not believe Trace has ever done their taxes...$2#$e#Ensure that you are an upstanding citizen and complete your taxes, human.",
+"Core.JeremyTSnail.DailyDialogue.16": "The woman who lives to the north of us houses slimes in her basement.#$b#Those rotten piles of goo believe they can produce more slime than I?$3#$b#I simply won't stand for it. I will increase slime production ten fold.$2",
+"Core.JeremyTSnail.DailyDialogue.17": "There are days in which I must resist the urge to go into the various gardens around town and eat their decaying foliage.$2#$b#It is certainly delicious, but I must leave such delicacies for the native wildlife of this valley.",
+"Core.JeremyTSnail.DailyDialogue.18": "The older a member of my species is, the more tolerant we become to salt exposure.#$b#It is still not a particularly pleasant experience, however, so you will not see my kind sailing the high seas...$2",
+"Core.JeremyTSnail.DailyDialogue.19": "Trace's friend, Eve... Her dog is rather strange, no?$2#$b#Hm. Perhaps it is all in my ganglia.",
+"Core.JeremyTSnail.DailyDialogue.20": "I'm sure you have heard of the world's foundational magical elements: Air, water, fire and earth...#$b#And perhaps some of the others, such as solar and void...$1#$b#But you humans always leave out the most important element.$2#$b#Snail.$3#$e#It's mildly infuriating, but I understand.$2#$b#Humans simply cannot understand the sheer magnitude that is snail magic.",
+
+"Core.JeremyTSnail.Rainy.1": "It appears that it is raining today. When it rains, it pours.#$b#That is a peculiar phrase you humans use. Does it not state the obvious?$2",
+"Core.JeremyTSnail.Rainy.2": "I have a preference for rainy days such as this.#$b#It is the perfect opportunity to revitalize my mucous membranes.$1",
+"Core.JeremyTSnail.Rainy.3": "It seems the increased humidity is causing me to produce excess levels of mucus.$2#$b#Worry not, I am more than happy to share with you, human.$1 [557]",
+"Core.JeremyTSnail.Rainy.4": "Sitting in a rain puddle could be considered a \"spa day\", for my kind.#$b#Why do humans place cucumbers on their eyes for relaxation?$2#$b#That is quite the waste of a delectable treat...$2",
+"Core.JeremyTSnail.Rainy.5": "I'll enlighten you with arcane knowledge, human. It is snails that control the rain.#$b#Ha. Do not believe everything an old snail tells you.$1#$b#My elders bestowed upon me the same knowledge, but one day I learned the truth.$2#$b#They merely harnessed the power of the rain totem.#$e#A scandal among the snails, it was!$2#$b#Our beliefs, a lie.#$b#Expectations destroyed by reality...$3#$e#My apologies, human. I require a moment.$2",
+
+"Core.JeremyTSnail.Introduction": "Hmm... I sense something odd about you. Something... foresty.#$b#Are you able to hear me, human?$2#$b#...#$b#Based on your expression, I will assume that you can.$1#$b#Hello, I am Jeremy T. Snail, the resident mullosk of Trace's abode.$2#$b#I feel we shall get along quite well.$1",
+"Core.JeremyTSnail.JeremyBetrayed": "...$2",
+"Core.JeremyTSnail.YouAttackedJeremy.True": "Are you going to attempt your tomfoolery again with me, @?$2#$b#I am not typically a violent mullosk, but I do not take kindly to being attacked.",
+"Core.JeremyTSnail.YouAttackedJeremy.False": "%Jeremy casts you a glare. They have not forgotten the slingshot incident.",
+
+"Core.JeremyTSnail.Spring.Day.1": "Spring has arrived, it seems.#$b#Keep your eyes peeled for any troublesome snails. They will be back at their antics soon.$2",
+"Core.JeremyTSnail.Spring.Day.12": "Tomorrow you will be partaking in a celebration about... eggs?$2#$b#Humans are certainly unique creatures, aren't they.", // Day before the Egg Festival
+"Core.JeremyTSnail.Spring.Day.23": "Tomorrow brings the \"flower dance\", no?#$b#I musn't eat the flowers... But they are so colorful, so... delicious looking.$2#$b#No! I am a disciplined snail. I will refrain from such urges.$3", // Day before the Flower Dance
+"Core.JeremyTSnail.Spring.Day.28": "The summer heat is upon the horizon.#$b#I am looking forward to it, summer is a lovely season. It reminds me of my homeland.$1",
+
+"Core.JeremyTSnail.Summer.Day.1": "Summer has arrived.#$b#Will you endlessly bemoan how hot it is, or become one with the summer sun?$2",
+"Core.JeremyTSnail.Summer.Day.10": "Ah yes, tomorrow is the event where you humans throw random foods into a large bowl and call it a \"soup\"?$2#$b#I must admit I am curious about the erratic flavor it must create...#1", // Day before the Luau
+"Core.JeremyTSnail.Summer.Day.27": "The lunaloo come out tomorrow, do they not?#$b#Ah, memories, sweet memories...$2", // Day before Moonlight Jellies
+"Core.JeremyTSnail.Summer.Day.28": "Summer shall be turning to fall tomorrow, bringing about fresh, delicious decay.$1#$b#I will only consume what is in our yard.$2#$b#I will not encroach on the sustenance that the various detritivorous creatures of the valley require.$1", 
+
+"Core.JeremyTSnail.Fall.Day.1": "Fall has arrived in the valley, it seems.#$b#Are you prepared to harvest apples for me? There will be consequences if I do not recieve my apples this season.$2#$b#I jest, I jest.$1", 
+"Core.JeremyTSnail.Fall.Day.15": "Trace is quite excited about that \"fair\" that will be taking place tomorrow.#$b#I am feeling snail happiness for them.$1", // Day before the Stardew Fair
+"Core.JeremyTSnail.Fall.Day.26": "Tomorrow is the event where you humans make fools of yourselves by dressing up in strange outfits, no?#$b#Hopefully Trace does not get lost in a strange place this year...$2", // Day before Spirit's Eve
+"Core.JeremyTSnail.Fall.Day.28": "Tomorrow brings winter... Such a season is the antithesis to my homeland.$2#$b#You will not find many of my kind out and about. They shall all be hiding in the watery depths.",
+
+"Core.JeremyTSnail.Winter.Day.1": "Winter has come... If you wish to find any of my brethren, you shall only find luck in trapping them in the waters.#$b#Bring them to me if found, my room is far more pleasant than the cold ponds.$2", 
+"Core.JeremyTSnail.Winter.Day.7": "Are you prepared for that strange fishing event of yours?#$b#I cannot phathom why humans would fill a pond with fish merely to remove everything within hours.$2#$b#Strange beasts you are.$3", // Day before the Ice Festival
+"Core.JeremyTSnail.Winter.Day.24": "Trace has been downcast these last several days. They never do well during the \"Winter Star\" season.#$b#They were hurt quite deeply by someone they held dear. It has stuck with them for years.$2", // Day before Winter Star
+"Core.JeremyTSnail.Winter.Day.28": "Tomorrow my kind shall resurface from the watery depths of the valley.#$b#Sigh.$2#$b#If you see them, bring them to me.",
+
+//CFD
+"Core.JeremyTSnail.Dumpster": "$query HAS_SEEN_EVENT Current 112#Hm. Did you find any of my brethren inside that bin?$2#$b#If so, please bring them to me so I may inform them that such behavior is unsanitary.#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry|%As you lift the trash can lid, you feel Jeremy's eye stalks burn into your soul.#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry",
+"Core.JeremyTSnail.Slingshot.1": "$query PLAYER_HAS_MAIL Current DitR_M_AttackedJeremyToday#%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%Jeremy gathers the power of all their snail friends in the valley and blasts you with a powerful wave of snail magic.#$b#%You are obliterated by the snagic.#$action spacechase0.SpaceCore_PlaySound explosion#$action AddConversationTopic DitR_CT_YouAttackedJeremy 999#$action RemoveMail Current DitR_M_AttackedJeremyToday received all#$action spacechase0.SpaceCore_DamageCurrentFarmer 9999|%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%They cast you a warning glare to not try that again.#$action AddMail Current DitR_M_AttackedJeremyToday received#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry",
+"Core.JeremyTSnail.Slingshot.2": "$query PLAYER_HAS_MAIL Current DitR_M_AttackedJeremyToday#%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%Jeremy harnesses the magic of their snail friends and hovers into the air, hurtling towards you at light speeds.#$b#%You are obliterated by the snagic.#$action spacechase0.SpaceCore_PlaySound explosion#$action AddConversationTopic DitR_CT_YouAttackedJeremy 999#$action RemoveMail Current DitR_M_AttackedJeremyToday received all#$action spacechase0.SpaceCore_DamageCurrentFarmer 9999|%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%They cast you a warning glare to not try that again.#$action AddMail Current DitR_M_AttackedJeremyToday received#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry"
 }

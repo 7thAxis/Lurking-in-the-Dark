@@ -8,6 +8,12 @@
  ╚═════╝ ╚═╝╚═╝        ╚═╝   ╚══════╝
 */
 
+//--Stardrop Tea. Headcanon it smells/tastes like an NPC's favorite thing.--//
+"Gifts.TraceV.StardropTea": "Woah, why is this stuff like... glowing purple? Is it safe to drink?$6#$b#Eh, whatever. I've drank weirder things. Bottoms up!$8",
+"Gifts.SenS.StardropTea": "Sniff...Sniff...$l#$b#Oh that smells absolutely delightful, @!$7#$b#I'll drink this along with a good book, thank you!$h",
+"Gifts.JeremyTSnail.StardropTea": "...!$2#$b#%Jeremy loses their calm demeanor guzzles down the tea like a wild beast.#$b#%They then promptly return to a normal state of peacefulness.",
+
+//--SEN--//
 "Gifts.SenS.GiftReaction.Love": "Oh! Thank you, @. This is one of my most favorite things ever!",
 "Gifts.SenS.GiftReaction.Like": "Thank you very much, @! I'll make great use of this during my next project.",
 "Gifts.SenS.GiftReaction.Dislike": "Err... thank you very much?",
@@ -76,7 +82,6 @@
 "Gifts.SenS.MangoStickyRice": "Oooh a mango dish! I don't get the chance to try things like this very often.#$b#Thank you so much, @!$h",
 "Gifts.SenS.Sweetener": "Oh...! This is like liquid sugar incarnate!$h#$b#A simply divine taste gifted from nature. Thanks, @!$7",
 "Gifts.SenS.Coffee": "Oh yum, coffee! This will give me tons of energy for my next project.$h#$b#Maybe a little too much, hehe.$8",
-"Gifts.SenS.StardropTea": "Sniff...Sniff...$l#$b#Oh that smells absolutely delightful, @!$7#$b#I'll drink this along with a good book, thank you!$h",
 
 "Gifts.SenS.MonsterCompendium": "Hm, what's this? A book on monsters?$h#$b#Oh! There's Shadowfolk in here.$6#$b#...#$b#Is that {{SenKrobusReference}}?$6",
 "Gifts.SenS.TheAlleywayBuffet": "Huh? This book is supposed to teach me how to find more treasures in the trash?$6#$b#Sign me up right this moment! Give me ALL the garbage!$7",
@@ -237,7 +242,138 @@
 "Gifts.SenS.CombatCodex": "",
 "Gifts.SenS.DivineInsight": "",
 "Gifts.SenS.DairyMastery": "",
-"Gifts.SenS.BlastManual": ""
+"Gifts.SenS.BlastManual": "",
 
 //"Gifts.SenS.": "",
+
+//--TRACE--//
+"Gifts.TraceV.Love": "Oh wow... You really get me! This is fantastic, thanks!$l",
+"Gifts.TraceV.Like": "Hey, thanks! It means a lot that you thought about me.$l",
+"Gifts.TraceV.Neutral": "Oh, thanks! I'm gonna hang onto this.$h",
+"Gifts.TraceV.Dislike": "...Ummm. Thanks, I think?$6",
+"Gifts.TraceV.Hate": "...You should uh, probably take this back. I ain't interested.$s",
+
+//Category
+"Gifts.TraceV.Cat.Gem": "Oh man, this sure is shiny! I'm gonna add it to my shiny rock collection.$h#$b#Non-shiny rocks are banned from the shiny rock collection.$a",
+"Gifts.TraceV.Cat.Milk": "Oh, thanks for the milk, @! Saves me a trip to the store, I was running pretty low.$l",
+"Gifts.TraceV.Cat.Egg": "Oh egg... how I love and hate you so.$s#$b#You're the reason I'm banned from operating vehicles, but I also need you for baking purposes.$6#$b#But don't worry yourself about my internal egg turmoil, @. I appreciate your egg bestowal.$7",
+"Gifts.TraceV.Cat.Fish": "Heeeereeeee fishy fishy fishy.$h#$b#Come to me so I can turn you into a fine dining delicacy.$9",
+"Gifts.TraceV.Cat.Flowers": "...! I LOVE flowers. This was really really sweet of you to give me.$l#$b#I'm gonna press it in one of my books so I never gotta throw it away.$11",
+"Gifts.TraceV.Cat.Trash": "...$s#$b#%Trace turns away, seeming dejected.",
+"Gifts.TraceV.Cat.Meat": "Uhhhh... I appreciate it, really I do, but I'm pescitarian.$6#$b#I don't want this to go to waste, so you should probably give it to someone else.$h",
+
+//Love
+"Gifts.TraceV.Ruby": "Me and this rock? We're basically twins. I can't tell either of us apart. Can you?$h#$b#Shh, don't answer. You'll make Rubert insecure.$6",
+"Gifts.TraceV.StarShards": "Oooo, sparkly! It twinkles like stars. And you know who else is a star?$h#$b#You, @. Keep shining on, buckaroo.$l",
+"Gifts.TraceV.Wine": "Oh sweet, this stuff looks top notch.$l#$b#To be honest I don't drink too often, but I'll be sure to crack it open on a special occasion.$h",
+"Gifts.TraceV.Poppy": "Aww, hello little poppy. What a cutie.$l#$b#A lot of people don't like the poppy around here and I don't really get it.$6#$b#Oh well, I like you little guy.$l",
+"Gifts.TraceV.Blackberry": "IT'S... A... BLACKBERRY! Mine mine mine mine mine!$9#$b#I will have all the berries in the valley. Fear me, for I am the berry overlord!$8",
+"Gifts.TraceV.Snail": "Aww... Lookit the little snail. They're so cuuute.$l#$b#Oh man, I better be careful. Jeremy's gonna get super jealous...$6",
+"Gifts.TraceV.VoidEssence": "...$s#$b#%Trace would silently roll the void essence in their palm, the energetic orb's aura flaring to life in the form of a small erratic flame. As quickly as it came, the flame would fizzle out in a poof of black smoke.#$b#...$a",
+"Gifts.TraceV.VoidSalmon": "Salmon of the darkness, you are my friend. You understand me.$11#$b#I will never, ever eat you.$8#$b#...Probably.$9",
+"Gifts.TraceV.VoidEgg": "Egg of darkness my old friend, I've come to talk with you again...$6#$b#%Trace looks off into the distance, fondly remembering their old car - a red and black MICRO Kooper that perished in the highway egg incident of 20xx.#$b#Never trust an egg, @. Never trust an egg.$a",
+"Gifts.TraceV.VoidMayo": "Serves that egg right. Now lemmie see that so I can spread it on some toast.$h",
+"Gifts.TraceV.FairyRose": "$query PLAYER_STAT Current RosesGiftedtoTrace 5#Heh... You know, no one's given me this many roses since...$s#$b#Eh, you know what? It doesn't matter.$l#$b#Thank you, @. I sincerely mean it.$10|...!$u#$b#O-oh, thank you! Roses are my favorite flower...$l#$b#I uh, may not be very serious often but I am right now. Thank you, sincerely, @.$11#$action IncrementStat RosesGiftedtoTrace 1",
+
+//Like
+"Gifts.TraceV.BoneFlute": "Heh... Bone flute. Heh heh heh.$9#$b#No Trace, be mature. You can do it, I believe in you.$6",
+"Gifts.TraceV.Hardwood": "Hardwood. Snirk. Teeheehehehehe....$9#$b#No Trace, you're better than this! Stop giggling!$6",
+"Gifts.TraceV.EggplantSeeds": "I'm trying. So hard. Not. To. Make. A. Comment.$9#$b#I'm gonna die, @. I'm just gonna die.$6",
+"Gifts.TraceV.Salmon": "Yesss the best fish to make the best dish! Come to papa, fishy fishy.$h#$b#You're getting baked tonight!$8",
+"Gifts.TraceV.JojaCola": "Don't tell anybody I think this, but this stuff is the bomb.$6#$b#I know it's absolutely horrible for you but I can't stay away, I keep coming back for more.$h#$b#Alas, no one can know about my forbidden toxic love with JojaCola. It seems I will be forever trapped in this cycle.$6",
+"Gifts.TraceV.FiddleheadFern": "EEee thank you, @! These ferns make the absolute best garnishes to pretty up even the blandest looking dishes.$h#$b#Hrm... am I pushing unfair beauty standards on my Fiddlehead Rissoto?$6",
+"Gifts.TraceV.Eggplant": "I like eggplants.$h",
+"Gifts.TraceV.Roe": "Fish eggs. That's all there is to say. Thank you, @.$h",
+
+//Dislike
+"Gifts.TraceV.Eel": "Ew... Yuck, naaaasty! Get that slimy wriggler away from me.$u#$b#Eels ain't my jam, sorry.$a",
+
+//Hate
+"Gifts.TraceV.FreakyDoll": "I absolutely implore you to keep that cursed object, thank you.$u",
+"Gifts.TraceV.Anchovy": "Yuck...$a#$b#I mean, uh, thanks. I loooove anchovies. They're the best.$6#$b#Okay Trace, as soon as they turn around find a cat to give it too...$6",
+"Gifts.TraceV.Sardine": "Yuck...$a#$b#I mean, uh, thanks. I loooove sardines. They're the best.$6#$b#Okay Trace, as soon as they turn around find a cat to give it too...$6",
+"Gifts.TraceV.Beer": "Ew... Stinky bread water, you can keep that.$6#$b#Ain't interested, not one bit.$6",
+"Gifts.TraceV.Pomegranate": "Woah now! I appreciate the gesture, but I'm highly allergic to pomegranates!$h#$b#I'd blow up like a balloon with one single bite.$6#$b#You should give it to Elliott, I'm sure he'd appreciate it.$l",
+"Gifts.TraceV.Escargot": "Gasp...! A snail had to DIE for this! How could you?$a#$b#I can't even look at you, @. This is the ultimate betrayal. What would Jeremy think?$a",
+"Gifts.TraceV.MummifiedCritter": "Oh... I'm gonna hurl... Ew ew ew ew...$u#$b#Please go put that thing to rest that before you unleash some kinda curse on us both.$a",
+"Gifts.TraceV.SolarEssence": "...?$u#$b#%With wide-eyed curiosity, Trace would take the solar essence into their cupped palms. On contact, they'd let out a sharp hiss and bounce the orb around in their palms before chucking it back over to the farmer.#$b#O-ow...! Uh. Y-You can keep that, yeah.$a[768]",
+
+//The Great Cooking Nonsense
+"Gifts.TraceV.Caviar": "Woohoo, fish eggs! Don't knock 'em till you try 'em, they're delicious!$h",
+"Gifts.TraceV.AgedRoe": "Woohoo, ANCIENT fish eggs! Don't knock 'em till you try 'em, they're a delicacy!$11",
+"Gifts.TraceV.Pizza": "...$a#$b#%Trace takes the pizza with shifty eyes.#$b#Tell no one of our transaction. If the valley discovered I sold out to greasy fast food, it'd be over for me.$a#$action AddMoney 500",
+"Gifts.TraceV.SalmonDinner": "Salmon dinner! The peak of perfection in pescitarian dining. There is no better meal, it is the undisputed king.$8#$b#In my humble opinion, at least. Which is the correct opinion.$9",
+"Gifts.TraceV.DishOTheSea": "",
+"Gifts.TraceV.BlackberryCobbler": "Did... did you make this cobbler for me, @?$l#$b#You're too kind to my blackberry loving soul, @. Thank you so much.$11",
+"Gifts.TraceV.FiddleheadRisotto": "Fiddlehead Risotto! Okay I simply LOVE this dish.$l#$b#Many folks call it bland, but I say their tastes aren't refined enough to appreciate the flavor.$h",
+"Gifts.TraceV.LobsterBisque": "Ahh lobster bisque, the perfect combination of cream and the sea.$l#$b#This particular bowl is deliscious, thanks for treating me!$11",
+"Gifts.TraceV.ShrimpCocktail": "Okay, @, You're just spoiling me right now! I love me some little shrimpies!$l#$b#*munchmunch*$11#$b#Okay I definitely can't eat all of these, you should have one too.$h[720]",
+"Gifts.TraceV.BakedFish": "Okay, this looks absolutely SCRUMPTIOUS!$h#$b#Did you make this? The herb arangement is superb.$l",
+"Gifts.TraceV.CarpSurprise": "Hrm... It's um, a little greasy.$6#$b#B-But it isn't bad at all! If it's fish, I'll eat it!$l#$b#Why is the carp surprised, anyway? Because it's getting eaten?$6",
+"Gifts.TraceV.FishTaco": "Alright, we love ourselves a good fish taco in this house.$h#$b#Though, I am questioning the addition of red cabbage, quite the odd choice.$6",
+"Gifts.TraceV.CrispyBass": "Oh yoba, the breading on this bass is absolutely divine!$11#$b#Did you make this? You should be proud of yourself.$l",
+"Gifts.TraceV.Sashimi": "Can't go wrong with a good 'ol plate of sashimi.$h#$b#Though it does become tricky to figure out what fish it was to begin with...$6",
+"Gifts.TraceV.MakiRoll": "GIMMIE THOSE MAKI ROLLS!$h#$b#Please and thank you, of course.$l#$b#Sorry, Maki rolls are just awesome.$h",
+"Gifts.TraceV.Bruschetta": "Oh bruschetta, my beloved. Perfectly roasted tomatos on a delicious bread, toasted to perfection with a glaze of oil.$l#$b#Yum yum yum.~$11",
+"Gifts.TraceV.CrabCakes": "I'm not usually a fan of fried food. Not lying, definitely, but crab cakes are an exception to that rule.$h#$b#These are so crispy on the outside and soft on the inside. Absolute perfection.$l",
+"Gifts.TraceV.Coffee": "Oooo, nothing like a good cup of coffee to get you up and running!$h#$b#Or stuck awake all night watching TV and accomplishing nothing productive.$6",
+"Gifts.TraceV.SeafoamPudding": "Oh yoba it's so salty... Like consuming a tiny ocean$6#$b#I'll uh, definitely finish this for sure.",
+"Gifts.TraceV.PaleBroth": "This is um... that is certainly something you can eat, ain't it?$6#$b#Jeremy likes this stuff, I'll pawn it off on them...$6#$b#Uh! You didn't hear that.$h",
+"Gifts.TraceV.SquidInkRavioli": "Oh yoba... not the the squid ink ravioli. Anything but the squid ink ravioli.$a#$b#Sorry, it's not you, @. Squid ink ravioli and I have a jaded past.$6",
+"Gifts.TraceV.FriedEel": "Ewww... gross, slimy wriggler but FRIED!$u#$b#Nasty, you can eat that but I ain't touching it with a 10 foot pole!$a",
+"Gifts.TraceV.SpicyEel": "Ewww... yuck, SPICY slimy wriggler.$u#$b#Nasty, you can eat that but I ain't touching it with a 10 foot pole!$a",
+
+//Neutral
+"Gifts.TraceV.Fiber": "So it's you again, fiber. Got anything to say to me, you pile-of-grass punk?$a",
+
+"Gifts.TraceV.VoidLavaSnail": "Awww, what a cute little baby snail. I'll get send 'em down to Jeremy for a little play date!$11",
+"Gifts.TraceV.GoldenVoidLavaSnail": "Woah... that little snail is so shiny! I think I'll name them... Jeremy Jr. I'm sure they'll get along just dandy with Jeremy Sr.!",
+"Gifts.TraceV.UnluckyPurpleShorts": "$query PLAYER_HAS_MAIL Current DitR_M_TriedToGiveTraceStinkyPants Any#I'm serious buckaroo, I don't want your smelly boxers.$a#$b#Please burn them, or something-$6|WOAH. Okay. That is... one STANKY pair of underpants.$u#$b#I do not want your stanky underpants. I sincerely apologize, @.$6#$action AddMail Current DitR_M_TriedToGiveTraceStinkyPants received",
+
+"Gifts.TraceV.PridePop": "Oh man, it's so colorful! Taste the rainbow, haha!$h#$b#Thanks, buckaroo.$l",
+"Gifts.TraceV.TransTart": "If its called a Trans Tart, does that mean the tart is transgender?$h#$b#Good for you little buddy.$l#$b#Sorry I have to eat you now.$6",
+"Gifts.TraceV.EnbyEclair": "ENBY ECLAIR ENBY ECLAIR ENBY ECLAIR!$h#$b#Literally the best snack ever behind blackberry cobbler.$l#$b#Ya really do know the way to my heart, @.$h",
+"Gifts.TraceV.BiBerryMuffin": "I always appreciate a muffin that's into both guys and gals.$h#$b#Go go get 'em little guy--$l#$b#Wait, oops. Already ate them.$6",
+
+//--JEREMY--//
+"Gifts.JeremyTSnail.Like.True": "Hmm. This is an intriguing find.#$b#I suppose I shall accept this.$2",
+"Gifts.JeremyTSnail.Love.True": "As a mollusk, I have little need for earthly possessions...$2#$b#...However, this does pique my interest. Thank you.$1",
+"Gifts.JeremyTSnail.Neutral.True": "...Hmm. What use am I supposed to make of this?#$b#You are aware that I am a snail, correct?$2",
+"Gifts.JeremyTSnail.Dislike.True": "As a mollusk, this does not interest me.$2",
+"Gifts.JeremyTSnail.Hate.True": "...Appalling. Leave my sight.$2",
+
+"Gifts.JeremyTSnail.Like.False": "%Jeremy seems intrigued by your offering.",
+"Gifts.JeremyTSnail.Love.False": "%Jeremy's eyes sparkle with fascination and wonder!",
+"Gifts.JeremyTSnail.Neutral.False": "%Jeremy stares blankkly at the object you place before them.",
+"Gifts.JeremyTSnail.Dislike.False": "%Jeremy seems perterbed by your gift...",
+"Gifts.JeremyTSnail.Hate.False": "%Jeremy is appalled. Leave their sight.",
+
+"Gifts.JeremyTSnail.BirthdayGift.Love": "Ah, an offering for my hatching day!$1#$b#Your gift is deeply appreciated.$1",
+"Gifts.JeremyTSnail.BirthdayGift.Like": "Oh? Did Trace tell you of my hatching day?#$b#Thank you for your offering.$1",
+"Gifts.JeremyTSnail.BirthdayGift.Dislike": "Hm... Thank you for your hatching day offering.$2#$b#%It seems like Jeremy wishes you had forgotten...",
+"Gifts.JeremyTSnail.BirthdayGift.Negative": "This offering...#$b#It is so terrible that it almost makes me wish I had never hatched.$2#$b#For shame, human. For shame!",
+"Gifts.JeremyTSnail.BirthdayGift.Neutral": "I appreciate your attempts to appease me on my hatching day.",
+
+"Gifts.JeremyTS.VoidLavaSnail.Remark.True": "Ah, if it isn't little {{SnailName}}...$1#$b#I will make sure they stay out of any further trouble. Thank you.$2#$b#Take this young flora for your troubles.", 
+"Gifts.JeremyTS.VoidLavaSnail.Remark.False": "%Jeremy lets out a long parental sigh, accepting the little wriggling snail.#$b#%As thanks, Jeremy offers you an item.",
+"Gifts.JeremyTS.GoldenVoidLavaSnail.Remark.True": "...!$1#$b#My my, now this coloration of my kin is incredibly rare.$1#$b#The mutation also makes one quite vulnerable to disease...$2#$b#Thank you for bringing them to me, I shall keep them safe.$1#$b#Here is a rare seedling for your troubles.", 
+"Gifts.JeremyTS.GoldenVoidLavaSnail.Remark.False": "%...!#$b#%Jeremy scoops up the strange shiny snail protectively. They seem pleased.#$b#%As a reward, Jeremy gives you a rare item.",
+
+//Do not translate, this is code 
+"Gifts.JeremyTS.VoidLavaSnail.Trade.Spring": "[429 474 433 476 473 477 472 475 478 745 427 273 (O)CarrotSeeds 429 474 433 476 473 477 472 475 478 745 427 273 (O)CarrotSeeds (O)MixedFlowerSeeds 885 770 495 (O)MixedFlowerSeeds 885 770 495 251 629 628 (O)MysticTreeSeed 114 347 166]",
+"Gifts.JeremyTS.VoidLavaSnail.Trade.Summer": "[481 487 302 482 453 484 485 486 455 431 480 483 802 833 831 (O)SummerSquashSeeds 481 487 302 482 453 484 485 486 455 431 480 483 802 833 831 (O)SummerSquashSeeds (O)MixedFlowerSeeds 885 770 496 (O)MixedFlowerSeeds 885 770 496 251 69 630 631 835 (O)MysticTreeSeed 114 347 166]",
+"Gifts.JeremyTS.VoidLavaSnail.Trade.Fall": "[487 431 483 299 489 494 491 492 493 488 425 490 (O)BroccoliSeeds 487 431 483 299 489 494 491 492 493 488 425 490 (O)BroccoliSeeds (O)MixedFlowerSeeds 885 770 497 (O)MixedFlowerSeeds 885 770 497 251 633 632 (O)MysticTreeSeed 114 347 166]",
+"Gifts.JeremyTS.VoidLavaSnail.Trade.Winter": "[(O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds (O)PowdermelonSeeds MixedFlowerSeeds 885 770 498 MixedFlowerSeeds 885 770 498 251 (O)MixedFlowerSeeds 885 770 498 (O)MixedFlowerSeeds 885 770 498 251 (O)MixedFlowerSeeds 885 770 498 (O)MixedFlowerSeeds 885 770 498 251 (O)MysticTreeSeed 114 347 166]",
+"Gifts.JeremyTS.VoidLavaSnail.Trade.RareItem": "[(O)MysticTreeSeed 114 347 166]",
+
+
+"Gifts.JeremyTS.QuestRewardVoidLavaSnailEgg": "Now now, @. No need to return this little one.#$b#I trust them entirely with your care!$1",
+"Gifts.JeremyTS.VoidLavaSnailMayonnaiseBetrayal": "...#$b#...How? How could you?$3#$b#Begone, @. Begone.$2#$b#I do not wish to see you any further right now...$2",
+
+"Gifts.JeremyTS.UnluckyPurpleShorts": "...$2#$b#%Jeremy silently judges you with mild disgust.",
+"Gifts.JeremyTS.ExpiredMegaBomb.True": "...Pray tell, how do explosives \"expire\" like a vegetable?#$b#Absolutely absurd.$2",
+"Gifts.JeremyTS.ExpiredMegaBomb.False": "%Jeremy seems disinterested in the utterly rancid explosive device.",
+
+"Gifts.JeremyTS.Apple.True": "Apple...#$b#Apple?$3#$b#Apple!!!$1#$b#Thank you kindly, human!$1",
+"Gifts.JeremyTS.Apple.False": "%Jeremy enthusiastically gobbles down the apple. They seem overjoyed!"
 }

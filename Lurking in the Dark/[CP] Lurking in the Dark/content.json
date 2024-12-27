@@ -443,6 +443,10 @@
             "Name": "SenSpouseRoom",
             "Value": "7thAxis.LitD/SpouseRoomEmpty",
             "When": { "Spouse Room": false }
+        },
+        {
+            "Name": "SFX.SnailCry",
+            "Value": "$action spacechase0.SpaceCore_PlaySound {{ModID}}_SFX.SnailCry"
         }
      ],
      //File Loader
