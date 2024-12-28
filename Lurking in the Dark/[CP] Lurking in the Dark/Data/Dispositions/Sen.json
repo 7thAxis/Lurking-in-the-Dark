@@ -7,7 +7,7 @@
             "Target": "Data/Characters",
             "Entries": {
                 "SenS": {   
-                    "DisplayName": "{{i18n:Core.SenS.Name.Sen}}",
+                    "DisplayName": "{{i18n:Core.Names.Sen}}",
                     "BirthSeason": "winter",
                     "BirthDay": 13,
                     "HomeRegion": "Other",
@@ -38,7 +38,7 @@
                         }
                     ],
                     "IntroductionsQuest": false,
-                    "PerfectionScore": true,
+                    "PerfectionScore": "{{NPCs Included in Perfection}}",
                     "SpouseGiftJealousyFriendshipChange": 0,
                     "DumpsterDiveFriendshipEffect": 0,
                     "DumpsterDiveEmote": 16,

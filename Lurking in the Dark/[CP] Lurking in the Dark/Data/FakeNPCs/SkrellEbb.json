@@ -7,7 +7,7 @@
         "Target": "Data/FarmAnimals",
         "Entries": {
             "LitD.Skrell": {
-                "DisplayName": "{{i18n:Core.SenS.Name.Skrell}}",
+                "DisplayName": "{{i18n:Core.Names.Skrell}}",
                 "House": "ILLEGAL! NO SKRELL ON YOUR FARM!",
                 "Age": 1,
                 "Gender": "Male",
@@ -25,7 +25,7 @@
                 "ShowInSummitCredits": false
             },
             "LitD.Ebb": {
-                "DisplayName": "{{i18n:Core.SenS.Name.Ebb}}",
+                "DisplayName": "{{i18n:Core.Names.Ebb}}",
                 "House": "ILLEGAL! NO EBB ON YOUR FARM!",
                 "Age": 1,
                 "Gender": "Male",
@@ -52,7 +52,7 @@
                 "AnimalId": "LitD.Skrell",
                 "Age": 1,
                 "LocationId": "EastScarp_DeepDark",
-                "DisplayName": "{{i18n:Core.SenS.Name.Skrell}}",
+                "DisplayName": "{{i18n:Core.Names.Skrell}}",
                 "PortraitTexture": "Portraits/Skrell",
                 "PetMessage": [ "{{i18n:FakeNPCs.Skrell.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
                 "HomeTileX": 19,
@@ -63,7 +63,7 @@
                 "AnimalId": "LitD.Ebb",
                 "Age": 1,
                 "LocationId": "EastScarp_DeepDark",
-                "DisplayName": "{{i18n:Core.SenS.Name.Ebb}}",
+                "DisplayName": "{{i18n:Core.Names.Ebb}}",
                 "PortraitTexture": "Portraits/Ebb",
                 "PetMessage": [ "{{i18n:FakeNPCs.Ebb.Dialogue.{{Random: {{Range: 1, 16}}}}}}" ],
                 "HomeTileX": 26,

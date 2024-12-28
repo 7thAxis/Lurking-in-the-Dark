@@ -74,8 +74,8 @@
                     changeSprite SenS Kid/
                     addTemporaryActor Skrell 16 32 -999 -999 2 true character/
                     addTemporaryActor Ebb 16 32 -999 -999 2 true character/
-                    changeName Skrell {{i18n:Core.SenS.Name.Skrell}}/
-                    changeName Ebb {{i18n:Core.SenS.Name.Ebb}}/
+                    changeName Skrell {{i18n:Core.Names.Skrell}}/
+                    changeName Ebb {{i18n:Core.Names.Ebb}}/
                     warp SenS -999 -999/
                     globalFadeToClear 0.012 true/
                     changeToTemporaryMap SenFlashback/

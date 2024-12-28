@@ -1,0 +1,72 @@
+{
+    "Changes": [
+        {
+            "LogName": "Jeremy Dispositions",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "JeremyTSnail": {
+                    "DisplayName": "{{i18n:Core.Names.Jeremy}}",
+                    "BirthSeason": "summer",
+                    "BirthDay": 28,
+                    "HomeRegion": "Town",
+                    "Gender": "Undefined",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Negative",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Temmie", //Thanks Tiara
+                    "SocialTab": "UnknownUntilMet",
+                    "CanGreetNearbyCharacters": false,
+                    "IntroductionsQuest": true,
+                    "PerfectionScore": "{{NPCs Included in Perfection}}",
+                    "WinterStarParticipant": false,
+                    "DumpsterDiveFriendshipEffect": -5,
+                    "DumpsterDiveEmote": 40,
+                    "CanVisitIsland": false,
+                    "CanCommentOnPurchasedShopItems": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "SpawnIfMissing": true,
+                    "Breather": false,
+                    "Size": { "X": 32, "Y": 32 },
+                    "Shadow":{ "Visible": false },
+                    "EmoteOffset": { "X": -35, "Y": 30 },
+                    "MugShotSourceRect": { "X": 8, "Y": 7, "Width": 16, "Height": 25 },
+                    "Home": [
+                        {
+                            "Location": "7thAxis.LitD_Maps.Jeremy_Room",
+                            "Tile": { "X": 5, "Y": 11 },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "FestivalInWaterJeremy",
+                            "Condition": "IS_EVENT festival_spring13 festival_spring24 festival_summer11 festival_summer28 festival_fall16 festival_winter8 festival_winter25",
+                            "Sprite": "{{InternalAssetKey: Assets/Characters/Jeremy/Jeremy_Water.png}}"
+                        }
+                    ]
+                }
+            }
+        },
+//---------------------------- GIFT TASTE ------------------------------------------//
+        {
+            "LogName": "Gift Tastes - Jeremy",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "JeremyTSnail": "{{i18n:Gifts.JeremyTSnail.Love.{{HasSeenEvent: |contains=112}}}}#{{SFX.SnailCry}}/82 260 340 396 420 456 457 613 769 829 851 MossSoup RiverJelly {{ModID}}_Items.VoidLavaSnail {{ModID}}_Items.VoidLavaSnailEgg {{ModID}}_Items.GoldenVoidLavaSnail {{ModID}}_Items.GoldenVoidLavaSnailEgg/{{i18n:Gifts.JeremyTSnail.Like.{{HasSeenEvent: |contains=112}}}}#{{SFX.SnailCry}}/tree_seed_item syrup_item -81 -80 -79 -75 -74 74 153 157 257 281 373 404 422 Moss/{{i18n:Gifts.JeremyTSnail.Dislike.{{HasSeenEvent: |contains=112}}}}#{{SFX.SnailCry}}/-7 -6 279 308 446/{{i18n:Gifts.JeremyTSnail.Hate.{{HasSeenEvent: |contains=112}}}}#{{SFX.SnailCry}}/-20 729 768 {{ModID}}_Items.VoidLavaSnailMayonnaise {{ModID}}_Items.GoldenVoidLavaSnailMayonnaise/{{i18n:Gifts.JeremyTSnail.Neutral.{{HasSeenEvent: |contains=112}}}}#{{SFX.SnailCry}}/797/"
+            }
+        },
+        {
+            "LogName": "Gift Taste",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "JeremyTSnail": "{{i18n:Core.JeremyTSnail.JeremyBetrayed}}//{{i18n:Core.JeremyTSnail.JeremyBetrayed}}//{{i18n:Core.JeremyTSnail.JeremyBetrayed}}//{{i18n:Core.JeremyTSnail.JeremyBetrayed}}/82 260 340 396 420 456 457 613 769 829 851 MossSoup RiverJelly {{ModID}}_Items.VoidLavaSnail {{ModID}}_Items.VoidLavaSnailEgg {{ModID}}_Items.GoldenVoidLavaSnail {{ModID}}_Items.GoldenVoidLavaSnailEgg -20 729 768 {{ModID}}_Items.VoidLavaSnailMayonnaise {{ModID}}_Items.GoldenVoidLavaSnailMayonnaise tree_seed_item syrup_item -81 -80 -79 -75 -74 74 153 157 257 281 373 404 422 Moss -7 -6 279 308 446 797/{{i18n:Core.JeremyTSnail.JeremyBetrayed}}//"
+            },
+            "When": { "HasConversationTopic: |contains=DitR_CT_JeremyBetrayed": true } 
+        }
+    ]
+}

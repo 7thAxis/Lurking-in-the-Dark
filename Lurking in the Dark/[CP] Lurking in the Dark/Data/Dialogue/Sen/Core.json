@@ -8,7 +8,7 @@
             "Entries": {
                 "{{WeekDay}}": "{{i18n:Core.SenS.{{SenHeartRange}}.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
             },
-            "When": { "HasFlag |contains=DitR_M_SenS_OverrideSeenToday": false }
+            "When": { "HasFlag |contains=LitD_M_SenS_OverrideSeenToday": false }
         },
         {
             "LogName": "Sen Dialogue Overrides",
@@ -17,7 +17,7 @@
             "Update": "OnLocationChange",
             "Priority": "Late",
             "Entries": {
-                "{{WeekDay}}": "{{SenOverrideDialogue}}#$action AddMail Current DitR_M_SenS_OverrideSeenToday received"
+                "{{WeekDay}}": "{{SenOverrideDialogue}}#$action AddMail Current LitD_M_SenS_OverrideSeenToday received"
             },
             "When": { "SenOverrideConditions": "Active" }
         },

@@ -17,10 +17,12 @@
 "LitD_Music.BarbieGirl": "LitD: Barbie Girl...? (TheFrenchDodo)",
 
 //Names
-"Core.SenS.Name.Sen": "Sen",
-"Core.SenS.Name.Skrell": "Skrell",
-"Core.SenS.Name.Ebb": "Ebb",
-"Core.SenS.Name.Pipo": "Pipo",
+"Core.Names.Sen": "Sen",
+"Core.Names.Skrell": "Skrell",
+"Core.Names.Ebb": "Ebb",
+"Core.Names.Pipo": "Pipo",
+"Core.Names.Jeremy": "Jeremy",
+"Core.Names.Trace": "Trace",
 
 //Animals
 "Core.Animals.VoidCat": "Void Cat",
@@ -618,7 +620,7 @@
 "Core.JeremyTSnail.Winter.Day.28": "Tomorrow my kind shall resurface from the watery depths of the valley.#$b#Sigh.$2#$b#If you see them, bring them to me.",
 
 //CFD
-"Core.JeremyTSnail.Dumpster": "$query HAS_SEEN_EVENT Current 112#Hm. Did you find any of my brethren inside that bin?$2#$b#If so, please bring them to me so I may inform them that such behavior is unsanitary.#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry|%As you lift the trash can lid, you feel Jeremy's eye stalks burn into your soul.#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry",
-"Core.JeremyTSnail.Slingshot.1": "$query PLAYER_HAS_MAIL Current DitR_M_AttackedJeremyToday#%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%Jeremy gathers the power of all their snail friends in the valley and blasts you with a powerful wave of snail magic.#$b#%You are obliterated by the snagic.#$action spacechase0.SpaceCore_PlaySound explosion#$action AddConversationTopic DitR_CT_YouAttackedJeremy 999#$action RemoveMail Current DitR_M_AttackedJeremyToday received all#$action spacechase0.SpaceCore_DamageCurrentFarmer 9999|%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%They cast you a warning glare to not try that again.#$action AddMail Current DitR_M_AttackedJeremyToday received#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry",
-"Core.JeremyTSnail.Slingshot.2": "$query PLAYER_HAS_MAIL Current DitR_M_AttackedJeremyToday#%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%Jeremy harnesses the magic of their snail friends and hovers into the air, hurtling towards you at light speeds.#$b#%You are obliterated by the snagic.#$action spacechase0.SpaceCore_PlaySound explosion#$action AddConversationTopic DitR_CT_YouAttackedJeremy 999#$action RemoveMail Current DitR_M_AttackedJeremyToday received all#$action spacechase0.SpaceCore_DamageCurrentFarmer 9999|%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%They cast you a warning glare to not try that again.#$action AddMail Current DitR_M_AttackedJeremyToday received#$action spacechase0.SpaceCore_PlaySound 7thAxis.DitR_SFX.SnailCry"
+"Core.JeremyTSnail.Dumpster": "$query HAS_SEEN_EVENT Current 112#Hm. Did you find any of my brethren inside that bin?$2#$b#If so, please bring them to me so I may inform them that such behavior is unsanitary.#$action spacechase0.SpaceCore_PlaySound LitD_SFX.SnailCry|%As you lift the trash can lid, you feel Jeremy's eye stalks burn into your soul.#$action spacechase0.SpaceCore_PlaySound LitD_SFX.SnailCry",
+"Core.JeremyTSnail.Slingshot.1": "$query PLAYER_HAS_MAIL Current DitR_M_AttackedJeremyToday#%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%Jeremy gathers the power of all their snail friends in the valley and blasts you with a powerful wave of snail magic.#$b#%You are obliterated by the snagic.#$action spacechase0.SpaceCore_PlaySound explosion#$action AddConversationTopic DitR_CT_YouAttackedJeremy 999#$action RemoveMail Current DitR_M_AttackedJeremyToday received all#$action spacechase0.SpaceCore_DamageCurrentFarmer 9999|%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%They cast you a warning glare to not try that again.#$action AddMail Current DitR_M_AttackedJeremyToday received#$action spacechase0.SpaceCore_PlaySound LitD_SFX.SnailCry",
+"Core.JeremyTSnail.Slingshot.2": "$query PLAYER_HAS_MAIL Current DitR_M_AttackedJeremyToday#%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%Jeremy harnesses the magic of their snail friends and hovers into the air, hurtling towards you at light speeds.#$b#%You are obliterated by the snagic.#$action spacechase0.SpaceCore_PlaySound explosion#$action AddConversationTopic DitR_CT_YouAttackedJeremy 999#$action RemoveMail Current DitR_M_AttackedJeremyToday received all#$action spacechase0.SpaceCore_DamageCurrentFarmer 9999|%The projectile hits Jeremy's shell and bounces off with a thunk.#$b#%They cast you a warning glare to not try that again.#$action AddMail Current DitR_M_AttackedJeremyToday received#$action spacechase0.SpaceCore_PlaySound LitD_SFX.SnailCry"
 }

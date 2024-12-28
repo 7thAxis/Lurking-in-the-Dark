@@ -15,8 +15,8 @@
                     ignoreCollisions farmer/
                     addTemporaryActor Skrell 16 32 -999 -999 2 true character/
                     addTemporaryActor Ebb 16 32 -999 -999 2 true character/
-                    changeName Skrell {{i18n:Core.SenS.Name.Skrell}}/
-                    changeName Ebb {{i18n:Core.SenS.Name.Ebb}}/
+                    changeName Skrell {{i18n:Core.Names.Skrell}}/
+                    changeName Ebb {{i18n:Core.Names.Ebb}}/
                     addConversationTopic DitR_CT_MineFlashback {{Event Cooldown Length}}/
                     skippable/
                         pause 800/
@@ -291,8 +291,8 @@
                     addLantern 737 32 110 3/
                     addTemporaryActor Skrell 16 32 37 113 3 true character/
                     addTemporaryActor Ebb 16 32 36 112 2 true character/
-                    changeName Skrell {{i18n:Core.SenS.Name.Skrell}}/
-                    changeName Ebb {{i18n:Core.SenS.Name.Ebb}}/
+                    changeName Skrell {{i18n:Core.Names.Skrell}}/
+                    changeName Ebb {{i18n:Core.Names.Ebb}}/
 
                         pause 500/
                         advancedMove farmer false 0 2 1 0 2 600/
@@ -644,7 +644,7 @@
                 addConversationTopic DitR_CT_SkrellEpilogue {{Event Cooldown Length}}/
                 skippable/
                 addTemporaryActor Skrell 16 32 18 19 2 true character/
-                changeName Skrell {{i18n:Core.SenS.Name.Skrell}}/
+                changeName Skrell {{i18n:Core.Names.Skrell}}/
 
                     advancedMove farmer false 6 0 1 100/
                     pause 3200/

@@ -6,6 +6,7 @@
   "Have Shadow Kids": "true",
   "Include Void Snail Content": "true",
   "Items Excluded From Perfection": "false",
+  "NPCs Included in Perfection": "true",
   "Schedule Type": "Dynamic",
   "Romantic Nickname": "Starshine",
   "Pipo Moves In": "true",
@@ -17,8 +18,8 @@
   "Female Toddler Design": "Freya",
   "Male Toddler Design": "Loki",
   "Pipo Design": "Void",
-  "Pipo Accessory Body": "None",
-  "Pipo Accessory Face": "None",
+  "Pipo Accessory Body": "Shorts",
+  "Pipo Accessory Face": "Glasses",
   "Pipo Alpha Shorthair Portrait": "false",
   "UCT Portrait Compatibility": "true",
   "7thAxis Nanu and Opal Portraits": "false"
