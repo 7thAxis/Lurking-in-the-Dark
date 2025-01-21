@@ -28,6 +28,10 @@
 "Config.Romantic Nickname.description": "Sets Sen's romantic nickname for the player.",
 "Config.Pipo Moves In.name": "Pipo Moves In",
 "Config.Pipo Moves In.description": "Whether Pipo should move in or not if you marry/room with Sen.\n\n(Correct events must be seen first)",
+"Config.Pipo Farmhouse Spawn X.name": "Pipo Farmhouse Spawn Point (X)",
+"Config.Pipo Farmhouse Spawn X.description": "Select the X coordinate for Pipo's spawn point when living with Sen.",
+"Config.Pipo Farmhouse Spawn Y.name": "Pipo Farmhouse Spawn Point (Y)",
+"Config.Pipo Farmhouse Spawn Y.description": "Select the Y coordinate for Pipo's spawn point when living with Sen.",
 
 //Graphics
 "Config.section.Graphics: General.name": "Graphics: General",

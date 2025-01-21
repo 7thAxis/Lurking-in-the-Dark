@@ -39,8 +39,8 @@
                     "DisplayName": "{{i18n:Core.Names.Pipo}}",
                     "PortraitTexture": "Portraits/PipoP",
                     "PetMessage": [ "{{i18n:FakeNPCs.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 30}}}}}}" ],
-                    "HomeTileX": 26,
-                    "HomeTileY": 27
+                    "HomeTileX": "{{Pipo Farmhouse Spawn X}}",
+                    "HomeTileY": "{{Pipo Farmhouse Spawn Y}}"
                 },
                 "LitD.Pipo_Tunnel_Early": {
                     "AnimalId": "LitD.Pipo",
@@ -114,8 +114,8 @@
                     "DisplayName": "{{i18n:Core.Names.Pipo}}",
                     "PortraitTexture": "Portraits/PipoP",
                     "PetMessage": [ "{{i18n:FakeNPCs.Pipo.{{Random:Sound, Action}}.{{Random: {{Range: 1, 30}}}}}}" ],
-                    "HomeTileX": 26,
-                    "HomeTileY": 27,
+                    "HomeTileX": "{{Pipo Farmhouse Spawn X}}",
+                    "HomeTileY": "{{Pipo Farmhouse Spawn Y}}",
                     "Condition": "!{{PipoDialogueSpecial}}"
                 },
                 //Done bc dialogue in the memory was behaving strangely
@@ -126,8 +126,8 @@
                     "DisplayName": "{{i18n:Core.Names.Pipo}}",
                     "PortraitTexture": "Portraits/PipoP",
                     "PetMessage": [ "{{i18n:FakeNPCs.Pipo.{{Season}}.Day.{{Day}}}}" ],
-                    "HomeTileX": 26,
-                    "HomeTileY": 27,
+                    "HomeTileX": "{{Pipo Farmhouse Spawn X}}",
+                    "HomeTileY": "{{Pipo Farmhouse Spawn Y}}",
                     "Condition": "{{PipoDialogueSpecial}}"
                 }
             },
