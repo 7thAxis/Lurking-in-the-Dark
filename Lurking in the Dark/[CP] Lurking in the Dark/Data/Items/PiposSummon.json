@@ -115,6 +115,7 @@
                     "ProcTimer": 1500,
                     "ProcSound": "shadowDie",
                     "ProcTAS": [ "{{ModId}}_PipoAttack" ],
+                    "Filters": ["Shadow Brute", "Shadow Shaman", "Shadow Sniper", "Shadow Guy"],
                     "Args": {
                       "Min": 30,
                       "Max": 65,

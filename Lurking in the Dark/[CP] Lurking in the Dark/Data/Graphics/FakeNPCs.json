@@ -10,7 +10,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/Skrell, Portraits/Ebb",
-            "FromFile": "Assets/Portraits/{{Portrait Style}}/{{TargetWithoutPath}}/{{TargetWithoutPath}}.png"
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/{{TargetWithoutPath}}/{{TargetWithoutPath}}.png"
         },
         //Pipo
         {
@@ -21,7 +21,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/PipoP",
-            "FromFile": "Assets/Portraits/{{Portrait Style}}/Pipo/Pipo_{{Pipo Design}}.png"
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Pipo/Pipo_{{Pipo Design}}.png"
         },
         {
             "LogName": "Alpha Pipo Portait",

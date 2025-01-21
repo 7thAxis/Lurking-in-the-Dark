@@ -4,7 +4,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/SenS, Portraits/SenS_Default",
-            "FromFile": "Assets/Portraits/{{Portrait Style}}/Sen/SenS.png"
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/SenS.png"
         },
         {
             "Action": "Load",
@@ -15,7 +15,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/SenS_Kid, Portraits/SenS_Bow, Portraits/SenS_Cloak",
-            "FromFile": "Assets/Portraits/{{Portrait Style}}/Sen/{{TargetWithoutPath}}.png"
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/{{TargetWithoutPath}}.png"
         },
         {
             "Action": "Load",
@@ -57,7 +57,7 @@
             "LogName": "Misc Cloak Portraits",
             "Action": "EditImage",
             "Target": "Portraits/SenS",
-            "FromFile": "Assets/Portraits/{{Portrait Style}}/Sen/Main/SenS_Cloak.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/Main/SenS_Cloak.png",
             "Update": "OnLocationChange",
             "When": {
                 "LocationName": "MovieTheater, Temp, Hospital",

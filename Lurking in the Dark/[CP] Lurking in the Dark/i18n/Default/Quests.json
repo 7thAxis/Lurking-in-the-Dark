@@ -10,7 +10,7 @@
 "Quests.SenS.AGardenForSen.Title": "A Garden for Sen",
 "Quests.SenS.AGardenForSen.Description": "Sen needs mixed seeds so he can start a garden!",
 "Quests.SenS.AGardenForSen.Task": "Bring 30 mixed seeds to Sen.",
-"Quests.SenS.AGardenForSen.FollowUp": "...!$7#$b#With both of our seed collecting efforts combined, we should have plenty now.$h#$b#Thank you so much, @. Come visit my home in a few days, alright?$h#$action AddMail Current DitR_M_AGardenForSenComplete received",
+"Quests.SenS.AGardenForSen.FollowUp": "...!$7#$b#With both of our seed collecting efforts combined, we should have plenty now.$h#$b#Thank you so much, @. Come visit my home in a few days, alright?$h",
 
 //Snail Nonsense
 "Quests.Jeremy.VoidLavaSnailRoundUp.Title": "Void Lava Snail Round-Up!",

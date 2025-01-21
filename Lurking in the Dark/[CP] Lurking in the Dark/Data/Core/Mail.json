@@ -58,8 +58,8 @@
                     "RemoveMail Current LitD_M_SenS_OverrideSeenToday",
                     "RemoveMail Current LitD_M_TraceV_OverrideSeenToday",                    
                     "RemoveMail Current LitD_M_GotTraceCoffeeToday",
-                    "RemoveMail Current LitD_M_AcceptedVoidSnailQuestToday",
-                    "RemoveMail Current LitD_M_AttackedJeremyToday" ]
+                    "RemoveMail Current LitD_M_AttackedJeremyToday",
+                    "RemoveMail Current DitR_M_AcceptedVoidSnailQuestToday" ]
                 }
             }
         }

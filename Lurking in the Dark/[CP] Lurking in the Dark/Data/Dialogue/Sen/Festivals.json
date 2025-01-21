@@ -10,7 +10,7 @@
     "LogName": "Festival Dialogue",
     "Action": "EditData",
     "Target": "data/festivals/summer11",
-    "Entries": { "SenS": "{{i18n:Festivals.SenS.summer11.{{Random:{{Range: 1, 3}}}}.{{Portrait Style}}}}" }
+    "Entries": { "SenS": "{{i18n:Festivals.SenS.summer11.{{Random:{{Range: 1, 3}}}}.{{NPC Portrait Style}}}}" }
 },
 {
     "LogName": "Passive Festival Dialogue",

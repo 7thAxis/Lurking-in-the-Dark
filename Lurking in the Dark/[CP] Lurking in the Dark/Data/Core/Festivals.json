@@ -1,5 +1,28 @@
 {
     "Changes": [
+        //Jeremy Animations
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/winter25",
+            "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                        "Value": "/animate JeremyTSnail false true 1000 5 4"
+                    }
+                ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/summer11 ",
+            "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                        "Value": "/animate JeremyTSnail false true 1000 13 12"
+                    }
+                ]
+        },
 //----------------EGG FESTIVAL------------------//
         {
             "Action": "EditData",
@@ -8,13 +31,26 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 37 96 2",
+                    "Value": "SenS 37 96 2/TraceV 45 80 3/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 },
-                     {
+                {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 37 96 2",
+                    "Value": "SenS 37 96 2/JeremyTSnail 24 104 3",
+                    "Delimiter": "/"
+                },
+                //Trace
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "TraceV 33 65 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "TraceV 26 65 2",
                     "Delimiter": "/"
                 }
             ]
@@ -27,13 +63,13 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 49 32 2",
+                    "Value": "SenS 49 32 2/TraceV 50 44 1/JeremyTSnail 65 48 1",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 21 33 0",
+                    "Value": "SenS 21 33 0/TraceV 13 33 0/JeremyTSnail 65 48 1",
                     "Delimiter": "/"
                 }
             ]
@@ -46,19 +82,19 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 53 22 2",
+                    "Value": "SenS 53 22 2/TraceV 33 43 3/JeremyTSnail 51 47 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters" ],
-                    "Value": "SenS 41 22 2",
+                    "Value": "SenS 41 22 2/TraceV 43 16 3/JeremyTSnail 51 47 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
-                    "Value": "SenS 35 19 2",
+                    "Value": "SenS 35 19 2/TraceV 28 4 2/JeremyTSnail 51 47 3",
                     "Delimiter": "/"
                 }
             ]
@@ -71,7 +107,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 46 24 2",
+                    "Value": "SenS 46 24 2/TraceV 93 41 3/JeremyTSnail 91 41 3",
                     "Delimiter": "/"
                 }
             ]
@@ -83,7 +119,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
-                    "Value": "SenS 51 25 2",
+                    "Value": "SenS 51 25 2/TraceV 93 41 3/JeremyTSnail 91 41 3",
                     "Delimiter": "/"
                 }
             ],
@@ -97,7 +133,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 56 52 2",
+                    "Value": "SenS 56 52 2/TraceV 32 89 3/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 }
             ]
@@ -129,13 +165,13 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters" ],
-                    "Value": "SenS 32 16 2",
+                    "Value": "SenS 32 16 2/JeremyTSnail 24 104 3/TraceV 27 13 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
-                    "Value": "SenS 64 16 3",
+                    "Value": "SenS 64 16 3/JeremyTSnail 24 104 3/TraceV 27 13 3",
                     "Delimiter": "/"
                 }
             ],
@@ -148,13 +184,13 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters" ],
-                    "Value": "SenS 73 4 2",
+                    "Value": "SenS 73 4 2/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
-                    "Value": "SenS 62 17 2",
+                    "Value": "SenS 62 17 2/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 }
             ],
@@ -168,10 +204,29 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 57 42 2",
+                    "Value": "SenS 57 42 2/TraceV 56 43 1",
                     "Delimiter": "/"
                 }
             ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8", //ice festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "JeremyTSnail 79 47 1",
+                    "Delimiter": "/"
+                },
+                {
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+					"Value": "/animate JeremyTSnail false true 1000 13 12"
+				}
+
+            ],
+            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false }
         },
 //----------------WINTER STAR------------------//
         {
@@ -181,7 +236,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "SenS 47 71 2",
+                    "Value": "SenS 47 71 2/TraceV 33 90 2/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 }
             ]

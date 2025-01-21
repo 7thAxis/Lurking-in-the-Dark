@@ -134,7 +134,7 @@
                 "propose_roommate_sens": "propose_roommate_sens"
             },
             "When": {
-                "HasSeenEvent:currentPlayer |contains={{ModID}}_Events.SenS.10h.P3": true,
+                "HasSeenEvent:currentPlayer |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
                 "HasFlag:currentPlayer |contains=DitR_M_SenS_Romantic": false
             }
         },

@@ -31,11 +31,11 @@
             "MapTiles": [
                 {
                     "Position": { "X": 4, "Y": 6 }, "Layer": "Buildings",
-                    "SetProperties": { "Action": "PlayEvent 7thAxis.LitD_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
+                    "SetProperties": { "Action": "PlayEvent 7thAxis.DitR_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
                 },
                 {
                     "Position": { "X": 5, "Y": 6 }, "Layer": "Buildings",
-                    "SetProperties": { "Action": "PlayEvent 7thAxis.LitD_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
+                    "SetProperties": { "Action": "PlayEvent 7thAxis.DitR_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
                 }
             ]
         },

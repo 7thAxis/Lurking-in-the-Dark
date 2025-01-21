@@ -88,7 +88,7 @@
             "Section": "NPC Behavior"
         },
         //GRAPHICS
-        "Portrait Style": {
+        "NPC Portrait Style": {
             "AllowValues": "Default, Nyapu",
             "Default": "Default",
             "AllowBlank": false,

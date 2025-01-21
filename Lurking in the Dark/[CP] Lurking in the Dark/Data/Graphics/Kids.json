@@ -34,7 +34,7 @@
             "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
         },
-            //Axell Portraits
+                //Axell Portraits
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
@@ -69,10 +69,10 @@
         {           
             "Action": "Load",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portrait/7thAxis/Kids/Toddler_{{Male Toddler Design}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Male" }
         },
-            //Axell Portraits
+                //Axell Portraits
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",

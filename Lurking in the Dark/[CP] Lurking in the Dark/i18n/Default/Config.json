@@ -31,8 +31,8 @@
 
 //Graphics
 "Config.section.Graphics: General.name": "Graphics: General",
-"Config.Portrait Style.name": "Portrait Style",
-"Config.Portrait Style.description": "Sets the mod's portrait style. Don't change this option during festivals.\n\n(Nyapu recommended because Nyapu is amazing)",
+"Config.NPC Portrait Style.name": "NPC Portrait Style",
+"Config.NPC Portrait Style.description": "Sets the mod's portrait style. Don't change this option during festivals.\n\n(Nyapu recommended because Nyapu is amazing)",
 "Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
 "Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
 "Config.Spouse Room.name": "Spouse Room",

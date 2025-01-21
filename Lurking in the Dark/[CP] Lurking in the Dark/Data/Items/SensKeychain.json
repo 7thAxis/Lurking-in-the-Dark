@@ -1,0 +1,127 @@
+{
+    "Changes": [
+    //Tinket data
+      {
+        "LogName": "Pipo: Trinket",
+        "Action": "EditData",
+        "Target": "Data/Trinkets",
+        "Entries": {
+          "{{ModId}}_SensKeychain": {
+            "Id": "{{ModId}}_SensKeychain",
+            "DisplayName": "Sen Test",
+            "Description": "Sen Test",
+            "Texture": "maps/springobjects",
+            "SheetIndex": 0,
+            "DropsNaturally": false,
+            "CanBeReforged": false
+          }
+        }
+      },
+      //Tinket buff
+      {
+        "LogName": "Lurking in the Dark",
+        "Action": "EditData",
+        "Target": "Data/Buffs",
+        "Entries": {
+          "{{ModId}}_LitDBuff": {
+            "DisplayName": "Lurking in th Dark",
+            "Duration": 10000,
+            "MaxDuration": -1,
+            "Texture": "maps/springobjects",
+            "SheetIndex": 0,
+            "Effects": {
+              "Attack": 1.0,
+              "Speed": 1.0,
+              "MagneticRadius": 2.0
+            }
+          }
+          }
+        },
+        {
+          "LogName": "Pipo: Tinker",
+          "Action": "EditData",
+          "Target": "mushymato.TrinketTinker/Tinker",
+          "Entries": {
+            "{{ModId}}_SensKeychain": {
+              "Variants": [
+                {
+                  "Texture": "Characters/SenS",
+                  "Width": 16,
+                  "Height": 32,
+                  "ShadowScale": 0
+                }
+              ],
+              "Motion": {
+                "MotionClass": "Lerp",
+                "DirectionMode": "DRUL",
+                "FrameLength": 4,
+                "Anchors": [
+                  {
+                    "Mode": "Forage",
+                    "Range": 320
+                  },
+                  {
+                    "Mode": "Crop",
+                    "Range": 240
+                  },
+                ],
+                "AnimClips": {
+                  "Idle.1": {
+                      "FrameStart": 16,
+                      "FrameLength": 4,
+                      "Interval": 300
+                  }
+                },
+                "Args": {
+                  "Min": 32,
+                  "Rate": 300,
+                  "MoveSync": true
+                }
+              },
+              "Abilities": [
+                [
+                  {
+                    "AbilityClass": "HarvestForage",
+                    "Proc": "Timer",
+                    "ProcTimer": 250,
+                    "ProcSound": "harvest",
+                    "Args": { "Range": 2 }
+                  },
+                  {
+                      "AbilityClass": "Hitscan",
+                      "Proc": "Timer",
+                      "ProcTimer": 1500,
+                      "ProcSound": "shadowDie",
+                      "ProcTAS": [ "{{ModId}}_PipoAttack" ],
+                      "Filters": ["Shadow Brute", "Shadow Shaman", "Shadow Sniper", "Shadow Guy"],
+                      "Args": {
+                        "Min": 30,
+                        "Max": 65,
+                        "Range": 192
+                      }
+                    },
+                    {
+                      "AbilityClass": "Health",
+                      "Proc": "Timer",
+                      "ProcTimer": 11000,
+                      "ProcSound": "shadowpeep",
+                      "Args": { "Min": 0.03, "Max": 0.05 }
+                    },
+                    {
+                      "AbilityClass": "Buff",
+                      "Proc": "Timer",
+                      "ProcTimer": 9000,
+                      "Args": { "BuffId": "{{ModId}}_CatsCradle" }
+                    },
+                    {
+                      "AbilityClass": "Buff",
+                      "Proc": "Always",
+                      "Args": { "BuffId": "{{ModId}}_CatsCradle" }
+                    }
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    }
