@@ -44,9 +44,10 @@
 "Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
 "Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
 "Config.Female Toddler Design.name": "Female Toddler Design",
-"Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+"Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.",
 "Config.Male Toddler Design.name": "Male Toddler Design",
-"Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\nNanu and Opal's designs are by TheEspurrQueen on the East Scarp Discord.",
+"Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.",
+
 //Graphics Pipo
 "Config.section.Graphics: Pipo the Void Cat.name": "Graphics: Pipo the Void Cat",
 "Config.Pipo Design.name": "Pipo Design",
@@ -60,7 +61,7 @@
 //Graphics - UCT
 "Config.section.Graphics: Unique Children Talk.name": "Graphics: Unique Children Talk",
 "Config.UCT Portrait Compatibility.name": "UCT Portrait Compatibility",
-"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\nPortraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
+"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nDisthen and Auri's portraits are by Medys.",
 "Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu and Opal Portraits",
 "Config.7thAxis Nanu and Opal Portraits.description": "Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true."
 }
