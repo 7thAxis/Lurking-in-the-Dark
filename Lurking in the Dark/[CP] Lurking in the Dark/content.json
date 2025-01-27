@@ -131,17 +131,17 @@
             "Section": "Graphics: General"
         },
         "Female Toddler Design": {
-            "AllowValues": "Loki, Freya, Nanu, Opal, Auri, Disthen",
+            "AllowValues": "Loki, Freya, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
             "Default": "Freya",
             "AllowBlank": false,
-            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.",
+            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
             "Section": "Graphics: General"
         },
         "Male Toddler Design": {
-            "AllowValues": "Loki, Freya, Nanu, Opal, Auri, Disthen",
+            "AllowValues": "Loki, Freya, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
             "Default": "Loki",
             "AllowBlank": false,
-            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.",
+            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
             "Section": "Graphics: General"
         },
         "Pipo Design": {
@@ -176,7 +176,7 @@
             "AllowValues": "true, false",
             "Default": "true",
             "AllowBlank": false,
-            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\nPortraits are by TheEspurrQueen on the East Scarp Discord.\n\n(Requires game restart to disable)",
+            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nDisthen and Auri's portraits are by Medys.\nWillow and Elowen's portraits are by Jules.",
             "Section": "Graphics: Unique Children Talk"
         },
         "7thAxis Nanu and Opal Portraits": {
