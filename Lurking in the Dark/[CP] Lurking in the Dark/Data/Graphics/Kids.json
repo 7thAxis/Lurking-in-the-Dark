@@ -20,6 +20,14 @@
             "FromFile": "Assets/Characters/Kids/Toddler_{{Male Toddler Design}}.png",
             "When":  { "ShadowKidsActive": true }
         },
+        {           
+            "Action": "EditImage",
+            "Target": "Characters/Toddler, Characters/Toddler_Dark, Characters/Toddler_girl, Characters/Toddler_girl_Dark",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange",
+            "FromFile": "Assets/Characters/Kids/The_Hat.png",
+            "When":  { "ShadowKidsActive": true, "IsOutdoors": true }
+        },
         //Unique Children Talk Compat
             //Child 1
         {           

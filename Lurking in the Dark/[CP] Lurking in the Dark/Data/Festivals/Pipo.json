@@ -1,0 +1,280 @@
+{
+    "Changes": [
+    //Pipo change name
+        {
+            "Action": "EditData",
+            "Target": "data/festivals/spring13, data/festivals/spring24, data/festivals/summer28, data/festivals/fall16, data/festivals/fall27, data/festivals/winter8, data/festivals/winter25, data/festivals/fall20, data/festivals/winter28, data/festivals/summer5, data/festivals/spring19, data/festivals/winter13, data/festivals/fall3, data/festivals/summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "/changeName PipoP {{i18n:Core.Names.Pipo}}"
+                }
+            ]
+        },
+//----------------EGG FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13", //egg festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 48 70 3 false Character",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------FLOWER DANCE------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24", //flower dance
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 57 43 3 false Character",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------LUAU------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11", //luau
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 44 42 3 false Character",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------MOONLIGHT JELLY------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28", //moonlight jelly
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 89 24 1 false Character",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------SDV FAIR------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16", //fair
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 29 37 3 false Character",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up_y2", 5],
+                    "Value": "addTemporaryActor PipoP 34 33 3 false Character",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": { "IsSVEInstalled": false }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16", //fair
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                    "Value": "addTemporaryActor PipoP 30 25 1 false Character",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": { "IsSVEInstalled": true }
+        },
+//----------------SPIRITS EVE------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27", //spirits eve
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 35 63 2 false Character",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up_y2", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 31 68 1 false Character",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": { "IsSVEInstalled": false }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27", //spirits eve
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 32 64 1 false Character",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up_y2", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 35 63 2 false Character",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": { "IsSVEInstalled": true }
+        },
+//----------------ICE FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8", //ice festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 68 30 1 false Character",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------WINTER STAR------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25", //feast of the winter star
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 34 70 1 false Character",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up_y2", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 27 68 1 false Character",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------RSV GATHERING------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 75 48 3 false Character",
+                    "Delimiter": "/"
+                 }  
+
+            ],
+            "When": { "HasMod: |contains=Rafseazz.RSVCP": true }
+        },
+
+//----------------RSV EMBER OF RESOLUTIONS------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28", //Ridgeside Ember
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 32 28 3 false Character",
+                    "Delimiter": "/"
+                }     
+
+            ],
+            "When": { "HasMod: |contains=Rafseazz.RSVCP": true }
+        },
+        
+//----------------SURFING FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer5", //Surfing Festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 35 4 3 false Character",
+                    "Delimiter": "/"
+                 }
+    
+            ],
+            "When": { "HasMod: |contains=spacechase0.SurfingFestival": true }
+        },
+
+//----------------FASHION FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring19", //Fashion Festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 71 23 3 false Character",
+                    "Delimiter": "/"
+                 }
+            ],
+            "When": { "HasMod: |contains=UNA.FF.CP": true }
+        },
+
+//----------------LOVE FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter13", //Love Festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 29 60 1 false Character",
+                    "Delimiter": "/"
+                }
+
+            ],
+            "When": { "HasMod: |contains=AvalonMFX.LoveFestival": true }
+        },
+//----------------MARKETPAOOLZA------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall3", //Marketpalooza
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 14 39 0 false Character",
+                    "Delimiter": "/"
+                }
+
+            ],
+            "When": { "HasMod: |contains=Fellowclown.PC": true,  "HasFlag|contains=Fellowclown.PC_Marketpalooza.Mail": true }
+        },
+//----------------FIREWORKS FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer20", //Fireworks Festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Fields", "set-up", 5],
+                    "Value": "addTemporaryActor PipoP 16 32 43 22 3 false Character",
+                    "Delimiter": "/"
+                }
+                
+            ],
+            "When": { "HasMod: |contains=violetlizabet.FireworksFestival": true }
+        }
+    ]
+}

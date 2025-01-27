@@ -1,0 +1,199 @@
+{
+    "Changes": [
+//----------------JEREMY ANIMATIONS------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/spring24, Data/Festivals/summer11, Data/Festivals/summer28, Data/Festivals/fall16, Data/Festivals/fall27, Data/Festivals/winter25",
+            "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                        "Value": "/animate JeremyTSnail false true 1000 5 4"
+                    }
+                ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13, Data/Festivals/summer11 ",
+            "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+                        "Value": "/animate JeremyTSnail false true 1000 13 12"
+                    }
+                ]
+        },
+//----------------EGG FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 45 80 3/JeremyTSnail 24 104 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "TraceV 33 65 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "TraceV 26 65 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------FLOWER DANCE------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24", //flower dance
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 50 44 1/JeremyTSnail 65 48 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 13 33 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------LUAU------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11", //luau
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 33 43 3/JeremyTSnail 51 47 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                    "Value": "TraceV 43 16 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
+                    "Value": "TraceV 28 4 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------MOONLIGHT JELLY------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28", //moonlight jelly
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 93 41 3/JeremyTSnail 91 41 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------SDV FAIR------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16", //fair
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 32 89 3/JeremyTSnail 24 104 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------SPIRITS EVE------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27", //spirits eve
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "TraceV 27 13 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
+                    "Value": "TraceV 6 15 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": { "IsSVEInstalled": false }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27", //spirits eve
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "JeremyTSnail 24 104 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+//----------------ICE FESTIVAL------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8", //ice festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 56 43 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8", //ice festival
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "JeremyTSnail 79 47 1",
+                    "Delimiter": "/"
+                },
+                {
+					"Operation": "Append",
+					"Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
+					"Value": "/animate JeremyTSnail false true 1000 13 12"
+				}
+                
+            ],
+            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false }
+        },
+//----------------WINTER STAR------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25", //feast of the winter star
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
+                    "Value": "TraceV 33 90 2/JeremyTSnail 24 104 3",
+                    "Delimiter": "/"
+                }
+            ]
+        }
+    ]
+}

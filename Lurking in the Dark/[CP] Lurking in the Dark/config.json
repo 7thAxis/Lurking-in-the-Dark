@@ -10,6 +10,8 @@
   "Schedule Type": "Dynamic",
   "Romantic Nickname": "Starshine",
   "Pipo Moves In": "true",
+  "Pipo Farmhouse Spawn X": "26",
+  "Pipo Farmhouse Spawn Y": "27",
   "Social Trace": "false",
   "NPC Portrait Style": "Default",
   "Reshade Existing Shadows": "false",

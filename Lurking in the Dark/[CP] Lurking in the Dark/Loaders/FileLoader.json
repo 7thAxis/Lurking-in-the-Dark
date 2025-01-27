@@ -13,7 +13,7 @@
         },
 		{
 			"Action": "Include",
-			"FromFile": "Data/Core/Festivals.json, Data/Dialogue/Sen/Festivals.json, Data/Graphics/Sen.json, Data/Graphics/FakeNPCs.json, Data/Graphics/Kids.json, Data/Graphics/Other.json, Data/Locations/Other.json, Data/Locations/Underscarp.json, Data/Dispositions/Sen.json, Data/Dialogue/Sen/GiftResponses.json, Data/Dialogue/Other/Townie.json, Data/Events/Sen/0H.json, Data/Events/Sen/2H.json, Data/Events/Sen/4H.json, Data/Events/Sen/6H.json, Data/Events/Sen/8H.json, Data/Events/Sen/10H.json, Data/Events/Sen/14H.json, Data/Quests/A_Garden_For_Sen.json, Data/Dialogue/Sen/Core.json, Data/Dialogue/Sen/Relationship.json, Data/Dialogue/Sen/Movies.json, Data/Events/Sen/ReactToDeath.json, Data/core/Monsters.json, Data/core/Migration.json, Data/Core/Shops.json, Data/FakeNPCs/Pipo.json, Data/FakeNPCs/SkrellEbb.json, Data/Core/Audio.json, Data/Animals/Void_Cat.json, Data/Core/Mail.json, Data/Items/Sens_Crocus.json, Data/Items/Furniture.json, Data/Items/PiposSummon.json, Data/Items/SensKeychain.json, Data/Core/Buildings.json"
+			"FromFile": "Data/Festivals/Sen.json, Data/Dialogue/Sen/Festivals.json, Data/Graphics/Sen.json, Data/Graphics/FakeNPCs.json, Data/Graphics/Kids.json, Data/Graphics/Other.json, Data/Locations/Other.json, Data/Locations/Underscarp.json, Data/Dispositions/Sen.json, Data/Dialogue/Sen/GiftResponses.json, Data/Dialogue/Other/Townie.json, Data/Events/Sen/0H.json, Data/Events/Sen/2H.json, Data/Events/Sen/4H.json, Data/Events/Sen/6H.json, Data/Events/Sen/8H.json, Data/Events/Sen/10H.json, Data/Events/Sen/14H.json, Data/Quests/A_Garden_For_Sen.json, Data/Dialogue/Sen/Core.json, Data/Dialogue/Sen/Relationship.json, Data/Dialogue/Sen/Movies.json, Data/Events/Sen/ReactToDeath.json, Data/core/Monsters.json, Data/core/Migration.json, Data/Core/Shops.json, Data/FakeNPCs/Pipo.json, Data/FakeNPCs/SkrellEbb.json, Data/Core/Audio.json, Data/Animals/Void_Cat.json, Data/Core/Mail.json, Data/Items/Sens_Crocus.json, Data/Items/Furniture.json, Data/Items/PiposSummon.json, Data/Items/SensKeychain.json, Data/Core/Buildings.json"
 		},
         //loads based on condition
         {
@@ -30,6 +30,11 @@
 			"Action": "Include",
 			"FromFile": "Data/Forage/Sens_Crocus.json",
             "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true }
+		},
+        {
+			"Action": "Include",
+			"FromFile": "Data/Festivals/Pipo.json",
+            //"When": { "HasSeenEvent: |contains=placeholder": true }
 		}    
     ]
 }
