@@ -13,8 +13,8 @@
 "Config.Shadow Stat Changes.description": "Allows for the changing of Shadow stats so Shadowfolk no longer harm the player after completing Sen's storyline.",
 "Config.Pacifist Mode.name": "Pacifist Mode",
 "Config.Pacifist Mode.description": "Shadows will be invincible to player attacks.\n\n(Shadow Stat Changes must be set to true for this to take effect)",
-"Config.Golem Eradication Substitute.name": "Golem Eradication Substitute",
-"Config.Golem Eradication Substitute.description": "Changes the Void Spirit eradication goal in the Adventurer's Guild to Golems.\n\n> Replaces Shadowfolk in the mines with Void Golems.\n\n> Golem monster list consists of Stone Golems, Wilderness Golems, Iridium Golems,\nVoid Golems, Dangerous Void Golems, Void Golem Mages, Void Golem Snipers,\nMetal Heads and Dwarvish Sentries.\n\n> Overrides \"Shadow Stat Changes\" behavior.\n\n> Disables if you make peace with Shadowfolk in SVE.",
+"Config.Construct Eradication Substitute.name": "Construct Eradication Substitute",
+"Config.Construct Eradication Substitute.description": "Changes the Void Spirit eradication goal in the Adventurer's Guild to Constructs.\n\n> Replaces Shadowfolk in the mines with Void Constructs.\n\n> Construct monster list consists of Stone Golems, Wilderness Golems, Iridium Golems,\nVoid Constructs, Dangerous Void Constructs, Void Construct Mages, Void Construct Snipers,\nMetal Heads and Dwarvish Sentries.\n\n> Overrides \"Shadow Stat Changes\" behavior.\n\n> Disables if you make peace with Shadowfolk in SVE.",
 "Config.Event Cooldown Length.name": "Event Cooldown Length",
 "Config.Event Cooldown Length.description": "Adjusts number of days you have to wait between Sen's events.\n\n(Default 3 days)",
 

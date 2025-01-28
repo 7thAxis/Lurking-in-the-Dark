@@ -6,7 +6,7 @@
             "Target": "Data/MonsterSlayerQuests",
             "Entries": {
                 "Shadows": {
-                    "DisplayName": "{{i18n:Core.Monsters.GolemEradication}}",
+                    "DisplayName": "{{i18n:Core.Monsters.ConstructEradication}}",
                     "Targets": [
                         "Stone Golem",
                         "Wilderness Golem",
@@ -29,18 +29,18 @@
                     "CustomFields": {}
                 }
             },
-            "When": { "Golem Eradication Substitute": true, "HasSeenEvent: |contains=1090508": false }
+            "When": { "Construct Eradication Substitute": true, "HasSeenEvent: |contains=1090508": false }
         }, 
         {
           "LogName": "Shadow Stat Changes - Seen Event - PM off",
           "Action": "EditData",
           "Target": "Data/Monsters",
           "Fields": {
-            "Shadow Brute":  { "14": "{{i18n:Core.Monsters.VoidGolem}}" },
-            "Shadow Shaman": { "14": "{{i18n:Core.Monsters.VoidGolemMage}}" },
-            "Shadow Sniper": { "14": "{{i18n:Core.Monsters.VoidGolemSniper}}" }
+            "Shadow Brute":  { "14": "{{i18n:Core.Monsters.VoidConstruct}}" },
+            "Shadow Shaman": { "14": "{{i18n:Core.Monsters.VoidConstructMage}}" },
+            "Shadow Sniper": { "14": "{{i18n:Core.Monsters.VoidConstructSniper}}" }
           },
-            "When": { "Golem Eradication Substitute": true, "HasSeenEvent: |contains=1090508": false }    
+            "When": { "Construct Eradication Substitute": true, "HasSeenEvent: |contains=1090508": false }    
         },
        //STAT CHANGES
         //Seen Event, PM off
@@ -79,7 +79,7 @@
                 "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
                 "Pacifist Mode": false,
                 "Shadow Stat Changes":true,
-                "Golem Eradication Substitute": false
+                "Construct Eradication Substitute": false
             }
           },
        
@@ -111,7 +111,7 @@
                 "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
                 "Pacifist Mode": true,
                 "Shadow Stat Changes":true,
-                "Golem Eradication Substitute": false
+                "Construct Eradication Substitute": false
             }
           },
         //Seen event, PM On
@@ -150,7 +150,7 @@
                 "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
                 "Pacifist Mode": true,
                 "Shadow Stat Changes":true,
-                "Golem Eradication Substitute": false
+                "Construct Eradication Substitute": false
             }
           }
     ]

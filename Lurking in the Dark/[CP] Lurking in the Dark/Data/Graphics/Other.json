@@ -30,7 +30,7 @@
             "Priority": "Medium",
             "Target": "Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
             "FromFile": "Assets/Replacer/{{TargetWithoutPath}}.png",
-            "When": { "Golem Eradication Substitute": true }
+            "When": { "Construct Eradication Substitute": true }
 
         },
         //ANIMALS
