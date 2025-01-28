@@ -1,14 +1,26 @@
 {
     "Changes": [
+        //Defaults
         {
             "Action": "Load",
-            "Target": "Portraits/TraceV, Portraits/TraceV_Default",
-            "FromFile": "Assets/Portraits/Default/Trace/Trace.png"
+            "Target": "Portraits/TraceV_Default",
+            "FromFile": "Assets/Portraits/Default/Trace/TraceV.png"
         },
         {
             "Action": "Load",
-            "Target": "Characters/TraceV, Characters/TraceV_Default",
-            "FromFile": "Assets/Characters/Trace/Trace.png"
+            "Target": "Characters/TraceV_Default",
+            "FromFile": "Assets/Characters/Trace/TraceV.png"
+        },
+        //Functional
+        {
+            "Action": "Load",
+            "Target": "Characters/TraceV, Characters/TraceV_Shadow, Characters/TraceV_ShadowKid",
+            "FromFile": "Assets/Characters/Trace/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/TraceV, Portraits/TraceV_Shadow, Portraits/TraceV_ShadowKid",
+            "FromFile": "Assets/Portraits/Default/Trace/{{TargetWithoutPath}}.png"
         },
         {
             "LogName": "Trace Animations",
