@@ -8,7 +8,10 @@
 ╚██████╗╚██████╔╝██║  ██║███████╗
  ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
 */
-
+//Monsters
+"Core.Monsters.VoidGolem": "Void Golem",
+"Core.Monsters.VoidGolemMage": "Void Golem Mage",
+"Core.Monsters.VoidGolemSniper": "Void Golem Sniper",
 //Music
 "Core.Music.Underscarp": "LitD: Underscarp (Tommy Cathodic)",
 "Core.Music.JeremyTheme": " LitD: Jeremy's Room (Alex McCulloch)",

@@ -1,7 +1,7 @@
 {
   "Shadow Stat Changes": "true",
   "Pacifist Mode": "false",
-  "Golem Eradication Substitute": "false",
+  "Golem Eradication Substitute": "true",
   "Event Cooldown Length": "3",
   "Have Shadow Kids": "true",
   "Include Void Snail Content": "true",
@@ -14,7 +14,7 @@
   "Pipo Farmhouse Spawn Y": "27",
   "Social Trace": "false",
   "NPC Portrait Style": "Default",
-  "Reshade Existing Shadows": "false",
+  "Reshade Existing Shadows": "true",
   "Spouse Room": "true",
   "Caldera Void Lava Snails": "true",
   "Female Toddler Design": "Freya",

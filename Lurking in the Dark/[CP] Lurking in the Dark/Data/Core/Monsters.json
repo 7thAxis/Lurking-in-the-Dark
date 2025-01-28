@@ -12,7 +12,10 @@
                         "Wilderness Golem",
                         "Iridium Golem",
                         "Metal Head",
-                        "Dwarvish Sentry"
+                        "Dwarvish Sentry",
+                        "Shadow Brute",
+                        "Shadow Shaman",
+                        "Shadow Sniper"
                     ],
                     "Count": 150,
                     "RewardItemId": "(O)523",
@@ -26,7 +29,18 @@
                     "CustomFields": {}
                 }
             },
-            "When": { "Golem Eradication Substitute": true }
+            "When": { "Golem Eradication Substitute": true, "HasSeenEvent: |contains=1090508": false }
+        }, 
+        {
+          "LogName": "Shadow Stat Changes - Seen Event - PM off",
+          "Action": "EditData",
+          "Target": "Data/Monsters",
+          "Fields": {
+            "Shadow Brute":  { "14": "{{i18n:Core.Monsters.VoidGolem}}" },
+            "Shadow Shaman": { "14": "{{i18n:Core.Monsters.VoidGolemMage}}" },
+            "Shadow Sniper": { "14": "{{i18n:Core.Monsters.VoidGolemSniper}}" }
+          },
+            "When": { "Golem Eradication Substitute": true, "HasSeenEvent: |contains=1090508": false }    
         },
        //STAT CHANGES
         //Seen Event, PM off
@@ -64,7 +78,8 @@
                 "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
                 "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
                 "Pacifist Mode": false,
-                "Shadow Stat Changes":true
+                "Shadow Stat Changes":true,
+                "Golem Eradication Substitute": false
             }
           },
        
@@ -95,7 +110,8 @@
                 "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.10h.P3": false,
                 "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
                 "Pacifist Mode": true,
-                "Shadow Stat Changes":true
+                "Shadow Stat Changes":true,
+                "Golem Eradication Substitute": false
             }
           },
         //Seen event, PM On
@@ -133,7 +149,8 @@
                 "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
                 "HasSeenEvent: |contains=1090508": false, //SVE shadow peace event
                 "Pacifist Mode": true,
-                "Shadow Stat Changes":true
+                "Shadow Stat Changes":true,
+                "Golem Eradication Substitute": false
             }
           }
     ]

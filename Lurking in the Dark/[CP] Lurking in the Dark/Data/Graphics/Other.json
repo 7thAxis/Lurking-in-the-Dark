@@ -19,9 +19,19 @@
         //RESHADE
         {           
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/Krobus, Characters/SeaMonsterKrobus, Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
             "FromFile": "Assets/Reshade/{{TargetWithoutPath}}.png",
             "When": { "Reshade Existing Shadows": true }
+        },
+        //REPLACER
+        {
+            "Action": "Load",
+            "Priority": "Medium",
+            "Target": "Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
+            "FromFile": "Assets/Replacer/{{TargetWithoutPath}}.png",
+            "When": { "Golem Eradication Substitute": true }
+
         },
         //ANIMALS
             //Void Cats
