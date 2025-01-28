@@ -131,14 +131,14 @@
             "Section": "Graphics: General"
         },
         "Female Toddler Design": {
-            "AllowValues": "Loki, Freya, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
+            "AllowValues": "Loki, Freya, SenJr, TraceJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
             "Default": "Freya",
             "AllowBlank": false,
             "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
             "Section": "Graphics: General"
         },
         "Male Toddler Design": {
-            "AllowValues": "Loki, Freya, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
+            "AllowValues": "Loki, Freya, SenJr, TraceJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
             "Default": "Loki",
             "AllowBlank": false,
             "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
