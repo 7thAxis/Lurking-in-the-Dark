@@ -3,6 +3,7 @@
         //Defaults
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/TraceV_Default",
             "FromFile": "Assets/Portraits/Default/Trace/TraceV.png"
         },
@@ -19,6 +20,7 @@
         },
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/TraceV, Portraits/TraceV_Shadow, Portraits/TraceV_ShadowKid",
             "FromFile": "Assets/Portraits/Default/Trace/{{TargetWithoutPath}}.png"
         },

@@ -20,7 +20,7 @@
                 "LitD_TriggerActions.PipoIncubator": {
                     "Trigger": "DayEnding",
                     "Id": "LitD_TriggerActions.PipoIncubator",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P2, !PLAYER_HAS_CONVERSATION_TOPIC Current PLACEHOLDER, !{{Include Void Snail Content}}",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.PipoArc.P2, !PLAYER_HAS_CONVERSATION_TOPIC Current PLACEHOLDER, !{{Void Snail Content}}",
                     "Actions": [ "AddMail Current LitD_M_PipoIncubator tomorrow" ]
                 },
                 "LitD_TriggerActions.PipoPortrait": {

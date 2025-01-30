@@ -32,12 +32,14 @@
             //Child 1
         {           
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
             "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Female" }
         },
         {           
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
             "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
@@ -70,12 +72,14 @@
             //Child 2
         {           
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
             "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Female" }
         },
         {           
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
             "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Male" }

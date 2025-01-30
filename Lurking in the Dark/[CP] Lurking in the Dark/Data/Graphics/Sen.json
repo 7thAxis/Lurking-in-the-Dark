@@ -3,6 +3,7 @@
         //Sen Defaults       
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/SenS, Portraits/SenS_Default",
             "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/SenS.png"
         },
@@ -14,11 +15,13 @@
         //Other
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/SenS_Kid, Portraits/SenS_Bow, Portraits/SenS_Cloak",
             "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/{{TargetWithoutPath}}.png"
         },
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/SenS_Kid, Characters/SenS_Bow,Characters/SenS_Cloak",
             "FromFile": "Assets/Characters/Sen/Main/{{TargetWithoutPath}}.png"
         },
@@ -34,7 +37,7 @@
         {
             "LogName": "Cloak Married",
             "Action": "EditImage",
-            "Target": "Characters/SenS",
+            "Target": "Characters/SenS, Characters/SenS_Bow",
             "FromFile": "Assets/Characters/Sen/Main/SenS_Cloak.png",
             "Update": "OnLocationChange",
             "When": {
@@ -45,7 +48,7 @@
         {
             "LogName": "Misc Cloak Sprites",
             "Action": "EditImage",
-            "Target": "Characters/SenS",
+            "Target": "Characters/SenS, Characters/SenS_Bow",
             "FromFile": "Assets/Characters/Sen/Main/SenS_Cloak.png",
             "Update": "OnLocationChange",
             "When": {
@@ -67,7 +70,7 @@
         {
             "LogName": "Senbrella Overworld farm",
             "Action": "EditImage",
-            "Target": "Characters/SenS",
+            "Target": "Characters/SenS, Characters/SenS_Bow",
             "FromFile": "Assets/Characters/Sen/Main/SenS_Senbrella.png",
             "Update": "OnLocationChange",
             "When": {
@@ -78,7 +81,7 @@
         {
             "LogName": "Senbrella Overworld", 
             "Action": "EditImage",
-            "Target": "Characters/SenS",
+            "Target": "Characters/SenS, Characters/SenS_Bow",
             "FromFile": "Assets/Characters/Sen/Main/SenS_Senbrella.png",
             "Update": "OnTimeChange, OnLocationChange",
             "When": {
@@ -86,8 +89,32 @@
                 "LivingWithSen": false,
                 "Weather": "Sun, Wind, Snow",
                 "Time": "{{Range: 1700, 1930}}",
-                "TodaysDate: |contains=winter 15, winter 16, winter 17": false
+                "TodaysDate: |contains=winter 15, winter 16, winter 17, summer 20, summer 21, winter 12, winter 13, spring 15, spring 16, spring 27": false
             }
+        },
+        {
+            "LogName": "Sen Pendant Overlay - Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/SenS, Characters/SenS_Bow, Characters/SenS_Cloak, Characters/SenS_Senough",
+            "PatchMode": "Overlay",
+            "FromFile": "Assets/Characters/Sen/Overlays/Pendant_{{Roommate|contains=SenS}}.png",
+            "When": { "SenHasPendant": true, "Pendant Overlays": true }
+        },
+        {
+            "LogName": "Sen Pendant Overlay - Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS, Portraits/SenS_Bow",
+            "PatchMode": "Overlay",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/Overlays/Pendant_{{Roommate|contains=SenS}}.png",
+            "When": { "SenHasPendant": true, "Pendant Overlays": true }
+        },
+        {
+            "LogName": "Sen Pendant Overlay - Cloak Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/SenS_Cloak",
+            "PatchMode": "Overlay",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/Overlays/Pendant_Cloak_{{Roommate|contains=SenS}}.png",
+            "When": { "SenHasPendant": true, "Pendant Overlays": true }
         },
         //Animations
         {

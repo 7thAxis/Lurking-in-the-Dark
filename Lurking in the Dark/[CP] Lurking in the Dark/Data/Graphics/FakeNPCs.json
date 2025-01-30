@@ -4,22 +4,26 @@
         //Skrell Ebb
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/Skrell, Characters/Ebb",
             "FromFile": "Assets/Characters/{{TargetWithoutPath}}/{{TargetWithoutPath}}.png"
         },
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/Skrell, Portraits/Ebb",
             "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/{{TargetWithoutPath}}/{{TargetWithoutPath}}.png"
         },
         //Pipo
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/PipoP",
             "FromFile": "Assets/Characters/Pipo/Pipo_{{Pipo Design}}.png"
         },
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/PipoP",
             "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Pipo/Pipo_{{Pipo Design}}.png"
         },
@@ -84,6 +88,7 @@
         //CoffeeMakerKun
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/CoffeeMakerKun",
             "FromFile": "Assets/Portraits/Default/Other/CoffeeMakerKun.png"
         }

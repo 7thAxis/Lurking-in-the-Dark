@@ -26,21 +26,41 @@
 "Config.Schedule Type.values.Simplified": "Simplified",
 "Config.Romantic Nickname.name": "Romantic Nickname",
 "Config.Romantic Nickname.description": "Sets Sen's romantic nickname for the player.",
-"Config.Pipo Moves In.name": "Pipo Moves In",
-"Config.Pipo Moves In.description": "Whether Pipo should move in or not if you marry/room with Sen.\n\n(Correct events must be seen first)",
-"Config.Pipo Farmhouse Spawn X.name": "Pipo Farmhouse Spawn Point (X)",
-"Config.Pipo Farmhouse Spawn X.description": "Select the X coordinate for Pipo's spawn point when living with Sen.",
-"Config.Pipo Farmhouse Spawn Y.name": "Pipo Farmhouse Spawn Point (Y)",
-"Config.Pipo Farmhouse Spawn Y.description": "Select the Y coordinate for Pipo's spawn point when living with Sen.",
 
 //Graphics
-"Config.section.Graphics: General.name": "Graphics: General",
+"Config.section.General Graphics.name": "General Graphics",
 "Config.NPC Portrait Style.name": "NPC Portrait Style",
 "Config.NPC Portrait Style.description": "Sets the mod's portrait style. Don't change this option during festivals.\n\n(Nyapu recommended because Nyapu is amazing)",
 "Config.Reshade Existing Shadows.name": "Reshade Existing Shadows",
 "Config.Reshade Existing Shadows.description": "Recolors existing Shadowfolk overworld sprites to match Sen's style.",
 "Config.Spouse Room.name": "Spouse Room",
 "Config.Spouse Room.description": "Allows you to disable Sen's custom spouse room if you want to decorate it yourself.\n\n(Requires game restart)",
+"Config.Pendant Overlays.name": "Pendant Overlays",
+"Config.Pendant Overlays.description": "Allows Sen to wear a mermaid pendant or void ghost pendant when living with you.",
+
+//Pipo
+"Config.section.Pipo the Void Cat.name": "Pipo the Void Cat",
+"Config.Pipo Design.name": "Pipo's Design",
+"Config.Pipo Design.description": "Sets the design Pipo will use.\n\nVoid is the canonical design.",
+"Config.Pipo Accessory Body.name": "Accessory Body",
+"Config.Pipo Accessory Body.description": "Adds an accessory to the face of Pipo's overworld sprite.",
+"Config.Pipo Accessory Face.name": "Accessory Face",
+"Config.Pipo Accessory Face.description": "Adds an accessory to the face of Pipo's overworld sprite.",
+"Config.Pipo Alpha Shorthair Portrait.name": "Alpha Shorthair Portrait",
+"Config.Pipo Alpha Shorthair Portrait.description": "Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\")",
+"Config.Pipo Moves In.name": "Moves In",
+"Config.Pipo Moves In.description": "Whether Pipo should move in or not if you marry/room with Sen.\n\n(Correct events must be seen first)",
+"Config.Pipo Farmhouse Spawn X.name": "Farmhouse Spawn Point (X)",
+"Config.Pipo Farmhouse Spawn X.description": "Select the X coordinate for Pipo's spawn point when living with Sen.",
+"Config.Pipo Farmhouse Spawn Y.name": "Farmhouse Spawn Point (Y)",
+"Config.Pipo Farmhouse Spawn Y.description": "Select the Y coordinate for Pipo's spawn point when living with Sen.",
+
+//Children
+"Config.section.Sen's Children.name": "Sen's Children",
+"Config.UCT Portrait Compatibility.name": "Unique Children Talk Portraits",
+"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nDisthen and Auri's portraits are by Medys.\nWillow and Elowen's portraits are by Jules.",
+"Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu and Opal Portraits",
+"Config.7thAxis Nanu and Opal Portraits.description": "Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true.",
 "Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
 "Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
 "Config.Female Toddler Design.name": "Female Toddler Design",
@@ -48,20 +68,12 @@
 "Config.Male Toddler Design.name": "Male Toddler Design",
 "Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
 
-//Graphics Pipo
-"Config.section.Graphics: Pipo the Void Cat.name": "Graphics: Pipo the Void Cat",
-"Config.Pipo Design.name": "Pipo Design",
-"Config.Pipo Design.description": "Sets the design Pipo will use.\n\nVoid is the canonical design.",
-"Config.Pipo Accessory Body.name": "Pipo Accessory Body",
-"Config.Pipo Accessory Body.description": "Adds an accessory to the face of Pipo's overworld sprite.",
-"Config.Pipo Accessory Face.name": "Pipo Accessory Body",
-"Config.Pipo Accessory Face.description": "Adds an accessory to the face of Pipo's overworld sprite.",
-"Config.Pipo Alpha Shorthair Portrait.name": "Pipo Alpha Shorthair Portrait",
-"Config.Pipo Alpha Shorthair Portrait.description": "Uses the janky portrait from alpha builds that people seem to like.\n\n(Design must be set to \"Shorthair\")",
-//Graphics - UCT
-"Config.section.Graphics: Unique Children Talk.name": "Graphics: Unique Children Talk",
-"Config.UCT Portrait Compatibility.name": "UCT Portrait Compatibility",
-"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nDisthen and Auri's portraits are by Medys.\nWillow and Elowen's portraits are by Jules.",
-"Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu and Opal Portraits",
-"Config.7thAxis Nanu and Opal Portraits.description": "Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true."
+//Trace & Jeremy
+"Config.section.Trace & Jeremy.name": "Trace & Jeremy",
+"Config.Void Snail Content.name": "Void Snail Content",
+"Config.Void Snail Content.description": "Whether Trace, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
+"Config.Social Trace.name": "Social Trace",
+"Config.Social Trace.description": "Determines if Trace should be friend-able. Provides additional dialogue content when enabled, but no events.",
+"Config.Caldera Void Lava Snails.name": "Caldera Void Lava Snails",
+"Config.Caldera Void Lava Snails.description": "Spawns visible Void Lava Snails in the Caldera to match in-game lore."
 }

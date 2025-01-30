@@ -19,7 +19,7 @@
         {
 			"Action": "Include",
 			"FromFile": "Loaders/SnailLoader.json",
-            "When": { "Include Void Snail Content": true }
+            "When": { "Void Snail Content": true }
 		},
         {
 			"Action": "Include",

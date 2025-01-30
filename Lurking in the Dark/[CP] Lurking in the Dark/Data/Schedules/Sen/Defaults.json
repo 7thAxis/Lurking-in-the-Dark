@@ -99,16 +99,13 @@
 					900 Town 77 84 3/
 					1400 Town 71 101/
 					1600 Beach 20 21/
-					2330 Town 37 96", 
-				"SquidFest_2": "GOTO SquidFest_1",
-				"SquidFest_3": "GOTO SquidFest_1",
+					2330 Town 37 96",
 
 				"TroutDerby_1": " 
  					0 Forest 112 36/
 					1400 Town 77 84 3/
 					1700 Beach 21 21/",
 				"TroutDerby_2": "GOTO TroutDerby_1",
-				"TroutDerby_3": "GOTO TroutDerby_1",
 
 				"DesertFestival_1": " 
 				   0 Desert 19 59/

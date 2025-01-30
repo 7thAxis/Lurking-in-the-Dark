@@ -99,18 +99,15 @@
                             "Sprite": "Characters/SenS_Senough"
                         },
                         {
-                            "ID": "Birthday",
-                            "Condition": "SEASON_DAY winter 13, {{LivingWithSen |Contains=false}}",
-                            "Sprite": "Characters/SenS_Bow"
-                        },
-                        {
-                            "ID": "Festival of the Mundane",
-                            "Condition": "SEASON_DAY fall 27, {{HasMod: |contains=MouseyPounds.ShadowFestival}}, {{LivingWithSen |Contains=false}}",
+                            "ID": "Bow",
+                            "Condition": "ANY \"SEASON_DAY winter 13\" \"SEASON_DAY fall 27, {{HasMod: |contains=MouseyPounds.ShadowFestival}}\" \"RANDOM 0.1\"",
+                            "Portrait": "Portraits/SenS_Bow",
                             "Sprite": "Characters/SenS_Bow"
                         },
                         {
                             "ID": "Other Festivals",
-                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\" \"IS_PASSIVE_FESTIVAL_TODAY TroutDerby, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY NightMarket, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY SquidFest, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY DesertFestival, {{LivingWithSen |Contains=false}}\"",
+                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\" \"IS_PASSIVE_FESTIVAL_TODAY TroutDerby, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY NightMarket, {{LivingWithSen |Contains=false}}\" \"SEASON_DAY Winter 12, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY DesertFestival, {{LivingWithSen |Contains=false}}\"",
+                            "Precedence": "1",
                             "Portrait": "Portraits/SenS_Cloak",
                             "Sprite": "Characters/SenS_Cloak"
                         }

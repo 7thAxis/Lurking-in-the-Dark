@@ -2,6 +2,7 @@
     "Changes": [
         {
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Portraits/JeremyTSnail, Portraits/JeremyTSnail_Default",
             "FromFile": "Assets/Portraits/Default/Jeremy/Jeremy.png"
         },
