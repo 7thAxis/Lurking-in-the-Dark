@@ -129,7 +129,7 @@
                 "OneKid_3": "{{i18n:Relationship.SenS.OneKid.4{{RelationshipTokens}}}}",
                 "OneKid_4": "{{i18n:Relationship.SenS.OneKid.5{{RelationshipTokens}}}}",
 
-                "TwoKids_0": "{{i18n:Relationship.SenS.TwoKid.1{{RelationshipTokens}}}}{{i18n: Relationship.SenS.TwoKidNostalgia.{{Range: 1, 2}}}}",
+                "TwoKids_0": "{{i18n:Relationship.SenS.TwoKid.1{{RelationshipTokens}}}}{{i18n: Relationship.SenS.TwoKidNostalgia.{{Random:{{Range: 1, 4}}}}}}",
                 "TwoKids_1": "{{i18n:Relationship.SenS.TwoKid.2{{RelationshipTokens}}}}",
                 "TwoKids_2": "{{i18n:Relationship.SenS.TwoKid.3{{RelationshipTokens}}}}",
                 "TwoKids_3": "{{i18n:Relationship.SenS.TwoKid.4}}{{i18n:Relationship.SenS.TwoKidAction.{{Random:{{Range: 1, 4}}}}{{RelationshipTokens}}}}",
