@@ -22,7 +22,7 @@
         {
             "Action": "Load",
             "Priority": "Low",
-            "Target": "Characters/SenS_Kid, Characters/SenS_Bow,Characters/SenS_Cloak",
+            "Target": "Characters/SenS_Kid, Characters/SenS_Bow, Characters/SenS_Cloak",
             "FromFile": "Assets/Characters/Sen/Main/{{TargetWithoutPath}}.png"
         },
         //Festivals
