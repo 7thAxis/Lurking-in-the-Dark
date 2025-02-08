@@ -100,7 +100,7 @@
             "AllowValues": "true, false",
             "Default": "true",
             "AllowBlank": false,
-            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nDisthen and Auri's portraits are by Medys.\nWillow and Elowen's portraits are by Jules.",
+            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nPetra, Telas, Disthen and Auri's portraits are by Medys.\nWillow and Elowen's portraits are by Jules.\nBow portrait assets by Jules.",
             "Section": "Sen's Children"
         },
         "7thAxis Nanu and Opal Portraits": {
@@ -111,17 +111,17 @@
             "Section": "Sen's Children"
         },
         "Female Toddler Design": {
-            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
+            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen, Petra, Telas",
             "Default": "Freya",
             "AllowBlank": false,
-            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
+            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's sprites are by TheEspurrQueen.\n> Petra, Telas, Auri and Disthen's sprites are by Medys.\n> Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys.",
             "Section": "Sen's Children"
         },
         "Male Toddler Design": {
-            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen",
+            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen, Petra, Telas",
             "Default": "Loki",
             "AllowBlank": false,
-            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's designs are by TheEspurrQueen.\n> Auri and Disthen's designs are by Medys.\n> Willow and and Elowen's designs are by Jules.",
+            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's sprites are by TheEspurrQueen.\n> Petra, Telas, Auri and Disthen's sprites are by Medys.\n> Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys.",
             "Section": "Sen's Children"
         },
         //Pipo
@@ -218,29 +218,37 @@
             "Name": "SenHasPendant", 
             "Value": "{{Query: {{Relationship: SenS |contains=Married}} OR {{Roommate|contains=SenS}}}}"
         },
-        {
-            "Name": "ShadowKidsActive",
-            "Value": false  
-        },
-        {
-            "Name": "ShadowKidsActive",
-            "Value": true,
-            "When": { "Spouse": "SenS", "Have Shadow Kids": true  }
-        },
-        {
-            "Name": "UniqueChildCheck",
-            "Value": false
-             
-        },
-        {
-            "Name": "UniqueChildCheck", 
-            "Value": "{{HasMod: |contains=shaklin.uniquechildrentalk}}",
-            "When": { 
-                "Spouse": "SenS",
-                "ShadowKidsActive": true,
-                "UCT Portrait Compatibility": true                
-            }
-        },
+
+        { "Name": "ShadowKidsActive", "Value": false   },
+            {
+                "Name": "ShadowKidsActive",
+                "Value": true,
+                "When": { "Spouse": "SenS", "Have Shadow Kids": true  }
+            },
+        { "Name": "UniqueChildCheck", "Value": false },
+            {
+                "Name": "UniqueChildCheck", 
+                "Value": "{{HasMod: |contains=shaklin.uniquechildrentalk}}",
+                "When": { 
+                    "Spouse": "SenS",
+                    "ShadowKidsActive": true,
+                    "UCT Portrait Compatibility": true                
+                }
+            },
+
+        { "Name": "SenletBow1", "Value": "" },
+            {
+                "Name": "SenletBow1",
+                "Value": "_Bow",
+                "When": { "Query: {{Random: {{Range: 1, 2}}|key=SenletBow1}} = 1": true, "IsOutdoors": false  }
+            },
+        { "Name": "SenletBow2", "Value": "" },
+            {
+                "Name": "SenletBow2",
+                "Value": "_Bow",
+                "When": { "Query: {{Random: {{Range: 1, 2}}|key=SenletBow2}} = 1": true, "IsOutdoors": false  }
+            },
+
         {
             "Name": "SenPartnershipRoute",
             "Value": "Platonic"
