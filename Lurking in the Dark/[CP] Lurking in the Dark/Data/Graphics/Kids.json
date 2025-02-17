@@ -11,13 +11,13 @@
         {           
             "Action": "Load",
             "Target": "Characters/Toddler_girl, Characters/Toddler_girl_Dark",
-            "FromFile": "Assets/Characters/Kids/Toddler_{{Female Toddler Design}}{{SenletBow1}}.png",
+            "FromFile": "Assets/Characters/Kids/Toddler_{{Female Toddler Design}}{{SenletBowFemale}}.png",
             "When": { "ShadowKidsActive": true }
         },
         {           
             "Action": "Load",
             "Target": "Characters/Toddler, Characters/Toddler_Dark",
-            "FromFile": "Assets/Characters/Kids/Toddler_{{Male Toddler Design}}{{SenletBow2}}.png",
+            "FromFile": "Assets/Characters/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
             "When":  { "ShadowKidsActive": true }
         },
         {           
@@ -34,21 +34,21 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}{{SenletBow1}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}{{SenletBowFemale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Female" }
         },
         {           
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}{{SenletBow2}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
         },
                 //Axell Portraits
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBow1}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBowFemale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=0": "Female",
@@ -60,7 +60,7 @@
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBow2}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBowMale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=0": "Male",
@@ -81,14 +81,14 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}{{SenletBow2}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Male" }
         },
                 //Axell Portraits
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBow2}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBowMale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=1": "Female",
@@ -100,7 +100,7 @@
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBow2}}.png",
+            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBowMale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=1": "Male",

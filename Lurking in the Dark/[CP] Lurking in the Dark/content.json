@@ -100,7 +100,7 @@
             "AllowValues": "true, false",
             "Default": "true",
             "AllowBlank": false,
-            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Nanu and Opal's portraits are by TheEspurrQueen.\nPetra, Telas, Disthen and Auri's portraits are by Medys.\nWillow and Elowen's portraits are by Jules.\nBow portrait assets by Jules.",
+            "Description":"Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Chirin, Nanu and Opal's portraits are by TheEspurrQueen.\nPetra, Telas, Pisque, Disthen and Auri's portraits are by Medys.\nYvette, Laurel, Willow and Elowen's portraits are by Jules.\nBow portrait assets by Jules.",
             "Section": "Sen's Children"
         },
         "7thAxis Nanu and Opal Portraits": {
@@ -110,18 +110,25 @@
             "Description":"Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true.",
             "Section": "Sen's Children"
         },
+        "Toddler Bow Chance": {
+            "AllowValues": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100",
+            "Default": "5",
+            "AllowBlank": false,
+            "Description":"The rate in which Sen's kids will wear bows on any given day.\n\nSets to a  1 in X chance.\n\nIf set to 1, the children will always wear bows.",
+            "Section": "Sen's Children"
+        },
         "Female Toddler Design": {
-            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen, Petra, Telas",
+            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Chirin, Auri, Disthen, Psique, Willow, Elowen, Laurel, Yvette, Petra, Telas",
             "Default": "Freya",
             "AllowBlank": false,
-            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's sprites are by TheEspurrQueen.\n> Petra, Telas, Auri and Disthen's sprites are by Medys.\n> Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys.",
+            "Description":"Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu, Opal and Chirin's sprites are by TheEspurrQueen.\n> Petra, Telas, Pisque, Auri and Disthen's sprites are by Medys.\n> Yvette, Laurel, Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys.",
             "Section": "Sen's Children"
         },
         "Male Toddler Design": {
-            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Auri, Disthen, Willow, Elowen, Petra, Telas",
+            "AllowValues": "Loki, Freya, Eerie, SenJr, Nanu, Opal, Chirin, Auri, Disthen, Psique, Willow, Elowen, Laurel, Yvette, Petra, Telas",
             "Default": "Loki",
             "AllowBlank": false,
-            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu and Opal's sprites are by TheEspurrQueen.\n> Petra, Telas, Auri and Disthen's sprites are by Medys.\n> Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys.",
+            "Description":"Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu, Opal and Chirin's sprites are by TheEspurrQueen.\n> Petra, Telas, Pisque, Auri and Disthen's sprites are by Medys.\n> Yvette, Laurel, Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys.",
             "Section": "Sen's Children"
         },
         //Pipo
@@ -195,7 +202,7 @@
             "AllowBlank": false,
             "Description": "Spawns visible Void Lava Snails in the Caldera to match in-game lore.",
             "Section": "Trace & Jeremy"
-        },
+        }
     },
     
     //Calculations 
@@ -236,17 +243,17 @@
                 }
             },
 
-        { "Name": "SenletBow1", "Value": "" },
+        { "Name": "SenletBowFemale", "Value": "" },
             {
-                "Name": "SenletBow1",
+                "Name": "SenletBowFemale",
                 "Value": "_Bow",
-                "When": { "Query: {{Random: {{Range: 1, 2}}|key=SenletBow1}} = 1": true, "IsOutdoors": false  }
+                "When": { "Query: {{Random: {{Range: 1, {{Toddler Bow Chance}} }}|key=SenletBowFemale}} = 1": true, "IsOutdoors": false  }
             },
-        { "Name": "SenletBow2", "Value": "" },
+        { "Name": "SenletBowMale", "Value": "" },
             {
-                "Name": "SenletBow2",
+                "Name": "SenletBowMale",
                 "Value": "_Bow",
-                "When": { "Query: {{Random: {{Range: 1, 2}}|key=SenletBow2}} = 1": true, "IsOutdoors": false  }
+                "When": { "Query: {{Random: {{Range: 1, {{Toddler Bow Chance}} }}|key=SenletBowMale}} = 1": true, "IsOutdoors": false  }
             },
 
         {
