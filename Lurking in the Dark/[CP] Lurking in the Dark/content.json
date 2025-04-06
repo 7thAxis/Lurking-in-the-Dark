@@ -225,7 +225,7 @@
             "Name": "SenHasPendant", 
             "Value": "{{Query: {{Relationship: SenS |contains=Married}} OR {{Roommate|contains=SenS}}}}"
         },
-
+            //Senlet stuff
         { "Name": "ShadowKidsActive", "Value": false   },
             {
                 "Name": "ShadowKidsActive",
@@ -255,6 +255,22 @@
                 "Value": "_Bow",
                 "When": { "Query: {{Random: {{Range: 1, {{Toddler Bow Chance}} }}|key=SenletBowMale}} = 1": true, "IsOutdoors": false  }
             },
+
+       /* { "Name": "SenletUndertoneFemale", "Value": "Default" },
+        { "Name": "SenletUndertoneFemale", "Value": "Red",    "When": { "Female Toddler Design": "Elowen, Opal"  } },
+        { "Name": "SenletUndertoneFemale", "Value": "Yellow", "When": { "Female Toddler Design": "Auri"  } },
+        { "Name": "SenletUndertoneFemale", "Value": "Green",  "When": { "Female Toddler Design": "Chirin, Telas"  } },
+        { "Name": "SenletUndertoneFemale", "Value": "Blue",   "When": { "Female Toddler Design": "Disthen, Laurel, Yvette, Loki, Eerie"  } },
+        { "Name": "SenletUndertoneFemale", "Value": "Purple", "When": { "Female Toddler Design": "Freya, Nanu, SenJr, Willow"  } },
+        { "Name": "SenletUndertoneFemale", "Value": "Gray",   "When": { "Female Toddler Design": "Petra, Psique"  } },
+
+        { "Name": "SenletUndertoneMale", "Value": "Default" },
+        { "Name": "SenletUndertoneMale", "Value": "Red",    "When": { "Male Toddler Design": "Elowen, Opal"  } },
+        { "Name": "SenletUndertoneMale", "Value": "Yellow", "When": { "Male Toddler Design": "Auri"  } },
+        { "Name": "SenletUndertoneMale", "Value": "Green",  "When": { "Male Toddler Design": "Chirin, Telas"  } },
+        { "Name": "SenletUndertoneMale", "Value": "Blue",   "When": { "Male Toddler Design": "Disthen, Laurel, Yvette, Loki, Eerie"  } },
+        { "Name": "SenletUndertoneMale", "Value": "Purple", "When": { "Male Toddler Design": "Freya, Loki, Nanu, SenJr, Willow"  } },
+        { "Name": "SenletUndertoneMale", "Value": "Gray",   "When": { "Male Toddler Design": "Petra, Psique"  } },*/
 
         {
             "Name": "SenPartnershipRoute",

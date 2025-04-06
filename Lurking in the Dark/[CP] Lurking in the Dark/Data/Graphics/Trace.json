@@ -5,7 +5,7 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/TraceV_Default",
-            "FromFile": "Assets/Portraits/Default/Trace/TraceV.png"
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Trace/TraceV.png"
         },
         {
             "Action": "Load",

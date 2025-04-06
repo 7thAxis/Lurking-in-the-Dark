@@ -4,9 +4,31 @@
         //Sprites
         {           
             "Action": "Load",
+            "Priority": "Low",
             "Target": "Characters/Baby, Characters/Baby_dark",
-            "FromFile": "Assets/Characters/Kids/The_Baby.png",
-            "When":  { "ShadowKidsActive": true }
+            "FromFile": "Assets/Characters/Kids/The_Baby_{{Female Toddler Design}}{{SenletBowFemale}}.png",
+            "When":  { "ShadowKidsActive": true,  "ChildGenders |valueAt=0": "Female" }
+        },
+        {           
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Baby, Characters/Baby_dark",
+            "FromFile": "Assets/Characters/Kids/The_Baby_{{Male Toddler Design}}{{SenletBowMale}}.png",
+            "When":  { "ShadowKidsActive": true,  "ChildGenders |valueAt=0": "Male" }
+        },
+        {           
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Characters/Baby, Characters/Baby_dark",
+            "FromFile": "Assets/Characters/Kids/The_Baby_{{Female Toddler Design}}{{SenletBowFemale}}.png",
+            "When":  { "ShadowKidsActive": true,  "ChildGenders |valueAt=1": "Female" }
+        },
+        {           
+            "Action": "Load",
+            "Priority": "High",
+            "Target": "Characters/Baby, Characters/Baby_dark",
+            "FromFile": "Assets/Characters/Kids/The_Baby_{{Male Toddler Design}}{{SenletBowMale}}.png",
+            "When":  { "ShadowKidsActive": true,  "ChildGenders |valueAt=1": "Male" }
         },
         {           
             "Action": "Load",
@@ -34,21 +56,21 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}{{SenletBowFemale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Female Toddler Design}}{{SenletBowFemale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Female" }
         },
         {           
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=0": "Male" }
         },
                 //Axell Portraits
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBowFemale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBowFemale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=0": "Female",
@@ -60,7 +82,7 @@
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=0}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBowMale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBowMale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=0": "Male",
@@ -74,21 +96,21 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}{{SenletBow1}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Female Toddler Design}}{{SenletBowFemale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Female" }
         },
         {           
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Male Toddler Design}}{{SenletBowMale}}.png",
             "When": { "UniqueChildCheck": true, "ChildGenders |valueAt=1": "Male" }
         },
                 //Axell Portraits
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBowMale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Female Toddler Design}}_7thAxis{{SenletBowFemale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=1": "Female",
@@ -100,7 +122,7 @@
         {
             "Action": "EditImage",
             "Target": "Portraits/{{ChildNames |valueAt=1}}",
-            "FromFile": "Assets/Portraits/Default/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBowMale}}.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Kids/Toddler_{{Male Toddler Design}}_7thAxis{{SenletBowMale}}.png",
             "When": {
                 "UniqueChildCheck": true,
                 "ChildGenders |valueAt=1": "Male",
