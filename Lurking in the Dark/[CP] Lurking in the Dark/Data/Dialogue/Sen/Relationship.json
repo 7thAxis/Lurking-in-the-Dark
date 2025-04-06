@@ -234,6 +234,16 @@
                 "NewChild_Adoption": "{{i18n:Relationship.SenS.NewChild.{{Random:{{Range: 1, 2}}}}}}"
             },
             "When": { "LivingWithSen": true }      
+        },//
+        {
+            "LogName": "Sen Stays in Bed",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "NPC.cs.4406": "{{i18n:Relationship.SenS.StayInBed}}",
+                "NPC.cs.4446": "{{i18n:Relationship.SenS.StayInBed}}"
+            },
+            "When": { "LivingWithSen": true }      
         },
         //Birth and adoption dialogue
         {
@@ -247,6 +257,15 @@
                 "NPC.cs.4447": "{{i18n:Relationship.SenS.AdoptionRemark}}"
             },
             "When":{ "ShadowKidsActive": false }
+        },
+        {
+            "LogName": "Change Shadow baby sleeping dialogue",
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": {
+                "FarmHouse_Crib_NewbornSleeping": "{{i18n:Relationship.SenS.ChildSleeping}}"
+            },
+            "When":{ "ShadowKidsActive": true }
         },
         {
             "LogName": "Have Shadow Kids Dialogue False 2",
