@@ -503,9 +503,7 @@
                             pause 5/
                             positionOffset Skrell 4 0/
                             pause 5/
-
-                        showFrame Skrell 12/
-                        
+                            showFrame Skrell 12/
                             positionOffset Skrell 4 0/
                             pause 5/
                             positionOffset Skrell 4 0/
@@ -523,10 +521,9 @@
                             pause 5/
                             positionOffset Skrell 4 0/
                             pause 5/
+                            showFrame Skrell 12/
 
-                        showFrame Skrell 12/
-                        pause 50/
-                        pause 5/
+                        pause 55/
                         warp Skrell 39 113/
                         positionOffset Ebb 4 0/
 
