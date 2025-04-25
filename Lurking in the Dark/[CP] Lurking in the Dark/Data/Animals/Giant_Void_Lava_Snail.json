@@ -9,11 +9,11 @@
             "Entries": { 
                 "Giant Void Lava Snail": {
                     "DisplayName": "{{i18n:Core.Animals.GiantVoidLavaSnail}}",
-                    "House": "DitR_Snail",
+                    "House": "LitD_Snail",
                     "Gender": "Male",
                     "PurchasePrice": -1,
                     "SellPrice": 10000,
-                    "RequiredBuilding": "7thAxis.DitR_Buildings.AnimalTreeHouse",
+                    "RequiredBuilding": "{{ModID}}_Buildings.AnimalTreeHouse",
                     "UnlockCondition": null,
                     "EggItemIds": [ "{{ModID}}_Items.VoidLavaSnailEgg", "{{ModID}}_Items.QuestRewardVoidLavaSnailEgg" ],
                     "IncubationTime": 4500,

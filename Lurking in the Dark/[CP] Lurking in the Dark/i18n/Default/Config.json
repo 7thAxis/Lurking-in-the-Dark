@@ -72,7 +72,7 @@
 
 //Trace & Jeremy
 "Config.section.Trace & Jeremy.name": "Trace & Jeremy",
-"Config.Void Snail Content.name": "Void Snail Content",
+"Config.Void Snail Content.name": "Alpha Content",
 "Config.Void Snail Content.description": "Whether Trace, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
 "Config.Social Trace.name": "Social Trace",
 "Config.Social Trace.description": "Determines if Trace should be friend-able. Provides additional dialogue content when enabled, but no events.",

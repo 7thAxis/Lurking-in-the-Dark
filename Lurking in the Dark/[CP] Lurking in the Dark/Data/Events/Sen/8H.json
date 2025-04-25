@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.8h/e 7thAxis.DitR_Events.SenS.6h.P2/t 2000 2600/w sunny/f SenS 2000/A DitR_CT_GardenCompleted": "
+                "{{ModID}}_Events.SenS.8h/e {{ModID}}_Events.SenS.6h.P2/t 2000 2600/w sunny/f SenS 2000/A LitD_CT_GardenCompleted": "
                     night_market/
                     71 121/
                     farmer 68 116 2 SenS 72 120 2/
@@ -13,7 +13,7 @@
                     changeSprite SenS Default/
                     ignoreCollisions SenS/
                     ignoreCollisions farmer/
-                    addConversationTopic DitR_CT_FamilyFlashback {{Event Cooldown Length}}/
+                    addConversationTopic LitD_CT_FamilyFlashback {{Event Cooldown Length}}/
                     addLantern 737 70 121 2/
                     skippable/
                         speed farmer 2/

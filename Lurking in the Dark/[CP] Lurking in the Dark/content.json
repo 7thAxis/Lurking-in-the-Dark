@@ -184,7 +184,7 @@
         //Trace Jeremy
         "Void Snail Content": {
             "AllowValues": "true, false",
-            "Default": true,
+            "Default": false,
             "AllowBlank": false,
             "Description": "Whether Trace, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
             "Section": "Trace & Jeremy"
@@ -279,7 +279,7 @@
         {
             "Name": "SenPartnershipRoute", 
             "Value": "Romantic",
-            "When": { "HasFlag: |contains=DitR_M_SenS_Romantic": true }
+            "When": { "HasFlag: |contains=LitD_M_SenS_Romantic": true }
         },
         {
             "Name": "SenHeartRange",
@@ -366,12 +366,12 @@
             {
                 "Name": "FishPondSnailEggSpawnable",
                 "Value": "(O){{ModID}}_Items.VoidLavaSnailEgg",
-                "When": { "HasFlag": "DitR_M_SnailPhase5" }
+                "When": { "HasFlag": "LitD_M_SnailPhase5" }
             },
             {
                 "Name": "FishPondGoldenSnailEggSpawnable",
                 "Value": "(O){{ModID}}_Items.GoldenVoidLavaSnailEgg",
-                "When": { "HasFlag": "DitR_M_SnailPhase5" }
+                "When": { "HasFlag": "LitD_M_SnailPhase5" }
             },
 
         { 
@@ -384,11 +384,11 @@
         },
         {
             "Name": "SnailCrabPotRate", "Value": 0.08,
-            "When": { "HasFlag": "DitR_M_SnailPhase5", "Season |contains=winter": false }
+            "When": { "HasFlag": "LitD_M_SnailPhase5", "Season |contains=winter": false }
         },
         {
             "Name": "SnailCrabPotRate", "Value": 0.13,
-            "When": { "HasFlag": "DitR_M_SnailPhase5", "Season |contains=winter": true }
+            "When": { "HasFlag": "LitD_M_SnailPhase5", "Season |contains=winter": true }
         },
 
         { "Name": "SnailForageRateLow", "Value": 0.2 },
@@ -397,15 +397,15 @@
         
             { 
                 "Name": "SnailForageRateLow", "Value": 0.5,
-                "When": { "HasFlag": "DitR_M_SnailPhase5" }
+                "When": { "HasFlag": "LitD_M_SnailPhase5" }
             },
             { 
                 "Name": "SnailForageRateMed", "Value": 0.1,
-                "When": { "HasFlag": "DitR_M_SnailPhase5" }
+                "When": { "HasFlag": "LitD_M_SnailPhase5" }
             },
             { 
                 "Name": "SnailForageRateHigh", "Value": 0.2,
-                "When": { "HasFlag": "DitR_M_SnailPhase5" }
+                "When": { "HasFlag": "LitD_M_SnailPhase5" }
             },
 
         {
@@ -480,7 +480,7 @@
             "Name": "SSRD",
             "Value": "{{i18n:Core.SenS.RelationshipOverride.{{Random:{{Range: 1, 10}}|key=SenB{{Time}}}}{{RelationshipTokens}}}}++",
             "When": {
-                "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
+                "HasSeenEvent: |contains=7thAxis.LitD_Events.SenS.10h.P3": true,
                 "Hearts:SenS": "{{Range: 8, 14}}",
                 "SenOverrideConditions": "Active"
             }

@@ -24,12 +24,12 @@
         {
 			"Action": "Include",
 			"FromFile": "Data/Schedules/Sen/Defaults.json, Data/Schedules/Sen/{{Schedule Type}}.json",
-            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.0h": true }
+            "When": { "HasSeenEvent: |contains={{ModID}}_Events.SenS.0h": true }
 		},
         {
 			"Action": "Include",
 			"FromFile": "Data/Forage/Sens_Crocus.json",
-            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true }
+            "When": { "HasSeenEvent: |contains={{ModID}}_Events.SenS.14h": true }
 		},
         {
 			"Action": "Include",

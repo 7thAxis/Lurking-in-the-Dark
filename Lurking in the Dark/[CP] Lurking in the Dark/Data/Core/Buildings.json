@@ -4,7 +4,7 @@
             "Action": "EditData",
             "Target": "Data/Buildings",
             "Entries": {
-            "7thAxis.DitR_Buildings.AnimalTreeHouse": {
+            "{{ModID}}_Buildings.AnimalTreeHouse": {
                 "Name": "{{i18n:Core.Buildings.AnimalTreeHouse.Title}}",
                 "Description": "{{i18n:Core.Buildings.AnimalTreeHouse.Description}}",
                 "Texture": "Buildings/7thAxis.LitD/Animal_Tree_House",
@@ -13,7 +13,7 @@
                 "FadeWhenBehind": true,
                 "SourceRect": { "X": 0, "Y": 0, "Width": 112, "Height": 112 },
                 "Builder": "Robin",
-                "BuildCondition": "PLAYER_HAS_MAIL Current DitR_M_SnailPhase5 Any",
+                "BuildCondition": "PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
                 "BuildDays": 2,
                 "BuildCost": 28000,
                 "BuildMenuDrawOffset": { "X": -50, "Y": 0 },
@@ -29,7 +29,7 @@
                 "IndoorMap": "Animal_Tree_House",
                 "IndoorMapType": "StardewValley.AnimalHouse",
                 "MaxOccupants": 12,
-                "ValidOccupantTypes": [ "Barn", "Coop", "DitR_Snail", "Fellowclown.ClownCore_TropicalHutch" ],
+                "ValidOccupantTypes": [ "Barn", "Coop", "LitD_Snail", "Fellowclown.ClownCore_TropicalHutch" ],
                 "AllowAnimalPregnancy": true,
                 "IndoorItems": [
                   {

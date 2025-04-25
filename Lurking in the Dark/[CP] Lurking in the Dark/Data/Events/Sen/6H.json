@@ -5,13 +5,13 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.6h.P1/e 7thAxis.DitR_Events.SenS.4h/f SenS 1500/A DitR_CT_ShadowPlay": "
+                "{{ModID}}_Events.SenS.6h.P1/e {{ModID}}_Events.SenS.4h/f SenS 1500/A LitD_CT_ShadowPlay": "
                     movie_wumbus/
                     21 37/
                     farmer 23 31 0 SenS 22 36 2/
                     changePortrait SenS Default/
                     changeSprite SenS Default/
-                    addQuest 7thAxis.DitR.CP.Quests.AGardenForSen/
+                    addQuest {{ModID}}.CP.Quests.AGardenForSen/
                     ignoreCollisions SenS/
                     ignoreCollisions farmer/
                     skippable/
@@ -139,13 +139,13 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "7thAxis.DitR.CP.TriggerActions.SenGardenTrigger": {
+                "{{ModID}}.CP.TriggerActions.SenGardenTrigger": {
                     "Trigger": "DayEnding",
-                    "Id": "7thAxis.DitR.TriggerActions.SenGardenTrigger",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.6h.P1, PLAYER_HAS_MAIL Current DitR_M_AGardenForSenComplete Received, !PLAYER_HAS_MAIL Current DitR_M_SenGardenTrigger Received",
+                    "Id": "{{ModID}}.TriggerActions.SenGardenTrigger",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.6h.P1, PLAYER_HAS_MAIL Current LitD_M_AGardenForSenComplete Received, !PLAYER_HAS_MAIL Current LitD_M_SenGardenTrigger Received",
                     "Actions": [
-                        "AddConversationTopic DitR_CT_GardenWaitTime {{Event Cooldown Length}}",
-                        "AddMail Current DitR_M_SenGardenTrigger"
+                        "AddConversationTopic LitD_CT_GardenWaitTime {{Event Cooldown Length}}",
+                        "AddMail Current LitD_M_SenGardenTrigger"
                     ]
                 }
             }
@@ -155,7 +155,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.6h.P2/e 7thAxis.DitR_Events.SenS.6h.P1/A DitR_CT_GardenWaitTime": "
+                "{{ModID}}_Events.SenS.6h.P2/e {{ModID}}_Events.SenS.6h.P1/A LitD_CT_GardenWaitTime": "
                     kindadumbautumn/
                     23 39/
                     farmer 21 32 2 SenS 22 38 2/
@@ -163,7 +163,7 @@
                     changeSprite SenS Default/
                     ignoreCollisions SenS/
                     ignoreCollisions farmer/
-                    addConversationTopic DitR_CT_GardenCompleted {{Event Cooldown Length}}/
+                    addConversationTopic LitD_CT_GardenCompleted {{Event Cooldown Length}}/
                     skippable/
                         pause 1000/
                         emote SenS 56 true/
@@ -229,7 +229,7 @@
                         pause 2000/
                     end"
             },
-            "When": { "HasFlag: |contains=DitR_M_SenGardenTrigger": true }
+            "When": { "HasFlag: |contains=LitD_M_SenGardenTrigger": true }
         }
     ]
 }

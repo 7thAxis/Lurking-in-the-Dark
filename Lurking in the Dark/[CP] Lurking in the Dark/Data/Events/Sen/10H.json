@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.10h.P1/e 7thAxis.DitR_Events.SenS.8h/f SenS 2500/A DitR_CT_FamilyFlashback": "
+                "{{ModID}}_Events.SenS.10h.P1/e {{ModID}}_Events.SenS.8h/f SenS 2500/A LitD_CT_FamilyFlashback": "
                     desolate/
                     21 37/
                     farmer 23 31 0 SenS 23 37 0/
@@ -17,7 +17,7 @@
                     addTemporaryActor Ebb 16 32 -999 -999 2 true character/
                     changeName Skrell {{i18n:Core.Names.Skrell}}/
                     changeName Ebb {{i18n:Core.Names.Ebb}}/
-                    addConversationTopic DitR_CT_MineFlashback {{Event Cooldown Length}}/
+                    addConversationTopic LitD_CT_MineFlashback {{Event Cooldown Length}}/
                     skippable/
                         pause 800/
                         speed farmer 3/
@@ -278,7 +278,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.10h.P2/e 7thAxis.DitR_Events.SenS.10h.P1/t 2000 2600/w sunny/f SenS 2500/A DitR_CT_MineFlashback": "
+                "{{ModID}}_Events.SenS.10h.P2/e {{ModID}}_Events.SenS.10h.P1/t 2000 2600/w sunny/f SenS 2500/A LitD_CT_MineFlashback": "
                     ocean/
                     32 112/
                     farmer 28 106 2 SenS 35 113 1/
@@ -286,7 +286,7 @@
                     changeSprite SenS Default/
                     ignoreCollisions SenS/
                     ignoreCollisions farmer/
-                    addConversationTopic DitR_CT_TheConfrontation {{Event Cooldown Length}}/
+                    addConversationTopic LitD_CT_TheConfrontation {{Event Cooldown Length}}/
                     skippable/
                     addLantern 737 32 110 3/
                     addTemporaryActor Skrell 16 32 37 113 3 true character/
@@ -633,12 +633,12 @@
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.10h.P3/e 7thAxis.DitR_Events.SenS.10h.P2/t 2000 2600/w sunny/f SenS 2500/A DitR_CT_TheConfrontation": "
+                "{{ModID}}_Events.SenS.10h.P3/e {{ModID}}_Events.SenS.10h.P2/t 2000 2600/w sunny/f SenS 2500/A LitD_CT_TheConfrontation": "
                 Upper_Ambient/
                 24 24/
                 farmer 18 23 1/
                 ignoreCollisions farmer/
-                addConversationTopic DitR_CT_SkrellEpilogue {{Event Cooldown Length}}/
+                addConversationTopic LitD_CT_SkrellEpilogue {{Event Cooldown Length}}/
                 skippable/
                 addTemporaryActor Skrell 16 32 18 19 2 true character/
                 changeName Skrell {{i18n:Core.Names.Skrell}}/
@@ -702,7 +702,7 @@
                 "SenRomance": "
                 resetVariable/
                 speak Skrell \"{{i18n:Events.SenS.Event10.p3.12}}\"/
-                    addMailReceived DitR_M_SenS_Romantic/
+                    addMailReceived LitD_M_SenS_Romantic/
                 speak Skrell \"{{i18n:Events.SenS.Event10.p3.10}}\"/
                     pause 100/
                     emote Skrell 40/

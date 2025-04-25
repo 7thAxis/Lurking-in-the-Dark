@@ -65,7 +65,7 @@
                     "SpriteIndex": 0
                 }
             },
-            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true } 
+            "When": { "HasSeenEvent: |contains={{ModID}}_Events.SenS.14h": true } 
         },
         {
             "Action": "EditData",
@@ -82,7 +82,7 @@
                     "SpriteIndex": 0
                 }
             },
-            "When": { "HasSeenEvent: |contains=7thAxis.DitR_Events.SenS.14h": true } 
+            "When": { "HasSeenEvent: |contains={{ModID}}_Events.SenS.14h": true } 
         }
     ]
 }

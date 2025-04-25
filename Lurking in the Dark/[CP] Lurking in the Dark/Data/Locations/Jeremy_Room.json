@@ -31,11 +31,11 @@
             "MapTiles": [
                 {
                     "Position": { "X": 4, "Y": 6 }, "Layer": "Buildings",
-                    "SetProperties": { "Action": "PlayEvent 7thAxis.DitR_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
+                    "SetProperties": { "Action": "PlayEvent {{ModID}}_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
                 },
                 {
                     "Position": { "X": 5, "Y": 6 }, "Layer": "Buildings",
-                    "SetProperties": { "Action": "PlayEvent 7thAxis.DitR_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
+                    "SetProperties": { "Action": "PlayEvent {{ModID}}_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
                 }
             ]
         },
@@ -69,7 +69,7 @@
                 { "Position": { "X": 15, "Y": 8 }, "Layer": "Front", "Remove": true },
                 { "Position": { "X": 16, "Y": 8 }, "Layer": "Front", "Remove": true }
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase1": false }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase1": false }
         },
         {
             "Action": "EditMap",
@@ -99,7 +99,7 @@
                 { "Position": { "X": 7, "Y": 16 }, "Layer": "Buildings2", "Remove": true }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase2": false }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase2": false }
         },
         {
             "Action": "EditMap",
@@ -131,7 +131,7 @@
 
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase3": false }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase3": false }
         },
         {
             "Action": "EditMap",
@@ -155,7 +155,7 @@
                 { "Position": { "X": 14, "Y": 6 }, "Layer": "Buildings2", "Remove": true }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase4": false }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase4": false }
         },
         {
             "Action": "EditMap",
@@ -178,7 +178,7 @@
                 { "Position": { "X": 19, "Y": 13 }, "Layer": "Front", "Remove": true }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase5": false }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase5": false }
         },
     //FLAGS TRUE
         {
@@ -193,7 +193,7 @@
                 { "Position": { "X": 16, "Y": 9 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailDH" } }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase1": true }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase1": true }
         },
         {
             "Action": "EditMap",
@@ -207,7 +207,7 @@
                 { "Position": { "X": 7, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailFlash" } }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase2": true }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase2": true }
         },
         {
             "Action": "EditMap",
@@ -222,7 +222,7 @@
                 { "Position": { "X": 3, "Y": 5 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailAxell" } }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase3": true }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase3": true }
         },
         {
             "Action": "EditMap",
@@ -237,7 +237,7 @@
                 { "Position": { "X": 14, "Y": 6 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailSaurianne" } }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase4": true }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase4": true }
         },
         {
             "Action": "EditMap",
@@ -248,7 +248,7 @@
                 { "Position": { "X": 19, "Y": 14 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailTiara" } }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_SnailPhase5": true }
+            "When": { "HasFlag: |contains=LitD_M_SnailPhase5": true }
         },
     //SHINY SNAIL
         {
@@ -260,7 +260,7 @@
                 { "Position": { "X": 3, "Y": 10 }, "Layer": "Buildings2", "Remove": true }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_GaveJeremyGoldenSnail": false }
+            "When": { "HasFlag: |contains=LitD_M_GaveJeremyGoldenSnail": false }
         },   
         {
             "Action": "EditMap",
@@ -270,7 +270,7 @@
                 { "Position": { "X": 3, "Y": 10 }, "Layer": "Buildings", "SetProperties": { "Action": "Message JeremyTSRSnailJeremyJr" } }
 
             ],
-            "When": { "HasFlag: |contains=DitR_M_GaveJeremyGoldenSnail": true }
+            "When": { "HasFlag: |contains=LitD_M_GaveJeremyGoldenSnail": true }
         }, 
 
 //---------------------------- MAP STRINGS ------------------------------------------// 

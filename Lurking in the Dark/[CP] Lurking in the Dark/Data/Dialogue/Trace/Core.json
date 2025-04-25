@@ -79,7 +79,7 @@
                 "sapphicsaph_pitv.CommunityCenterPride_4_10": "{{i18n:Core.TraceV.Locations.CommunityCenter.PrideFest.{{Random:{{Range: 1, 2}}}}}}",
 
             //Conversation Topics
-                "DitR_CT_YouAttackedJeremy": "{{i18n:Core.TraceV.YouAttackedJeremy}}"
+                "LitD_CT_YouAttackedJeremy": "{{i18n:Core.TraceV.YouAttackedJeremy}}"
 
             }
         },

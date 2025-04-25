@@ -19,16 +19,16 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Krobus",
             "Entries": {
-                "DitR_CT_SenMet": "{{i18n:Krobus.SenS.SenMet}}",
-                "DitR_CT_DreamReveal": "{{i18n:Krobus.SenS.DreamReveal}}",
-                "DitR_CT_ShadowPlay": "{{i18n:Krobus.SenS.ShadowPlay}}",
-                "DitR_CT_GardenWaitTime": "{{i18n:Krobus.SenS.GardenWaitTime}}",
-                "DitR_CT_GardenCompleted": "{{i18n:Krobus.SenS.GardenCompleted}}",
-                "DitR_CT_FamilyFlashback": "{{i18n:Krobus.SenS.FamilyFlashback}}",
-                "DitR_CT_MineFlashback": "{{i18n:Krobus.SenS.MineFlashback}}",
-                "DitR_CT_TheConfrontation": "{{i18n:Krobus.SenS.TheConfrontation}}",
-                "DitR_CT_SkrellEpilogue": "{{i18n:Krobus.SenS.SkrellEpilogue}}",
-                "DitR_CT_SensFlowers": "{{i18n:Krobus.SenS.SensFlowers}}"
+                "LitD_CT_SenMet": "{{i18n:Krobus.SenS.SenMet}}",
+                "LitD_CT_DreamReveal": "{{i18n:Krobus.SenS.DreamReveal}}",
+                "LitD_CT_ShadowPlay": "{{i18n:Krobus.SenS.ShadowPlay}}",
+                "LitD_CT_GardenWaitTime": "{{i18n:Krobus.SenS.GardenWaitTime}}",
+                "LitD_CT_GardenCompleted": "{{i18n:Krobus.SenS.GardenCompleted}}",
+                "LitD_CT_FamilyFlashback": "{{i18n:Krobus.SenS.FamilyFlashback}}",
+                "LitD_CT_MineFlashback": "{{i18n:Krobus.SenS.MineFlashback}}",
+                "LitD_CT_TheConfrontation": "{{i18n:Krobus.SenS.TheConfrontation}}",
+                "LitD_CT_SkrellEpilogue": "{{i18n:Krobus.SenS.SkrellEpilogue}}",
+                "LitD_CT_SensFlowers": "{{i18n:Krobus.SenS.SensFlowers}}"
             },
             "When": { "DayOfWeek |contains=Friday": false }  
         },
@@ -37,16 +37,16 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Dwarf, Characters/Dialogue/Wizard",
             "Entries": {
-                "DitR_CT_SenMet": "{{i18n:{{TargetWithoutPath}}.SenS.SenMet}}",
-                "DitR_CT_DreamReveal": "{{i18n:{{TargetWithoutPath}}.SenS.DreamReveal}}",
-                "DitR_CT_ShadowPlay": "{{i18n:{{TargetWithoutPath}}.SenS.ShadowPlay}}",
-                "DitR_CT_GardenWaitTime": "{{i18n:{{TargetWithoutPath}}.SenS.GardenWaitTime}}",
-                "DitR_CT_GardenCompleted": "{{i18n:{{TargetWithoutPath}}.SenS.GardenCompleted}}",
-                "DitR_CT_FamilyFlashback": "{{i18n:{{TargetWithoutPath}}.SenS.FamilyFlashback}}",
-                "DitR_CT_MineFlashback": "{{i18n:{{TargetWithoutPath}}.SenS.MineFlashback}}",
-                "DitR_CT_TheConfrontation": "{{i18n:{{TargetWithoutPath}}.SenS.TheConfrontation}}",
-                "DitR_CT_SkrellEpilogue": "{{i18n:{{TargetWithoutPath}}.SenS.SkrellEpilogue}}",
-                "DitR_CT_SensFlowers": "{{i18n:{{TargetWithoutPath}}.SenS.SensFlowers}}"
+                "LitD_CT_SenMet": "{{i18n:{{TargetWithoutPath}}.SenS.SenMet}}",
+                "LitD_CT_DreamReveal": "{{i18n:{{TargetWithoutPath}}.SenS.DreamReveal}}",
+                "LitD_CT_ShadowPlay": "{{i18n:{{TargetWithoutPath}}.SenS.ShadowPlay}}",
+                "LitD_CT_GardenWaitTime": "{{i18n:{{TargetWithoutPath}}.SenS.GardenWaitTime}}",
+                "LitD_CT_GardenCompleted": "{{i18n:{{TargetWithoutPath}}.SenS.GardenCompleted}}",
+                "LitD_CT_FamilyFlashback": "{{i18n:{{TargetWithoutPath}}.SenS.FamilyFlashback}}",
+                "LitD_CT_MineFlashback": "{{i18n:{{TargetWithoutPath}}.SenS.MineFlashback}}",
+                "LitD_CT_TheConfrontation": "{{i18n:{{TargetWithoutPath}}.SenS.TheConfrontation}}",
+                "LitD_CT_SkrellEpilogue": "{{i18n:{{TargetWithoutPath}}.SenS.SkrellEpilogue}}",
+                "LitD_CT_SensFlowers": "{{i18n:{{TargetWithoutPath}}.SenS.SensFlowers}}"
             }
         },
         {
@@ -54,7 +54,7 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/Haley, Characters/Dialogue/Alex, Characters/Dialogue/Elliott, Characters/Dialogue/Harvey, Characters/Dialogue/Sam, Characters/Dialogue/Abigail, Characters/Dialogue/Leah, Characters/Dialogue/Maru, Characters/Dialogue/Penny, Characters/Dialogue/Caroline, Characters/Dialogue/Demetrius, Characters/Dialogue/Clint, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gus, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Lewis, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/Pam, Characters/Dialogue/Pierre, Characters/Dialogue/Robin, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Emily, Characters/Dialogue/GuntherSilvian, Characters/Dialogue/MarlonFay, Characters/Dialogue/MorrisTod",
             "Entries": {
-                "DitR_CT_ShadowPlay": "{{i18n:{{TargetWithoutPath}}.SenS.ShadowPlay}}"
+                "LitD_CT_ShadowPlay": "{{i18n:{{TargetWithoutPath}}.SenS.ShadowPlay}}"
             } 
         },
         {

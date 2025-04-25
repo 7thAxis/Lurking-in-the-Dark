@@ -84,7 +84,7 @@
                 "{{ModID}}_Items.VoidLavaSnailEgg": {  "Chance": 0.03, "Id": "{{ModID}}_Items.VoidLavaSnailEgg", "ItemId": "(O){{ModID}}_Items.VoidLavaSnailEgg" },
                 "{{ModID}}_Items.GoldenVoidLavaSnailEgg": {  "Chance": 0.0004, "Id": "{{ModID}}_Items.GoldenVoidLavaSnailEgg", "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnailEgg" } 
              },
-             "When": { "HasFlag": "DitR_M_SnailPhase5" }
+             "When": { "HasFlag": "LitD_M_SnailPhase5" }
         }
     ]
 }

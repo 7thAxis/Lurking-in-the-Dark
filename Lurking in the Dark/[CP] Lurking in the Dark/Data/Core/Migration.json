@@ -8,8 +8,8 @@
             "Priority": "Early",
 
             "Entries": {
-            "7thAxis.DitR.CP.TriggerActions.SenEventMigration": {
-                "Id": "7thAxis.DitR.CP.TriggerActions.SenEventMigration",
+            "{{ModID}}_TriggerActions.SenEventMigration.1": {
+                "Id": "{{ModID}}_TriggerActions.SenEventMigration",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Actions": [
@@ -17,21 +17,21 @@
                 //I know you can put it in one... this is just more readable for me.
                 
                     //Events
-                    "Pathoschild.ContentPatcher_MigrateIds Events 107701000 7thAxis.DitR.CP.Events.SenS.0h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 107701002 7thAxis.DitR.CP.Events.SenS.2h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 107701004 7thAxis.DitR.CP.Events.SenS.4h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 107701006 7thAxis.DitR.CP.Events.SenS.6h.P1",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010062 7thAxis.DitR.CP.Events.SenS.6h.P2",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 107701008 7thAxis.DitR.CP.Events.SenS.8h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010011 7thAxis.DitR.CP.Events.SenS.10h.P1",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010012 7thAxis.DitR.CP.Events.SenS.10h.P2",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010013 7thAxis.DitR.CP.Events.SenS.10h.P3",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010014 7thAxis.DitR.CP.Events.SenS.14h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701000 {{ModID}}_Events.SenS.0h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701002 {{ModID}}_Events.SenS.2h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701004 {{ModID}}_Events.SenS.4h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701006 {{ModID}}_Events.SenS.6h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010062 {{ModID}}_Events.SenS.6h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 107701008 {{ModID}}_Events.SenS.8h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010011 {{ModID}}_Events.SenS.10h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010012 {{ModID}}_Events.SenS.10h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010013 {{ModID}}_Events.SenS.10h.P3",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 1077010014 {{ModID}}_Events.SenS.14h",
 
                     //Mail
-                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_AGardenForSenComplete DitR_M_AGardenForSenComplete",
-                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_SeedSilentEvent DitR_M_SenGardenTrigger",
-                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_Romantic DitR_M_SenS_Romantic"
+                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_AGardenForSenComplete LitD_M_AGardenForSenComplete",
+                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_SeedSilentEvent LitD_M_SenGardenTrigger",
+                    "Pathoschild.ContentPatcher_MigrateIds Mail LitD_M_Romantic LitD_M_SenS_Romantic"
                     ]
                 }
             }
@@ -41,8 +41,8 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-            "7thAxis.DitR.CP.TriggerActions.SenEventMigration.v3": {
-                "Id": "7thAxis.DitR.CP.TriggerActions.SenEventMigration.v3",
+            "{{ModID}}_TriggerActions.SenEventMigration.v3.1": {
+                "Id": "{{ModID}}_TriggerActions.SenEventMigration.v3",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Actions": [
@@ -50,16 +50,16 @@
                 //I know you can put it in one... this is just more readable for me.
                 
                     //Events
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.0h 7thAxis.DitR_Events.SenS.0h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.2h 7thAxis.DitR_Events.SenS.2h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.4h 7thAxis.DitR_Events.SenS.4h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.6h.P1 7thAxis.DitR_Events.SenS.6h.P1",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.6h.P2 7thAxis.DitR_Events.SenS.6h.P2",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.8h 7thAxis.DitR_Events.SenS.8h",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.10h.P1 7thAxis.DitR_Events.SenS.10h.P1",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.10h.P2 7thAxis.DitR_Events.SenS.10h.P2",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.10h.P3 7thAxis.DitR_Events.SenS.10h.P3",
-                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR.CP.Events.SenS.14h 7thAxis.DitR_Events.SenS.14h"
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.0h {{ModID}}_Events.SenS.0h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.2h {{ModID}}_Events.SenS.2h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.4h {{ModID}}_Events.SenS.4h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.6h.P1 {{ModID}}_Events.SenS.6h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.6h.P2 {{ModID}}_Events.SenS.6h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.8h {{ModID}}_Events.SenS.8h",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.10h.P1 {{ModID}}_Events.SenS.10h.P1",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.10h.P2 {{ModID}}_Events.SenS.10h.P2",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.10h.P3 {{ModID}}_Events.SenS.10h.P3",
+                    "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.LitD.CP_Events.SenS.14h {{ModID}}_Events.SenS.14h"
                     ]
                 }
             }
@@ -69,8 +69,8 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-            "7thAxis.DitR.CP.TriggerActions.FurnitureIDMirgration": {
-                "Id": "7thAxis.DitR.CP.TriggerActions.FurnitureIDMirgration",
+            "{{ModID}}_TriggerActions.FurnitureIDMirgration.1": {
+                "Id": "{{ModID}}_TriggerActions.FurnitureIDMirgration",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Actions": [                
@@ -85,14 +85,14 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-            "7thAxis.DitR.CP.TriggerActions.CrocusIDMigration": {
-                "Id": "7thAxis.DitR.CP.TriggerActions.CrocusIDMigration",
+            "{{ModID}}_TriggerActions.CrocusIDMigration.1": {
+                "Id": "{{ModID}}_TriggerActions.CrocusIDMigration",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
-                "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.14h",
+                "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.14h",
                 "Actions": [                
-                    "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.SensCrocus (O){{ModID}}_Items.SensCrocus",
-                    "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds"
+                    "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocus (O){{ModID}}_Items.SensCrocus",
+                    "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds"
                     ]
                 }
             }
@@ -102,11 +102,11 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "7thAxis.DitR_TriggerActions.QuestFixerLitD": {
-                    "Id": "7thAxis.DitR_TriggerActions.QuestFixerLitD",
+                "{{ModID}}_TriggerActions.QuestFixerLitD.1": {
+                    "Id": "{{ModID}}_TriggerActions.QuestFixerLitD",
                     "Trigger": "DayStarted",
                     "Actions": [ 
-                        "AddQuest 7thAxis.DitR.CP.Quests.AGardenForSen",
+                        "AddQuest 7thAxis.LitD_Quests.AGardenForSen",
                         "RemoveQuest 10770100"
                      ]
                 }
@@ -118,12 +118,12 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "7thAxis.DitR_TriggerActions.TranslationSoftlockFix": {
+                "{{ModID}}_TriggerActions.TranslationSoftlockFix.1": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.TranslationSoftlockFix",
+                    "Id": "{{ModID}}_TriggerActions.TranslationSoftlockFix",
                     "Condition": "PLAYER_HAS_MAIL Current LitD_M_AGardenForSenComplete Any",
                     "Actions": [ 
-                        "AddMail Current DitR_M_AGardenForSenComplete received",
+                        "AddMail Current LitD_M_AGardenForSenComplete received",
                         "RemoveMail Current LitD_M_AGardenForSenComplete"
                      ]
                 }
@@ -134,8 +134,8 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "7thAxis.LitD_TriggerActions.LitDWasInstalled": {
-                    "Id": "7thAxis.DitR_TriggerActions.LitDWasInstalled",
+                "{{ModID}}_TriggerActions.LitDWasInstalled.1": {
+                    "Id": "{{ModID}}_TriggerActions.LitDWasInstalled",
                     "Trigger": "DayStarted",
                     "Actions": [ "AddMail Current LitD_M_LitDWasInstalled received" ]
                 }

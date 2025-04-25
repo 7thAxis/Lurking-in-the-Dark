@@ -27,14 +27,14 @@
                             "Location": "EastScarp_TNPCWaitingWarpRoom",
                             "Tile": { "X": 7, "Y": 7 },
                             "Direction": "down",
-                            "Condition": "!PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.0h"
+                            "Condition": "!PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.0h"
                         },
                         { 
                             "Id": "Sen Default Home",
                             "Location": "EastScarp_DeepDark",
                             "Tile": { "X": 25, "Y": 17 },
                             "Direction": "down",
-                            "Condition": "PLAYER_HAS_SEEN_EVENT Current 7thAxis.DitR_Events.SenS.0h"
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.0h"
                         }
                     ],
                     "IntroductionsQuest": false,
@@ -121,7 +121,7 @@
             "Target": "Data/Characters",
             "TargetField": [ "SenS" ],
             "Entries": { "CanBeRomanced": true },
-            "When": { "HasFlag:currentPlayer |contains=DitR_M_SenS_Romantic": true }
+            "When": { "HasFlag:currentPlayer |contains=LitD_M_SenS_Romantic": true }
         },
         {
             "Action": "EditData",
@@ -131,8 +131,8 @@
                 "propose_roommate_sens": "propose_roommate_sens"
             },
             "When": {
-                "HasSeenEvent:currentPlayer |contains=7thAxis.DitR_Events.SenS.10h.P3": true,
-                "HasFlag:currentPlayer |contains=DitR_M_SenS_Romantic": false
+                "HasSeenEvent:currentPlayer |contains={{ModID}}_Events.SenS.10h.P3": true,
+                "HasFlag:currentPlayer |contains=LitD_M_SenS_Romantic": false
             }
         },
         //MP dating fix (Hopefully)

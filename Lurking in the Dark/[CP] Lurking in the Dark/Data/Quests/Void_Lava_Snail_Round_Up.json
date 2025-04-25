@@ -4,14 +4,14 @@
         {
             "Action": "EditData",
             "Target": "Mods/EastScarp/DurationOverride",
-            "Entries": { "7thAxis.DitR_Quests.VoidLavaSnailRoundUp": "-1" }
+            "Entries": { "{{ModID}}_Quests.VoidLavaSnailRoundUp": "-1" }
         },
 //SPECIAL ORDER DATA
         {
             "Action": "EditData",
             "Target": "Data/SpecialOrders",
             "Entries": {
-                "7thAxis.DitR_Quests.VoidLavaSnailRoundUp": {
+                "{{ModID}}_Quests.VoidLavaSnailRoundUp": {
                     "Name": "[LitD.SpecialOrders.VoidLavaSnailRoundUp_Name]",
                     "Requester": "JeremyTSnail",
                     "Repeatable": "true",
@@ -20,7 +20,7 @@
                     "SpecialRule": "",
                     "Text": "[LitD.SpecialOrders.VoidLavaSnailRoundUp_Text]",
                     "ItemToRemoveOnEnd": null,
-                    "MailToRemoveOnEnd": "DitR_M_VoidLavaSnailQuestActive",
+                    "MailToRemoveOnEnd": "LitD_M_VoidLavaSnailQuestActive",
                     "RandomizedElements": null,
                     "Objectives": [
                         {
@@ -35,7 +35,7 @@
                             }
                         }
                     ],
-                    "Rewards": [ { "Type": "Mail", "Data": { "MailReceived": "DitR_M_VoidLavaSnailQuestCompletedToday", "NoLetter": "true" } } ]
+                    "Rewards": [ { "Type": "Mail", "Data": { "MailReceived": "LitD_M_VoidLavaSnailQuestCompletedToday", "NoLetter": "true" } } ]
                 }
             }
         },
@@ -56,25 +56,25 @@
 
             "Entries": {
                 
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckMain": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckMain": {
                     "Trigger": "DayStarted",
                     "MarkActionApplied": false,
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckMain",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckMain",
                     "HostOnly": true,
-                    "Condition": "PLAYER_HAS_MAIL Current DitR_M_VoidLavaSnailQuestCompletedToday Any, !PLAYER_HAS_MAIL Current DitR_M_SnailPhase5 Any",
+                    "Condition": "PLAYER_HAS_MAIL Current LitD_M_VoidLavaSnailQuestCompletedToday Any, !PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
                     "Actions": [ 
-                        "RemoveMail Current DitR_M_VoidLavaSnailQuestCompletedToday all", 
+                        "RemoveMail Current LitD_M_VoidLavaSnailQuestCompletedToday all", 
                         "IncrementStat VoidLavaSnailsGiven 20" 
                 ]
                 },
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckPost": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckPost": {
                     "Trigger": "DayStarted",
                     "MarkActionApplied": false,
                     "HostOnly": true,
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckPost",
-                    "Condition": "PLAYER_HAS_MAIL Current DitR_M_VoidLavaSnailQuestCompletedToday Any, PLAYER_HAS_MAIL Current DitR_M_SnailPhase5 Any",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.CompletedTodayCheckPost",
+                    "Condition": "PLAYER_HAS_MAIL Current LitD_M_VoidLavaSnailQuestCompletedToday Any, PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
                     "Actions": [ 
-                        "RemoveMail Current DitR_M_VoidLavaSnailQuestCompletedToday all", 
+                        "RemoveMail Current LitD_M_VoidLavaSnailQuestCompletedToday all", 
                         "{{Random: AddMoney {{TodaysSnailRewardMoney}}++AddItem {{TodaysSnailRewardItem}}|inputSeparator=++|key=SnailQuestReward}}",
                         "spacechase0.SpaceCore_ShowHudMessage \"{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.PostHUDMessage}}\" {{Random: (O)336++(O){{TodaysSnailRewardIcon}}|inputSeparator=++|key=SnailQuestReward}}", 
                         "IncrementStat VoidLavaSnailsGiven 20" 
@@ -82,43 +82,43 @@
                 },
 
                 //Phase 1
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.1": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.1": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.1",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.1",
                     "Condition": "PLAYER_STAT Current VoidLavaSnailsGiven 20",
-                    "Actions": [ "AddMail Current DitR_M_SnailPhase1 tomorrow" ]
+                    "Actions": [ "AddMail Current LitD_M_SnailPhase1 tomorrow" ]
                 },
 
                 //Phase 2
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.2": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.2": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.2",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.2",
                     "Condition": "PLAYER_STAT Current VoidLavaSnailsGiven 40",
-                    "Actions": [ "AddMail Current DitR_M_SnailPhase2 tomorrow" ]
+                    "Actions": [ "AddMail Current LitD_M_SnailPhase2 tomorrow" ]
                 },
 
                 //Phase 3
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.3": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.3": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.3",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.3",
                     "Condition": "PLAYER_STAT Current VoidLavaSnailsGiven 60",
-                    "Actions": [ "AddMail Current DitR_M_SnailPhase3 tomorrow" ]
+                    "Actions": [ "AddMail Current LitD_M_SnailPhase3 tomorrow" ]
                 },
 
                 //Phase 4
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.4": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.4": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.4",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.4",
                     "Condition": "PLAYER_STAT Current VoidLavaSnailsGiven 80",
-                    "Actions": [ "AddMail Current DitR_M_SnailPhase4 tomorrow" ]
+                    "Actions": [ "AddMail Current LitD_M_SnailPhase4 tomorrow" ]
                 },
 
                 //Phase 5
-                "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.5": {
+                "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.5": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.VoidLavaSnailRoundUp.Phase.5",
+                    "Id": "{{ModID}}_TriggerActions.VoidLavaSnailRoundUp.Phase.5",
                     "Condition": "PLAYER_STAT Current VoidLavaSnailsGiven 100",
-                    "Actions": [ "AddMail Current DitR_M_SnailPhase5 tomorrow" ]
+                    "Actions": [ "AddMail Current LitD_M_SnailPhase5 tomorrow" ]
                 }
             }
         },
@@ -127,11 +127,11 @@
 			"Action": "EditData",
 			"Target": "Data/mail",
 			"Entries": {
-				"DitR_M_SnailPhase1": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.1}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
-                "DitR_M_SnailPhase2": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.2}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
-                "DitR_M_SnailPhase3": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.3}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
-                "DitR_M_SnailPhase4": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.4}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
-                "DitR_M_SnailPhase5": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.5}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}"
+				"LitD_M_SnailPhase1": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.1}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
+                "LitD_M_SnailPhase2": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.2}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
+                "LitD_M_SnailPhase3": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.3}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
+                "LitD_M_SnailPhase4": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.4}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}",
+                "LitD_M_SnailPhase5": "{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.5}}[#]{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.Title}}"
 			}
 		},
     //QUEST BOARD
@@ -141,10 +141,10 @@
             "Target": "Data/TriggerActions",
             "Entries": {
     
-                "7thAxis.DitR_TriggerActions.AutoPlayPrevention.VoidLavaSnailRoundUp": {
+                "{{ModID}}_TriggerActions.AutoPlayPrevention.VoidLavaSnailRoundUp": {
                     "Trigger": "DayStarted",
-                    "Id": "7thAxis.DitR_TriggerActions.AutoPlayPrevention.VoidLavaSnailRoundUp",
-                    "Actions": [ "MarkEventSeen Current 7thAxis.DitR_Events.JeremyTS.VoidLavaSnailRoundUp" ]
+                    "Id": "{{ModID}}_TriggerActions.AutoPlayPrevention.VoidLavaSnailRoundUp",
+                    "Actions": [ "MarkEventSeen Current {{ModID}}_Events.JeremyTS.VoidLavaSnailRoundUp" ]
                 }
             }
         },
@@ -153,14 +153,14 @@
             "Action": "EditData",
             "Target": "Data/Events/7thAxis.LitD_Maps.Jeremy_Room",
             "Entries": {
-                "7thAxis.DitR_Events.JeremyTS.VoidLavaSnailRoundUp/l DitR_M_VoidLavaSnailQuestActive/l DitR_M_AcceptedVoidSnailQuestToday": "
+                "{{ModID}}_Events.JeremyTS.VoidLavaSnailRoundUp/l LitD_M_VoidLavaSnailQuestActive/l LitD_M_AcceptedVoidSnailQuestToday": "
                 
                 continue/
                 -1000 -1000/
                 farmer -1000 -1000 2/
                 ignoreCollisions farmer/
                 unskippable/
-                pause 100/quickQuestion {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.Question}}#{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.AnswerYes}}#{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.Answerno}}(break)message \"{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.QuestAccepted}}\"\\action AddSpecialOrder 7thAxis.DitR_Quests.VoidLavaSnailRoundUp\\addMailReceived DitR_M_VoidLavaSnailQuestActive\\addMailReceived DitR_M_AcceptedVoidSnailQuestToday(break)message \"{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.QuestDenied}}\"/
+                pause 100/quickQuestion {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.Question}}#{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.AnswerYes}}#{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.Answerno}}(break)message \"{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.QuestAccepted}}\"\\action AddSpecialOrder {{ModID}}_Quests.VoidLavaSnailRoundUp\\addMailReceived LitD_M_VoidLavaSnailQuestActive\\addMailReceived LitD_M_AcceptedVoidSnailQuestToday(break)message \"{{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.Event.QuestDenied}}\"/
                 
                 end"
             }

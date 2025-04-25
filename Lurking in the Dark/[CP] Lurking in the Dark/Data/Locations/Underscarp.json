@@ -15,8 +15,8 @@
             "ToArea": { "X": 15, "Y": 12, "Width": 16, "Height": 34 },
             "PatchMode": "Replace",
             "When": {
-                "HasFlag: |contains=DitR_M_SenGardenTrigger": true,
-                "HasConversationTopic: |contains=DitR_CT_GardenWaitTime": false
+                "HasFlag: |contains=LitD_M_SenGardenTrigger": true,
+                "HasConversationTopic: |contains=LitD_CT_GardenWaitTime": false
             }
         },
         //Music

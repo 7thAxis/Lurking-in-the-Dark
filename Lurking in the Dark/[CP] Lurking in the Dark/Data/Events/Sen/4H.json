@@ -5,13 +5,13 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
-                "7thAxis.DitR_Events.SenS.4h/e 7thAxis.DitR_Events.SenS.2h/t 2000 2600/w sunny/d Fri/f SenS 1000/A DitR_CT_DreamReveal": "
+                "{{ModID}}_Events.SenS.4h/e {{ModID}}_Events.SenS.2h/t 2000 2600/w sunny/d Fri/f SenS 1000/A LitD_CT_DreamReveal": "
                     breezy/
                     26 98/
                     farmer 37 101 3 SenS 21 93 2 Krobus 25 98 2/
                     changePortrait SenS Default/
                     changeSprite SenS Default/
-                    addConversationTopic DitR_CT_ShadowPlay {{Event Cooldown Length}}/
+                    addConversationTopic LitD_CT_ShadowPlay {{Event Cooldown Length}}/
                     skippable/
                     addLantern 737 29 95 3/
                     addLantern 737 21 97 3/

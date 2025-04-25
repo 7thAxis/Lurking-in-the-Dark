@@ -80,7 +80,7 @@
                 "AcceptGift_(O)771" : "{{i18n:Gifts.TraceV.Fiber}}",
 
                 "AcceptGift_(O){{ModID}}_Items.VoidLavaSnail": "{{i18n:Gifts.TraceV.VoidLavaSnail}}#$action IncrementStat VoidLavaSnailsGiven 1",
-                "AcceptGift_(O){{ModID}}_Items.GoldenVoidLavaSnail": "{{i18n:Gifts.TraceV.GoldenVoidLavaSnail}}#$action IncrementStat VoidLavaSnailsGiven 1#$action AddMail Current DitR_M_GaveJeremyGoldenSnail received",
+                "AcceptGift_(O){{ModID}}_Items.GoldenVoidLavaSnail": "{{i18n:Gifts.TraceV.GoldenVoidLavaSnail}}#$action IncrementStat VoidLavaSnailsGiven 1#$action AddMail Current LitD_M_GaveJeremyGoldenSnail received",
                 "AcceptGift_(O)sapphicsaph_pitv.PridePop": "{{i18n:Gifts.TraceV.PridePop}}",
                 "AcceptGift_(O)sapphicsaph_pitv.TransTart": "{{i18n:Gifts.TraceV.TransTart}}",
                 "AcceptGift_(O)sapphicsaph_pitv.EnbyEclair": "{{i18n:Gifts.TraceV.EnbyEclair}}",

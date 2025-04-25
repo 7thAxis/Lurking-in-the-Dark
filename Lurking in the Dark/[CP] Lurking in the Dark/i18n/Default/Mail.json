@@ -18,9 +18,9 @@
 
 //Pipo Portrait
 "Mail.SenS.PipoPortrait.Title": "Pipo's Prize",
-"Mail.SenS.PipoPortrait": "PiPo. ^^Meow Meow Meow...^^It seems you've treated my fellow void felines well. BEHOLD your reward, ME.^^Now collect 500 void feline \"gifts\"...  ^^   -Signed with a paw print. But not actually.%item furniture 7thAxis.LitD.CP_Furniture.PipoPortrait %%",
+"Mail.SenS.PipoPortrait": "PiPo. ^^Meow Meow Meow...^^It seems you've treated my fellow void felines well. BEHOLD your reward, ME.^^Now collect 500 void feline \"gifts\"...  ^^   -Signed with a paw print. But not actually.%item furniture 7thAxis.LitD_Furniture.PipoPortrait %%",
 
 //Pipo Summon
 "Mail.SenS.PipoTrinket.Title": "Pipo's Summon",
-"Mail.SenS.PipoTrinket": "PipooOOooO. ^^Meow Meow Meow.^^You've earned my respect.^^Summon me if you wish for me to join you on your adventures.  ^^   -Signed with a paw print. But not actually.%item id (TR)7thAxis.LitD.CP_PipoSummon 1 %%"
+"Mail.SenS.PipoTrinket": "PipooOOooO. ^^Meow Meow Meow.^^You've earned my respect.^^Summon me if you wish for me to join you on your adventures.  ^^   -Signed with a paw print. But not actually.%item id (TR)7thAxis.LitD_PipoSummon 1 %%"
 }
