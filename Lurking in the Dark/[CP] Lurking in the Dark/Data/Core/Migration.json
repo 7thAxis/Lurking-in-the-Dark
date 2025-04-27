@@ -15,7 +15,7 @@
                 "Actions": [
 
                 //I know you can put it in one... this is just more readable for me.
-                
+
                     //Events
                     "Pathoschild.ContentPatcher_MigrateIds Events 107701000 {{ModID}}_Events.SenS.0h",
                     "Pathoschild.ContentPatcher_MigrateIds Events 107701002 {{ModID}}_Events.SenS.2h",
@@ -65,6 +65,65 @@
             }
         },
         {
+            "LogName": "v3/DitR to v4 Migration",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.Migration.v4.0": {
+                    "Id": "{{ModID}}_TriggerActions.Migration.v4.0",
+                    "Trigger": "DayStarted",
+                    "HostOnly": true,
+                    "Actions": [
+                        /* Mail */
+                        // Sen
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_ShadowVisitation LitD_M_ShadowVisitation",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_AGardenForSenComplete LitD_M_AGardenForSenComplete",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SenGardenTrigger LitD_M_SenGardenTrigger",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SenS_Romantic LitD_M_SenS_Romantic",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SenPortrait LitD_M_SenPortrait",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SenPrideCookie LitD_M_SenPrideCookie",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_GaveSenWotW1 LitD_M_GaveSenWotW1",
+                        // Jeremy
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SnailPhase1 LitD_M_SnailPhase1",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SnailPhase2 LitD_M_SnailPhase2",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SnailPhase3 LitD_M_SnailPhase3",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SnailPhase4 LitD_M_SnailPhase4",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_SnailPhase5 LitD_M_SnailPhase5",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_AcceptedVoidSnailQuestToday LitD_M_AcceptedVoidSnailQuestToday",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_GaveJeremyGoldenSnail LitD_M_GaveJeremyGoldenSnail",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_JeremyBetrayed LitD_M_JeremyBetrayed",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_AttackedJeremyToday LitD_M_AttackedJeremyToday",
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_GaveVincentLavaSnail LitD_M_GaveVincentLavaSnail",
+                        // Trace
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_TriedToGiveTraceStinkyPants LitD_M_TriedToGiveTraceStinkyPants",
+                        /* Mail */
+
+                        /* Items */
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocus (O){{ModID}}_Items.SensCrocus",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnailEgg (O){{ModID}}_Items.VoidLavaSnailEgg",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.QuestRewardVoidLavaSnailEgg (O){{ModID}}_Items.QuestRewardVoidLavaSnailEgg",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.GoldenVoidLavaSnailEgg (O){{ModID}}_Items.GoldenVoidLavaSnailEgg",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnailMayonnaise (O){{ModID}}_Items.VoidLavaSnailMayonnaise",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnailMayonnaiseBetrayal (O){{ModID}}_Items.VoidLavaSnailMayonnaiseBetrayal",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.GoldenVoidLavaSnailMayonnaise (O){{ModID}}_Items.GoldenVoidLavaSnailMayonnaise",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnail (O){{ModID}}_Items.VoidLavaSnail",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.GoldenVoidLavaSnail (O){{ModID}}_Items.GoldenVoidLavaSnail",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (H)7thAxis.DitR_Hats_VoidLavaSnailBuddy (H){{ModID}}_Hats.VoidLavaSnailBuddy",
+                        "Pathoschild.ContentPatcher_MigrateIds Items (H)7thAxis.DitR_Hats_GoldenVoidLavaSnailBuddy (H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy",
+                        /* Items */
+
+                        /* Songs */
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.JeremyTheme LitD_Music.JeremyTheme",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.VoidSnailWaltz LitD_Music.VoidSnailWaltz",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.TraceHouse LitD_Music.TraceHouse",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.BarbieGirl LitD_Music.BarbieGirl",
+                        /* Songs */
+                    ]
+                }
+            }
+        },
+        {
             "LogName": "Sen's Crocus ID change for LA",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
@@ -105,10 +164,10 @@
                 "{{ModID}}_TriggerActions.QuestFixerLitD.1": {
                     "Id": "{{ModID}}_TriggerActions.QuestFixerLitD",
                     "Trigger": "DayStarted",
-                    "Actions": [ 
+                    "Actions": [
                         "AddQuest 7thAxis.LitD_Quests.AGardenForSen",
                         "RemoveQuest 10770100"
-                     ]
+                    ]
                 }
             },
             "When": { "HasActiveQuest: |contains=10770100": true }
