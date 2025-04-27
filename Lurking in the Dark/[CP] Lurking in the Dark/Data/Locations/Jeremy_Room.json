@@ -10,7 +10,8 @@
                     "MusicDefault": "LitD_Music.JeremyTheme",
                     "DisplayName": "{{i18n:Maps.JeremyTSnail.JeremyRoom}}",
                     "DefaultArrivalTile": { "X": 10, "Y": 6 },
-                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Jeremy_Room" }
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Jeremy_Room" },
+                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Jeremy_Room" ]
                 }
             }
         },
