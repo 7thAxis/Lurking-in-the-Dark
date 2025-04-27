@@ -74,6 +74,17 @@
                     "Trigger": "DayStarted",
                     "HostOnly": true,
                     "Actions": [
+                        /* Events */
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.0h {{ModID}}_Events.SenS.0h",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.2h {{ModID}}_Events.SenS.2h",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.4h {{ModID}}_Events.SenS.4h",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.6h.P1 {{ModID}}_Events.SenS.6h.P1",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.6h.P2 {{ModID}}_Events.SenS.6h.P2",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.8h {{ModID}}_Events.SenS.8h",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.10h.P1 {{ModID}}_Events.SenS.10h.P1",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.10h.P2 {{ModID}}_Events.SenS.10h.P2",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.10h.P3 {{ModID}}_Events.SenS.10h.P3",
+                        "Pathoschild.ContentPatcher_MigrateIds Events 7thAxis.DitR_Events.SenS.14h {{ModID}}_Events.SenS.14h",
                         /* Mail */
                         // Sen
                         "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_ShadowVisitation LitD_M_ShadowVisitation",

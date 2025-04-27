@@ -26,7 +26,8 @@
                     "MusicDefault": "LitD_Music.TraceHouse",
                     "DisplayName": "{{i18n:Maps.TraceV.TraceHouse}}",
                     "DefaultArrivalTile": { "X": 16, "Y": 23 },
-                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Trace_House_Interior" }
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Trace_House_Interior" },
+                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Trace_House_Interior" ]
                 }
             }
         },
