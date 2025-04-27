@@ -111,7 +111,8 @@
 
                         /* Items */
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocus (O){{ModID}}_Items.SensCrocus",
-                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds",
+                        // Sen's Crocus Seeds don't exist until 14th heart, gating this so that it doesn't error
+                        "If PLAYER_HAS_SEEN_EVENT Any {{ModID}}_Events.SenS.14h ## Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnailEgg (O){{ModID}}_Items.VoidLavaSnailEgg",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.QuestRewardVoidLavaSnailEgg (O){{ModID}}_Items.QuestRewardVoidLavaSnailEgg",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.GoldenVoidLavaSnailEgg (O){{ModID}}_Items.GoldenVoidLavaSnailEgg",
