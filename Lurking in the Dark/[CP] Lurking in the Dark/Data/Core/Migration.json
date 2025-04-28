@@ -9,7 +9,7 @@
 
             "Entries": {
             "{{ModID}}_TriggerActions.SenEventMigration.1": {
-                "Id": "{{ModID}}_TriggerActions.SenEventMigration",
+                "Id": "{{ModID}}_TriggerActions.SenEventMigration.1",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Actions": [
@@ -42,7 +42,7 @@
             "Target": "Data/TriggerActions",
             "Entries": {
             "{{ModID}}_TriggerActions.SenEventMigration.v3.1": {
-                "Id": "{{ModID}}_TriggerActions.SenEventMigration.v3",
+                "Id": "{{ModID}}_TriggerActions.SenEventMigration.v3.1",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Actions": [
@@ -107,12 +107,29 @@
                         "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_GaveVincentLavaSnail LitD_M_GaveVincentLavaSnail",
                         // Trace
                         "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_TriedToGiveTraceStinkyPants LitD_M_TriedToGiveTraceStinkyPants",
-                        /* Mail */
+
+                        /* Songs */
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.JeremyTheme LitD_Music.JeremyTheme",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.VoidSnailWaltz LitD_Music.VoidSnailWaltz",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.TraceHouse LitD_Music.TraceHouse",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.BarbieGirl LitD_Music.BarbieGirl"
+
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "v3/DitR to v4 Migration",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.Migration.v4.0.SnailContent": {
+                    "Id": "{{ModID}}_TriggerActions.Migration.v4.0.SnailContent",
+                    "Trigger": "DayStarted",
+                    "HostOnly": true,
+                    "Actions": [
 
                         /* Items */
-                        "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocus (O){{ModID}}_Items.SensCrocus",
-                        // Sen's Crocus Seeds don't exist until 14th heart, gating this so that it doesn't error
-                        "If PLAYER_HAS_SEEN_EVENT Any {{ModID}}_Events.SenS.14h ## Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.LitD.CP_Items.SensCrocusSeeds (O){{ModID}}_Items.SensCrocusSeeds",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnailEgg (O){{ModID}}_Items.VoidLavaSnailEgg",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.QuestRewardVoidLavaSnailEgg (O){{ModID}}_Items.QuestRewardVoidLavaSnailEgg",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.GoldenVoidLavaSnailEgg (O){{ModID}}_Items.GoldenVoidLavaSnailEgg",
@@ -122,26 +139,19 @@
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.VoidLavaSnail (O){{ModID}}_Items.VoidLavaSnail",
                         "Pathoschild.ContentPatcher_MigrateIds Items (O)7thAxis.DitR_Items.GoldenVoidLavaSnail (O){{ModID}}_Items.GoldenVoidLavaSnail",
                         "Pathoschild.ContentPatcher_MigrateIds Items (H)7thAxis.DitR_Hats_VoidLavaSnailBuddy (H){{ModID}}_Hats.VoidLavaSnailBuddy",
-                        "Pathoschild.ContentPatcher_MigrateIds Items (H)7thAxis.DitR_Hats_GoldenVoidLavaSnailBuddy (H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy",
-                        /* Items */
-
-                        /* Songs */
-                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.JeremyTheme LitD_Music.JeremyTheme",
-                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.VoidSnailWaltz LitD_Music.VoidSnailWaltz",
-                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.TraceHouse LitD_Music.TraceHouse",
-                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.BarbieGirl LitD_Music.BarbieGirl",
-                        /* Songs */
+                        "Pathoschild.ContentPatcher_MigrateIds Items (H)7thAxis.DitR_Hats_GoldenVoidLavaSnailBuddy (H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy"
                     ]
                 }
-            }
-        },
+            },
+            "When": { "Void Snail Content": true }
+        },        
         {
             "LogName": "Sen's Crocus ID change for LA",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
             "{{ModID}}_TriggerActions.FurnitureIDMirgration.1": {
-                "Id": "{{ModID}}_TriggerActions.FurnitureIDMirgration",
+                "Id": "{{ModID}}_TriggerActions.FurnitureIDMirgration.1",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Actions": [                
@@ -157,7 +167,7 @@
             "Target": "Data/TriggerActions",
             "Entries": {
             "{{ModID}}_TriggerActions.CrocusIDMigration.1": {
-                "Id": "{{ModID}}_TriggerActions.CrocusIDMigration",
+                "Id": "{{ModID}}_TriggerActions.CrocusIDMigration.1",
                 "Trigger": "DayStarted",
                 "HostOnly": true,
                 "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.14h",
@@ -174,7 +184,7 @@
             "Target": "Data/TriggerActions",
             "Entries": {
                 "{{ModID}}_TriggerActions.QuestFixerLitD.1": {
-                    "Id": "{{ModID}}_TriggerActions.QuestFixerLitD",
+                    "Id": "{{ModID}}_TriggerActions.QuestFixerLitD.1",
                     "Trigger": "DayStarted",
                     "Actions": [
                         "AddQuest 7thAxis.LitD_Quests.AGardenForSen",
@@ -191,7 +201,7 @@
             "Entries": {
                 "{{ModID}}_TriggerActions.TranslationSoftlockFix.1": {
                     "Trigger": "DayStarted",
-                    "Id": "{{ModID}}_TriggerActions.TranslationSoftlockFix",
+                    "Id": "{{ModID}}_TriggerActions.TranslationSoftlockFix.1",
                     "Condition": "PLAYER_HAS_MAIL Current LitD_M_AGardenForSenComplete Any",
                     "Actions": [ 
                         "AddMail Current LitD_M_AGardenForSenComplete received",
@@ -206,7 +216,7 @@
             "Target": "Data/TriggerActions",
             "Entries": {
                 "{{ModID}}_TriggerActions.LitDWasInstalled.1": {
-                    "Id": "{{ModID}}_TriggerActions.LitDWasInstalled",
+                    "Id": "{{ModID}}_TriggerActions.LitDWasInstalled.1",
                     "Trigger": "DayStarted",
                     "Actions": [ "AddMail Current LitD_M_LitDWasInstalled received" ]
                 }

@@ -60,7 +60,7 @@
             "LogName": "Misc Cloak Portraits",
             "Action": "EditImage",
             "Target": "Portraits/SenS",
-            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/Main/SenS_Cloak.png",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Sen/SenS_Cloak.png",
             "Update": "OnLocationChange",
             "When": {
                 "LocationName": "MovieTheater, Temp, Hospital",
