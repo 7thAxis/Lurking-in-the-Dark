@@ -23,6 +23,35 @@
             "Action": "EditData",
             "Target": "strings/StringsFromMaps",
             "Entries": { "LitDMayorPot": "{{i18n:Maps.SenS.LitDMayorPot}}" }
+        },
+        //Funky Trash Can
+        {
+            "LogName": "Trash Stat Check",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "LitD_TriggerActions.FunkyTrashCan.2": {
+                    "Trigger": "DayStarted",
+                    "Id": "LitD_TriggerActions.FunkyTrashCan.2",
+                    "Condition": "PLAYER_HEARTS Current SenS 10, PLAYER_STAT Current trashCansChecked 200",
+                    "Actions": [ "AddMail Current LitD_M_IridiumSen received" ]
+                }
+            }
+        },
+        {
+            "Action": "EditMap",
+            "LogName": "Trashcan Patch",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                { "Position": { "X": 42, "Y": 86 }, "Layer": "Back",  "SetProperties": { "MEEP_FakeNPC": "SneakySenTrashcan" } } //Places fake Trashcan NPC
+            ],
+            "When": { "HasFlag: |contains=LitD_M_IridiumSen": true, "HasFlag: |contains=LitD_M_IridiumSenReceived": false }
+        }
+        ,
+        {
+            "Action": "EditData",
+            "Target": "MEEP/FakeNPC/Dialogue/SneakySenTrashcan",
+            "Entries": { "DialogueOne": "{{i18n:Maps.SenS.SneakySenTrashcan}}" }
         }
     ]
 }

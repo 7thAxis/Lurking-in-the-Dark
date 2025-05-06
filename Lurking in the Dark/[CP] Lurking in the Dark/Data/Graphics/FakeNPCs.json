@@ -90,7 +90,13 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/CoffeeMakerKun",
-            "FromFile": "Assets/Portraits/Default/Other/CoffeeMakerKun.png"
+            "FromFile": "Assets/{{TargetPathOnly}}/{{NPC Portrait Style}}/Other/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/SneakySenTrashcan, Portraits/SneakySenTrashcan",
+            "FromFile": "Assets/Characters/Other/{{TargetWithoutPath}}.png"
         }
     ]
 }

@@ -16,6 +16,7 @@
 "Maps.Caldera.GoldenVoidLavaSnail": "The majestic golden snail wonders how you reached them...",
 
     //--SEN--//
+"Maps.SenS.SneakySenTrashcan": "$query !PLAYER_HAS_MAIL Current LitD_M_IridiumSenReceived#%A secretive trashcan offers you a gift...#$action AddItem (F)7thAxis.LitD_Furniture.SenStatue 1#$action AddMail Current LitD_M_IridiumSenReceived received|%The secretive trashcan has nothing else to offer you. Begone.",
 "Maps.SenS.SenDDGlobe": "This old globe has pins stuck in certain locations around the world.",
 "Maps.SenS.SenDDBasket": "You inspect the basket, expecting berries...#...but, what you find instead are some strange squishy red globs of goo.",
 "Maps.SenS.SenDDMap": "The map on the wall has a sight seeing spot in the mountain marked in red.",
