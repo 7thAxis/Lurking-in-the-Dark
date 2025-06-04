@@ -45,7 +45,7 @@
             "MapTiles": [
                 { "Position": { "X": 42, "Y": 86 }, "Layer": "Back",  "SetProperties": { "MEEP_FakeNPC": "SneakySenTrashcan" } } //Places fake Trashcan NPC
             ],
-            "When": { "HasFlag: |contains=LitD_M_IridiumSen": true, "HasFlag: |contains=LitD_M_IridiumSenReceived": false }
+            "When": { "HasFlag: |contains=LitD_M_IridiumSen": true }
         },
         {
             "Action": "EditData",
