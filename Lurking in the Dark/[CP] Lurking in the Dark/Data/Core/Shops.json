@@ -6,7 +6,7 @@
             "Target": "Data/Shops",
             "TargetField": [ "Traveler", "Items" ],
             "Entries": {
-              "LitD_SenPortrait": {
+              "{{ModID}}_Furniture.SenPortrait": {
                 "Price": 30000,
                 "AvailableStock": 1,
                 "AvailableStockLimit": "Player",
@@ -18,13 +18,13 @@
                 "AvailableStockModifierMode": "Stack",
                 "Condition": "PLAYER_HEARTS Current SenS 14",
                 "ActionsOnPurchase": ["AddConversationTopic LitD_CT_SenPortrait 999"],
-                "Id": "(F)LitD_SenPortrait",
-                "ItemId": "(F)LitD_SenPortrait",
+                "Id": "(F){{ModID}}_Furniture.SenPortrait",
+                "ItemId": "(F){{ModID}}_Furniture.SenPortrait",
                 "IsRecipe": false,
                 "StackModifierMode": "Stack",
                 "QualityModifierMode": "Stack"
               },
-              "LitD_SenBabyPhoto": {
+              "{{ModID}}_Furniture.SenBabyPhoto": {
                 "Price": 30000,
                 "AvailableStock": 1,
                 "AvailableStockLimit": "Player",
@@ -36,8 +36,8 @@
                 "AvailableStockModifierMode": "Stack",
                 "Condition": "PLAYER_HEARTS Current SenS 14, PLAYER_HAS_MAIL Current LitD_M_SenPortrait received",
                 "ActionsOnPurchase": ["AddConversationTopic LitD_CT_SenBabyPhoto 999"],
-                "Id": "(F)LitD_SenBabyPhoto",
-                "ItemId": "(F)LitD_SenBabyPhoto",
+                "Id": "(F){{ModID}}_Furniture.SenBabyPhoto",
+                "ItemId": "(F){{ModID}}_Furniture.SenBabyPhoto",
                 "IsRecipe": false,
                 "StackModifierMode": "Stack",
                 "QualityModifierMode": "Stack"
