@@ -7,7 +7,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -18,7 +19,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -29,7 +31,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.003"
+                    "Chance": "0.003",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -40,7 +43,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -51,7 +55,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.005"
+                    "Chance": "0.005",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -62,7 +67,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.005"
+                    "Chance": "0.005",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -73,7 +79,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -85,7 +92,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.005"
+                    "Chance": "0.005",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -97,7 +105,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -109,7 +118,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -121,7 +131,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.5"
+                    "Chance": "0.5",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -133,7 +144,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -144,7 +156,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.005"
+                    "Chance": "0.005",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -155,7 +168,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         },
@@ -166,7 +180,8 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001"
+                    "Chance": "0.001",
+                    "Condition": "!SEASON Winter"
                 }
             }
         }

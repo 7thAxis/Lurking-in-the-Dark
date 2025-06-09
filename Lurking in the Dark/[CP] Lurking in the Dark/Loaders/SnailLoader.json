@@ -22,6 +22,6 @@
         {
 			"Action": "Include",
 			"FromFile": "Data/Locations/World_Map.json, Data/Locations/Caldera_Snails.json, Data/Locations/Jeremy_Room.json, Data/Locations/Trace_House.json, Data/Animals/Giant_Void_Lava_Snail.json, Data/Animals/Golden_Void_Lava_Snail.json, Data/Items/Void_Lava_Snail_Egg.json, Data/Items/Void_Lava_Snail_Mayonnaise.json, Data/Items/Void_Lava_Snail.json, Data/Forage/Void_Lava_Snail.json, Data/Forage/Golden_Void_Lava_Snail.json, Data/Dispositions/Trace.json, Data/Dispositions/Jeremy.json, Data/Dialogue/Trace/Core.json, Data/Dialogue/Trace/GiftResponses.json, Data/Dialogue/Jeremy/Core.json, Data/Graphics/Trace.json, Data/Graphics/Jeremy.json, Data/Schedules/Trace/Defaults.json, Data/Schedules/Trace/{{Schedule Type}}.json, Data/Schedules/Jeremy/Defaults.json, Data/Schedules/Jeremy/{{Schedule Type}}.json, Data/Quests/Void_Lava_Snail_Round_Up.json, Data/Festivals/TraceJeremy.json"
-		}  
+		} 
     ]
 }

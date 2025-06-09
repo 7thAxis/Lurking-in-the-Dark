@@ -25,6 +25,7 @@
 "Gifts.SenS.Cat.Trash": "Oh this is a neat find, @!$h#$b#I often find these kinds of things while rummaging in the trash. $h",
 "Gifts.SenS.Tag.Book": "Oh, a book for me?! Thank you so so so so so much, @!$7#$b#I'm going to go and read this right away, this is so thoughtful.$h",
 "Gifts.SenS.Tag.SweetFood": "Oh... That looks simply to die for!$7#$b#I must, absolutely must eat it immediately! Thank you, @!$h",
+"Gifts.SenS.Trash": "$query {{IsOrcaCharacter}}, !PLAYER_HAS_MAIL Current LitD_M_OrcaReceivedStatue Any#Oh! What an utterly rancid odor, thank you.$h#$b#Speaking of trash were you uh, looking for this?$6#$b#Don't worry, I won't ask any questions. Even though I have quite a few.$8#$action AddItem (F)7thAxis.LitD_Furniture.SenStatue 1#$action AddMail Current LitD_M_OrcaReceivedStatue received|Ooooh! What an utterly rancid odor.$h#$b#You can't even tell what this is anymore. This is wonderful!$7",
 "Gifts.SenS.Crocus": "Oh my goodness...!! The crocus is my favorite flower!$11#$b#It was the first kind I found when I came to the surface.$l#$b#A gorgeous bloom peeking through the snow, giving me hope for a brighter tomorrow...$l",
 "Gifts.SenS.StrangeBun": "Oh my, this is quite a delicacy among shadows!$7#$b#How did you get your hands on the recipe?$h",
 "Gifts.SenS.VoidMayo": "Mmm... I love this stuff!$h#$b#It makes a great topping for any cave fish sandwich!$h",
