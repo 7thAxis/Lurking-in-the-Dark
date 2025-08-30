@@ -121,7 +121,7 @@
             "Target": "Data/Characters",
             "TargetField": [ "SenS" ],
             "Entries": { "CanBeRomanced": true },
-            "When": { "HasFlag:currentPlayer |contains=LitD_M_SenS_Romantic": true }
+            "When": { "HasFlag |contains=LitD_M_SenS_Romantic": true }
         },
         {
             "Action": "EditData",
@@ -131,8 +131,8 @@
                 "propose_roommate_sens": "propose_roommate_sens"
             },
             "When": {
-                "HasSeenEvent:currentPlayer |contains={{ModID}}_Events.SenS.10h.P3": true,
-                "HasFlag:currentPlayer |contains=LitD_M_SenS_Romantic": false
+                "HasSeenEvent |contains={{ModID}}_Events.SenS.10h.P3": true,
+                "HasFlag: |contains=LitD_M_SenS_Romantic": false
             }
         },
         //MP dating fix (Hopefully)

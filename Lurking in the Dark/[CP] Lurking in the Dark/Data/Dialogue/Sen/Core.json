@@ -6,7 +6,7 @@
             "Target": "Characters/Dialogue/SenS",
             "Update": "OnLocationChange",
             "Entries": {
-                "{{WeekDay}}": "{{i18n:Core.SenS.{{SenHeartRange}}.{{Random:{{Range: 1, 60}}}}{{SenRandTokens}}{{RelationshipTokens}}}}"
+                "{{WeekDay}}": "{{i18n:Core.SenS.{{SenHeartRange}}.{{Random:{{Range: 1, 60}}}}{{RelationshipTokens}}}}"
             },
             "When": { "HasFlag |contains=LitD_M_SenS_OverrideSeenToday": false }
         },
@@ -43,7 +43,7 @@
                 //Favorite Thing Question
                 "SenFavoriteThing": "{{i18n:Core.SenS.SenFavoriteThing}}",
                 "SenNoFavoriteThing": "{{i18n:Core.SenS.SenNoFavoriteThing}}",
-                "SenFavoriteFollowup": "{{i18n:Core.SenS.SenFavoriteFollowup{{SenRandTokens}}}}",
+                "SenFavoriteFollowup": "{{i18n:Core.SenS.SenFavoriteFollowup}}",
                 //Murder Question
                 "SenNoKill": "{{i18n:Core.SenS.SenNoKill}}",
                 "SenSelfDefense": "{{i18n:Core.SenS.SenSelfDefense}}",
@@ -56,7 +56,7 @@
                 "spring_28_{{YearCheck}}": "{{i18n:Core.SenS.Spring.Day.28}}",
 
                 "summer_1_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.1}}",
-                "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.19{{SenRandTokens}}}}",
+                "summer_19_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.19}}",
                 "summer_28_{{YearCheck}}": "{{i18n:Core.SenS.Summer.Day.28}}",
 
                 "fall_1_{{YearCheck}}": "{{i18n:Core.SenS.Fall.Day.1}}",

@@ -92,9 +92,9 @@
                 "Rainy_Day_4": "{{i18n:Relationship.SenS.RainyDay.6.{{SenPartnershipRoute}}{{RelationshipTokens}}}}",
                 "Rainy_Day_5": "{{i18n:Relationship.SenS.RainyDay.7.{{SenPartnershipRoute}}{{RelationshipTokens}}}}",
 
-                "Rainy_Night_SenS": "{{i18n:Relationship.SenS.RainyNight.1{{SenRandTokens}}{{RelationshipTokens}}}}",
-                "Rainy_Night_0": "{{i18n:Relationship.SenS.RainyNight.2{{SenRandTokens}}{{RelationshipTokens}}}}",
-                "Rainy_Night_1": "{{i18n:Relationship.SenS.RainyNight.3{{SenRandTokens}}{{RelationshipTokens}}}}",
+                "Rainy_Night_SenS": "{{i18n:Relationship.SenS.RainyNight.1{{RelationshipTokens}}}}",
+                "Rainy_Night_0": "{{i18n:Relationship.SenS.RainyNight.2{{RelationshipTokens}}}}",
+                "Rainy_Night_1": "{{i18n:Relationship.SenS.RainyNight.3{{RelationshipTokens}}}}",
                 "Rainy_Night_2": "{{i18n:Relationship.SenS.RainyNight.4{{RelationshipTokens}}}}",
                 "Rainy_Night_3": "{{i18n:Relationship.SenS.RainyNight.5{{RelationshipTokens}}}}",
                 "Rainy_Night_4": "{{i18n:Relationship.SenS.RainyNight.6.{{SenPartnershipRoute}}{{RelationshipTokens}}}}",
@@ -102,7 +102,7 @@
 
                 "Indoor_Day_SenS": "{{i18n:Relationship.SenS.IndoorDay.1.{{Random:{{Range: 1, 5}}}}.{{SenPartnershipRoute}}{{RelationshipTokens}}}}",
                 "Indoor_Day_0": "{{i18n:Relationship.SenS.IndoorDay.2{{RelationshipTokens}}}}",
-                "Indoor_Day_1": "{{i18n:Relationship.SenS.IndoorDay.3{{SenRandTokens}}{{RelationshipTokens}}}}",
+                "Indoor_Day_1": "{{i18n:Relationship.SenS.IndoorDay.3{{RelationshipTokens}}}}",
                 "Indoor_Day_2": "{{i18n:Relationship.SenS.IndoorDay.4{{RelationshipTokens}}}}",
                 "Indoor_Day_3": "{{i18n:Relationship.SenS.IndoorDay.5{{RelationshipTokens}}}}",
                 "Indoor_Day_4": "{{i18n:Relationship.SenS.IndoorDay.6.{{SenPartnershipRoute}}{{RelationshipTokens}}}}",
