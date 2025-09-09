@@ -106,7 +106,7 @@
                         },
                         {
                             "ID": "Other Festivals",
-                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\" \"IS_PASSIVE_FESTIVAL_TODAY TroutDerby, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY NightMarket, {{LivingWithSen |Contains=false}}\" \"SEASON_DAY Winter 12, {{LivingWithSen |Contains=false}}\" \"IS_PASSIVE_FESTIVAL_TODAY DesertFestival, {{LivingWithSen |Contains=false}}\"",
+                            "Condition": "ANY \"IS_EVENT festival_winter28\" \"IS_EVENT festival_fall20\" \"IS_EVENT festival_summer20\" \"IS_PASSIVE_FESTIVAL_TODAY TroutDerby, !PLAYER_NPC_RELATIONSHIP Current SenS Roommate Married\" \"IS_PASSIVE_FESTIVAL_TODAY NightMarket, !PLAYER_NPC_RELATIONSHIP Current SenS Roommate Married\" \"SEASON_DAY Winter 12, !PLAYER_NPC_RELATIONSHIP Current SenS Roommate Married\" \"IS_PASSIVE_FESTIVAL_TODAY DesertFestival, !PLAYER_NPC_RELATIONSHIP Current SenS Roommate Married\"",
                             "Precedence": "1",
                             "Portrait": "Portraits/SenS_Cloak",
                             "Sprite": "Characters/SenS_Cloak"
