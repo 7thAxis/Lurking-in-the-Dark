@@ -8,7 +8,7 @@
             "FromFile": "Loaders/blank.json"
         },
         //Maps
-        {
+        /*{
             "Action": "Load",
             "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
             "FromFile": "assets/Maps/Jeremy_Room.tmx"
@@ -17,7 +17,7 @@
             "Action": "Load",
             "Target": "Maps/7thAxis.LitD_Maps.Trace_House_Interior",
             "FromFile": "assets/Maps/Trace_House_Interior.tmx"
-        },
+        },*/
         //Files
         {
 			"Action": "Include",

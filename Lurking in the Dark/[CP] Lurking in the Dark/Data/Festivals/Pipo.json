@@ -72,13 +72,13 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Fields", "set-up", 5],
-                    "Value": "addTemporaryActor PipoP 29 37 3 false Character",
+                    "Value": "addTemporaryActor PipoP 16 32 29 37 3 false Character",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Fields", "set-up_y2", 5],
-                    "Value": "addTemporaryActor PipoP 34 33 3 false Character",
+                    "Value": "addTemporaryActor PipoP 16 32 34 33 3 false Character",
                     "Delimiter": "/"
                 }
             ],
@@ -91,7 +91,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Fields", "set-up{{FestivalYearCheck}}", 5],
-                    "Value": "addTemporaryActor PipoP 30 25 1 false Character",
+                    "Value": "addTemporaryActor PipoP 16 32 30 25 1 false Character",
                     "Delimiter": "/"
                 }
             ],

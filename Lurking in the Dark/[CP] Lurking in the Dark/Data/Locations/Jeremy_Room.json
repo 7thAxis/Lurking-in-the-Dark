@@ -1,7 +1,7 @@
 {
     "Changes": [ 
 //---------------------------- ROOM LOAD ------------------------------------------//        
-        {
+       /* {
             "LogName": "Location Data",
             "Action": "EditData",
             "Target": "Data/Locations",
@@ -14,7 +14,7 @@
                     "FormerLocationNames": [ "7thAxis.DitR_Maps.Jeremy_Room" ]
                 }
             }
-        },
+        },*/
 //---------------------------- WARPS ------------------------------------------// 
         {
             "Action": "EditMap",

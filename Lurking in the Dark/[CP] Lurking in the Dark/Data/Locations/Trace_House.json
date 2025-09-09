@@ -10,7 +10,7 @@
             "PatchMode": "Replace"
         },      
 //---------------------------- INTERIOR LOAD ------------------------------------------// 
-        {
+       /* {
             "LogName": "Location Data",
             "Action": "EditData",
             "Target": "Data/Locations",
@@ -30,7 +30,7 @@
                     "FormerLocationNames": [ "7thAxis.DitR_Maps.Trace_House_Interior" ]
                 }
             }
-        },
+        },*/
         {
             "LogName": "Barbie Girl Flag Check", //What am I doing....
             "Action": "EditData",

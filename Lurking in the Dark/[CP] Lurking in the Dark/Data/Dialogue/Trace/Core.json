@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/TraceV",
             "Entries": 	{ 
-                "{{WeekDay}}": "{{i18n:Core.TraceV.Dialogue.{{Random:{{Range: 1, 58}}}}}}"
+                "{{WeekDay}}": "{{i18n:Core.TraceV.Dialogue.{{Random:{{Range: 1, 57}}}}}}"
             },
             "When": { "HasFlag |contains=LitD_M_TraceV_OverrideSeenToday": false }
         },

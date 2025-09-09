@@ -35,6 +35,53 @@
 			"Action": "Include",
 			"FromFile": "Data/Festivals/Pipo.json"
             //"When": { "HasSeenEvent: |contains=placeholder": true }
-		}    
+		},
+
+        //Here temporarily
+        {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "7thAxis.LitD_Maps.Jeremy_Room": {
+                    "MusicDefault": "LitD_Music.JeremyTheme",
+                    "DisplayName": "{{i18n:Maps.JeremyTSnail.JeremyRoom}}",
+                    "DefaultArrivalTile": { "X": 10, "Y": 6 },
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Jeremy_Room" },
+                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Jeremy_Room" ]
+                }
+            }
+        },
+        {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "7thAxis.LitD_Maps.Trace_House_Interior": {
+                    "Music": [
+                        {
+                          "Id": "TraceHouseBarbieGirl",
+                          "Track": "LitD_Music.BarbieGirl",
+                          "Condition": "SYNCED_RANDOM day TraceBarbieGirl 0.05"
+                        }
+                      ],
+                    "MusicDefault": "LitD_Music.TraceHouse",
+                    "DisplayName": "{{i18n:Maps.TraceV.TraceHouse}}",
+                    "DefaultArrivalTile": { "X": 16, "Y": 23 },
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Trace_House_Interior" },
+                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Trace_House_Interior" ]
+                }
+            }
+        }, 
+        {
+            "Action": "Load",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "FromFile": "assets/Maps/Jeremy_Room.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/7thAxis.LitD_Maps.Trace_House_Interior",
+            "FromFile": "assets/Maps/Trace_House_Interior.tmx"
+        }
     ]
 }

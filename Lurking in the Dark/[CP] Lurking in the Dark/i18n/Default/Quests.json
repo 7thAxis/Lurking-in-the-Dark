@@ -30,6 +30,6 @@
 "Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.2": "Hello, ^^Do not question my capability to write.^^Move along and accept my reward for your assistance in bringing my kin home.  ^^   -J.T.S %item object 769 20 %%",
 "Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.3": "Hello, ^^My home is starting to become a tad crowded. I suppose that is fine. I quite enjoy the chatter... ^^Anyhow, here is a reward. ^^   -J.T.S %item object 633 1 %%",
 "Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.4": "Hello, ^^I have quite the large family now. Based on the last headcount, it is about 80 snails wide. ^^Now if only they would all behave...^^I have no idea where they found all this gold...^^   -J.T.S %item money 10000 %%",
-"Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.5": "Hello, ^^One hundred snails. Absolutely astonishing. ^^Accept this egg. I trust you to take it and nurture it with care.^^You will need to construct a special building, just so you are aware...^   -J.T.S %item object (O){{ModID}}_Items.QuestRewardVoidLavaSnailEgg 1 %%"
+"Quests.Jeremy.VoidLavaSnailRoundUp.SnailMail.5": "Hello, ^^One hundred snails. Absolutely astonishing. ^^Accept this egg. I trust you to take it and nurture it with care.^^You will need to construct a special building, just so you are aware...^   -J.T.S %item object (O)7thAxis.LitD_Items.QuestRewardVoidLavaSnailEgg 1 %%"
 
 }

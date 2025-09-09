@@ -172,18 +172,6 @@
                     "Condition": "!SEASON Winter"
                 }
             }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "TargetField": [ "EastScarp_ClearingHouse", "Forage" ],
-            "Entries": {
-                "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
-                    "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.001",
-                    "Condition": "!SEASON Winter"
-                }
-            }
         }
     ]
 }
