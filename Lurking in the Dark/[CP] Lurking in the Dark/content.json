@@ -181,27 +181,27 @@
             "Description":"Adds an accessory to the face of Pipo's overworld sprite.",
             "Section": "Pipo the Void Cat"
         },
-        //Trace Jeremy
+        //Travis Jeremy
         "Void Snail Content": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
-            "Description": "Whether Trace, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
-            "Section": "Trace & Jeremy"
+            "Description": "Whether Travis, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
+            "Section": "Travis & Jeremy"
         },
-        "Social Trace": {
+        "Social Travis": {
             "AllowValues": "true, false",
             "Default": false,
             "AllowBlank": false,
-            "Description": "Determines if Trace should be friend-able. Provides additional dialogue content when enabled, but no events.",
-            "Section": "Trace & Jeremy"
+            "Description": "Determines if Travis should be friend-able. Provides additional dialogue content when enabled, but no events.",
+            "Section": "Travis & Jeremy"
         },
         "Caldera Void Lava Snails": {
             "AllowValues": "true, false",
             "Default": true,
             "AllowBlank": false,
             "Description": "Spawns visible Void Lava Snails in the Caldera to match in-game lore.",
-            "Section": "Trace & Jeremy"
+            "Section": "Travis & Jeremy"
         }
     },
     
@@ -302,7 +302,7 @@
             "Value": "{{Random:{{Range: 1, 12}}|key=SSR}}"    
         },
         {
-            "Name": "TraceScheduleRandomizer", 
+            "Name": "TravisScheduleRandomizer", 
             "Value": "{{Random:{{Range: 1, 9}}|key=TSR}}"
         },
         {
@@ -443,8 +443,8 @@
             "Value": "|SenRelationshipTerm={{i18n:Core.SenS.RelationshipTerm.{{Relationship:SenS |contains=Married, Dating, Engaged}}}} |SenKrobusReference={{SenKrobusReference}} |RomanticNick={{Romantic Nickname}}"
         },
         {
-            "Name": "TraceRoomTokens",
-            "Value": "|Book1={{i18n:Rand.TraceV.Book.{{Random:{{Range: 1, 21}}|key=TB1}}}} |Book2={{i18n:Rand.TraceV.Book.{{Random:{{Range: 1, 21}}|key=TB2}}}} |Book3={{i18n:Rand.TraceV.Book.{{Random:{{Range: 1, 21}}|key=TB3}}}} |Book4={{i18n:Rand.TraceV.Book.{{Random:{{Range: 1, 21}}|key=TB4}}}} |Book5={{i18n:Rand.TraceV.Book.{{Random:{{Range: 1, 21}}|key=TB5}}}} |TVShow={{i18n:Rand.TraceV.TVShow.{{Random:{{Range: 1, 10}}|key=TTV}}}}"
+            "Name": "TravisRoomTokens",
+            "Value": "|Book1={{i18n:Rand.TravisV.Book.{{Random:{{Range: 1, 21}}|key=TB1}}}} |Book2={{i18n:Rand.TravisV.Book.{{Random:{{Range: 1, 21}}|key=TB2}}}} |Book3={{i18n:Rand.TravisV.Book.{{Random:{{Range: 1, 21}}|key=TB3}}}} |Book4={{i18n:Rand.TravisV.Book.{{Random:{{Range: 1, 21}}|key=TB4}}}} |Book5={{i18n:Rand.TravisV.Book.{{Random:{{Range: 1, 21}}|key=TB5}}}} |TVShow={{i18n:Rand.TravisV.TVShow.{{Random:{{Range: 1, 10}}|key=TTV}}}}"
         },
             //--SEN OVERRIDE DIALOGUE GENERATION--
             { "Name": "SenOverrideConditions", "Value": "Inactive" },
@@ -503,30 +503,30 @@
                 "SenOverrideConditions": "Active"
             }
         },
-         //--TRACE OVERRIDE DIALOGUE GENERATION--
+         //--Travis OVERRIDE DIALOGUE GENERATION--
 
-            { "Name": "TraceOverrideDialogue", "Value": "" }, 
-            { "Name": "TraceOverrideConditions", "Value": "Inactive" },
-            { "Name": "TVSD", "Value": "Empty" }, //Empty keeps TraceOverrideDialogue from screaming abt being empty on disabled days
+            { "Name": "TravisOverrideDialogue", "Value": "" }, 
+            { "Name": "TravisOverrideConditions", "Value": "Inactive" },
+            { "Name": "TVSD", "Value": "Empty" }, //Empty keeps TravisOverrideDialogue from screaming abt being empty on disabled days
 
         {
-            "Name": "TraceOverrideDay",
+            "Name": "TravisOverrideDay",
             "Value": "{{Query: {{Random: {{Range: 1, 10}}|key=TTDO}} = 1 }}"
         },
         {
-            "Name": "TraceOverrideConditions",
+            "Name": "TravisOverrideConditions",
             "Value": "Active",
-            "When": { "TraceOverrideDay": true , "HasFlag: |contains=LitD_M_TraceV_OverrideSeenToday": false }
+            "When": { "TravisOverrideDay": true , "HasFlag: |contains=LitD_M_TravisV_OverrideSeenToday": false }
         },        
         {
             "Name": "TVSD",
-            "Value": "{{i18n:Core.TraceV.Season.{{season}}.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}",
-            "When": { "TraceOverrideConditions": "Active" }
+            "Value": "{{i18n:Core.TravisV.Season.{{season}}.{{Random:{{Range: 1, 5}}|key={{Time}}}}}}",
+            "When": { "TravisOverrideConditions": "Active" }
         },          
         {
-            "Name": "TraceOverrideDialogue", //Note to self: TVSD++ is a placeholder
+            "Name": "TravisOverrideDialogue", //Note to self: TVSD++ is a placeholder
             "Value": "{{Random:{{TVSD}}++{{TVSD}}|key={{Query:{{Time}}+10}}|inputSeparator=++}}",
-            "When": { "TraceOverrideConditions": "Active" }
+            "When": { "TravisOverrideConditions": "Active" }
         },
 
         //Other Stuff

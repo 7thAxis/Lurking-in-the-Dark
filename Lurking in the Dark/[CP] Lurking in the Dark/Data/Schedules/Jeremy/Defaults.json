@@ -38,7 +38,7 @@
                     1100 37 77 {{Random: jeremyTS_peek, jeremyTS_rear, jeremyTS_wiggle|key=JTSA4}}/
                     1300 31 99 jeremyTS_wiggle/
                     1500 14 97 {{Random: jeremyTS_peek, jeremyTS_rear, jeremyTS_wiggle|key=JTSA5}}/
-                    1600 7thAxis.LitD_Maps.Trace_House_Interior 9 13 jeremyTS_lay/
+                    1600 7thAxis.LitD_Maps.Travis_House_Interior 9 13 jeremyTS_lay/
                     1800 14 7 jeremyTS_lay/
                     2000  16 20 jeremyTS_rear/
                     2100 7thAxis.LitD_Maps.Jeremy_Room 17 7 0/

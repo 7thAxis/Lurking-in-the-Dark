@@ -8,7 +8,7 @@
 ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝         ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝
 */
 //Location names
-"Maps.TraceV.TraceHouse": "Trace's House",
+"Maps.TravisV.TravisHouse": "Travis's House",
 "Maps.JeremyTSnail.JeremyRoom": "Jeremy's Room",
 
 //Misc
@@ -58,71 +58,71 @@
 "Maps.SenS.SenDDShorts": "...Where did Sen find these?",
 "Maps.SenS.LitDMayorPot": "Seems like Lewis brought the plant from the bench inside to protect it from the weather.",
 
-    //----TRACE----//
+    //----Travis----//
 //Outside
-"Maps.TraceV.TraceVHPlanter1": "You peek in the planter and find a tiny red and black snail. It waves back at you!",
-"Maps.TraceV.TraceVHPlanter2": "This is a plant. Quite a planty plant if I do say so myself.",
-"Maps.TraceV.TraceVHOwlStatue": "It almost seems like the eyes of the owl statue follow you. Weird...",
-"Maps.TraceV.TraceVHMailBox": "You open the mailbox and find a note taped inside: \"Hellooooo {{MailPersonT}}! This is the home of Trace Veilrose.\"#\"And if you're not {{MailPersonT}}, my mailbox will eat you within the next 30 seconds if you don't close it!\"#\"Bye!\"",
-"Maps.TraceV.TraceVHMailBox.Ayeisha.True": "Ayeisha",
-"Maps.TraceV.TraceVHMailBox.Ayeisha.False": "Mr. Mailman",
+"Maps.TravisV.TravisVHPlanter1": "You peek in the planter and find a tiny red and black snail. It waves back at you!",
+"Maps.TravisV.TravisVHPlanter2": "This is a plant. Quite a planty plant if I do say so myself.",
+"Maps.TravisV.TravisVHOwlStatue": "It almost seems like the eyes of the owl statue follow you. Weird...",
+"Maps.TravisV.TravisVHMailBox": "You open the mailbox and find a note taped inside: \"Hellooooo {{MailPersonT}}! This is the home of Travis Veilrose.\"#\"And if you're not {{MailPersonT}}, my mailbox will eat you within the next 30 seconds if you don't close it!\"#\"Bye!\"",
+"Maps.TravisV.TravisVHMailBox.Ayeisha.True": "Ayeisha",
+"Maps.TravisV.TravisVHMailBox.Ayeisha.False": "Mr. Mailman",
 
 //Bedroom
-"Maps.TraceV.TraceVHBed": "You crawl into Trace's bed. It smells like roses.",
-"Maps.TraceV.TraceVHNailPolish": "Various bottles of high quality nail polish litter the dresser.",
-"Maps.TraceV.TraceVHGuitar": "An old, well loved guitar.",
-"Maps.TraceV.TraceVHTelevision": "It seems Trace left the TV on...#Looks like they were watching \"{{TVShow}}\"!",
-"Maps.TraceV.TraceVHRadio.Barbie.True": "YOU CAN BRUSH MY HAAAAAIIIIIRRR!", 
-"Maps.TraceV.TraceVHRadio.Barbie.False": "A soothing string melody emanates from the radio.", 
-"Maps.TraceV.TraceVHEmptyPot": "The flower pot is barren and empty.#Just like your SOUL.#Just kidding, Jeremy ate all the cat grass.",
+"Maps.TravisV.TravisVHBed": "You crawl into Travis's bed. It smells like roses.",
+"Maps.TravisV.TravisVHNailPolish": "Various bottles of high quality nail polish litter the dresser.",
+"Maps.TravisV.TravisVHGuitar": "An old, well loved guitar.",
+"Maps.TravisV.TravisVHTelevision": "It seems Travis left the TV on...#Looks like he was watching \"{{TVShow}}\"!",
+"Maps.TravisV.TravisVHRadio.Barbie.True": "YOU CAN BRUSH MY HAAAAAIIIIIRRR!", 
+"Maps.TravisV.TravisVHRadio.Barbie.False": "A soothing string melody emanates from the radio.", 
+"Maps.TravisV.TravisVHEmptyPot": "The flower pot is barren and empty.#Just like your SOUL.#Just kidding, Jeremy ate all the cat grass.",
 
 //Art room
-"Maps.TraceV.TraceVHTinyMoonPainting": "A tiny painting of the moon and a grassy field sit on the surface.",
-"Maps.TraceV.TraceVHMoonPainting1": "A completed painting of a moon overlooking a grassy field.",
-"Maps.TraceV.TraceVHMoonPainting2": "It doesn't seem like Trace branches out in their painting much.",
-"Maps.TraceV.TraceVHMoonPaintingStack": "So, so many paintings of a moon overlooking a grassy field...",
-"Maps.TraceV.TraceVHCamera": "It's a high end Codac ProPix ZA825!#Great for taking photos of your hyper-fixation!",
-"Maps.TraceV.TraceVHPhotos": "Upon looking up, you see several photos of the moon overlooking a grassy field.",
-"Maps.TraceV.TraceVHBook1": "You peruse the shelf and find a book called...#\"{{Book1}}\".#...You also notice a fish shrine above your head?",
-"Maps.TraceV.TraceVHBook2": "You peruse the shelf and find a book called...#\"{{Book2}}\".",
-"Maps.TraceV.TraceVHTinyBooks": "You peek in the book pile and find...#\"{{Book3}}\".",
+"Maps.TravisV.TravisVHTinyMoonPainting": "A tiny painting of the moon and a grassy field sit on the surface.",
+"Maps.TravisV.TravisVHMoonPainting1": "A completed painting of a moon overlooking a grassy field.",
+"Maps.TravisV.TravisVHMoonPainting2": "It doesn't seem like Travis branches out in his painting much.",
+"Maps.TravisV.TravisVHMoonPaintingStack": "So, so many paintings of a moon overlooking a grassy field...",
+"Maps.TravisV.TravisVHCamera": "It's a high end Codac ProPix ZA825!#Great for taking photos of your hyper-fixation!",
+"Maps.TravisV.TravisVHPhotos": "Upon looking up, you see several photos of the moon overlooking a grassy field.",
+"Maps.TravisV.TravisVHBook1": "You peruse the shelf and find a book called...#\"{{Book1}}\".#...You also notice a fish shrine above your head?",
+"Maps.TravisV.TravisVHBook2": "You peruse the shelf and find a book called...#\"{{Book2}}\".",
+"Maps.TravisV.TravisVHTinyBooks": "You peek in the book pile and find...#\"{{Book3}}\".",
 
 //Hallway
-"Maps.TraceV.TraceVHBook3": "You peruse the shelf and find a book called...#\"{{Book4}}\".",
-"Maps.TraceV.TraceVHBook4": "You peruse the shelf and find a book called...#\"{{Book5}}\".",
-"Maps.TraceV.TraceVHNote": "\"Hi there! Thanks for breaking into my house! I hope you enjoy your stay.\" - Trace",
-"Maps.TraceV.TraceVHCouchArmLeft": "This is the left arm of the couch. Cool, am I right?",
-"Maps.TraceV.TraceVHCouchArmRight": "This is the right arm of the couch. Sweet, am I right?",
-"Maps.TraceV.TraceVHSeat": "There appears to be something invisible in the way, preventing you from sitting on the chair.",
+"Maps.TravisV.TravisVHBook3": "You peruse the shelf and find a book called...#\"{{Book4}}\".",
+"Maps.TravisV.TravisVHBook4": "You peruse the shelf and find a book called...#\"{{Book5}}\".",
+"Maps.TravisV.TravisVHNote": "\"Hi there! Thanks for breaking into my house! I hope you enjoy your stay.\" - Travis",
+"Maps.TravisV.TravisVHCouchArmLeft": "This is the left arm of the couch. Cool, am I right?",
+"Maps.TravisV.TravisVHCouchArmRight": "This is the right arm of the couch. Sweet, am I right?",
+"Maps.TravisV.TravisVHSeat": "There appears to be something invisible in the way, preventing you from sitting on the chair.",
 
 //Kitchen
-"Maps.TraceV.TraceVHBlackberryCobbler": "Trace's favorite sweet, the blackberry cobbler!#It seems like it was baked fresh.",
-"Maps.TraceV.TraceVHStove": "The stove is squeaky clean and ready for some cooking!",
-"Maps.TraceV.TraceVHSink": "The sink is shiny. It's shinky.",
-"Maps.TraceV.TraceVHFridge": "You open the fridge and find a painting of a moon overlooking a grassy field.#Why is this in here?",
-"Maps.TraceV.TraceVHCoffeeMaker": "Looks like Trace brewed coffee recently! It's appears to be the brand \"Doom Desire\".",
-"Maps.TraceV.TraceVHCoffeeMaker.Grabber.FollowUp": "%The coffee is gone. Come back tomorrow!",
-"Maps.TraceV.TraceVHCoffeeCup": "Clutter! In this house? For shame!",
-"Maps.TraceV.TraceVHJeremyWater": "Jeremy's water bowl is freshly changed and full-up!",
-"Maps.TraceV.TraceVHJeremyFood": "Jeremy's food bowl is full of snail-safe crunchies.",
-"Maps.TraceV.TraceVHCenterFlowers": "The flowers gaze upon you with their judgement. They know what you've done.",
-"Maps.TraceV.TraceVHTablecloth": "You find a note tucked under the flower pot.#\"This is my favorite table cloth. Please refrain from wrinkling it. Thanks!\" -Trace",
-"Maps.TraceV.TraceVHElectricalSocket": "Do not put your finger in the electrical socket. Such behavior is ill-advised.",
+"Maps.TravisV.TravisVHBlackberryCobbler": "Travis's favorite sweet, the blackberry cobbler!#It seems like it was baked fresh.",
+"Maps.TravisV.TravisVHStove": "The stove is squeaky clean and ready for some cooking!",
+"Maps.TravisV.TravisVHSink": "The sink is shiny. It's shinky.",
+"Maps.TravisV.TravisVHFridge": "You open the fridge and find a painting of a moon overlooking a grassy field.#Why is this in here?",
+"Maps.TravisV.TravisVHCoffeeMaker": "Looks like Travis brewed coffee recently! It's appears to be the brand \"Doom Desire\".",
+"Maps.TravisV.TravisVHCoffeeMaker.Grabber.FollowUp": "%The coffee is gone. Come back tomorrow!",
+"Maps.TravisV.TravisVHCoffeeCup": "Clutter! In this house? For shame!",
+"Maps.TravisV.TravisVHJeremyWater": "Jeremy's water bowl is freshly changed and full-up!",
+"Maps.TravisV.TravisVHJeremyFood": "Jeremy's food bowl is full of snail-safe crunchies.",
+"Maps.TravisV.TravisVHCenterFlowers": "The flowers gaze upon you with their judgement. They know what you've done.",
+"Maps.TravisV.TravisVHTablecloth": "You find a note tucked under the flower pot.#\"This is my favorite table cloth. Please refrain from wrinkling it. Thanks!\" -Travis",
+"Maps.TravisV.TravisVHElectricalSocket": "Do not put your finger in the electrical socket. Such behavior is ill-advised.",
 
 //Plants
-"Maps.TraceV.TraceVHCatGrass1": "Cat grass for snail grazing! It's all over the house, hurray!",
-"Maps.TraceV.TraceVHCatGrass2": "This cat grass seems content.#Or as content as cat grass can be, anyway.",
-"Maps.TraceV.TraceVHPlant1": "This plant seems well cared for and happy. You can almost feel its smile!", // Default basic
-"Maps.TraceV.TraceVHPlant2": "A healthy, happy tropical plant. It practically beams at you!", // Default tropical
-"Maps.TraceV.TraceVHPlant3": "The plant ponders why Trace paints the same thing over and over again...", // Art room corner
-"Maps.TraceV.TraceVHPlant4": "When you look away from the plant, it starts dancing. It stops as soon as you look back.",  // Hallway
-"Maps.TraceV.TraceVHPlant5": "You find a note in the pot...#$b#\"Plant angry!! Stop leaning into pot!!\"", // Behind bowls
-"Maps.TraceV.TraceVHPlantLeft": "There's a note in the pot...#\"Left plant is guarding the counter! Left plant best guard!\"", // Guards!
-"Maps.TraceV.TraceVHPlantRight": "There's a note in the pot...#\"Right plant is defending the stools! Right plant best defender!\"", // Guards!
+"Maps.TravisV.TravisVHCatGrass1": "Cat grass for snail grazing! It's all over the house, hurray!",
+"Maps.TravisV.TravisVHCatGrass2": "This cat grass seems content.#Or as content as cat grass can be, anyway.",
+"Maps.TravisV.TravisVHPlant1": "This plant seems well cared for and happy. You can almost feel its smile!", // Default basic
+"Maps.TravisV.TravisVHPlant2": "A healthy, happy tropical plant. It practically beams at you!", // Default tropical
+"Maps.TravisV.TravisVHPlant3": "The plant ponders why Travis paints the same thing over and over again...", // Art room corner
+"Maps.TravisV.TravisVHPlant4": "When you look away from the plant, it starts dancing. It stops as soon as you look back.",  // Hallway
+"Maps.TravisV.TravisVHPlant5": "You find a note in the pot...#$b#\"Plant angry!! Stop leaning into pot!!\"", // Behind bowls
+"Maps.TravisV.TravisVHPlantLeft": "There's a note in the pot...#\"Left plant is guarding the counter! Left plant best guard!\"", // Guards!
+"Maps.TravisV.TravisVHPlantRight": "There's a note in the pot...#\"Right plant is defending the stools! Right plant best defender!\"", // Guards!
 
-"Maps.TraceV.TraceCoffeeNote": "Hey there!^^Breaking into my house, I see? Well, I left some \"Doom Desire\" brand coffee in the machine for ya. Enjoy it!^^Or don't. See if I care. (I would, and I'd cry...)^^Toodles!^^-Trace",
+"Maps.TravisV.TravisCoffeeNote": "Hey there!^^Breaking into my house, I see? Well, I left some \"Doom Desire\" brand coffee in the machine for ya. Enjoy it!^^Or don't. See if I care. (I would, and I'd cry...)^^Toodles!^^-Travis",
 
-"Maps.TraceV.CoffeeMakerKun": "$query !PLAYER_HAS_MAIL Current LitD_M_GotTraceCoffeeToday Any#$action AddMail Current LitD_M_GotTraceCoffeeToday received#$b#Looks like Trace brewed coffee recently! It appears to be \"Doom Desire\" brand.#$y 'Grab a cup?_Grab that coffee!_You grab a fresh hot cup of \"Doom Desire\" brand coffee![(O)395 (O)395 (O)253]_No coffee for me today._You avert your gaze from the \"Doom Desire\" brand coffee. It's just too strong. Distraught, the coffee gets up and walks away.$1'|The \"Doom Desire\" brand coffee is gone. Come back tomorrow!$1",
+"Maps.TravisV.CoffeeMakerKun": "$query !PLAYER_HAS_MAIL Current LitD_M_GotTravisCoffeeToday Any#$action AddMail Current LitD_M_GotTravisCoffeeToday received#$b#Looks like Travis brewed coffee recently! It appears to be \"Doom Desire\" brand.#$y 'Grab a cup?_Grab that coffee!_You grab a fresh hot cup of \"Doom Desire\" brand coffee![(O)395 (O)395 (O)253]_No coffee for me today._You avert your gaze from the \"Doom Desire\" brand coffee. It's just too strong. Distraught, the coffee gets up and walks away.$1'|The \"Doom Desire\" brand coffee is gone. Come back tomorrow!$1",
 
     //----JEREMY----//
 "Maps.JeremyTSnail.JeremyTSRWaterTrough": "You peer into the water and see your reflection.#Visions of snails reflect back at you.",

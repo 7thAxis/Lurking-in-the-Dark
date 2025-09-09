@@ -57,19 +57,19 @@
             "Action": "EditData",
             "Target": "Data/Locations",
             "Entries": {
-                "7thAxis.LitD_Maps.Trace_House_Interior": {
+                "7thAxis.LitD_Maps.Travis_House_Interior": {
                     "Music": [
                         {
-                          "Id": "TraceHouseBarbieGirl",
+                          "Id": "TravisHouseBarbieGirl",
                           "Track": "LitD_Music.BarbieGirl",
-                          "Condition": "SYNCED_RANDOM day TraceBarbieGirl 0.05"
+                          "Condition": "SYNCED_RANDOM day TravisBarbieGirl 0.05"
                         }
                       ],
-                    "MusicDefault": "LitD_Music.TraceHouse",
-                    "DisplayName": "{{i18n:Maps.TraceV.TraceHouse}}",
+                    "MusicDefault": "LitD_Music.TravisHouse",
+                    "DisplayName": "{{i18n:Maps.TravisV.TravisHouse}}",
                     "DefaultArrivalTile": { "X": 16, "Y": 23 },
-                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Trace_House_Interior" },
-                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Trace_House_Interior" ]
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Travis_House_Interior" },
+                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Travis_House_Interior" ]
                 }
             }
         }, 
@@ -80,8 +80,8 @@
         },
         {
             "Action": "Load",
-            "Target": "Maps/7thAxis.LitD_Maps.Trace_House_Interior",
-            "FromFile": "assets/Maps/Trace_House_Interior.tmx"
+            "Target": "Maps/7thAxis.LitD_Maps.Travis_House_Interior",
+            "FromFile": "assets/Maps/Travis_House_Interior.tmx"
         }
     ]
 }

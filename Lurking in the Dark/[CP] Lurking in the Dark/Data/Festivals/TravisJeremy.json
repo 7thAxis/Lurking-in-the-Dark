@@ -31,19 +31,19 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 45 80 3/JeremyTSnail 24 104 3",
+                    "Value": "TravisV 45 80 3/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters" ],
-                    "Value": "TraceV 33 65 2",
+                    "Value": "TravisV 33 65 2",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
-                    "Value": "TraceV 26 65 2",
+                    "Value": "TravisV 26 65 2",
                     "Delimiter": "/"
                 }
             ]
@@ -56,13 +56,13 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 50 44 1/JeremyTSnail 65 48 1",
+                    "Value": "TravisV 50 44 1/JeremyTSnail 65 48 1",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 13 33 0",
+                    "Value": "TravisV 13 33 0",
                     "Delimiter": "/"
                 }
             ]
@@ -75,19 +75,19 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 33 43 3/JeremyTSnail 51 47 3",
+                    "Value": "TravisV 33 43 3/JeremyTSnail 51 47 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters" ],
-                    "Value": "TraceV 43 16 3",
+                    "Value": "TravisV 43 16 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "MainEvent_additionalCharacters_y2" ],
-                    "Value": "TraceV 28 4 2",
+                    "Value": "TravisV 28 4 2",
                     "Delimiter": "/"
                 }
             ]
@@ -100,7 +100,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 93 41 3/JeremyTSnail 91 41 3",
+                    "Value": "TravisV 93 41 3/JeremyTSnail 91 41 3",
                     "Delimiter": "/"
                 }
             ]
@@ -113,7 +113,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 32 89 3/JeremyTSnail 24 104 3",
+                    "Value": "TravisV 32 89 3/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 }
             ]
@@ -126,13 +126,13 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters" ],
-                    "Value": "TraceV 27 13 3",
+                    "Value": "TravisV 27 13 3",
                     "Delimiter": "/"
                 },
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters_y2" ],
-                    "Value": "TraceV 6 15 3",
+                    "Value": "TravisV 6 15 3",
                     "Delimiter": "/"
                 }
             ],
@@ -158,7 +158,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 56 43 1",
+                    "Value": "TravisV 56 43 1",
                     "Delimiter": "/"
                 }
             ]
@@ -190,7 +190,7 @@
                 {
                     "Operation": "Append",
                     "Target": [ "Entries", "Set-Up_additionalCharacters{{FestivalYearCheck}}" ],
-                    "Value": "TraceV 33 90 2/JeremyTSnail 24 104 3",
+                    "Value": "TravisV 33 90 2/JeremyTSnail 24 104 3",
                     "Delimiter": "/"
                 }
             ]

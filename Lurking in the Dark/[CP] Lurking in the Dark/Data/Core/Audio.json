@@ -27,8 +27,8 @@
                     "StreamedVorbis": true,
                     "Looped": true
                 },
-                "LitD_Music.TraceHouse": {
-                    "ID": "LitD_Music.TraceHouse",
+                "LitD_Music.TravisHouse": {
+                    "ID": "LitD_Music.TravisHouse",
                     "Category": "Music",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/AlexMcCulloch_Happy.ogg}}" ],
                     "StreamedVorbis": true,
@@ -81,8 +81,8 @@
                     "Name": "{{i18n:Core.Music.VoidSnailWaltz}}",
                     "Available": null
                 },
-                "LitD_Music.TraceHouse": {
-                    "Name": "{{i18n:Core.Music.TraceHouse}}",
+                "LitD_Music.TravisHouse": {
+                    "Name": "{{i18n:Core.Music.TravisHouse}}",
                     "Available": null
                 },
                 "LitD_Music.BarbieGirl": {

@@ -1,0 +1,42 @@
+{
+    "Changes": [
+        //Defaults
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/TravisV_Default",
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Travis/TravisV.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/TravisV_Default",
+            "FromFile": "Assets/Characters/Travis/TravisV.png"
+        },
+        //Functional
+        {
+            "Action": "Load",
+            "Target": "Characters/TravisV, Characters/TravisV_Shadow, Characters/TravisV_ShadowKid",
+            "FromFile": "Assets/Characters/Travis/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/TravisV, Portraits/TravisV_Shadow, Portraits/TravisV_ShadowKid",
+            "FromFile": "Assets/Portraits/Default/Travis/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Travis Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "TravisV_sleep": "28/28/28//laying_down",
+                "TravisV_lay": "28/28/28//laying_down", 
+                "TravisV_sit": "29/29/29//laying_down", 
+                "TravisV_jam": "16/16 16 17 17 18 18 19 19/19",
+                "TravisV_cook": "24/24 25 26 27/27",
+                "TravisV_art": "20/20 20 21 21 22 22 23 23/23",
+                "TravisV_giggle": "30/30 30 31 31/31"
+            }
+        }
+    ]
+}

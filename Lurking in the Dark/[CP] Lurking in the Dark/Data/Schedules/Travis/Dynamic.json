@@ -1,0 +1,251 @@
+// 0 up, 1 right, 2 down, 3 left - face direction
+{
+    "Changes": [
+//---------------------------- RAND SCHEDULES ------------------------------------------//
+//---Schedule 1---//
+        {
+			"LogName": "Travis Visit Inn Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    1000 13 5 0/
+                    1030 17 7 1/
+                    1100 16 6 2/
+                    1130 16 6 TravisV_giggle/
+                    1140 16 6 2/
+                    1200 EastScarp_Village 3 83 1/
+                    1400 35 98  1/
+                    1600 EastScarp_VillageInn 27 8 TravisV_jam/
+                    1900 41 30 0/
+                    2100 7thAxis.LitD_Maps.Travis_House_Interior 7 21 TravisV_cook/
+                    2300 16 6 2/
+                    2330 16 6 TravisV_giggle/
+                    2340 16 6 2/
+                    2350 16 6 TravisV_giggle/
+                    2400 16 6 2/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 1 }
+		},
+//---Schedule 2---//
+        {
+			"LogName": "Travis Home All Day Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    1000 13 5 0/
+                    1030 17 7 1/
+                    1100 16 6 2/
+                    1130 16 6 TravisV_giggle/
+                    1140 16 6 2/
+                    1200 7 21 0/
+                    1300 6 22 TravisV_cook/
+                    1500 7thAxis.LitD_Maps.Jeremy_Room 11 13 2/
+                    1700 7thAxis.LitD_Maps.Travis_House_Interior 7 6 0/
+                    1900 5 5 0/
+                    2100 16 14 0/
+                    2330 16 6 TravisV_giggle/
+                    2340 16 6 2/
+                    2350 16 6 TravisV_giggle/
+                    2400 16 6 2/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 2 } 
+		},
+//---Schedule 3---//
+        {
+			"LogName": "Travis Beach Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    1000 13 5 0/
+                    1030 17 7 1/
+                    1100 16 6 2/
+                    1130 16 6 TravisV_giggle/
+                    1140 16 6 2/
+                    1200 Beach 42 34 TravisV_sit/
+                    1800 44 35 TravisV_jam/
+                    2000 7thAxis.LitD_Maps.Travis_House_Interior 6 22 TravisV_cook/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 3 } 
+		},
+//---Schedule 4---//
+        {
+			"LogName": "Travis Wanders the Scarp Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    800 7 21 0/
+                    900 6 22 TravisV_cook/
+                    1000 EastScarp_Village 31 64 TravisV_sit/
+                    1300 43 129 3/
+                    1500 79 78 TravisV_sit/
+                    1700 30 41 TravisV_sit/
+                    1900 7thAxis.LitD_Maps.Travis_House_Interior 7 21 TravisV_cook/
+                    2200 7 6 0/
+                    2300 10 13 TravisV_sit/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 4, "DayOfWeek |contains=Saturday": false } //Prevents Travis from sitting on Oliver. That's just rude.
+		},
+//---Schedule 5---//
+        {
+			"LogName": "Travis Does Art In Town and Mountain Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 Town 43 77/
+                    610 43 77 TravisV_sit/
+                    800 46 32 TravisV_art/
+                    1100 Mountain 59 10 TravisV_art/
+                    1600 7thAxis.LitD_Maps.Travis_House_Interior 1 7 0/
+                    2100 7thAxis.LitD_Maps.Jeremy_Room 17 7 0/
+                    2200 11 13 2/
+                    2300 7thAxis.LitD_Maps.Travis_House_Interior 16 6/
+                    2330 16 6 TravisV_giggle/
+                    2340 16 6 2/
+                    2350 16 6 TravisV_giggle/
+                    2400 16 6 2/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 5 } 
+		},
+//---Schedule 6---//
+        {
+			"LogName": "Marnie Shop Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 Forest 43 19/
+                    610 43 20 TravisV_sit/
+                    800 35 20 1/
+                    900 AnimalShop 11 17 1/
+                    1200 Town 62 101 TravisV_sit/
+                    1400 7thAxis.LitD_Maps.Travis_House_Interior 2 21 3/
+                    1700 2 21 0/
+                    1800 EastScarp_Village 20 121 TravisV_jam/
+                    2000 7thAxis.LitD_Maps.Travis_House_Interior 7 21 0/
+                    2200 6 22 TravisV_cook/
+                    2300 5 6 TravisV_art/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+
+            "When": { "TravisScheduleRandomizer": 6, "DayOfWeek |contains=Monday, Tuesday": false }
+		},
+//---Schedule 7---//
+        {
+			"LogName": "Travis Inn Vibe 2",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    1000 13 5 0/
+                    1030 17 7 1/
+                    1100 16 6 2/
+                    1130 16 6 TravisV_giggle/
+                    1140 16 6 2/
+                    1200 EastScarp_VillageInn 45 33 0/
+                    1400 43 10 TravisV_cook/
+                    1500 44 17 0/
+                    1600 30 12 TravisV_sit/
+                    1700 29 10 3/
+                    1800 27 8 TravisV_jam/
+                    2000 7thAxis.LitD_Maps.Travis_House_Interior 7 21 TravisV_cook/
+                    2200 7thAxis.LitD_Maps.Jeremy_Room 17 7 0/
+                    2300 11 13 2/
+                    2400 7thAxis.LitD_Maps.Travis_House_Interior 16 6 2/
+                    2430 16 6 TravisV_giggle/
+                    2440 16 6 2/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 7 } 
+		},
+//---Schedule 8---//
+        {
+			"LogName": "Travis Art Day",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    1000 13 5 0/
+                    1030 17 7 1/
+                    1100 16 6 2/
+                    1130 16 6 TravisV_giggle/
+                    1140 16 6 2/
+                    1200 7 21 0/
+                    1300 6 22 TravisV_cook/
+                    1400 7 6 0/
+                    1500 5 6 TravisV_art/
+                    1700 2 5 0/
+                    1800 6 5 0/
+                    1900 3 7 2/
+                    2000 5 6 TravisV_art/
+                    2200 2 6 3/
+                    2300 16 6 2/
+                    2330 16 6 TravisV_giggle/
+                    2340 16 6 2/
+                    2350 16 6 TravisV_giggle/
+                    2400 16 6 2/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 8 } 
+		},
+//---Schedule 9---//
+        {
+			"LogName": "Travis Shop Day",
+			"Action": "EditData",
+			"Target": "Characters/schedules/TravisV",
+			"Entries": {
+                "{{WeekDay}}":"
+                    0 7thAxis.LitD_Maps.Travis_House_Interior 15 5/
+                    610 15 5 TravisV_lay/
+                    1000 13 5 0/
+                    1030 17 7 1/
+                    1100 16 6 2/
+                    1130 16 6 TravisV_giggle/
+                    1140 16 6 2/
+                    1200 SeedShop 3 23 0/
+                    1600 5 19 0/
+                    1700 Town 75 46 TravisV_art/
+                    1900 78 56 3/
+                    2000 7thAxis.LitD_Maps.Travis_House_Interior 7 21 TravisV_cook/
+                    2300 16 6 2/
+                    2330 16 6 TravisV_giggle/
+                    2340 16 6 2/
+                    2350 16 6 TravisV_giggle/
+                    2400 16 6 2/
+                    2500 15 5 TravisV_sleep
+                ",
+            },
+            "When": { "TravisScheduleRandomizer": 9, "DayOfWeek |contains=Wednesday": false } 
+		}
+    ]
+}
+

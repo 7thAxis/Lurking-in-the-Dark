@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        {
+            "LogName": "Travis Gift Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/TravisV",
+            "Entries": 	{ 
+                //Category response
+                "AcceptGift_category_gem" : "{{i18n:Gifts.TravisV.Cat.Gem}}",
+                "AcceptGift_category_milk" : "{{i18n:Gifts.TravisV.Cat.Milk}}",
+                "AcceptGift_category_egg" : "{{i18n:Gifts.TravisV.Cat.Egg}}",
+                "AcceptGift_category_fish" : "{{i18n:Gifts.TravisV.Cat.Fish}}",
+                "AcceptGift_category_flowers" : "{{i18n:Gifts.TravisV.Cat.Flowers}}",
+                "AcceptGift_category_junk" : "{{i18n:Gifts.TravisV.Cat.Trash}}",
+                "RejectItem_category_meat" : "{{i18n:Gifts.TravisV.Cat.Meat}}",
+
+                //Love
+                "AcceptGift_(O)64" : "{{i18n:Gifts.TravisV.Ruby}}",
+                "AcceptGift_(O)578" : "{{i18n:Gifts.TravisV.StarShards}}",
+                "AcceptGift_(O)348" : "{{i18n:Gifts.TravisV.Wine}}",
+                "AcceptGift_(O)376" : "{{i18n:Gifts.TravisV.Poppy}}",
+                "AcceptGift_(O)410" : "{{i18n:Gifts.TravisV.Blackberry}}",
+                "AcceptGift_(O)445" : "{{i18n:Gifts.TravisV.Caviar}}",
+                "AcceptGift_(O)447" : "{{i18n:Gifts.TravisV.AgedRoe}}",
+                "AcceptGift_(O)206" : "{{i18n:Gifts.TravisV.Pizza}}",
+                "AcceptGift_(O)212" : "{{i18n:Gifts.TravisV.SalmonDinner}}",
+                "AcceptGift_(O)242" : "{{i18n:Gifts.TravisV.DishOTheSea}}",
+                "AcceptGift_(O)611" : "{{i18n:Gifts.TravisV.BlackberryCobbler}}",
+                "AcceptGift_(O)649" : "{{i18n:Gifts.TravisV.FiddleheadRisotto}}",
+                "AcceptGift_(O)730" : "{{i18n:Gifts.TravisV.LobsterBisque}}",
+                "AcceptGift_(O)733" : "{{i18n:Gifts.TravisV.ShrimpCocktail}}",
+                "AcceptGift_(O)721" : "{{i18n:Gifts.TravisV.Snail}}",
+                "AcceptGift_(O)769" : "{{i18n:Gifts.TravisV.VoidEssence}}",
+                "AcceptGift_(O)795" : "{{i18n:Gifts.TravisV.VoidSalmon}}",
+                "AcceptGift_(O)305" : "{{i18n:Gifts.TravisV.VoidEgg}}",
+                "AcceptGift_(O)308" : "{{i18n:Gifts.TravisV.VoidMayo}}",
+                "AcceptGift_(O)595" : "{{i18n:Gifts.TravisV.FairyRose}}",
+
+                //Like
+                "AcceptGift_(O)119" : "{{i18n:Gifts.TravisV.BoneFlute}}",
+                "AcceptGift_(O)709" : "{{i18n:Gifts.TravisV.Hardwood}}",
+                "AcceptGift_(O)488" : "{{i18n:Gifts.TravisV.EggplantSeeds}}",
+                "AcceptGift_(O)139" : "{{i18n:Gifts.TravisV.Salmon}}",
+                "AcceptGift_(O)167" : "{{i18n:Gifts.TravisV.JojaCola}}",
+                "AcceptGift_(O)198" : "{{i18n:Gifts.TravisV.BakedFish}}",
+                "AcceptGift_(O)209" : "{{i18n:Gifts.TravisV.CarpSurprise}}",
+                "AcceptGift_(O)213" : "{{i18n:Gifts.TravisV.FishTaco}}",
+                "AcceptGift_(O)214" : "{{i18n:Gifts.TravisV.CrispyBass}}",
+                "AcceptGift_(O)227" : "{{i18n:Gifts.TravisV.Sashimi}}",
+                "AcceptGift_(O)228" : "{{i18n:Gifts.TravisV.MakiRoll}}",
+                "AcceptGift_(O)618" : "{{i18n:Gifts.TravisV.Bruschetta}}",
+                "AcceptGift_(O)732" : "{{i18n:Gifts.TravisV.CrabCakes}}",
+                "AcceptGift_(O)395" : "{{i18n:Gifts.TravisV.Coffee}}",
+                "AcceptGift_(O)259" : "{{i18n:Gifts.TravisV.FiddleheadFern}}",
+                "AcceptGift_(O)272" : "{{i18n:Gifts.TravisV.Eggplant}}",
+                "AcceptGift_(O)812" : "{{i18n:Gifts.TravisV.Roe}}",
+
+                //Dislike
+                "RejectItem_(O)148" : "{{i18n:Gifts.TravisV.Eel}}",
+                "RejectItem_(O)225" : "{{i18n:Gifts.TravisV.FriedEel}}",
+                "RejectItem_(O)226" : "{{i18n:Gifts.TravisV.SpicyEel}}",
+
+                //Hate
+                "RejectItem_(O)103" : "{{i18n:Gifts.TravisV.FreakyDoll}}",
+                "RejectItem_(O)126" : "{{i18n:Gifts.TravisV.FreakyDoll}}",
+                "RejectItem_(O)127" : "{{i18n:Gifts.TravisV.FreakyDoll}}",
+                "AcceptGift_(O)129" : "{{i18n:Gifts.TravisV.Anchovy}}",
+                "AcceptGift_(O)131" : "{{i18n:Gifts.TravisV.Sardine}}",
+                "AcceptGift_(O)265" : "{{i18n:Gifts.TravisV.SeafoamPudding}}",
+                "RejectItem_(O)346" : "{{i18n:Gifts.TravisV.Beer}}",
+                "AcceptGift_(O)457" : "{{i18n:Gifts.TravisV.PaleBroth}}",
+                "RejectItem_(O)637" : "{{i18n:Gifts.TravisV.Pomegranate}}",
+                "AcceptGift_(O)729" : "{{i18n:Gifts.TravisV.Escargot}}",
+                "RejectItem_(O)827" : "{{i18n:Gifts.TravisV.MummifiedCritter}}",
+                "RejectItem_(O)828" : "{{i18n:Gifts.TravisV.MummifiedCritter}}",
+                "AcceptGift_(O)921" : "{{i18n:Gifts.TravisV.SquidInkRavioli}}",
+                "AcceptGift_(O)768" : "{{i18n:Gifts.TravisV.SolarEssence}}",
+
+                //Neutral
+                "AcceptGift_(O)771" : "{{i18n:Gifts.TravisV.Fiber}}",
+
+                "AcceptGift_(O){{ModID}}_Items.VoidLavaSnail": "{{i18n:Gifts.TravisV.VoidLavaSnail}}#$action IncrementStat VoidLavaSnailsGiven 1",
+                "AcceptGift_(O){{ModID}}_Items.GoldenVoidLavaSnail": "{{i18n:Gifts.TravisV.GoldenVoidLavaSnail}}#$action IncrementStat VoidLavaSnailsGiven 1#$action AddMail Current LitD_M_GaveJeremyGoldenSnail received",
+                "AcceptGift_(O)sapphicsaph_pitv.PridePop": "{{i18n:Gifts.TravisV.PridePop}}",
+                "AcceptGift_(O)sapphicsaph_pitv.TransTart": "{{i18n:Gifts.TravisV.TransTart}}",
+                "AcceptGift_(O)sapphicsaph_pitv.EnbyEclair": "{{i18n:Gifts.TravisV.EnbyEclair}}",
+                "AcceptGift_(O)sapphicsaph_pitv.BiBerryMuffin": "{{i18n:Gifts.TravisV.BiBerryMuffin}}"
+            }
+        }
+    ]
+}

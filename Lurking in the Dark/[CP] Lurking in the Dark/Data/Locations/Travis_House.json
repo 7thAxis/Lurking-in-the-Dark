@@ -1,0 +1,254 @@
+{
+    "Changes": [  
+
+//---------------------------- EXTERIOR LOAD ------------------------------------------// 
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Maps/Travis_House_Exterior.tmx",
+            "ToArea": { "X": 0, "Y": 73, "Width": 13, "Height": 16 },
+            "PatchMode": "Replace"
+        },      
+//---------------------------- INTERIOR LOAD ------------------------------------------// 
+       /* {
+            "LogName": "Location Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "7thAxis.LitD_Maps.Travis_House_Interior": {
+                    "Music": [
+                        {
+                          "Id": "TravisHouseBarbieGirl",
+                          "Track": "LitD_Music.BarbieGirl",
+                          "Condition": "SYNCED_RANDOM day TravisBarbieGirl 0.05"
+                        }
+                      ],
+                    "MusicDefault": "LitD_Music.TravisHouse",
+                    "DisplayName": "{{i18n:Maps.TravisV.TravisHouse}}",
+                    "DefaultArrivalTile": { "X": 16, "Y": 23 },
+                    "CreateOnLoad": { "MapPath": "Maps/7thAxis.LitD_Maps.Travis_House_Interior" },
+                    "FormerLocationNames": [ "7thAxis.DitR_Maps.Travis_House_Interior" ]
+                }
+            }
+        },*/
+        {
+            "LogName": "Barbie Girl Flag Check", //What am I doing....
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+
+                "7thAxis.LitD_TriggerActions.TravisBarbieGirl.FlagReceived": {
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Id": "7thAxis.LitD_TriggerActions.TravisBarbieGirl.FlagReceived",
+                    "Condition": "SYNCED_RANDOM day TravisBarbieGirl 0.05",
+                    "Actions": [ "AddMail Current LitD_M_TravisBarbieGirl received" ]
+                },
+                "7thAxis.LitD_TriggerActions.TravisBarbieGirl.FlagRemoved": {
+                    "Trigger": "DayEnding",
+                    "MarkActionApplied": false,
+                    "Id": "7thAxis.LitD_TriggerActions.TravisBarbieGirl.FlagRemoved",
+                    "Condition": "PLAYER_HAS_MAIL Current LitD_M_TravisBarbieGirl Any",
+                    "Actions": [  "RemoveMail Current LitD_M_TravisBarbieGirl" ]
+                }
+            }
+        },
+//---------------------------- WARPS ------------------------------------------// 
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Travis_House_Interior",
+            "AddWarps": [ 
+                "15 24 EastScarp_Village 6 83",
+                "16 24 EastScarp_Village 6 83",
+                "11 24 7thAxis.LitD_Maps.Jeremy_Room 10 6",
+                "12 24 7thAxis.LitD_Maps.Jeremy_Room 11 6"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "MapTiles": [
+                {
+                    "Position": { "X": 6, "Y": 82 },
+                    "Layer": "Buildings",
+                    "SetProperties": { "Action": "Warp 16 23 7thAxis.LitD_Maps.Travis_House_Interior" }
+                }
+            ]
+        },
+//---------------------------- SPECIAL MAP TILES ------------------------------------------// 
+    //Festive lights
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "MapProperties", "Light" ],
+                    "Value": "2 81 1 3 81 1 2 80 1 3 80 1 4 80 1 5 80 1 4 79 1 5 79 1 7 80 1 7 79 1",
+                    "Delimiter": " "
+                }
+            ],
+            "When": { "Season |contains=Winter": true }
+        },  
+    //Custom Door Nonsense
+        {
+            "LogName": "Travis's Doors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cursors",
+            "Update": "OnLocationChange",
+            "FromFile": "Assets/Tilesheets/Homes/spring_LitD_Tilesheet.png",
+            "FromArea": { "X": 0, "Y": 416, "Width": 64, "Height": 48 },
+            "ToArea": { "X": 512, "Y": 144, "Width": 64, "Height": 48 },
+            "When":  { "LocationName": "7thAxis.LitD_Maps.Travis_House_Interior" }
+        },
+        {
+            "LogName": "Travis's Doors",
+            "Action": "EditImage",
+            "Target": "Maps/townInterior",
+            "Update": "OnLocationChange",
+            "FromFile": "Assets/Tilesheets/Homes/spring_LitD_Tilesheet.png",
+            "FromArea": { "X": 64, "Y": 416, "Width": 16, "Height": 48 },
+            "ToArea": { "X": 384, "Y": 16, "Width": 16, "Height": 48 },
+            "When":  { "LocationName": "7thAxis.LitD_Maps.Travis_House_Interior" }
+        },
+    //Travis's coffee maker gives you coffee
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Travis_House_Interior",
+            "MapTiles": [
+                { "Position": { "X": 7, "Y": 22 }, "Layer": "Front2", "SetTileSheet": "spring_LitD_Tilesheet", "SetIndex": "344" }, //Sets the card tile on counter
+                { "Position": { "X": 8, "Y": 23 }, "Layer": "Back",  "SetProperties": { "MEEP_FakeNPC": "CoffeeMakerKun" } }, //Places fake coffeemaker NPC
+                { "Position": { "X": 7, "Y": 23 }, "Layer": "Buildings",
+                    "SetProperties": { "Action": "MEEP_Letter {{i18n:Maps.TravisV.TravisCoffeeNote}}", "MEEP_Letter_Type": "3" } } //Loads letter data
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "MEEP/FakeNPC/Dialogue/CoffeeMakerKun",
+            "Entries": { "DialogueOne": "{{i18n:Maps.TravisV.CoffeeMakerKun}}" }
+        },
+//---------------------------- GARBAGE CAN ------------------------------------------//
+{
+    "Action": "EditData",
+    "Target": "Data/GarbageCans",
+    "TargetField": [ "GarbageCans" ], 
+    "Entries": {
+       
+        "7thAxis.LitD_TrashCan.TravisV": {
+            "BaseChance": 1.0,
+            "Items": [
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.GoldenVoidLavaSnailEgg",
+                    "Condition": "RANDOM 0.0004, PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(O){{ModID}}_Items.GoldenVoidLavaSnailEgg" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.GoldenVoidLavaSnailBuddy",
+                    "Condition": "RANDOM 0.0005",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(H){{ModID}}_Hats.GoldenVoidLavaSnailBuddy" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.GoldenVoidLavaSnail",
+                    "Condition": "RANDOM 0.001",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(O){{ModID}}_Items.GoldenVoidLavaSnail" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.VoidLavaSnailBuddy",
+                    "Condition": "RANDOM 0.01",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(H){{ModID}}_Hats.VoidLavaSnailBuddy" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.VoidLavaSnailEgg",
+                    "Condition": "RANDOM 0.03, PLAYER_HAS_MAIL Current LitD_M_SnailPhase5 Any",
+                    "IsMegaSuccess": true,
+                    "RandomItemId": [  "(O){{ModID}}_Items.VoidLavaSnailEgg" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.Snackies",
+                    "Condition": "RANDOM 0.1",
+                    "RandomItemId": [ "(O)611", "(O)212" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.VoidLavaSnail",
+                    "Condition": "RANDOM 0.3",
+                    "RandomItemId": [ "(O){{ModID}}_Items.VoidLavaSnail" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.TrashBerry",
+                    "RandomItemId": [ "(O)168", "(O)172", "(O)410" ]
+                }
+            ]
+        }
+    }
+},  
+//---------------------------- MAP STRINGS ------------------------------------------// 
+        {
+            "LogName": "Travis Map Strings",
+            "Action": "EditData",
+            "Target": "strings/StringsFromMaps",
+            "Entries": {
+
+                //Outside
+                "TravisVHPlanter1": "{{i18n:Maps.TravisV.TravisVHPlanter1}}",
+                "TravisVHPlanter2": "{{i18n:Maps.TravisV.TravisVHPlanter2}}",
+                "TravisVHOwlStatue": "{{i18n:Maps.TravisV.TravisVHOwlStatue}}",
+                "TravisVHMailBox": "{{i18n:Maps.TravisV.TravisVHMailBox|MailPersonT={{i18n:Maps.TravisV.TravisVHMailBox.Ayeisha.{{HasMod: |contains=TheLimeyDragon.Ayeisha}}}}}}",
+
+                //Bedroom
+                "TravisVHBed": "{{i18n:Maps.TravisV.TravisVHBed}}",
+                "TravisVHNailPolish": "{{i18n:Maps.TravisV.TravisVHNailPolish}}",
+                "TravisVHGuitar": "{{i18n:Maps.TravisV.TravisVHGuitar}}",
+                "TravisVHTelevision": "{{i18n:Maps.TravisV.TravisVHTelevision{{TravisRoomTokens}}}}",
+                "TravisVHRadio": "{{i18n:Maps.TravisV.TravisVHRadio.Barbie.{{HasFlag: |contains=LitD_M_TravisBarbieGirl}}}}",
+                "TravisVHEmptyPot": "{{i18n:Maps.TravisV.TravisVHEmptyPot}}",
+                
+                //Art room
+                "TravisVHTinyBooks": "{{i18n:Maps.TravisV.TravisVHTinyBooks{{TravisRoomTokens}}}}",
+                "TravisVHTinyMoonPainting": "{{i18n:Maps.TravisV.TravisVHTinyMoonPainting}}",
+                "TravisVHMoonPainting1": "{{i18n:Maps.TravisV.TravisVHMoonPainting1}}",
+                "TravisVHMoonPainting2": "{{i18n:Maps.TravisV.TravisVHMoonPainting2}}",
+                "TravisVHMoonPaintingStack": "{{i18n:Maps.TravisV.TravisVHMoonPaintingStack}}",
+                "TravisVHCamera": "{{i18n:Maps.TravisV.TravisVHCamera}}",
+                "TravisVHPhotos": "{{i18n:Maps.TravisV.TravisVHPhotos}}",
+                "TravisVHBook1": "{{i18n:Maps.TravisV.TravisVHBook1{{TravisRoomTokens}}}}",
+                "TravisVHBook2": "{{i18n:Maps.TravisV.TravisVHBook2{{TravisRoomTokens}}}}",
+
+                //Hallway
+                "TravisVHBook3": "{{i18n:Maps.TravisV.TravisVHBook3{{TravisRoomTokens}}}}",
+                "TravisVHBook4": "{{i18n:Maps.TravisV.TravisVHBook4{{TravisRoomTokens}}}}",
+                "TravisVHNote": "{{i18n:Maps.TravisV.TravisVHNote}}",
+                "TravisVHCouchArmLeft": "{{i18n:Maps.TravisV.TravisVHCouchArmLeft}}",
+                "TravisVHCouchArmRight": "{{i18n:Maps.TravisV.TravisVHCouchArmRight}}",
+                "TravisVHSeat": "{{i18n:Maps.TravisV.TravisVHSeat}}",
+
+                //Kitchen
+                "TravisVHBlackberryCobbler": "{{i18n:Maps.TravisV.TravisVHBlackberryCobbler}}",
+                "TravisVHStove": "{{i18n:Maps.TravisV.TravisVHStove}}",
+                "TravisVHSink": "{{i18n:Maps.TravisV.TravisVHSink}}",
+                "TravisVHFridge": "{{i18n:Maps.TravisV.TravisVHFridge}}",
+                "TravisVHCoffeeMaker": "{{i18n:Maps.TravisV.TravisVHCoffeeMaker}}",
+                "TravisVHCoffeeCup": "{{i18n:Maps.TravisV.TravisVHCoffeeCup}}",
+                "TravisVHJeremyWater": "{{i18n:Maps.TravisV.TravisVHJeremyWater}}",
+                "TravisVHJeremyFood": "{{i18n:Maps.TravisV.TravisVHJeremyFood}}",
+                "TravisVHCenterFlowers": "{{i18n:Maps.TravisV.TravisVHCenterFlowers}}",
+                "TravisVHTablecloth": "{{i18n:Maps.TravisV.TravisVHTablecloth}}",
+                "TravisVHElectricalSocket": "{{i18n:Maps.TravisV.TravisVHElectricalSocket}}",
+
+                //Plants
+                "TravisVHCatGrass1": "{{i18n:Maps.TravisV.TravisVHCatGrass1}}",
+                "TravisVHCatGrass2": "{{i18n:Maps.TravisV.TravisVHCatGrass2}}",
+                "TravisVHPlant1": "{{i18n:Maps.TravisV.TravisVHPlant1}}", // Default basic
+                "TravisVHPlant2": "{{i18n:Maps.TravisV.TravisVHPlant2}}", // Default tropical
+                "TravisVHPlant3": "{{i18n:Maps.TravisV.TravisVHPlant3}}", // Art room corner
+                "TravisVHPlant4": "{{i18n:Maps.TravisV.TravisVHPlant4}}", // Hallway
+                "TravisVHPlant5": "{{i18n:Maps.TravisV.TravisVHPlant5}}", // Behind bowls
+                "TravisVHPlantLeft": "{{i18n:Maps.TravisV.TravisVHPlantLeft}}", // Guards!
+                "TravisVHPlantRight": "{{i18n:Maps.TravisV.TravisVHPlantRight}}" // Guards
+            }
+        }
+    ]
+}

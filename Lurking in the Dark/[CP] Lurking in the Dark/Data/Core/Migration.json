@@ -105,13 +105,13 @@
                         "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_JeremyBetrayed LitD_M_JeremyBetrayed",
                         "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_AttackedJeremyToday LitD_M_AttackedJeremyToday",
                         "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_GaveVincentLavaSnail LitD_M_GaveVincentLavaSnail",
-                        // Trace
-                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_TriedToGiveTraceStinkyPants LitD_M_TriedToGiveTraceStinkyPants",
+                        // Travis
+                        "Pathoschild.ContentPatcher_MigrateIds Mail DitR_M_TriedToGiveTravisStinkyPants LitD_M_TriedToGiveTravisStinkyPants",
 
                         /* Songs */
                         "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.JeremyTheme LitD_Music.JeremyTheme",
                         "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.VoidSnailWaltz LitD_Music.VoidSnailWaltz",
-                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.TraceHouse LitD_Music.TraceHouse",
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.TravisHouse LitD_Music.TravisHouse",
                         "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.BarbieGirl LitD_Music.BarbieGirl"
 
                     ]

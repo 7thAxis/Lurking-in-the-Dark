@@ -56,8 +56,8 @@
                     "Trigger": "DayEnding",
                     "Actions": [ 
                     "RemoveMail Current LitD_M_SenS_OverrideSeenToday",
-                    "RemoveMail Current LitD_M_TraceV_OverrideSeenToday",                    
-                    "RemoveMail Current LitD_M_GotTraceCoffeeToday",
+                    "RemoveMail Current LitD_M_TravisV_OverrideSeenToday",                    
+                    "RemoveMail Current LitD_M_GotTravisCoffeeToday",
                     "RemoveMail Current LitD_M_AttackedJeremyToday",
                     "RemoveMail Current LitD_M_AcceptedVoidSnailQuestToday" ]
                 }

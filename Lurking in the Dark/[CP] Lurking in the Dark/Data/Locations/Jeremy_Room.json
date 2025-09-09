@@ -20,8 +20,8 @@
             "Action": "EditMap",
             "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
             "AddWarps": [ 
-                "10 4 7thAxis.LitD_Maps.Trace_House_Interior 11 22",
-                "11 4 7thAxis.LitD_Maps.Trace_House_Interior 12 22" 
+                "10 4 7thAxis.LitD_Maps.Travis_House_Interior 11 22",
+                "11 4 7thAxis.LitD_Maps.Travis_House_Interior 12 22" 
             ]
         },
 //---------------------------- CONDITIONAL TILES ------------------------------------------// 
