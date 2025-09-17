@@ -184,14 +184,14 @@
         //Travis Jeremy
         "Void Snail Content": {
             "AllowValues": "true, false",
-            "Default": false,
+            "Default": true,
             "AllowBlank": false,
             "Description": "Whether Travis, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
             "Section": "Travis & Jeremy"
         },
         "Social Travis": {
             "AllowValues": "true, false",
-            "Default": false,
+            "Default": true,
             "AllowBlank": false,
             "Description": "Determines if Travis should be friend-able. Provides additional dialogue content when enabled, but no events.",
             "Section": "Travis & Jeremy"

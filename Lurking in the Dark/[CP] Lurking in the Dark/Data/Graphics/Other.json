@@ -88,6 +88,12 @@
             "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
             "Entries": { "SenS": { "MarkerCropOffset": 5 } },
             "When": {  "HasMod: |contains=Bouhm.NPCMapLocations": true }
+        },
+        //TEMP ACTORS
+        {
+            "Action": "Load",
+            "Target": "Characters/7A.Seagull.1, Characters/7A.Seagull.2, Characters/7A.Seagull.3, Characters/7A.Seagull.4",
+            "FromFile": "Assets/Characters/Other/Seagull.png"
         }
     ]
 }

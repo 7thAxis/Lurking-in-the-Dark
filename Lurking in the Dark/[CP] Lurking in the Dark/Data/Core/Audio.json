@@ -33,11 +33,18 @@
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/AlexMcCulloch_Happy.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
-            },
+                },
                 "LitD_Music.BarbieGirl": { //YOU CAN BRUSH MY HAAAAIIIIRRR
                     "ID": "LitD_Music.BarbieGirl",
                     "Category": "Music",
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/TheFrenchDodo_Barbie_Girl.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "LitD_Music.Memories.Uncut": { 
+                    "ID": "LitD_Music.Memories.Uncut",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/Migfus20_Memories_From_You_Uncut.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
                 }
@@ -61,7 +68,28 @@
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Snail_Cry.ogg}}" ],
                     "StreamedVorbis": false,
                     "Looped": false
-                }
+                },
+                "LitD_Music.Memories.1": { 
+                    "ID": "LitD_Music.Memories.1",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/Migfus20_Memories_From_You_1.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": false
+                },
+                "LitD_Music.Memories.2": { 
+                    "ID": "LitD_Music.Memories.2",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/Migfus20_Memories_From_You_2.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": false
+                },
+                "LitD_Music.Memories.3": { 
+                    "ID": "LitD_Music.Memories.3",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/Migfus20_Memories_From_You_3.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": false
+                },
             }
         },
     //Jukebox
