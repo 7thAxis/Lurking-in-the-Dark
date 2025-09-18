@@ -73,9 +73,5 @@
 //Travis & Jeremy
 "Config.section.Travis & Jeremy.name": "Travis & Jeremy",
 "Config.Void Snail Content.name": "Alpha Content",
-"Config.Void Snail Content.description": "Whether Travis, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function.",
-"Config.Social Travis.name": "Social Travis",
-"Config.Social Travis.description": "Determines if Travis should be friend-able. Provides additional dialogue content when enabled, but no events.",
-"Config.Caldera Void Lava Snails.name": "Caldera Void Lava Snails",
-"Config.Caldera Void Lava Snails.description": "Spawns visible Void Lava Snails in the Caldera to match in-game lore."
+"Config.Void Snail Content.description": "Whether Travis, Jeremy and all associated items should be loaded in. Disabling this removes them.\n\nSell all snail animals/items before disabling, save and restart your game.\n\nAnimal Tree Houses will remain for stability, but the warp to Jeremy's room will no longer function."
 }
