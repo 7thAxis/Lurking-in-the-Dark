@@ -79,7 +79,8 @@
                 "sapphicsaph_pitv.CommunityCenterPride_4_10": "{{i18n:Core.TravisV.Locations.CommunityCenter.PrideFest.{{Random:{{Range: 1, 2}}}}}}",
 
             //Conversation Topics
-                "LitD_CT_YouAttackedJeremy": "{{i18n:Core.TravisV.YouAttackedJeremy}}"
+                "LitD_CT_YouAttackedJeremy": "{{i18n:Core.TravisV.YouAttackedJeremy}}",
+                "LitD_CT_TravisIntroduction": "{{i18n: Core.TravisV.Introduction}}"
 
             }
         },
@@ -88,6 +89,18 @@
             "Action": "EditData",
             "Target": "data/festivals/spring13, data/festivals/spring24, data/festivals/summer28, data/festivals/fall16, data/festivals/fall27, data/festivals/winter8, data/festivals/winter25, data/festivals/fall20, data/festivals/winter28, data/festivals/summer5, data/festivals/spring19, data/festivals/winter13, data/festivals/fall3, data/festivals/summer20",
             "Entries": { "TravisV": "{{i18n:Festivals.TravisV.{{TargetWithoutPath}}.{{Random:{{Range: 1, 3}}}}}}" }
+        },
+        {
+            "LogName": "Travis Intro CT Activation",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.TravIntroActivation": {
+                    "Trigger": "DayStarted",
+                    "Id": "DitR.TriggerActions.TravIntroActivation",
+                    "Actions": [ "AddConversationTopic LitD_CT_TravisIntroduction 999" ]
+                }
+            }
         }
     ]
 }

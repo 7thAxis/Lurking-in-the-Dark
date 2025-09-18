@@ -92,8 +92,22 @@
         //TEMP ACTORS
         {
             "Action": "Load",
-            "Target": "Characters/7A.Seagull.1, Characters/7A.Seagull.2, Characters/7A.Seagull.3, Characters/7A.Seagull.4",
+            "Target": "Characters/7A.Seagull.1, Characters/7A.Seagull.2, Characters/7A.Seagull.4",
             "FromFile": "Assets/Characters/Other/Seagull.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/7A.Seagull.3",
+            "FromFile": "Assets/Characters/Other/Scuttles.png"
+        },
+        //EMOTE INJECT
+        {
+            "Logname": "Inject New Emotes",
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Target": "TileSheets/emotes",
+            "FromFile": "Assets/Misc/ExtendedEmotes.png",
+            "ToArea": { "X": 0, "Y": 848, "Width": 64, "Height": 320 }
         }
     ]
 }

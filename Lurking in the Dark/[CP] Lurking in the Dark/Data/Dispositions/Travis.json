@@ -10,22 +10,24 @@
                     "HomeRegion": "Town",
                     "Gender": "Male",
                     "Age": "Adult",
+                    "BirthSeason": "fall",
+                    "BirthDay": 8,
                     "Manner": "Neutral",
                     "SocialAnxiety": "Outgoing",
                     "Optimism": "Negative",
                     "CanBeRomanced": false,
                     "LoveInterest": "", 
-                    "SocialTab": "HiddenAlways",
-                    "Calendar": "HiddenAlways",
+                    "SocialTab": "UnknownUntilMet",
+                    //"Calendar": "HiddenAlways",
                     "ShakePortraits": [],
-                    "PerfectionScore": false,
-                    "IntroductionsQuest": false,
-                    "CanReceiveGifts": false,
-                    "CanGreetNearbyCharacters": false,
-                    "CanSocialize": false,
+                    "PerfectionScore": "{{NPCs Included in Perfection}}",
+                    "IntroductionsQuest": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanSocialize": true,
                     "FlowerDanceCanDance": false,
-                    "WinterStarParticipant": false,
-                    "ItemDeliveryQuests": false,
+                    "WinterStarParticipant": true,
+                    "ItemDeliveryQuests": true,
                     "DumpsterDiveFriendshipEffect": 5,
                     "DumpsterDiveEmote": 20,
                     "CanVisitIsland": false,
@@ -50,16 +52,12 @@
             "Target": "Data/Characters",
             "Fields": {
               "TravisV": {
-                "BirthSeason": "fall",
-                "BirthDay": 8,
-                "PerfectionScore": "{{NPCs Included in Perfection}}",
-                "IntroductionsQuest": true,
-                "SocialTab": "UnknownUntilMet",
-                "CanReceiveGifts": true,
-                "CanGreetNearbyCharacters": true,
-                "CanSocialize": true,
-                "WinterStarParticipant": true,
-                "ItemDeliveryQuests": true
+
+                
+                
+
+                
+
               }
             },
             "When": { "Social Travis": true }

@@ -69,6 +69,34 @@
                     "StreamedVorbis": false,
                     "Looped": false
                 },
+                "LitD_SFX.SeagullFlock": {
+                    "ID": "LitD_SFX.SeagullFlock",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Seagull_Flock.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "LitD_SFX.SeagullFake": {
+                    "ID": "LitD_SFX.SeagullFake",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Seagull_Fake.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "LitD_SFX.Spin": {
+                    "ID": "LitD_SFX.Spin",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Spin.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
+                "LitD_SFX.Skedaddle": {
+                    "ID": "LitD_SFX.Skedaddle",
+                    "Category": "Sound",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/SFX/Skedaddle.ogg}}" ],
+                    "StreamedVorbis": false,
+                    "Looped": false
+                },
                 "LitD_Music.Memories.1": { 
                     "ID": "LitD_Music.Memories.1",
                     "Category": "Sound",

@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Entries": {
-                "{{ModID}}_Events.TravisV.0H/G PLAYER_HAS_MET Current TravisV": "
+                "{{ModID}}_Events.TravisV.0H/G PLAYER_HAS_MET Current TravisV/t 1200 1800": "
                     ocean
                     /22 105
                     /TravisV 22 112 2 farmer 31 108 0
@@ -92,7 +92,7 @@
                         /pause 100
                         /emote 7A.Seagull.4 56 true
                         /pause 3000
-                        /emote TravisV 20 true
+                        /emote TravisV 280 true
                         /pause 2500
                         /emote 7A.Seagull.1 20 true
                         /playSound seagulls
@@ -220,7 +220,6 @@
                         /advancedMove 7A.Seagull.3 false -1 0 3 10
                         /playSound seagulls
                         /textAboveHead TravisV \"Uhhh...\"
-                        /pause 300
                         /advancedMove 7A.Seagull.4 false 2 0 2 10
                         /playSound seagulls
                         /pause 200
@@ -229,6 +228,7 @@
 
                         /playMusic PIRATE_THEME
                         /playSound ocean
+                        /animate TravisV false true 500 35 36
                         /pause 50
                         /showFrame 7A.Seagull.1 32
                         /pause 75
@@ -264,6 +264,7 @@
                         /advancedMove farmer false -4 0 0 3 3 10
                         /playSound seagulls
                         /pause 2500
+                        /stopAnimation TravisV 0
                         /faceDirection TravisV 1 true
                         /playSound seagulls
                         /emote TravisV 16
@@ -275,24 +276,363 @@
 
                 "{{ModID}}_Events.TravisV.0H.C1": "
                     resetVariable
-                    /speak TravisV \"choice 1\"
+                        /action AddMail Current LitD_M_HelpedTravWithGulls received
+                        /speed farmer 4
+                        /advancedMove farmer false -2 0 3 10
+                        /waitForAllStationary
+                        /playSound ghost
+                        /emote farmer 12 true
+                        /jump farmer
+                        /pause 1000
+                        /playSound seagulls
+                        /emote 7A.Seagull.1 16 true
+                        /jump 7A.Seagull.1
+                        /pause 50
+                        /emote 7A.Seagull.2 16 true
+                        /jump 7A.Seagull.2
+                        /playSound seagulls
+                        /pause 30
+                        /emote 7A.Seagull.3 16 true
+                        /jump 7A.Seagull.3
+                        /playSound seagulls
+                        /pause 100
+                        /emote 7A.Seagull.4 16 true
+                        /jump 7A.Seagull.4
+                        /pause 500
+                        /stopAnimation 7A.Seagull.3 36
+                        /stopAnimation 7A.Seagull.1 32
+                        /stopAnimation 7A.Seagull.2 8
+                        /stopAnimation 7A.Seagull.4 0
+                        /pause 75
+                        /showframe 7A.Seagull.3 12
+                        /faceDirection 7A.Seagull.1 1 true
+                        /faceDirection 7A.Seagull.2 1 true
+                        /faceDirection 7A.Seagull.4 1 true
+                        /pause 75
+                        /faceDirection 7A.Seagull.3 1
+                        /pause 100
+                        /speed 7A.Seagull.1 4
+                        /speed 7A.Seagull.2 4
+                        /speed 7A.Seagull.3 4
+                        /speed 7A.Seagull.4 4
+                        /advancedMove 7A.Seagull.1 false -5 0 0 2 2 10
+                        /pause 15
+                        /advancedMove 7A.Seagull.2 false 0 3 3 0 1 10
+                        /pause 25
+                        /advancedMove 7A.Seagull.3 false 0 -4 3 0 1 10
+                        /pause 20
+                        /advancedMove 7A.Seagull.4 false 0 -3 -4 0 3 10
+                        /waitForAllStationary
+                        /animate 7A.Seagull.1 false true 300 24 25
+                        /animate 7A.Seagull.3 true true 600 28 29
+                        /advancedMove 7A.Seagull.4 true -1 0 3 1000 1 0 1 1000
+                        /advancedMove 7A.Seagull.2 true -1 0 3 1500 1 0 1 1200
+                        /faceDirection TravisV 3
+                        /pause 50
+                        /emote TravisV 40
+                        /pause 50
+                        /faceDirection TravisV 2
+                        /pause 30
+                        /showFrame TravisV 33
+                    /speak TravisV \"Uhg. My mama always told me not to feed the seagulls, didn't realize that included music.$a\"
+                        /switchEvent {{ModID}}_Events.TravisV.0H.Closing
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.0H.C2": "
                     resetVariable
-                    /speak TravisV \"choice 2\"
+                        /action AddMail Current LitD_M_AbandonedTravisWithGulls
+                        /emote farmer 40
+                        /advancedMove farmer false -2 0 0 -4 -9 0 0 -20 4 10
+                        /pause 100
+                        /faceDirection TravisV 0
+                        /emote TravisV 228
+                    /speak TravisV \"Hey!!! Where are you going?$u#$b#A little help please!$15\"
+                        /playSound seagulls
+                        /emote 7A.Seagull.1 12 true
+                        /jump 7A.Seagull.1
+                        /pause 50
+                        /emote 7A.Seagull.2 12 true
+                        /jump 7A.Seagull.2
+                        /playSound seagulls
+                        /pause 30
+                        /emote 7A.Seagull.3 12 true
+                        /jump 7A.Seagull.3
+                        /playSound seagulls
+                        /pause 100
+                        /emote 7A.Seagull.4 12 true
+                        /jump 7A.Seagull.4
+                        /playSound seagulls
+                        /speak TravisV \"Oh jeez...$s\"
+                        /globalFade 0.012
+                        /viewport -1000 -1000
+                        /playSound LitD_SFX.SeagullFlock
+                    /message \"Travis will remember that...\"
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.0H.C3": "
                     resetVariable
-                    /speak TravisV \"choice 3\"
+                        /action AddMail Current LitD_M_TriedToJoinSeagullGang
+                        /advancedMove farmer false -2 0 3 10
+                        /waitForAllStationary
+                        /stopAnimation 7A.Seagull.3 36
+                        /pause 75
+                        /faceDirection 7A.Seagull.3 3
+                        /pause 100
+                        /emote 7A.Seagull.3 8 true
+                        /faceDirection 7A.Seagull.3 1
+                        /playsound seagulls
+                        /pause 1000
+                        
+                            /positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 1/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 0/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 3/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 0/pause 5 /positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 1/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 0/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 3/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/positionOffset 7A.Seagull.3 0 -4/pause 5/showFrame 7A.Seagull.3 0/pause 5/warp 7A.Seagull.3 23 109/pause 100
+
+                        /pause 500
+                        /advancedMove farmer false -2 0 3 10
+                        /stopAnimation 7A.Seagull.1 32
+                        /stopAnimation 7A.Seagull.2 8
+                        /stopAnimation 7A.Seagull.4 0
+                        /pause 75
+                        /faceDirection 7A.Seagull.3 2 true
+                        /playsound seagulls
+                        /emote 7A.Seagull.3 40 true
+                        /pause 100
+                        /faceDirection 7A.Seagull.2 0 true
+                        /emote 7A.Seagull.2 8 true
+                        /pause 75
+                        /faceDirection 7A.Seagull.4 2 true
+                        /emote 7A.Seagull.4 8 true
+                        /playsound seagulls
+                        /pause 50
+                        /faceDirection 7A.Seagull.1 1 true
+                        /emote 7A.Seagull.1 8 true
+                        /waitForAllStationary
+                        /pause 1500
+                        /emote farmer 236 true
+                        /playSound LitD_SFX.SeagullFake
+                        /pause 1500
+                        /emote TravisV 40 true
+                        /pause 50
+                        /emote 7A.Seagull.3 240 true
+                        /playsound seagulls
+                        /pause 75
+                        /emote 7A.Seagull.2 8 true
+                        /playsound seagulls
+                        /pause 40
+                        /emote 7A.Seagull.1 8 true
+                        /playsound seagulls
+                        /pause 40
+                        /emote 7A.Seagull.4 8 true
+                        /playsound seagulls
+                        /pause 1500
+                        /emote 7A.Seagull.1 36 true
+                        /jump 7A.Seagull.1
+                        /playsound seagulls
+                        /pause 50
+                        /emote 7A.Seagull.2 36 true
+                        /jump 7A.Seagull.2
+                        /playsound seagulls
+                        /pause 30
+                        /emote 7A.Seagull.3 36 true
+                        /jump 7A.Seagull.3
+                        /playsound seagulls
+                        /pause 100
+                        /emote 7A.Seagull.4 36 true
+                        /jump 7A.Seagull.4
+                        /playsound seagulls
+                        /pause 1000
+                        /emote 7A.Seagull.1 236 true
+                        /advancedMove 7A.Seagull.1 false -5 0 0 2 2 10
+                        /playSound LitD_SFX.SeagullFake
+                        /pause 15
+                        /emote 7A.Seagull.2 236 true
+                        /advancedMove 7A.Seagull.2 false 0 3 3 0 1 10
+                        /playsound seagulls
+                        /pause 25
+                        /emote 7A.Seagull.3 236 true
+                        /advancedMove 7A.Seagull.3 false 0 -3 3 0 1 10
+                        /playsound seagulls
+                        /pause 20
+                        /emote 7A.Seagull.4 236 true
+                        /advancedMove 7A.Seagull.4 false 0 -2 -4 0 3 10
+                        /playSound LitD_SFX.SeagullFake
+                        /waitForAllStationary
+                        /animate 7A.Seagull.1 false true 300 24 25
+                        /animate 7A.Seagull.3 true true 600 28 29
+                        /advancedMove 7A.Seagull.4 true -1 0 3 1000 1 0 1 1000
+                        /advancedMove 7A.Seagull.2 true -1 0 3 1500 1 0 1 1200
+                        /pause 100
+                        /faceDirection TravisV 0
+                        /textAboveHead TravisV \"...Huh.\"
+                        /pause 50
+                        /faceDirection farmer 0
+                        /pause 2800
+                        /emote farmer 28
+                        /faceDirection TravisV 1
+                        /faceDirection farmer 3
+                    /speak TravisV \"...Is that what they mean by 'if you can't beat em, join em'?$11#$b#But don't ya gotta at least try to beat 'em first?$6\"
+                        /switchEvent {{ModID}}_Events.TravisV.0H.Closing
+                    
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.0H.C4":"
                     resetVariable
-                    /speak TravisV \"choice 4\"
+                        /action AddMail Current LitD_M_HelpedTravWithGulls received
+                        /action AddMail Current LitD_M_TriedToStealSeagull received
+                        /speed farmer 4
+                        /advancedMove farmer false -2 0 3 10
+                        /waitForAllStationary
+                        /emote farmer 232 true
+                        /shake 7A.Seagull.3 2000
+                        /showframe farmer 58 true
+                        /pause 175
+                        /showframe farmer 59 true
+                        /pause 175
+                        /showframe farmer 58 true
+                        /pause 175
+                        /showframe farmer 59 true
+                        /pause 175
+                        /faceDirection farmer 3 true
+                        /pause 1000
+                        /stopAnimation 7A.Seagull.3 32
+                        /animate 7A.Seagull.3 false true 125 33 34 35 34
+                        /playsound seagulls
+                        /pause 50
+                        /emote 7A.Seagull.3 12 true
+                        /jump 7A.Seagull.3
+                        /pause 300
+
+
+                        /emote 7A.Seagull.1 16 true
+                        /emote 7A.Seagull.2 16 true
+                        /emote 7A.Seagull.4 16 true
+                        /playsound seagulls
+                        /stopAnimation 7A.Seagull.1 32
+                        /stopAnimation 7A.Seagull.2 8
+                        /stopAnimation 7A.Seagull.4 0
+                        /pause 75
+                        /playsound seagulls
+                        /faceDirection 7A.Seagull.1 1 true
+                        /faceDirection 7A.Seagull.2 1 true
+                        /faceDirection 7A.Seagull.4 1 true
+                        /pause 75
+                        /faceDirection 7A.Seagull.3 1
+                        /pause 100
+                        /speed 7A.Seagull.1 7
+                        /speed 7A.Seagull.2 4
+                        /speed 7A.Seagull.3 4
+                        /speed 7A.Seagull.4 4
+                        /pause 500
+                        /emote 7A.Seagull.1 12 true
+                        /emote 7A.Seagull.2 12 true
+                        /emote 7A.Seagull.4 12 true
+                        /advancedMove 7A.Seagull.1 false 0 2 6 0 0 -2 3 10
+                        /advancedMove 7A.Seagull.2 false 3 0 4 10
+                        /advancedMove 7A.Seagull.4 false 3 0 2 10
+                        /waitForAllStationary
+                        /showFrame 7A.Seagull.1 36
+                        /pause 75
+                        /animate 7A.Seagull.1 true true 125 33 34 35 34
+                        /playSound LitD_SFX.SeagullFlock
+                        /pause 20
+                        /animate 7A.Seagull.2 false true 125 8 9 10 11
+                        /pause 30
+                        /animate 7A.Seagull.4 false true 125 37 38 39 40
+                        /pause 500
+                        /emote 7A.Seagull.1 12 true
+                        /emote 7A.Seagull.2 12 true
+                        /emote 7A.Seagull.2 12 true
+                        /emote 7A.Seagull.4 12 true
+                        /pause 700
+                        /emote farmer 228 true
+                        /startJittering
+                        /jump farmer
+                        /showFrame farmer 94
+                        /pause 1800
+                        /stopJittering
+                        /faceDirection farmer 2
+                        /pause 50
+                        /speed farmer 5
+                        /emote farmer 28 true
+                        /advancedMove farmer false 20 0 1 10
+                        /playsound LitD_SFX.Spin
+                        /pause 100
+                        /animate 7A.Seagull.1 false true 125 0 4 8 12
+                        /emote 7A.Seagull.1 228 true
+
+                            /positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/pause 5/warp 7A.Seagull.1 26 110/pause 200
+
+                        /stopAnimation 7A.Seagull.2 4
+                        /stopAnimation 7A.Seagull.4 4
+                        /textAboveHead 7A.Seagull.3 \"After 'em boys!\"
+                        /jump 7A.Seagull.3
+                        /pause 300
+                        /jump 7A.Seagull.2
+                        /pause 50
+                        /jump 7A.Seagull.4
+                        /pause 400
+                        /speed 7A.Seagull.1 5
+                        /speed 7A.Seagull.2 5
+                        /speed 7A.Seagull.3 5
+                        /speed 7A.Seagull.4 5
+                        /advancedMove 7A.Seagull.2 false 50 0 1 10
+                        /pause 100
+                        /advancedMove 7A.Seagull.4 false 50 0 1 10
+                        /pause 200
+                        /emote 7A.Seagull.1 28 true
+                        /playsound LitD_SFX.Spin
+
+                            /positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/positionOffset 7A.Seagull.1 0 -4/pause 5/pause 5/warp 7A.Seagull.1 26 109/pause 200
+                        
+                        /stopAnimation 7A.Seagull.3 32
+                        /pause 75
+                        /faceDirection 7A.Seagull.3 1
+                        /pause 75
+                        /advancedMove 7A.Seagull.3 false 50 0 1 10
+                        /pause 300
+                        /stopAnimation 7A.Seagull.1 0
+                        /pause 200
+                        /faceDirection 7A.Seagull.1 3
+                        /pause 200
+                        /faceDirection 7A.Seagull.1 1
+                        /pause 200
+                        /faceDirection 7A.Seagull.1 3
+                        /pause 200
+                        /faceDirection 7A.Seagull.1 1
+                        /pause 200
+                        /emote 7A.Seagull.1 16 true
+                        /jump 7A.Seagull.1
+                        /pause 300
+                        /advancedMove 7A.Seagull.1 false 0 1 50 0 1 10
+                        /playsound LitD_SFX.Skedaddle
+                        /pause 1000
+                    /speak TravisV \"There's no way that just happened.$6\"
+                        /pause 300
+                    /textAboveHead TravisV \"Maybe I should lay off the Joja MAX...\"
+                        /pause 1000
+                        /advancedMove TravisV false 0 -20 4 10
+                        /pause 1000
+                        /globalFade 0.012
+                        /viewport -1000 -1000
                     /end
                 ",
+                "{{ModID}}_Events.TravisV.0H.Closing": "
+                    resetVariable
+                        /emote farmer 60
+                        /animate TravisV false true 175 30 31
+                        /pause 500
+                        /emote TravisV 56
+                    /speak TravisV \"Well, thanks for the rescue buckaroo.$l#$b#Don't tell anybody you saw that, aye?$6\"
+                    /quickQuestion #I didn't see anything.#Can't make any promises.(break)stopAnimation TravisV 32\\emote farmer 212\\speak TravisV \"Thanks and thanks. You're a real pal, farmer.$9#$b#Feel free to drop by my place sometime.$l\"\\action AddMail Current LitD_M_HelpedTravWithGulls received(break)emote farmer 216\\stopAnimation TravisV 34\\speak TravisV \"Eh? What are ya, the paparazzi?$a#$b#I guess that would explain hiding behind that 'ol rock over there.$s\"\\emote TravisV 40\\action AddMail Current LitD_M_GonnaTellEveryone received
+                        /pause 300
+                    /textAboveHead TravisV \"Guess I'll catch ya around, bud.\"
+                        /pause 1000
+                        /advancedMove TravisV false 0 -20 4 10
+                        /pause 100
+                        /faceDirection farmer 0
+                        /pause 1000
+                        /globalFade 0.012
+                        /viewport -1000 -1000
+                    /end
+                    "
                 
             } //animate <actor> <flip> <loop> <frame duration> <frames...>
         }
