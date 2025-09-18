@@ -71,7 +71,7 @@
                 {
                     "Position": { "X": 6, "Y": 82 },
                     "Layer": "Buildings",
-                    "SetProperties": { "Action": "Warp 16 23 7thAxis.LitD_Maps.Travis_House_Interior" }
+                    "SetProperties": { "Action": "LockedDoorWarp 16 23 7thAxis.LitD_Maps.Travis_House_Interior 800 2400" }
                 }
             ]
         },
@@ -114,13 +114,22 @@
     //Travis's coffee maker gives you coffee
         {
             "Action": "EditMap",
+            "Target": "Maps/{{ModID}}_Maps.Travis_House_Interior",
+            "MapTiles": [
+                { "Position": { "X": 8, "Y": 23 }, "Layer": "Buildings", "SetProperties": { "Action": "Message TravisVHCoffeeMaker" } }
+            ],
+            "When": { "Hearts:TravisV": "{{Range: 0, 3}}" }
+        },
+        {
+            "Action": "EditMap",
             "Target": "Maps/7thAxis.LitD_Maps.Travis_House_Interior",
             "MapTiles": [
                 { "Position": { "X": 7, "Y": 22 }, "Layer": "Front2", "SetTileSheet": "spring_LitD_Tilesheet", "SetIndex": "344" }, //Sets the card tile on counter
                 { "Position": { "X": 8, "Y": 23 }, "Layer": "Back",  "SetProperties": { "MEEP_FakeNPC": "CoffeeMakerKun" } }, //Places fake coffeemaker NPC
                 { "Position": { "X": 7, "Y": 23 }, "Layer": "Buildings",
                     "SetProperties": { "Action": "MEEP_Letter {{i18n:Maps.TravisV.TravisCoffeeNote}}", "MEEP_Letter_Type": "3" } } //Loads letter data
-            ]
+            ],
+            "When": { "Hearts:TravisV": "{{Range: 4, 14}}" }
         },
         {
             "Action": "EditData",
