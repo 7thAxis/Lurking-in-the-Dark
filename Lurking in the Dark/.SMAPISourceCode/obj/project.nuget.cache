@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xTjmdkY/a80=",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Stardew Valley\\Mods\\Lurking-in-the-Dark\\Lurking in the Dark\\.SMAPISourceCode\\Lurking in the Dark.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexi\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.1.1\\pathoschild.stardew.modbuildconfig.4.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}

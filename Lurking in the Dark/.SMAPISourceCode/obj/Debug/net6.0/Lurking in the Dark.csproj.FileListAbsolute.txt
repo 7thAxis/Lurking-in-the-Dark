@@ -1,0 +1,18 @@
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\bin\Debug\net6.0\Lurking in the Dark.deps.json
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\bin\Debug\net6.0\Lurking in the Dark.dll
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\Lurking in the Dark\Diamond in the Rough\obj\Debug\net6.0\Lurking in the Dark.dll
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\bin\Debug\net6.0\Lurking in the Dark.deps.json
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\bin\Debug\net6.0\Lurking in the Dark.dll
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.GeneratedMSBuildEditorConfig.editorconfig
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.AssemblyInfoInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.AssemblyInfo.cs
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.sourcelink.json
+C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\Mods\Lurking-in-the-Dark\LitD C# Source\obj\Debug\net6.0\Lurking in the Dark.dll
