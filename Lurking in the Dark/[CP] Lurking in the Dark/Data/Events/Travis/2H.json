@@ -34,14 +34,14 @@
                         /emote TravisV 56 true
                         /jump TravisV
                         /pause 300
-                    /speak TravisV \"Aye! Now if it isn't my knight in shining armor.$l#$b#Come on in, come on in!$11\"
+                    /speak TravisV \"Aye! Now if it ain't my knight in shining armor.$l#$b#Come on in, come on in!$11\"
                         /emote farmer 32 true
                         /advancedMove TravisV false 1 0 2 10
                         /pause 100
                         /advancedMove farmer false 2 0 1 10
                         /waitForAllStationary
                         /animate TravisV false true 175 24 25 26 27
-                    /switchEvent {{ModID}}_Events.TravisV.2H.{{Trav2HOutcome}}
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Outcome{{Trav2HOutcome}}
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.2H.Intro.2": "
@@ -79,6 +79,8 @@
                         /pause 200
                         /speak TravisV \"Thanks for the help with those gulls!$h#$b#They sure one hardcore group of fellas.$6\"
                         /emote TravisV 224
+                        /pause 200
+                        /emote farmer 56
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
@@ -87,6 +89,8 @@
                         /pause 200
                         /speak TravisV \"Thanks for help with those gulls...$6#$b#I sure hope ya didn't tell anybody about that.$s\"
                         /emote TravisV 28 true
+                        /pause 200
+                        /emote farmer 40
                     /switchEvent{{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
@@ -95,6 +99,8 @@
                         /pause 200
                         /speak TravisV \"Oh yeah, sorry trying to join that seagull gang didn't work out.$6#$b#Ya seem like you're too good for 'em anyway.#h\"
                         /emote TravisV 56 true
+                        /pause 200
+                        /emote farmer 32
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
@@ -103,6 +109,8 @@
                         /pause 200
                         /speak TravisV \"Oh yeah, sorry trying to join that seagull gang didn't work out.$6#$b#I think they're missing out on a prime candidate.$h\"
                         /emote TravisV 40 true
+                        /pause 200
+                        /emote farmer 12
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
@@ -111,6 +119,8 @@
                         /pause 200
                         /speak TravisV \"Oh, and do I hope you're happy with yourself.$a#$b#Those seagulls threatened to poke out my eye if I didn't play for 'em all night!$14#$b#My fingers? Dead. Tired.$a\"
                         /emote TravisV 12 true
+                        /pause 200
+                        /emote farmer 28
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
@@ -118,7 +128,9 @@
                     resetVariable
                         /pause 200
                         /speak TravisV \"I can't believe you tried to grab one of them gulls...$6#$b#Glad to see you still got two eyes!$h\"
-                        /emote TravisV 28 true
+                        /emote TravisV 224 true
+                        /pause 200
+                        /emote farmer 240
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
@@ -126,7 +138,45 @@
 
                 "{{ModID}}_Events.TravisV.2H.Cont": "
                     resetVariable
-                        /speak TravisV \"heehee\"
+                        /pause 500
+                        /textAboveHead TravisV \"Hm hm hm~\"
+                        /pause 1500
+                    /quickQuestion # What are you whipping up? # What's cookin' good lookin'? <
+                        (break)pause 300
+                            \\speak TravisV \"Blackberry Cobbler! I'm a sucker for this stuff.$13\"
+                        (break)pause 300
+                            \\emote TravisV 40
+                            \\speak TravisV \"Heh. Seems like somebody's got a sweet tooth.$9#$b#It's blackberry cobbler if you'd like to know.$8\"
+                            \\action IncrementStat LitD.TravisFlirt 1
+                    /speak TravisV \"I go pickin' berries every fall and bake with 'em year round.$h#$b#Good for the environment too. Most blackberries are actually invasive around these parts.$6\"
+                        /textAboveHead TravisV \"Speaking of which...\"
+                        /advancedMove farmer false -1 0 1 10
+                        /pause 100
+                        /advancedMove TravisV false -1 0 4 10
+                        /waitForAllStationary
+                        /shake TravisV 500
+                        /playSound dwop
+                        /pause 500
+                        /playSound furnace
+                        /pause 1000
+                    /speak TravisV \"I've got a pretty peculiar companion.$6#$b#Let me show him to ya while this bakes.\"
+                        /emote farmer 32
+                        /advancedMove farmer false -1 0 0 1 4 10
+                        /proceedPosition farmer
+                        /advancedMove TravisV false -2 0 0 -3 4 10
+                        /pause 1200
+                        /advancedMove farmer false 0 -3 4 10
+                        /globalFade 0.012
+                        /viewport -1000 -1000
+                        /waitForAllStationary
+                        /warp TravisV 10 5
+                        /warp farmer 11 5
+                        /globalFadeToClear 0.012 true
+                        /changeLocation 7thAxis.LitD_Maps.Jeremy_Room/
+                        /viewport 11 21 clamp
+                        /playMusic LitD_Music.JeremyTheme
+                        /pause 800
+                    /speak TravisV \"ONWARDS TO CHAOS\" 
                     /end
                 "
             }
