@@ -1,7 +1,7 @@
 {
     "Changes": [
         {
-            "LogName": "Mines Intro",
+            "LogName": "Trav Intro",
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_Village",
             "Entries": {

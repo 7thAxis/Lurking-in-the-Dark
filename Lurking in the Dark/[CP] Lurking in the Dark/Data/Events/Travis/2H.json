@@ -1,0 +1,136 @@
+{
+    "Changes": [
+        {
+            "Logname": "Travis 2H",
+            "Action": "EditData",
+            "Target": "Data/Events/7thAxis.LitD_Maps.Travis_House_Interior",
+            "Entries": {
+                "{{ModID}}_Events.TravisV.2H": "
+                    LitD_Music.TravisHouse
+                    /7 19
+                    /TravisV 6 21 2 farmer 4 16 2
+                        /beginSimultaneousCommand
+                        /ignoreCollisions TravisV
+                        /ignoreCollisions farmer
+                        /addConversationTopic LitD_CT_TravisHouseHangout {{Event Cooldown Length}}
+                    /endSimultaneousCommand
+                    /skippable
+                        /pause 200
+                        /textAboveHead TravisV \"Hm hm hm~\"
+                        /animate TravisV false true 175 24 25 26 27
+                        /advancedMove farmer false 0 5 1 10
+                        /waitForAllStationary
+                        /emote TravisV 8
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Intro.{{Trav2HIntro}}
+
+                    /end
+                ",
+
+            //2H INTRO BEHAVIOR
+                "{{ModID}}_Events.TravisV.2H.Intro.1": "
+                    resetVariable
+                        /stopAnimation TravisV 0
+                        /faceDirection TravisV 3
+                        /emote TravisV 56 true
+                        /jump TravisV
+                        /pause 300
+                    /speak TravisV \"Aye! Now if it isn't my knight in shining armor.$l#$b#Come on in, come on in!$11\"
+                        /emote farmer 32 true
+                        /advancedMove TravisV false 1 0 2 10
+                        /pause 100
+                        /advancedMove farmer false 2 0 1 10
+                        /waitForAllStationary
+                        /animate TravisV false true 175 24 25 26 27
+                    /switchEvent {{ModID}}_Events.TravisV.2H.{{Trav2HOutcome}}
+                    /end
+                ",
+                "{{ModID}}_Events.TravisV.2H.Intro.2": "
+                    resetVariable
+                        /stopAnimation TravisV 0
+                        /showFrame TravisV 35
+                        /emote TravisV 16 true
+                        /jump TravisV
+                        /pause 1000
+                        /showFrame TravisV 34
+                        /pause 300
+                    /speak TravisV \"Ack! Is knocking on the door a lost art?$u#$b#Well I guess since you're already here, you can hang around.$5\"
+                        /pause 100
+                        /advancedMove TravisV false 1 0 2 10
+                        /waitForAllStationary
+                        /showframe TravisV 34
+                    /speak TravisV \"Just stay over in the entry way, aye?$6\"
+                        /pause 200
+                        /advancedMove farmer false 1 0 1 10
+                        /waitForAllStationary
+                        /pause 300
+                        /faceDirection TravisV 3
+                        /emote TravisV 40 true
+                        /pause 1000
+                        /showFrame TravisV 33
+                        /pause 1500
+                        /animate TravisV false true 175 24 25 26 27
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Outcome{{Trav2HOutcome}}
+                    /end
+                ",
+
+                //  INTRO CHOICE OUTCOMES
+                "{{ModID}}_Events.TravisV.2H.Outcome1": "
+                    resetVariable
+                        /pause 200
+                        /speak TravisV \"Thanks for the help with those gulls!$h#$b#They sure one hardcore group of fellas.$6\"
+                        /emote TravisV 224
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Cont
+                    /end   
+                    ",
+                "{{ModID}}_Events.TravisV.2H.Outcome2": "
+                    resetVariable
+                        /pause 200
+                        /speak TravisV \"Thanks for help with those gulls...$6#$b#I sure hope ya didn't tell anybody about that.$s\"
+                        /emote TravisV 28 true
+                    /switchEvent{{ModID}}_Events.TravisV.2H.Cont
+                    /end   
+                    ",
+                "{{ModID}}_Events.TravisV.2H.Outcome3": "
+                    resetVariable
+                        /pause 200
+                        /speak TravisV \"Oh yeah, sorry trying to join that seagull gang didn't work out.$6#$b#Ya seem like you're too good for 'em anyway.#h\"
+                        /emote TravisV 56 true
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Cont
+                    /end   
+                    ",
+                "{{ModID}}_Events.TravisV.2H.Outcome4": "
+                    resetVariable
+                        /pause 200
+                        /speak TravisV \"Oh yeah, sorry trying to join that seagull gang didn't work out.$6#$b#I think they're missing out on a prime candidate.$h\"
+                        /emote TravisV 40 true
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Cont
+                    /end   
+                    ",
+                "{{ModID}}_Events.TravisV.2H.Outcome5": "
+                    resetVariable
+                        /pause 200
+                        /speak TravisV \"Oh, and do I hope you're happy with yourself.$a#$b#Those seagulls threatened to poke out my eye if I didn't play for 'em all night!$14#$b#My fingers? Dead. Tired.$a\"
+                        /emote TravisV 12 true
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Cont
+                    /end   
+                    ",
+                "{{ModID}}_Events.TravisV.2H.Outcome6": "
+                    resetVariable
+                        /pause 200
+                        /speak TravisV \"I can't believe you tried to grab one of them gulls...$6#$b#Glad to see you still got two eyes!$h\"
+                        /emote TravisV 28 true
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Cont
+                    /end   
+                    ",
+
+
+                "{{ModID}}_Events.TravisV.2H.Cont": "
+                    resetVariable
+                        /speak TravisV \"heehee\"
+                    /end
+                "
+            }
+        }
+    ]
+}
+///switchEvent {{ModID}}_Events.TravisV.2H.Intro.{{Trav2HIntro}}

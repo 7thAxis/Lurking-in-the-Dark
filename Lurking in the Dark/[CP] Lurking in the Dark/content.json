@@ -521,6 +521,26 @@
             "Value": "{{Random:{{TVSD}}++{{TVSD}}|key={{Query:{{Time}}+10}}|inputSeparator=++}}",
             "When": { "TravisOverrideConditions": "Active" }
         },
+        //Events
+        { "Name": "Trav2HIntro", "Value": "1" },
+        { "Name": "Trav2HIntro", "Value": "2",
+            "When": { "HasFlag": "LitD_M_GonnaTellEveryone, LitD_M_AbandonedTravisWithGulls" } },
+
+        { "Name": "Trav2HOutcome", "Value": "1" },
+        { "Name": "Trav2HOutcome", "Value": "2",
+            "When": { 
+                "HasFlag |contains=LitD_M_HelpedTravWithGulls": true,
+                "HasFlag |contains=LitD_M_GonnaTellEveryone": true } },
+        { "Name": "Trav2HOutcome", "Value": "3",
+            "When": { "HasFlag": "LitD_M_TriedToJoinSeagullGang" } },
+        { "Name": "Trav2HOutcome", "Value": "4",
+            "When": { 
+                "HasFlag |contains=LitD_M_TriedToJoinSeagullGang": true,
+                "HasFlag |contains=LitD_M_GonnaTellEveryone": true } },
+        { "Name": "Trav2HOutcome", "Value": "5",
+            "When": { "HasFlag": "LitD_M_AbandonedTravisWithGulls" } },
+        { "Name": "Trav2HOutcome", "Value": "6",
+            "When": { "HasFlag": "LitD_M_TriedToStealSeagull" } },
 
         //Other Stuff
         {
