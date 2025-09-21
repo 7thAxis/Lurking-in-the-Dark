@@ -142,6 +142,27 @@
     "Target": "Data/GarbageCans",
     "TargetField": [ "GarbageCans" ], 
     "Entries": {
+        "7thAxis.LitD_TrashCan.TravisV": {
+            "BaseChance": 1.0,
+            "Items": [
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.Snackies",
+                    "Condition": "RANDOM 0.1",
+                    "RandomItemId": [ "(O)611", "(O)212" ]
+                },
+                {
+                    "Id": "7thAxis.LitD_TrashCan.TravisV.TrashBerry",
+                    "RandomItemId": [ "(O)168", "(O)172", "(O)410" ]
+                }
+            ]
+        }
+    }
+},  
+{
+    "Action": "EditData",
+    "Target": "Data/GarbageCans",
+    "TargetField": [ "GarbageCans" ], 
+    "Entries": {
        
         "7thAxis.LitD_TrashCan.TravisV": {
             "BaseChance": 1.0,
@@ -192,7 +213,8 @@
                 }
             ]
         }
-    }
+    },
+    "When": { "HasSeenEvent": "{{ModID}}_Events.TravisV.2H" }
 },  
 //---------------------------- MAP STRINGS ------------------------------------------// 
         {

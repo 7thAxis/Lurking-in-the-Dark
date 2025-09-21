@@ -32,13 +32,29 @@
             "MapTiles": [
                 {
                     "Position": { "X": 4, "Y": 6 }, "Layer": "Buildings",
+                    "SetProperties": { "Action": "MineSign It's a snail wanted poster. What could this be for...?" }
+                },
+                {
+                    "Position": { "X": 5, "Y": 6 }, "Layer": "Buildings",
+                    "SetProperties": { "Action": "MineSign It's a snail wanted poster. What could this be for...?" }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/7thAxis.LitD_Maps.Jeremy_Room",
+            "Update": "OnLocationChange",
+            "MapTiles": [
+                {
+                    "Position": { "X": 4, "Y": 6 }, "Layer": "Buildings",
                     "SetProperties": { "Action": "PlayEvent {{ModID}}_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
                 },
                 {
                     "Position": { "X": 5, "Y": 6 }, "Layer": "Buildings",
                     "SetProperties": { "Action": "PlayEvent {{ModID}}_Events.JeremyTS.VoidLavaSnailRoundUp true false Dialogue {{i18n:Quests.Jeremy.VoidLavaSnailRoundUp.QuestActive}}" }
                 }
-            ]
+            ],
+            "When": { "HasSeenEvent": "{{ModID}}_Events.TravisV.2H" }
         },
 
 //SNAIL PATCHES
