@@ -634,32 +634,31 @@
                     /end
                     "
                 
-            } //animate <actor> <flip> <loop> <frame duration> <frames...>
+            } 
         }
     ]
 }
 
 /* 
 
-(0 = up, 1 = right, 2 = down, 3 = left)
+* - FD AFD MOVE 
+^ - 0 | 4 | -
+v - 2 | 2 | +
+< - 3 | 3 | -
+> - 1 | 1 | +
 
 patch reload DN.SnS Data/Events/HeartEvents_Val.json
 
-quickQuestion #That girl sounds overwhelmed. #That voice is familiar.(break)speak {{V}} \"Let's check in on things, just in case.$32\"(break)speak DN.Hector \"Right? Reminds me of something I was watching with Eloise...$7\"
+quickQuestion Q #A # B(break)AAA(break)BBB
 
 advancedMove true/false (loop) parameters
 
-parameters:
+animate <actor> <flip> <loop> <frame duration> <frames...>
+
+AM parameters:
 x y x y x y = move without pause
-
 x y z t x y z t = move with pauses
-
 x y x y z t x y = move with mix of mentioned above
-
-x = how many tiles move in x axis (+ = right, - = left)
-y = how many tiles move in y axis (+ = down, - = up)
-z = direction face upon reaching destination (1=right, 2=down, 3=left, 4=up)
-t = duration in milliseconds how long to stay in that spot (must be >= 10000ms)
 
 4   - empty can
 8   - question mark

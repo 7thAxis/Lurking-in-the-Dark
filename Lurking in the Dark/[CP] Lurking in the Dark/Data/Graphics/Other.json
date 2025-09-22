@@ -100,6 +100,11 @@
             "Target": "Characters/7A.Seagull.3",
             "FromFile": "Assets/Characters/Other/Scuttles.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Characters/Prop.Travis_Painting, Characters/Prop.Emily_Painting, Characters/Prop.Haley_Painting, Characters/Prop.Leah_Painting",
+            "FromFile": "Assets/Misc/{{TargetWithoutPath}}.png"
+        },
         //EMOTE INJECT
         {
             "Logname": "Inject New Emotes",

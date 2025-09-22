@@ -1,0 +1,165 @@
+{
+    "Changes": [
+        {
+            "Logname": "Travis 4H",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": { 
+                "{{ModID}}_Events.TravisV.4H": "
+                  LitD_Music.SunnySideUp
+                    /47 29
+                    /TravisV 47 34 0 Haley 50 33 0 Emily 48 34 0 Leah 45 33 0 farmer 49 56 2 JeremyTSnail 52 39 1
+                    /beginSimultaneousCommand
+                        /ignoreCollisions TravisV
+                        /ignoreCollisions farmer
+                        /ignoreCollisions Leah
+                        /ignoreCollisions Haley
+                        /ignoreCollisions Emily
+                        /ignoreCollisions JeremyTSnail
+                        /addTemporaryActor Prop.Travis_Painting 16 32 47 33 0 false character
+                        /addTemporaryActor Prop.Haley_Painting 16 32 50 32 0 false character
+                        /addTemporaryActor Prop.Leah_Painting 16 32 45 32 0 false character
+                        /addTemporaryActor Prop.Emily_Painting 16 32 48 33 0 false character
+                        /addTemporaryActor 7A.Seagull.3 32 32 26 27 0 false character
+                        /speed JeremyTSnail 1
+                        /advancedMove JeremyTSnail true 3 0 1 3500 -3 0 3 3000
+                        /animate 7A.Seagull.3 false true 250 44 45 46 47
+                        /animate Emily false true 250 16 17
+                        /addConversationTopic LitD_CT_TravisPaintingParty {{Event Cooldown Length}}
+                    /endSimultaneousCommand
+                    /skippable
+                        
+                        /viewport move 0 1 5000        
+                        /pause 500
+                        /faceDirection Leah 1
+                        /emote Leah 56
+                    /speak Leah \"Alright, mine's done.#$b#I don't think I quite got the path right, but it is what it is.$h\"
+                        /stopAnimation Emily 12
+                        /pause 50
+                        /emote TravisV 212 true
+                        /faceDirection TravisV 3 true
+                        /pause 100
+                        /faceDirection Haley 3
+                        /pause 300
+                    /speak TravisV \"I for one think it's fantastic.#$b#It looks like the path to me, so I'd say it's a win.$l\"
+                        /emote Leah 20
+                        /faceDirection TravisV 1 true
+                        /pause 200
+                        /emote Emily 272 true
+                        /showFrame Emily 48
+                        /jump Emily
+                        /pause 1200
+                        /faceDirection Emily 2
+                    /speak Emily \"Yours also came out great Trav, it's soooo pretty.$h\"
+                        /emote Haley 12
+                    /speak Haley \"Emily, he paints that EVERY single time.$u\"
+                        /faceDirection Emily 1 true
+                        /emote Emily 8
+                    /speak Emily \"So? That doesn't make it any less pretty.#$b#Your cow portrait also came out amazing!$h\"
+                        /animate Emily false true 200 18 19
+                        /pause 100
+                    /textAboveHead Emily \"We all did great!\"
+                        /pause 400
+                        /jump Emily
+                        /pause 300
+                        /animate TravisV false true 250 30 31
+                        /pause 2000
+                        /emote Leah 32 true
+                        /pause 500
+                        /emote Haley 40
+                        /pause 200
+                    /speak Haley \"Girl, you just threw random paint splatters on the canvas.$s\"
+                        /pause 100 
+                        /emote Leah 240 true
+                        /pause 100
+                        /stopAnimation Emily 12
+                        /pause 100
+                        /stopAnimation TravisV 32
+                    /speak Leah \"I think you just don't understand what she was going for.$7\"
+                        /pause 100
+                        /showframe TravisV 28 true
+                    /textAboveHead TravisV \"Agreed.\"
+                        /pause 1800
+                        /showFrame Haley 0
+                        /pause 200
+                        /showFrame Haley 16
+                        /pause 200
+                        /showFrame Haley 17
+                        /emote Haley 12
+                    /speak Haley \"Uhg. Well then can you explain what I'm not understanding?$s\"
+                        /faceDirection TravisV 2
+                        /pause 100
+                        /showFrame TravisV 32
+                        /pause 50
+                        /faceDirection Emily 3 true
+                        /pause 50
+                        /showFrame Haley 12
+                    /speak TravisV \"Well clearly...$l\"
+                        /emote TravisV 244 true
+                        /animate TravisV false true 250 38 39
+                        /pause 400
+                    /speak TravisV \"Often in art, the color green represents the emotion envy.$6#$b#As the base canvas is green, the giant blue splotches represent the never ending desire for growth a mega corporation, such as Joja, craves.$a#$b#It will devour everything useful to it in its path, leaving nothing behind.$18#$b#The green could also symbolize the thoughtless destruction of nature through consumption, but that's another tangent all together.$6#$b#The orange splotches must represent the warm creative spirit, fighting back against the machine in small yet impactful ways!$12#$b#Yeah. That's definitely it!$13\"
+                        /pause 100
+                        /animate Emily false true 200 48 49
+                        /pause 200
+                        /emote Leah 224 true
+                        /pause 200
+                        /textAboveHead Haley \"*snickers*\"
+                        /pause 2300
+                    /speak TravisV \"Hey, what're y'all laughing at?$a\"
+                        /pause 100
+                        /showFrame Haley 0
+                        /pause 200
+                        /showFrame Haley 16
+                        /pause 200
+                        /showFrame Haley 17
+                    /speak Haley \"You're doing the thing.$13\"
+                        /stopAnimation Emily 12
+                    /speak TravisV \"The...?$6#$b#Oh!$u\"
+                        /showFrame Haley 12
+                        /pause 50
+                        /stopAnimation TravisV 36
+                        /pause 1000
+                        /emote TravisV 240 true
+                        /pause 300
+                        /faceDirection TravisV 0
+                        /pause 1000
+                        /emote Emily 28 true
+                        /pause 100
+                        /emote Haley 40 true
+                        /pause 100
+                        /emote Leah 8
+                    /speak Emily \"That wasn't it at all, but I appreciate the thoughtful interpretation.$h\"
+                        /showFrame TravisV 28
+                    /textAboveHead TravisV \"Oh.\"
+                        /pause 1500
+                        /emote Haley 12
+                    /speak Haley \"Are you serious? I had literally JUST understood it.$u\"
+                        /faceDirection TravisV 3 true
+                        /pause 30
+                        /faceDirection Leah 2
+                        /emote Leah 244
+                    /speak Leah \"I'm guessing it doesn't have a meaning, it's symbolic of the freedom of self expression.\"
+                        /faceDirection TravisV 1 true
+                        /pause 200
+                        /emote Emily 272 true
+                        /showFrame Emily 48
+                        /jump Emily
+                        /pause 1200
+                        /faceDirection Emily 2
+                    /speak Emily \"Eeeeexactly!$h\"
+                        /showFrame TravisV 33
+                        /emote TravisV 240 true
+                    /speak TravisV \"Oh come ooooon. That's it?$a\"
+                        /pause 100
+                        /emote Haley 12
+                    /speak Haley \"For once we're on the same page.$u\"
+                    /speak TravisV \"THE FARMER THEN APPROACHES, THEN A VOTE OCCURS\"
+
+                    /end
+                
+                "
+             }
+        }
+    ]
+}

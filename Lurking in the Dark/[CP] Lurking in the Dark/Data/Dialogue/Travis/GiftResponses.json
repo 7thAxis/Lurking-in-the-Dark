@@ -5,6 +5,9 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/TravisV",
             "Entries": 	{ 
+                //Special
+                "AcceptGift_(O)StardropTea": "{{i18n:Gifts.TravisV.StardropTea}}",
+
                 //Category response
                 "AcceptGift_category_gem" : "{{i18n:Gifts.TravisV.Cat.Gem}}",
                 "AcceptGift_category_milk" : "{{i18n:Gifts.TravisV.Cat.Milk}}",

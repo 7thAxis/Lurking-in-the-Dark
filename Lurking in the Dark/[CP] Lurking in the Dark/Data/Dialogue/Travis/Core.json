@@ -78,9 +78,13 @@
                 "Town_60_33": "{{i18n:Core.TravisV.Locations.Town.PrideFest}}",
                 "sapphicsaph_pitv.CommunityCenterPride_4_10": "{{i18n:Core.TravisV.Locations.CommunityCenter.PrideFest.{{Random:{{Range: 1, 2}}}}}}",
 
-            //Conversation Topics
+                //Conversation Topics
                 "LitD_CT_YouAttackedJeremy": "{{i18n:Core.TravisV.YouAttackedJeremy}}",
-                "LitD_CT_TravisIntroduction": "{{i18n: Core.TravisV.Introduction}}"
+                "LitD_CT_TravisIntroduction": "{{i18n: Core.TravisV.Introduction}}",
+
+                //Other Stuff
+                "DumpsterDiveComment": "{{i18n:Core.TravisV.Dumpster}}",
+                "RejectBouquet_NotDatable": "{{i18n:Core.TravisV.BouquetRejection.{{Random:{{Range: 1, 2}}}}}}"
 
             }
         },

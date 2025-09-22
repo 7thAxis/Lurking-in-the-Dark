@@ -47,6 +47,13 @@
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/Migfus20_Memories_From_You_Uncut.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
+                },
+                "LitD_Music.SunnySideUp": { 
+                    "ID": "LitD_Music.SunnySideUp",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/AlexMcCulloch_Sunny_Side_Up.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
                 }
             }
         },
