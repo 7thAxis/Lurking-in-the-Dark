@@ -219,10 +219,15 @@
             "Value": "{{Query: {{Relationship: SenS |contains=Married}} OR {{Roommate|contains=SenS}}}}"
         },
             //Senlet stuff
-        { "Name": "ShadowKidsActive", "Value": false   },
+        { "Name": "ShadowKidsActive", "Value": "Not Applicable"   },
             {
                 "Name": "ShadowKidsActive",
-                "Value": true,
+                "Value": "false",
+                "When": { "Spouse": "SenS", "Have Shadow Kids": false  }
+            },
+            {
+                "Name": "ShadowKidsActive",
+                "Value": "true",
                 "When": { "Spouse": "SenS", "Have Shadow Kids": true  }
             },
         { "Name": "UniqueChildCheck", "Value": false },
@@ -541,6 +546,13 @@
             "When": { "HasFlag": "LitD_M_AbandonedTravisWithGulls" } },
         { "Name": "Trav2HOutcome", "Value": "6",
             "When": { "HasFlag": "LitD_M_TriedToStealSeagull" } },
+        { "Name": "Trav4HReaction", "Value": "1" },
+        { "Name": "Trav4HReaction", "Value": "2",
+            "When": { 
+                "HasFlag": "LitD_M_2TravisFlirts",
+                "Relationship: Leah |contains=Dating, Engaged, Married": false,
+                "Relationship: Haley |contains=Dating, Engaged, Married": false,
+                "Relationship: Emily |contains=Dating, Engaged, Married": false } },
 
         //Other Stuff
         {

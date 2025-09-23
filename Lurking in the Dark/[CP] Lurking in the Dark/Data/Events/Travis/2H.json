@@ -314,6 +314,18 @@
                     /end
                 "
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.TravisFlirtTwice": {
+                    "Trigger": "DayStarted",
+                    "Id": "{{ModID}}_TriggerActions.TravisFlirtTwice",
+                    "Condition": "PLAYER_STAT Current LitD_M_TravisFlirt 2",
+                    "Actions": [ "AddMail Current LitD_M_2TravisFlirts received" ]
+                }
+            }
         }
     ] // O He even knows how to play cards! Lemmie show you.
 }
