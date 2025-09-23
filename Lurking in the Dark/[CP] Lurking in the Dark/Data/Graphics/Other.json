@@ -102,7 +102,7 @@
         },
         {
             "Action": "Load",
-            "Target": "Characters/Prop.Travis_Painting, Characters/Prop.Emily_Painting, Characters/Prop.Haley_Painting, Characters/Prop.Leah_Painting",
+            "Target": "Characters/Prop.Travis_Painting, Characters/Prop.Emily_Painting, Characters/Prop.Haley_Painting, Characters/Prop.Leah_Painting, Characters/Prop.Travis_PicnicBlanket",
             "FromFile": "Assets/Misc/{{TargetWithoutPath}}.png"
         },
         //EMOTE INJECT

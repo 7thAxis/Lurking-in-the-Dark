@@ -7,8 +7,12 @@
             "Entries": {
                 "TravisV": {
                     "DisplayName": "{{i18n:Core.Names.Travis}}",
+                    "FormerCharacterNames": [ "TraceV" ],
                     "HomeRegion": "Town",
-                    "Gender": "Male",
+                    "Gender": "Male", //AFAB
+                    "SpouseAdopts": "PLAYER_GENDER Current Female",
+                    "SpouseGiftJealousy": false,
+                    "SpouseGiftJealousyFriendshipChange": 0,
                     "Age": "Adult",
                     "BirthSeason": "fall",
                     "BirthDay": 8,
@@ -16,10 +20,10 @@
                     "SocialAnxiety": "Outgoing",
                     "Optimism": "Negative",
                     "CanBeRomanced": false,
-                    "LoveInterest": "", 
+                    "LoveInterest": "Coriander", 
                     "SocialTab": "UnknownUntilMet",
                     //"Calendar": "HiddenAlways",
-                    "ShakePortraits": [],
+                    "ShakePortraits": [ 30 ],
                     "PerfectionScore": "{{NPCs Included in Perfection}}",
                     "IntroductionsQuest": true,
                     "CanReceiveGifts": true,

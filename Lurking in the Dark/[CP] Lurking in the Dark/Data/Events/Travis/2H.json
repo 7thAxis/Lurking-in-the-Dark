@@ -40,7 +40,7 @@
                         /advancedMove farmer false 2 0 1 10
                         /waitForAllStationary
                         /animate TravisV false true 175 24 25 26 27
-                    /switchEvent {{ModID}}_Events.TravisV.2H.Outcome{{Trav2HOutcome}}
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Outcome.{{Trav2HOutcome}}
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.2H.Intro.2": "
@@ -68,12 +68,12 @@
                         /showFrame TravisV 33
                         /pause 1500
                         /animate TravisV false true 175 24 25 26 27
-                    /switchEvent {{ModID}}_Events.TravisV.2H.Outcome{{Trav2HOutcome}}
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Outcome.{{Trav2HOutcome}}
                     /end
                 ",
 
                 //  INTRO CHOICE OUTCOMES
-                "{{ModID}}_Events.TravisV.2H.Outcome1": "
+                "{{ModID}}_Events.TravisV.2H.Outcome.1": "
                     resetVariable
                         /pause 200
                         /speak TravisV \"Thanks for the help with those gulls!$h#$b#They sure one hardcore group of fellas.$6\"
@@ -83,7 +83,7 @@
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
-                "{{ModID}}_Events.TravisV.2H.Outcome2": "
+                "{{ModID}}_Events.TravisV.2H.Outcome.2": "
                     resetVariable
                         /pause 200
                         /speak TravisV \"Thanks for help with those gulls...$6#$b#I sure hope ya didn't tell anybody about that.$s\"
@@ -93,7 +93,7 @@
                     /switchEvent{{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
-                "{{ModID}}_Events.TravisV.2H.Outcome3": "
+                "{{ModID}}_Events.TravisV.2H.Outcome.3": "
                     resetVariable
                         /pause 200
                         /speak TravisV \"Oh yeah, sorry trying to join that seagull gang didn't work out.$6#$b#Ya seem like you're too good for 'em anyway.#h\"
@@ -103,7 +103,7 @@
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
-                "{{ModID}}_Events.TravisV.2H.Outcome4": "
+                "{{ModID}}_Events.TravisV.2H.Outcome.4": "
                     resetVariable
                         /pause 200
                         /speak TravisV \"Oh yeah, sorry trying to join that seagull gang didn't work out.$6#$b#I think they're missing out on a prime candidate.$h\"
@@ -113,7 +113,7 @@
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
-                "{{ModID}}_Events.TravisV.2H.Outcome5": "
+                "{{ModID}}_Events.TravisV.2H.Outcome.5": "
                     resetVariable
                         /pause 200
                         /speak TravisV \"Oh, and do I hope you're happy with yourself.$a#$b#Those seagulls threatened to poke out my eye if I didn't play for 'em all night!$14#$b#My fingers? Dead. Tired.$a\"
@@ -123,7 +123,7 @@
                     /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
-                "{{ModID}}_Events.TravisV.2H.Outcome6": "
+                "{{ModID}}_Events.TravisV.2H.Outcome.6": "
                     resetVariable
                         /pause 200
                         /speak TravisV \"I can't believe you tried to grab one of them gulls...$6#$b#Glad to see you still got two eyes!$h\"
@@ -208,16 +208,16 @@
                         /pause 400
                         /faceDirection farmer 1
                         /advancedMove TravisV false 2 0 1 10
-                    /speak TravisV \"Aye, there's my big buddy.$l#$b#Don't mind him, he just moves at a...$9#$b#...snail's pace.$8\" 
+                    /speak TravisV \"Aye, there's my big buddy.$l#$b#Don't mind him, he just moves at a...$9#$b#...snail's pace.$24\" 
                         /quickQuestion # That's not even a pun, that's just literal. # Absolutely snail-arious. # Are we going to ignore the elephant in the room?
                         (break)emote TravisV 56
-                            \\speak TravisV \"Oh don't be so uptight, farmer.$9#$b#Have ya ever thought about coming outta your shell a little?$8\"
+                            \\speak TravisV \"Oh don't be so uptight, farmer.$9#$b#Have ya ever thought about coming outta your shell a little?$24\"
                             \\emote farmer 40 true
                         (break)emote TravisV 224
                             \\speak TravisV \"Aye! You've s-nailed it with that one!$8\"
                             \\emote farmer 224 true
                         (break)emote farmer 228 true
-                            \\startJittering\\jump farmer\\showFrame farmer 94\\pause 1800\\stopJittering\\faceDirection farmer 1\\speak TravisV \"Eh? I don't see any elephants, farmer.$9#$b#I think you need to get your eyes checked. Perhaps you should shell out for a good pair of glasses?$8\"\\emote farmer 240 true
+                            \\startJittering\\jump farmer\\showFrame farmer 94\\pause 1800\\stopJittering\\faceDirection farmer 1\\speak TravisV \"Eh? I don't see any elephants, farmer.$24#$b#I think you need to get your eyes checked. Perhaps you should shell out for a good pair of glasses?$8\"\\emote farmer 240 true
                         /advancedMove farmer false 2 0 2 10
                         /waitForAllStationary
                     /speak TravisV \"So, yeah. This is Jeremy. Say hi Jeremy.$l\"

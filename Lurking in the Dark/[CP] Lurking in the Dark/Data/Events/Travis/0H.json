@@ -304,7 +304,7 @@
                         /stopAnimation 7A.Seagull.2 8
                         /stopAnimation 7A.Seagull.4 0
                         /pause 75
-                        /showframe 7A.Seagull.3 12
+                        /showFrame 7A.Seagull.3 12
                         /faceDirection 7A.Seagull.1 1 true
                         /faceDirection 7A.Seagull.2 1 true
                         /faceDirection 7A.Seagull.4 1 true
@@ -468,7 +468,7 @@
                         /emote farmer 28
                         /faceDirection TravisV 1
                         /faceDirection farmer 3
-                    /speak TravisV \"...Is that what they mean by 'if you can't beat em, join em'?$11#$b#But don't ya gotta at least try to beat 'em first?$6\"
+                    /speak TravisV \"...Is that what they mean by 'if you can't beat em, join em'?$24#$b#But don't ya gotta at least try to beat 'em first?$6\"
                         /switchEvent {{ModID}}_Events.TravisV.0H.Closing
                     
                     /end
@@ -621,7 +621,7 @@
                         /pause 500
                         /emote TravisV 56
                     /speak TravisV \"Well, thanks for the rescue buckaroo.$l#$b#Don't tell anybody you saw that, aye?$6\"
-                    /quickQuestion #I didn't see anything.#Can't make any promises.(break)stopAnimation TravisV 32\\emote farmer 212\\speak TravisV \"Thanks and thanks. You're a real pal, farmer.$9#$b#Feel free to drop by my place sometime.$l\"\\action AddMail Current LitD_M_HelpedTravWithGulls received(break)emote farmer 216\\stopAnimation TravisV 34\\speak TravisV \"Eh? What are ya, the paparazzi?$a#$b#I guess that would explain hiding behind that 'ol rock over there.$s\"\\emote TravisV 40\\action AddMail Current LitD_M_GonnaTellEveryone received
+                    /quickQuestion #I didn't see anything.#Can't make any promises.(break)stopAnimation TravisV 32\\emote farmer 212\\speak TravisV \"Thanks and thanks. You're a real pal, farmer.$9#$b#Feel free to drop by my place sometime.$l\"\\action AddMail Current LitD_M_HelpedTravWithGulls received(break)emote farmer 216\\stopAnimation TravisV 34\\speak TravisV \"Eh? What are ya, the paparazzi?$a#$b#I guess that would explain hiding behind that 'ol rock over there.$22\"\\emote TravisV 40\\action AddMail Current LitD_M_GonnaTellEveryone received
                         /pause 300
                     /textAboveHead TravisV \"Guess I'll catch ya around, bud.\"
                         /pause 1000
@@ -641,11 +641,11 @@
 
 /* 
 
-* - FD AFD MOVE 
-^ - 0 | 4 | -
-v - 2 | 2 | +
-< - 3 | 3 | -
-> - 1 | 1 | +
+* - FD AFD MOVE AX
+^ - 0 | 4 | - | y
+v - 2 | 2 | + | y
+< - 3 | 3 | - | x
+> - 1 | 1 | + | x
 
 patch reload DN.SnS Data/Events/HeartEvents_Val.json
 
