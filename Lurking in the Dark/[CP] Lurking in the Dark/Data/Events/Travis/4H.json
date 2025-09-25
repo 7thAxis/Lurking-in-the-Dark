@@ -328,7 +328,7 @@
                                 \\emote Haley 12
                         (break)action AddMail Current LitD_M_VotedForEmily received
                                 \\emote Emily 272 true\\jump Emily\\pause 200
-                            \\speak Emily \"Oh! Yippee! I'm glad you think so, @.#$b#I poured my whole art and soul into this one!$h\"
+                            \\speak Emily \"Oh! Yippee! I'm glad you think so, @.#$b#I poured my whole heart and soul into this one!$h\"
                                 \\faceDirection Haley 3 true
                                 \\emote Haley 12 true
                             \\speak Haley \"What? It's literally JUST a paint splatter.$u\"
