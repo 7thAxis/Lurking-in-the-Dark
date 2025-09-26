@@ -11,8 +11,8 @@
                     /beginSimultaneousCommand
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
-                        /addConversationTopic LitD_CT_TownEncounter {{Event Cooldown Length}}
-                        /AddMail Current LitD_M_SeenTravisEventToday received
+                        /addConversationTopic LitD_CT_TownEncounter 2
+                        /action AddMail Current LitD_M_SeenTravisEventToday received
                     /endSimultaneousCommand
 
                         /advancedMove farmer false 7 0 3 10

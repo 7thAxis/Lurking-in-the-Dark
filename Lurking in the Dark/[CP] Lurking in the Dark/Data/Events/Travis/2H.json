@@ -12,8 +12,8 @@
                         /beginSimultaneousCommand
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
-                        /addConversationTopic LitD_CT_TravisHouseHangout {{Event Cooldown Length}}
-                        /AddMail Current LitD_M_SeenTravisEventToday received
+                        /addConversationTopic LitD_CT_TravisHouseHangout 2
+                        /action AddMail Current LitD_M_SeenTravisEventToday received
                     /endSimultaneousCommand
                     /skippable
                         /pause 200

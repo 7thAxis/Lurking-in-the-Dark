@@ -26,8 +26,8 @@
                         /advancedMove JeremyTSnail true 3 0 1 3500 -3 0 3 3000
                         /animate 7A.Seagull.3 false true 250 44 45 46 47
                         /animate Emily false true 250 16 17
-                        /AddMail Current LitD_M_SeenTravisEventToday received
-                        /addConversationTopic LitD_CT_TravisPaintAndSip {{Event Cooldown Length}}
+                        /action AddMail Current LitD_M_SeenTravisEventToday received
+                        /addConversationTopic LitD_CT_TravisPaintAndSip 2
                     /endSimultaneousCommand
                     /skippable
                         

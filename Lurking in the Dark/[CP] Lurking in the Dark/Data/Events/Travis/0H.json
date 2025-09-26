@@ -20,8 +20,8 @@
                         /advancedMove 7A.Seagull.4 true -1 0 3 1000 1 0 1 1000/
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
-                        /AddMail Current LitD_M_SeenTravisEventToday received
-                        /addConversationTopic LitD_CT_TravisMet {{Event Cooldown Length}}
+                        /action AddMail Current LitD_M_SeenTravisEventToday received
+                        /addConversationTopic LitD_CT_TravisMet 2
                     /endSimultaneousCommand
                     /skippable     
 
