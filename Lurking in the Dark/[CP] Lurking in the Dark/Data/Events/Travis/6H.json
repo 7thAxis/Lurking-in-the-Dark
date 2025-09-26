@@ -6,14 +6,25 @@
             "Entries": {
                 "{{ModID}}_Events.TravisV.6H.P1": "
                     continue
-                    /47 29
-                    /TravisV 47 34 0 farmer 42 49 2
+                    /20 94
+                    /TravisV -1000 -1000 2 farmer 15 91 1
                     /beginSimultaneousCommand
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
                         /addConversationTopic LitD_CT_TownEncounter {{Event Cooldown Length}}
                         /AddMail Current LitD_M_SeenTravisEventToday received
                     /endSimultaneousCommand
+
+                        /advancedMove farmer false 7 0 3 10
+                        /pause 2000
+                        /showFrame TravisV 33
+                        /playSound doorClose
+                        /warp TravisV 20 89 true
+                        /pause 50
+                        /emote TravisV 40 true
+
+
+                    /speak TravisV \"Placeholder uwu\"
                 "
             }
         }

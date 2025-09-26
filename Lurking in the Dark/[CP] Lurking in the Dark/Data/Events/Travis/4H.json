@@ -431,17 +431,17 @@
                         /message \"The girls spent a half an hour chasing Travis around with a paint brush.#...He probably deserved it.\"
                     /end
                 "
-             },
-            {
-                "Action": "EditData",
-                "Target": "Data/TriggerActions",
-                "Entries": {
-                    "{{ModID}}_TriggerActions.TravisFlirtThrice": {
-                        "Trigger": "DayStarted",
-                        "Id": "{{ModID}}_TriggerActions.TravisFlirtThrice",
-                        "Condition": "PLAYER_STAT Current LitD_M_TravisFlirt 3",
-                        "Actions": [ "AddMail Current LitD_M_3TravisFlirts received" ]
-                    }
+             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.TravisFlirtThrice": {
+                    "Trigger": "DayStarted",
+                    "Id": "{{ModID}}_TriggerActions.TravisFlirtThrice",
+                    "Condition": "PLAYER_STAT Current LitD_M_TravisFlirt 3",
+                    "Actions": [ "AddMail Current LitD_M_3TravisFlirts received" ]
                 }
             }
         }
