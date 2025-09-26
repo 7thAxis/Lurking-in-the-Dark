@@ -10,17 +10,18 @@
                     /22 105
                     /TravisV 22 112 2 farmer 31 108 0
                     /beginSimultaneousCommand
-                    /animate TravisV false true 250 16 17 18 19
-                    /addTemporaryActor 7A.Seagull.1 32 32 16 113 2 false character
-                    /addTemporaryActor 7A.Seagull.2 32 32 28 116 2 false character
-                    /addTemporaryActor 7A.Seagull.3 32 32 27 111 3 false character
-                    /addTemporaryActor 7A.Seagull.4 32 32 18 108 3 false character
-                    /animate 7A.Seagull.1 false true 300 24 25
-                    /animate 7A.Seagull.3 true true 600 28 29
-                    /advancedMove 7A.Seagull.4 true -1 0 3 1000 1 0 1 1000/
-                    /ignoreCollisions TravisV
-                    /ignoreCollisions farmer
-                    /addConversationTopic LitD_CT_TravisMet {{Event Cooldown Length}}
+                        /animate TravisV false true 250 16 17 18 19
+                        /addTemporaryActor 7A.Seagull.1 32 32 16 113 2 false character
+                        /addTemporaryActor 7A.Seagull.2 32 32 28 116 2 false character
+                        /addTemporaryActor 7A.Seagull.3 32 32 27 111 3 false character
+                        /addTemporaryActor 7A.Seagull.4 32 32 18 108 3 false character
+                        /animate 7A.Seagull.1 false true 300 24 25
+                        /animate 7A.Seagull.3 true true 600 28 29
+                        /advancedMove 7A.Seagull.4 true -1 0 3 1000 1 0 1 1000/
+                        /ignoreCollisions TravisV
+                        /ignoreCollisions farmer
+                        /AddMail Current LitD_M_SeenTravisEventToday received
+                        /addConversationTopic LitD_CT_TravisMet {{Event Cooldown Length}}
                     /endSimultaneousCommand
                     /skippable     
 

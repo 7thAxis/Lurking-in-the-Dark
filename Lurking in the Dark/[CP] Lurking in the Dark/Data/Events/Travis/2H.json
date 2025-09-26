@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/7thAxis.LitD_Maps.Travis_House_Interior",
             "Entries": {
-                "{{ModID}}_Events.TravisV.2H/e {{ModID}}_Events.TravisV.0H/f TravisV 500/A LitD_CT_TravisMet": "
+                "{{ModID}}_Events.TravisV.2H/e {{ModID}}_Events.TravisV.0H/f TravisV 500/!n LitD_M_SeenTravisEventToday": "
                     LitD_Music.TravisHouse
                     /7 19
                     /TravisV 6 21 2 farmer 4 16 2 JeremyTSnail 999 999 0
@@ -13,6 +13,7 @@
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
                         /addConversationTopic LitD_CT_TravisHouseHangout {{Event Cooldown Length}}
+                        /AddMail Current LitD_M_SeenTravisEventToday received
                     /endSimultaneousCommand
                     /skippable
                         /pause 200

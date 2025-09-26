@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": { 
-                "{{ModID}}_Events.TravisV.4H/e {{ModID}}_Events.TravisV.2H/t 1200 1800/f TravisV 1000/A LitD_CT_TravisHouseHangout": "
+                "{{ModID}}_Events.TravisV.4H/e {{ModID}}_Events.TravisV.2H/t 1200 1800/f TravisV 1000/!n LitD_M_SeenTravisEventToday": "
                   LitD_Music.SunnySideUp
                     /47 29
                     /TravisV 47 34 0 Haley 50 33 0 Emily 48 34 0 Leah 45 33 0 farmer 42 49 2 JeremyTSnail 52 39 1
@@ -26,6 +26,7 @@
                         /advancedMove JeremyTSnail true 3 0 1 3500 -3 0 3 3000
                         /animate 7A.Seagull.3 false true 250 44 45 46 47
                         /animate Emily false true 250 16 17
+                        /AddMail Current LitD_M_SeenTravisEventToday received
                         /addConversationTopic LitD_CT_TravisPaintAndSip {{Event Cooldown Length}}
                     /endSimultaneousCommand
                     /skippable
@@ -430,8 +431,19 @@
                         /message \"The girls spent a half an hour chasing Travis around with a paint brush.#...He probably deserved it.\"
                     /end
                 "
-
-             }
+             },
+            {
+                "Action": "EditData",
+                "Target": "Data/TriggerActions",
+                "Entries": {
+                    "{{ModID}}_TriggerActions.TravisFlirtThrice": {
+                        "Trigger": "DayStarted",
+                        "Id": "{{ModID}}_TriggerActions.TravisFlirtThrice",
+                        "Condition": "PLAYER_STAT Current LitD_M_TravisFlirt 3",
+                        "Actions": [ "AddMail Current LitD_M_3TravisFlirts received" ]
+                    }
+                }
+            }
         }
     ]
 }

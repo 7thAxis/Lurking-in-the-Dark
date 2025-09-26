@@ -1,0 +1,23 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "{{ModID}}_Events.TravisV.6H.P1": "
+                    continue
+                    /47 29
+                    /TravisV 47 34 0 farmer 42 49 2
+                    /beginSimultaneousCommand
+                        /ignoreCollisions TravisV
+                        /ignoreCollisions farmer
+                        /addConversationTopic LitD_CT_TownEncounter {{Event Cooldown Length}}
+                        /AddMail Current LitD_M_SeenTravisEventToday received
+                    /endSimultaneousCommand
+                "
+            }
+        }
+    ]
+}
+
+//!n LitD_M_SeenTravisEventToday

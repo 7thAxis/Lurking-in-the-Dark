@@ -59,7 +59,8 @@
                     "RemoveMail Current LitD_M_TravisV_OverrideSeenToday",                    
                     "RemoveMail Current LitD_M_GotTravisCoffeeToday",
                     "RemoveMail Current LitD_M_AttackedJeremyToday",
-                    "RemoveMail Current LitD_M_AcceptedVoidSnailQuestToday" ]
+                    "RemoveMail Current LitD_M_AcceptedVoidSnailQuestToday",
+                    "RemoveMail Current LitD_M_SeenTravisEventToday" ]
                 }
             }
         }
