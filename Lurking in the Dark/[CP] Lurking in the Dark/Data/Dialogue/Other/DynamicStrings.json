@@ -49,13 +49,22 @@
         { 
             "Action": "EditData",
             "Target": "Strings/LitD/DynamicEventStrings",
-            "Entries": { "TravisV.IntroReaction": "Sooo... I've noticed ya got a real habit of flirtin' with me.$24" }
+            "Entries": { 
+                "TravisV.IntroReaction": "Sooo... I've noticed ya got a real habit of flirtin' with me.$24",
+                "TravisV.Homewrecker": "I hope you don't take this the wrong way, but I uh...$21#$b#...would rather take the time to get to know one another first if that's alright?$29"
+             }
         },
         { 
             "Action": "EditData",
             "Target": "Strings/LitD/DynamicEventStrings",
             "Entries": { "TravisV.IntroReaction": "So I know our initial interactions were a little awkward, but...$6#$b#I've noticed ya got a real habit of flirtin' with me.$24" },
             "When": { "HasFlag": "LitD_M_GonnaTellEveryone, LitD_M_AbandonedTravisWithGulls" }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Strings/LitD/DynamicEventStrings",
+            "Entries": { "TravisV.Homewrecker": "I hope you don't take this the wrong way, but I uh...$21#$b#...Aren't you married?$29#$b#I'd rather not be a homewrecker. Again.$22" },
+            "When": { "HasFlag |containts=LitD_M_YouAreMarried": false }
         }
     ]
 }

@@ -125,7 +125,7 @@
                         /emote TravisV 28
                         /pause 50
                         /showFrame TravisV 36
-                    /speak TravisV \"I hope you don't take this the wrong way, but I uh...$21#$b#...would rather take the time to get to know one another first if that's alright?$29\"
+                    /speak TravisV \"[LocalizedText Strings/LitD/DynamicEventStrings:TravisV.Homewrecker]\"
                         /showFrame TravisV 4
                         /pause 100
                         /emote farmer 28
@@ -211,6 +211,26 @@
                 /end
                 ",
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.ApplyRelationshipFlag": {
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Id": "{{ModID}}_TriggerActions.ApplyRelationshipFlag",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Any Engaged Married",
+                    "Actions": [ "AddMail Current LitD_M_YouAreMarried received" ]
+                },
+                "{{ModID}}_TriggerActions.RemoveRelationshipFlag": {
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Id": "{{ModID}}_TriggerActions.RemoveRelationshipFlag",
+                    "Condition": "!PLAYER_NPC_RELATIONSHIP Current Any Engaged Married",
+                    "Actions": [ "RemoveMail Current LitD_M_YouAreMarried received" ]
+                },
+            }
         }
     ]
-}
+} // 

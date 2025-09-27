@@ -532,13 +532,16 @@
                 "HasFlag": "LitD_M_2TravisFlirts",
                 "Relationship: Leah |contains=Dating, Engaged, Married": false,
                 "Relationship: Haley |contains=Dating, Engaged, Married": false,
-                "Relationship: Emily |contains=Dating, Engaged, Married": false } },
+                "Relationship: Emily |contains=Dating, Engaged, Married": false,
+                "HasFlag |containts=LitD_M_YouAreMarried": false
+            } },
     
         { "Name": "Trav6Question", "Value": "Platonic" },
         { "Name": "Trav6Question", "Value": "Romantic",
             "When": {
                 "HasFlag": "LitD_M_3TravisFlirts",
-                "HasFlag |contains=LitD_M_RejectedTravis": false
+                "HasFlag |contains=LitD_M_RejectedTravis": false,
+                "HasFlag |containts=LitD_M_YouAreMarried": false
              } },
         { "Name": "AskOutTravis", "Value": "1"},
         { "Name": "AskOutTravis", "Value": "2",
@@ -550,6 +553,9 @@
             "When": {
                 "HasFlag |contains=LitD_M_3TravisFlirts": false,
                 "HasFlag |contains=LitD_M_GonnaTellEveryone, LitD_M_AbandonedTravisWithGulls, LitD_M_RejectedTravis": true
+            } },
+        { "Name": "AskOutTravis", "Value": "2",
+            "When": { "HasFlag |containts=LitD_M_YouAreMarried": true 
             } },
 
         //Other Stuff
