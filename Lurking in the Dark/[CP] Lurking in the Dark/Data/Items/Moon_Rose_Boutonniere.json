@@ -1,0 +1,66 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_Items.MoonRoseBoutonniere": {
+                    "Name": "{{ModID}}_Items.MoonRoseBoutonniere",
+                    "DisplayName": "Moon Rose Boutonniere",
+                    "Description": "A boutonniere, lovingly crafted from a rare moon rose.\n\nApplies buff \"It's Raining Somewhere Else\".\n+1 Magnetic Radius\n+1 Luck\n+25 Stamina",
+                    "Type": "Ring",
+                    "Category": -96,
+                    "Price": 5252,
+                    "Edibility": -300,
+                    "Buff": null,
+                    "IsDrink": false,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [ "color_white", "ring_item" ],
+                    "Texture": "Textures/7thAxis.LitD/Objects ",
+                    "SpriteIndex": 9
+                }
+            }
+        }, 
+        //Equip Actions
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.EquipMRB": {
+                    "Id": "{{ModID}}_TriggerActions.EquipMRB",
+                    "MarkActionApplied": false,
+                    "Trigger": "Spiderbuttons.BETAS_ItemEquipped",
+                    "Condition": "ITEM_ID Target (O){{ModID}}_Items.MoonRoseBoutonniere",
+                    "Actions": [ "AddBuff {{ModID}}_Buffs.ItsRainingSomewhereElse -2" ]
+                },
+                "{{ModID}}_TriggerActions.UnequipMRB": {
+                    "Id": "{{ModID}}_TriggerActions.UnequipMRB",
+                    "MarkActionApplied": false,
+                    "Trigger": "Spiderbuttons.BETAS_ItemUnequipped",
+                    "Condition": "ITEM_ID Target (O){{ModID}}_Items.MoonRoseBoutonniere",
+                    "Actions": [ "RemoveBuff {{ModID}}_Buffs.ItsRainingSomewhereElse" ]
+                }
+            }
+        },
+        {
+            "LogName": "Custom Buffs",
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModID}}_Buffs.ItsRainingSomewhereElse": {
+                    "DisplayName": "It's Raining Somewhere Else <",
+                    "Description": "Someone cares for you deeply.\n",
+                    "IsDebuff": false,
+                    "IconTexture": "Textures/7thAxis.LitD/Objects",
+                    "IconSpriteIndex": 9,
+                    "Effects": {
+                        "LuckLevel": 1.0,
+                        "MaxStamina": 25.0,
+                        "MagneticRadius": 1.0
+                    }
+                }
+            }
+        }
+    ]
+}

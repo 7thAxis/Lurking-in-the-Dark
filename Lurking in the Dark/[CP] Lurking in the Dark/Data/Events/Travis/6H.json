@@ -4,7 +4,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
-                "{{ModID}}_Events.TravisV.6H.P1": "
+                "{{ModID}}_Events.TravisV.6H.P1/e {{ModID}}_Events.TravisV.4H/t 1200 1800/f TravisV 1500/!n LitD_M_SeenTravisEventToday": "
                     LitD_Music.TravisHouse
                     /20 90
                     /TravisV -1000 -1000 2 farmer 16 91 1
@@ -59,7 +59,9 @@
                         /showFrame TravisV 33 true
                     /speak TravisV \"[LocalizedText Strings/LitD/DynamicEventStrings:TravisV.IntroReaction]\"
                         /showFrame TravisV 4
-                        /pause 500
+                        /pause 300
+                        /emote farmer 60
+                        /emote TravisV 56 
                     /speak TravisV \"Would you like to hit the Stardrop Saloon for a bite to eat sometime?$11#$b#I'd love a chance to get to know you a little better.$9\"
                     /quickQuestion Have lunch with Travis? #Sure, but as friends. # Me too... Let's make it a date. <
 
@@ -149,9 +151,49 @@
                     ",
                 "{{ModID}}_Events.TravisV.6H.P1.C2": "
                 resetVariable
-                    /speak TravisV \"C2\"
+                        /pause 500
+                        /advancedMove TravisV false 1 0 1 10
+                        /proceedPosition TravisV
+                        /pause 500
+                        /showFrame TravisV 48
+                        /positionOffset TravisV 5 0
+                        /pause 30
+                        /positionOffset TravisV 5 0
+                        /pause 30
+                        /showframe farmer 89 true
+                        /shake TravisV 300
+                        /pause 100
+                        /startJittering
+                        /pause 100
+                        /playSound dwop
+                        /pause 100
+                        /StopJittering
+                    /message \"Travis gently takes your hands and slips something into your palms...\"
+                        /emote farmer 8
+                        /action AddItem (O){{ModID}}_Items.MoonRoseBoutonniere 1 
+                        /positionOffset TravisV -5 0
+                        /pause 30
+                        /positionOffset TravisV -5 0
+                        /pause 30
+                        /showFrame TravisV 4
+                        /faceDirection farmer 3
+                    /speak TravisV \"See you soon, @...$9\"
+                        /emote TravisV 280
+                        /pause 200
+                        /advancedMove TravisV false 0 -1 6 0 0 -10 4 10
+                        /pause 700
+                        /faceDirection farmer 0
+                        /pause 300
+                        /faceDirection farmer 1 true
+                        /emote farmer 20
+                        /pause 800
+                        /globalFade 0.012
+                        /viewport -1000 -1000
+                        /action AddMail Current LitD_M_ReceivedMoonRoseBoutonniere received
+                    /message \"Looks like I got a date at the Saloon this week...\"
+                    
                 /end
-                    ",
+                ",
                 "{{ModID}}_Events.TravisV.6H.P1.C3": "
                 resetVariable
                         /speed TravisV 3
@@ -167,11 +209,8 @@
                         /viewport -1000 -1000
                     /message \"Well. That sure was awkward.\"
                 /end
-                    ",
+                ",
             }
         }
     ]
 }
-
-//!n LitD_M_SeenTravisEventToday
-//So I know our initial interactions were a little awkward, but...#$b#I've noticed ya got a real habit of flirtin' with me.

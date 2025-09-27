@@ -11,6 +11,7 @@
 	"Dependencies": [
 		{ "UniqueID": "7thAxis.LitD.SMAPI", "IsRequired": true },
 		{ "UniqueID": "LemurKat.EastScarp", "IsRequired": true },
-		{ "UniqueID": "mushymato.TrinketTinker", "IsRequired": true }
+		{ "UniqueID": "mushymato.TrinketTinker", "IsRequired": true },
+		{ "UniqueID": "Spiderbuttons.BETAS", "IsRequired": true }
 	]
 }
