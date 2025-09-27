@@ -650,7 +650,11 @@ v - 2 | 2 | + | y
 
 patch reload DN.SnS Data/Events/HeartEvents_Val.json
 
-quickQuestion Q #A # B(break)AAA(break)BBB
+quickQuestion Q #A # B
+    (break)AAA
+    (break)BBB
+
+any command that ends with JUST an NPC name (such as jump NPC) will break when using breaklines, so be sure to surround it
 
 advancedMove true/false (loop) parameters
 

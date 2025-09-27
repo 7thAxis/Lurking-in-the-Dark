@@ -533,6 +533,24 @@
                 "Relationship: Leah |contains=Dating, Engaged, Married": false,
                 "Relationship: Haley |contains=Dating, Engaged, Married": false,
                 "Relationship: Emily |contains=Dating, Engaged, Married": false } },
+    
+        { "Name": "Trav6Question", "Value": "Platonic" },
+        { "Name": "Trav6Question", "Value": "Romantic",
+            "When": {
+                "HasFlag": "LitD_M_3TravisFlirts",
+                "HasFlag |contains=LitD_M_RejectedTravis": false
+             } },
+        { "Name": "AskOutTravis", "Value": "1"},
+        { "Name": "AskOutTravis", "Value": "2",
+            "When": {
+                "HasFlag |contains=LitD_M_2TravisFlirts": false,
+                "HasFlag |contains=LitD_M_GonnaTellEveryone, LitD_M_AbandonedTravisWithGulls": true
+            } },
+        { "Name": "AskOutTravis", "Value": "2",
+            "When": {
+                "HasFlag |contains=LitD_M_3TravisFlirts": false,
+                "HasFlag |contains=LitD_M_GonnaTellEveryone, LitD_M_AbandonedTravisWithGulls, LitD_M_RejectedTravis": true
+            } },
 
         //Other Stuff
         {

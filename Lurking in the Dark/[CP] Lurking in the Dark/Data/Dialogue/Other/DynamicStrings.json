@@ -45,6 +45,17 @@
                 "IndoorJoke": "{{i18n:Relationship.SenS.ID.3.{{Random:{{Range: 1, 3}}|key=SenSR38}}}}",
                 "SDay19": "{{i18n:Rand.SenS.SDay19.{{Random:{{Range: 1, 3}}|key=SenSR39}}}}"
             }
-		}
+		},
+        { 
+            "Action": "EditData",
+            "Target": "Strings/LitD/DynamicEventStrings",
+            "Entries": { "TravisV.IntroReaction": "Sooo... I've noticed ya got a real habit of flirtin' with me.$24" }
+        },
+        { 
+            "Action": "EditData",
+            "Target": "Strings/LitD/DynamicEventStrings",
+            "Entries": { "TravisV.IntroReaction": "So I know our initial interactions were a little awkward, but...$6#$b#I've noticed ya got a real habit of flirtin' with me.$24" },
+            "When": { "HasFlag": "LitD_M_GonnaTellEveryone, LitD_M_AbandonedTravisWithGulls" }
+        }
     ]
 }

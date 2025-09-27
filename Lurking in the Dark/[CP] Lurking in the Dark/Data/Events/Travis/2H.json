@@ -323,7 +323,7 @@
                 "{{ModID}}_TriggerActions.TravisFlirtTwice": {
                     "Trigger": "DayStarted",
                     "Id": "{{ModID}}_TriggerActions.TravisFlirtTwice",
-                    "Condition": "PLAYER_STAT Current LitD_M_TravisFlirt 2",
+                    "Condition": "PLAYER_STAT Current LitD.TravisFlirt 2",
                     "Actions": [ "AddMail Current LitD_M_2TravisFlirts received" ]
                 }
             }

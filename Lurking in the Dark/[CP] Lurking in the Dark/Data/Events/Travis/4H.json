@@ -440,7 +440,7 @@
                 "{{ModID}}_TriggerActions.TravisFlirtThrice": {
                     "Trigger": "DayStarted",
                     "Id": "{{ModID}}_TriggerActions.TravisFlirtThrice",
-                    "Condition": "PLAYER_STAT Current LitD_M_TravisFlirt 3",
+                    "Condition": "PLAYER_STAT Current LitD.TravisFlirt 3",
                     "Actions": [ "AddMail Current LitD_M_3TravisFlirts received" ]
                 }
             }
