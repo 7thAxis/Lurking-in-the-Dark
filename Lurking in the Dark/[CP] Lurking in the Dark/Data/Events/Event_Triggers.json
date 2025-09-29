@@ -1,0 +1,55 @@
+{
+    "Changes": [
+        {
+            "LogName": "Trigger Actions for Travis Events",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_TriggerActions.TravisFlirtTwice": {
+                    "Trigger": "DayStarted",
+                    "Id": "{{ModID}}_TriggerActions.TravisFlirtTwice",
+                    "MarkActionApplied": false,
+                    "Condition": "PLAYER_STAT Current LitD.TravisFlirt 2",
+                    "Actions": [ "AddMail Current LitD_M_2TravisFlirts received" ]
+                },
+                "{{ModID}}_TriggerActions.TravisFlirtThrice": {
+                    "Trigger": "DayStarted",
+                    "Id": "{{ModID}}_TriggerActions.TravisFlirtThrice",
+                    "Condition": "PLAYER_STAT Current LitD.TravisFlirt 3",
+                    "MarkActionApplied": false,
+                    "Actions": [ "AddMail Current LitD_M_3TravisFlirts received" ]
+                },
+                "{{ModID}}_TriggerActions.ApplyRelationshipFlag": {
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Id": "{{ModID}}_TriggerActions.ApplyRelationshipFlag",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Any Engaged Married",
+                    "Actions": [ "AddMail Current LitD_M_YouAreMarried received" ]
+                },
+                "{{ModID}}_TriggerActions.RemoveRelationshipFlag": {
+                    "Trigger": "DayStarted",
+                    "MarkActionApplied": false,
+                    "Id": "{{ModID}}_TriggerActions.RemoveRelationshipFlag",
+                    "Condition": "!PLAYER_NPC_RELATIONSHIP Current Any Engaged Married",
+                    "Actions": [ "RemoveMail Current LitD_M_YouAreMarried received" ]
+                }
+            }
+        },
+        {
+            "LogName": "Trigger Actions for Sen Events",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}.CP.TriggerActions.SenGardenTrigger": {
+                    "Trigger": "DayEnding",
+                    "Id": "{{ModID}}.TriggerActions.SenGardenTrigger",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.6h.P1, PLAYER_HAS_MAIL Current LitD_M_AGardenForSenComplete Received, !PLAYER_HAS_MAIL Current LitD_M_SenGardenTrigger Received",
+                    "Actions": [
+                        "AddConversationTopic LitD_CT_GardenWaitTime {{Event Cooldown Length}}",
+                        "AddMail Current LitD_M_SenGardenTrigger"
+                    ]
+                }
+            }
+        }
+    ]
+}

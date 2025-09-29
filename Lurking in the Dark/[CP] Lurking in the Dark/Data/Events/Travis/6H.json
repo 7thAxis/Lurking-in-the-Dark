@@ -1,6 +1,8 @@
 {
     "Changes": [
         {
+    //PART 1  
+            "LogName": "Travis 6H P1",
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
@@ -212,25 +214,106 @@
                 ",
             }
         },
-        {
+    //PART 2
+    {
+            "LogName": "Travis 6H P2",
             "Action": "EditData",
-            "Target": "Data/TriggerActions",
+            "Target": "Data/Events/Saloon",
             "Entries": {
-                "{{ModID}}_TriggerActions.ApplyRelationshipFlag": {
-                    "Trigger": "DayStarted",
-                    "MarkActionApplied": false,
-                    "Id": "{{ModID}}_TriggerActions.ApplyRelationshipFlag",
-                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Any Engaged Married",
-                    "Actions": [ "AddMail Current LitD_M_YouAreMarried received" ]
-                },
-                "{{ModID}}_TriggerActions.RemoveRelationshipFlag": {
-                    "Trigger": "DayStarted",
-                    "MarkActionApplied": false,
-                    "Id": "{{ModID}}_TriggerActions.RemoveRelationshipFlag",
-                    "Condition": "!PLAYER_NPC_RELATIONSHIP Current Any Engaged Married",
-                    "Actions": [ "RemoveMail Current LitD_M_YouAreMarried received" ]
-                },
-            }
-        }
+                "{{ModID}}_Events.TravisV.6H.P2": "
+                  LitD_Music.Blues
+                    /14 21
+                    /TravisV 9 5 3 farmer 14 24 0  Emily 11 10 2 Gus 8 6 1 Pam 7 19 1 Shane 21 17 2 Elliott 3 19 2 Leah 5 20 3 Lewis 6 17 1 Marnie 5 17 3 Demetrius 25 22 1 Robin 24 22 3 Clint 18 22 2 Sam 36 21 1 Abigail 39 19 2 Sebastian 42 21 3 Nova.Eli? 2 20 1 Nova.Dylan? 3 21 0 DN.SnS_Coriander? 33 18 0 Cirrus? 33 18 0 MadDog.HashtagBearFam.Sondra? 21 22 0 SenS 35 7 1 RodneyOBrien? 17 20 0 Willy 1 22 1 Jasper 9 22 1 DN.SnS_Val? 11 23 0 Mateo? 11 23 0 Marlon 10 21 2 Gunther 11 21 2 Juliet 25 18 1 Rosa 26 18 3 MadDog.STW_Cherri? 14 20 2
+
+                /--SETUP EXTRAS
+                    /beginSimultaneousCommand
+                        /doAction 4 16
+                        
+                        /ignoreCollisions TravisV
+                        /ignoreCollisions farmer
+                        /ignoreCollisions Emily
+                        /ignoreCollisions Gus
+                        /ignoreCollisions SenS
+                        /ignoreCollisions DN.SnS_Coriander?
+                        /ignoreCollisions Cirrus?
+                        /animate Gus false true 200 18 18 19 19 20 20 19 19
+                        /animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20
+                        /animate Demetrius false true 200 24 24 25 25 26 26
+                        /animate Robin false true 200 20 20 21 21 22 22
+                        /animate Willy false true 200 28 29 30 31
+                        /animate Sam false true 200 4 4 4 4 4 4 4 4 34 34 34 34 34 34 34 34 34 34 34 34 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
+                        /animate MadDog.STW_Cherri? false true 200 24 24 24 24 24 25 25 26 26 26 26 26 26 26 26 26 25 25 25 24 24 24 24 24
+                        /animate MadDog.HashtagBearFam.Sondra? false true 120 18 18 18 19 19 19 18 18 18 20 20 20
+                        /animate Elliott false true 200 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 18 18 19 19 18 18 19 19 18 17 16 16 16 16 16 16 16 16 16 16 16 16
+                        /animate Lewis false true 200 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 22 23 23 23 23 23 22 22 22 23 23 23 23 23 23 23 23 23 23 23
+                        /animate Marnie false true 200 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 23 23 23 22 21/
+                        /showFrame Pam 24
+                        /showFrame TravisV 49
+                        /advancedMove SenS true 0 1 2 0 4 1500 -2 0 0 -1 1 1300
+                        /advancedMove DN.SnS_Coriander? true 2 0 4 5000 -2 0 4 4800
+                        /advancedMove Cirrus? true 2 0 4 5000 -2 0 4 4800
+                        /addConversationTopic LitD_CT_SaloonDate 2
+                        /action AddMail Current LitD_M_SeenTravisEventToday received
+                    /endSimultaneousCommand
+                    /skippable
+
+                /--BEGIN EVENT
+                    
+                        /advancedMove farmer false 0 -3 -2 0 0 -1 -6 0 0 -2 -2 0 0 -7 6 0 1 10
+                        /pause 1000
+                        /viewport move -1 -1 5500
+                        /pause 500
+                    /speak Gus \"You know she's worried sick...$2\"
+                        /emote TravisV 40 true
+                        /showframe TravisV 52
+                        /pause 200
+                    /speak TravisV \"I appreciate the concern, Gus, but I'm expecting company...$22#$b#I don't really want to think about this right now.$5\"
+                        /stopAnimation Gus 18
+                        /emote Gus 28 true
+                    /speak Gus \"...At least consider-$2\"
+                        /pause 300
+                        /emote farmer 8 true
+                        /pause 600
+                        /emote Emily 16 true
+                        /faceDirection Emily 0 true
+                        /jump Emily
+                        /showframe TravisV 53
+                        /pause 300
+                    /speak Emily \"Uh hey, Gus!$6#$b#I um, lost the bottle opener. Could I get some help finding it?$s\"
+                        /showFrame Gus 4
+                    /textAboveHead Gus \"...responding to her calls.\"
+                        /pause 3000
+                        /emote TravisV 40 true
+                        /showframe TravisV 52
+                        /pause 100
+                        /advancedMove Gus false 3 0 0 2 2 10
+                        /proceedPosition Gus
+                        /doAction 11 9
+                        /pause 300
+                        /advancedMove Emily false 0 1 2 0 3 10
+                        /pause 300
+                        /advancedMove Gus false 0 3 1 0 3 10
+                        /proceedPosition Gus
+                    /speak Gus \"Evening, @. Travis is waiting for you.#$b#Emily will be with you both momentarily to take your order.$h\"
+                        /emote farmer 56 true
+                        /advancedMove farmer false 1 0 0 -4 4 10
+                        /pause 400
+                        /advancedMove Gus false -8 0 0 7 3 0 0 -1 7 0 3 10
+                        /pause 500
+                        /advancedMove Emily false -9 0 0 7 3 0 0 -1 6 0 1 10
+                        /pause 1500
+                        /showframe TravisV 53
+                    /speak TravisV \"Aye, look what the cat dragged in.$9#$b#Take a seat, take a seat.$12\"
+                        /advancedMove farmer false 0 -1 -6 0 0 -1 1 10
+                        /pause 2000
+                        /showFrame TravisV 49
+                        /pause 2500
+                        /showFrame farmer 117
+                    /speak TravisV \"BLAH BLAH BLAH\"
+                    /end
+
+                "
+             } 
+    } 
     ]
-} // 
+}

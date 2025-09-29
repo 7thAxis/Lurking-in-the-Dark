@@ -432,39 +432,6 @@
                     /end
                 "
              }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-                "{{ModID}}_TriggerActions.TravisFlirtThrice": {
-                    "Trigger": "DayStarted",
-                    "Id": "{{ModID}}_TriggerActions.TravisFlirtThrice",
-                    "Condition": "PLAYER_STAT Current LitD.TravisFlirt 3",
-                    "Actions": [ "AddMail Current LitD_M_3TravisFlirts received" ]
-                }
-            }
         }
     ]
 }
-
-/*
-                        /faceDirection TravisV 3 true
-                        /pause 30
-                        /faceDirection Leah 2
-                        /emote Leah 244
-                    /speak Leah \"I'm guessing it doesn't have a meaning, it's symbolic of the freedom of self expression.\"
-                        /faceDirection TravisV 1 true
-                        /pause 200
-                        /emote Emily 272 true
-                        /showFrame Emily 48
-                        /jump Emily
-                        /pause 1200
-                        /faceDirection Emily 2
-                    /speak Emily \"Eeeeexactly!$h\"
-                        /showFrame TravisV 33
-                        /emote TravisV 240 true
-                    /speak TravisV \"Oh come ooooon. That's it?$a\"
-                        /pause 100
-                        /emote Haley 12
-                    /speak Haley \"For once we're on the same page.$u\"*/

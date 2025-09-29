@@ -316,24 +316,7 @@
                 "
             }
         },
-        {
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-                "{{ModID}}_TriggerActions.TravisFlirtTwice": {
-                    "Trigger": "DayStarted",
-                    "Id": "{{ModID}}_TriggerActions.TravisFlirtTwice",
-                    "Condition": "PLAYER_STAT Current LitD.TravisFlirt 2",
-                    "Actions": [ "AddMail Current LitD_M_2TravisFlirts received" ]
-                }
-            }
-        }
-    ] // O He even knows how to play cards! Lemmie show you.
+    ] 
 }
-///switchEvent {{ModID}}_Events.TravisV.2H.Intro.{{Trav2HIntro}}
-
- //Are we going to ignore the giant red snail in the room?
- //That's not even a pun, that's just literal.
- //Absolutely snail-larious.
 
                         

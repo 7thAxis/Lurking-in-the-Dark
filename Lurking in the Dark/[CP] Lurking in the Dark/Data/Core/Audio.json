@@ -54,6 +54,13 @@
                     "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/AlexMcCulloch_Sunny_Side_Up.ogg}}" ],
                     "StreamedVorbis": true,
                     "Looped": true
+                },
+                "LitD_Music.Blues": { 
+                    "ID": "LitD_Music.Blues",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: Assets/Audio/Music/PatrickDeArteaga_Blues.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
                 }
             }
         },

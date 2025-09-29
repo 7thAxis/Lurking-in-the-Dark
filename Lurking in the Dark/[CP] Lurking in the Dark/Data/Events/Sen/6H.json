@@ -135,22 +135,6 @@
             }
         },
         {
-            "LogName": "Trigger Action - 6 Hearts",
-            "Action": "EditData",
-            "Target": "Data/TriggerActions",
-            "Entries": {
-                "{{ModID}}.CP.TriggerActions.SenGardenTrigger": {
-                    "Trigger": "DayEnding",
-                    "Id": "{{ModID}}.TriggerActions.SenGardenTrigger",
-                    "Condition": "PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.SenS.6h.P1, PLAYER_HAS_MAIL Current LitD_M_AGardenForSenComplete Received, !PLAYER_HAS_MAIL Current LitD_M_SenGardenTrigger Received",
-                    "Actions": [
-                        "AddConversationTopic LitD_CT_GardenWaitTime {{Event Cooldown Length}}",
-                        "AddMail Current LitD_M_SenGardenTrigger"
-                    ]
-                }
-            }
-        },
-        {
             "LogName": "Sen Six Heart P2",
             "Action": "EditData",
             "Target": "Data/Events/EastScarp_DeepDark",
