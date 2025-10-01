@@ -68,7 +68,7 @@
                     /quickQuestion Have lunch with Travis? #Sure, but as friends. # Me too... Let's make it a date. <
 
                     (break)emote TravisV 60
-                        \\speak TravisV \"Roger that. Heard ya loud and clear.$11#$b#Meet me at the Saloon around 6pm sometime after today.$l#$b#Got a Jerrand I needa run tonight, unfortunately.$6\"
+                        \\speak TravisV \"Roger that. Heard ya loud and clear.$11#$b#Meet me at the Saloon around 7pm sometime after today.$l#$b#Got a Jerrand I needa run tonight, unfortunately.$6\"
                             \\action AddMail Current LitD_M_RejectedTravisDate received
                             \\switchEvent {{ModID}}_Events.TravisV.6H.P1.C1\\end
                     (break)showframe TravisV 33
@@ -76,7 +76,7 @@
                             \\emote TravisV 280
                         \\speak TravisV \"Aye aye. Glad we're on the same page.$9\"
                             \\showFrame TravisV 4
-                         \\speak TravisV \"Meet me at the Saloon around 6pm sometime after today.$24#$b#I'll be lookin' forward to it.$25\"
+                         \\speak TravisV \"Meet me at the Saloon around 7pm sometime after today.$24#$b#I'll be lookin' forward to it.$25\"
                             \\action IncrementStat LitD.TravisFlirt 1
                             \\action AddMail Current LitD_M_AcceptedTravisDate received
                         \\switchEvent {{ModID}}_Events.TravisV.6H.P1.C2\\end
@@ -97,7 +97,7 @@
                             \\jump TravisV 5
                         \\speak TravisV \"Aight then, I'll scratch that down so I do't forget!$11#$b#I'm lookin' forward to it.$l\"
                             \\emote TravisV 32
-                        \\speak TravisV \"Meet me at the Saloon around 6pm sometime after today.$l#$b#Got a Jerrand I needa run tonight, unfortunately.$6\"
+                        \\speak TravisV \"Meet me at the Saloon around 7pm sometime after today.$l#$b#Got a Jerrand I needa run tonight, unfortunately.$6\"
                         \\switchEvent {{ModID}}_Events.TravisV.6H.P1.C1\\end
                     (break)emote farmer 20 true
                             \\pause 500
@@ -114,7 +114,7 @@
                         /emote TravisV 280
                     /speak TravisV \"Color me pleasantly surprised. I'd love to make it a date.$24\"
                         /showFrame TravisV 4
-                    /speak TravisV \"Meet me at the Saloon around 6pm sometime after today.$24#$b#I'll be lookin' forward to it.$25\"
+                    /speak TravisV \"Meet me at the Saloon around 7pm sometime after today.$24#$b#I'll be lookin' forward to it.$25\"
                         /action IncrementStat LitD.TravisFlirt 1
                         /action AddMail Current LitD_M_AcceptedTravisDate received
                     /switchEvent {{ModID}}_Events.TravisV.6H.P1.C2
@@ -132,7 +132,7 @@
                         /pause 100
                         /emote farmer 28
                         /action AddMail Current LitD_M_TravisRejectedPlayerDate received
-                    /speak TravisV \"So um... meet me at the Saloon around 6pm sometime after today, aight?$29#$b#Got a Jerrand I needa run tonight, unfortunately.$20\"
+                    /speak TravisV \"So um... meet me at the Saloon around 7pm sometime after today, aight?$29#$b#Got a Jerrand I needa run tonight, unfortunately.$20\"
                     /switchEvent {{ModID}}_Events.TravisV.6H.P1.C3
                 /end
                 ",
@@ -148,7 +148,7 @@
                         /pause 800
                         /globalFade 0.012
                         /viewport -1000 -1000
-                    /message \"Saloon around 6pm sometime after today. Got it!\"
+                    /message \"Saloon around 7pm sometime after today. Got it!\"
                 /end
                     ",
                 "{{ModID}}_Events.TravisV.6H.P1.C2": "
@@ -254,6 +254,7 @@
                         /advancedMove Cirrus? true 2 0 4 5000 -2 0 4 4800
                         /addConversationTopic LitD_CT_SaloonDate 2
                         /action AddMail Current LitD_M_SeenTravisEventToday received
+                        /addTemporaryActor CoffeeMakerKun 16 32 5 5 0 false character
                     /endSimultaneousCommand
                     /skippable
 
@@ -309,7 +310,52 @@
                         /showFrame TravisV 49
                         /pause 2500
                         /showFrame farmer 117
-                    /speak TravisV \"BLAH BLAH BLAH\"
+                    /speak TravisV \"Heh. I'll have you know, I've been awaiting your arrival with bated-breath.$9\"
+                    /quickQuestion # The dramatic type, are we? # Well don't keep holding it in, breathtaking.< # Make seagull squawks.
+
+                    (break)pause 1
+                            \\emote farmer 32 true
+                            \\pause 600
+                            \\emote TravisV 56
+                        \\speak TravisV \"Can't help it, ya see.$11#$b#It's in my blood. I grew up in TV and theater.$26\"
+                            \\pause 100
+                            \\showFrame TravisV 49
+                            \\emote TravisV 32
+                        \\speak TravisV \"But let's not get side tracked with myself. How 'bout ya tell me a little about you?$l\"
+                    (break)pause 1
+                            \\action IncrementStat LitD.TravisFlirt 1
+                            \\emote farmer 20
+                            \\pause 100
+                            \\showFrame TravisV 52
+                            \\emote TravisV 280
+                        \\speak TravisV \"Oh ho ho. Now that's my speed. But, let's slow down...$9#$b#I find you terribly charming, however, I'd like to get to know you a tad more personally before we get too frisky.$24\" 
+                            \\pause 200
+                            \\showFrame TravisV 50
+                            \\emote TravisV 56
+                        \\speak TravisV \"Won't you tell me a little about yourself?$31\"
+                    (break)pause 1
+                            \\playSound LitD_SFX.SeagullFake\\pause 1
+                            \\action IncrementStat LitD_M_GullInsanity 1
+                            \\action AddMail Current LitD_M_PretendedToBeAGull received
+                        \\textAboveHead CoffeeMakerKun \"MINE MINE MINE\"
+                        \\beginSimultaneousCommand\\pause 1
+                            \\jump CoffeeMakerKun\\pause 1
+                            \\jump farmer\\pause 1
+                            \\showFrame TravisV 55
+                        \\endSimultaneousCommand\\pause 1
+                            \\faceDirection farmer 1 true
+                            \\pause 3000
+                        \\speak TravisV \"...Uh. Yeah! Yeah. Um.$29#$b#(Am I being mocked? Oh Yoba.)$30\"
+                            \\showFrame TravisV 54
+                            \\emote TravisV 28
+                            \\pause 100
+                            \\showFrame TravisV 52
+                            \\pause 300
+                        \\speak TravisV \"Why don't you uh... sit down and tell me a little about yourself?$20\"
+                            \\showFrame farmer 117
+                    /pause 1000
+                    /showFrame TravisV 49
+                    /message \"pause\"
                     /end
 
                 "
