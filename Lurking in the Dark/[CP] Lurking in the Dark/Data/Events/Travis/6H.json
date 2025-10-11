@@ -294,7 +294,7 @@
                         /pause 300
                         /advancedMove Gus false 0 3 1 0 3 10
                         /proceedPosition Gus
-                    /speak Gus \"Evening, @. Travis is waiting for you.#$b#Emily will be with you both momentarily to take your order.$h\"
+                    /speak Gus \"Evening, @. Travis is waiting for you.#$b#Emily will be with you both momentarily with tonight's special.$h\"
                         /emote farmer 56 true
                         /advancedMove farmer false 1 0 0 -4 4 10
                         /pause 400
@@ -352,76 +352,144 @@
                             \\pause 300
                         \\speak TravisV \"Why don't you uh... sit down and tell me a little about yourself?$20\"
                             \\showFrame farmer 117
-                            /showFrame TravisV 49
+                        /showFrame TravisV 49
 
                     /quickQuestion I'm a... # ...normal guy, just trying to get by. # ...farmer, keeping this town well fed! # ...farmer, but more of the ranching sort! # ...adventurer, always seeking my next big escapade! # ...fisherman, sitting seaside reeling in big ones. # ...naturalist, living off of nature's bounty. # ...miner, spending my days toiling away in the dirt. # ...seagull. MINE MINE MINE. 
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.1 Received
-                        \\speak TravisV \"Is that right? Maybe I should call ya Joe since you seem to think you're so average.$h\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.2 Received
-                        \\speak TravisV \"Heh! I heard your crops make it all the way to the big city, Apples.$ll#$b#Mind if I call you that?$26\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.3 Received
-                        \\speak TravisV \"Hey hoo! So you really are a Buckaroo!$13#$b#If you'd mind me calling you that.$24\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.4 Received
-                        \\speak TravisV \"Ah, so you like a life full of thrills?$12#$b#Ya sound like the Rowdy type, if I may call you that.$13\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.5 Received
-                        \\speak TravisV \"Aye, well on your way to being a pirate I see!$13#$b#Mind if I call ya Captain?$28\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.6 Received
-                        \\speak TravisV \"Now that's a way to live! Get out there and blaze those trails, Trailblazer.$12#$b#...If I'm allowed to call you that.$20\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.7 Received
-                        \\speak TravisV \"Sounds like hard work.$6#$b#Couldn't imagine that kinda life but I can respect it, Pebbles.$27#$b#Can I call ya Pebbles?$26\"
-                    (break)
-                        \\showFrame TravisV 56
-                        \\emote TravisV 56
-                        \\action AddMail Current LitD_M_TravisNickName.8 Received
-                        \\speak TravisV \"AAAA\"
-                        \\switchEvent AAAAAAAA
 
-                            /showFrame TravisV 49
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.1 Received
+                            \\speak TravisV \"Is that right? Maybe I should call ya Joe since you seem to think you're so average.$h\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
 
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.2 Received
+                            \\speak TravisV \"Heh! I heard your crops make it all the way to the big city, Apples.$ll#$b#Mind if I call you that?$26\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.3 Received
+                            \\speak TravisV \"Hey hoo! So you really are a Buckaroo!$13#$b#If you'd mind me calling you that.$24\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.4 Received
+                            \\speak TravisV \"Ah, so you like a life full of thrills?$12#$b#Ya sound like the Rowdy type, if I may call you that.$13\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.5 Received
+                            \\speak TravisV \"Aye, well on your way to being a pirate I see!$13#$b#Mind if I call ya Captain?$28\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.6 Received
+                            \\speak TravisV \"Now that's a way to live! Get out there and blaze those trails, Trailblazer.$12#$b#...If I'm allowed to call you that.$20\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+
+                        (break)showFrame TravisV 56
+                                \\emote TravisV 56
+                                \\action AddMail Current LitD_M_TravisNickName.7 Received
+                            \\speak TravisV \"Sounds like hard work.$6#$b#Couldn't imagine that kinda life but I can respect it, Pebbles.$27#$b#Can I call ya Pebbles?$26\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+
+                        (break)playSound LitD_SFX.SeagullFake\\pause 1
+                                \\action IncrementStat LitD_M_GullInsanity 1
+                                \\action AddMail Current LitD_M_PretendedToBeAGull received
+                            \\beginSimultaneousCommand\\pause 1
+                                \\textAboveHead CoffeeMakerKun \"MINE MINE MINE\"
+                                \\jump CoffeeMakerKun\\pause 1
+                                \\jump farmer\\pause 1
+                                \\showFrame TravisV 55
+                            \\endSimultaneousCommand\\pause 1
+                                \\faceDirection farmer 1 true
+                                \\pause 3000
+                            \\speak TravisV \"You're... a seagull?$21#$b#Erm.$29#$b#Well... I'm not one to judge how people choose to identify.$6#$b#You mind if I call you... er. Seagull?$29\"
+                    
+                        /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Seagull
+                    /end
+                ",
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular": "
+                resetVariable
                     /quickQuestion Let Travis give you a nickname? # Go for it, I don't mind. # Use my name, please. # Got any sweeter names in mind...? <
-                    (break)
-                        \\emote TravisV 32
-                        \\showFrame TravisV 56
-                        \\speak TravisV \"Alright, well that's that.$l#$b#I love givin' my buds nicknames. I call Emily 'Smiles'.$26\"
-                    (break)                        
-                        \\emote TravisV 16
-                        \\showFrame TravisV 53
-                        \\action AddMail Current LitD_M_TravisUseMyName Received
-                        \\speak TravisV \"Oh! Certainly. I'd never want you to feel disrespected.$u#$b#My apologies, I've got a tendency to get carried away.$20\"
-                    (break)
-                        \\showFrame TravisV 52
-                        \\emote TravisV 280
-                        \\action AddMail Current LitD_M_TravisNickName.10 Received
-                        \\action IncrementStat LitD.TravisFlirt 1
-                        \\speak TravisV \"Oh, would you like something more intimate?$24#$b#How about... My Rose?$31\"
+                        (break)emote TravisV 32
+                                \\showFrame TravisV 56
+                            \\speak TravisV \"Alright, well that's that.$l#$b#I love givin' my buds nicknames. I call Emily 'Smiles'.$26\"
 
-                            /showFrame TravisV 49
+                        (break)emote TravisV 16
+                                \\showFrame TravisV 53
+                                \\action AddMail Current LitD_M_TravisUseMyName Received
+                            \\speak TravisV \"Oh! Certainly. I'd never want you to feel disrespected.$u#$b#My apologies, I've got a tendency to get carried away.$20\"
 
-                    /message \"You can update Travis's nickname for you any time in the config files.\"
+                        (break)showFrame TravisV 52
+                                \\emote TravisV 280
+                                \\action AddMail Current LitD_M_TravisNickName.10 Received
+                                \\action IncrementStat LitD.TravisFlirt 1
+                            \\speak TravisV \"Oh, would you like something more intimate?$24#$b#How about... My Rose?$31\"
+
+                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Cont
+                /end
+                ",
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Seagull": "
+                resetVariable
+                    /quickQuestion Let Travis call you Seagull? # YES! It's extremely validating. Thank you. MINE. # That's CAPTAIN Seagull to you! # NO! I may be a seagull but my name is {{PlayerName}}! MINE. # Mine. <
+                        (break)playSound LitD_SFX.SeagullFake\\pause 1
+                                \\showFrame farmer 117
+                                \\emote farmer 212 true 
+                                \\pause 900
+                                \\emote TravisV 28 true
+                                \\showFrame TravisV 54
+                                \\pause 100
+                                \\action AddMail Current LitD_M_TravisNickName.8 Received
+                            \\speak TravisV \"Uhhh. Yeah. I'd be happy to call you Seagull, I guess.$21#$b#(This guy is definitely messing with me.)$22\"
+
+                        (break)playSound LitD_SFX.SeagullFake\\pause 1
+                                \\showFrame farmer 117
+                                \\emote farmer 236 true 
+                                \\pause 900
+                                \\emote TravisV 28 true
+                                \\showFrame TravisV 54
+                                \\pause 100
+                                \\action AddMail Current LitD_M_TravisNickName.9 Received
+                            \\speak TravisV \"Uhhh... Aye, aye, Captain Seagull?$21#$b#(This guy is definitely messing with me.)$22\"
+
+                        (break)playSound LitD_SFX.SeagullFake\\pause 1
+                                \\showFrame farmer 117
+                                \\emote farmer 12 true 
+                                \\pause 900
+                                \\emote TravisV 28 true
+                                \\showFrame TravisV 54
+                                \\pause 100
+                                \\action AddMail Current LitD_M_TravisUseMyName Received
+                            \\speak TravisV \" Woah, sorry buddy. Didn't mean to reduce ya to just your bird of origin.$21#$b#(Man I thought I was weird.)$29\"
+
+                        (break)playSound LitD_SFX.SeagullFake\\pause 1
+                                \\showFrame farmer 117
+                                \\emote farmer 20 true 
+                                \\pause 900
+                                \\emote TravisV 28 true
+                                \\showFrame TravisV 54
+                                \\pause 100
+                                \\action IncrementStat LitD.TravisFlirt 1
+                                \\action AddMail Current LitD_M_TravisNickName.8 Received
+                            \\speak TravisV \"I... Uh... I'll just call ya seagull then.$21#$b#(What is with this guy?)$29\"
+
+                        /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Cont
                     /end
 
-                "
+                ",
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic.Cont": "
+                resetVariable
+                        /showFrame TravisV 49
+                    /message \"You can update Travis's nickname for you any time in the config files.\"
+                /end
+
+                ",
              } 
     } 
     ]
