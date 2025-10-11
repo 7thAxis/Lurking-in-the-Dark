@@ -46,7 +46,14 @@
                             "Direction": "left"
                         }
                     ],
-                    "Appearance": []
+                    "Appearance": [
+                        {
+                            "ID": "TRAVIS GREEN RAIN",
+                            "Condition": "WEATHER Here GreenRain",
+                            "Portrait": "Portraits/TravisV_Shadow",
+                            "Sprite": "Characters/TravisV_Shadow"
+                        },
+                    ]
                 }
             }
         },

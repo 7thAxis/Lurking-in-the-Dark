@@ -195,6 +195,13 @@
             "AllowBlank": false,
             "Description": "Spawns visible Void Lava Snails in the Caldera to match in-game lore.",
             "Section": "Travis & Jeremy"
+        },
+        "Travis Nickname": {
+            "Default": "Default",
+            "AllowBlank": false,
+            "AllowMultiple": true,
+            "Description": "Sets Travis's nickname for the player.\n\nOne is selected organically in the story, but you can customize it here. ",
+            "Section": "Travis & Jeremy"
         }
     },
     
@@ -557,6 +564,20 @@
         { "Name": "AskOutTravis", "Value": "2",
             "When": { "HasFlag |contains=LitD_M_YouAreMarried": true 
             } },
+
+        { "Name": "TravisNickname", "Value": "Buckaroo" },
+        { "Name": "TravisNickname", "Value": "Joe", "When": { "HasFlag": "LitD_M_TravisNickName.1"  } },
+        { "Name": "TravisNickname", "Value": "Apples", "When": { "HasFlag": "LitD_M_TravisNickName.2"  } },
+        { "Name": "TravisNickname", "Value": "Buckaroo", "When": { "HasFlag": "LitD_M_TravisNickName.3"  } },
+        { "Name": "TravisNickname", "Value": "Rowdy", "When": { "HasFlag": "LitD_M_TravisNickName.4"  } },
+        { "Name": "TravisNickname", "Value": "Captain", "When": { "HasFlag": "LitD_M_TravisNickName.5"  } },
+        { "Name": "TravisNickname", "Value": "Trailblazer", "When": { "HasFlag": "LitD_M_TravisNickName.6"  } },
+        { "Name": "TravisNickname", "Value": "Pebbles", "When": { "HasFlag": "LitD_M_TravisNickName.7"  } },
+        { "Name": "TravisNickname", "Value": "Seagull", "When": { "HasFlag": "LitD_M_TravisNickName.8"  } },
+        { "Name": "TravisNickname", "Value": "Captain Seagull", "When": { "HasFlag": "LitD_M_TravisNickName.9"  } },
+        { "Name": "TravisNickname", "Value": "My Rose", "When": { "HasFlag": "LitD_M_TravisNickName.10"  } },
+        { "Name": "TravisNickname", "Value": "@", "When": { "HasFlag": "LitD_M_TravisUseMyName"  } },
+        { "Name": "TravisNickname", "Value": "{{Travis Nickname}}", "When": { "Travis Nickname|contains=Default": false  } },
 
         //Other Stuff
         {

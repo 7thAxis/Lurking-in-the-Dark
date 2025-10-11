@@ -22,7 +22,7 @@
             "Action": "Load",
             "Priority": "Low",
             "Target": "Portraits/TravisV, Portraits/TravisV_Shadow, Portraits/TravisV_ShadowKid",
-            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Travis/TravisV.png"
+            "FromFile": "Assets/Portraits/{{NPC Portrait Style}}/Travis/{{TargetWithoutPath}}.png"
         },
         {
             "LogName": "Travis Animations",

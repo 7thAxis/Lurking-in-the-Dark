@@ -228,7 +228,6 @@
                 /--SETUP EXTRAS
                     /beginSimultaneousCommand
                         /doAction 4 16
-                        
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
                         /ignoreCollisions Emily
@@ -311,13 +310,13 @@
                         /pause 2500
                         /showFrame farmer 117
                     /speak TravisV \"Heh. I'll have you know, I've been awaiting your arrival with bated-breath.$9\"
-                    /quickQuestion # The dramatic type, are we? # Well don't keep holding it in, breathtaking.< # Make seagull squawks.
+                    /quickQuestion # The dramatic type, are we? # Well don't keep holding it in, breathtaking. < # Make seagull squawks.
 
                     (break)pause 1
                             \\emote farmer 32 true
                             \\pause 600
                             \\emote TravisV 56
-                        \\speak TravisV \"Can't help it, ya see.$11#$b#It's in my blood. I grew up in TV and theater.$26\"
+                        \\speak TravisV \"Can't help it, ya see.$11#$b#It's in my blood. I grew up on the big screen.$26\"
                             \\pause 100
                             \\showFrame TravisV 49
                             \\emote TravisV 32
@@ -337,8 +336,8 @@
                             \\playSound LitD_SFX.SeagullFake\\pause 1
                             \\action IncrementStat LitD_M_GullInsanity 1
                             \\action AddMail Current LitD_M_PretendedToBeAGull received
-                        \\textAboveHead CoffeeMakerKun \"MINE MINE MINE\"
                         \\beginSimultaneousCommand\\pause 1
+                            \\textAboveHead CoffeeMakerKun \"MINE MINE MINE\"
                             \\jump CoffeeMakerKun\\pause 1
                             \\jump farmer\\pause 1
                             \\showFrame TravisV 55
@@ -353,9 +352,73 @@
                             \\pause 300
                         \\speak TravisV \"Why don't you uh... sit down and tell me a little about yourself?$20\"
                             \\showFrame farmer 117
-                    /pause 1000
-                    /showFrame TravisV 49
-                    /message \"pause\"
+                            /showFrame TravisV 49
+
+                    /quickQuestion I'm a... # ...normal guy, just trying to get by. # ...farmer, keeping this town well fed! # ...farmer, but more of the ranching sort! # ...adventurer, always seeking my next big escapade! # ...fisherman, sitting seaside reeling in big ones. # ...naturalist, living off of nature's bounty. # ...miner, spending my days toiling away in the dirt. # ...seagull. MINE MINE MINE. 
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.1 Received
+                        \\speak TravisV \"Is that right? Maybe I should call ya Joe since you seem to think you're so average.$h\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.2 Received
+                        \\speak TravisV \"Heh! I heard your crops make it all the way to the big city, Apples.$ll#$b#Mind if I call you that?$26\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.3 Received
+                        \\speak TravisV \"Hey hoo! So you really are a Buckaroo!$13#$b#If you'd mind me calling you that.$24\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.4 Received
+                        \\speak TravisV \"Ah, so you like a life full of thrills?$12#$b#Ya sound like the Rowdy type, if I may call you that.$13\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.5 Received
+                        \\speak TravisV \"Aye, well on your way to being a pirate I see!$13#$b#Mind if I call ya Captain?$28\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.6 Received
+                        \\speak TravisV \"Now that's a way to live! Get out there and blaze those trails, Trailblazer.$12#$b#...If I'm allowed to call you that.$20\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.7 Received
+                        \\speak TravisV \"Sounds like hard work.$6#$b#Couldn't imagine that kinda life but I can respect it, Pebbles.$27#$b#Can I call ya Pebbles?$26\"
+                    (break)
+                        \\showFrame TravisV 56
+                        \\emote TravisV 56
+                        \\action AddMail Current LitD_M_TravisNickName.8 Received
+                        \\speak TravisV \"AAAA\"
+                        \\switchEvent AAAAAAAA
+
+                            /showFrame TravisV 49
+
+                    /quickQuestion Let Travis give you a nickname? # Go for it, I don't mind. # Use my name, please. # Got any sweeter names in mind...? <
+                    (break)
+                        \\emote TravisV 32
+                        \\showFrame TravisV 56
+                        \\speak TravisV \"Alright, well that's that.$l#$b#I love givin' my buds nicknames. I call Emily 'Smiles'.$26\"
+                    (break)                        
+                        \\emote TravisV 16
+                        \\showFrame TravisV 53
+                        \\action AddMail Current LitD_M_TravisUseMyName Received
+                        \\speak TravisV \"Oh! Certainly. I'd never want you to feel disrespected.$u#$b#My apologies, I've got a tendency to get carried away.$20\"
+                    (break)
+                        \\showFrame TravisV 52
+                        \\emote TravisV 280
+                        \\action AddMail Current LitD_M_TravisNickName.10 Received
+                        \\action IncrementStat LitD.TravisFlirt 1
+                        \\speak TravisV \"Oh, would you like something more intimate?$24#$b#How about... My Rose?$31\"
+
+                            /showFrame TravisV 49
+
+                    /message \"You can update Travis's nickname for you any time in the config files.\"
                     /end
 
                 "
