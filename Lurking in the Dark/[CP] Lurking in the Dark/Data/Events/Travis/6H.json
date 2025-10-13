@@ -22,7 +22,7 @@
             }
         },
     //PART 2
-{
+        {
             "LogName": "Travis 6H P2",
             "Action": "EditData",
             "Target": "Data/Events/Saloon",

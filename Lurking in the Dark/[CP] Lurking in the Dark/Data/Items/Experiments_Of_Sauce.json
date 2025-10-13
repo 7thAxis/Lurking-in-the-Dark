@@ -1,0 +1,176 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                //Book
+                "{{ModID}}_Items.ExperimentsOfSauceCookBook": {
+                    "Name": "{{ModID}}_Items.ExperimentsOfSauceCookBook",
+                    "DisplayName": "Experiments Of Sauce Cookbook",
+                    "Description": "A well worn cookbook that contains several experimental recipes by the Queen of Sauce.",
+                    "Type": "asdf",
+                    "Category": 0,
+                    "Price": 10000,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 16,
+                    "Edibility": -300,
+                    "CanBeGivenAsGift": false,
+                    "CanBeTrashed": false,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [ "color_brown", "book_item" ]
+                },
+
+                //Items
+                "{{ModID}}_Items.UnluckyLunch": {
+                    "Name": "{{ModID}}_Items.UnluckyLunch",
+                    "DisplayName": "Unlucky Lunch",
+                    "Description": "Makes a strange squelching sound. Sometimes bigger isn't better...",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 250,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 12,
+                    "Edibility": 40,
+                    "Buffs": [
+                    {
+                        "Id": "UnluckyLunch",
+                        "Duration": 960,
+                        "IsDebuff": true,
+                        "GlowColor": "Purple",
+                        "CustomAttributes": { "LuckLevel": -3.0 }
+                    }
+                    ],
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [ "color_purple", "allergen_seafood", "allergen_gluten", "food_nonvegetarian", "allergen_fish" ]
+                },
+                "{{ModID}}_Items.IncompleteBreakfast": {
+                    "Name": "C{{ModID}}_Items.IncompleteBreakfast",
+                    "DisplayName": "Incomplete Breakfast",
+                    "Description": "It's missing...something. But what?",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 250,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 13,
+                    "ColorOverlayFromNextIndex": false,
+                    "Edibility": 40,
+                    "Buffs": [
+                    {
+                        "Id": "IncompleteBreakfast",
+                        "Duration": 300,
+                        "CustomAttributes": {
+                        "FarmingLevel": 1.0,
+                        "MaxStamina": 25.0
+                        }
+                    }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [ "color_yellow", "food_breakfast", "allergen_egg", "allergen_dairy", "food_nonvegan" ],
+                    "CustomFields": null
+                },
+                "{{ModID}}_Items.NotSoPinkCake": {
+                    "Name": "{{ModID}}_Items.NotSoPinkCake",
+                    "DisplayName": "Not So Pink Cake",
+                    "Description": "When your pink frosting isn't dark enough, do NOT add a drop of black dye...",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 500,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 14,
+                    "Edibility": 100,
+                    "Buffs": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [ "color_LightGreen", "food_bakery", "food_sweet", "allergen_gluten", "food_nonvegan" ]
+                }
+            }
+        },
+    //---------------------------- SPACECORE DATA ------------------------------------------//
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": { 
+                "{{ModID}}_Items.ExperimentsOfSauceCookBook": {
+                    "CanBeShipped": false,
+                    "UseForTriggerAction": true,
+                    "CategoryTextOverride": "Book"
+                }
+            }
+        },
+    //----------------------------RECIPE DATA-------------------------------------//
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": { 
+        "{{ModID}}_Items.UnluckyLunch": "155 1 229 1 259 1/null/{{ModID}}_Items.UnluckyLunch 1/none/Unlucky Lunch",
+        "{{ModID}}_Items.NotSoPinkCake": "254 1 246 1 245 1 -5 1 814 1/null/{{ModID}}_Items.NotSoPinkCake 1/none/Not So Pink Cake",
+        "{{ModID}}_Items.IncompleteBreakfast": "194 1 -6 1 211 1/null/{{ModID}}_Items.IncompleteBreakfast 1/none/Incomplete Breakfast"
+      }
+    },
+    //----------------------------TRIGGER ACTIONS-------------------------------------//
+    {
+        "Action": "EditData",
+        "Target": "Data/TriggerActions",
+        "Entries": {
+            "{{ModID}}_UseExperimentalCookbookKnown": {
+                "Id": "{{ModID}}_UseExperimentalCookbookKnown",
+                "MarkActionApplied": false,
+                "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                "Condition": "ITEM_ID Input (O){{ModID}}_Items.ExperimentsOfSauceCookBook",
+                "Actions": ["If PLAYER_HAS_MAIL Current ExperimentalCookbookRecipesKnown ## spacechase0.SpaceCore_ShowHudMessage \"You already know these recipes!\" (O){{ModID}}_Items.ExperimentsOfSauceCookBook ## Spiderbuttons.BETAS_TriggerAction {{ModID}}_UseExperimentalCookbookUnknown Manual" ]
+            },
+
+            "{{ModID}}_UseExperimentalCookbookUnknown": {
+                "Id": "{{ModID}}_UseExperimentalCookbookUnknown",
+                "MarkActionApplied": false,
+                "Trigger": "Manual",
+                "Actions": [
+                "Spiderbuttons.BETAS_PlaySound newRecipe false",
+                "spacechase0.SpaceCore_ShowHudMessage \"You learned 3 new cooking recipes!\" (O){{ModID}}_Items.ExperimentsOfSauceCookBook",
+                "AddMail Current ExperimentalCookbookRecipesKnown received",
+                "MarkCookingRecipeKnown Current {{ModID}}_Items.UnluckyLunch",
+                "MarkCookingRecipeKnown Current {{ModID}}_Items.NotSoPinkCake",
+                "MarkCookingRecipeKnown Current {{ModID}}_Items.IncompleteBreakfast" ]
+            }
+        }
+    },
+    //----------------------------SHOP DATA-------------------------------------//
+    {
+      "LogName": "Backup Cookbook method",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [ "Bookseller", "Items" ],
+      "Entries": {
+        "{{ModID}}_Items.ExperimentsOfSauceCookBook":
+            {
+                "ActionsOnPurchase": null,
+                "TradeItemAmount": 1,
+                "Price": 15000,
+                "AvailableStock": 1,
+                "AvailableStockLimit": "Player",
+                "AvoidRepeat": false,
+                "Condition": "SYNCED_RANDOM day LitD_ExperimentalBookSale 0.25, PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.TravisV.0H.P2",
+                "Id": "{{ModID}}_Items.ExperimentsOfSauceCookBook",
+                "ItemId": "{{ModID}}_Items.ExperimentsOfSauceCookBook"
+            }
+      }
+    }
+]
+}//item quantity/null/outputitem quality/none/name
