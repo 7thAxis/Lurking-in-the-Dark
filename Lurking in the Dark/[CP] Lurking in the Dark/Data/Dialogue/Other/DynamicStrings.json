@@ -65,7 +65,7 @@
             "Action": "EditData",
             "Target": "Strings/LitD/DynamicEventStrings",
             "Entries": { "TravisV.Homewrecker": "I hope you don't take this the wrong way, but I uh...$21#$b#...Aren't you married?$29#$b#I'd rather not be a homewrecker. Again.$22" },
-            "When": { "HasFlag |contains=LitD_M_YouAreMarried": false }
+            "When": { "HasFlag |contains=LitD_M_YouAreMarried": true }
         }
     ]
 }
