@@ -1,0 +1,43 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_Items.DeluxeFiddleheadRisotto": {
+                    "Name": "{{ModID}}_Items.DeluxeFiddleheadRisotto",
+                    "DisplayName": "Deluxe Fiddlehead Risotto",
+                    "Description": "Fiddlehead Risotto, now with real rice like it always should have had. It's far from bland, a true delight to the taste buds.",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 600,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 15,
+                    "Edibility": 110,
+                     "Buffs": [
+                        {
+                            "Id": "Food",
+                            "Duration": 480,
+                            "CustomAttributes": { "ForagingLevel": 3.0, "Speed": 1.0 }
+                        }
+                        ],
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [ "color_green", "food_pasta", "food_nonvegan", "allergen_dairy" ],
+                    "CustomFields": null
+                }
+            }
+        },
+    //----------------------------RECIPE DATA-------------------------------------//
+        {
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+        "Entries": { 
+            "{{ModID}}_Items.DeluxeFiddleheadRisotto": "259 1 423 1 424 1 247 1 248 1/null/{{ModID}}_Items.DeluxeFiddleheadRisotto 1/none/Deluxe Fiddlehead Risotto"
+        }
+        }
+    ]
+}
+
+//rice, garlic, oil, fiddlehead fern, cheese

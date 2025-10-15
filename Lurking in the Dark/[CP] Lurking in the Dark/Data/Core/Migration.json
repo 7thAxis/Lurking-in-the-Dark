@@ -69,8 +69,8 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
-                "{{ModID}}_TriggerActions.Migration.v4.0": {
-                    "Id": "{{ModID}}_TriggerActions.Migration.v4.0",
+                "{{ModID}}_TriggerActions.Migration.v4.1": {
+                    "Id": "{{ModID}}_TriggerActions.Migration.v4.1",
                     "Trigger": "DayStarted",
                     "HostOnly": true,
                     "Actions": [
@@ -112,7 +112,15 @@
                         "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.JeremyTheme LitD_Music.JeremyTheme",
                         "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.VoidSnailWaltz LitD_Music.VoidSnailWaltz",
                         "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.TravisHouse LitD_Music.TravisHouse",
-                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.BarbieGirl LitD_Music.BarbieGirl"
+                        "Pathoschild.ContentPatcher_MigrateIds Songs 7thAxis.DitR_Music.BarbieGirl LitD_Music.BarbieGirl",
+
+                        //Animals
+                        "Pathoschild.ContentPatcher_MigrateIds FarmAnimals \"Giant Void Lava Snail\" {{ModID}}_Animals.GiantVoidLavaSnail",
+                        "Pathoschild.ContentPatcher_MigrateIds FarmAnimals \"Golden Void Lava Snail\" {{ModID}}_Animals.GoldenVoidLavaSnail",
+                        "Pathoschild.ContentPatcher_MigrateIds FarmAnimals \"LitD_VoidCat\" {{ModID}}_Animals.VoidCat",
+
+                        //Buildings
+                        "Pathoschild.ContentPatcher_MigrateIds Buildings 7thAxis.DitR_Buildings.AnimalTreeHouse 7thAxis.LitD_Buildings.AnimalTreeHouse"
 
                     ]
                 }

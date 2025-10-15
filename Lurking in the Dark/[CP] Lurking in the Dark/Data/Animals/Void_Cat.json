@@ -4,7 +4,7 @@
             "Action": "EditData",
             "Target": "Data/FarmAnimals",
             "Entries": {
-                "LitD_VoidCat": {
+                "{{ModID}}_Animals.VoidCat": {
                     "DisplayName": "{{i18n:Core.Animals.VoidCat}}",
                     "House": "Barn",
                     "Gender": "Male",

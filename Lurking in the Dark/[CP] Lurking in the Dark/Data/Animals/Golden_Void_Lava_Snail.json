@@ -7,7 +7,7 @@
             "Target": "Data/FarmAnimals",
 
             "Entries": { 
-                "Golden Void Lava Snail": {
+                "{{ModID}}_Animals.GoldenVoidLavaSnail": {
                     "DisplayName": "{{i18n:Core.Animals.GiantVoidLavaSnail}}",
                     "House": "LitD_Snail",
                     "Gender": "Male",

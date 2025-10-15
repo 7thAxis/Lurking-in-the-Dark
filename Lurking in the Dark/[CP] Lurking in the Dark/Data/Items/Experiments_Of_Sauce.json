@@ -36,7 +36,7 @@
                     "Edibility": 40,
                     "Buffs": [
                     {
-                        "Id": "UnluckyLunch",
+                        "Id": "Food",
                         "Duration": 960,
                         "IsDebuff": true,
                         "GlowColor": "Purple",
@@ -63,7 +63,7 @@
                     "Edibility": 40,
                     "Buffs": [
                     {
-                        "Id": "IncompleteBreakfast",
+                        "Id": "Food",
                         "Duration": 300,
                         "CustomAttributes": {
                         "FarmingLevel": 1.0,
