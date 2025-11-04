@@ -58,7 +58,7 @@
 //Children
 "Config.section.Sen's Children.name": "Sen's Children",
 "Config.UCT Portrait Compatibility.name": "Unique Children Talk Portraits",
-"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Chirin, Nanu and Opal's portraits are by TheEspurrQueen.\nPetra, Telas, Pisque, Disthen and Auri's portraits are by Medys.\nYvette, Laurel, Willow and Elowen's portraits are by Jules.\nBow portrait assets by Jules. Spingling assets are by Orcabaryonyx.",
+"Config.UCT Portrait Compatibility.description": "Use custom child portraits when Unique Children Talk is installed.\n\n(Requires game restart to disable)\n\nLoki, Freya, Chirin, Nanu and Opal's portraits are by TheEspurrQueen.\nDaisy, Onyx, Pisque, Disthen and Auri's portraits are by Medys.\nYvette, Laurel, Willow and Elowen's portraits are by Jules.\nBow portrait assets by Jules. Spingling assets are by Orcabaryonyx.",
 "Config.7thAxis Nanu and Opal Portraits.name": "7thAxis Nanu and Opal Portraits",
 "Config.7thAxis Nanu and Opal Portraits.description": "Uses 7thAxis's portraits for the Nanu and Opal designs when UCT Portrait Compatibility is set to true.",
 "Config.Toddler Bow Chance Portraits.name": "Toddler Bow Chance",
@@ -66,9 +66,9 @@
 "Config.Have Shadow Kids.name": "Have Shadow Kids (Senlets)",
 "Config.Have Shadow Kids.description": "Determines if you have Shadow children when you are married to Sen and changes dialogue accordingly.",
 "Config.Female Toddler Design.name": "Female Toddler Design",
-"Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu, Opal and Chirin's sprites are by TheEspurrQueen.\n> Petra, Telas, Pisque, Auri and Disthen's sprites are by Medys.\n> Yvette, Laurel, Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys. Spingling assets are by Orcabaryonyx.",
+"Config.Female Toddler Design.description": "Sets the design of the female toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu, Opal and Chirin's sprites are by TheEspurrQueen.\n> Daisy, Onyx, Pisque, Auri and Disthen's sprites are by Medys.\n> Yvette, Laurel, Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys. Spingling assets are by Orcabaryonyx.",
 "Config.Male Toddler Design.name": "Male Toddler Design",
-"Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu, Opal and Chirin's sprites are by TheEspurrQueen.\n> Petra, Telas, Pisque, Auri and Disthen's sprites are by Medys.\n> Yvette, Laurel, Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys. Spingling assets are by Orcabaryonyx.",
+"Config.Male Toddler Design.description": "Sets the design of the male toddler if \"Have Shadow Kids\" is set to true.\n\n> Nanu, Opal and Chirin's sprites are by TheEspurrQueen.\n> Daisy, Onyx, Pisque, Auri and Disthen's sprites are by Medys.\n> Yvette, Laurel, Willow and and Elowen's sprites are by Jules.\nBow sprite assets by Medys. Spingling assets are by Orcabaryonyx.",
 
 //Travis & Jeremy
 "Config.section.Travis & Jeremy.name": "Travis & Jeremy",
