@@ -21,7 +21,7 @@
 					2300 47 40 sens_wigglesit
 				",
 
-				"rain": "
+				/*"rain2": "
 					0 EastScarp_DeepDark 26 19/
 					610 26 19 sens_read/
 					700 EastScarp_Village 49 21/
@@ -36,9 +36,9 @@
 					1700 52 13 0/
 					1900 55 84 sens_wigglesit/
 					2100 43 114/
-					2300 14 90",
+					2300 14 90",*/
 
-				"rain2": "
+				"rain": "
 					0 Town 110 78/
 					610 97 81 0/
 					700 109 91 3/

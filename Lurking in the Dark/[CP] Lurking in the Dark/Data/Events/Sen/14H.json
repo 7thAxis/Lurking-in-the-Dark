@@ -7,8 +7,8 @@
             "Entries": {
                 "{{ModID}}_Events.SenS.14h/t 2000 2600/w sunny/f SenS 3500": "
                     night_market/
-                    71 121/
-                    farmer 68 116 2 SenS 72 120 2/
+                    73 132/
+                    farmer 70 126 2 SenS 74 130 2/
                     changePortrait SenS Default/
                     changeSprite SenS Default/
                     ignoreCollisions SenS/
