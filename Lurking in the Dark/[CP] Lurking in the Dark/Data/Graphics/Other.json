@@ -28,7 +28,7 @@
         {
             "Action": "Load",
             "Priority": "Medium",
-            "Target": "Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Sniper",
+            "Target": "Characters/Monsters/Shadow Brute, Characters/Monsters/Shadow Brute_dangerous, Characters/Monsters/Shadow Shaman, Characters/Monsters/Shadow Shaman_dangerous, Characters/Monsters/Shadow Sniper",
             "FromFile": "Assets/Replacer/{{TargetWithoutPath}}.png",
             "When": { "Construct Eradication Substitute": true }
 
