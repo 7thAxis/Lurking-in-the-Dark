@@ -112,7 +112,7 @@
             "PatchMode": "Replace",
             "Target": "TileSheets/emotes",
             "FromFile": "Assets/Misc/ExtendedEmotes.png",
-            "ToArea": { "X": 0, "Y": 848, "Width": 64, "Height": 320 }
+            "ToArea": { "X": 0, "Y": 848, "Width": 64, "Height": 336 }
         }
     ]
 }
