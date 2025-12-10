@@ -5,13 +5,432 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": { 
-                "{{ModID}}_Events.TravisV.4H/e {{ModID}}_Events.TravisV.2H/t 1200 1800/f TravisV 1000/!n LitD_M_SeenTravisEventToday": "LitD_Music.SunnySideUp/47 29/TravisV 47 34 0 Haley 50 33 0 Emily 48 34 0 Leah 45 33 0 farmer 42 49 2 JeremyTSnail 52 39 1/beginSimultaneousCommand/ignoreCollisions TravisV/ignoreCollisions farmer/ignoreCollisions Leah/ignoreCollisions Haley/ignoreCollisions Emily/ignoreCollisions JeremyTSnail/addTemporaryActor Prop.Travis_Painting 16 32 47 33 0 false character/addTemporaryActor Prop.Haley_Painting 16 32 50 32 0 false character/addTemporaryActor Prop.Leah_Painting 16 32 45 32 0 false character/addTemporaryActor Prop.Emily_Painting 16 32 48 33 0 false character/addTemporaryActor 7A.Seagull.3 32 32 26 27 0 false character/addTemporaryActor Prop.Travis_PicnicBlanket 96 64 42 30 0 false character/speed JeremyTSnail 1/advancedMove JeremyTSnail true 3 0 1 3500 -3 0 3 3000/animate 7A.Seagull.3 false true 250 44 45 46 47/animate Emily false true 250 16 17/action AddMail Current LitD_M_SeenTravisEventToday received/addConversationTopic LitD_CT_TravisPaintAndSip 2/endSimultaneousCommand/skippable/viewport move 0 1 5000/pause 500/faceDirection Leah 1/emote Leah 56/speak Leah \"{{i18n:Events.TravisV.4H.1}}\"/stopAnimation Emily 12/pause 50/emote TravisV 212 true/faceDirection TravisV 3 true/pause 100/faceDirection Haley 3/pause 300/speak TravisV \"{{i18n:Events.TravisV.4H.2}}\"/emote Leah 256/faceDirection TravisV 1 true/pause 200/emote Emily 272 true/showFrame Emily 48/jump Emily/pause 1200/faceDirection Emily 2/speak Emily \"{{i18n:Events.TravisV.4H.3}}\"/emote Haley 12/speak Haley \"{{i18n:Events.TravisV.4H.4}}\"/faceDirection Emily 1 true/emote Emily 8/speak Emily \"{{i18n:Events.TravisV.4H.5}}\"/animate Emily false true 200 18 19/pause 100/textAboveHead Emily \"{{i18n:Events.TravisV.4H.6}}\"/pause 400/jump Emily/pause 300/animate TravisV false true 250 30 31/pause 2000/emote Leah 32 true/pause 500/emote Haley 40/pause 200/speak Haley \"{{i18n:Events.TravisV.4H.7}}\"/pause 100/emote Leah 240 true/pause 100/stopAnimation Emily 12/pause 100/stopAnimation TravisV 32/speak Leah \"{{i18n:Events.TravisV.4H.8}}\"/pause 100/showframe TravisV 28 true/textAboveHead TravisV \"{{i18n:Events.TravisV.4H.9}}\"/pause 1800/showFrame Haley 0/pause 200/showFrame Haley 16/pause 200/showFrame Haley 17/emote Haley 12/speak Haley \"{{i18n:Events.TravisV.4H.10}}\"/faceDirection TravisV 2/pause 100/showFrame TravisV 32/pause 50/faceDirection Emily 3 true/pause 50/showFrame Haley 12/speak TravisV \"{{i18n:Events.TravisV.4H.11}}\"/emote TravisV 244 true/animate TravisV false true 250 38 39/pause 400/speak TravisV \"{{i18n:Events.TravisV.4H.12}}\"/pause 100/animate Emily false true 200 48 49/pause 200/emote Leah 224 true/pause 200/textAboveHead Haley \"{{i18n:Events.TravisV.4H.13}}\"/pause 2300/speak TravisV \"{{i18n:Events.TravisV.4H.14}}\"/pause 100/showFrame Haley 0/pause 200/showFrame Haley 16/pause 200/showFrame Haley 17/speak Haley \"{{i18n:Events.TravisV.4H.15}}\"/stopAnimation Emily 12/speak TravisV \"{{i18n:Events.TravisV.4H.16}}\"/showFrame Haley 12/pause 50/stopAnimation TravisV 36/pause 1000/emote TravisV 240 true/pause 300/faceDirection TravisV 0/pause 1000/emote Emily 28 true/pause 100/emote Haley 40 true/pause 100/emote Leah 8/playSound doorClose/advancedMove farmer false 6 0 0 -13 4 10/speak Emily \"{{i18n:Events.TravisV.4H.17}}\"/showFrame TravisV 28/textAboveHead TravisV \"{{i18n:Events.TravisV.4H.18}}\"/pause 1500/emote Haley 12/speak Haley \"{{i18n:Events.TravisV.4H.19}}\"/proceedPosition farmer/emote farmer 8/faceDirection TravisV 2 true/pause 50/faceDirection Haley 2 true/pause 30/faceDirection Leah 2 true/pause 15/faceDirection Emily 2 true/pause 30/switchEvent {{ModID}}_Events.TravisV.4H.Reaction.{{Trav4HReaction}}/end",
+                "{{ModID}}_Events.TravisV.4H/e {{ModID}}_Events.TravisV.2H/t 1200 1800/f TravisV 1000/!n LitD_M_SeenTravisEventToday": "
+                  LitD_Music.SunnySideUp
+                    /47 29
+                    /TravisV 47 34 0 Haley 50 33 0 Emily 48 34 0 Leah 45 33 0 farmer 42 49 2 JeremyTSnail 52 39 1
+                    /beginSimultaneousCommand
+                        /ignoreCollisions TravisV
+                        /ignoreCollisions farmer
+                        /ignoreCollisions Leah
+                        /ignoreCollisions Haley
+                        /ignoreCollisions Emily
+                        /ignoreCollisions JeremyTSnail
+                        /addTemporaryActor Prop.Travis_Painting 16 32 47 33 0 false character
+                        /addTemporaryActor Prop.Haley_Painting 16 32 50 32 0 false character
+                        /addTemporaryActor Prop.Leah_Painting 16 32 45 32 0 false character
+                        /addTemporaryActor Prop.Emily_Painting 16 32 48 33 0 false character
+                        /addTemporaryActor 7A.Seagull.3 32 32 26 27 0 false character
+                        /addTemporaryActor Prop.Travis_PicnicBlanket 96 64 42 30 0 false character
+                        /speed JeremyTSnail 1
+                        /advancedMove JeremyTSnail true 3 0 1 3500 -3 0 3 3000
+                        /animate 7A.Seagull.3 false true 250 44 45 46 47
+                        /animate Emily false true 250 16 17
+                        /action AddMail Current LitD_M_SeenTravisEventToday received
+                        /addConversationTopic LitD_CT_TravisPaintAndSip 2
+                    /endSimultaneousCommand
+                    /skippable
+                        
+                        /viewport move 0 1 5000        
+                        /pause 500
+                        /faceDirection Leah 1
+                        /emote Leah 56
+                    /speak Leah \"Alright, mine's done.#$b#I don't think I quite got the path right, but it is what it is.$h\"
+                        /stopAnimation Emily 12
+                        /pause 50
+                        /emote TravisV 212 true
+                        /faceDirection TravisV 3 true
+                        /pause 100
+                        /faceDirection Haley 3
+                        /pause 300
+                    /speak TravisV \"I for one think it's fantastic.#$b#It looks like the path to me, so I'd say it's a win.$l\"
+                        /emote Leah 256
+                        /faceDirection TravisV 1 true
+                        /pause 200
+                        /emote Emily 272 true
+                        /showFrame Emily 48
+                        /jump Emily
+                        /pause 1200
+                        /faceDirection Emily 2
+                    /speak Emily \"Yours also came out great Trav, it's soooo pretty.$h\"
+                        /emote Haley 12
+                    /speak Haley \"Emily, he paints that EVERY single time.$u\"
+                        /faceDirection Emily 1 true
+                        /emote Emily 8
+                    /speak Emily \"So? That doesn't make it any less pretty.#$b#Your cow portrait also came out amazing!$h\"
+                        /animate Emily false true 200 18 19
+                        /pause 100
+                    /textAboveHead Emily \"We all did great!\"
+                        /pause 400
+                        /jump Emily
+                        /pause 300
+                        /animate TravisV false true 250 30 31
+                        /pause 2000
+                        /emote Leah 32 true
+                        /pause 500
+                        /emote Haley 40
+                        /pause 200
+                    /speak Haley \"Girl, you just threw random paint splatters on the canvas.$s\"
+                        /pause 100 
+                        /emote Leah 240 true
+                        /pause 100
+                        /stopAnimation Emily 12
+                        /pause 100
+                        /stopAnimation TravisV 32
+                    /speak Leah \"I think you just don't understand what she was going for.$7\"
+                        /pause 100
+                        /showframe TravisV 28 true
+                    /textAboveHead TravisV \"Agreed.\"
+                        /pause 1800
+                        /showFrame Haley 0
+                        /pause 200
+                        /showFrame Haley 16
+                        /pause 200
+                        /showFrame Haley 17
+                        /emote Haley 12
+                    /speak Haley \"Uhg. Well then can you explain what I'm not understanding?$s\"
+                        /faceDirection TravisV 2
+                        /pause 100
+                        /showFrame TravisV 32
+                        /pause 50
+                        /faceDirection Emily 3 true
+                        /pause 50
+                        /showFrame Haley 12
+                    /speak TravisV \"Well clearly...$l\"
+                        /emote TravisV 244 true
+                        /animate TravisV false true 250 38 39
+                        /pause 400
+                    /speak TravisV \"Often in art, the color green represents the emotion envy.$6#$b#As the base canvas is green, the giant blue splotches represent the never ending desire for growth a mega corporation, such as Joja, craves.$a#$b#It will devour everything useful to it in its path, leaving nothing behind.$18#$b#The green could also symbolize the thoughtless destruction of nature through consumption, but that's another tangent all together.$6#$b#The orange splotches must represent the warm creative spirit, fighting back against the machine in small yet impactful ways!$12#$b#Yeah. That's definitely it!$13\"
+                        /pause 100
+                        /animate Emily false true 200 48 49
+                        /pause 200
+                        /emote Leah 224 true
+                        /pause 200
+                        /textAboveHead Haley \"*snickers*\"
+                        /pause 2300
+                    /speak TravisV \"Hey, what're y'all laughing at?$a\"
+                        /pause 100
+                        /showFrame Haley 0
+                        /pause 200
+                        /showFrame Haley 16
+                        /pause 200
+                        /showFrame Haley 17
+                    /speak Haley \"You're doing the thing.$13\"
+                        /stopAnimation Emily 12
+                    /speak TravisV \"The...?$6#$b#Oh!$u\"
+                        /showFrame Haley 12
+                        /pause 50
+                        /stopAnimation TravisV 36
+                        /pause 1000
+                        /emote TravisV 240 true
+                        /pause 300
+                        /faceDirection TravisV 0
+                        /pause 1000
+                        /emote Emily 28 true
+                        /pause 100
+                        /emote Haley 40 true
+                        /pause 100
+                        /emote Leah 8
+                        /playSound doorClose
+                        /advancedMove farmer false 6 0 0 -13 4 10 
+                    /speak Emily \"That wasn't it at all, but I appreciate the thoughtful interpretation.$h\"
+                        /showFrame TravisV 28
+                    /textAboveHead TravisV \"Oh.\"
+                        /pause 1500
+                        /emote Haley 12
+                    /speak Haley \"Are you serious? I had literally JUST understood it.$u\"
+                        /proceedPosition farmer
+                        /emote farmer 8
+                        /faceDirection TravisV 2 true
+                        /pause 50
+                        /faceDirection Haley 2 true
+                        /pause 30
+                        /faceDirection Leah 2 true
+                        /pause 15
+                        /faceDirection Emily 2 true
+                        /pause 30
+                        /switchEvent {{ModID}}_Events.TravisV.4H.Reaction.{{Trav4HReaction}}
+                    /end
+                ",
+
+                "{{ModID}}_Events.TravisV.4H.Reaction.1": "
+                resetVariable
+                    /speak TravisV \"Aye! If it ain't @.$h#$b#Hope you've been takin' care of yourself toiling away on that farm.$l\"
+                    /quickQuestion # Sure have been, thanks for asking! # I have been, but maybe I could use a personal farmhand... <
+                        (break)pause 100
+                            \\emote farmer 56
+                        (break)pause 100
+                            \\action IncrementStat LitD.TravisFlirt 1
+                            \\emote farmer 20
+                        \\speak TravisV \"Aye? Is that so...$24#$b#You happen to be hiring?$9\"
+                            \\emote Haley 56 true
+                            \\faceDirection Haley 3 true
+                            \\pause 30
+                            \\emote Leah 8 true
+                            \\faceDirection Leah 1 true
+                            \\pause 15
+                            \\emote Emily 32 true
+                            \\faceDirection Emily 3 true
+                            \\pause 2000
+                            \\faceDirection Haley 2 true
+                            \\pause 30
+                            \\faceDirection Leah 2 true
+                            \\pause 15
+                            \\faceDirection Emily 2 true
+                            \\pause 30
+                        /switchEvent {{ModID}}_Events.TravisV.4H.Cont
+                    /end
+                ",
+                "{{ModID}}_Events.TravisV.4H.Reaction.2": "
+                resetVariable
+                        /pause 600
+                        /emote TravisV 280 true
+                        /jump TravisV
+                        /pause 500
+                    /speak TravisV \"Aye! If it ain't @.$10#$b#I'll have ya know I kept this smile warm for ya.$9\"
+                    /quickQuestion # That's cool. # Seems we've warmed each other up, haven't we? <
+                        (break)action AddMail Current LitD_M_RejectedTravis received
+                            \\emote TravisV 28 true
+                            \\shake TravisV 1000
+                        \\speak TravisV \"Well, no uh, it's uh. Warm. Yeah.$29#$b#(Shoot. Haley I think I misread the vibes.)$30\"
+                            \\textAboveHead Haley \"Yeaahhh...\"
+                            \\faceDirection Haley 3 true
+                            \\pause 30
+                            \\emote Leah 8 true
+                            \\faceDirection Leah 1 true
+                            \\pause 15
+                            \\emote Emily 28 true
+                            \\faceDirection Emily 3 true
+                            \\pause 2000
+                            \\faceDirection Haley 2 true
+                            \\pause 30
+                            \\faceDirection Leah 2 true
+                            \\pause 15
+                            \\faceDirection Emily 2 true
+                            \\pause 30
+                            \\speak TravisV \"Er. Anyways.$20\"
+                        (break)action IncrementStat LitD.TravisFlirt 1
+                            \\showFrame TravisV 33
+                            \\emote TravisV 280 true
+                            \\pause 500
+                            \\emote farmer 20
+                            \\pause 500
+                            \\emote Haley 56 true
+                            \\faceDirection Haley 3 true
+                            \\pause 30
+                            \\emote Leah 8 true
+                            \\faceDirection Leah 1 true
+                            \\pause 15
+                            \\emote Emily 32 true
+                            \\faceDirection Emily 3 true
+                            \\pause 2000
+                            \\faceDirection Haley 2 true
+                            \\pause 30
+                            \\faceDirection Leah 2 true
+                            \\pause 15
+                            \\faceDirection Emily 2 true
+                            \\pause 30
+                            \\showFrame TravisV 0
+                    /switchEvent {{ModID}}_Events.TravisV.4H.Cont
+                    /end
                 
-                "{{ModID}}_Events.TravisV.4H.Reaction.1": "resetVariable/speak TravisV \"{{i18n:Events.TravisV.4H.20}}\"/quickQuestion {{i18n:Events.TravisV.4H.21}} <(break)pause 100\\emote farmer 56(break)pause 100\\action IncrementStat LitD.TravisFlirt 1\\emote farmer 20\\speak TravisV \"{{i18n:Events.TravisV.4H.22}}\"\\emote Haley 56 true\\faceDirection Haley 3 true\\pause 30\\emote Leah 8 true\\faceDirection Leah 1 true\\pause 15\\emote Emily 32 true\\faceDirection Emily 3 true\\pause 2000\\faceDirection Haley 2 true\\pause 30\\faceDirection Leah 2 true\\pause 15\\faceDirection Emily 2 true\\pause 30/switchEvent {{ModID}}_Events.TravisV.4H.Cont/end",
-
-                "{{ModID}}_Events.TravisV.4H.Reaction.2": "resetVariable/pause 600/emote TravisV 280 true/jump TravisV/pause 500/speak TravisV \"{{i18n:Events.TravisV.4H.23}}\"/quickQuestion {{i18n:Events.TravisV.4H.24}} <(break)action AddMail Current LitD_M_RejectedTravis received\\emote TravisV 28 true\\shake TravisV 1000\\speak TravisV \"{{i18n:Events.TravisV.4H.25}}\"\\textAboveHead Haley \"{{i18n:Events.TravisV.4H.26}}\"\\faceDirection Haley 3 true\\pause 30\\emote Leah 8 true\\faceDirection Leah 1 true\\pause 15\\emote Emily 28 true\\faceDirection Emily 3 true\\pause 2000\\faceDirection Haley 2 true\\pause 30\\faceDirection Leah 2 true\\pause 15\\faceDirection Emily 2 true\\pause 30\\speak TravisV \"{{i18n:Events.TravisV.4H.27}}\"(break)action IncrementStat LitD.TravisFlirt 1\\showFrame TravisV 33\\emote TravisV 280 true\\pause 500\\emote farmer 20\\pause 500\\emote Haley 56 true\\faceDirection Haley 3 true\\pause 30\\emote Leah 8 true\\faceDirection Leah 1 true\\pause 15\\emote Emily 32 true\\faceDirection Emily 3 true\\pause 2000\\faceDirection Haley 2 true\\pause 30\\faceDirection Leah 2 true\\pause 15\\faceDirection Emily 2 true\\pause 30\\showFrame TravisV 0/switchEvent {{ModID}}_Events.TravisV.4H.Cont/end",
-
-                "{{ModID}}_Events.TravisV.4H.Cont": "resetVariable/speak Emily \"{{i18n:Events.TravisV.4H.28}}\"/emote farmer 56/faceDirection Haley 3 true/emote Haley 244/speak Haley \"{{i18n:Events.TravisV.4H.29}}\"/faceDirection Emily 1 true/emote Emily 12/speak Emily \"{{i18n:Events.TravisV.4H.30}}\"/animate TravisV false true 250 30 31/faceDirection Leah 1 true/emote Leah 256/speak Leah \"{{i18n:Events.TravisV.4H.31}}\"/pause 100/faceDirection Emily 3 true/emote Emily 40/pause 100/textAboveHead Emily \"{{i18n:Events.TravisV.4H.32}}\"/pause 100/stopAnimation TravisV 0/pause 1000/emote Leah 56 true/advancedMove Leah false -2 0 1 10/pause 100/emote Haley 56 true/advancedMove Haley false 2 0 3 10/pause 50/advancedMove Emily false 1 0 0 2 4 10/pause 30/emote TravisV 56 true/advancedMove TravisV false 0 2 4 10/beginSimultaneousCommand/proceedPosition Emily/proceedPosition TravisV/proceedPosition Leah/endSimultaneousCommand/advancedMove farmer false 0 -2 -3 0 0 -1 4 10/pause 3000/emote Leah 56 true/message \"{{i18n:Events.TravisV.4H.33}}\"/advancedMove farmer false 0 1 2 0 4 10/pause 1500/emote TravisV 60 true/message \"{{i18n:Events.TravisV.4H.34}}\"/advancedMove farmer false 1 0 4 10/pause 800/emote Emily 272 true/message \"{{i18n:Events.TravisV.4H.35}}\"/advancedMove farmer false 2 0 0 -1 4 10/pause 1400/emote Haley 32 true/message \"{{i18n:Events.TravisV.4H.36}}\"/advancedMove farmer false 0 2 -2 0 0 1 4 10/pause 3000/advancedMove Leah false 2 0 2 10/pause 100/advancedMove Haley false -2 0 2 10/pause 50/advancedMove Emily false 0 -2 -1 0 2 10/pause 30/advancedMove TravisV false 0 -2 2 10/beginSimultaneousCommand/proceedPosition Emily/proceedPosition TravisV/proceedPosition Leah/endSimultaneousCommand/speak TravisV \"{{i18n:Events.TravisV.4H.37}}\"/quickQuestion {{i18n:Events.TravisV.4H.38}} <(break)action AddMail Current LitD_M_VotedForLeah received\\emote Leah 256 true\\jump Leah\\pause 200\\speak Leah \"{{i18n:Events.TravisV.4H.39}}\"\\emote TravisV 280 true\\faceDirection TravisV 3\\speak TravisV \"{{i18n:Events.TravisV.4H.40}}\"\\emote Leah 32\\speak Leah \"{{i18n:Events.TravisV.4H.41}}\"\\textAboveHead TravisV \"{{i18n:Events.TravisV.4H.42}}\"\\pause 3000\\faceDirection TravisV 2(break)action AddMail Current LitD_M_VotedForTravis received\\emote TravisV 280 true\\jump TravisV\\pause 200\\speak TravisV \"{{i18n:Events.TravisV.4H.43}}\"\\faceDirection Haley 3 true\\emote Haley 12\\speak Haley \"{{i18n:Events.TravisV.4H.44}}\"\\animate TravisV false true 250 30 31\\emote TravisV 236\\speak TravisV \"{{i18n:Events.TravisV.4H.45}}\"\\stopAnimation TravisV 0\\faceDirection Haley 2 true\\emote Haley 12(break)action AddMail Current LitD_M_VotedForEmily received\\emote Emily 272 true\\jump Emily\\pause 200\\speak Emily \"{{i18n:Events.TravisV.4H.46}}\"\\faceDirection Haley 3 true\\emote Haley 12 true\\speak Haley \"{{i18n:Events.TravisV.4H.47}}\"\\faceDirection TravisV 1\\speak TravisV \"{{i18n:Events.TravisV.4H.48}}\"\\pause 30\\faceDirection Leah 1 true\\emote Leah 244\\speak Leah \"{{i18n:Events.TravisV.4H.49}}\"\\faceDirection TravisV 1 true\\pause 200\\emote Emily 272 true\\showFrame Emily 48\\jump Emily\\pause 1200\\faceDirection Emily 2\\speak Emily \"{{i18n:Events.TravisV.4H.50}}\"\\showFrame TravisV 33\\emote TravisV 240 true\\speak TravisV \"{{i18n:Events.TravisV.4H.51}}\"\\pause 100\\emote Haley 12\\speak Haley \"{{i18n:Events.TravisV.4H.52}}\"\\emote TravisV 60 true\\pause 50\\faceDirection Emily 2 true\\pause 100\\faceDirection Haley 2 true\\pause 75\\faceDirection Leah 2 true\\showFrame TravisV 0(break)action AddMail Current LitD_M_VotedForHaley received\\emote Haley 56 true\\jump Haley\\pause 200\\speak Haley \"{{i18n:Events.TravisV.4H.53}}\"\\faceDirection TravisV 1 true\\emote TravisV 280\\speak TravisV \"{{i18n:Events.TravisV.4H.54}}\"\\faceDirection Haley 3 true\\emote Haley 212\\speak Haley \"{{i18n:Events.TravisV.4H.55}}\"\\faceDirection Haley 2 true\\pause 100\\faceDirection TravisV 2 true(break)action AddMail Current LitD_M_VotedForAll received\\emote Emily 272 true\\jump Emily\\pause 200\\animate TravisV false true 250 30 31\\pause 300\\emote Leah 56 true\\pause 1000\\emote Haley 12 true\\pause 1000\\stopAnimation TravisV 0\\speak Haley \"{{i18n:Events.TravisV.4H.56}}\"(break)action AddMail Current LitD_M_VotedForTravisFlirty received\\action IncrementStat LitD.TravisFlirt 1\\stopAnimation TravisV 33\\emote TravisV 280\\speak TravisV \"{{i18n:Events.TravisV.4H.57}}\"\\emote Haley 12 true\\faceDirection Haley 3 true\\pause 100\\emote Leah 60 true\\faceDirection Leah 1 true\\pause 200\\emote Emily 32 true\\faceDirection Emily 3\\speak Haley \"{{i18n:Events.TravisV.4H.58}}\"\\animate TravisV false true 250 30 31\\emote TravisV 236\\speak TravisV \"{{i18n:Events.TravisV.4H.59}}\"\\emote Haley 12\\pause 50\\faceDirection Emily 2 true\\pause 100\\faceDirection Haley 2 true\\pause 75\\faceDirection Leah 2 true\\stopAnimation TravisV 0/pause 1000/speak TravisV \"{{i18n:Events.TravisV.4H.60}}\"/emote Haley 40/emote Haley 244/speak Haley \"{{i18n:Events.TravisV.4H.61}}\"/showFrame TravisV 36/shake TravisV 1000/jump TravisV/textAboveHead TravisV \"{{i18n:Events.TravisV.4H.62}}\"/pause 2500/animate Emily false true 250 48 49/pause 500/faceDirection Leah 1 true/emote Leah 224 true/pause 50/faceDirection Haley 3/emote Haley 236 true/pause 50/emote farmer 56/pause 1500/globalFade 0.012/viewport -1000 -1000/message \"{{i18n:Events.TravisV.4H.63}}\"/end"
+                ",
+                "{{ModID}}_Events.TravisV.4H.Cont": "
+                resetVariable
+                    /speak Emily \"Hiya farmer! We're having a paint and sip.#$b#Wanna see what we've made?$h\"
+                        /emote farmer 56
+                        /faceDirection Haley 3 true
+                        /emote Haley 244
+                    /speak Haley \"Oh, we should so have @ vote on which painting they like the best.$13\"
+                        /faceDirection Emily 1 true
+                        /emote Emily 12
+                    /speak Emily \"This is supposed to be for fun, not a contest!$s\"
+                        /animate TravisV false true 250 30 31
+                        /faceDirection Leah 1 true
+                        /emote Leah 256
+                    /speak Leah \"I don't think it would hurt anything. Let's see what @ thinks.$h\"
+                        /pause 100
+                        /faceDirection Emily 3 true
+                        /emote Emily 40
+                        /pause 100
+                        /textAboveHead Emily \"Fiiiiine.\"
+                        /pause 100
+                        /stopAnimation TravisV 0
+                        /pause 1000
+                        /emote Leah 56 true
+                        /advancedMove Leah false -2 0 1 10
+                        /pause 100
+                        /emote Haley 56 true
+                        /advancedMove Haley false 2 0 3 10
+                        /pause 50
+                        /advancedMove Emily false 1 0 0 2 4 10
+                        /pause 30
+                        /emote TravisV 56 true
+                        /advancedMove TravisV false 0 2 4 10
+                    /beginSimultaneousCommand
+                        /proceedPosition Emily
+                        /proceedPosition TravisV
+                        /proceedPosition Leah
+                    /endSimultaneousCommand
+                        /advancedMove farmer false 0 -2 -3 0 0 -1 4 10
+                        /pause 3000
+                        /emote Leah 56 true
+                    /message \"Leah painted a nature scene, inspired by the forked path behind you.\"
+                        /advancedMove farmer false 0 1 2 0 4 10
+                        /pause 1500
+                        /emote TravisV 60 true
+                    /message \"Travis painted a moon overlooking a grassy field... you recall his house is full of variations of this exact painting.\"
+                        /advancedMove farmer false 1 0 4 10
+                        /pause 800
+                        /emote Emily 272 true
+                    /message \"Emily's painting is a freeform haphazard splatter of colorful paint.\"
+                        /advancedMove farmer false 2 0 0 -1 4 10
+                        /pause 1400
+                        /emote Haley 32 true
+                    /message \"Haley painted a cow. It's absolutely adorable!\"
+                        /advancedMove farmer false 0 2 -2 0 0 1 4 10
+                        /pause 3000
+                        /advancedMove Leah false 2 0 2 10
+                        /pause 100
+                        /advancedMove Haley false -2 0 2 10
+                        /pause 50
+                        /advancedMove Emily false 0 -2 -1 0 2 10
+                        /pause 30
+                        /advancedMove TravisV false 0 -2 2 10
+                    /beginSimultaneousCommand
+                        /proceedPosition Emily
+                        /proceedPosition TravisV
+                        /proceedPosition Leah
+                    /endSimultaneousCommand
+                    /speak TravisV \"So, which one's yer favorite?$11\"
+                    /quickQuestion Vote for your favorite painting! #Leah's landscape is stunning! # Travis's painting, it's so serene. # Emily's abstract splatter is out of this world! # Haley's! Cows are so cute. # I think they're all amazing! # Travis's piece painted its way into my heart... <
+                        (break)action AddMail Current LitD_M_VotedForLeah received
+                                \\emote Leah 256 true\\jump Leah\\pause 200
+                            \\speak Leah \"Oh! Thank you!$h#$b#I honestly didn't expect that. I fought with that path for an entire hour.$s\"
+                                \\emote TravisV 280 true
+                                \\faceDirection TravisV 3
+                            \\speak TravisV \"Hey! I told you the path looked fine, you're being too hard on yourself.$11\"
+                                \\emote Leah 32
+                            \\speak Leah \"Yeah, you're right. It's just a path.#$b#They're wiggly and weird, so it's going to look weird no matter how I do it.$h\"
+                            \\textAboveHead TravisV \"That's the spirit!\"
+                                \\pause 3000
+                                \\faceDirection TravisV 2
+                        (break)action AddMail Current LitD_M_VotedForTravis received
+                                \\emote TravisV 280 true\\jump TravisV\\pause 200
+                            \\speak TravisV \"Heh! Why thank you. This style of painting is my specialty.$12\"
+                                \\faceDirection Haley 3 true
+                                \\emote Haley 12
+                            \\speak Haley \"What? You can't just paint the same thing over and over again and WIN.$u\"
+                                \\animate TravisV false true 250 30 31
+                                \\emote TravisV 236
+                            \\speak TravisV \"I sure can and will. That's how the industry works, girl.$8\"
+                                \\stopAnimation TravisV 0
+                                \\faceDirection Haley 2 true
+                                \\emote Haley 12
+                        (break)action AddMail Current LitD_M_VotedForEmily received
+                                \\emote Emily 272 true\\jump Emily\\pause 200
+                            \\speak Emily \"Oh! Yippee! I'm glad you think so, @.#$b#I poured my whole heart and soul into this one!$h\"
+                                \\faceDirection Haley 3 true
+                                \\emote Haley 12 true
+                            \\speak Haley \"What? It's literally JUST a paint splatter.$u\"
+                                \\faceDirection TravisV 1
+                            \\speak TravisV \"I honestly just want to know what it means. Keeping secrets ye are, Emily.$6\"
+                                \\pause 30
+                                \\faceDirection Leah 1 true
+                                \\emote Leah 244
+                            \\speak Leah \"I'm guessing it doesn't have a meaning, it's symbolic of the freedom of self expression.\"
+                                \\faceDirection TravisV 1 true
+                                \\pause 200
+                                \\emote Emily 272 true
+                                \\showFrame Emily 48\\jump Emily\\pause 1200
+                                \\faceDirection Emily 2
+                            \\speak Emily \"Eeeeexactly!$h\"
+                                \\showFrame TravisV 33
+                                \\emote TravisV 240 true
+                            \\speak TravisV \"Oh come ooooon. That's it?$a\"
+                                \\pause 100
+                                \\emote Haley 12
+                            \\speak Haley \"I can't believe this. I actually liked your interpretation better, Travis.$s\"
+                                \\emote TravisV 60 true
+                                \\pause 50
+                                \\faceDirection Emily 2 true
+                                \\pause 100
+                                \\faceDirection Haley 2 true
+                                \\pause 75
+                                \\faceDirection Leah 2 true
+                                \\showFrame TravisV 0
+                        (break)action AddMail Current LitD_M_VotedForHaley received
+                                \\emote Haley 56 true\\jump Haley\\pause 200
+                            \\speak Haley \"The right choice, obviously! I painted it from a picture I took recently.$h#$b#I'm not much of a painter, so I'm pretty proud of it if I do say so myself.$11\"
+                                \\faceDirection TravisV 1 true
+                                \\emote TravisV 280
+                            \\speak TravisV \"As you should be. Cows are pretty dang cute.$h\"
+                                \\faceDirection Haley 3 true
+                                \\emote Haley 212
+                            \\speak Haley \"Glad you think so, because that's the only correct take.\"
+                                \\faceDirection Haley 2 true
+                                \\pause 100
+                                \\faceDirection TravisV 2 true
+                        (break)action AddMail Current LitD_M_VotedForAll received
+                                \\emote Emily 272 true\\jump Emily\\pause 200
+                                \\animate TravisV false true 250 30 31
+                                \\pause 300
+                                \\emote Leah 56 true
+                                \\pause 1000
+                                \\emote Haley 12 true
+                                \\pause 1000
+                                \\stopAnimation TravisV 0
+                            \\speak Haley \"...Coward.$u\"
+                        (break)action AddMail Current LitD_M_VotedForTravisFlirty received
+                                \\action IncrementStat LitD.TravisFlirt 1
+                                \\stopAnimation TravisV 33
+                                \\emote TravisV 280
+                            \\speak TravisV \"Oh ho ho. Keep saying things like that, and you might sketch your way into mine.$9\"
+                                \\emote Haley 12 true
+                                \\faceDirection Haley 3 true
+                                \\pause 100
+                                \\emote Leah 60 true
+                                \\faceDirection Leah 1 true
+                                \\pause 200
+                                \\emote Emily 32 true
+                                \\faceDirection Emily 3
+                            \\speak Haley \"Oh, I see how it is. The vote was rigged this whole time.$u\"
+                                \\animate TravisV false true 250 30 31
+                                \\emote TravisV 236
+                            \\speak TravisV \"Contests usually are, girl.$24\"
+                                \\emote Haley 12
+                                \\pause 50
+                                \\faceDirection Emily 2 true
+                                \\pause 100
+                                \\faceDirection Haley 2 true
+                                \\pause 75
+                                \\faceDirection Leah 2 true
+                                \\stopAnimation TravisV 0
+                            /pause 1000
+                        /speak TravisV \"We're probably gonna keep paintin' a while if you wanted to stick around.$11\"
+                            /emote Haley 40
+                            /emote Haley 244
+                        /speak Haley \"Yeah, we're going to use Travis as a canvas. You don't want to miss this.\"
+                            /showFrame TravisV 36
+                            /shake TravisV 1000
+                            /jump TravisV
+                        /textAboveHead TravisV \"Wait what?\"
+                            /pause 2500
+                            /animate Emily false true 250 48 49
+                            /pause 500
+                            /faceDirection Leah 1 true
+                            /emote Leah 224 true
+                            /pause 50
+                            /faceDirection Haley 3
+                            /emote Haley 236 true
+                            /pause 50
+                            /emote farmer 56
+                            /pause 1500
+                            /globalFade 0.012
+                            /viewport -1000 -1000
+                        /message \"The girls spent a half an hour chasing Travis around with a paint brush.#...He probably deserved it.\"
+                    /end
+                "
              }
         }
     ]
