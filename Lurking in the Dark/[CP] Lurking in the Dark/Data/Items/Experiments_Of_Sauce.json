@@ -13,7 +13,7 @@
                     "Category": 0,
                     "Price": 10000,
                     "Texture": "Textures/7thAxis.LitD/Objects",
-                    "SpriteIndex": 16,
+                    "SpriteIndex": 27,
                     "Edibility": -300,
                     "CanBeGivenAsGift": false,
                     "CanBeTrashed": false,
@@ -37,6 +37,8 @@
                     "Buffs": [
                     {
                         "Id": "Food",
+                        "IconTexture": "Textures/7thAxis.LitD/Objects",
+                        "IconSpriteIndex": "12",
                         "Duration": 960,
                         "IsDebuff": true,
                         "GlowColor": "Purple",
@@ -64,6 +66,8 @@
                     "Buffs": [
                     {
                         "Id": "Food",
+                        "IconTexture": "Textures/7thAxis.LitD/Objects",
+                        "IconSpriteIndex": "13",
                         "Duration": 300,
                         "CustomAttributes": {
                         "FarmingLevel": 1.0,
@@ -76,10 +80,33 @@
                     "ArtifactSpotChances": null,
                     "CanBeGivenAsGift": true,
                     "CanBeTrashed": true,
-                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [ "color_yellow", "food_breakfast", "allergen_egg", "allergen_dairy", "food_nonvegan" ],
+                    "CustomFields": null
+                },
+                "{{ModID}}_Items.NoBreakfast": {
+                    "Name": "{{ModID}}_Items.NoBreakfast",
+                    "DisplayName": "No Breakfast, Just Plate",
+                    "Description": "The clay might be food grade.",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1,
+                    "Texture": "Textures/7thAxis.LitD/Objects",
+                    "SpriteIndex": 14,
+                    "ColorOverlayFromNextIndex": false,
+                    "Edibility": -20,
+                    "Buffs": [ { "BuffId": "25", "Duration": 100 } ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [ "color_white" ],
                     "CustomFields": null
                 },
                 "{{ModID}}_Items.NotSoPinkCake": {
@@ -90,12 +117,12 @@
                     "Category": -7,
                     "Price": 500,
                     "Texture": "Textures/7thAxis.LitD/Objects",
-                    "SpriteIndex": 14,
+                    "SpriteIndex": 15,
                     "Edibility": 100,
                     "Buffs": null,
                     "CanBeGivenAsGift": true,
                     "CanBeTrashed": true,
-                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": "{{Items Excluded From Perfection}}",
                     "ExcludeFromRandomSale": true,
                     "ContextTags": [ "color_LightGreen", "food_bakery", "food_sweet", "allergen_gluten", "food_nonvegan" ]
@@ -111,7 +138,9 @@
                     "CanBeShipped": false,
                     "UseForTriggerAction": true,
                     "CategoryTextOverride": "Book"
-                }
+                },
+                "{{ModID}}_Items.IncompleteBreakfast": { "UseForTriggerAction": true },
+                "{{ModID}}_Items.NoBreakfast": { "UseForTriggerAction": true }
             }
         },
     //----------------------------RECIPE DATA-------------------------------------//
@@ -147,9 +176,31 @@
                 "AddMail Current ExperimentalCookbookRecipesKnown received",
                 "MarkCookingRecipeKnown Current {{ModID}}_Items.UnluckyLunch",
                 "MarkCookingRecipeKnown Current {{ModID}}_Items.NotSoPinkCake",
-                "MarkCookingRecipeKnown Current {{ModID}}_Items.IncompleteBreakfast" ]
+                "MarkCookingRecipeKnown Current {{ModID}}_Items.IncompleteBreakfast",
+                "AddConversationTopic LitD_CT_ReadExperimentalCookBook 9999"
+                ]
+            },
+            "{{ModID}}_AddNoBreakfast": {
+                "Id": "{{ModID}}_AddNoBreakfast",
+                "MarkActionApplied": false,
+                "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                "Condition": "ITEM_ID Input (O){{ModID}}_Items.IncompleteBreakfast",
+                "Actions": [
+                    "AddItem (O){{ModID}}_Items.NoBreakfast 1",
+                    "Spiderbuttons.BETAS_PlaySound pickUpItem false"
+                 ]
+            },
+            "{{ModID}}_AteNoBreakfast": {
+                "Id": "{{ModID}}_AteNoBreakfast",
+                "MarkActionApplied": false,
+                "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                "Condition": "ITEM_ID Input (O){{ModID}}_Items.NoBreakfast",
+                "Actions": [
+                    "AddConversationTopic LitD_CT_AteAPlateLikeAFreak 2",
+                    "Spiderbuttons.BETAS_PlaySound breakingGlass false"
+                 ]
             }
-        }
+        } 
     },
     //----------------------------SHOP DATA-------------------------------------//
     {
@@ -166,7 +217,7 @@
                 "AvailableStock": 1,
                 "AvailableStockLimit": "Player",
                 "AvoidRepeat": false,
-                "Condition": "SYNCED_RANDOM day LitD_ExperimentalBookSale 0.25, PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.TravisV.0H.P2",
+                "Condition": "SYNCED_RANDOM day LitD_ExperimentalBookSale 0.25, PLAYER_HAS_SEEN_EVENT Current {{ModID}}_Events.TravisV.6H.P2",
                 "Id": "{{ModID}}_Items.ExperimentsOfSauceCookBook",
                 "ItemId": "{{ModID}}_Items.ExperimentsOfSauceCookBook"
             }

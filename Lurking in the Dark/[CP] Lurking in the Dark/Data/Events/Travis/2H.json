@@ -91,7 +91,7 @@
                         /emote TravisV 28 true
                         /pause 200
                         /emote farmer 40
-                    /switchEvent{{ModID}}_Events.TravisV.2H.Cont
+                    /switchEvent {{ModID}}_Events.TravisV.2H.Cont
                     /end   
                     ",
                 "{{ModID}}_Events.TravisV.2H.Outcome.3": "

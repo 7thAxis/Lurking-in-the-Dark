@@ -120,7 +120,7 @@
                     /speak TravisV \"The...?$6#$b#Oh!$u\"
                         /showFrame Haley 12
                         /pause 50
-                        /stopAnimation TravisV 36
+                        /stopAnimation TravisV 40
                         /pause 1000
                         /emote TravisV 240 true
                         /pause 300

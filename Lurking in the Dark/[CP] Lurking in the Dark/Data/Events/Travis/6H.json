@@ -6,7 +6,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
-                "{{ModID}}_Events.TravisV.6H.P1/e {{ModID}}_Events.TravisV.4H/t 1200 1800/f TravisV 1500/!n LitD_M_SeenTravisEventToday": "
+                "{{ModID}}_Events.TravisV.6H.P1/e {{ModID}}_Events.TravisV.4H/e LITD.DEBUG/t 1200 1800/f TravisV 1500/!n LitD_M_SeenTravisEventToday": "
                     LitD_Music.TravisHouse
                     /20 90
                     /TravisV -1000 -1000 2 farmer 16 91 1
@@ -215,11 +215,7 @@
             }
         },
     //PART 2
-<<<<<<< HEAD
-        {
-=======
     {
->>>>>>> parent of 7834286 (i18n trav events so far, removed break lines for length sanity)
             "LogName": "Travis 6H P2",
             "Action": "EditData",
             "Target": "Data/Events/Saloon",
@@ -231,6 +227,8 @@
 
                 /--SETUP EXTRAS
                     /beginSimultaneousCommand
+                        /setSkipActions AddItem (O){{ModID}}_Items.ExperimentsOfSauceCookBook 1
+                        /removeTile 7 4 Front
                         /doAction 4 16
                         /ignoreCollisions TravisV
                         /ignoreCollisions farmer
@@ -309,7 +307,9 @@
                         /showframe TravisV 53
                     /speak TravisV \"Aye, look what the cat dragged in.$9#$b#Take a seat, take a seat.$12\"
                         /advancedMove farmer false 0 -1 -6 0 0 -1 1 10
-                        /pause 2000
+                        /pause 500
+                        /action If Spiderbuttons.BETAS_PLAYER_HAS_EQUIPPED Current (O){{ModID}}_Items.MoonRoseBoutonniere ## Spiderbuttons.BETAS_DialogueBox TravisV Strings\\LitD\\DynamicEventStrings:TravisV.BoutonniereRemark
+                        /pause 1500
                         /showFrame TravisV 49
                         /pause 2500
                         /showFrame farmer 117
@@ -364,43 +364,43 @@
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.1 Received
                             \\speak TravisV \"Is that right? Maybe I should call ya Joe since you seem to think you're so average.$h\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
 
                         (break)showFrame TravisV 56
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.2 Received
                             \\speak TravisV \"Heh! I heard your crops make it all the way to the big city, Apples.$ll#$b#Mind if I call you that?$26\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
 
                         (break)showFrame TravisV 56
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.3 Received
                             \\speak TravisV \"Hey hoo! So you really are a Buckaroo!$13#$b#If you'd mind me calling you that.$24\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
 
                         (break)showFrame TravisV 56
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.4 Received
                             \\speak TravisV \"Ah, so you like a life full of thrills?$12#$b#Ya sound like the Rowdy type, if I may call you that.$13\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
 
                         (break)showFrame TravisV 56
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.5 Received
                             \\speak TravisV \"Aye, well on your way to being a pirate I see!$13#$b#Mind if I call ya Captain?$28\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
 
                         (break)showFrame TravisV 56
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.6 Received
                             \\speak TravisV \"Now that's a way to live! Get out there and blaze those trails, Trailblazer.$12#$b#...If I'm allowed to call you that.$20\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
-
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
+                                
                         (break)showFrame TravisV 56
                                 \\emote TravisV 56
                                 \\action AddMail Current LitD_M_TravisNickName.7 Received
                             \\speak TravisV \"Sounds like hard work.$6#$b#Couldn't imagine that kinda life but I can respect it, Pebbles.$27#$b#Can I call ya Pebbles?$26\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular\\pause 1
 
                         (break)playSound LitD_SFX.SeagullFake\\pause 1
                                 \\action IncrementStat LitD_M_GullInsanity 1
@@ -414,8 +414,8 @@
                                 \\faceDirection farmer 1 true
                                 \\pause 3000
                             \\speak TravisV \"You're... a seagull?$21#$b#Erm.$29#$b#Well... I'm not one to judge how people choose to identify.$6#$b#You mind if I call you... er. Seagull?$29\"
-                    
-                        /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Seagull
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Seagull\\pause 1
+                        
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular": "
@@ -435,6 +435,7 @@
                                 \\action AddMail Current LitD_M_TravisNickName.10 Received
                                 \\action IncrementStat LitD.TravisFlirt 1
                             \\speak TravisV \"Oh, would you like something more intimate?$24#$b#How about... My Rose?$31\"
+                                \\emote farmer 20
 
                     /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Cont
                 /end
@@ -490,6 +491,56 @@
                 "{{ModID}}_Events.TravisV.6H.P2.Romantic.Cont": "
                 resetVariable
                         /showFrame TravisV 49
+                    /speak TravisV \"I had something special prepared for us tonight, by the way.$31#$b#I haven't pulled out this recipe in a long time.$l\"
+
+                     /quickQuestion # Oh, are you a cook? # Painting, cooking, playing guitar... Is there anything you can't do? # Pulling out all the stops, hm? You seem serious. <  # *Incoherent seagull noises*
+                        (break)
+                            \\speak TravisV \" Ah, insightful, are we? Aye, it's true.$31#$b#I was born and raised with a silver spoon not in my mouth, but in my left hand. I've learned from the best of the best.$33\"
+                        (break)
+                            \\speak TravisV \"Hah! You flatter me, but certainly. I can't drive, and my writing skills leave a lot to be desired.$20#$b#Art and music are hobbies I enjoy, but cooking? That's my passion.$31#$b#I grew up under the wing of the best of the best.$33\"                        
+                        (break)
+                            \\speak TravisV \"Oh yes, I don't play games when it comes to romance.$9#$b#I grew up around some of the best of the best cooks in Ferngill.$31#$b#I'd love for you to get a taste of my work.$8\"
+                        (break)
+                            \\speak TravisV \"I. Yeah. So um, I trained under some of the best cooks in Ferngill.$21#$b#I'm excited for you to get a chance to try my work...$29#$b#(I think I've made a mistake...)$30\"
+
+                    /speak Emily \"Two piping hot Deluxe Fiddlehead Risottos, fresh out of the pan! Enjoy.#h\"
+                    /speak TravisV \"Thank you, Emily. You've been a dear as always.$l\"
+                    /quickQuestion # Yeah, thanks so much! # MINE. MINE. MINE.
+                        (break)
+                            \\speak Emily \"(Good luck, you got 'em tiger!)\"
+                            \\speak TravisV \"(Thanks, but I'm more of a tom cat.~)$25\"
+                        (break)
+                            \\speak Emily \" Uhhhh.... Yeah!#$b#(They seem a little possessive, are you sure this is a good call?)$s\"
+                            \\speak TravisV \"(No I think they just have seagullitis. It may be terminal.)$29\"
+                            \\speak Emily \"(Oh. Be sure not to catch any Seagull Transmitted Diseases.)$6\"
+                            \\speak TravisV \"(Trying my best.)$29\"
+
+                        /emote farmer 8
+                        /speak TravisV \"Anywho... I hope you enjoy. This is my favorite recipe.$31#$b#It has cheese, but I requested a vegan kind since I'm not too sure of your diet.$33\"
+
+                        /quickQuestion That's very thoughtful of you...# I'll eat just about anything put in front of me! # I am vegan! I love my greens # I'm vegetarian. # I'm pescatarian. Fish all the way down! # I'm usually a flesh eating carnivore... But for you, I'll give it a shot. # There's a few things I can't eat... (Kosher, halal, common allergies) # SQUAAAWWWK.
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
+                                \\speak TravisV \"Haha, good to know. I happen to be pescatarian myself.$11#$b#I love myself a good salmon.$31\"
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.Vegan Received
+                                \\speak TravisV \"Wowza, that's impressive! I don't think I could give up dairy and egg.$l#$b#I'm pescatarian myself, can't help loving myself a good fish.$31\"
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.Vegetarian Received
+                                \\speak TravisV \"Wow, how interesting! You must have a lot of will power!$1#$b#I'm pescatarian myself, I couldn't bring myself to give up fish.$31\"
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.Pescatarian Received
+                                \\speak TravisV \"Oh, really? So am I! I love myself a good fish. I can't bring myself to eat red meats meat and poultry.$23#$b#The industry is deeply upsetting. But let's not get off course with something saddening...$34\"
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.Carnivore Received
+                                \\speak TravisV \"Is that so? I'm not sure how good that is for your body, but more power to you.$20#$b#I don't eat red meat or poultry, but I do love myself a good fish.$31\"
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.GeneralRestriction Received
+                                \\speak TravisV \"Ah, good to know! Thanks for telling me. I'll make sure that never winds up under your nose.$l#$b#No big restrictions for me, but I happen to be pescatarian myself.$26\"
+                            (break)
+                                \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
+                                \\speak TravisV \"...I get the vibe you probably will eat anything.$29#$b#(What am I getting myself into?)$30\"
+
                     /message \"You can update Travis's nickname for you any time in the config files.\"
                 /end
 
@@ -497,4 +548,56 @@
              } 
     } 
     ]
+
 }
+
+
+/*
+
+Now don't keep me waiting, give my dish a try.
+nomnomnom
+[It tastes divine...]
+Good, isn't it? It's a family recipe, my mother's originally. Alas, she doesn't know how to make it. Always calling it bland. She makes it without rice and cheese, that's the whole point of a risotto! I mean, no wonder it comes out wrong. This version cooks the rice to perfection and sautaeed the fiddlehead ferns in oil and roasted garlic. It is my magnum opus if I do say so myself.
+
+    > You bring up your mom a lot, are you close?
+    Eh? Oh. We used to be, but not so much anymore... bit of a sore spot, don't really want to talk about it at the moment, if that's alright. How about you tell me a little more about yourself?
+
+    > Chuckle at his rambling.
+    Hm? What's so funny? I'm simply passionate about food is all! I'm sure you could get going on and on about your passions the same way!
+
+    > Squawk!!!!
+    ... Well, that's enough of my rambling. How about you tell me a little more about yourself?
+
+[You and Travis talk for a long while about this and that...]
+[fade out, fade in to Travis and farmer standing by the table]
+
+Hmhmhm. I'd say that went quite well. We should do this again, sometime, no?
+ > I would love to. Where should we rendezvous next? <
+    > I'm delighted that you agree. I'm thinking the East Scarp Inn for our next little date. Tomorrow night, perhaps? Or any time during the week, really.
+ > Actually, I think we should just continue on as friends.
+    > Oh! I... I understand. That's fine by me. I care about our friendship far more than any budding feelings I might have. Let's meet up again as friends, perhaps some night this week at the East Scarp Inn? 
+ > Squaawwwwkkk! <
+   > I couldn't agree more! ... I think. Would you like to drop by East Scarp Inn for our next date? Tomorrow night, perhaps? Or any time during the week would work for me.
+ > Sqaaaawwwk.
+    > ...You know. On second thought, maybe this isn't such a good idea. I, uh, think we should stay friends.  Let's meet up again as FRIENDS at the East Scarp Inn. Any time during the week would work for me.
+
+Ah... before we part ways... I'd like to give you a little gift.
+It's an unpublished Queen of Sauce cookbook. One of a kind. Take care of it, okay? It's pretty special to me.
+
+>travis hand it romantically
+
+Tata, my dear. Till we meet again. Feel free to stop by my house tonight if you'd like to spend a little more time together.
+
+>receive over head
+
+Well then! Till we meet again, my friend!
+
+[Trav walks off]
+
+[You can update Travis's nickname for you any time in the config files.]
+---
+If you go to his house, run a small event and apply this buff:
+
+Apply a buff after this event if romantic 
+Love drunk (+1 everything till the day ends)
+You're up on cloud nine...*/
