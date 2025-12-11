@@ -6,7 +6,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Town",
             "Entries": {
-                "{{ModID}}_Events.TravisV.6H.P1/e {{ModID}}_Events.TravisV.4H/e LITD.DEBUG/t 1200 1800/f TravisV 1500/!n LitD_M_SeenTravisEventToday": "
+                "{{ModID}}_Events.TravisV.6H.P1/e {{ModID}}_Events.TravisV.4H/t 1200 1800/f TravisV 1500/!n LitD_M_SeenTravisEventToday": "
                     LitD_Music.TravisHouse
                     /20 90
                     /TravisV -1000 -1000 2 farmer 16 91 1
@@ -220,7 +220,7 @@
             "Action": "EditData",
             "Target": "Data/Events/Saloon",
             "Entries": {
-                "{{ModID}}_Events.TravisV.6H.P2": "
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic": "
                   LitD_Music.Blues
                     /14 21
                     /TravisV 9 5 3 farmer 14 24 0  Emily 11 10 2 Gus 8 6 1 Pam 7 19 1 Shane 21 17 2 Elliott 3 19 2 Leah 5 20 3 Lewis 6 17 1 Marnie 5 17 3 Demetrius 25 22 1 Robin 24 22 3 Clint 18 22 2 Sam 36 21 1 Abigail 39 19 2 Sebastian 42 21 3 Nova.Eli? 2 20 1 Nova.Dylan? 3 21 0 DN.SnS_Coriander? 33 18 0 Cirrus? 33 18 0 MadDog.HashtagBearFam.Sondra? 21 22 0 SenS 35 7 1 RodneyOBrien? 17 20 0 Willy 1 22 1 Jasper 9 22 1 DN.SnS_Val? 11 23 0 Mateo? 11 23 0 Marlon 10 21 2 Gunther 11 21 2 Juliet 25 18 1 Rosa 26 18 3 MadDog.STW_Cherri? 14 20 2
@@ -558,13 +558,13 @@
                                 /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
                             (break)
                                 /speak TravisV \"Oh! I... I understand.$23#$b#That's fine by me. I care about our friendship far more than any budding feelings I might have.$20#$b#Let's meet up again as friends, perhaps some night this week at the East Scarp Inn?$11\"
-                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Platonic.Ending
+                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends
                             (break)
                                 /speak TravisV \"I couldn't agree more!$12#$b#...$12#$b#I think.$13#$b#Would you like to drop by East Scarp Inn for our next date? Tomorrow night, perhaps?$10#$b#Or any time during the week would work for me.$32\"
                                 /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
                             (break)
                                 /speak TravisV \"...You know. On second thought, maybe this isn't such a good idea.$21#$b#I, uh, think we should stay friends.$30#$b#Let's meet up again as FRIENDS at the East Scarp Inn.$29#$b#Any time during the week would work for me.$20\"
-                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Platonic.Ending
+                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends
                 /end
                 ",
 
@@ -573,19 +573,19 @@
                     /speak TravisV \"Ah... before we part ways...$31#$b#I'd like to give you a little gift.$33\"
                     /speak TravisV \"It's an unpublished Queen of Sauce cookbook. One of a kind.$11#$b#Take care of it, okay? It's pretty special to me.$20\"
                     /speak TravisV \"Tata, my dear. Till we meet again.$31#$b#Feel free to stop by my house later tonight if you'd like to spend a little more time together.$24\"
-                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Ending.Cont
+                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending.Cont
                 /end
                 ",
-                "{{ModID}}_Events.TravisV.6H.P2.Platonic.Ending": "
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends": "
                 resetVariable
                     /speak TravisV \"Oh! Before we go out separate ways, I have something I'd like to give you.$h\"
                     /speak TravisV \"It's an unpublished Queen of Sauce cookbook. One of a kind.$11#$b#Take care of it, okay? It's pretty special to me.$20\"
                     /speak TravisV \"Well then! Till we meet again, my friend!$12\"
-                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Ending.Cont
+                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending.Cont
                 /end
                 ",
 
-                "{{ModID}}_Events.TravisV.6H.P2.Ending.Cont": "
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic.Ending.Cont": "
                     /message \"You can update Travis's nickname for you any time in the config files.\"
                     /end
                 "
