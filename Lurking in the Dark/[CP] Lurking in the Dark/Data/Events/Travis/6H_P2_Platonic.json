@@ -1,0 +1,13 @@
+{
+    "Changes": [
+    {
+            "LogName": "Travis 6H P2",
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "{{ModID}}_Events.TravisV.6H.P2": ""
+             } 
+    } 
+    ]
+
+}
