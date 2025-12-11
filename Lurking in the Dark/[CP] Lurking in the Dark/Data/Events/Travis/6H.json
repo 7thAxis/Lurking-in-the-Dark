@@ -414,8 +414,7 @@
                                 \\faceDirection farmer 1 true
                                 \\pause 3000
                             \\speak TravisV \"You're... a seagull?$21#$b#Erm.$29#$b#Well... I'm not one to judge how people choose to identify.$6#$b#You mind if I call you... er. Seagull?$29\"
-                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Seagull\\pause 1
-                        
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Seagull\\pause 1 
                     /end
                 ",
                 "{{ModID}}_Events.TravisV.6H.P2.Romantic.Nickname.Regular": "
@@ -486,7 +485,6 @@
 
                         /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Cont
                     /end
-
                 ",
                 "{{ModID}}_Events.TravisV.6H.P2.Romantic.Cont": "
                 resetVariable
@@ -541,63 +539,58 @@
                                 \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
                                 \\speak TravisV \"...I get the vibe you probably will eat anything.$29#$b#(What am I getting myself into?)$30\"
 
-                    /message \"You can update Travis's nickname for you any time in the config files.\"
-                /end
+                        /speak TravisV \"Now don't keep me waiting, give my dish a try.$11\"
+                        /message \"It tastes divine... somehow, it reminds you of %favorite.\"
+                        /speak TravisV \"Good, isn't it? It's a family recipe, my mother's originally.$31#$b#Alas, she doesn't know how to make it properly! Always calling it bland...$a#$b#She makes it without rice and cheese, that's the whole point of a risotto! I mean, no wonder it comes out wrong!$22#$b#This version cooks the rice to perfection and sauteed the fiddlehead ferns in oil and roasted garlic. It is my magnum opus if I do say so myself.$32\"
+                        /quickQuestion # You bring up your mom a lot, are you close? # Chuckle at his rambling. # Squawk!!!!
+                            (break)
+                                /speak TravisV \" Eh? Oh. We used to be, but not so much anymore...$34#$b#Bit of a sore spot, don't really want to talk about it at the moment, if that's alright.$20#$b#How about you tell me a little more about yourself?$32\"
+                            (break)
+                                /speak TravisV \"Hm? What's so funny? I'm simply passionate about food is all!$11#$b#I'm sure you could get going on and on about your passions the same way!$l\"
+                            (break)
+                                /speak TravisV \"... Well, that's enough of my rambling.$21#$b#How about you tell me a little more about yourself?$29\"
 
+                        /message \"You and Travis talk about this and that... before you know it, the night is up.\"
+                        /speak TravisV \"Hmhmhm. I'd say that went quite well.$31#$b#We should do this again, sometime, no?$33\"
+                        /quickQuestion # I would love to. Where should we rendezvous next? < # Actually, I think we should just continue on as friends. # Squaawwwwkkk! < # Sqaaaawwwk.
+                            (break)
+                                /speak TravisV \"I'm delighted that you agree. I'm thinking the East Scarp Inn for our next little date.$11#$b#Tomorrow night, perhaps? Or any time during the week, really.$l\"
+                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
+                            (break)
+                                /speak TravisV \"Oh! I... I understand.$23#$b#That's fine by me. I care about our friendship far more than any budding feelings I might have.$20#$b#Let's meet up again as friends, perhaps some night this week at the East Scarp Inn?$11\"
+                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Platonic.Ending
+                            (break)
+                                /speak TravisV \"I couldn't agree more!$12#$b#...$12#$b#I think.$13#$b#Would you like to drop by East Scarp Inn for our next date? Tomorrow night, perhaps?$10#$b#Or any time during the week would work for me.$32\"
+                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
+                            (break)
+                                /speak TravisV \"...You know. On second thought, maybe this isn't such a good idea.$21#$b#I, uh, think we should stay friends.$30#$b#Let's meet up again as FRIENDS at the East Scarp Inn.$29#$b#Any time during the week would work for me.$20\"
+                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Platonic.Ending
+                /end
                 ",
+
+                "{{ModID}}_Events.TravisV.6H.P2.Romantic.Ending": "
+                resetVariable
+                    /speak TravisV \"Ah... before we part ways...$31#$b#I'd like to give you a little gift.$33\"
+                    /speak TravisV \"It's an unpublished Queen of Sauce cookbook. One of a kind.$11#$b#Take care of it, okay? It's pretty special to me.$20\"
+                    /speak TravisV \"Tata, my dear. Till we meet again.$31#$b#Feel free to stop by my house later tonight if you'd like to spend a little more time together.$24\"
+                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Ending.Cont
+                /end
+                ",
+                "{{ModID}}_Events.TravisV.6H.P2.Platonic.Ending": "
+                resetVariable
+                    /speak TravisV \"Oh! Before we go out separate ways, I have something I'd like to give you.$h\"
+                    /speak TravisV \"It's an unpublished Queen of Sauce cookbook. One of a kind.$11#$b#Take care of it, okay? It's pretty special to me.$20\"
+                    /speak TravisV \"Well then! Till we meet again, my friend!$12\"
+                    /switchEvent {{ModID}}_Events.TravisV.6H.P2.Ending.Cont
+                /end
+                ",
+
+                "{{ModID}}_Events.TravisV.6H.P2.Ending.Cont": "
+                    /message \"You can update Travis's nickname for you any time in the config files.\"
+                    /end
+                "
              } 
     } 
     ]
 
 }
-
-
-/*
-
-Now don't keep me waiting, give my dish a try.
-nomnomnom
-[It tastes divine...]
-Good, isn't it? It's a family recipe, my mother's originally. Alas, she doesn't know how to make it. Always calling it bland. She makes it without rice and cheese, that's the whole point of a risotto! I mean, no wonder it comes out wrong. This version cooks the rice to perfection and sautaeed the fiddlehead ferns in oil and roasted garlic. It is my magnum opus if I do say so myself.
-
-    > You bring up your mom a lot, are you close?
-    Eh? Oh. We used to be, but not so much anymore... bit of a sore spot, don't really want to talk about it at the moment, if that's alright. How about you tell me a little more about yourself?
-
-    > Chuckle at his rambling.
-    Hm? What's so funny? I'm simply passionate about food is all! I'm sure you could get going on and on about your passions the same way!
-
-    > Squawk!!!!
-    ... Well, that's enough of my rambling. How about you tell me a little more about yourself?
-
-[You and Travis talk for a long while about this and that...]
-[fade out, fade in to Travis and farmer standing by the table]
-
-Hmhmhm. I'd say that went quite well. We should do this again, sometime, no?
- > I would love to. Where should we rendezvous next? <
-    > I'm delighted that you agree. I'm thinking the East Scarp Inn for our next little date. Tomorrow night, perhaps? Or any time during the week, really.
- > Actually, I think we should just continue on as friends.
-    > Oh! I... I understand. That's fine by me. I care about our friendship far more than any budding feelings I might have. Let's meet up again as friends, perhaps some night this week at the East Scarp Inn? 
- > Squaawwwwkkk! <
-   > I couldn't agree more! ... I think. Would you like to drop by East Scarp Inn for our next date? Tomorrow night, perhaps? Or any time during the week would work for me.
- > Sqaaaawwwk.
-    > ...You know. On second thought, maybe this isn't such a good idea. I, uh, think we should stay friends.  Let's meet up again as FRIENDS at the East Scarp Inn. Any time during the week would work for me.
-
-Ah... before we part ways... I'd like to give you a little gift.
-It's an unpublished Queen of Sauce cookbook. One of a kind. Take care of it, okay? It's pretty special to me.
-
->travis hand it romantically
-
-Tata, my dear. Till we meet again. Feel free to stop by my house tonight if you'd like to spend a little more time together.
-
->receive over head
-
-Well then! Till we meet again, my friend!
-
-[Trav walks off]
-
-[You can update Travis's nickname for you any time in the config files.]
----
-If you go to his house, run a small event and apply this buff:
-
-Apply a buff after this event if romantic 
-Love drunk (+1 everything till the day ends)
-You're up on cloud nine...*/
