@@ -131,7 +131,7 @@
             "Entries": {
                 "(O){{ModID}}_Items.GoldenVoidLavaSnail": {
                     "ItemId": "(O){{ModID}}_Items.GoldenVoidLavaSnail",
-                    "Chance": "0.5",
+                    "Chance": "0.005",
                     "Condition": "!SEASON Winter"
                 }
             }
