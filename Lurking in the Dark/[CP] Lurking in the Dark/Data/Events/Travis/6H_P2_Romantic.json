@@ -273,26 +273,50 @@
                 ",
                 "{{ModID}}_Events.TravisV.6H.P2.Romantic.Cont": "
                 resetVariable
-                        /showFrame TravisV 49
+                        /showFrame TravisV 56 true
+                        /emote TravisV 32
                     /speak TravisV \"I had something special prepared for us tonight, by the way.$31#$b#I haven't pulled out this recipe in a long time.$l\"
-
+                        /emote farmer 8
                      /quickQuestion # Oh, are you a cook? # Painting, cooking, playing guitar... Is there anything you can't do? # Pulling out all the stops, hm? You seem serious. <  # *Incoherent seagull noises*
-                        (break)
+                        (break)pause 1
+                                \\emote TravisV 56
+                                \\pause 100
+                                \\showFrame TravisV 49
                             \\speak TravisV \" Ah, insightful, are we? Aye, it's true.$31#$b#I was born and raised with a silver spoon not in my mouth, but in my left hand. I've learned from the best of the best.$33\"
-                        (break)
+                        (break)pause 1
+                                \\emote TravisV 32
+                                \\pause 100
+                                \\showFrame TravisV 49
                             \\speak TravisV \"Hah! You flatter me, but certainly. I can't drive, and my writing skills leave a lot to be desired.$20#$b#Art and music are hobbies I enjoy, but cooking? That's my passion.$31#$b#I grew up under the wing of the best of the best.$33\"                        
-                        (break)
+                        (break)pause 1
+                                \\emote TravisV 280
+                                \\pause 100
+                                \\showFrame TravisV 50
+                                \\action IncrementStat LitD.TravisFlirt 1
                             \\speak TravisV \"Oh yes, I don't play games when it comes to romance.$9#$b#I grew up around some of the best of the best cooks in Ferngill.$31#$b#I'd love for you to get a taste of my work.$8\"
-                        (break)
+                        (break)playSound LitD_SFX.SeagullFake\\pause 1
+                                \\showFrame farmer 117
+                                \\pause 50
+                                \\emote farmer 236 true 
+                                \\pause 50
+                                \\showFrame TravisV 54 true
+                                \\pause 200
+                                \\emote TravisV 40
+                                \\pause 150
+                                \\action IncrementStat LitD_M_GullInsanity 1
                             \\speak TravisV \"I. Yeah. So um, I trained under some of the best cooks in Ferngill.$21#$b#I'm excited for you to get a chance to try my work...$29#$b#(I think I've made a mistake...)$30\"
+
+                        /showFrame farmer 117
+                        /pause 150
+                        /showFrame TravisV 49
 
                     /speak Emily \"Two piping hot Deluxe Fiddlehead Risottos, fresh out of the pan! Enjoy.#h\"
                     /speak TravisV \"Thank you, Emily. You've been a dear as always.$l\"
                     /quickQuestion # Yeah, thanks so much! # MINE. MINE. MINE.
-                        (break)
+                        (break)pause 1
                             \\speak Emily \"(Good luck, you got 'em tiger!)\"
                             \\speak TravisV \"(Thanks, but I'm more of a tom cat.~)$25\"
-                        (break)
+                        (break)pause 1
                             \\speak Emily \" Uhhhh.... Yeah!#$b#(They seem a little possessive, are you sure this is a good call?)$s\"
                             \\speak TravisV \"(No I think they just have seagullitis. It may be terminal.)$29\"
                             \\speak Emily \"(Oh. Be sure not to catch any Seagull Transmitted Diseases.)$6\"
@@ -302,25 +326,25 @@
                         /speak TravisV \"Anywho... I hope you enjoy. This is my favorite recipe.$31#$b#It has cheese, but I requested a vegan kind since I'm not too sure of your diet.$33\"
 
                         /quickQuestion That's very thoughtful of you...# I'll eat just about anything put in front of me! # I am vegan! I love my greens # I'm vegetarian. # I'm pescatarian. Fish all the way down! # I'm usually a flesh eating carnivore... But for you, I'll give it a shot. # There's a few things I can't eat... (Kosher, halal, common allergies) # SQUAAAWWWK.
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
                                 \\speak TravisV \"Haha, good to know. I happen to be pescatarian myself.$11#$b#I love myself a good salmon.$31\"
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.Vegan Received
                                 \\speak TravisV \"Wowza, that's impressive! I don't think I could give up dairy and egg.$l#$b#I'm pescatarian myself, can't help loving myself a good fish.$31\"
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.Vegetarian Received
                                 \\speak TravisV \"Wow, how interesting! You must have a lot of will power!$1#$b#I'm pescatarian myself, I couldn't bring myself to give up fish.$31\"
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.Pescatarian Received
                                 \\speak TravisV \"Oh, really? So am I! I love myself a good fish. I can't bring myself to eat red meats meat and poultry.$23#$b#The industry is deeply upsetting. But let's not get off course with something saddening...$34\"
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.Carnivore Received
                                 \\speak TravisV \"Is that so? I'm not sure how good that is for your body, but more power to you.$20#$b#I don't eat red meat or poultry, but I do love myself a good fish.$31\"
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.GeneralRestriction Received
                                 \\speak TravisV \"Ah, good to know! Thanks for telling me. I'll make sure that never winds up under your nose.$l#$b#No big restrictions for me, but I happen to be pescatarian myself.$26\"
-                            (break)
+                            (break)pause 1
                                 \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
                                 \\speak TravisV \"...I get the vibe you probably will eat anything.$29#$b#(What am I getting myself into?)$30\"
 
@@ -328,28 +352,28 @@
                         /message \"It tastes divine... somehow, it reminds you of %favorite.\"
                         /speak TravisV \"Good, isn't it? It's a family recipe, my mother's originally.$31#$b#Alas, she doesn't know how to make it properly! Always calling it bland...$a#$b#She makes it without rice and cheese, that's the whole point of a risotto! I mean, no wonder it comes out wrong!$22#$b#This version cooks the rice to perfection and sauteed the fiddlehead ferns in oil and roasted garlic. It is my magnum opus if I do say so myself.$32\"
                         /quickQuestion # You bring up your mom a lot, are you close? # Chuckle at his rambling. # Squawk!!!!
-                            (break)
-                                /speak TravisV \" Eh? Oh. We used to be, but not so much anymore...$34#$b#Bit of a sore spot, don't really want to talk about it at the moment, if that's alright.$20#$b#How about you tell me a little more about yourself?$32\"
-                            (break)
-                                /speak TravisV \"Hm? What's so funny? I'm simply passionate about food is all!$11#$b#I'm sure you could get going on and on about your passions the same way!$l\"
-                            (break)
-                                /speak TravisV \"... Well, that's enough of my rambling.$21#$b#How about you tell me a little more about yourself?$29\"
+                            (break)pause 1
+                                \\speak TravisV \" Eh? Oh. We used to be, but not so much anymore...$34#$b#Bit of a sore spot, don't really want to talk about it at the moment, if that's alright.$20#$b#How about you tell me a little more about yourself?$32\"
+                            (break)pause 1
+                                \\speak TravisV \"Hm? What's so funny? I'm simply passionate about food is all!$11#$b#I'm sure you could get going on and on about your passions the same way!$l\"
+                            (break)pause 1
+                                \\speak TravisV \"... Well, that's enough of my rambling.$21#$b#How about you tell me a little more about yourself?$29\"
 
                         /message \"You and Travis talk about this and that... before you know it, the night is up.\"
                         /speak TravisV \"Hmhmhm. I'd say that went quite well.$31#$b#We should do this again, sometime, no?$33\"
                         /quickQuestion # I would love to. Where should we rendezvous next? < # Actually, I think we should just continue on as friends. # Squaawwwwkkk! < # Sqaaaawwwk.
-                            (break)
-                                /speak TravisV \"I'm delighted that you agree. I'm thinking the East Scarp Inn for our next little date.$11#$b#Tomorrow night, perhaps? Or any time during the week, really.$l\"
-                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
-                            (break)
-                                /speak TravisV \"Oh! I... I understand.$23#$b#That's fine by me. I care about our friendship far more than any budding feelings I might have.$20#$b#Let's meet up again as friends, perhaps some night this week at the East Scarp Inn?$11\"
-                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends
-                            (break)
-                                /speak TravisV \"I couldn't agree more!$12#$b#...$12#$b#I think.$13#$b#Would you like to drop by East Scarp Inn for our next date? Tomorrow night, perhaps?$10#$b#Or any time during the week would work for me.$32\"
-                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
-                            (break)
-                                /speak TravisV \"...You know. On second thought, maybe this isn't such a good idea.$21#$b#I, uh, think we should stay friends.$30#$b#Let's meet up again as FRIENDS at the East Scarp Inn.$29#$b#Any time during the week would work for me.$20\"
-                                /switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends
+                            (break)pause 1
+                                \\speak TravisV \"I'm delighted that you agree. I'm thinking the East Scarp Inn for our next little date.$11#$b#Tomorrow night, perhaps? Or any time during the week, really.$l\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
+                            (break)pause 1
+                                \\speak TravisV \"Oh! I... I understand.$23#$b#That's fine by me. I care about our friendship far more than any budding feelings I might have.$20#$b#Let's meet up again as friends, perhaps some night this week at the East Scarp Inn?$11\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends
+                            (break)pause 1
+                                \\speak TravisV \"I couldn't agree more!$12#$b#...$12#$b#I think.$13#$b#Would you like to drop by East Scarp Inn for our next date? Tomorrow night, perhaps?$10#$b#Or any time during the week would work for me.$32\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.Ending
+                            (break)pause 1
+                                \\speak TravisV \"...You know. On second thought, maybe this isn't such a good idea.$21#$b#I, uh, think we should stay friends.$30#$b#Let's meet up again as FRIENDS at the East Scarp Inn.$29#$b#Any time during the week would work for me.$20\"
+                                \\switchEvent {{ModID}}_Events.TravisV.6H.P2.Romantic.EndingFriends
                 /end
                 ",
 
