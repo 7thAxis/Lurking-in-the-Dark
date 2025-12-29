@@ -273,6 +273,7 @@
                 ",
                 "{{ModID}}_Events.TravisV.6H.P2.Romantic.Cont": "
                 resetVariable
+                        /advancedMove Emily false -6 0 0 1 -3 0 0 -7 7 0 0 -5 -4 0 4 10
                         /showFrame TravisV 56 true
                         /emote TravisV 32
                     /speak TravisV \"I had something special prepared for us tonight, by the way.$31#$b#I haven't pulled out this recipe in a long time.$l\"
@@ -305,24 +306,66 @@
                                 \\pause 150
                                 \\action IncrementStat LitD_M_GullInsanity 1
                             \\speak TravisV \"I. Yeah. So um, I trained under some of the best cooks in Ferngill.$21#$b#I'm excited for you to get a chance to try my work...$29#$b#(I think I've made a mistake...)$30\"
-
+                        
                         /showFrame farmer 117
                         /pause 150
                         /showFrame TravisV 49
+                        /proceedPosition Emily
+                        /shake Emily 500
+                        /pause 400
+                        /playSound pickUpItem
+                        /addObject 6 4 {{ModID}}_Items.DeluxeFiddleheadRisotto 5
+                        /addObject 8 4 {{ModID}}_Items.DeluxeFiddleheadRisotto 5
+                        /pause 200
 
                     /speak Emily \"Two piping hot Deluxe Fiddlehead Risottos, fresh out of the pan! Enjoy.#h\"
+                        /showFrame TravisV 56
+                        /pause 100
+                        /emote TravisV 56
                     /speak TravisV \"Thank you, Emily. You've been a dear as always.$l\"
+                        /showFrame TravisV 49
                     /quickQuestion # Yeah, thanks so much! # MINE. MINE. MINE.
                         (break)pause 1
+                                \\emote farmer 32 true
+                                \\pause 500
                             \\speak Emily \"(Good luck, you got 'em tiger!)\"
+                                \\showFrame TravisV 52
+                                \\emote TravisV 236 true
                             \\speak TravisV \"(Thanks, but I'm more of a tom cat.~)$25\"
-                        (break)pause 1
+                                \\pause 500
+                                \\advancedMove Emily false 4 0 0 5 -7 0 0 7 3 0 0 -1 6 0 1 10
+                                \\pause 300
+                                \\emote Emily 224 true                            
+                        (break)startJittering\\pause 1
+                                \\playSound LitD_SFX.SeagullFake\\pause 1
+                                \\action IncrementStat LitD_M_GullInsanity 1
+                                \\pause 50
+                                \\emote farmer 236 true
+                                \\pause 500
+                                \\stopJittering\\pause 1
+                                \\pause 500
+                                \\showFrame TravisV 52 true
+                                \\pause 10
+                                \\emote TravisV 40 true
+                                \\pause 100
+                                \\emote Emily 40
                             \\speak Emily \" Uhhhh.... Yeah!#$b#(They seem a little possessive, are you sure this is a good call?)$s\"
-                            \\speak TravisV \"(No I think they just have seagullitis. It may be terminal.)$29\"
+                                \\emote TravisV 28
+                            \\speak TravisV \"(No, I think they just have seagullitis. It may be terminal.)$29\"
+                                \\emote Emily 16
                             \\speak Emily \"(Oh. Be sure not to catch any Seagull Transmitted Diseases.)$6\"
+                                \\emote TravisV 28
                             \\speak TravisV \"(Trying my best.)$29\"
+                                \\pause 200
+                                \\advancedMove Emily false 4 0 0 5 -7 0 0 7 3 0 0 -1 6 0 1 10
+                                \\pause 300
+                                \\emote Emily 40 true
 
-                        /emote farmer 8
+                            /pause 500
+                            /emote farmer 8
+                            /pause 200
+                            /showframe TravisV 49
+                            
                         /speak TravisV \"Anywho... I hope you enjoy. This is my favorite recipe.$31#$b#It has cheese, but I requested a vegan kind since I'm not too sure of your diet.$33\"
 
                         /quickQuestion That's very thoughtful of you...# I'll eat just about anything put in front of me! # I am vegan! I love my greens # I'm vegetarian. # I'm pescatarian. Fish all the way down! # I'm usually a flesh eating carnivore... But for you, I'll give it a shot. # There's a few things I can't eat... (Kosher, halal, common allergies) # SQUAAAWWWK.
