@@ -249,6 +249,7 @@
                     "AcceptGift_(O)Fellowclown.PC_Button": "{{i18n:Gifts.SenS.Button}}",
                     "AcceptGift_(O){{ModID}}_Items.SensCrocus": "{{i18n:Gifts.SenS.SensCrocus}}",
                     "AcceptGift_(O){{ModID}}_Items.SensCrocusSeeds": "{{i18n:Gifts.SenS.SensCrocusSeeds}}",
+                    "RejectItem_(O){{ModID}}_Items.SenAirTag": "$query PLAYER_HAS_MAIL Current LitD_M_SenStickerApplied Any#%You've already placed a sticker on Sen's back... What good would another do?|%You discreetly place the sticker on Sen's back...#$b#Hm? Are you coming in for a hug?$6#$b#That's so sweet of you, @!$h#$action AddMail Current LitD_M_SenStickerApplied#$action RemoveItem 7thAxis.LitD_Items.SenAirTag 1",
 
                     //birthday
                     "AcceptBirthdayGift_book_item": "{{i18n:Gifts.SenS.Book.Birthday}}",

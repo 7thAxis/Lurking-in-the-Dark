@@ -53,7 +53,10 @@
                 "TravisV.IntroReaction": "Sooo... I've noticed ya got a real habit of flirtin' with me.$24",
                 "TravisV.Homewrecker": "I hope you don't take this the wrong way, but I uh...$21#$b#...would rather take the time to get to know one another first if that's alright?$29",
                 "TravisV.Nickname": "{{TravisNickname}}",
-                "TravisV.BoutonniereRemark": "I see you're also wearing my boutonniere...$32"
+                "TravisV.BoutonniereRemark": "I see you're also wearing my boutonniere...$32",
+                "SenS.Sensor": "SEN IS CURRENTLY LOCATED AT \"[Spiderbuttons.BETAS_CharacterLocation SenS true]\" [Spiderbuttons.BETAS_CharacterCoordinate SenS X] LONGITUDE, [Spiderbuttons.BETAS_CharacterCoordinate SenS Y] LATITUDE.$6",
+                "SenS.SensorError": "ERROR. SENSOR STICKER NOT APPLIED TO SUBJECT.#APPLY SENSOR STICKER TO SUBJECT AND TRY AGAIN.",
+                "SenS.StickerDrop": "You remove an odd patch that is attached to the back of the device."
              }
         },
         { 

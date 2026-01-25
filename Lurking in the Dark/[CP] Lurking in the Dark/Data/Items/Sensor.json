@@ -1,0 +1,117 @@
+{
+    "Changes": [
+     //----------------------------ITEM DATA-------------------------------------//
+        {
+            "LogName": "Add Sen Locator",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModID}}_Items.Sensor": {
+                    "Name": "{{ModID}}_Items.Sensor",
+                    "DisplayName": "Sensor",
+                    "Description": "WHERE IS HE, USE THIS TO FIND HIM!!!!!!", //change this to something clever later
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": -1,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [ "color_gray" ],
+                    "Texture": "Textures/7thAxis.LitD/Objects ",
+                    "SpriteIndex": 28
+                },
+                "{{ModID}}_Items.SenAirTag": {
+                    "Name": "{{ModID}}_Items.SenAirTag",
+                    "DisplayName": "Sensor Sticker",
+                    "Description": "stick on sens back for TRACKING PURPOSES", //change this to something clever later
+                    "Type": "Basic",
+                    "Category": 0,
+                    "Price": -1,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "ExcludeFromRandomSale": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [ "color_purple" ],
+                    "Texture": "Textures/7thAxis.LitD/Objects ",
+                    "SpriteIndex": 29
+                }
+            }
+        },
+     //----------------------------EXTENSION DATA-------------------------------------//
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": { 
+                "{{ModID}}_Items.Sensor": {
+                    "CanBeShipped": false,
+                    "CanBeTrashed": false,
+                    "UseForTriggerAction": true,
+                    "CategoryTextOverride": "Gadget"
+                },
+                "{{ModID}}_Items.SenAirTag": {
+                    "CanBeShipped": false,
+                    "CanBeTrashed": false
+                }
+            }
+        },
+     //----------------------------TRIGGER DATA-------------------------------------//
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_Items.SensorFunctional": {
+                    "Id": "{{ModID}}_Items.SensorFunctional",
+                    "MarkActionApplied": false,
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "ITEM_ID Input (O){{ModID}}_Items.Sensor, PLAYER_HAS_MAIL Current LitD_M_SenStickerApplied, PLAYER_HAS_MAIL Current LitD_M_StickerObtained",
+                    "Actions": [ 
+                        "Spiderbuttons.BETAS_PlaySound shadowpeep false",
+                        "Spiderbuttons.BETAS_ShakeNPC SenS 10",
+                        "Spiderbuttons.BETAS_EmoteNPC SenS 8",
+                        "SpiderButtons.BETAS_DialogueBox SenS Strings\\LitD\\DynamicEventStrings:SenS.Sensor"                        
+                    ]
+                },
+                "{{ModID}}_Items.SensorError": {
+                    "Id": "{{ModID}}_Items.SensorError",
+                    "MarkActionApplied": false,
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "ITEM_ID Input (O){{ModID}}_Items.Sensor, !PLAYER_HAS_MAIL Current LitD_M_SenStickerApplied, PLAYER_HAS_MAIL Current LitD_M_StickerObtained",
+                    "Actions": [ 
+                        "SpiderButtons.BETAS_Message Strings\\LitD\\DynamicEventStrings:SenS.SensorError",
+                        "Spiderbuttons.BETAS_PlaySound cancel false" 
+                    ]
+                },
+                "{{ModID}}_Items.FirstUse": {
+                    "Id": "{{ModID}}_Items.FirstUse",
+                    "MarkActionApplied": false,
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "ITEM_ID Input (O){{ModID}}_Items.Sensor, !PLAYER_HAS_MAIL Current LitD_M_StickerObtained",
+                    "Actions": [ 
+                        "AddItem {{ModID}}_Items.SenAirTag 1",
+                        "SpiderButtons.BETAS_Message Strings\\LitD\\DynamicEventStrings:SenS.StickerDrop",
+                        "AddMail Current LitD_M_StickerObtained received"                    
+                    ]
+                }
+            } 
+        },
+    //----------------------------ACQUISITION DATA-------------------------------------//
+        {
+            "LogName": "Void Lava Snail Egg Fishing - Caldera",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "EastScarp_DeepDark", "Fish" ],    
+
+            "Entries": { 
+                "{{ModID}}_Items.Sensor": {
+                    "Chance": 1,
+                    "Id": "{{ModID}}_Items.Sensor",
+                    "ItemId": "{{ModID}}_Items.Sensor",
+                    "SetFlagOnCatch": "LitD_M_SensorObtained",
+                    "Condition": "!PLAYER_HAS_MAIL Current LitD_M_SensorObtained"
+                },
+
+             },
+        }
+    ]
+}
