@@ -370,29 +370,51 @@
 
                         /quickQuestion That's very thoughtful of you...# I'll eat just about anything put in front of me! # I am vegan! I love my greens # I'm vegetarian. # I'm pescatarian. Fish all the way down! # I'm usually a flesh eating carnivore... But for you, I'll give it a shot. # There's a few things I can't eat... (Kosher, halal, common allergies) # SQUAAAWWWK.
                             (break)pause 1
+                                \\showFrame TravisV 56
+                                \\emote TravisV 224
                                 \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
                                 \\speak TravisV \"Haha, good to know. I happen to be pescatarian myself.$11#$b#I love myself a good salmon.$31\"
                             (break)pause 1
+                                \\showFrame TravisV 55
+                                \\emote TravisV 16
                                 \\action AddMail Current LitD_M_TravisDiet.Vegan Received
                                 \\speak TravisV \"Wowza, that's impressive! I don't think I could give up dairy and egg.$l#$b#I'm pescatarian myself, can't help loving myself a good fish.$31\"
                             (break)pause 1
+                                \\showFrame TravisV 56
+                                \\emote TravisV 224
                                 \\action AddMail Current LitD_M_TravisDiet.Vegetarian Received
                                 \\speak TravisV \"Wow, how interesting! You must have a lot of will power!$1#$b#I'm pescatarian myself, I couldn't bring myself to give up fish.$31\"
                             (break)pause 1
+                                \\showFrame TravisV 56
+                                \\emote TravisV 224
                                 \\action AddMail Current LitD_M_TravisDiet.Pescatarian Received
                                 \\speak TravisV \"Oh, really? So am I! I love myself a good fish. I can't bring myself to eat red meats meat and poultry.$23#$b#The industry is deeply upsetting. But let's not get off course with something saddening...$34\"
                             (break)pause 1
+                                \\showFrame TravisV 55
+                                \\emote TravisV 28
                                 \\action AddMail Current LitD_M_TravisDiet.Carnivore Received
                                 \\speak TravisV \"Is that so? I'm not sure how good that is for your body, but more power to you.$20#$b#I don't eat red meat or poultry, but I do love myself a good fish.$31\"
                             (break)pause 1
+                                \\showFrame TravisV 56
+                                \\emote TravisV 224
                                 \\action AddMail Current LitD_M_TravisDiet.GeneralRestriction Received
                                 \\speak TravisV \"Ah, good to know! Thanks for telling me. I'll make sure that never winds up under your nose.$l#$b#No big restrictions for me, but I happen to be pescatarian myself.$26\"
                             (break)pause 1
+                                \\emote farmer 252
+                                \\playSound LitD_SFX.SeagullFake\\pause 1
+                                \\showFrame TravisV 50
+                                \\emote TravisV 40
                                 \\action AddMail Current LitD_M_TravisDiet.NoRestriction Received
                                 \\speak TravisV \"...I get the vibe you probably will eat anything.$29#$b#(What am I getting myself into?)$30\"
 
+                            /showFrame TravisV 49
+
                         /speak TravisV \"Now don't keep me waiting, give my dish a try.$11\"
+                            /playSound eat
+                            /emote farmer 20
                         /message \"It tastes divine... somehow, it reminds you of %favorite.\"
+                            /showFrame TravisV 56
+                            /emote TravisV 224
                         /speak TravisV \"Good, isn't it? It's a family recipe, my mother's originally.$31#$b#Alas, she doesn't know how to make it properly! Always calling it bland...$a#$b#She makes it without rice and cheese, that's the whole point of a risotto! I mean, no wonder it comes out wrong!$22#$b#This version cooks the rice to perfection and sauteed the fiddlehead ferns in oil and roasted garlic. It is my magnum opus if I do say so myself.$32\"
                         /quickQuestion # You bring up your mom a lot, are you close? # Chuckle at his rambling. # Squawk!!!!
                             (break)pause 1

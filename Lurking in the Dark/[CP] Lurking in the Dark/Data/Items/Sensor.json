@@ -8,7 +8,7 @@
             "Entries": {
                 "{{ModID}}_Items.Sensor": {
                     "Name": "{{ModID}}_Items.Sensor",
-                    "DisplayName": "Sensor",
+                    "DisplayName": "SENsor",
                     "Description": "WHERE IS HE, USE THIS TO FIND HIM!!!!!!", //change this to something clever later
                     "Type": "Basic",
                     "Category": 0,
@@ -23,7 +23,7 @@
                 },
                 "{{ModID}}_Items.SenAirTag": {
                     "Name": "{{ModID}}_Items.SenAirTag",
-                    "DisplayName": "Sensor Sticker",
+                    "DisplayName": "SENsor Sticker",
                     "Description": "stick on sens back for TRACKING PURPOSES", //change this to something clever later
                     "Type": "Basic",
                     "Category": 0,
@@ -112,6 +112,101 @@
                 },
 
              },
+
+        },
+
+    // machine test
+    /*
+                                    { "RequiredTags": [ "quality_none" ] },
+                                { "RequiredTags": [ "quality_silver" ] },
+                                { "RequiredTags": [ "quality_gold" ] },
+                                { "RequiredTags": [ "quality_iridium" ] },
+                                { "RequiredTags": [ "quality_qi" ] },*/
+
+        {
+        "Action": "EditData",
+        "Target": "Data/BigCraftables",
+        "Entries": {
+            "{{ModID}}_TimeCapsule": {
+                "Name": "{{ModID}}_TimeCapsule",
+                 "DisplayName": "timecapsule",
+                "Description": "hnad broekn",
+                "Price": 2,
+                "Fragility": 0,
+                "CanBePlacedOutdoors": true,
+                "CanBePlacedIndoors": true,
+                "IsLamp": false,
+                "Texture": "characters/abigail",
+                "SpriteIndex": 0,
+                "CustomFields": {}
+            }
         }
+    },
+                                {
+            "LogName": "Void Lava Snail Egg Fishing - Caldera",
+            "Action": "EditData",
+            "Target": "Data/Machines",  
+
+            "Entries": { 
+            "{{ModID}}_TimeCapsule": {
+                "OutputRules": [
+                {
+                    "Id": "ffsgwerfsews",
+                    "Triggers": [
+                        {            "RequiredItemId": "0",},
+                        { "RequiredTags": [ "quality_none" ] },
+                        { "RequiredTags": [ "quality_silver" ] },
+                        { "RequiredTags": [ "quality_gold" ] },
+                        { "RequiredTags": [ "quality_iridium" ] },
+                        { "RequiredTags": [ "quality_qi" ] },
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+ {
+            "CustomData": null,
+            "OutputMethod": null,
+            "CopyColor": false,
+            "CopyPrice": false,
+            "CopyQuality": false,
+            "PreserveType": null,
+            "PreserveId": null,
+            "IncrementMachineParentSheetIndex": 0,
+            "PriceModifiers": null,
+            "PriceModifierMode": "Stack",
+            "Condition": null,
+            "Id": "(O)466",
+            "ItemId": "(O)466",
+            "RandomItemId": null,
+            "MaxItems": null,
+            "MinStack": 3,
+            "MaxStack": -1,
+            "Quality": -1,
+            "ObjectInternalName": null,
+            "ObjectDisplayName": null,
+            "ToolUpgradeLevel": -1,
+            "IsRecipe": false,
+            "StackModifiers": [
+              {
+                "Id": "RareDouble",
+                "Condition": "RANDOM .1",
+                "Modification": "Multiply",
+                "Amount": 2.0,
+                "RandomAmount": null
+              }
+            ],
+            "StackModifierMode": "Stack",
+            "QualityModifiers": null,
+            "QualityModifierMode": "Stack",
+            "ModData": null,
+            "PerItemCondition": null
+          },
+                    ],
+                    "MinutesUntilReady": 10
+                }
+                ]
+            }
+             },
+
+        }                        
     ]
 }
